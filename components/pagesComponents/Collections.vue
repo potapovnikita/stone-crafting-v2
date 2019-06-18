@@ -161,6 +161,7 @@
                         background silver
                         z-index -10
                         padding 20px 10px
+                        text-align left
 
                         &.left
                             right calc(50% - 4px)

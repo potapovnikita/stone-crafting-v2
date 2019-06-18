@@ -108,11 +108,14 @@
             opacity 0
             background-image linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.01) 1%, rgba(255, 255, 255, 0.9) 80%)
 
-
         &.header_scrolled
             .menu
                 transform translateY(-40px)
                 opacity 0
+            &:hover
+                .menu
+                    transform translateY(0px)
+                    opacity 1
 
     .logo_row
         position relative
@@ -153,7 +156,7 @@
         color whiteMain
         font-weight bold
         letter-spacing 0.3px
-        height 50x
+        height 50px
         transition all .6s
 
         &_item
