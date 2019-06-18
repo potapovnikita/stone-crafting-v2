@@ -1,0 +1,38 @@
+pipeline:
+    install:
+      image: node:alpine
+      commands:
+        - npm install
+      when:
+        branch:
+          include: [ master ]
+        event:
+          - push
+          - pull_request
+
+    build/client:
+      image: node:alpine
+      environment:
+        - NODE_ENV=production
+      secrets: [ ssh_key ]
+      commands:
+        - npm run generate
+      when:
+        branch:
+          include: [ master ]
+        event:
+          - push
+          - pull_request
+
+    deploy:
+      image: node:alpine
+      secrets: [ ssh_key ]
+      commands:
+        - npm install gulp
+        - npm run deploy
+      when:
+        branch:
+          include: [ master ]
+        event:
+          - push
+          - pull_request

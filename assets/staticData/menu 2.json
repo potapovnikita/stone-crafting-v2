@@ -1,0 +1,80 @@
+{
+  "logoName": "КАМНЕРЕЗНЫЙ&nbspДОМ АЛЕКСЕЯ&nbspАНТОНОВА",
+  "logoNameEng": "STONE-CRAFTING&nbspHOUSE BY&nbspALEXEY&nbspANTONOV",
+  "mainMenu": {
+    "about": {
+      "name": "О компании",
+      "nameEng": "About company"
+    },
+    "stoneArt": {
+      "name": "Камнерезное искусство",
+      "nameEng": "Stone-crafting art",
+      "subMenu": [
+        {
+          "name": "Исторические персонажи",
+          "nameEng": "Historical heroes",
+          "url": "/stone-art/history"
+        },
+        {
+          "name": "Герои сказок",
+          "nameEng": "Fairytale",
+          "url": "/stone-art/fairytale"
+        },
+        {
+          "name": "Герои 1812 г.",
+          "nameEng": "Heroes of 1812",
+          "url": "/stone-art/heroes1812"
+        },
+        {
+          "name": "Великие американцы",
+          "nameEng": "Great americans",
+          "url": "/stone-art/american"
+        }
+      ]
+    },
+    "collections": {
+      "name": "Коллекции",
+      "nameEng": "Collections",
+      "subMenu": [
+        {
+          "name": "Каменные цветы",
+          "nameEng": "Stone flowers",
+          "url": "/collections/stoneflowers"
+        },
+        {
+          "name": "Фантазийная огранка",
+          "nameEng": "Fantasy cut",
+          "url": "/collections/nugget"
+        },
+        {
+          "name": "Флорентийская мозаика",
+          "nameEng": "Florentine mosaic",
+          "url": "/collections/mosaic"
+        },
+        {
+          "name": "Ювелирные изделия",
+          "nameEng": "Jewelry",
+          "url": "/collections/jewelry"
+        },
+        {
+          "name": "Предметы интерьера",
+          "nameEng": "Stone interior",
+          "url": "/collections/interior"
+        }
+      ]
+    },
+    "services": {
+      "name": "Услуги",
+      "nameEng": "Services"
+    },
+    "shows": {
+      "name": "Выставки",
+      "nameEng": "Shows"
+    },
+    "contacts": {
+      "name": "Контакты",
+      "nameEng": "Contacts"
+    }
+
+  }
+}

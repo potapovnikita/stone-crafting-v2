@@ -1,0 +1,989 @@
+{
+  "pages": {
+    "history": {
+      "pageName": "Historical heroes",
+      "pageItems" : [
+        {
+          "name": "Genghis Khan",
+          "img": "../img/stone-art/historical/chingiskhan/preview/1.png",
+          "description": "<i>The founder and first great khan of the Mongolian empire.</i>",
+          "about": "<b>Height:</b> 1000&nbsp;mm.  <br><b>Diameter of the base:</b> 600&nbsp;mm. <br><br><b>Stones:</b> flint, nephrite, jasper, rhodusite, carnelian, agate, quartzite, uvarovite, chalcedony, aventurine, pyrite, cacholong, marble, crystal, fluorite, tiger's eye, dolerite, petrified tree. <br><br><b>Metals:</b> silver, bronze, copper, silvering and gilding. <br><br><b>Year of creation:</b> 2017.",
+          "imagesFull": [
+            "../img/stone-art/historical/chingiskhan/1.jpg",
+            "../img/stone-art/historical/chingiskhan/2.jpg",
+            "../img/stone-art/historical/chingiskhan/3.jpg",
+            "../img/stone-art/historical/chingiskhan/4.jpg",
+            "../img/stone-art/historical/chingiskhan/5.jpg",
+            "../img/stone-art/historical/chingiskhan/6.jpg",
+            "../img/stone-art/historical/chingiskhan/7.jpg",
+            "../img/stone-art/historical/chingiskhan/8.jpg",
+            "../img/stone-art/historical/chingiskhan/9.jpg",
+            "../img/stone-art/historical/chingiskhan/10.jpg",
+            "../img/stone-art/historical/chingiskhan/11.jpg",
+            "../img/stone-art/historical/chingiskhan/12.jpg",
+            "../img/stone-art/historical/chingiskhan/13.jpg",
+            "../img/stone-art/historical/chingiskhan/14.jpg",
+            "../img/stone-art/historical/chingiskhan/15.jpg",
+            "../img/stone-art/historical/chingiskhan/16.jpg",
+            "../img/stone-art/historical/chingiskhan/17.jpg",
+            "../img/stone-art/historical/chingiskhan/18.jpg",
+            "../img/stone-art/historical/chingiskhan/19.jpg",
+            "../img/stone-art/historical/chingiskhan/20.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/chingiskhan/preview/1.png",
+            "../img/stone-art/historical/chingiskhan/preview/2.png",
+            "../img/stone-art/historical/chingiskhan/preview/3.png",
+            "../img/stone-art/historical/chingiskhan/preview/4.png",
+            "../img/stone-art/historical/chingiskhan/preview/5.png",
+            "../img/stone-art/historical/chingiskhan/preview/6.png",
+            "../img/stone-art/historical/chingiskhan/preview/7.png",
+            "../img/stone-art/historical/chingiskhan/preview/8.png",
+            "../img/stone-art/historical/chingiskhan/preview/9.png",
+            "../img/stone-art/historical/chingiskhan/preview/10.png",
+            "../img/stone-art/historical/chingiskhan/preview/11.png",
+            "../img/stone-art/historical/chingiskhan/preview/12.png",
+            "../img/stone-art/historical/chingiskhan/preview/13.png",
+            "../img/stone-art/historical/chingiskhan/preview/14.png",
+            "../img/stone-art/historical/chingiskhan/preview/15.png",
+            "../img/stone-art/historical/chingiskhan/preview/16.png",
+            "../img/stone-art/historical/chingiskhan/preview/17.png",
+            "../img/stone-art/historical/chingiskhan/preview/18.png",
+            "../img/stone-art/historical/chingiskhan/preview/19.png",
+            "../img/stone-art/historical/chingiskhan/preview/20.png"
+          ]
+        },
+        {
+          "name": "Tamerlane",
+          "img": "../img/stone-art/historical/tamerlan/preview/1.png",
+          "description": "<i>The Middle Asian Turkic commander and conqueror.</i> ",
+          "about": "<b>Height:</b> 750&nbsp;mm.  <br><b>Diameter of the base:</b> 500&nbsp;mm. <br><br><b>Stones:</b> jasper, pyrite, chalcedony, carnelian, lazurite, quartzite, rhodonite, cacholong, turquoise, cat's eye, opal, pegmatite, petrified tree, aventurine, agate, nephrite, irmenite, gabbro. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2015.",
+          "imagesFull": [
+            "../img/stone-art/historical/tamerlan/1.jpg",
+            "../img/stone-art/historical/tamerlan/2.jpg",
+            "../img/stone-art/historical/tamerlan/3.jpg",
+            "../img/stone-art/historical/tamerlan/4.jpg",
+            "../img/stone-art/historical/tamerlan/5.jpg",
+            "../img/stone-art/historical/tamerlan/6.jpg",
+            "../img/stone-art/historical/tamerlan/7.jpg",
+            "../img/stone-art/historical/tamerlan/8.jpg",
+            "../img/stone-art/historical/tamerlan/9.jpg",
+            "../img/stone-art/historical/tamerlan/10.jpg",
+            "../img/stone-art/historical/tamerlan/11.jpg",
+            "../img/stone-art/historical/tamerlan/12.jpg",
+            "../img/stone-art/historical/tamerlan/13.jpg",
+            "../img/stone-art/historical/tamerlan/14.jpg",
+            "../img/stone-art/historical/tamerlan/15.jpg",
+            "../img/stone-art/historical/tamerlan/16.jpg",
+            "../img/stone-art/historical/tamerlan/17.jpg",
+            "../img/stone-art/historical/tamerlan/18.jpg",
+            "../img/stone-art/historical/tamerlan/19.jpg",
+            "../img/stone-art/historical/tamerlan/20.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/tamerlan/preview/1.png",
+            "../img/stone-art/historical/tamerlan/preview/2.png",
+            "../img/stone-art/historical/tamerlan/preview/3.png",
+            "../img/stone-art/historical/tamerlan/preview/4.png",
+            "../img/stone-art/historical/tamerlan/preview/5.png",
+            "../img/stone-art/historical/tamerlan/preview/6.png",
+            "../img/stone-art/historical/tamerlan/preview/7.png",
+            "../img/stone-art/historical/tamerlan/preview/8.png",
+            "../img/stone-art/historical/tamerlan/preview/9.png",
+            "../img/stone-art/historical/tamerlan/preview/10.png",
+            "../img/stone-art/historical/tamerlan/preview/11.png",
+            "../img/stone-art/historical/tamerlan/preview/12.png",
+            "../img/stone-art/historical/tamerlan/preview/13.png",
+            "../img/stone-art/historical/tamerlan/preview/14.png",
+            "../img/stone-art/historical/tamerlan/preview/15.png",
+            "../img/stone-art/historical/tamerlan/preview/16.png",
+            "../img/stone-art/historical/tamerlan/preview/17.png",
+            "../img/stone-art/historical/tamerlan/preview/18.png",
+            "../img/stone-art/historical/tamerlan/preview/19.png",
+            "../img/stone-art/historical/tamerlan/preview/20.png"
+          ]
+        },
+        {
+          "name": "Suvorov",
+          "img": "../img/stone-art/historical/suvorov/preview/1.jpg",
+          "description": "<i>Great Russian commander, generalissimo. <br>National hero of Russia.</i> ",
+          "about": "<b>Height:</b> 370&nbsp;mm. <br><b>Diameter of the base:</b> 220&nbsp;mm. <br><br><b>Stones:</b> chalcedony, marble, cacholong, hawkeye stone, jasper, jade, lazurite, carnelian, quartzite, moonstone, tiger's eye, dolerite, crystal, ice quartz, sapphire. <br><br><b>Metals:</b> gold, silver, bronze, enamels. <br><br><b>Year of creation:</b> 2018",
+          "imagesFull": [
+            "../img/stone-art/historical/suvorov/1.jpg",
+            "../img/stone-art/historical/suvorov/2.jpg",
+            "../img/stone-art/historical/suvorov/3.jpg",
+            "../img/stone-art/historical/suvorov/4.jpg",
+            "../img/stone-art/historical/suvorov/5.jpg",
+            "../img/stone-art/historical/suvorov/6.jpg",
+            "../img/stone-art/historical/suvorov/7.jpg",
+            "../img/stone-art/historical/suvorov/8.jpg",
+            "../img/stone-art/historical/suvorov/9.jpg",
+            "../img/stone-art/historical/suvorov/10.jpg",
+            "../img/stone-art/historical/suvorov/11.jpg",
+            "../img/stone-art/historical/suvorov/12.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/suvorov/preview/1.jpg",
+            "../img/stone-art/historical/suvorov/preview/2.jpg",
+            "../img/stone-art/historical/suvorov/preview/3.jpg",
+            "../img/stone-art/historical/suvorov/preview/4.jpg",
+            "../img/stone-art/historical/suvorov/preview/5.jpg",
+            "../img/stone-art/historical/suvorov/preview/6.jpg",
+            "../img/stone-art/historical/suvorov/preview/7.jpg",
+            "../img/stone-art/historical/suvorov/preview/8.jpg",
+            "../img/stone-art/historical/suvorov/preview/9.jpg",
+            "../img/stone-art/historical/suvorov/preview/10.jpg",
+            "../img/stone-art/historical/suvorov/preview/11.jpg",
+            "../img/stone-art/historical/suvorov/preview/12.jpg"
+          ]
+        },
+        {
+          "name": "Peter I",
+          "img": "../img/stone-art/historical/petr1/preview/1.png",
+          "description": "<i>The last tsar and first Emperor of Russia.</i>",
+          "about": "<b>Height:</b> 430&nbsp;mm. <br><b>Diameter of the base:</b> 165&nbsp;mm. <br><br><b>Stones:</b> jade, dolerite, marble, cacholong, jasper, lazurite, granite. <br><br><b>Metals:</b> silver, bronze, gilding. <br><br><b>Year of creation:</b> 2016.",
+          "imagesFull": [
+            "../img/stone-art/historical/petr1/1.jpg",
+            "../img/stone-art/historical/petr1/2.jpg",
+            "../img/stone-art/historical/petr1/3.jpg",
+            "../img/stone-art/historical/petr1/4.jpg",
+            "../img/stone-art/historical/petr1/5.jpg",
+            "../img/stone-art/historical/petr1/6.jpg",
+            "../img/stone-art/historical/petr1/7.jpg",
+            "../img/stone-art/historical/petr1/8.jpg",
+            "../img/stone-art/historical/petr1/9.jpg",
+            "../img/stone-art/historical/petr1/10.jpg",
+            "../img/stone-art/historical/petr1/11.jpg",
+            "../img/stone-art/historical/petr1/12.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/petr1/preview/1.png",
+            "../img/stone-art/historical/petr1/preview/2.png",
+            "../img/stone-art/historical/petr1/preview/3.png",
+            "../img/stone-art/historical/petr1/preview/4.png",
+            "../img/stone-art/historical/petr1/preview/5.png",
+            "../img/stone-art/historical/petr1/preview/6.png",
+            "../img/stone-art/historical/petr1/preview/7.png",
+            "../img/stone-art/historical/petr1/preview/8.png",
+            "../img/stone-art/historical/petr1/preview/9.png",
+            "../img/stone-art/historical/petr1/preview/11.png",
+            "../img/stone-art/historical/petr1/preview/12.png"
+          ]
+        },
+        {
+          "name": "Catherine II",
+          "img": "../img/stone-art/historical/ekaterina2/preview/1.png",
+          "description": "<i>The Great Russian Empress, whose reign was the most significant period of Russian history.</i>",
+          "about": "<b>Height:</b> 400&nbsp;mm. <br><b>Diameter of the base:</b> 165&nbsp;mm. <br><br><b>Stones:</b> chalcedony, marble, quartzite, jasper, agate, lazurite, tiger's eye, jasper, diamonds, topaz, fluorite, crystal. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation: 2015.</b>",
+          "imagesFull": [
+            "../img/stone-art/historical/ekaterina2/1.jpg",
+            "../img/stone-art/historical/ekaterina2/2.jpg",
+            "../img/stone-art/historical/ekaterina2/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/ekaterina2/preview/1.png",
+            "../img/stone-art/historical/ekaterina2/preview/2.png",
+            "../img/stone-art/historical/ekaterina2/preview/3.png"
+          ]
+        },
+        {
+          "name": "Schemamonk",
+          "img": "../img/stone-art/historical/monah/preview/1.jpg",
+          "description": "<i>Neil Stolobensky – a saint of the Russian Orthodox Church. <br><br>The founder of the Nilo-Stolobensky Monastery, which is located on the lake Seliger.</i>",
+          "about": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 220х150&nbsp;mm. <br><br><b>Stones:</b> jade, jasper, dolerite, chalcedony, cacholong, marble, petrified tree. <br><br><b>Metals:</b> silver. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/historical/monah/1.jpg",
+            "../img/stone-art/historical/monah/2.jpg",
+            "../img/stone-art/historical/monah/3.jpg",
+            "../img/stone-art/historical/monah/4.jpg",
+            "../img/stone-art/historical/monah/5.jpg",
+            "../img/stone-art/historical/monah/6.jpg",
+            "../img/stone-art/historical/monah/7.jpg",
+            "../img/stone-art/historical/monah/8.jpg",
+            "../img/stone-art/historical/monah/9.jpg",
+            "../img/stone-art/historical/monah/10.jpg",
+            "../img/stone-art/historical/monah/11.jpg",
+            "../img/stone-art/historical/monah/12.jpg",
+            "../img/stone-art/historical/monah/13.jpg",
+            "../img/stone-art/historical/monah/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/historical/monah/preview/1.jpg",
+            "../img/stone-art/historical/monah/preview/2.jpg",
+            "../img/stone-art/historical/monah/preview/3.jpg",
+            "../img/stone-art/historical/monah/preview/4.jpg",
+            "../img/stone-art/historical/monah/preview/5.jpg",
+            "../img/stone-art/historical/monah/preview/6.jpg",
+            "../img/stone-art/historical/monah/preview/7.jpg",
+            "../img/stone-art/historical/monah/preview/8.jpg",
+            "../img/stone-art/historical/monah/preview/9.jpg",
+            "../img/stone-art/historical/monah/preview/10.jpg",
+            "../img/stone-art/historical/monah/preview/11.jpg",
+            "../img/stone-art/historical/monah/preview/12.jpg",
+            "../img/stone-art/historical/monah/preview/13.jpg",
+            "../img/stone-art/historical/monah/preview/14.jpg"
+          ]
+        }
+      ]
+    },
+    "heroes1812": {
+      "pageName": "Heroes of 1812",
+      "pageItems" : [
+        {
+          "name": "",
+          "img": "",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/1812/1.jpg",
+            "../img/stone-art/1812/2.jpg",
+            "../img/stone-art/1812/3.jpg",
+            "../img/stone-art/1812/4.jpg",
+            "../img/stone-art/1812/5.jpg",
+            "../img/stone-art/1812/6.jpg",
+            "../img/stone-art/1812/7.jpg",
+            "../img/stone-art/1812/8.jpg",
+            "../img/stone-art/1812/9.jpg",
+            "../img/stone-art/1812/10.jpg",
+            "../img/stone-art/1812/11.jpg",
+            "../img/stone-art/1812/12.jpg",
+            "../img/stone-art/1812/13.jpg",
+            "../img/stone-art/1812/14.jpg",
+            "../img/stone-art/1812/15.jpg",
+            "../img/stone-art/1812/16.jpg",
+            "../img/stone-art/1812/17.jpg",
+            "../img/stone-art/1812/18.jpg",
+            "../img/stone-art/1812/19.jpg",
+            "../img/stone-art/1812/20.jpg",
+            "../img/stone-art/1812/21.jpg",
+            "../img/stone-art/1812/22.jpg",
+            "../img/stone-art/1812/23.jpg",
+            "../img/stone-art/1812/24.jpg",
+            "../img/stone-art/1812/25.jpg",
+            "../img/stone-art/1812/26.jpg",
+            "../img/stone-art/1812/27.jpg",
+            "../img/stone-art/1812/28.jpg",
+            "../img/stone-art/1812/29.jpg",
+            "../img/stone-art/1812/30.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/1812/preview/1.jpg",
+            "../img/stone-art/1812/preview/2.jpg",
+            "../img/stone-art/1812/preview/3.jpg",
+            "../img/stone-art/1812/preview/4.jpg",
+            "../img/stone-art/1812/preview/5.jpg",
+            "../img/stone-art/1812/preview/6.jpg",
+            "../img/stone-art/1812/preview/7.jpg",
+            "../img/stone-art/1812/preview/8.jpg",
+            "../img/stone-art/1812/preview/9.jpg",
+            "../img/stone-art/1812/preview/10.jpg",
+            "../img/stone-art/1812/preview/11.jpg",
+            "../img/stone-art/1812/preview/12.jpg",
+            "../img/stone-art/1812/preview/13.jpg",
+            "../img/stone-art/1812/preview/14.jpg",
+            "../img/stone-art/1812/preview/15.jpg",
+            "../img/stone-art/1812/preview/16.jpg",
+            "../img/stone-art/1812/preview/17.jpg",
+            "../img/stone-art/1812/preview/18.jpg",
+            "../img/stone-art/1812/preview/19.jpg",
+            "../img/stone-art/1812/preview/20.jpg",
+            "../img/stone-art/1812/preview/21.jpg",
+            "../img/stone-art/1812/preview/22.jpg",
+            "../img/stone-art/1812/preview/23.jpg",
+            "../img/stone-art/1812/preview/24.jpg",
+            "../img/stone-art/1812/preview/25.jpg",
+            "../img/stone-art/1812/preview/26.jpg",
+            "../img/stone-art/1812/preview/27.jpg",
+            "../img/stone-art/1812/preview/28.jpg",
+            "../img/stone-art/1812/preview/29.jpg",
+            "../img/stone-art/1812/preview/30.jpg"
+          ]
+        }
+      ]
+    },
+    "fairytale": {
+      "pageName": "Heroes of fairytales",
+      "pageItems" : [
+        {
+          "name": "The Scarlet Flower",
+          "img": "../img/stone-art/fairytales/alenkiy/preview/1.jpg",
+          "description": "<i>A Russian folk tale written by Sergey Aksakov. It is an adaptation of the traditional fairy tale «Beauty and the Beast».</i>",
+          "about": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 330&nbsp;mm. <br><br><b>Stones:</b> irmenite, jasper, nephrite, lazurite, quartzite, charoite, marble, rhodonite, agate, carnelian, crystal, cacholong, dolerite. <br><br><b>Metals:</b> gold, silver, bronze, enamels. <br><br><b>Year of creation:</b> 2016.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/alenkiy/1.jpg",
+            "../img/stone-art/fairytales/alenkiy/2.jpg",
+            "../img/stone-art/fairytales/alenkiy/3.jpg",
+            "../img/stone-art/fairytales/alenkiy/4.jpg",
+            "../img/stone-art/fairytales/alenkiy/5.jpg",
+            "../img/stone-art/fairytales/alenkiy/6.jpg",
+            "../img/stone-art/fairytales/alenkiy/7.jpg",
+            "../img/stone-art/fairytales/alenkiy/8.jpg",
+            "../img/stone-art/fairytales/alenkiy/9.jpg",
+            "../img/stone-art/fairytales/alenkiy/10.jpg",
+            "../img/stone-art/fairytales/alenkiy/11.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/alenkiy/preview/1.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/2.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/3.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/4.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/5.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/6.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/7.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/8.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/9.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/10.jpg",
+            "../img/stone-art/fairytales/alenkiy/preview/11.jpg"
+          ]
+        },
+        {
+          "name": "Baba-Yaga",
+          "img": "../img/stone-art/fairytales/babayaga/preview/1.jpg",
+          "description": "<i>A forest witch in Slavic folk tales. She is the guardian of the boundaries between the world of the living and the world of the dead.</i>",
+          "about": "<b>Height:</b> 400&nbsp;mm. <br><b>Diameter of the base:</b> 330 to 220&nbsp;mm. <br><br><b>Stones:</b> silicon, ruby, chalcedony, jasper, quartzite, agate, nephrite, agate, labradorite, carnelian, rhodonite, dolerite, cacholong, walrus tusk, crystal, coral. <br><br><b>Metals:</b> silver, bronze.<br><br><b>Year of creation:</b> 2016",
+          "imagesFull": [
+            "../img/stone-art/fairytales/babayaga/1.jpg",
+            "../img/stone-art/fairytales/babayaga/2.jpg",
+            "../img/stone-art/fairytales/babayaga/3.jpg",
+            "../img/stone-art/fairytales/babayaga/4.jpg",
+            "../img/stone-art/fairytales/babayaga/5.jpg",
+            "../img/stone-art/fairytales/babayaga/6.jpg",
+            "../img/stone-art/fairytales/babayaga/7.jpg",
+            "../img/stone-art/fairytales/babayaga/8.jpg",
+            "../img/stone-art/fairytales/babayaga/9.jpg",
+            "../img/stone-art/fairytales/babayaga/10.jpg",
+            "../img/stone-art/fairytales/babayaga/11.jpg",
+            "../img/stone-art/fairytales/babayaga/12.jpg",
+            "../img/stone-art/fairytales/babayaga/13.jpg",
+            "../img/stone-art/fairytales/babayaga/14.jpg",
+            "../img/stone-art/fairytales/babayaga/15.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/babayaga/preview/1.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/2.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/3.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/4.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/5.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/6.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/7.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/8.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/9.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/10.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/11.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/12.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/13.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/14.jpg",
+            "../img/stone-art/fairytales/babayaga/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Bannik",
+          "img": "../img/stone-art/fairytales/bannik/preview/1.jpg",
+          "description": "<i>The Slavic spirit, keeper and owner of the bathhouse.</i> ",
+          "about": "<b>Height:</b> 430&nbsp;mm. <br><b>Diameter of the base:</b> 260&nbsp;mm.  <br><br><b>Stones:</b> carnelian, agate, quartzite, chalcedony, nephrite, amazonite, crystal, petrified tree, garnet, jasper, rhodusite, sapphirin, crystal, aragonite, garnet, irmenite, gabbro, ruby. <br><br><b>Metals:</b> silver, bronze, silvering. <br><br><b>Year of creation:</b> 2017.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/bannik/1.jpg",
+            "../img/stone-art/fairytales/bannik/2.jpg",
+            "../img/stone-art/fairytales/bannik/3.jpg",
+            "../img/stone-art/fairytales/bannik/4.jpg",
+            "../img/stone-art/fairytales/bannik/5.jpg",
+            "../img/stone-art/fairytales/bannik/6.jpg",
+            "../img/stone-art/fairytales/bannik/7.jpg",
+            "../img/stone-art/fairytales/bannik/8.jpg",
+            "../img/stone-art/fairytales/bannik/9.jpg",
+            "../img/stone-art/fairytales/bannik/10.jpg",
+            "../img/stone-art/fairytales/bannik/11.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/bannik/preview/1.jpg",
+            "../img/stone-art/fairytales/bannik/preview/2.jpg",
+            "../img/stone-art/fairytales/bannik/preview/3.jpg",
+            "../img/stone-art/fairytales/bannik/preview/4.jpg",
+            "../img/stone-art/fairytales/bannik/preview/5.jpg",
+            "../img/stone-art/fairytales/bannik/preview/6.jpg",
+            "../img/stone-art/fairytales/bannik/preview/7.jpg",
+            "../img/stone-art/fairytales/bannik/preview/8.jpg",
+            "../img/stone-art/fairytales/bannik/preview/9.jpg",
+            "../img/stone-art/fairytales/bannik/preview/10.jpg",
+            "../img/stone-art/fairytales/bannik/preview/11.jpg"
+          ]
+        },
+        {
+          "name": "Dvorovoi",
+          "img": "../img/stone-art/fairytales/dvorovoy/preview/1.jpg",
+          "description": "<i>A home spirit in the East Slavic mythology, owner of the court.</i> ",
+          "about": "<b>Height:</b> 260&nbsp;mm.  <br><b>Diameter of the base:</b> 230x220&nbsp;mm.  <br><br><b>Stones:</b> chalcedony, jasper, petrified tree, uvarovite, agate, cacholong, labradorite. <br><br><b>Metals:</b> silver, bronze <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/dvorovoy/1.jpg",
+            "../img/stone-art/fairytales/dvorovoy/2.jpg",
+            "../img/stone-art/fairytales/dvorovoy/3.jpg",
+            "../img/stone-art/fairytales/dvorovoy/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/dvorovoy/preview/1.jpg",
+            "../img/stone-art/fairytales/dvorovoy/preview/2.jpg",
+            "../img/stone-art/fairytales/dvorovoy/preview/3.jpg",
+            "../img/stone-art/fairytales/dvorovoy/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Watery",
+          "img": "../img/stone-art/fairytales/vodyanoy/preview/1.jpg",
+          "description": "<i>A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.</i>",
+          "about": "<b>Height:</b> 550&nbsp;mm.  <br><b>Diameter of the base:</b> 380&nbsp;mm.  <br><br><b>Stones:</b> nephrite, jadeite, chalcedony, quartzite, quartz, jasper, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/vodyanoy/1.jpg",
+            "../img/stone-art/fairytales/vodyanoy/2.jpg",
+            "../img/stone-art/fairytales/vodyanoy/3.jpg",
+            "../img/stone-art/fairytales/vodyanoy/4.jpg",
+            "../img/stone-art/fairytales/vodyanoy/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/vodyanoy/preview/1.jpg",
+            "../img/stone-art/fairytales/vodyanoy/preview/2.jpg",
+            "../img/stone-art/fairytales/vodyanoy/preview/3.jpg",
+            "../img/stone-art/fairytales/vodyanoy/preview/4.jpg",
+            "../img/stone-art/fairytales/vodyanoy/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "The Golden Joker",
+          "img": "../img/stone-art/fairytales/joker/preview/1.jpg",
+          "description": "<i>A playing card with image of a court jester. <br>It is an additional trump card in the deck.</i>",
+          "about": "<b>Height:</b> 900&nbsp;mm.  <br><b>Base:</b> 500x350&nbsp;mm.  <br><br><b>Stones:</b> malachite, dolerite, cacholong, jasper, crystal, fluorite. <br><br><b>Metals:</b> silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2017.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/joker/1.jpg",
+            "../img/stone-art/fairytales/joker/2.jpg",
+            "../img/stone-art/fairytales/joker/3.jpg",
+            "../img/stone-art/fairytales/joker/4.jpg",
+            "../img/stone-art/fairytales/joker/5.jpg",
+            "../img/stone-art/fairytales/joker/6.jpg",
+            "../img/stone-art/fairytales/joker/7.jpg",
+            "../img/stone-art/fairytales/joker/8.jpg",
+            "../img/stone-art/fairytales/joker/9.jpg",
+            "../img/stone-art/fairytales/joker/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/joker/preview/1.jpg",
+            "../img/stone-art/fairytales/joker/preview/2.jpg",
+            "../img/stone-art/fairytales/joker/preview/3.jpg",
+            "../img/stone-art/fairytales/joker/preview/4.jpg",
+            "../img/stone-art/fairytales/joker/preview/5.jpg",
+            "../img/stone-art/fairytales/joker/preview/6.jpg",
+            "../img/stone-art/fairytales/joker/preview/7.jpg",
+            "../img/stone-art/fairytales/joker/preview/8.jpg",
+            "../img/stone-art/fairytales/joker/preview/9.jpg",
+            "../img/stone-art/fairytales/joker/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Goldfish",
+          "img": "../img/stone-art/fairytales/goldfish/preview/1.jpg",
+          "description": "<i>A fairy magical personage that fulfills wishes in gratitude for freedom.</i>",
+          "about": "<b>Height:</b> 500&nbsp;mm.  <br><b>Diameter of the base:</b> 300&nbsp;mm.  <br><br><b>Stones:</b> marble, chalcedony, jasper, rhodusite, crystal, aragonite, carnelian, petrified tree, agate, topaz. <br><br><b>Metals:</b> silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2016.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/goldfish/1.jpg",
+            "../img/stone-art/fairytales/goldfish/2.jpg",
+            "../img/stone-art/fairytales/goldfish/3.jpg",
+            "../img/stone-art/fairytales/goldfish/4.jpg",
+            "../img/stone-art/fairytales/goldfish/5.jpg",
+            "../img/stone-art/fairytales/goldfish/6.jpg",
+            "../img/stone-art/fairytales/goldfish/7.jpg",
+            "../img/stone-art/fairytales/goldfish/8.jpg",
+            "../img/stone-art/fairytales/goldfish/9.jpg",
+            "../img/stone-art/fairytales/goldfish/10.jpg",
+            "../img/stone-art/fairytales/goldfish/11.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/goldfish/preview/1.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/2.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/3.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/4.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/5.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/6.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/7.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/8.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/9.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/10.jpg",
+            "../img/stone-art/fairytales/goldfish/preview/11.jpg"
+          ]
+        },
+        {
+          "name": "Puss in Boots",
+          "img": "../img/stone-art/fairytales/kotvsapogah/preview/1.jpg",
+          "description": "<i>The personage of a fairy tale in European literature.</i>",
+          "about": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jade, jasper, quartzite, chalcedony, aventurine, marble, rhodonite, carnelian, fluorite, tiger's eye, petrified tree, crystal. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2016.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/kotvsapogah/1.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/2.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/3.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/4.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/5.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/6.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/7.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/8.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/9.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/10.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/11.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/12.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/13.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/14.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/15.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/kotvsapogah/preview/1.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/2.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/3.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/4.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/5.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/6.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/7.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/8.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/9.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/10.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/11.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/12.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/13.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/14.jpg",
+            "../img/stone-art/fairytales/kotvsapogah/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Koschei the Deathless",
+          "img": "../img/stone-art/fairytales/koshey/preview/1.jpg",
+          "description": "<i>The evil wizard of the East Slavic mythology and folklore.</i>",
+          "about": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jasper, dolerite, tiger's eye, pyrite, hematite, chalcedony, petrified tree, aventurine, emerald, ruby, sapphire, diamond, crystal, irnimite, cacholong. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2015.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/koshey/1.jpg",
+            "../img/stone-art/fairytales/koshey/2.jpg",
+            "../img/stone-art/fairytales/koshey/3.jpg",
+            "../img/stone-art/fairytales/koshey/4.jpg",
+            "../img/stone-art/fairytales/koshey/5.jpg",
+            "../img/stone-art/fairytales/koshey/6.jpg",
+            "../img/stone-art/fairytales/koshey/7.jpg",
+            "../img/stone-art/fairytales/koshey/8.jpg",
+            "../img/stone-art/fairytales/koshey/9.jpg",
+            "../img/stone-art/fairytales/koshey/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/koshey/preview/1.jpg",
+            "../img/stone-art/fairytales/koshey/preview/2.jpg",
+            "../img/stone-art/fairytales/koshey/preview/3.jpg",
+            "../img/stone-art/fairytales/koshey/preview/4.jpg",
+            "../img/stone-art/fairytales/koshey/preview/5.jpg",
+            "../img/stone-art/fairytales/koshey/preview/6.jpg",
+            "../img/stone-art/fairytales/koshey/preview/7.jpg",
+            "../img/stone-art/fairytales/koshey/preview/8.jpg",
+            "../img/stone-art/fairytales/koshey/preview/9.jpg",
+            "../img/stone-art/fairytales/koshey/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Silvan",
+          "img": "../img/stone-art/fairytales/lesovichek/preview/1.jpg",
+          "description": "<i>The spirit of the forest in Slavic folklore. Owner of the forest.</i>",
+          "about": "<b>Height:</b> 375&nbsp;mm.  <br><b>Diameter of the base:</b> 240&nbsp;mm.  <br><br><b>Stones:</b> agate, carnelian, nephrite, flint,  petrified tree, jasper, quartzite, tiger's eye, cacholong, apatite, magnesite, uvarovite, dolerite, crystal, smalt. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/lesovichek/1.jpg",
+            "../img/stone-art/fairytales/lesovichek/2.jpg",
+            "../img/stone-art/fairytales/lesovichek/3.jpg",
+            "../img/stone-art/fairytales/lesovichek/4.jpg",
+            "../img/stone-art/fairytales/lesovichek/5.jpg",
+            "../img/stone-art/fairytales/lesovichek/6.jpg",
+            "../img/stone-art/fairytales/lesovichek/7.jpg",
+            "../img/stone-art/fairytales/lesovichek/8.jpg",
+            "../img/stone-art/fairytales/lesovichek/9.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/lesovichek/preview/1.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/2.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/3.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/4.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/5.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/6.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/7.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/8.jpg",
+            "../img/stone-art/fairytales/lesovichek/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Ovinnik",
+          "img": "../img/stone-art/fairytales/ovinnik/preview/1.jpg",
+          "description": "<i>A spirit of the threshing barn in Slavic folklore.</i>",
+          "about": "<b>Height:</b> 400&nbsp;mm.  <br><b>Diameter of the base:</b> 260&nbsp;mm.  <br><br><b>Stones:</b> jasper, chalcedony, amazonite, rhodusite, petrified tree, agate, flint, calcite, uvarovite, chalcedony, citrine, irnimite, rhodonite, cat’s eye, crystal, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/ovinnik/1.jpg",
+            "../img/stone-art/fairytales/ovinnik/2.jpg",
+            "../img/stone-art/fairytales/ovinnik/3.jpg",
+            "../img/stone-art/fairytales/ovinnik/4.jpg",
+            "../img/stone-art/fairytales/ovinnik/5.jpg",
+            "../img/stone-art/fairytales/ovinnik/6.jpg",
+            "../img/stone-art/fairytales/ovinnik/7.jpg",
+            "../img/stone-art/fairytales/ovinnik/8.jpg",
+            "../img/stone-art/fairytales/ovinnik/9.jpg",
+            "../img/stone-art/fairytales/ovinnik/10.jpg",
+            "../img/stone-art/fairytales/ovinnik/11.jpg",
+            "../img/stone-art/fairytales/ovinnik/12.jpg",
+            "../img/stone-art/fairytales/ovinnik/13.jpg",
+            "../img/stone-art/fairytales/ovinnik/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/ovinnik/preview/1.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/2.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/3.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/4.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/5.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/6.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/7.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/8.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/9.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/10.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/11.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/12.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/13.jpg",
+            "../img/stone-art/fairytales/ovinnik/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "Mermaid",
+          "img": "../img/stone-art/fairytales/rusalka/preview/1.jpg",
+          "description": "<i>In folklore, a mermaid is an aquatic creature with the head and upper body of a female human and the tail of a fish.</i>",
+          "about": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b>  agate, chalcedony, nephrite, carnelian, jasper, aragonite, fluorite, silicon, cacholong, crystal, petrified tree, emeralds, rubies, sapphires, diamonds, irnimite, opal. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2017.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/rusalka/1.jpg",
+            "../img/stone-art/fairytales/rusalka/2.jpg",
+            "../img/stone-art/fairytales/rusalka/3.jpg",
+            "../img/stone-art/fairytales/rusalka/4.jpg",
+            "../img/stone-art/fairytales/rusalka/5.jpg",
+            "../img/stone-art/fairytales/rusalka/6.jpg",
+            "../img/stone-art/fairytales/rusalka/7.jpg",
+            "../img/stone-art/fairytales/rusalka/8.jpg",
+            "../img/stone-art/fairytales/rusalka/9.jpg",
+            "../img/stone-art/fairytales/rusalka/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/rusalka/preview/1.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/2.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/3.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/4.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/5.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/6.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/7.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/8.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/9.jpg",
+            "../img/stone-art/fairytales/rusalka/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "The Swan Princess",
+          "img": "../img/stone-art/fairytales/lebed/preview/1.jpg",
+          "description": "<i>The magical personage of a fairy tale «The Tale of Tsar Saltan» by Alexander Sergeyevich Pushkin.</i>",
+          "about": "<b>Height:</b> 550&nbsp;mm.  <br><b>Diameter of the base:</b> 300&nbsp;mm. <br><br><b>Stones:</b> quartzite, agate, diamonds, lazurite, cacholong, marble, quartz, onyx, aragonite, nephrite, topaz, sapphirine, uvarovite, crystal, coral. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2016.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/lebed/1.jpg",
+            "../img/stone-art/fairytales/lebed/2.jpg",
+            "../img/stone-art/fairytales/lebed/3.jpg",
+            "../img/stone-art/fairytales/lebed/4.jpg",
+            "../img/stone-art/fairytales/lebed/5.jpg",
+            "../img/stone-art/fairytales/lebed/6.jpg",
+            "../img/stone-art/fairytales/lebed/7.jpg",
+            "../img/stone-art/fairytales/lebed/8.jpg",
+            "../img/stone-art/fairytales/lebed/9.jpg",
+            "../img/stone-art/fairytales/lebed/10.jpg",
+            "../img/stone-art/fairytales/lebed/11.jpg",
+            "../img/stone-art/fairytales/lebed/12.jpg",
+            "../img/stone-art/fairytales/lebed/13.jpg",
+            "../img/stone-art/fairytales/lebed/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/lebed/preview/1.jpg",
+            "../img/stone-art/fairytales/lebed/preview/2.jpg",
+            "../img/stone-art/fairytales/lebed/preview/3.jpg",
+            "../img/stone-art/fairytales/lebed/preview/4.jpg",
+            "../img/stone-art/fairytales/lebed/preview/5.jpg",
+            "../img/stone-art/fairytales/lebed/preview/6.jpg",
+            "../img/stone-art/fairytales/lebed/preview/7.jpg",
+            "../img/stone-art/fairytales/lebed/preview/8.jpg",
+            "../img/stone-art/fairytales/lebed/preview/9.jpg",
+            "../img/stone-art/fairytales/lebed/preview/10.jpg",
+            "../img/stone-art/fairytales/lebed/preview/11.jpg",
+            "../img/stone-art/fairytales/lebed/preview/12.jpg",
+            "../img/stone-art/fairytales/lebed/preview/13.jpg",
+            "../img/stone-art/fairytales/lebed/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "The Snow Queen",
+          "img": "../img/stone-art/fairytales/snow/preview/1.jpg",
+          "description": "<i>Is an original fairy tale written by Hans Christian Andersen. The story centres on the struggle between good and evil.</i>",
+          "about": "<b>Height:</b> 500&nbsp;mm.  <br><b>Diameter of the base:</b> 350&nbsp;mm. <br><br><b>Stones:</b> quartz, rhodusite, chalcedony, diamonds, sapphire, topaz, cacholong, magnesite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/snow/1.jpg",
+            "../img/stone-art/fairytales/snow/2.jpg",
+            "../img/stone-art/fairytales/snow/3.jpg",
+            "../img/stone-art/fairytales/snow/4.jpg",
+            "../img/stone-art/fairytales/snow/5.jpg",
+            "../img/stone-art/fairytales/snow/6.jpg",
+            "../img/stone-art/fairytales/snow/7.jpg",
+            "../img/stone-art/fairytales/snow/8.jpg",
+            "../img/stone-art/fairytales/snow/9.jpg",
+            "../img/stone-art/fairytales/snow/10.jpg",
+            "../img/stone-art/fairytales/snow/11.jpg",
+            "../img/stone-art/fairytales/snow/12.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/snow/preview/1.jpg",
+            "../img/stone-art/fairytales/snow/preview/2.jpg",
+            "../img/stone-art/fairytales/snow/preview/3.jpg",
+            "../img/stone-art/fairytales/snow/preview/4.jpg",
+            "../img/stone-art/fairytales/snow/preview/5.jpg",
+            "../img/stone-art/fairytales/snow/preview/6.jpg",
+            "../img/stone-art/fairytales/snow/preview/7.jpg",
+            "../img/stone-art/fairytales/snow/preview/8.jpg",
+            "../img/stone-art/fairytales/snow/preview/9.jpg",
+            "../img/stone-art/fairytales/snow/preview/10.jpg",
+            "../img/stone-art/fairytales/snow/preview/11.jpg",
+            "../img/stone-art/fairytales/snow/preview/12.jpg"
+          ]
+        },
+        {
+          "name": "Kikimora",
+          "img": "../img/stone-art/fairytales/kikimora/preview/1.jpg",
+          "description": "<i>The house spirit in Slavic mythology causing harm and troubles.</i>",
+          "about": "<b>Height:</b> 440&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b> flint, petrified tree, lazurite, rhodonite, jasper, opal, carnelian, chalcedony, quartzite, malachite, nephrite, labradorite, crystal, fluorite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+          "imagesFull": [
+            "../img/stone-art/fairytales/kikimora/1.jpg",
+            "../img/stone-art/fairytales/kikimora/2.jpg",
+            "../img/stone-art/fairytales/kikimora/3.jpg",
+            "../img/stone-art/fairytales/kikimora/4.jpg",
+            "../img/stone-art/fairytales/kikimora/5.jpg",
+            "../img/stone-art/fairytales/kikimora/6.jpg",
+            "../img/stone-art/fairytales/kikimora/7.jpg",
+            "../img/stone-art/fairytales/kikimora/8.jpg",
+            "../img/stone-art/fairytales/kikimora/9.jpg",
+            "../img/stone-art/fairytales/kikimora/10.jpg",
+            "../img/stone-art/fairytales/kikimora/11.jpg",
+            "../img/stone-art/fairytales/kikimora/12.jpg",
+            "../img/stone-art/fairytales/kikimora/13.jpg",
+            "../img/stone-art/fairytales/kikimora/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/fairytales/kikimora/preview/1.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/2.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/3.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/4.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/5.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/6.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/7.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/8.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/9.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/10.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/11.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/12.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/13.jpg",
+            "../img/stone-art/fairytales/kikimora/preview/14.jpg"
+          ]
+        }
+      ]
+    },
+    "american": {
+      "pageName": "Великие американцы",
+      "pageItems" : [
+        {
+          "name": "Marilyn Monroe",
+          "img": "../img/stone-art/american/monro/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/monro/1.jpg",
+            "../img/stone-art/american/monro/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/monro/preview/1.jpg",
+            "../img/stone-art/american/monro/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Michael Jackson",
+          "img": "../img/stone-art/american/jackson/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/jackson/1.jpg",
+            "../img/stone-art/american/jackson/2.jpg",
+            "../img/stone-art/american/jackson/3.jpg",
+            "../img/stone-art/american/jackson/4.jpg",
+            "../img/stone-art/american/jackson/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/jackson/preview/1.jpg",
+            "../img/stone-art/american/jackson/preview/2.jpg",
+            "../img/stone-art/american/jackson/preview/3.jpg",
+            "../img/stone-art/american/jackson/preview/4.jpg",
+            "../img/stone-art/american/jackson/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Louis Armstrong",
+          "img": "../img/stone-art/american/amstrong/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/amstrong/1.jpg",
+            "../img/stone-art/american/amstrong/2.jpg",
+            "../img/stone-art/american/amstrong/3.jpg",
+            "../img/stone-art/american/amstrong/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/amstrong/preview/1.jpg",
+            "../img/stone-art/american/amstrong/preview/2.jpg",
+            "../img/stone-art/american/amstrong/preview/3.jpg",
+            "../img/stone-art/american/amstrong/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "B.B. King",
+          "img": "../img/stone-art/american/bobyking/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/bobyking/1.jpg",
+            "../img/stone-art/american/bobyking/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/bobyking/preview/1.jpg",
+            "../img/stone-art/american/bobyking/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Frank Sinatra",
+          "img": "../img/stone-art/american/sinatra/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/sinatra/1.jpg",
+            "../img/stone-art/american/sinatra/2.jpg",
+            "../img/stone-art/american/sinatra/3.jpg",
+            "../img/stone-art/american/sinatra/4.jpg",
+            "../img/stone-art/american/sinatra/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/sinatra/preview/1.jpg",
+            "../img/stone-art/american/sinatra/preview/2.jpg",
+            "../img/stone-art/american/sinatra/preview/3.jpg",
+            "../img/stone-art/american/sinatra/preview/4.jpg",
+            "../img/stone-art/american/sinatra/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Charles Chaplin",
+          "img": "../img/stone-art/american/chaplin/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/chaplin/1.jpg",
+            "../img/stone-art/american/chaplin/2.jpg",
+            "../img/stone-art/american/chaplin/3.jpg",
+            "../img/stone-art/american/chaplin/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/chaplin/preview/1.jpg",
+            "../img/stone-art/american/chaplin/preview/2.jpg",
+            "../img/stone-art/american/chaplin/preview/3.jpg",
+            "../img/stone-art/american/chaplin/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Elvis Presley",
+          "img": "../img/stone-art/american/elvis/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/elvis/1.jpg",
+            "../img/stone-art/american/elvis/2.jpg",
+            "../img/stone-art/american/elvis/3.jpg",
+            "../img/stone-art/american/elvis/4.jpg",
+            "../img/stone-art/american/elvis/5.jpg",
+            "../img/stone-art/american/elvis/6.jpg",
+            "../img/stone-art/american/elvis/7.jpg",
+            "../img/stone-art/american/elvis/8.jpg",
+            "../img/stone-art/american/elvis/9.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/elvis/preview/1.jpg",
+            "../img/stone-art/american/elvis/preview/2.jpg",
+            "../img/stone-art/american/elvis/preview/3.jpg",
+            "../img/stone-art/american/elvis/preview/4.jpg",
+            "../img/stone-art/american/elvis/preview/5.jpg",
+            "../img/stone-art/american/elvis/preview/6.jpg",
+            "../img/stone-art/american/elvis/preview/7.jpg",
+            "../img/stone-art/american/elvis/preview/8.jpg",
+            "../img/stone-art/american/elvis/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Parker",
+          "img": "../img/stone-art/american/parker/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/parker/1.jpg",
+            "../img/stone-art/american/parker/2.jpg",
+            "../img/stone-art/american/parker/3.jpg",
+            "../img/stone-art/american/parker/4.jpg",
+            "../img/stone-art/american/parker/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/parker/preview/1.jpg",
+            "../img/stone-art/american/parker/preview/2.jpg",
+            "../img/stone-art/american/parker/preview/3.jpg",
+            "../img/stone-art/american/parker/preview/4.jpg",
+            "../img/stone-art/american/parker/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Saksofonist",
+          "img": "../img/stone-art/american/saksofonist/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/saksofonist/1.jpg",
+            "../img/stone-art/american/saksofonist/2.jpg",
+            "../img/stone-art/american/saksofonist/3.jpg",
+            "../img/stone-art/american/saksofonist/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/saksofonist/preview/1.jpg",
+            "../img/stone-art/american/saksofonist/preview/2.jpg",
+            "../img/stone-art/american/saksofonist/preview/3.jpg",
+            "../img/stone-art/american/saksofonist/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "",
+          "img": "../img/stone-art/american/noname/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/american/noname/1.jpg",
+            "../img/stone-art/american/noname/2.jpg",
+            "../img/stone-art/american/noname/3.jpg",
+            "../img/stone-art/american/noname/4.jpg",
+            "../img/stone-art/american/noname/5.jpg",
+            "../img/stone-art/american/noname/6.jpg",
+            "../img/stone-art/american/noname/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/american/noname/preview/1.jpg",
+            "../img/stone-art/american/noname/preview/2.jpg",
+            "../img/stone-art/american/noname/preview/3.jpg",
+            "../img/stone-art/american/noname/preview/4.jpg",
+            "../img/stone-art/american/noname/preview/5.jpg",
+            "../img/stone-art/american/noname/preview/6.jpg",
+            "../img/stone-art/american/noname/preview/7.jpg"
+          ]
+        }
+      ]
+    }
+  }
+}

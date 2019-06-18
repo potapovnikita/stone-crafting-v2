@@ -1,0 +1,24 @@
+[
+    {
+        "name": "О камнерезном Доме",
+        "nameEng": "About stone-crafting House",
+        "link": ""
+    },{
+        "name": "Сокровища музеев </br> Коллекция дома",
+        "nameEng": "Museum treasures </br> House collection",
+        "link": "/collections"
+    },{
+        "name": "Новости дома </br> Выставки",
+        "nameEng": "House news </br> Shows",
+        "link": ""
+    },{
+        "name": "Приобрести уникальные вещи",
+        "nameEng": "Buy unique goods",
+        "link": ""
+    },
+    {
+        "name": "Услуги",
+        "nameEng": "Services",
+        "link": ""
+    }
+]

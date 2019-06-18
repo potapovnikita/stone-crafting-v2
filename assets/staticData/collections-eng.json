@@ -1,0 +1,1505 @@
+{
+  "pages": {
+    "stoneflowers": {
+      "pageName": "Stone flowers",
+      "pageItems" : [
+        {
+          "name": "Peony",
+          "img": "../img/stone-art/flowers/pion/preview/2.jpg",
+          "description": "Ruby, sapphire.  <br><br>Gold, silver.  <br><br>Pink opal, nephrite, quartz.  <br><br><b>Height</b> – 170&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/pion/2.jpg",
+            "../img/stone-art/flowers/pion/3.jpg",
+            "../img/stone-art/flowers/pion/4.jpg",
+            "../img/stone-art/flowers/pion/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/pion/preview/2.jpg",
+            "../img/stone-art/flowers/pion/preview/3.jpg",
+            "../img/stone-art/flowers/pion/preview/4.jpg",
+            "../img/stone-art/flowers/pion/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Orchid",
+          "img": "../img/stone-art/flowers/orhideya2/preview/11.jpg",
+          "description": "Amethyst. <br><br> Gold, silver. <br><br> Nephrite, citrine, crystal. <br><br><b>Height</b> – 120&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya2/11.jpg",
+            "../img/stone-art/flowers/orhideya2/12.jpg",
+            "../img/stone-art/flowers/orhideya2/13.jpg",
+            "../img/stone-art/flowers/orhideya2/14.jpg",
+            "../img/stone-art/flowers/orhideya2/15.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya2/preview/11.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/12.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/13.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/14.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Poppy",
+          "img": "../img/stone-art/flowers/machok/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Citrine, nephrite, quartz. <br><br> <b>Height</b> – 230&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/machok/2.jpg",
+            "../img/stone-art/flowers/machok/3.jpg",
+            "../img/stone-art/flowers/machok/4.jpg",
+            "../img/stone-art/flowers/machok/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/machok/preview/2.jpg",
+            "../img/stone-art/flowers/machok/preview/3.jpg",
+            "../img/stone-art/flowers/machok/preview/4.jpg",
+            "../img/stone-art/flowers/machok/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Anemone",
+          "img": "../img/stone-art/flowers/veter/preview/2.jpg",
+          "description": "Sapphire. <br><br>Gold, silver. <br><br>Pink opal, nephrite, quartz. <br><br><b>Height</b> – 130&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/veter/2.jpg",
+            "../img/stone-art/flowers/veter/3.jpg",
+            "../img/stone-art/flowers/veter/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/veter/preview/2.jpg",
+            "../img/stone-art/flowers/veter/preview/3.jpg",
+            "../img/stone-art/flowers/veter/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Loach",
+          "img": "../img/stone-art/flowers/viun/preview/1.jpg",
+          "description": "Garnet. <br><br> Gold, silver. <br><br> Nephrite, agate, jasper. <br><br> <b>Height</b> – 155&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/viun/1.jpg",
+            "../img/stone-art/flowers/viun/2.jpg",
+            "../img/stone-art/flowers/viun/3.jpg",
+            "../img/stone-art/flowers/viun/4.jpg",
+            "../img/stone-art/flowers/viun/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/viun/preview/1.jpg",
+            "../img/stone-art/flowers/viun/preview/2.jpg",
+            "../img/stone-art/flowers/viun/preview/3.jpg",
+            "../img/stone-art/flowers/viun/preview/4.jpg",
+            "../img/stone-art/flowers/viun/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Buttercup",
+          "img": "../img/stone-art/flowers/lutik/preview/3.jpg",
+          "description": "Chrysolite. <br><br> Gold, silver. <br><br> Nephrite, citrine, obsidian. <br><br> <b>Height</b> – 175&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/lutik/2.jpg",
+            "../img/stone-art/flowers/lutik/3.jpg",
+            "../img/stone-art/flowers/lutik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/lutik/preview/2.jpg",
+            "../img/stone-art/flowers/lutik/preview/3.jpg",
+            "../img/stone-art/flowers/lutik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Dogrose",
+          "img": "../img/stone-art/flowers/shipovnik/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Chalcedony, nephrite, quartzite, jasper. <br><br> <b>Height</b> – 170&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/shipovnik/2.jpg",
+            "../img/stone-art/flowers/shipovnik/3.jpg",
+            "../img/stone-art/flowers/shipovnik/4.jpg",
+            "../img/stone-art/flowers/shipovnik/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/shipovnik/preview/2.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/3.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/4.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Pansy",
+          "img": "../img/stone-art/flowers/annglazki/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Pink opal, nephrite, citrine, cacholong, quartz. <br><br> <b>Height</b> – 130&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/annglazki/2.jpg",
+            "../img/stone-art/flowers/annglazki/3.jpg",
+            "../img/stone-art/flowers/annglazki/4.jpg",
+            "../img/stone-art/flowers/annglazki/5.jpg",
+            "../img/stone-art/flowers/annglazki/6.jpg",
+            "../img/stone-art/flowers/annglazki/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/annglazki/preview/2.jpg",
+            "../img/stone-art/flowers/annglazki/preview/3.jpg",
+            "../img/stone-art/flowers/annglazki/preview/4.jpg",
+            "../img/stone-art/flowers/annglazki/preview/5.jpg",
+            "../img/stone-art/flowers/annglazki/preview/6.jpg",
+            "../img/stone-art/flowers/annglazki/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Blackberry",
+          "img": "../img/stone-art/flowers/ezhevika1/preview/11.jpg",
+          "description": "Gold, silver. <br><br> Nephrite, chalcedony, quartz, agate, obsidian. <br><br> <b>Height</b> – 198&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ezhevika1/11.jpg",
+            "../img/stone-art/flowers/ezhevika1/12.jpg",
+            "../img/stone-art/flowers/ezhevika1/13.jpg",
+            "../img/stone-art/flowers/ezhevika1/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ezhevika1/preview/11.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/12.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/13.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "Bouquet with daisies",
+          "img": "../img/stone-art/flowers/romashki/preview/2.jpg",
+          "description": "Sapphire, ruby. <br><br> Gold, silver. <br><br> Nephrite, cacholong, sapphirine, quartz, agate. <br><br> <b>Height</b> – 180&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/romashki/2.jpg",
+            "../img/stone-art/flowers/romashki/3.jpg",
+            "../img/stone-art/flowers/romashki/4.jpg",
+            "../img/stone-art/flowers/romashki/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/romashki/preview/2.jpg",
+            "../img/stone-art/flowers/romashki/preview/3.jpg",
+            "../img/stone-art/flowers/romashki/preview/4.jpg",
+            "../img/stone-art/flowers/romashki/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Bouquet with<br>forget-me-nots",
+          "img": "../img/stone-art/flowers/bouquet/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Turquoise, nephrite, cacholong, lazurite, smalt, quartz. <br><br> <b>Height</b> – 165&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/bouquet/2.jpg",
+            "../img/stone-art/flowers/bouquet/3.jpg",
+            "../img/stone-art/flowers/bouquet/4.jpg",
+            "../img/stone-art/flowers/bouquet/5.jpg",
+            "../img/stone-art/flowers/bouquet/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/bouquet/preview/2.jpg",
+            "../img/stone-art/flowers/bouquet/preview/3.jpg",
+            "../img/stone-art/flowers/bouquet/preview/4.jpg",
+            "../img/stone-art/flowers/bouquet/preview/5.jpg",
+            "../img/stone-art/flowers/bouquet/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "Cherry",
+          "img": "../img/stone-art/flowers/vishnya/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Jasper, nephrite, quartz. <br><br> <b>Height</b> – 215&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/vishnya/2.jpg",
+            "../img/stone-art/flowers/vishnya/3.jpg",
+            "../img/stone-art/flowers/vishnya/4.jpg",
+            "../img/stone-art/flowers/vishnya/5.jpg",
+            "../img/stone-art/flowers/vishnya/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/vishnya/preview/2.jpg",
+            "../img/stone-art/flowers/vishnya/preview/3.jpg",
+            "../img/stone-art/flowers/vishnya/preview/4.jpg",
+            "../img/stone-art/flowers/vishnya/preview/5.jpg",
+            "../img/stone-art/flowers/vishnya/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "Rowan",
+          "img": "../img/stone-art/flowers/ryabina/preview/1.jpg",
+          "description": "Gold, silver. <br><br> Smalt, nephrite, quartz. <br><br> <b>Height</b> – 140&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ryabina/1.jpg",
+            "../img/stone-art/flowers/ryabina/2.jpg",
+            "../img/stone-art/flowers/ryabina/3.jpg",
+            "../img/stone-art/flowers/ryabina/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ryabina/preview/1.jpg",
+            "../img/stone-art/flowers/ryabina/preview/2.jpg",
+            "../img/stone-art/flowers/ryabina/preview/3.jpg",
+            "../img/stone-art/flowers/ryabina/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Blackberry",
+          "img": "../img/stone-art/flowers/ezhevika/preview/6.jpg",
+          "description": "Gold. <br><br> Nephrite, obsidian, quartz. <br><br> <b>Height</b> – 170&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ezhevika/6.jpg",
+            "../img/stone-art/flowers/ezhevika/7.jpg",
+            "../img/stone-art/flowers/ezhevika/8.jpg",
+            "../img/stone-art/flowers/ezhevika/9.jpg"
+
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ezhevika/preview/6.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/7.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/8.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Blueberry",
+          "img": "../img/stone-art/flowers/chernika/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Nephrite, rhodusite, quartz. <br><br> <b>Height</b> – 195&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/chernika/2.jpg",
+            "../img/stone-art/flowers/chernika/3.jpg",
+            "../img/stone-art/flowers/chernika/4.jpg"
+
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/chernika/preview/2.jpg",
+            "../img/stone-art/flowers/chernika/preview/3.jpg",
+            "../img/stone-art/flowers/chernika/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Pear",
+          "img": "../img/stone-art/flowers/grusha1/preview/6.jpg",
+          "description": "Gold, silver. <br><br> Garnet, nephrite, sapphirine, quartz. <br><br> <b>Height</b> – 185&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/grusha1/6.jpg",
+            "../img/stone-art/flowers/grusha1/7.jpg",
+            "../img/stone-art/flowers/grusha1/8.jpg",
+            "../img/stone-art/flowers/grusha1/9.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/grusha1/preview/6.jpg",
+            "../img/stone-art/flowers/grusha1/preview/7.jpg",
+            "../img/stone-art/flowers/grusha1/preview/8.jpg",
+            "../img/stone-art/flowers/grusha1/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Sakura",
+          "img": "../img/stone-art/flowers/sacura/preview/2.jpg",
+          "description": "Gold, silver. <br><br> Pink opal, nephrite, jasper. <br><br> <b>Height</b> – 180&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/sacura/2.jpg",
+            "../img/stone-art/flowers/sacura/3.jpg",
+            "../img/stone-art/flowers/sacura/4.jpg",
+            "../img/stone-art/flowers/sacura/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/sacura/preview/2.jpg",
+            "../img/stone-art/flowers/sacura/preview/3.jpg",
+            "../img/stone-art/flowers/sacura/preview/4.jpg",
+            "../img/stone-art/flowers/sacura/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "The Scarlet Flower",
+          "img": "../img/stone-art/flowers/alenkiy/preview/2.jpg",
+          "description": "Sapphire, ruby. <br><br> Spinel. <br><br> Gold, silver. <br><br> Opal, nephrite. <br><br> <b>Height</b> – 210&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/alenkiy/2.jpg",
+            "../img/stone-art/flowers/alenkiy/3.jpg",
+            "../img/stone-art/flowers/alenkiy/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/alenkiy/preview/2.jpg",
+            "../img/stone-art/flowers/alenkiy/preview/3.jpg",
+            "../img/stone-art/flowers/alenkiy/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Orchid",
+          "img": "../img/stone-art/flowers/orhideya/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Agate, rhodonite, quartz. <br><br> <b>Height</b> – 300&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya/2.jpg",
+            "../img/stone-art/flowers/orhideya/3.jpg",
+            "../img/stone-art/flowers/orhideya/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya/preview/2.jpg",
+            "../img/stone-art/flowers/orhideya/preview/3.jpg",
+            "../img/stone-art/flowers/orhideya/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Iris",
+          "img": "../img/stone-art/flowers/iris/preview/2.jpg",
+          "description": "Ruby. <br><br> Gold, silver. <br><br> Chalcedony, agate, quartz. <br><br> <b>Height</b> – 300&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/iris/2.jpg",
+            "../img/stone-art/flowers/iris/3.jpg",
+            "../img/stone-art/flowers/iris/4.jpg",
+            "../img/stone-art/flowers/iris/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/iris/preview/2.jpg",
+            "../img/stone-art/flowers/iris/preview/3.jpg",
+            "../img/stone-art/flowers/iris/preview/4.jpg",
+            "../img/stone-art/flowers/iris/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Rose",
+          "img": "../img/stone-art/flowers/rose/preview/1.jpg",
+          "description": "Sapphire, ruby. <br><br> Gold, silver. <br><br> Opal, quartz, nephrite, agate. <br><br> <b>Height</b> – 375&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/rose/1.jpg",
+            "../img/stone-art/flowers/rose/2.jpg",
+            "../img/stone-art/flowers/rose/3.jpg",
+            "../img/stone-art/flowers/rose/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/rose/preview/1.jpg",
+            "../img/stone-art/flowers/rose/preview/2.jpg",
+            "../img/stone-art/flowers/rose/preview/3.jpg",
+            "../img/stone-art/flowers/rose/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Barberry",
+          "img": "../img/stone-art/flowers/barbaris/preview/2.jpg",
+          "description": "Gold, silver. <br><br> Chalcedony, nephrite, quartz, jasper. <br><br> <b>Height</b> – 240&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/barbaris/2.jpg",
+            "../img/stone-art/flowers/barbaris/3.jpg",
+            "../img/stone-art/flowers/barbaris/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/barbaris/preview/2.jpg",
+            "../img/stone-art/flowers/barbaris/preview/3.jpg",
+            "../img/stone-art/flowers/barbaris/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Peach",
+          "img": "../img/stone-art/flowers/persik/preview/1.jpg",
+          "description": "Opal, crystal, diamonds, rubies. <br><br> Gold, silver. <br><br> Obsidian, nephrite. <br><br> <b>Height</b> – 230&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/persik/1.jpg",
+            "../img/stone-art/flowers/persik/2.jpg",
+            "../img/stone-art/flowers/persik/3.jpg",
+            "../img/stone-art/flowers/persik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/persik/preview/1.jpg",
+            "../img/stone-art/flowers/persik/preview/2.jpg",
+            "../img/stone-art/flowers/persik/preview/3.jpg",
+            "../img/stone-art/flowers/persik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Rose",
+          "img": "../img/stone-art/flowers/rose1/preview/6.jpg",
+          "description": "Gold, silver. <br><br> Nephrite, quartz. <br><br> <b>Height</b> – 195&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/rose1/6.jpg",
+            "../img/stone-art/flowers/rose1/7.jpg",
+            "../img/stone-art/flowers/rose1/8.jpg",
+            "../img/stone-art/flowers/rose1/9.jpg",
+            "../img/stone-art/flowers/rose1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/rose1/preview/6.jpg",
+            "../img/stone-art/flowers/rose1/preview/7.jpg",
+            "../img/stone-art/flowers/rose1/preview/8.jpg",
+            "../img/stone-art/flowers/rose1/preview/9.jpg",
+            "../img/stone-art/flowers/rose1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Sakura",
+          "img": "../img/stone-art/flowers/sacura1/preview/7.jpg",
+          "description": "Gold, silver. <br><br> Pink opal, cacholong, agate, jasper. <br><br> <b>Height</b> – 165&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/sacura1/7.jpg",
+            "../img/stone-art/flowers/sacura1/8.jpg",
+            "../img/stone-art/flowers/sacura1/9.jpg",
+            "../img/stone-art/flowers/sacura1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/sacura1/preview/7.jpg",
+            "../img/stone-art/flowers/sacura1/preview/8.jpg",
+            "../img/stone-art/flowers/sacura1/preview/9.jpg",
+            "../img/stone-art/flowers/sacura1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Orchid",
+          "img": "../img/stone-art/flowers/orhideya1/preview/6.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Nephrite, lazurite, obsidian. <br><br> <b>Height</b> – 230&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya1/6.jpg",
+            "../img/stone-art/flowers/orhideya1/7.jpg",
+            "../img/stone-art/flowers/orhideya1/8.jpg",
+            "../img/stone-art/flowers/orhideya1/9.jpg",
+            "../img/stone-art/flowers/orhideya1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya1/preview/6.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/7.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/8.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/9.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Pear",
+          "img": "../img/stone-art/flowers/grusha/preview/1.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Nephrite, chalcedony, jasper, agate. <br><br> <b>Height</b> – 165&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/grusha/1.jpg",
+            "../img/stone-art/flowers/grusha/2.jpg",
+            "../img/stone-art/flowers/grusha/3.jpg",
+            "../img/stone-art/flowers/grusha/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/grusha/preview/1.jpg",
+            "../img/stone-art/flowers/grusha/preview/2.jpg",
+            "../img/stone-art/flowers/grusha/preview/3.jpg",
+            "../img/stone-art/flowers/grusha/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Balance",
+          "img": "../img/stone-art/flowers/frog1/preview/13.jpg",
+          "description": "Gold, silver. <br><br> Garnet, nephrite, quartzite. <br><br> <b>Height</b> – 140&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog1/13.jpg",
+            "../img/stone-art/flowers/frog1/14.jpg",
+            "../img/stone-art/flowers/frog1/15.jpg",
+            "../img/stone-art/flowers/frog1/16.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog1/preview/13.jpg",
+            "../img/stone-art/flowers/frog1/preview/14.jpg",
+            "../img/stone-art/flowers/frog1/preview/15.jpg",
+            "../img/stone-art/flowers/frog1/preview/16.jpg"
+          ]
+        },
+        {
+          "name": "Frog",
+          "img": "../img/stone-art/flowers/frog/preview/2.jpg",
+          "description": "Silver. <br><br> Tiger’s eye, nephrite. <br><br> <b>Height</b> – 95&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog/2.jpg",
+            "../img/stone-art/flowers/frog/3.jpg",
+            "../img/stone-art/flowers/frog/4.jpg",
+            "../img/stone-art/flowers/frog/5.jpg",
+            "../img/stone-art/flowers/frog/8.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog/preview/2.jpg",
+            "../img/stone-art/flowers/frog/preview/3.jpg",
+            "../img/stone-art/flowers/frog/preview/4.jpg",
+            "../img/stone-art/flowers/frog/preview/5.jpg",
+            "../img/stone-art/flowers/frog/preview/8.jpg"
+          ]
+        },
+        {
+          "name": "The Frog Princess",
+          "img": "../img/stone-art/flowers/frog2/preview/6.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Heliotrope, nephrite, cacholong, quartzite. <br><br> <b>Height</b> – 170&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog2/6.jpg",
+            "../img/stone-art/flowers/frog2/7.jpg",
+            "../img/stone-art/flowers/frog2/9.jpg",
+            "../img/stone-art/flowers/frog2/10.jpg",
+            "../img/stone-art/flowers/frog2/11.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog2/preview/6.jpg",
+            "../img/stone-art/flowers/frog2/preview/7.jpg",
+            "../img/stone-art/flowers/frog2/preview/9.jpg",
+            "../img/stone-art/flowers/frog2/preview/10.jpg",
+            "../img/stone-art/flowers/frog2/preview/11.jpg"
+          ]
+        },
+        {
+          "name": "Cactus",
+          "img": "../img/stone-art/flowers/cactus/preview/2.jpg",
+          "description": "Gold, silver. <br><br> Nephrite, jasper, pink opal. <br><br> <b>Height</b> – 105&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/cactus/2.jpg",
+            "../img/stone-art/flowers/cactus/3.jpg",
+            "../img/stone-art/flowers/cactus/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/cactus/preview/2.jpg",
+            "../img/stone-art/flowers/cactus/preview/3.jpg",
+            "../img/stone-art/flowers/cactus/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "The little prince",
+          "img": "../img/stone-art/flowers/prince/preview/2.jpg",
+          "description": "Sapphire. <br><br> Gold, silver. <br><br> Lazurite, quartz. <br><br> <b>Height</b> – 160&nbsp;mm.",
+          "imagesFull": [
+            "../img/stone-art/flowers/prince/2.jpg",
+            "../img/stone-art/flowers/prince/3.jpg",
+            "../img/stone-art/flowers/prince/4.jpg",
+            "../img/stone-art/flowers/prince/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/prince/preview/2.jpg",
+            "../img/stone-art/flowers/prince/preview/3.jpg",
+            "../img/stone-art/flowers/prince/preview/4.jpg",
+            "../img/stone-art/flowers/prince/preview/5.jpg"
+          ]
+        }
+      ]
+    },
+    "nugget": {
+      "pageName": "Fantasy cut",
+      "pageItems" : [
+        {
+          "name": "Antique",
+          "img": "../img/stone-art/ogranka/antik/preview/1.jpg",
+          "description": "Quartz. <br><br> 4526 ct. <br><br> 100 x 100 x 85 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/antik/1.jpg",
+            "../img/stone-art/ogranka/antik/2.jpg",
+            "../img/stone-art/ogranka/antik/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/antik/preview/1.jpg",
+            "../img/stone-art/ogranka/antik/preview/2.jpg",
+            "../img/stone-art/ogranka/antik/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Bow",
+          "img": "../img/stone-art/ogranka/bantik/preview/1.jpg",
+          "description": "Quartz. <br><br> 740 ct. <br><br> 53 x 91 x 32 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/bantik/1.jpg",
+            "../img/stone-art/ogranka/bantik/2.jpg",
+            "../img/stone-art/ogranka/bantik/3.jpg",
+            "../img/stone-art/ogranka/bantik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/bantik/preview/1.jpg",
+            "../img/stone-art/ogranka/bantik/preview/2.jpg",
+            "../img/stone-art/ogranka/bantik/preview/3.jpg",
+            "../img/stone-art/ogranka/bantik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Moth",
+          "img": "../img/stone-art/ogranka/babochka/preview/1.jpg",
+          "description": "Smoky quartz. <br><br> 610 ct. <br><br> 45 x 88 x 30 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/babochka/1.jpg",
+            "../img/stone-art/ogranka/babochka/2.jpg",
+            "../img/stone-art/ogranka/babochka/3.jpg",
+            "../img/stone-art/ogranka/babochka/4.jpg",
+            "../img/stone-art/ogranka/babochka/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/babochka/preview/1.jpg",
+            "../img/stone-art/ogranka/babochka/preview/2.jpg",
+            "../img/stone-art/ogranka/babochka/preview/3.jpg",
+            "../img/stone-art/ogranka/babochka/preview/4.jpg",
+            "../img/stone-art/ogranka/babochka/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Citrine",
+          "img": "../img/stone-art/ogranka/citrin/preview/1.jpg",
+          "description": "Citrine. <br><br> 7565 ct. <br><br> 124 x 124 x 81 mm. <br><br> Modified Portuguese faceting, internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/citrin/1.jpg",
+            "../img/stone-art/ogranka/citrin/2.jpg",
+            "../img/stone-art/ogranka/citrin/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/citrin/preview/1.jpg",
+            "../img/stone-art/ogranka/citrin/preview/2.jpg",
+            "../img/stone-art/ogranka/citrin/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Two me",
+          "img": "../img/stone-art/ogranka/dvaya/preview/1.jpg",
+          "description": "<i> Eternal theme of the struggle of light and darkness, good and evil. Every person has it. </i>   <br><br> Quartz, citrine. <br><br> 2019 ct. <br><br> 80 x 91 x 50 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/dvaya/1.jpg",
+            "../img/stone-art/ogranka/dvaya/2.jpg",
+            "../img/stone-art/ogranka/dvaya/3.jpg",
+            "../img/stone-art/ogranka/dvaya/4.jpg",
+            "../img/stone-art/ogranka/dvaya/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/dvaya/preview/1.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/2.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/3.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/4.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Heart of beauty",
+          "img": "../img/stone-art/ogranka/hurt/preview/1.jpg",
+          "description": "Striped citrine. <br><br> 2704 ct. <br><br> 83 x 94 x 67 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/hurt/1.jpg",
+            "../img/stone-art/ogranka/hurt/2.jpg",
+            "../img/stone-art/ogranka/hurt/3.jpg",
+            "../img/stone-art/ogranka/hurt/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/hurt/preview/1.jpg",
+            "../img/stone-art/ogranka/hurt/preview/2.jpg",
+            "../img/stone-art/ogranka/hurt/preview/3.jpg",
+            "../img/stone-art/ogranka/hurt/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Lily",
+          "img": "../img/stone-art/ogranka/liliya/preview/1.jpg",
+          "description": "Citrine. <br><br>1976 ct. <br><br> 103 x 91 x 61 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/liliya/1.jpg",
+            "../img/stone-art/ogranka/liliya/2.jpg",
+            "../img/stone-art/ogranka/liliya/3.jpg",
+            "../img/stone-art/ogranka/liliya/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/liliya/preview/1.jpg",
+            "../img/stone-art/ogranka/liliya/preview/2.jpg",
+            "../img/stone-art/ogranka/liliya/preview/3.jpg",
+            "../img/stone-art/ogranka/liliya/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Lotus",
+          "img": "../img/stone-art/ogranka/lotos/preview/1.jpg",
+          "description": "Quartz, citrine. <br><br> 948 ct. <br><br> 77 x 78 x 35 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/lotos/1.jpg",
+            "../img/stone-art/ogranka/lotos/2.jpg",
+            "../img/stone-art/ogranka/lotos/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/lotos/preview/1.jpg",
+            "../img/stone-art/ogranka/lotos/preview/2.jpg",
+            "../img/stone-art/ogranka/lotos/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Curiosity",
+          "img": "../img/stone-art/ogranka/lubopitstvo/preview/1.jpg",
+          "description": "Smoky quartz. <br><br> 1041 ct. <br><br> 103 x 55 x 33 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/lubopitstvo/1.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/2.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/3.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/lubopitstvo/preview/1.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/2.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/3.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Ray of light",
+          "img": "../img/stone-art/ogranka/luchsveta/preview/1.jpg",
+          "description": "Quartz, citrine. <br><br> 1022 ct. <br><br> 68 x 69 x 41 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/luchsveta/1.jpg",
+            "../img/stone-art/ogranka/luchsveta/2.jpg",
+            "../img/stone-art/ogranka/luchsveta/3.jpg",
+            "../img/stone-art/ogranka/luchsveta/4.jpg",
+            "../img/stone-art/ogranka/luchsveta/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/luchsveta/preview/1.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/2.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/3.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/4.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Maltese cross",
+          "img": "../img/stone-art/ogranka/mkrest/preview/1.jpg",
+          "description": "Citrine. <br><br> 5545 ct. <br><br> 115 x 115 x 87 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/mkrest/1.jpg",
+            "../img/stone-art/ogranka/mkrest/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/mkrest/preview/1.jpg",
+            "../img/stone-art/ogranka/mkrest/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Still-life",
+          "img": "../img/stone-art/ogranka/naturmort1/preview/1.jpg",
+          "description": "Smoky quartz. <br><br> 1199 ct. <br><br> 109 x 50 x 49 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/naturmort1/1.jpg",
+            "../img/stone-art/ogranka/naturmort1/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/naturmort1/preview/1.jpg",
+            "../img/stone-art/ogranka/naturmort1/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Still-life",
+          "img": "../img/stone-art/ogranka/naturmort2/preview/1.jpg",
+          "description": "Polychrome quartz. <br><br> 3008 ct. <br><br> 115 x 73 x 73 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/naturmort2/1.jpg",
+            "../img/stone-art/ogranka/naturmort2/2.jpg",
+            "../img/stone-art/ogranka/naturmort2/3.jpg",
+            "../img/stone-art/ogranka/naturmort2/4.jpg",
+            "../img/stone-art/ogranka/naturmort2/5.jpg",
+            "../img/stone-art/ogranka/naturmort2/6.jpg",
+            "../img/stone-art/ogranka/naturmort2/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/naturmort2/preview/1.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/2.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/3.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/4.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/5.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/6.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "UFO",
+          "img": "../img/stone-art/ogranka/nlo/preview/1.jpg",
+          "description": "Smoky quartz. <br><br> 1855 ct. <br><br> 90 x 90 x 47 mm. <br><br> Internal faceting. <br><br> Stand: cupronickel, gilded gold, jasper.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/nlo/1.jpg",
+            "../img/stone-art/ogranka/nlo/2.jpg",
+            "../img/stone-art/ogranka/nlo/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/nlo/preview/1.jpg",
+            "../img/stone-art/ogranka/nlo/preview/2.jpg",
+            "../img/stone-art/ogranka/nlo/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Old man",
+          "img": "../img/stone-art/ogranka/old/preview/1.jpg",
+          "description": "Quartz with natural inclusions. <br><br> 2230 ct. <br><br> 94 x 86 x 41 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/old/1.jpg",
+            "../img/stone-art/ogranka/old/2.jpg",
+            "../img/stone-art/ogranka/old/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/old/preview/1.jpg",
+            "../img/stone-art/ogranka/old/preview/2.jpg",
+            "../img/stone-art/ogranka/old/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Reflection",
+          "img": "../img/stone-art/ogranka/otrazhenie/preview/1.jpg",
+          "description": "Quartz with inclusion of a crystal gersdorffite. <br><br> 1056 ct. <br><br> 64 x 64 x 51 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/otrazhenie/1.jpg",
+            "../img/stone-art/ogranka/otrazhenie/2.jpg",
+            "../img/stone-art/ogranka/otrazhenie/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/otrazhenie/preview/1.jpg",
+            "../img/stone-art/ogranka/otrazhenie/preview/2.jpg",
+            "../img/stone-art/ogranka/otrazhenie/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Web",
+          "img": "../img/stone-art/ogranka/pautina/preview/1.jpg",
+          "description": "Striped quartz. <br><br> 1735 ct. <br><br> 82 x 82 x 44 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/pautina/1.jpg",
+            "../img/stone-art/ogranka/pautina/2.jpg",
+            "../img/stone-art/ogranka/pautina/3.jpg",
+            "../img/stone-art/ogranka/pautina/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/pautina/preview/1.jpg",
+            "../img/stone-art/ogranka/pautina/preview/2.jpg",
+            "../img/stone-art/ogranka/pautina/preview/3.jpg",
+            "../img/stone-art/ogranka/pautina/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Dawn",
+          "img": "../img/stone-art/ogranka/rassvet/preview/1.jpg",
+          "description": "Polychromatic quartz. <br><br> 1644 ct. <br><br> 76 x 88 x 42 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/rassvet/1.jpg",
+            "../img/stone-art/ogranka/rassvet/2.jpg",
+            "../img/stone-art/ogranka/rassvet/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/rassvet/preview/1.jpg",
+            "../img/stone-art/ogranka/rassvet/preview/2.jpg",
+            "../img/stone-art/ogranka/rassvet/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Chamomile",
+          "img": "../img/stone-art/ogranka/romashka/preview/1.jpg",
+          "description": "Citrine with fine pyrite crystals. <br><br> 2738 ct. <br><br> 92 x 92 x 66 mm. <br><br>Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/romashka/1.jpg",
+            "../img/stone-art/ogranka/romashka/2.jpg",
+            "../img/stone-art/ogranka/romashka/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/romashka/preview/1.jpg",
+            "../img/stone-art/ogranka/romashka/preview/2.jpg",
+            "../img/stone-art/ogranka/romashka/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Passion for Shakespeare",
+          "img": "../img/stone-art/ogranka/strast/preview/1.jpg",
+          "description": "Quartz, citrine. <br><br> 1384 ct. <br><br> 68 x 100 x 43 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/strast/1.jpg",
+            "../img/stone-art/ogranka/strast/2.jpg",
+            "../img/stone-art/ogranka/strast/3.jpg",
+            "../img/stone-art/ogranka/strast/4.jpg",
+            "../img/stone-art/ogranka/strast/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/strast/preview/1.jpg",
+            "../img/stone-art/ogranka/strast/preview/2.jpg",
+            "../img/stone-art/ogranka/strast/preview/3.jpg",
+            "../img/stone-art/ogranka/strast/preview/4.jpg",
+            "../img/stone-art/ogranka/strast/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "While the candle is burning",
+          "img": "../img/stone-art/ogranka/svecha/preview/1.jpg",
+          "description": "Polychrome quartz. <br><br> 756 ct. <br><br> 100 x 41 x 25 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/svecha/1.jpg",
+            "../img/stone-art/ogranka/svecha/2.jpg",
+            "../img/stone-art/ogranka/svecha/3.jpg",
+            "../img/stone-art/ogranka/svecha/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/svecha/preview/1.jpg",
+            "../img/stone-art/ogranka/svecha/preview/2.jpg",
+            "../img/stone-art/ogranka/svecha/preview/3.jpg",
+            "../img/stone-art/ogranka/svecha/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Trinity",
+          "img": "../img/stone-art/ogranka/triedin/preview/1.jpg",
+          "description": "<i>The main idea of the stone is the symbol of the Trinity.</i> <br><br> Citrine. <br><br> 2120 ct. <br><br> 81 x 81 x 70 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/triedin/1.jpg",
+            "../img/stone-art/ogranka/triedin/2.jpg",
+            "../img/stone-art/ogranka/triedin/3.jpg",
+            "../img/stone-art/ogranka/triedin/4.jpg",
+            "../img/stone-art/ogranka/triedin/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/triedin/preview/1.jpg",
+            "../img/stone-art/ogranka/triedin/preview/2.jpg",
+            "../img/stone-art/ogranka/triedin/preview/3.jpg",
+            "../img/stone-art/ogranka/triedin/preview/4.jpg",
+            "../img/stone-art/ogranka/triedin/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Shamrock",
+          "img": "../img/stone-art/ogranka/trilist/preview/1.jpg",
+          "description": "Citrine. <br><br> 342 ct. <br><br> 59 x 55 x 32 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/trilist/1.jpg",
+            "../img/stone-art/ogranka/trilist/2.jpg",
+            "../img/stone-art/ogranka/trilist/3.jpg",
+            "../img/stone-art/ogranka/trilist/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/trilist/preview/1.jpg",
+            "../img/stone-art/ogranka/trilist/preview/2.jpg",
+            "../img/stone-art/ogranka/trilist/preview/3.jpg",
+            "../img/stone-art/ogranka/trilist/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Trilliant",
+          "img": "../img/stone-art/ogranka/trilliant/preview/1.jpg",
+          "description": "Citrine. <br><br> 5483 ct. <br><br> 129 x 129 x 78 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/trilliant/1.jpg",
+            "../img/stone-art/ogranka/trilliant/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/trilliant/preview/1.jpg",
+            "../img/stone-art/ogranka/trilliant/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Prisoner",
+          "img": "../img/stone-art/ogranka/uznik/preview/1.jpg",
+          "description": "Striped quartz. <br><br> 994 ct. <br><br> 62 x 75 x 37 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/uznik/1.jpg",
+            "../img/stone-art/ogranka/uznik/2.jpg",
+            "../img/stone-art/ogranka/uznik/3.jpg",
+            "../img/stone-art/ogranka/uznik/4.jpg",
+            "../img/stone-art/ogranka/uznik/5.jpg",
+            "../img/stone-art/ogranka/uznik/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/uznik/preview/1.jpg",
+            "../img/stone-art/ogranka/uznik/preview/2.jpg",
+            "../img/stone-art/ogranka/uznik/preview/3.jpg",
+            "../img/stone-art/ogranka/uznik/preview/4.jpg",
+            "../img/stone-art/ogranka/uznik/preview/5.jpg",
+            "../img/stone-art/ogranka/uznik/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "The star of Bethlehem",
+          "img": "../img/stone-art/ogranka/vifliem/preview/1.jpg",
+          "description": "Quartz. <br><br> 1705 ct. <br><br> 76 x 76 x 51 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/vifliem/1.jpg",
+            "../img/stone-art/ogranka/vifliem/2.jpg",
+            "../img/stone-art/ogranka/vifliem/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vifliem/preview/1.jpg",
+            "../img/stone-art/ogranka/vifliem/preview/2.jpg",
+            "../img/stone-art/ogranka/vifliem/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Revival",
+          "img": "../img/stone-art/ogranka/vozvrashenie/preview/1.jpg",
+          "description": "<i> The idea was given by the drawing of a granddaughter. Partially facet piece of quartz. </i>    <br><br> 7325 ct. <br><br> 108 x 121 x 80 mm. <br><br> Internal faceting.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/vozvrashenie/1.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/2.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/3.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/4.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vozvrashenie/preview/1.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/2.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/3.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/4.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Third Gates",
+          "img": "../img/stone-art/ogranka/vrata/preview/1.jpg",
+          "description": "<i> Belief that there is an additional option at the end of the path…</i>  <br><br> Polychrome quartz. <br><br> 1615 ct. <br><br> 79 x 79 x 47 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/vrata/1.jpg",
+            "../img/stone-art/ogranka/vrata/2.jpg",
+            "../img/stone-art/ogranka/vrata/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vrata/preview/1.jpg",
+            "../img/stone-art/ogranka/vrata/preview/2.jpg",
+            "../img/stone-art/ogranka/vrata/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "The Gates of Hell",
+          "img": "../img/stone-art/ogranka/vratavad/preview/1.jpg",
+          "description": "Quartz with chlorite on the edge. <br><br> 1912 ct. <br><br> 80 x 80 x 52 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/vratavad/1.jpg",
+            "../img/stone-art/ogranka/vratavad/2.jpg",
+            "../img/stone-art/ogranka/vratavad/3.jpg",
+            "../img/stone-art/ogranka/vratavad/4.jpg",
+            "../img/stone-art/ogranka/vratavad/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vratavad/preview/1.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/2.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/3.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/4.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "The Gates of Heaven",
+          "img": "../img/stone-art/ogranka/vratavrai/preview/1.jpg",
+          "description": "Quartz with natural crystallized facet. <br><br> 1756 ct. <br><br> 80 x 80 x 48 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/vratavrai/1.jpg",
+            "../img/stone-art/ogranka/vratavrai/2.jpg",
+            "../img/stone-art/ogranka/vratavrai/3.jpg",
+            "../img/stone-art/ogranka/vratavrai/4.jpg",
+            "../img/stone-art/ogranka/vratavrai/5.jpg",
+            "../img/stone-art/ogranka/vratavrai/6.jpg",
+            "../img/stone-art/ogranka/vratavrai/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vratavrai/preview/1.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/2.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/3.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/4.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/5.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/6.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Sunset",
+          "img": "../img/stone-art/ogranka/zakat/preview/1.jpg",
+          "description": "Zonal smoky quartz. <br><br> 1547 ct. <br><br> 75 x 88 x 44 mm. <br><br> Faceting, carving.",
+          "aboute": "",
+          "images": [
+            "../img/stone-art/ogranka/zakat/1.jpg",
+            "../img/stone-art/ogranka/zakat/2.jpg",
+            "../img/stone-art/ogranka/zakat/3.jpg",
+            "../img/stone-art/ogranka/zakat/4.jpg",
+            "../img/stone-art/ogranka/zakat/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/zakat/preview/1.jpg",
+            "../img/stone-art/ogranka/zakat/preview/2.jpg",
+            "../img/stone-art/ogranka/zakat/preview/3.jpg",
+            "../img/stone-art/ogranka/zakat/preview/4.jpg",
+            "../img/stone-art/ogranka/zakat/preview/5.jpg"
+          ]
+        }
+      ]
+    },
+    "jewelry": {
+      "pageName": "Jewelry",
+      "pageItems" : [
+        {
+          "name": "Ring with aquamarine and diamonds",
+          "img": "../img/stone-art/jewelry/preview/1.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/1.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/1.jpg"
+          ]
+        },
+        {
+          "name": "Ring with emerald, sapphires and diamonds",
+          "img": "../img/stone-art/jewelry/preview/2.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Set with Diamonds",
+          "img": "../img/stone-art/jewelry/preview/3.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Set with pearls, opals and diamonds",
+          "img": "../img/stone-art/jewelry/preview/4.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Pendant and earrings with cognac diamonds",
+          "img": "../img/stone-art/jewelry/preview/5.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Set with Diamonds",
+          "img": "../img/stone-art/jewelry/preview/6.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/6.jpg"
+          ]
+        },{
+          "name": "Earrings with cognac diamonds",
+          "img": "../img/stone-art/jewelry/preview/7.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with Diamonds",
+          "img": "../img/stone-art/jewelry/preview/8.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/8.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/8.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with tourmalines and diamonds",
+          "img": "../img/stone-art/jewelry/preview/9.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/9.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with turquoise and diamonds",
+          "img": "../img/stone-art/jewelry/preview/10.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Set with pearls \"Mabe\" and diamonds",
+          "img": "../img/stone-art/jewelry/preview/12.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/12.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/12.jpg"
+          ]
+        },
+        {
+          "name": "Ring with mother-of-pearl and diamonds",
+          "img": "../img/stone-art/jewelry/preview/13.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/13.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/13.jpg"
+          ]
+        },{
+          "name": "Earrings with pearls and diamonds",
+          "img": "../img/stone-art/jewelry/preview/14.jpg",
+          "description": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "Set with rubies and diamonds",
+          "img": "../img/stone-art/jewelry/preview/15.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/15.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Set with emeralds and diamonds",
+          "img": "../img/stone-art/jewelry/preview/17.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/17.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/17.jpg"
+          ]
+        },{
+          "name": "Earrings with Diamonds",
+          "img": "../img/stone-art/jewelry/preview/18.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/18.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/18.jpg"
+          ]
+        },
+        {
+          "name": "Ring with Diamonds",
+          "img": "../img/stone-art/jewelry/preview/19.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/19.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/19.jpg"
+          ]
+        },
+        {
+          "name": "Headset with sapphires of cornflower blue and diamonds",
+          "img": "../img/stone-art/jewelry/preview/20.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/20.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/20.jpg"
+          ]
+        },
+        {
+          "name": "Set with diamonds and enamel",
+          "img": "../img/stone-art/jewelry/preview/21.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/21.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/21.jpg"
+          ]
+        },
+        {
+          "name": "Set with diamonds, lapis lazuli and enamel",
+          "img": "../img/stone-art/jewelry/preview/22.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/22.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/22.jpg"
+          ]
+        },
+        {
+          "name": "Set with citrine and enamel",
+          "img": "../img/stone-art/jewelry/preview/23.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/23.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/23.jpg"
+          ]
+        },
+        {
+          "name": "Ring with tourmaline",
+          "img": "../img/stone-art/jewelry/preview/24.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/24.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/24.jpg"
+          ]
+        },
+        {
+          "name": "Ring with emerald",
+          "img": "../img/stone-art/jewelry/preview/25.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/25.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/25.jpg"
+          ]
+        },
+        {
+          "name": "Pendant (perfume bottle) with amethyst, diamonds and quartz",
+          "img": "../img/stone-art/jewelry/preview/26.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/26.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/26.jpg"
+          ]
+        },
+        {
+          "name": "Ring with amethyst and pearls",
+          "img": "../img/stone-art/jewelry/preview/27.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/27.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/27.jpg"
+          ]
+        },
+        {
+          "name": "Pendant with pearls and carved aquamarine",
+          "img": "../img/stone-art/jewelry/preview/28.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/28.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/28.jpg"
+          ]
+        },
+        {
+          "name": "Ring with pyrite and diamonds",
+          "img": "../img/stone-art/jewelry/preview/29.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/29.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/29.jpg"
+          ]
+        },
+        {
+          "name": "Necklace with mother of pearl, pearls and diamonds",
+          "img": "../img/stone-art/jewelry/preview/30.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/30.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/30.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with tourmalines and diamonds",
+          "img": "../img/stone-art/jewelry/preview/31.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/31.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/31.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with emeralds and diamonds",
+          "img": "../img/stone-art/jewelry/preview/32.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/32.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/32.jpg"
+          ]
+        },
+        {
+          "name": "Earrings with citrine and diamonds",
+          "img": "../img/stone-art/jewelry/preview/33.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/33.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/33.jpg"
+          ]
+        }
+      ]
+    },
+    "mosaic": {
+      "pageName": "Florentine mosaic",
+      "images": []
+    },
+    "interior": {
+      "pageName": "Interior items",
+      "images": []
+    }
+  }
+}

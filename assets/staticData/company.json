@@ -1,0 +1,73 @@
+{
+  "company": {
+    "aboutRu": "Камнерезный Дом Алексея Антонова <br><br> &nbsp;&nbsp;&nbsp;&nbsp;Создан уральским мастером по художественной обработке камня, членом союза художников России – Алексеем Антоновым, чья творческая деятельность началась с 1987 года. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Основное направление — это создание уникальных произведений камнерезного и ювелирного искусства в лучших традициях К. Фаберже и А. Денисова-Уральского. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день это компания, предоставляющая все виды деятельности, связанные с камнем: от создания элитарных произведений искусства до интерьеров и сувенирной продукции. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Коллекционное собрание Дома», целью которого служит популяризация искусства, представляет интересы лучших мастеров Урала, профессионалов в области ювелирного и камнерезного дела.",
+    "aboutEng": "Stone-crafting House by Alexey Antonov <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Founded by Alexeу Antonov - the Ural master, a member of the Union of Artists (Russia), whose creative activity began in 1987. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The main direction of the company is to make unique works of stone-cutting and jewelry art in the best traditions of K. Faberge and A. Denisov-Uralsky. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The «Stone-crafting House by Alexey Antonov» provides all kinds of services related to stone: from the creation of masterpieces to interiors and souvenirs. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Collection of the House», whose goal is to popularize art, represents the interests of the best masters of the Urals in the field of jewelry and stone cutting.",
+    "catalogs": {
+      "cat1": "../catalogs/catalog1.pdf",
+      "cat2": "../catalogs/catalog2.pdf",
+      "cat3": "../catalogs/catalog3.pdf"
+    },
+    "catImgs": [
+      "./img/about/cat1.png",
+      "./img/about/cat2.png",
+      "./img/about/cat3.png"
+    ],
+    "articles": {
+      "1": {
+        "link": "../articles/antonov.pdf",
+        "name": "Алексей Антонов. Русская история в камне.",
+        "nameEng": "Alexey Antonov. Russian history in stone."
+      },
+      "2": {
+        "link": "../articles/faberje.pdf",
+        "name": "От Карла Фаберже до Антонова",
+        "nameEng": "From Carl Faberge to Antonov"
+      },
+      "3": {
+        "link": "../articles/tamerlan.pdf",
+        "name": "Легенда Тамерлана",
+        "nameEng": "Legend of Tamerlane"
+      }
+    },
+    "smi": {
+      "links": {
+        "1": {
+          "name": "Алексей Антонов. Русская история в камне.",
+          "nameEng": "Alexey Antonov. Russian history in stone.",
+          "src": "http://favorit-info.com/fakty/35-lyudi-i-delo/112-aleksej-antonov-russkaya-istoriya-v-kamne"
+        }
+      },
+      "videos": {
+        "1": {
+          "name": "О Камнерезном Доме Антонова",
+          "nameEng": "About Stone-crafting house. TV channel OTV.",
+          "src": "../videos/otv.mp4",
+          "poster": "../videos/otv.png",
+          "channelImg": "../img/videos/otv.png"
+        },
+        "2": {
+          "name": "Уральский мастер",
+          "nameEng": "Ural master. Fourth TV channel.",
+          "src": "../videos/4canal.mp4",
+          "poster": "../videos/4canal.png",
+          "channelImg": "../img/videos/4tv.png"
+        },
+        "3": {
+          "name": "«Орёл & Решка» в Камнерезном Доме",
+          "nameEng": "Orel & Reshka in Stone-crafting house. Friday TV channel.",
+          "src": "../videos/friday.mp4",
+          "poster": "../videos/friday.png",
+          "channelImg": "../img/videos/Oir2018.png"
+        }
+      }
+    },
+    "videos": {
+      "1": {
+        "name": "Открытие экспозиции",
+        "nameEng": "Exposition opening",
+        "src": "../videos/opening.mp4",
+        "poster": "../videos/opening.jpg"
+      }
+    }
+  }
+}

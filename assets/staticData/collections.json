@@ -1,0 +1,1507 @@
+{
+  "pages": {
+    "stoneflowers": {
+      "pageName": "Каменные цветы",
+      "pageItems" : [
+        {
+          "name": "Пион",
+          "img": "../img/stone-art/flowers/pion/preview/2.jpg",
+          "description": "Рубин, сапфир. <br><br>Золото, серебро. <br><br>Розовый опал, нефрит, кварц. <br><br>Высота – 170&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/pion/2.jpg",
+            "../img/stone-art/flowers/pion/3.jpg",
+            "../img/stone-art/flowers/pion/4.jpg",
+            "../img/stone-art/flowers/pion/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/pion/preview/2.jpg",
+            "../img/stone-art/flowers/pion/preview/3.jpg",
+            "../img/stone-art/flowers/pion/preview/4.jpg",
+            "../img/stone-art/flowers/pion/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Орхидея",
+          "img": "../img/stone-art/flowers/orhideya2/preview/11.jpg",
+          "description": "Аметист. <br><br>Золото, серебро. <br><br>Нефрит, цитрин, хрусталь. <br><br>Высота – 120&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya2/11.jpg",
+            "../img/stone-art/flowers/orhideya2/12.jpg",
+            "../img/stone-art/flowers/orhideya2/13.jpg",
+            "../img/stone-art/flowers/orhideya2/14.jpg",
+            "../img/stone-art/flowers/orhideya2/15.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya2/preview/11.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/12.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/13.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/14.jpg",
+            "../img/stone-art/flowers/orhideya2/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Мак",
+          "img": "../img/stone-art/flowers/machok/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Цитрин, нефрит, кварц. <br><br>Высота – 230&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/machok/2.jpg",
+            "../img/stone-art/flowers/machok/3.jpg",
+            "../img/stone-art/flowers/machok/4.jpg",
+            "../img/stone-art/flowers/machok/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/machok/preview/2.jpg",
+            "../img/stone-art/flowers/machok/preview/3.jpg",
+            "../img/stone-art/flowers/machok/preview/4.jpg",
+            "../img/stone-art/flowers/machok/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Ветреница",
+          "img": "../img/stone-art/flowers/veter/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Розовый опал, нефрит, льдистый кварц, раухтопаз, кварц. <br><br>Высота - 130 &nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/veter/2.jpg",
+            "../img/stone-art/flowers/veter/3.jpg",
+            "../img/stone-art/flowers/veter/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/veter/preview/2.jpg",
+            "../img/stone-art/flowers/veter/preview/3.jpg",
+            "../img/stone-art/flowers/veter/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Вьюн",
+          "img": "../img/stone-art/flowers/viun/preview/1.jpg",
+          "description": "Гранат. <br><br>Золото, серебро. <br><br>Нефрит, агат, яшма. <br><br>Высота – 155 &nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/viun/1.jpg",
+            "../img/stone-art/flowers/viun/2.jpg",
+            "../img/stone-art/flowers/viun/3.jpg",
+            "../img/stone-art/flowers/viun/4.jpg",
+            "../img/stone-art/flowers/viun/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/viun/preview/1.jpg",
+            "../img/stone-art/flowers/viun/preview/2.jpg",
+            "../img/stone-art/flowers/viun/preview/3.jpg",
+            "../img/stone-art/flowers/viun/preview/4.jpg",
+            "../img/stone-art/flowers/viun/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Лютик",
+          "img": "../img/stone-art/flowers/lutik/preview/3.jpg",
+          "description": "Хризолит. <br><br>Золото, серебро. <br><br>Нефрит, цитрин, обсидиан. <br><br>Высота – 175&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/lutik/2.jpg",
+            "../img/stone-art/flowers/lutik/3.jpg",
+            "../img/stone-art/flowers/lutik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/lutik/preview/2.jpg",
+            "../img/stone-art/flowers/lutik/preview/3.jpg",
+            "../img/stone-art/flowers/lutik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Шиповник",
+          "img": "../img/stone-art/flowers/shipovnik/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Халцедон, нефрит, кварцит, яшма. <br><br>Высота – 170&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/shipovnik/2.jpg",
+            "../img/stone-art/flowers/shipovnik/3.jpg",
+            "../img/stone-art/flowers/shipovnik/4.jpg",
+            "../img/stone-art/flowers/shipovnik/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/shipovnik/preview/2.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/3.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/4.jpg",
+            "../img/stone-art/flowers/shipovnik/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Анютины глазки",
+          "img": "../img/stone-art/flowers/annglazki/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Розовый опал, нефрит, цитрин, кахолонг, кварц. <br><br>Высота – 130&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/annglazki/2.jpg",
+            "../img/stone-art/flowers/annglazki/3.jpg",
+            "../img/stone-art/flowers/annglazki/4.jpg",
+            "../img/stone-art/flowers/annglazki/5.jpg",
+            "../img/stone-art/flowers/annglazki/6.jpg",
+            "../img/stone-art/flowers/annglazki/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/annglazki/preview/2.jpg",
+            "../img/stone-art/flowers/annglazki/preview/3.jpg",
+            "../img/stone-art/flowers/annglazki/preview/4.jpg",
+            "../img/stone-art/flowers/annglazki/preview/5.jpg",
+            "../img/stone-art/flowers/annglazki/preview/6.jpg",
+            "../img/stone-art/flowers/annglazki/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Ежевика",
+          "img": "../img/stone-art/flowers/ezhevika1/preview/11.jpg",
+          "description": "Золото, серебро. <br><br>Нефрит, халцедон, кварц <br><br>Агат, обсидиан. <br><br>Высота – 198&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ezhevika1/11.jpg",
+            "../img/stone-art/flowers/ezhevika1/12.jpg",
+            "../img/stone-art/flowers/ezhevika1/13.jpg",
+            "../img/stone-art/flowers/ezhevika1/14.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ezhevika1/preview/11.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/12.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/13.jpg",
+            "../img/stone-art/flowers/ezhevika1/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "Букет с ромашками",
+          "img": "../img/stone-art/flowers/romashki/preview/2.jpg",
+          "description": "Сапфир, рубин. <br><br>Золото, серебро. <br><br>Нефрит, кахолонг, сапфирин, кварц, агат. <br><br>Высота – 180&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/romashki/2.jpg",
+            "../img/stone-art/flowers/romashki/3.jpg",
+            "../img/stone-art/flowers/romashki/4.jpg",
+            "../img/stone-art/flowers/romashki/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/romashki/preview/2.jpg",
+            "../img/stone-art/flowers/romashki/preview/3.jpg",
+            "../img/stone-art/flowers/romashki/preview/4.jpg",
+            "../img/stone-art/flowers/romashki/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Букет с незабудками",
+          "img": "../img/stone-art/flowers/bouquet/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Бирюза, нефрит, кахолонг, лазурит, смальта, кварц. <br><br>Высота – 165&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/bouquet/2.jpg",
+            "../img/stone-art/flowers/bouquet/3.jpg",
+            "../img/stone-art/flowers/bouquet/4.jpg",
+            "../img/stone-art/flowers/bouquet/5.jpg",
+            "../img/stone-art/flowers/bouquet/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/bouquet/preview/2.jpg",
+            "../img/stone-art/flowers/bouquet/preview/3.jpg",
+            "../img/stone-art/flowers/bouquet/preview/4.jpg",
+            "../img/stone-art/flowers/bouquet/preview/5.jpg",
+            "../img/stone-art/flowers/bouquet/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "Вишня",
+          "img": "../img/stone-art/flowers/vishnya/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Яшма, нефрит, кварц. <br><br>Высота – 215&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/vishnya/2.jpg",
+            "../img/stone-art/flowers/vishnya/3.jpg",
+            "../img/stone-art/flowers/vishnya/4.jpg",
+            "../img/stone-art/flowers/vishnya/5.jpg",
+            "../img/stone-art/flowers/vishnya/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/vishnya/preview/2.jpg",
+            "../img/stone-art/flowers/vishnya/preview/3.jpg",
+            "../img/stone-art/flowers/vishnya/preview/4.jpg",
+            "../img/stone-art/flowers/vishnya/preview/5.jpg",
+            "../img/stone-art/flowers/vishnya/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "Рябина",
+          "img": "../img/stone-art/flowers/ryabina/preview/1.jpg",
+          "description": "Золото, серебро. <br><br>Смальта, нефрит, кварц. <br><br>Высота – 140&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ryabina/1.jpg",
+            "../img/stone-art/flowers/ryabina/2.jpg",
+            "../img/stone-art/flowers/ryabina/3.jpg",
+            "../img/stone-art/flowers/ryabina/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ryabina/preview/1.jpg",
+            "../img/stone-art/flowers/ryabina/preview/2.jpg",
+            "../img/stone-art/flowers/ryabina/preview/3.jpg",
+            "../img/stone-art/flowers/ryabina/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Ежевика",
+          "img": "../img/stone-art/flowers/ezhevika/preview/6.jpg",
+          "description": "Золото. <br><br>Нефрит, обсидиан, кварц. <br><br>Высота – 170&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/ezhevika/6.jpg",
+            "../img/stone-art/flowers/ezhevika/7.jpg",
+            "../img/stone-art/flowers/ezhevika/8.jpg",
+            "../img/stone-art/flowers/ezhevika/9.jpg"
+
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/ezhevika/preview/6.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/7.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/8.jpg",
+            "../img/stone-art/flowers/ezhevika/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Черника",
+          "img": "../img/stone-art/flowers/chernika/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Нефрит, родусит, кварц. <br><br>Высота – 195&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/chernika/2.jpg",
+            "../img/stone-art/flowers/chernika/3.jpg",
+            "../img/stone-art/flowers/chernika/4.jpg"
+
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/chernika/preview/2.jpg",
+            "../img/stone-art/flowers/chernika/preview/3.jpg",
+            "../img/stone-art/flowers/chernika/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Груша",
+          "img": "../img/stone-art/flowers/grusha1/preview/6.jpg",
+          "description": "Золото, серебро. <br><br>Гранат, нефрит, сапфирин, кварц. <br><br>Высота – 185&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/grusha1/6.jpg",
+            "../img/stone-art/flowers/grusha1/7.jpg",
+            "../img/stone-art/flowers/grusha1/8.jpg",
+            "../img/stone-art/flowers/grusha1/9.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/grusha1/preview/6.jpg",
+            "../img/stone-art/flowers/grusha1/preview/7.jpg",
+            "../img/stone-art/flowers/grusha1/preview/8.jpg",
+            "../img/stone-art/flowers/grusha1/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Сакура",
+          "img": "../img/stone-art/flowers/sacura/preview/2.jpg",
+          "description": "Сакура. <br><br>Золото, серебро. <br><br>Розовый опал, нефрит, яшма. <br><br>Высота – 180&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/sacura/2.jpg",
+            "../img/stone-art/flowers/sacura/3.jpg",
+            "../img/stone-art/flowers/sacura/4.jpg",
+            "../img/stone-art/flowers/sacura/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/sacura/preview/2.jpg",
+            "../img/stone-art/flowers/sacura/preview/3.jpg",
+            "../img/stone-art/flowers/sacura/preview/4.jpg",
+            "../img/stone-art/flowers/sacura/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Аленький цветочек",
+          "img": "../img/stone-art/flowers/alenkiy/preview/2.jpg",
+          "description": "Сапфир, рубин, шпинель. <br><br>Золото, серебро. <br><br>Опал, нефрит. <br><br>Высота – 210&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/alenkiy/2.jpg",
+            "../img/stone-art/flowers/alenkiy/3.jpg",
+            "../img/stone-art/flowers/alenkiy/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/alenkiy/preview/2.jpg",
+            "../img/stone-art/flowers/alenkiy/preview/3.jpg",
+            "../img/stone-art/flowers/alenkiy/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Орхидея",
+          "img": "../img/stone-art/flowers/orhideya/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Агат, родонит, кварц. <br><br>Высота – 300&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya/2.jpg",
+            "../img/stone-art/flowers/orhideya/3.jpg",
+            "../img/stone-art/flowers/orhideya/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya/preview/2.jpg",
+            "../img/stone-art/flowers/orhideya/preview/3.jpg",
+            "../img/stone-art/flowers/orhideya/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Ирис",
+          "img": "../img/stone-art/flowers/iris/preview/2.jpg",
+          "description": "Рубин. <br><br>Золото, серебро. <br><br>Халцедон, агат, кварц. <br><br>Высота – 300&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/iris/2.jpg",
+            "../img/stone-art/flowers/iris/3.jpg",
+            "../img/stone-art/flowers/iris/4.jpg",
+            "../img/stone-art/flowers/iris/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/iris/preview/2.jpg",
+            "../img/stone-art/flowers/iris/preview/3.jpg",
+            "../img/stone-art/flowers/iris/preview/4.jpg",
+            "../img/stone-art/flowers/iris/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Роза",
+          "img": "../img/stone-art/flowers/rose/preview/1.jpg",
+          "description": "Сапфир, рубин. <br><br>Золото, серебро. <br><br>Опал, раухтопаз, нефрит, агат. <br><br>Высота – 375&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/rose/1.jpg",
+            "../img/stone-art/flowers/rose/2.jpg",
+            "../img/stone-art/flowers/rose/3.jpg",
+            "../img/stone-art/flowers/rose/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/rose/preview/1.jpg",
+            "../img/stone-art/flowers/rose/preview/2.jpg",
+            "../img/stone-art/flowers/rose/preview/3.jpg",
+            "../img/stone-art/flowers/rose/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Барбарис",
+          "img": "../img/stone-art/flowers/barbaris/preview/2.jpg",
+          "description": "Золото, серебро. <br><br>Халцедон, нефрит, кварц, яшма. <br><br>Высота – 240&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/barbaris/2.jpg",
+            "../img/stone-art/flowers/barbaris/3.jpg",
+            "../img/stone-art/flowers/barbaris/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/barbaris/preview/2.jpg",
+            "../img/stone-art/flowers/barbaris/preview/3.jpg",
+            "../img/stone-art/flowers/barbaris/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Персик",
+          "img": "../img/stone-art/flowers/persik/preview/1.jpg",
+          "description": "Опал, хрусталь, бриллианты, рубины. <br><br>Золото, серебро. <br><br>Обсидиан, нефрит. <br><br>Высота - 230&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/persik/1.jpg",
+            "../img/stone-art/flowers/persik/2.jpg",
+            "../img/stone-art/flowers/persik/3.jpg",
+            "../img/stone-art/flowers/persik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/persik/preview/1.jpg",
+            "../img/stone-art/flowers/persik/preview/2.jpg",
+            "../img/stone-art/flowers/persik/preview/3.jpg",
+            "../img/stone-art/flowers/persik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Роза",
+          "img": "../img/stone-art/flowers/rose1/preview/6.jpg",
+          "description": "Золото, серебро. <br><br>Нефрит, кварц. <br><br>Высота – 195&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/rose1/6.jpg",
+            "../img/stone-art/flowers/rose1/7.jpg",
+            "../img/stone-art/flowers/rose1/8.jpg",
+            "../img/stone-art/flowers/rose1/9.jpg",
+            "../img/stone-art/flowers/rose1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/rose1/preview/6.jpg",
+            "../img/stone-art/flowers/rose1/preview/7.jpg",
+            "../img/stone-art/flowers/rose1/preview/8.jpg",
+            "../img/stone-art/flowers/rose1/preview/9.jpg",
+            "../img/stone-art/flowers/rose1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Сакура",
+          "img": "../img/stone-art/flowers/sacura1/preview/7.jpg",
+          "description": "Золото, серебро. <br><br>Розовый опал, кахолонг, агат, яшма. <br><br>Высота - 165&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/sacura1/7.jpg",
+            "../img/stone-art/flowers/sacura1/8.jpg",
+            "../img/stone-art/flowers/sacura1/9.jpg",
+            "../img/stone-art/flowers/sacura1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/sacura1/preview/7.jpg",
+            "../img/stone-art/flowers/sacura1/preview/8.jpg",
+            "../img/stone-art/flowers/sacura1/preview/9.jpg",
+            "../img/stone-art/flowers/sacura1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Орхидея",
+          "img": "../img/stone-art/flowers/orhideya1/preview/6.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Нефрит, лазурит, обсидиан. <br><br>Высота - 230&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/orhideya1/6.jpg",
+            "../img/stone-art/flowers/orhideya1/7.jpg",
+            "../img/stone-art/flowers/orhideya1/8.jpg",
+            "../img/stone-art/flowers/orhideya1/9.jpg",
+            "../img/stone-art/flowers/orhideya1/10.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/orhideya1/preview/6.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/7.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/8.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/9.jpg",
+            "../img/stone-art/flowers/orhideya1/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Груша",
+          "img": "../img/stone-art/flowers/grusha/preview/1.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Нефрит, халцедон, яшма, агат. <br><br>Высота - 165&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/grusha/1.jpg",
+            "../img/stone-art/flowers/grusha/2.jpg",
+            "../img/stone-art/flowers/grusha/3.jpg",
+            "../img/stone-art/flowers/grusha/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/grusha/preview/1.jpg",
+            "../img/stone-art/flowers/grusha/preview/2.jpg",
+            "../img/stone-art/flowers/grusha/preview/3.jpg",
+            "../img/stone-art/flowers/grusha/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Равновесие",
+          "img": "../img/stone-art/flowers/frog1/preview/13.jpg",
+          "description": "Золото, серебро. <br><br>Гранат, нефрит, кварцит. <br><br>Высота - 140&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog1/13.jpg",
+            "../img/stone-art/flowers/frog1/14.jpg",
+            "../img/stone-art/flowers/frog1/15.jpg",
+            "../img/stone-art/flowers/frog1/16.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog1/preview/13.jpg",
+            "../img/stone-art/flowers/frog1/preview/14.jpg",
+            "../img/stone-art/flowers/frog1/preview/15.jpg",
+            "../img/stone-art/flowers/frog1/preview/16.jpg"
+          ]
+        },
+        {
+          "name": "Лягушка",
+          "img": "../img/stone-art/flowers/frog/preview/2.jpg",
+          "description": "Серебро. <br><br>Тигровый глаз, нефрит. <br><br>Высота - 95&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog/2.jpg",
+            "../img/stone-art/flowers/frog/3.jpg",
+            "../img/stone-art/flowers/frog/4.jpg",
+            "../img/stone-art/flowers/frog/5.jpg",
+            "../img/stone-art/flowers/frog/8.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog/preview/2.jpg",
+            "../img/stone-art/flowers/frog/preview/3.jpg",
+            "../img/stone-art/flowers/frog/preview/4.jpg",
+            "../img/stone-art/flowers/frog/preview/5.jpg",
+            "../img/stone-art/flowers/frog/preview/8.jpg"
+          ]
+        },
+        {
+          "name": "Царевна-лягушка",
+          "img": "../img/stone-art/flowers/frog2/preview/6.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Гелиотроп, нефрит, кахолонг, кварцит. <br><br>Высота - 170&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/frog2/6.jpg",
+            "../img/stone-art/flowers/frog2/7.jpg",
+            "../img/stone-art/flowers/frog2/9.jpg",
+            "../img/stone-art/flowers/frog2/10.jpg",
+            "../img/stone-art/flowers/frog2/11.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/frog2/preview/6.jpg",
+            "../img/stone-art/flowers/frog2/preview/7.jpg",
+            "../img/stone-art/flowers/frog2/preview/9.jpg",
+            "../img/stone-art/flowers/frog2/preview/10.jpg",
+            "../img/stone-art/flowers/frog2/preview/11.jpg"
+          ]
+        },
+        {
+          "name": "Кактус",
+          "img": "../img/stone-art/flowers/cactus/preview/2.jpg",
+          "description": "Золото, серебро. <br><br>Нефрит, яшма, розовый опал. <br><br>Высота - 105&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/cactus/2.jpg",
+            "../img/stone-art/flowers/cactus/3.jpg",
+            "../img/stone-art/flowers/cactus/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/cactus/preview/2.jpg",
+            "../img/stone-art/flowers/cactus/preview/3.jpg",
+            "../img/stone-art/flowers/cactus/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Маленький принц",
+          "img": "../img/stone-art/flowers/prince/preview/2.jpg",
+          "description": "Сапфир. <br><br>Золото, серебро. <br><br>Лазурит, кварц. <br><br>Высота - 160&nbsp;мм.",
+          "imagesFull": [
+            "../img/stone-art/flowers/prince/2.jpg",
+            "../img/stone-art/flowers/prince/3.jpg",
+            "../img/stone-art/flowers/prince/4.jpg",
+            "../img/stone-art/flowers/prince/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/flowers/prince/preview/2.jpg",
+            "../img/stone-art/flowers/prince/preview/3.jpg",
+            "../img/stone-art/flowers/prince/preview/4.jpg",
+            "../img/stone-art/flowers/prince/preview/5.jpg"
+          ]
+        }
+      ]
+    },
+    "nugget": {
+      "pageName": "Фантазийная огранка",
+      "pageItems" : [
+        {
+          "name": "Антик",
+          "img": "../img/stone-art/ogranka/antik/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 4526&nbsp;ct. <br><br>Размеры: 100 х 100 х 85&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/antik/1.jpg",
+            "../img/stone-art/ogranka/antik/2.jpg",
+            "../img/stone-art/ogranka/antik/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/antik/preview/1.jpg",
+            "../img/stone-art/ogranka/antik/preview/2.jpg",
+            "../img/stone-art/ogranka/antik/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Бантик",
+          "img": "../img/stone-art/ogranka/bantik/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 740&nbsp;ct. <br><br>Размеры: 53 х 91 х 32&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/bantik/1.jpg",
+            "../img/stone-art/ogranka/bantik/2.jpg",
+            "../img/stone-art/ogranka/bantik/3.jpg",
+            "../img/stone-art/ogranka/bantik/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/bantik/preview/1.jpg",
+            "../img/stone-art/ogranka/bantik/preview/2.jpg",
+            "../img/stone-art/ogranka/bantik/preview/3.jpg",
+            "../img/stone-art/ogranka/bantik/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Ночная бабочка",
+          "img": "../img/stone-art/ogranka/babochka/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 610&nbsp;ct. <br><br>Размеры: 45 х 88 х 30&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/babochka/1.jpg",
+            "../img/stone-art/ogranka/babochka/2.jpg",
+            "../img/stone-art/ogranka/babochka/3.jpg",
+            "../img/stone-art/ogranka/babochka/4.jpg",
+            "../img/stone-art/ogranka/babochka/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/babochka/preview/1.jpg",
+            "../img/stone-art/ogranka/babochka/preview/2.jpg",
+            "../img/stone-art/ogranka/babochka/preview/3.jpg",
+            "../img/stone-art/ogranka/babochka/preview/4.jpg",
+            "../img/stone-art/ogranka/babochka/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Цитрин",
+          "img": "../img/stone-art/ogranka/citrin/preview/1.jpg",
+          "description": "Камень: цитрин, 7565&nbsp;ct. <br><br>Размеры: 124 х 124 х 81&nbsp;мм. <br><br>Техника: модифицированная португальская огранка, внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/citrin/1.jpg",
+            "../img/stone-art/ogranka/citrin/2.jpg",
+            "../img/stone-art/ogranka/citrin/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/citrin/preview/1.jpg",
+            "../img/stone-art/ogranka/citrin/preview/2.jpg",
+            "../img/stone-art/ogranka/citrin/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Два я",
+          "img": "../img/stone-art/ogranka/dvaya/preview/1.jpg",
+          "description": "<i>Вечная тема борьбы света и тьмы, добра и зла. В каждом человеке это есть...</i> <br><br>Камень: дымчатый кварц, цитрин, 2019&nbsp;ct. <br><br>Размеры: 80 х 91 х 50&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/dvaya/1.jpg",
+            "../img/stone-art/ogranka/dvaya/2.jpg",
+            "../img/stone-art/ogranka/dvaya/3.jpg",
+            "../img/stone-art/ogranka/dvaya/4.jpg",
+            "../img/stone-art/ogranka/dvaya/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/dvaya/preview/1.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/2.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/3.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/4.jpg",
+            "../img/stone-art/ogranka/dvaya/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Сердце красавицы",
+          "img": "../img/stone-art/ogranka/hurt/preview/1.jpg",
+          "description": "<i>Дымчатые полосы цитринового сердца говорят о непостоянстве его обладателя.</i> <br><br>Камень: цитрин полосчатый, 2704&nbsp;ct. <br><br>Размеры: 83 х 94 х 67&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/hurt/1.jpg",
+            "../img/stone-art/ogranka/hurt/2.jpg",
+            "../img/stone-art/ogranka/hurt/3.jpg",
+            "../img/stone-art/ogranka/hurt/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/hurt/preview/1.jpg",
+            "../img/stone-art/ogranka/hurt/preview/2.jpg",
+            "../img/stone-art/ogranka/hurt/preview/3.jpg",
+            "../img/stone-art/ogranka/hurt/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Лилия",
+          "img": "../img/stone-art/ogranka/liliya/preview/1.jpg",
+          "description": "Камень: цитрин, 1976&nbsp;ct. <br><br>Размеры: 103 х 91 х 61&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/liliya/1.jpg",
+            "../img/stone-art/ogranka/liliya/2.jpg",
+            "../img/stone-art/ogranka/liliya/3.jpg",
+            "../img/stone-art/ogranka/liliya/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/liliya/preview/1.jpg",
+            "../img/stone-art/ogranka/liliya/preview/2.jpg",
+            "../img/stone-art/ogranka/liliya/preview/3.jpg",
+            "../img/stone-art/ogranka/liliya/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Лотос",
+          "img": "../img/stone-art/ogranka/lotos/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, цитрин, 948&nbsp;ct. <br><br>Размеры: 77 х 78 х 35&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/lotos/1.jpg",
+            "../img/stone-art/ogranka/lotos/2.jpg",
+            "../img/stone-art/ogranka/lotos/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/lotos/preview/1.jpg",
+            "../img/stone-art/ogranka/lotos/preview/2.jpg",
+            "../img/stone-art/ogranka/lotos/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Любопытство",
+          "img": "../img/stone-art/ogranka/lubopitstvo/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 1041&nbsp;ct. <br><br>Размеры: 103 х 55 х 33&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/lubopitstvo/1.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/2.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/3.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/lubopitstvo/preview/1.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/2.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/3.jpg",
+            "../img/stone-art/ogranka/lubopitstvo/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Луч света",
+          "img": "../img/stone-art/ogranka/luchsveta/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, цитрин, 1022&nbsp;ct. <br><br>Размеры: 68 х 69 х 41&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/luchsveta/1.jpg",
+            "../img/stone-art/ogranka/luchsveta/2.jpg",
+            "../img/stone-art/ogranka/luchsveta/3.jpg",
+            "../img/stone-art/ogranka/luchsveta/4.jpg",
+            "../img/stone-art/ogranka/luchsveta/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/luchsveta/preview/1.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/2.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/3.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/4.jpg",
+            "../img/stone-art/ogranka/luchsveta/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Мальтийский крест",
+          "img": "../img/stone-art/ogranka/mkrest/preview/1.jpg",
+          "description": "Камень: цитрин, 5545&nbsp;ct. <br><br>Размеры: 115 х 115 х 87&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/mkrest/1.jpg",
+            "../img/stone-art/ogranka/mkrest/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/mkrest/preview/1.jpg",
+            "../img/stone-art/ogranka/mkrest/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Натюрморт 1",
+          "img": "../img/stone-art/ogranka/naturmort1/preview/1.jpg",
+          "description": "Камень: полихромный кварц, 3008&nbsp;ct. <br><br>Размеры: 115 х 73 х 73&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/naturmort1/1.jpg",
+            "../img/stone-art/ogranka/naturmort1/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/naturmort1/preview/1.jpg",
+            "../img/stone-art/ogranka/naturmort1/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Натюрморт 2",
+          "img": "../img/stone-art/ogranka/naturmort2/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 1199&nbsp;ct. <br><br>Размеры: 109 х 50 х 49&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/naturmort2/1.jpg",
+            "../img/stone-art/ogranka/naturmort2/2.jpg",
+            "../img/stone-art/ogranka/naturmort2/3.jpg",
+            "../img/stone-art/ogranka/naturmort2/4.jpg",
+            "../img/stone-art/ogranka/naturmort2/5.jpg",
+            "../img/stone-art/ogranka/naturmort2/6.jpg",
+            "../img/stone-art/ogranka/naturmort2/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/naturmort2/preview/1.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/2.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/3.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/4.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/5.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/6.jpg",
+            "../img/stone-art/ogranka/naturmort2/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "НЛО",
+          "img": "../img/stone-art/ogranka/nlo/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 1855&nbsp;ct. <br><br>Размеры: 90 х 90 х 47&nbsp;мм. <br><br>Техника: внутренняя огранка. <br><br>Подставка: мельхиор, золочение, яшма.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/nlo/1.jpg",
+            "../img/stone-art/ogranka/nlo/2.jpg",
+            "../img/stone-art/ogranka/nlo/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/nlo/preview/1.jpg",
+            "../img/stone-art/ogranka/nlo/preview/2.jpg",
+            "../img/stone-art/ogranka/nlo/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Старик",
+          "img": "../img/stone-art/ogranka/old/preview/1.jpg",
+          "description": "<i>Сердце человека, прожившего нелегкую жизнь. Природные включения и дефекты - залеченные временем раны. Старики по-своему красивы…</i> <br><br>Камень: кварц с природными включениями, 2230&nbsp;ct. <br><br>Размеры: 94 х 86 х 41&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/old/1.jpg",
+            "../img/stone-art/ogranka/old/2.jpg",
+            "../img/stone-art/ogranka/old/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/old/preview/1.jpg",
+            "../img/stone-art/ogranka/old/preview/2.jpg",
+            "../img/stone-art/ogranka/old/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Отражения",
+          "img": "../img/stone-art/ogranka/otrazhenie/preview/1.jpg",
+          "description": "Камень: кварц с включением кристалла герсдорфита, 1056&nbsp;ct. <br><br>Размеры: 64 х 64 х 51&nbsp;мм. <br><br>Техника: внутренняя огранка. <br><br>Огранка построена так, что один кристалл многократно отражается в гранях камня.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/otrazhenie/1.jpg",
+            "../img/stone-art/ogranka/otrazhenie/2.jpg",
+            "../img/stone-art/ogranka/otrazhenie/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/otrazhenie/preview/1.jpg",
+            "../img/stone-art/ogranka/otrazhenie/preview/2.jpg",
+            "../img/stone-art/ogranka/otrazhenie/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Паутина",
+          "img": "../img/stone-art/ogranka/pautina/preview/1.jpg",
+          "description": "Камень: полосчатый кварц, 1735&nbsp;ct. <br><br>Размеры: 82 х 82 х 44&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/pautina/1.jpg",
+            "../img/stone-art/ogranka/pautina/2.jpg",
+            "../img/stone-art/ogranka/pautina/3.jpg",
+            "../img/stone-art/ogranka/pautina/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/pautina/preview/1.jpg",
+            "../img/stone-art/ogranka/pautina/preview/2.jpg",
+            "../img/stone-art/ogranka/pautina/preview/3.jpg",
+            "../img/stone-art/ogranka/pautina/preview/4.jpg"
+
+          ]
+        },
+        {
+          "name": "Рассвет",
+          "img": "../img/stone-art/ogranka/rassvet/preview/1.jpg",
+          "description": "Камень: полихромный кварц, 1644&nbsp;ct. <br><br>Размеры: 76 х 88 х 42&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/rassvet/1.jpg",
+            "../img/stone-art/ogranka/rassvet/2.jpg",
+            "../img/stone-art/ogranka/rassvet/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/rassvet/preview/1.jpg",
+            "../img/stone-art/ogranka/rassvet/preview/2.jpg",
+            "../img/stone-art/ogranka/rassvet/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Ромашка",
+          "img": "../img/stone-art/ogranka/romashka/preview/1.jpg",
+          "description": "Камень: цитрин с мелкими кристаллами пирита, 2738&nbsp;ct. <br><br>Размеры: 92 х 92 х 66&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/romashka/1.jpg",
+            "../img/stone-art/ogranka/romashka/2.jpg",
+            "../img/stone-art/ogranka/romashka/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/romashka/preview/1.jpg",
+            "../img/stone-art/ogranka/romashka/preview/2.jpg",
+            "../img/stone-art/ogranka/romashka/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Страсть по Шекспиру",
+          "img": "../img/stone-art/ogranka/strast/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, цитрин, 1384&nbsp;ct. <br><br>Размеры: 68 х 100 х 43&nbsp;мм. <br><br>Техника: внутренняя огранка. <br><br>Эта работа дала начало технологии внутренней огранки.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/strast/1.jpg",
+            "../img/stone-art/ogranka/strast/2.jpg",
+            "../img/stone-art/ogranka/strast/3.jpg",
+            "../img/stone-art/ogranka/strast/4.jpg",
+            "../img/stone-art/ogranka/strast/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/strast/preview/1.jpg",
+            "../img/stone-art/ogranka/strast/preview/2.jpg",
+            "../img/stone-art/ogranka/strast/preview/3.jpg",
+            "../img/stone-art/ogranka/strast/preview/4.jpg",
+            "../img/stone-art/ogranka/strast/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Пока горит свеча",
+          "img": "../img/stone-art/ogranka/svecha/preview/1.jpg",
+          "description": "Камень: полихромный кварц, 756&nbsp;ct. <br><br>Размеры: 100 х 41 х 25&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/svecha/1.jpg",
+            "../img/stone-art/ogranka/svecha/2.jpg",
+            "../img/stone-art/ogranka/svecha/3.jpg",
+            "../img/stone-art/ogranka/svecha/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/svecha/preview/1.jpg",
+            "../img/stone-art/ogranka/svecha/preview/2.jpg",
+            "../img/stone-art/ogranka/svecha/preview/3.jpg",
+            "../img/stone-art/ogranka/svecha/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Триединство",
+          "img": "../img/stone-art/ogranka/triedin/preview/1.jpg",
+          "description": "Камень: цитрин, 2120&nbsp;ct. <br><br>Размеры: 81 х 81 х 70&nbsp;мм. <br><br>Техника: внутренняя огранка.<br><br>В основу построения камня положен символ Триединства.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/triedin/1.jpg",
+            "../img/stone-art/ogranka/triedin/2.jpg",
+            "../img/stone-art/ogranka/triedin/3.jpg",
+            "../img/stone-art/ogranka/triedin/4.jpg",
+            "../img/stone-art/ogranka/triedin/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/triedin/preview/1.jpg",
+            "../img/stone-art/ogranka/triedin/preview/2.jpg",
+            "../img/stone-art/ogranka/triedin/preview/3.jpg",
+            "../img/stone-art/ogranka/triedin/preview/4.jpg",
+            "../img/stone-art/ogranka/triedin/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Трилистник",
+          "img": "../img/stone-art/ogranka/trilist/preview/1.jpg",
+          "description": "Камень: цитрин, 342&nbsp;ct. <br><br>Размеры: 59 х 55 х 32&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/trilist/1.jpg",
+            "../img/stone-art/ogranka/trilist/2.jpg",
+            "../img/stone-art/ogranka/trilist/3.jpg",
+            "../img/stone-art/ogranka/trilist/4.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/trilist/preview/1.jpg",
+            "../img/stone-art/ogranka/trilist/preview/2.jpg",
+            "../img/stone-art/ogranka/trilist/preview/3.jpg",
+            "../img/stone-art/ogranka/trilist/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Триллиант",
+          "img": "../img/stone-art/ogranka/trilliant/preview/1.jpg",
+          "description": "Камень: цитрин, 5483&nbsp;ct. <br><br>Размеры: 129 х 129 х 78&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/trilliant/1.jpg",
+            "../img/stone-art/ogranka/trilliant/2.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/trilliant/preview/1.jpg",
+            "../img/stone-art/ogranka/trilliant/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Узник",
+          "img": "../img/stone-art/ogranka/uznik/preview/1.jpg",
+          "description": "<i>Интересный оптический эффект. Природные диагональные полосы рауха отражаются от нижних граней камня, создава \"решетку\". Все мы узники своих привычек, пристрастий, обстоятельств.</i> <br><br>Камень: полосчатый кварц, 994&nbsp;ct. <br><br>Размеры: 62 х 75 х 37&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/uznik/1.jpg",
+            "../img/stone-art/ogranka/uznik/2.jpg",
+            "../img/stone-art/ogranka/uznik/3.jpg",
+            "../img/stone-art/ogranka/uznik/4.jpg",
+            "../img/stone-art/ogranka/uznik/5.jpg",
+            "../img/stone-art/ogranka/uznik/6.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/uznik/preview/1.jpg",
+            "../img/stone-art/ogranka/uznik/preview/2.jpg",
+            "../img/stone-art/ogranka/uznik/preview/3.jpg",
+            "../img/stone-art/ogranka/uznik/preview/4.jpg",
+            "../img/stone-art/ogranka/uznik/preview/5.jpg",
+            "../img/stone-art/ogranka/uznik/preview/6.jpg"
+          ]
+        },
+        {
+          "name": "Вифлеемская звезда",
+          "img": "../img/stone-art/ogranka/vifliem/preview/1.jpg",
+          "description": "Камень: дымчатый кварц, 1705&nbsp;ct. <br><br>Размеры: 76 х 76 х 51&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/vifliem/1.jpg",
+            "../img/stone-art/ogranka/vifliem/2.jpg",
+            "../img/stone-art/ogranka/vifliem/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vifliem/preview/1.jpg",
+            "../img/stone-art/ogranka/vifliem/preview/2.jpg",
+            "../img/stone-art/ogranka/vifliem/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Возвращение",
+          "img": "../img/stone-art/ogranka/vozvrashenie/preview/1.jpg",
+          "description": "Камень: частично ограненный обломок кварца, 7325&nbsp;ct. <br><br>Размеры: 108 х 121 х 80&nbsp;мм. <br><br>Техника: внутренняя огранка.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/vozvrashenie/1.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/2.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/3.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/4.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vozvrashenie/preview/1.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/2.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/3.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/4.jpg",
+            "../img/stone-art/ogranka/vozvrashenie/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Третьи врата",
+          "img": "../img/stone-art/ogranka/vrata/preview/1.jpg",
+          "description": "Камень: полихромный кварц, 1615&nbsp;ct. <br><br>Размеры: 79 х 79 х 47&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/vrata/1.jpg",
+            "../img/stone-art/ogranka/vrata/2.jpg",
+            "../img/stone-art/ogranka/vrata/3.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vrata/preview/1.jpg",
+            "../img/stone-art/ogranka/vrata/preview/2.jpg",
+            "../img/stone-art/ogranka/vrata/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Врата в ад",
+          "img": "../img/stone-art/ogranka/vratavad/preview/1.jpg",
+          "description": "Камень: кварц с хлоритом на грани, 1912&nbsp;ct. <br><br>Размеры: 80 х 80 х 52&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/vratavad/1.jpg",
+            "../img/stone-art/ogranka/vratavad/2.jpg",
+            "../img/stone-art/ogranka/vratavad/3.jpg",
+            "../img/stone-art/ogranka/vratavad/4.jpg",
+            "../img/stone-art/ogranka/vratavad/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vratavad/preview/1.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/2.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/3.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/4.jpg",
+            "../img/stone-art/ogranka/vratavad/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Врата в рай",
+          "img": "../img/stone-art/ogranka/vratavrai/preview/1.jpg",
+          "description": "Камень: кварц с природной кристаллизованной гранью, 1756&nbsp;ct. <br><br>Размеры: 80 х 80 х 48&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/vratavrai/1.jpg",
+            "../img/stone-art/ogranka/vratavrai/2.jpg",
+            "../img/stone-art/ogranka/vratavrai/3.jpg",
+            "../img/stone-art/ogranka/vratavrai/4.jpg",
+            "../img/stone-art/ogranka/vratavrai/5.jpg",
+            "../img/stone-art/ogranka/vratavrai/6.jpg",
+            "../img/stone-art/ogranka/vratavrai/7.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/vratavrai/preview/1.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/2.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/3.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/4.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/5.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/6.jpg",
+            "../img/stone-art/ogranka/vratavrai/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Закат",
+          "img": "../img/stone-art/ogranka/zakat/preview/1.jpg",
+          "description": "Камень: зональный дымчатый кварц, 1547&nbsp;ct. <br><br>Размеры: 75 х 88 х 44&nbsp;мм. <br><br>Техника: огранка, резьба.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/ogranka/zakat/1.jpg",
+            "../img/stone-art/ogranka/zakat/2.jpg",
+            "../img/stone-art/ogranka/zakat/3.jpg",
+            "../img/stone-art/ogranka/zakat/4.jpg",
+            "../img/stone-art/ogranka/zakat/5.jpg"
+          ],
+          "imagesPreview": [
+            "../img/stone-art/ogranka/zakat/preview/1.jpg",
+            "../img/stone-art/ogranka/zakat/preview/2.jpg",
+            "../img/stone-art/ogranka/zakat/preview/3.jpg",
+            "../img/stone-art/ogranka/zakat/preview/4.jpg",
+            "../img/stone-art/ogranka/zakat/preview/5.jpg"
+          ]
+        }
+      ]
+    },
+    "jewelry": {
+      "pageName": "Ювелирные изделия",
+      "pageItems" : [
+        {
+          "name": "Кольцо с Аквамарином и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/1.jpg",
+          "description": "1 Аквамарин 70,360&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/1.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/1.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с изумрудом, сапфирами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/2.jpg",
+          "description": "Изумруд  14.190&nbsp;ct. <br><br>Сапфиры 7,390&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/2.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/2.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/3.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/3.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/3.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с жемчугом, опалами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/4.jpg",
+          "description": "С элементами синей эмали.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/4.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/4.jpg"
+          ]
+        },
+        {
+          "name": "Подвеска и серьги с коньячными бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/5.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/5.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/5.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/6.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/6.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/6.jpg"
+          ]
+        },{
+          "name": "Серьги с коньячными бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/7.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/7.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/7.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/8.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/8.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/8.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с турмалинами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/9.jpg",
+          "description": "Турмалины  11.240&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/9.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/9.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с бирюзой и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/10.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/10.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/10.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с жемчугом  “Mabe” и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/12.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/12.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/12.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с перламутром и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/13.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/13.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/13.jpg"
+          ]
+        },{
+          "name": "Серьги с жемчугом и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/14.jpg",
+          "description": "Серьги: 2 Золотых жемчуга  23,578&nbsp;ct. <br><br>142 коричневых бриллианта огранкой “Бриолет” 44,146&nbsp;ct. <br><br>Кольцо: Жемчуг золотой 23,578&nbsp;ct. <br><br>100 коричневых бриллианта огранкой “Бриолет” 42,946&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/14.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/14.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с рубинами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/15.jpg",
+          "description": "1084 Рубина  280,890&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/15.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/15.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с изумрудами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/17.jpg",
+          "description": "3 Изумруда 13.437&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/17.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/17.jpg"
+          ]
+        },{
+          "name": "Серьги с бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/18.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/18.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/18.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/19.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/19.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/19.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с сапфирами василькового цвета и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/20.jpg",
+          "description": "Серьги: Сапфир  2,670&nbsp;ct. <br><br>Кольцо: Сапфир 1,258&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/20.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/20.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с бриллиантами и эмалью",
+          "img": "../img/stone-art/jewelry/preview/21.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/21.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/21.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с бриллиантами, лазуритом и эмалью",
+          "img": "../img/stone-art/jewelry/preview/22.jpg",
+          "description": "Серьги: 2 лазурита 40.220&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/22.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/22.jpg"
+          ]
+        },
+        {
+          "name": "Гарнитур с цитринами и эмалью",
+          "img": "../img/stone-art/jewelry/preview/23.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/23.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/23.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с турмалинами",
+          "img": "../img/stone-art/jewelry/preview/24.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/24.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/24.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с изумрудом",
+          "img": "../img/stone-art/jewelry/preview/25.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/25.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/25.jpg"
+          ]
+        },
+        {
+          "name": "Подвеска (perfume bottle) с аметистом, бриллиантами и кварцем",
+          "img": "../img/stone-art/jewelry/preview/26.jpg",
+          "description": "1 Аметист  81,290&nbsp;ct. <br><br>1 Кварц  22,150&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/26.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/26.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с аметистом и жемчугом",
+          "img": "../img/stone-art/jewelry/preview/27.jpg",
+          "description": "1 Аметист mm  33.140&nbsp;ct . <br><br>38 Жемчуг  15,930&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/27.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/27.jpg"
+          ]
+        },
+        {
+          "name": "Подвеска с жемчугом и резным аквамарином",
+          "img": "../img/stone-art/jewelry/preview/28.jpg",
+          "description": "181 Жемчуг  156.160&nbsp;ct. <br><br>1 Аквамарин  64,460&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/28.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/28.jpg"
+          ]
+        },
+        {
+          "name": "Кольцо с пиритом и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/29.jpg",
+          "description": "1 Пирит   21.690&nbsp;ct",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/29.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/29.jpg"
+          ]
+        },
+        {
+          "name": "Колье с перламутром, жемчугом и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/30.jpg",
+          "description": "60 Перламутр  53,260&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/30.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/30.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с турмалинами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/31.jpg",
+          "description": "",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/31.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/31.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с изумрудами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/32.jpg",
+          "description": "6 Изумруд  3.545&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/32.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/32.jpg"
+          ]
+        },
+        {
+          "name": "Серьги с цитринами и бриллиантами",
+          "img": "../img/stone-art/jewelry/preview/33.jpg",
+          "description": "186 Цитрин огранка  “Бриолет”  72,881&nbsp;ct.",
+          "about": "",
+          "imagesFull": [
+            "../img/stone-art/jewelry/33.jpg"        
+          ],
+          "imagesPreview": [
+            "../img/stone-art/jewelry/preview/33.jpg"
+          ]
+        }
+      ]
+    },
+    "mosaic": {
+      "pageName": "Флорентийская мозаика",
+      "imagesFull": []
+    },
+    "interior": {
+      "pageName": "Предметы интерьера",
+      "imagesFull": []
+    }
+  }
+}
