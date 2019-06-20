@@ -20,7 +20,7 @@
                     .menu_item(v-for="item in menu")
                         nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng")
 
-        .header_placeholder
+        .header_placeholder(v-if="placeholder")
 
 </template>
 
@@ -36,6 +36,7 @@
                 menu: Menu
             }
         },
+        props: ['placeholder'],
         computed: {
             ...mapState('localization', [
                 'lang',
@@ -95,7 +96,7 @@
         &:after
             position absolute
             top 0
-            bottom 30px
+            bottom -15px
             right: 0
             left 0
             z-index 2
@@ -158,6 +159,8 @@
         letter-spacing 0.3px
         height 50px
         transition all .6s
+        z-index 3
+        position relative
 
         &_item
             padding 10px 15px

@@ -1,29 +1,22 @@
 <template lang="pug">
-    div
-        Header
-        Footer
-
+    .main-container Содержимое главное страницы
 
 </template>
 
 <script>
-    import Header from '~/components/Header.vue'
-    import Footer from '~/components/Footer.vue'
-
 
     export default {
-        data() {
-          return {}
-        },
-        methods: {},
         components: {
-            Header,
-            Footer,
         },
-        mounted() {},
     }
 </script>
 
 <style lang="stylus">
-
+    .main-container
+        color whiteMain
+        display flex
+        flex-direction column
+        justify-content center
+        text-align center
+        text-align -webkit-center
 </style>

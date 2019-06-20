@@ -1,12 +1,10 @@
 <template lang="pug">
-    div
-        Header
-        .collections-container
-            h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
-            .collections-blocks
-                .item-column
-                    <!--.item(v-for="item in filterMuseum(1)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
-                    .imgHeight.item.left.nothov(v-for="(item, index) in filterMuseum(1)")
+    .collections-container
+        h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
+        .collections-blocks
+            .item-column
+                <!--.item(v-for="item in filterMuseum(1)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
+                nuxt-link.imgHeight.item.left(v-for="(item, index) in filterMuseum(1)" :key="item.id" :to="{path: `/gallery/${item.id}`}")
                         .image
                             img.imgHeight(:src="getImg(item.img)")
                         .description.right(:value="'data-right-' + index")
@@ -14,26 +12,20 @@
                                 .title {{lang === 'ru' ? item.name : item.name}}
                                 .text(v-html="lang === 'ru' ? item.description : item.description")
                                 .about(v-html="lang === 'ru' ? item.about : item.about")
-                .item-column
-                    <!--.item(v-for="item in filterMuseum(2)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
-                    .imgHeight.item(v-for="(item, index) in filterMuseum(2)")
+            .item-column
+                <!--.item(v-for="item in filterMuseum(2)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
+                nuxt-link.imgHeight.item(v-for="(item, index) in filterMuseum(2)" :key="item.id" :to="{path:  `/gallery/${item.id}`}")
                         .image
                             img.imgHeight(:src="getImg(item.img)")
                         .description.left(:value="'data-left-' + index")
                             // todo добавить eng
-                            .title {{lang === 'ru' ? item.name : item.name}}
-                            .text(v-html="lang === 'ru' ? item.description : item.description")
-                            .about(v-html="lang === 'ru' ? item.about : item.about")
-        SplitLine
-        Footer
+                            .title {{lang === 'ru' ? item.name : item.nameEng}}
+                            .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
+                            .about(v-html="lang === 'ru' ? item.about : item.aboutEng")
 </template>
 
 <script>
     import { mapState } from 'vuex'
-
-    import Header from '~/components/Header.vue'
-    import Footer from '~/components/Footer.vue'
-    import SplitLine from '~/components/SplitLine.vue'
 
     import Museum from '~/assets/staticData/museum.json'
 
@@ -53,12 +45,9 @@
                     if (int === 1) return index % 2 === 0
                     else return index % 2 !== 0
                 })
-            }
+            },
         },
         components: {
-            Header,
-            Footer,
-            SplitLine,
         },
         computed: {
             ...mapState('localization', [
@@ -122,14 +111,15 @@
                 flex 50%
                 position relative
 
-
                 .item
+                    display block
                     cursor pointer
                     overflow hidden
                     max-width 590px
                     margin-bottom 10px
                     margin-right 5px
                     margin-left 5px
+                    transition opacity 1s ease-in-out
 
                     &:hover
                         box-shadow 0 30px 30px -20px #000
@@ -175,7 +165,7 @@
                             position absolute
                             right  0
                             display inline-flex
-                            max-width 600px
+                            max-width 590px
                             width 100%
                             height 100%
                             transition all 1s ease-out

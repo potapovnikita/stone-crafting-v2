@@ -11,13 +11,9 @@
 
             }
         },
-        methods: {
-
-        },
-        components: {
-        },
-        mounted() {
-        },
+        methods: {},
+        components: {},
+        mounted() {},
     }
 </script>
 
@@ -26,6 +22,6 @@
         background-color #120000
         margin 0 auto
         position relative
-        padding 30px 60px
         min-height 100vh
+        overflow hidden
 </style>

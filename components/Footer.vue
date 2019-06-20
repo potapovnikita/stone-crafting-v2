@@ -50,6 +50,7 @@
         display flex
         flex-direction column
         border-top 1px solid grey
+        padding 30px 60px
 
         .footer_block
             display flex
