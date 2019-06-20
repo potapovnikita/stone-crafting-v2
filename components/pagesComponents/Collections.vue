@@ -87,6 +87,7 @@
         justify-content center
         text-align center
         text-align -webkit-center
+        padding 30px 60px
 
         h1
             text-transform uppercase
@@ -123,9 +124,7 @@
 
                     &:hover
                         box-shadow 0 30px 30px -20px #000
-                        z-index 1
-
-
+                        z-index 10
 
                         .image
 
@@ -154,9 +153,9 @@
                         text-align left
 
                         &.left
-                            right calc(50% - 4px)
+                            right calc(40% - 4px)
                         &.right
-                            left calc(50% - 4px)
+                            left calc(40% - 4px)
 
                     .image
                         position relative
