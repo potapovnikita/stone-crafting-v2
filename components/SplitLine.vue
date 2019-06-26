@@ -8,9 +8,9 @@
 
 <style lang="stylus">
     .line
-        height 2px
+        height 1px
         background silverMain
-        left 0
-        right 0
+        left 40%
+        right 40%
         position absolute
 </style>

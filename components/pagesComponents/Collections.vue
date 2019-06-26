@@ -141,13 +141,12 @@
                                     left calc(100% - 5px)
 
                     .description
-                        background whiteMain
                         position absolute
                         opacity 0
                         transition-property right, left, opacity
                         transition-duration 1s
                         transition-timing-function ease-in-out
-                        background silver
+                        background silverMain
                         z-index -10
                         padding 20px 10px
                         text-align left

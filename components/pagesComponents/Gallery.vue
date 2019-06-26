@@ -3,18 +3,29 @@
             .video-section
                 .video-wrapper
                     h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                    video(loop="true" preload="auto" autoplay="true" muted="muted")
+                    video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
+                    .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesFull[0])}")
+
             .description-wrapper
                 .column
-                    .photo
-                        img(:src="getImg(currentProduct.imagesFull[1])")
+                    .photo(v-if="activePhoto")
+                        .img(:style="{backgroundImage: getBgImg(activePhoto)}" @click="selectImg(activeIndex + 1)")
+                        .arrow_left(@click="selectImg(activeIndex - 1)")
+                        .arrow_right(@click="selectImg(activeIndex + 1)")
+                    .slider
+                        .photo_preview(v-for="(item, index) in currentProduct.imagesPreview"
+                                        @click="selectImg(index)")
+                            img(:src="getImg(item)" :class="{active: index === activeIndex}")
                 .column
                     .text
-                        .title(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
+                        h2.title(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
+                        .line-sm
                         .description(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
                         .about(v-html="lang === 'ru' ? currentProduct.about : currentProduct.aboutEng")
             .photo_gallery
+
+
 </template>
 
 <script>
@@ -30,6 +41,8 @@
         data() {
             return {
                 products: Museum,
+                activePhoto: '',
+                activeIndex: 0
             }
         },
         computed: {
@@ -40,13 +53,25 @@
                 // по id изделия из url находим нужное изделие
                 return this.products
                     .find(item => item.id === this.$route.path.split('/').pop())
-            }
+            },
         },
         methods: {
             getImg(url) {
-                console.log(url)
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
+            },
+            getBgImg(url) {
+                const imageUrl = require('~/assets/' + `${url}`)
+                return url ? `url(${imageUrl})` : ''
+            },
+            getActivePhoto(index) {
+                this.activeIndex = index
+                return this.currentProduct.imagesFull[index]
+            },
+            selectImg(index) {
+                if (index >= this.currentProduct.imagesFull.length) index = 0
+                if (index < 0) index = this.currentProduct.imagesFull.length - 1
+                this.activePhoto = this.getActivePhoto(index)
             },
         },
         components: {
@@ -55,12 +80,14 @@
             SplitLine,
         },
         mounted() {
-
+            this.activePhoto = this.getActivePhoto(0)
         },
     }
 </script>
 
 <style lang="stylus">
+    $sizeBig = 121px
+    $sizeMin = 96px
     .gallery-container
         display flex
         flex-direction column
@@ -88,14 +115,21 @@
                 left 0
                 width 100vw
 
-                video {
+                .image
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                video
                     display block
                     position absolute
                     left 50%
                     top 50%
                     transform translate(-50%, -50%)
                     z-index 1
-                }
+
                 h1
                     position absolute
                     bottom 0
@@ -111,16 +145,100 @@
                 max-width 600px
                 flex 50%
                 padding 10px
+                .slider
+                    display flex
+                    flex-direction row
+                    flex-wrap wrap
+                    width 100%
+
+                    .photo_preview
+                        cursor pointer
+                        padding 0 2px 2px 2px
+                        img
+                            min-width $sizeBig
+                            max-width $sizeBig
+                            min-height $sizeBig
+                            max-height $sizeBig
+                            &:hover
+                                border 1px solid #660f28
+                            &.active
+                                border 1px solid #660f28
 
                 .photo
-                    img
-                        max-width 100%
-                        max-height 600px
-                        box-shadow 0 0 12px -1px rgba(0,0,0,0.8)
+                    height 600px
+                    max-height 600px
+                    box-shadow 0 0 12px -1px rgba(0,0,0,0.8)
+                    border 1px solid #660f28
+                    margin-bottom 10px
+                    position relative
+                    &:hover
+                        .arrow_left,
+                        .arrow_right
+                            opacity 0.5
+
+                    .arrow_left,
+                    .arrow_right
+                        position absolute
+                        top 0
+                        bottom 0
+                        width 10%
+                        opacity 0
+                        background black
+                        background-size: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        cursor pointer
+
+                    .arrow_left
+                        background-image url('~assets/img/left-arrow.png')
+                        left 0
+                        &:hover
+                            opacity 1
+                    .arrow_right
+                        background-image url('~assets/img/right-arrow.png')
+                        right  0
+                        &:hover
+                            opacity 1
+
+                    .img
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width 100%
+                        height 100%
+                        cursor pointer
+                .slider,
+                .photo
+                    max-width 500px
                 .text
                     text-align left
-                    .title
+                    h2.title
                         margin-bottom 15px
+                        text-align left
+                    .line-sm
+                        width 100px
+                        height 1px
+                        margin-bottom 15px
+                        background silverMain
+                    .description
+                        margin-bottom 15px
+
+
+        @media only screen and (max-width 1441px)
+            .description-wrapper
+                .column
+                    .slider
+                        .photo_preview
+                            img
+                                min-width $sizeMin
+                                max-width $sizeMin
+                                min-height $sizeMin
+                                max-height $sizeMin
+                    .slider,
+                    .photo
+                        max-width 400px
+                        max-height  450px
+
 
 
 </style>
