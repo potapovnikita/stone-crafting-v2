@@ -146,7 +146,7 @@
                         transition-property right, left, opacity
                         transition-duration 1s
                         transition-timing-function ease-in-out
-                        background silverMain
+                        background darkRed
                         z-index -10
                         padding 20px 10px
                         text-align left

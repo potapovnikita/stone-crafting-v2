@@ -6,6 +6,7 @@
                     video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
                     .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesFull[0])}")
+                    <!--.image-prepicture(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesPreview[0])}")-->
 
             .description-wrapper
                 .column
@@ -37,6 +38,17 @@
 
     import Museum from '~/assets/staticData/museum.json'
 
+    // if (process.browser) {
+    //     window.onNuxtReady(() => {
+    //         console.log(1);
+    //         const smHousingPic = document.querySelector('.image-prepicture')
+    //         if (smHousingPic) smHousingPic.classList.add('faded')
+    //     })
+    // }
+
+    /**
+     * Плавная загрузка изображений
+     */
     export default {
         data() {
             return {
@@ -82,12 +94,21 @@
         mounted() {
             this.activePhoto = this.getActivePhoto(0)
         },
+        created() {
+
+        }
     }
 </script>
 
 <style lang="stylus">
     $sizeBig = 121px
     $sizeMin = 96px
+
+
+    /*.faded {
+        opacity: 0 !important;
+    }*/
+
     .gallery-container
         display flex
         flex-direction column
@@ -121,6 +142,21 @@
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+
+                    /*&-prepicture
+                        filter blur(7px)
+                        background-repeat no-repeat
+                        background-size cover
+                        background-color blackRed
+                        width 100%
+                        height: 100%;
+                        z-index 4
+                        opacity 1
+                        transition all 2s linear
+                        overflow hidden
+                        position absolute
+                        top 0
+                        left 0*/
 
                 video
                     display block
@@ -160,15 +196,15 @@
                             min-height $sizeBig
                             max-height $sizeBig
                             &:hover
-                                border 1px solid #660f28
+                                border 1px solid darkRed
                             &.active
-                                border 1px solid #660f28
+                                border 1px solid darkRed
 
                 .photo
                     height 600px
                     max-height 600px
                     box-shadow 0 0 12px -1px rgba(0,0,0,0.8)
-                    border 1px solid #660f28
+                    border 1px solid darkRed
                     margin-bottom 10px
                     position relative
                     &:hover
