@@ -97,6 +97,14 @@
                     elem.style.height = item.offsetWidth + 2 + 'px'
                     elem.style.width = (item.offsetWidth + 2) * 0.6 + 'px'
                 })
+
+
+                // item.addEventListener('touchstart', function(e){
+                //     e.stopPropagation(); e.preventDefault();
+                //     console.log(1)
+                //
+                // });
+
             })
 
             window.addEventListener('resize', () => {
@@ -220,12 +228,12 @@
                         display flex
                         flex-wrap nowrap
                         flex-direction row
-                        margin-bottom 15px
+                        margin-bottom 25px
                         .points
                             position: absolute;
                             left: 0;
                             right: 0;
-                            bottom: -10px;
+                            bottom: -15px;
                             height: 10px;
                             display: flex;
                             flex-direction: row;
@@ -243,13 +251,14 @@
 
                         .image
                             position relative
-                            left 0
                             min-width 100%
                             min-height 100%
                             height 100%
                             width 100%
                             img
                                 width 100%
+                                height 100%
+
                         .description
                             padding 15px
                             display: flex;
@@ -259,8 +268,9 @@
                             top: 0;
                             bottom: 0;
                             right: 0;
+                            left: 0;
                             transform: translateX(200%);
-                            transition transform .2s ease-in
+                            transition transform .3s ease-in-out
                             overflow hidden
                             .blur
                                 position absolute
