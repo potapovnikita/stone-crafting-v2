@@ -277,10 +277,10 @@
             display block
 
         .menu
+            display none
             justify-content space-around
 
-            .menu_row
-                display none
-
+        .header_placeholder
+            display none
 
 </style>

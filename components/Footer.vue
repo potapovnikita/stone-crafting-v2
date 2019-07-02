@@ -6,7 +6,7 @@
         .footer_line
         .footer_block
             .column
-                .item {{contacts.phoneMain}}
+                a.item(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
                 .item {{contacts.email}}
                 .item.icons
                     a.icon.youtube(:href="contacts.inst")
@@ -132,12 +132,25 @@
 
 
 
+    @media only screen and (max-width 767px)
+        .footer_container
+            padding 10px 20px
 
-    /*@media only screen and (max-width 1200px)*/
-
-
-    /*@media only screen and (max-width 767px)*/
-
+            .footer_menu
+                flex-direction column
+            .footer_block
+                flex-direction column
+                .column,
+                .address_column
+                    flex-direction column
+                    justify-content center
+                    text-align center
+                    margin-bottom 10px
+                    .title
+                        margin-bottom 10px
+                    .item
+                        text-align center
+                        justify-content center
 
 
 </style>

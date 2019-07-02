@@ -204,13 +204,13 @@
                     height 600px
                     max-height 600px
                     box-shadow 0 0 12px -1px rgba(0,0,0,0.8)
-                    border 1px solid darkRed
+                    border 1px solid black
                     margin-bottom 10px
                     position relative
                     &:hover
                         .arrow_left,
                         .arrow_right
-                            opacity 0.5
+                            background-color darkRed
 
                     .arrow_left,
                     .arrow_right
@@ -219,7 +219,6 @@
                         bottom 0
                         width 10%
                         opacity 0
-                        background black
                         background-size: 20px;
                         background-position: center;
                         background-repeat: no-repeat;
@@ -229,12 +228,12 @@
                         background-image url('~assets/img/left-arrow.png')
                         left 0
                         &:hover
-                            opacity 1
+                            opacity 0.4
                     .arrow_right
                         background-image url('~assets/img/right-arrow.png')
                         right  0
                         &:hover
-                            opacity 1
+                            opacity 0.4
 
                     .img
                         background-size: cover;

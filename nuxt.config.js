@@ -30,7 +30,8 @@ module.exports = {
         // 'swiper/dist/css/swiper.css',
     ],
     plugins: [
-        // { src: '~/plugins/swiper.js', ssr: false },
+        // { src: '~/plugins/vue-touch.js', ssr: false },
+        { src: '~/plugins/vue-touch', ssr: false },
     ],
     /*
     ** Build configuration

@@ -1,27 +1,41 @@
 <template lang="pug">
     .collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
-        .collections-blocks
+        .collections-blocks.desktop
             .item-column
-                <!--.item(v-for="item in filterMuseum(1)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
                 nuxt-link.imgHeight.item.left(v-for="(item, index) in filterMuseum(1)" :key="item.id" :to="{path: `/gallery/${item.id}`}")
                         .image
                             img.imgHeight(:src="getImg(item.img)")
                         .description.right(:value="'data-right-' + index")
-                                // todo добавить eng
-                                .title {{lang === 'ru' ? item.name : item.name}}
-                                .text(v-html="lang === 'ru' ? item.description : item.description")
-                                .about(v-html="lang === 'ru' ? item.about : item.about")
+                                .title {{lang === 'ru' ? item.name : item.nameEng}}
+                                .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
+                                .about(v-html="lang === 'ru' ? item.about : item.aboutEng")
             .item-column
-                <!--.item(v-for="item in filterMuseum(2)" :style="{'background-image': 'url(' + getImg(item.img) + ')'}")-->
                 nuxt-link.imgHeight.item(v-for="(item, index) in filterMuseum(2)" :key="item.id" :to="{path:  `/gallery/${item.id}`}")
                         .image
                             img.imgHeight(:src="getImg(item.img)")
                         .description.left(:value="'data-left-' + index")
-                            // todo добавить eng
                             .title {{lang === 'ru' ? item.name : item.nameEng}}
                             .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
                             .about(v-html="lang === 'ru' ? item.about : item.aboutEng")
+
+        // for mobile version
+        .collections-blocks.mobile
+            .item-column
+                nuxt-link.item(v-for="(item, index) in filterMuseum(1)"
+                        v-touch:swipe.left="swipe"
+                        :key="item.id"
+                        :to="{path: `/gallery/${item.id}`}")
+                    .points
+                        .point.active
+                        .point
+                    .image
+                        img(:src="getImg(item.img)")
+                    .description(v-touch:swipe.right="swipe")
+                        .blur
+                        .title {{lang === 'ru' ? item.name : item.nameEng}}
+                        .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
+
 </template>
 
 <script>
@@ -45,6 +59,25 @@
                     if (int === 1) return index % 2 === 0
                     else return index % 2 !== 0
                 })
+            },
+            swipe(direction, event) {
+                const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
+                    ? event.target.parentElement.parentElement.lastChild
+                    : event.target.parentElement.parentElement
+
+                const point = descBlock.parentElement.firstChild
+                console.log('point', point)
+
+                if (direction === 'left') {
+                    console.log(event.target.parentElement.parentElement.lastChild)
+                    descBlock.style.transform = 'translateX(0%)'
+                    point.lastChild.classList.add('active')
+                    point.firstChild.classList.remove('active')
+                } else if (direction === 'right' && descBlock.style.transform === 'translateX(0%)') {
+                    descBlock.style.transform = 'translateX(200%)'
+                    point.firstChild.classList.add('active')
+                    point.lastChild.classList.remove('active')
+                }
             },
         },
         components: {
@@ -96,7 +129,10 @@
             padding 0.9em 1.2em 2.6em 1.2em
             color whiteMain
 
-        .collections-blocks
+        .collections-blocks.mobile
+            display none
+
+        .collections-blocks.desktop
             display flex
             flex-direction row
             flex-flow wrap
@@ -150,6 +186,7 @@
                         z-index -10
                         padding 20px 10px
                         text-align left
+                        overflow hidden
 
                         &.left
                             right calc(40% - 4px)
@@ -168,7 +205,74 @@
                             height 100%
                             transition all 1s ease-out
 
+    @media only screen and (max-width 767px)
+        .collections-container
+            padding 20px 20px
+
+            .collections-blocks.desktop
+                display none
+            .collections-blocks.mobile
+                display flex
+                flex-direction column
+                .item-column
+                    .item
+                        position relative
+                        display flex
+                        flex-wrap nowrap
+                        flex-direction row
+                        margin-bottom 15px
+                        .points
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: -10px;
+                            height: 10px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+
+                            .point
+                                margin 0 5px
+                                border-radius 20px
+                                background-color silverMain
+                                width 10px
+                                height 10px
+                                &.active
+                                    background-color #3897f0
 
 
+                        .image
+                            position relative
+                            left 0
+                            min-width 100%
+                            min-height 100%
+                            height 100%
+                            width 100%
+                            img
+                                width 100%
+                        .description
+                            padding 15px
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            position absolute
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            transform: translateX(200%);
+                            transition transform .2s ease-in
+                            overflow hidden
+                            .blur
+                                position absolute
+                                top 0
+                                bottom 0
+                                left 0
+                                right 0
+                                background-color: rgba(139, 0, 0, 0.5);
+                            .text
+                                position relative
+                            .title
+                                position relative
+                                margin-bottom: 40px
 
 </style>
