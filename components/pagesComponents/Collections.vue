@@ -69,7 +69,6 @@
                 console.log('point', point)
 
                 if (direction === 'left') {
-                    console.log(event.target.parentElement.parentElement.lastChild)
                     descBlock.style.transform = 'translateX(0%)'
                     point.lastChild.classList.add('active')
                     point.firstChild.classList.remove('active')
@@ -98,12 +97,20 @@
                     elem.style.width = (item.offsetWidth + 2) * 0.6 + 'px'
                 })
 
-
-                // item.addEventListener('touchstart', function(e){
-                //     e.stopPropagation(); e.preventDefault();
-                //     console.log(1)
-                //
-                // });
+                item.addEventListener('touchstart', (event) => {
+                    event.stopPropagation();
+                    const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
+                        ? event.target.parentElement.parentElement
+                        : event.target.parentElement
+                    descBlock.classList.toggle('hover');
+                });
+                item.addEventListener('touchend', (event) => {
+                    event.stopPropagation();
+                    const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
+                        ? event.target.parentElement.parentElement
+                        : event.target.parentElement
+                    descBlock.classList.toggle('hover');
+                });
 
             })
 
@@ -166,6 +173,23 @@
                     margin-left 5px
                     transition opacity 1s ease-in-out
 
+                    &.hover
+                        box-shadow 0 30px 30px -20px #000
+                        z-index 10
+
+                        .image
+
+                            img
+                                transform scale(1.1)
+
+                            ~.description
+                                opacity 1
+                                z-index 10
+
+                                &.left
+                                    right calc(100% - 5px)
+                                &.right
+                                    left calc(100% - 5px)
                     &:hover
                         box-shadow 0 30px 30px -20px #000
                         z-index 10
