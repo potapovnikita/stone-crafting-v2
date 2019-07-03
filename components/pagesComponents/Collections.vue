@@ -106,6 +106,7 @@
                 });
                 item.addEventListener('touchend', (event) => {
                     event.stopPropagation();
+                    event.preventDefault();
                     const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
                         ? event.target.parentElement.parentElement
                         : event.target.parentElement
