@@ -2,27 +2,22 @@
     .collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
         .collections-blocks.desktop
-            .item-column
-                nuxt-link.imgHeight.item.left(v-for="(item, index) in filterMuseum(1)" :key="item.id" :to="{path: `/gallery/${item.id}`}")
-                        .image
+            .item.itemBlock(v-for="(item, index) in museum" :key="item.id")
+                nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
+                    .media
+                        .preview
                             img.imgHeight(:src="getImg(item.img)")
-                        .description.right(:value="'data-right-' + index")
+
+                    .spec
+                        .description
+                            .content
                                 .title {{lang === 'ru' ? item.name : item.nameEng}}
                                 .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
-                                .about(v-html="lang === 'ru' ? item.about : item.aboutEng")
-            .item-column
-                nuxt-link.imgHeight.item(v-for="(item, index) in filterMuseum(2)" :key="item.id" :to="{path:  `/gallery/${item.id}`}")
-                        .image
-                            img.imgHeight(:src="getImg(item.img)")
-                        .description.left(:value="'data-left-' + index")
-                            .title {{lang === 'ru' ? item.name : item.nameEng}}
-                            .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
-                            .about(v-html="lang === 'ru' ? item.about : item.aboutEng")
 
         // for mobile version
         .collections-blocks.mobile
             .item-column
-                nuxt-link.item(v-for="(item, index) in filterMuseum(1)"
+                nuxt-link.item(v-for="(item, index) in museum"
                         v-touch:swipe.left="swipe"
                         :key="item.id"
                         :to="{path: `/gallery/${item.id}`}")
@@ -66,7 +61,6 @@
                     : event.target.parentElement.parentElement
 
                 const point = descBlock.parentElement.firstChild
-                console.log('point', point)
 
                 if (direction === 'left') {
                     descBlock.style.transform = 'translateX(0%)'
@@ -78,6 +72,28 @@
                     point.lastChild.classList.remove('active')
                 }
             },
+            visible: (el) => {
+                const targetPosition = {
+                    top: window.pageYOffset + el.getBoundingClientRect().top,
+                    left: window.pageXOffset + el.getBoundingClientRect().left,
+                    right: window.pageXOffset + el.getBoundingClientRect().right,
+                    bottom: window.pageYOffset + el.getBoundingClientRect().bottom,
+                }
+
+                const windowPosition = {
+                    top: window.pageYOffset,
+                    left: window.pageXOffset,
+                    right: window.pageXOffset + document.documentElement.clientWidth,
+                    bottom: window.pageYOffset + document.documentElement.clientHeight,
+                };
+
+                if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+                    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+                    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+                    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+
+                }
+            }
         },
         components: {
         },
@@ -87,43 +103,93 @@
             ]),
         },
         mounted() {
-            const elemImg = Array.from(document.getElementsByClassName('imgHeight'))
-            const elemDesc = Array.from(document.querySelectorAll('.imgHeight .description'))
+            const container = document.querySelector('.collections-blocks.desktop')
 
-            elemImg.forEach((item) => {
-                item.style.height = item.offsetWidth + 2 + 'px'
-                elemDesc.forEach((elem) => {
-                    elem.style.height = item.offsetWidth + 2 + 'px'
-                    elem.style.width = (item.offsetWidth + 2) * 0.6 + 'px'
+            const block = Array.from(document.querySelectorAll('.itemBlock'))
+            const blockHeight = 600;
+            const top = 600;
+            const length = block.length
+
+            container.style.height = block.length/2 * blockHeight + 'px'
+
+            let width
+
+            block.forEach((item, index) => {
+                const description = item.querySelectorAll('.description')[0];
+                const spec = item.querySelectorAll('.spec')[0];
+                const image = item.querySelectorAll('.image')[0];
+                if (width) {
+                    image.style.height = width + 'px'
+                } else {
+                    image.style.height = Math.ceil(item.clientWidth) + 'px'
+                    width = Math.ceil(item.clientWidth)
+                }
+
+                description.style.width = item.clientWidth/2 + 'px'
+                spec.style.width = item.clientWidth/2 * 3 + 'px'
+
+
+                if (index % 2 === 0) {
+                    item.style.left = '0'
+                    description.classList.add('left')
+                    spec.style.right = 'auto'
+                } else {
+                    item.style.left = '50%'
+                    description.classList.add('right')
+                    spec.style.left = 'auto'
+                }
+
+                // дабавляем и удаляем наведение на блок картинки
+                item.addEventListener('mouseenter', (e) => {
+                    description.classList.add('hovered')
+                    item.classList.add('hovered')
+                    spec.style.width = item.clientWidth/2 * 3 + 'px'
                 })
 
-                item.addEventListener('touchstart', (event) => {
-                    event.stopPropagation();
-                    const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
-                        ? event.target.parentElement.parentElement
-                        : event.target.parentElement
-                    descBlock.classList.toggle('hover');
-                });
-                item.addEventListener('touchend', (event) => {
-                    event.stopPropagation();
-                    event.preventDefault();
-                    const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
-                        ? event.target.parentElement.parentElement
-                        : event.target.parentElement
-                    descBlock.classList.toggle('hover');
-                });
-
-            })
-
-            window.addEventListener('resize', () => {
-                elemImg.forEach((item) => {
-                    item.style.height = item.offsetWidth + 2 + 'px'
-                    elemDesc.forEach((elem) => {
-                        elem.style.height = item.offsetWidth + 2 + 'px'
-                        elem.style.width = (item.offsetWidth + 2) * 0.6 + 'px'
-                    })
+                item.addEventListener('mouseleave', (e) => {
+                    description.classList.remove('hovered')
+                    item.classList.remove('hovered')
+                    spec.style.width = item.clientWidth/2 + 'px'
                 })
 
+
+                switch (index+1) {
+                    case 1:
+                    case 2:
+                        item.style.top = top * 0 + 'px'
+                        break;
+                    case 3:
+                    case 4:
+                        item.style.top = top * 1 + 'px'
+                        break;
+                    case 5:
+                    case 6:
+                        item.style.top = top * 2 + 'px'
+                        break;
+                    case 7:
+                    case 8:
+                        item.style.top = top * 3 + 'px'
+                        break;
+                    case 9:
+                    case 10:
+                        item.style.top = top * 4 + 'px'
+                        break;
+                    case 11:
+                    case 12:
+                        item.style.top = top * 5 + 'px'
+                        break;
+                    case 13:
+                    case 14:
+                        item.style.top = top * 6 + 'px'
+                        break;
+                    default: item.style.display = 'none'
+                }
+
+                // this.visible(item)
+                //
+                // document.addEventListener('scroll', () => {
+                //     this.visible(item)
+                // })
             })
         },
     }
@@ -145,98 +211,109 @@
             padding 0.9em 1.2em 2.6em 1.2em
             color whiteMain
 
+        .collections-blocks.desktop
+            position relative
+            max-width 1200px
+            &:hover
+                .item:not(:hover)
+                    opacity 0.5
+            .item
+                display block
+                max-width 600px
+                width 50%
+                overflow hidden
+                float left
+                transition all .6s ease-in-out, opacity 1s ease-in
+
+                &.hovered
+                    z-index 10
+                    overflow visible
+
+                .image
+                    max-height 100%
+                    position relative
+                    text-align center
+                    padding 5px
+                    display block
+                    &:hover
+                        img
+                            transform scale(1.03)
+                    .media
+                        width 100%
+                        height 100%
+
+                        .preview
+                            position relative
+                            text-align center
+                            height 100%
+                            width 100%
+                            display flex
+                            align-items center
+                            justify-content center
+                            z-index 10
+
+                            img
+                                max-height: 100%;
+                                max-width 100%;
+                                min-width 100%;
+                                min-height 100%;
+                                display block
+                                position relative
+                                transition all .6s ease-in-out
+                                z-index 4
+                    .spec
+                        text-align left
+                        transition width 0.7s
+                        position absolute
+                        top 0
+                        bottom 0
+                        right 0
+                        left 0
+                        width 100%
+                        z-index 3
+
+                        .description
+                            background darkRed
+                            height 100%
+                            position absolute
+                            top 0
+                            opacity 0
+                            transform translate3d(0, 0, 0)
+                            transition opacity 0.5s ease-in-out, transform 1s ease-in-out, z-index 4s ease-in-out
+                            padding 20px
+                            z-index 10
+                            .content
+                                transition opacity 1s ease-in
+                                opacity 0
+                                .title
+                                    margin-bottom 15px
+
+                            &.right
+                                right 0
+                                transform translate3d(-100%, 0, 0)
+                                &.hovered
+                                    /*z-index 10*/
+                                    opacity 1
+                                    transform translate3d(-200%, 0, 0)
+
+                                    .content
+                                        opacity 1
+
+                            &.left
+                                left 0
+                                transform translate3d(100%, 0, 0)
+                                &.hovered
+                                    /*z-index 10*/
+                                    opacity 1
+                                    transform translate3d(200%, 0, 0)
+
+                                    .content
+                                        opacity 1
+
+
         .collections-blocks.mobile
             display none
 
-        .collections-blocks.desktop
-            display flex
-            flex-direction row
-            flex-flow wrap
-            justify-content center
-            max-width 1200px
-
-            &:hover
-                .item-column
-                    .item:not(:hover)
-                        opacity 0.6
-
-            .item-column
-                flex 50%
-                position relative
-
-                .item
-                    display block
-                    cursor pointer
-                    overflow hidden
-                    max-width 590px
-                    margin-bottom 10px
-                    margin-right 5px
-                    margin-left 5px
-                    transition opacity 1s ease-in-out
-
-                    &.hover
-                        box-shadow 0 30px 30px -20px #000
-                        z-index 10
-
-                        .image
-
-                            img
-                                transform scale(1.1)
-
-                            ~.description
-                                opacity 1
-                                z-index 10
-
-                                &.left
-                                    right calc(100% - 5px)
-                                &.right
-                                    left calc(100% - 5px)
-                    &:hover
-                        box-shadow 0 30px 30px -20px #000
-                        z-index 10
-
-                        .image
-
-                            img
-                                transform scale(1.1)
-
-                            ~.description
-                                opacity 1
-                                z-index 10
-
-                                &.left
-                                    right calc(100% - 5px)
-                                &.right
-                                    left calc(100% - 5px)
-
-                    .description
-                        position absolute
-                        opacity 0
-                        transition-property right, left, opacity
-                        transition-duration 1s
-                        transition-timing-function ease-in-out
-                        background darkRed
-                        z-index -10
-                        padding 20px 10px
-                        text-align left
-                        overflow hidden
-
-                        &.left
-                            right calc(40% - 4px)
-                        &.right
-                            left calc(40% - 4px)
-
-                    .image
-                        position relative
-
-                        img
-                            position absolute
-                            right  0
-                            display inline-flex
-                            max-width 590px
-                            width 100%
-                            height 100%
-                            transition all 1s ease-out
 
     @media only screen and (max-width 767px)
         .collections-container
@@ -294,7 +371,7 @@
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            transform: translateX(200%);
+                            transform: translate3d(200%, 0, 0);
                             transition transform .3s ease-in-out
                             overflow hidden
                             .blur
