@@ -129,17 +129,29 @@
                     }
 
                     // дабавляем и удаляем наведение на блок картинки
-                    item.addEventListener('mouseenter touchstart', (e) => {
+                    item.addEventListener('mouseenter', (e) => {
                         description.classList.add('hovered')
                         item.classList.add('hovered')
                         spec.style.width = item.clientWidth/2 * 3 + 'px'
-                    })
+                    }, false)
+
+                    item.addEventListener('touchstart', (e) => {
+                        description.classList.add('hovered')
+                        item.classList.add('hovered')
+                        spec.style.width = item.clientWidth/2 * 3 + 'px'
+                    }, false)
 
                     item.addEventListener('mouseleave', (e) => {
                         description.classList.remove('hovered')
                         item.classList.remove('hovered')
                         spec.style.width = item.clientWidth/2 + 'px'
-                    })
+                    }, false)
+
+                    item.addEventListener('touchend', (e) => {
+                        description.classList.remove('hovered')
+                        item.classList.remove('hovered')
+                        spec.style.width = item.clientWidth/2 + 'px'
+                    }, false)
 
 
                     switch (index+1) {
@@ -193,7 +205,7 @@
             this.initContent()
             window.addEventListener('resize', () => {
                 this.initContent()
-            })
+            }, false)
         },
     }
 </script>
@@ -219,7 +231,6 @@
                 width 50%
                 overflow hidden
                 float left
-                transition all .5s ease-in-out, opacity 0
 
                 &.hovered
                     z-index 10
