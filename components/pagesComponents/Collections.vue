@@ -381,7 +381,7 @@
                                 width 10px
                                 height 10px
                                 &.active
-                                    background-color #3897f0
+                                    background-color darkRed
 
 
                         .image
