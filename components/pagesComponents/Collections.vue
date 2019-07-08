@@ -106,6 +106,8 @@
                     const description = item.querySelectorAll('.description')[0];
                     const spec = item.querySelectorAll('.spec')[0];
                     const image = item.querySelectorAll('.image')[0];
+                    const imageItem = item.querySelectorAll('.image')[0];
+                    console.log(item.parentNode)
 
                     if (width) {
                         image.style.height = width + 'px'
@@ -132,24 +134,28 @@
                     item.addEventListener('mouseenter', (e) => {
                         description.classList.add('hovered')
                         item.classList.add('hovered')
+                        item.parentNode.classList.add('hovered')
                         spec.style.width = item.clientWidth/2 * 3 + 'px'
                     }, false)
 
                     item.addEventListener('touchstart', (e) => {
                         description.classList.add('hovered')
                         item.classList.add('hovered')
+                        item.parentNode.classList.add('hovered')
                         spec.style.width = item.clientWidth/2 * 3 + 'px'
                     }, false)
 
                     item.addEventListener('mouseleave', (e) => {
                         description.classList.remove('hovered')
                         item.classList.remove('hovered')
+                        item.parentNode.classList.remove('hovered')
                         spec.style.width = item.clientWidth/2 + 'px'
                     }, false)
 
                     item.addEventListener('touchend', (e) => {
                         description.classList.remove('hovered')
                         item.classList.remove('hovered')
+                        item.parentNode.classList.remove('hovered')
                         spec.style.width = item.clientWidth/2 + 'px'
                     }, false)
 
@@ -222,8 +228,8 @@
         .collections-blocks.desktop
             position relative
             max-width 1200px
-            &:hover
-                .item:not(:hover)
+            &.hovered
+                .item:not(.hovered)
                     opacity 0.5
             .item
                 display block
