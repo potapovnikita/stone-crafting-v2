@@ -94,6 +94,8 @@
                 }
             },
             initContent() {
+                const tabletWidth = 1024
+
                 const container = document.querySelector('.collections-blocks.desktop')
                 const block = Array.from(document.querySelectorAll('.itemBlock'))
                 const top = block[0].clientWidth;
@@ -106,8 +108,6 @@
                     const description = item.querySelectorAll('.description')[0];
                     const spec = item.querySelectorAll('.spec')[0];
                     const image = item.querySelectorAll('.image')[0];
-                    const imageItem = item.querySelectorAll('.image')[0];
-                    console.log(item.parentNode)
 
                     if (width) {
                         image.style.height = width + 'px'
@@ -116,8 +116,8 @@
                         width = Math.ceil(item.clientWidth)
                     }
 
-                    description.style.width = item.clientWidth/2 + 'px'
-                    spec.style.width = item.clientWidth/2 * 3 + 'px'
+                    description.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 + 'px' : item.clientWidth + 'px'
+                    spec.style.width =  document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
 
 
                     if (index % 2 === 0) {
@@ -135,28 +135,28 @@
                         description.classList.add('hovered')
                         item.classList.add('hovered')
                         item.parentNode.classList.add('hovered')
-                        spec.style.width = item.clientWidth/2 * 3 + 'px'
+                        spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
                     }, false)
 
                     item.addEventListener('touchstart', (e) => {
                         description.classList.add('hovered')
                         item.classList.add('hovered')
                         item.parentNode.classList.add('hovered')
-                        spec.style.width = item.clientWidth/2 * 3 + 'px'
+                        spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
                     }, false)
 
                     item.addEventListener('mouseleave', (e) => {
                         description.classList.remove('hovered')
                         item.classList.remove('hovered')
                         item.parentNode.classList.remove('hovered')
-                        spec.style.width = item.clientWidth/2 + 'px'
+                        spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
                     }, false)
 
                     item.addEventListener('touchend', (e) => {
                         description.classList.remove('hovered')
                         item.classList.remove('hovered')
                         item.parentNode.classList.remove('hovered')
-                        spec.style.width = item.clientWidth/2 + 'px'
+                        spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
                     }, false)
 
 
@@ -329,12 +329,23 @@
 
 
     @media only screen and (max-width 1024px)
-        .collections-blocks.desktop
-            .item
-                .image
-                    .spec
-                        .description
-                            font-size 13px
+        .collections-container
+            .collections-blocks.desktop
+                .item
+                    .image
+                        .spec
+                            .description
+                                font-size 13px
+
+                                &.right
+                                    transform translate3d(0, 0, 0)
+                                    &.hovered
+                                        transform translate3d(-100%, 0, 0)
+
+                                &.left
+                                    transform translate3d(0, 0, 0)
+                                    &.hovered
+                                        transform translate3d(100%, 0, 0)
 
 
     @media only screen and (max-width 767px)
