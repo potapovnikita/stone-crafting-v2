@@ -123,8 +123,9 @@
         display flex
         justify-content center
         padding-top 20px
-        font-family $FuturaFont
+        font-family $IntroRegularCaps
         font-size $FontSizeMenu
+        text-transform uppercase
         color whiteMain
         height 50px
         z-index 3
@@ -152,8 +153,9 @@
         justify-content center
         margin-top 20px
         padding 0 118px
-        font-family $FuturaFont
+        font-family $IntroRegularCaps
         font-size $FontSizeMenu
+        text-transform uppercase
         color whiteMain
         font-weight bold
         letter-spacing 0.3px
@@ -167,9 +169,11 @@
             white-space nowrap
             position relative
             text-align center
+            opacity 0.8
+            line-height 1.4
 
             &:hover
-                text-decoration underline
+                opacity 1
                 cursor pointer
 
         .menu_row

@@ -20,10 +20,10 @@
                             img(:src="getImg(item)" :class="{active: index === activeIndex}")
                 .column
                     .text
-                        h2.title(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
+                        h2(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
                         .line-sm
-                        .description(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
-                        .about(v-html="lang === 'ru' ? currentProduct.about : currentProduct.aboutEng")
+                        .description.text_default-white(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
+                        .about.text_default-white(v-html="lang === 'ru' ? currentProduct.about : currentProduct.aboutEng")
             .photo_gallery
 
 
@@ -117,13 +117,6 @@
         text-align -webkit-center
         position relative
         color whiteMain
-
-        h1
-            text-transform uppercase
-            text-align center
-            font-size 36px
-            padding 0.9em 1.2em 2.6em 1.2em
-            color whiteMain
 
         .video-section
             position relative
@@ -247,7 +240,7 @@
                     max-width 500px
                 .text
                     text-align left
-                    h2.title
+                    h2
                         margin-bottom 15px
                         text-align left
                     .line-sm

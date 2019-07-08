@@ -1,5 +1,5 @@
 <template lang="pug">
-    .main-container Содержимое главное страницы
+    .about-container Содержимое страницы "О компании"
 
 </template>
 
@@ -25,7 +25,7 @@
 </script>
 
 <style lang="stylus">
-    .main-container
+    .about-container
         color whiteMain
         display flex
         flex-direction column

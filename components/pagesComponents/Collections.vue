@@ -192,7 +192,6 @@
         mounted() {
             this.initContent()
             window.addEventListener('resize', () => {
-                console.log(1)
                 this.initContent()
             })
         },
@@ -207,13 +206,6 @@
         text-align center
         text-align -webkit-center
         padding 30px 60px
-
-        h1
-            text-transform uppercase
-            text-align center
-            font-size 36px
-            padding 0.9em 1.2em 2.6em 1.2em
-            color whiteMain
 
         .collections-blocks.desktop
             position relative

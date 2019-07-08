@@ -2,7 +2,7 @@
     {
         "name": "О камнерезном Доме",
         "nameEng": "About stone-crafting House",
-        "link": ""
+        "link": "/about"
     },{
         "name": "Сокровища музеев </br> Коллекция дома",
         "nameEng": "Museum treasures </br> House collection",
@@ -10,15 +10,15 @@
     },{
         "name": "Новости дома </br> Выставки",
         "nameEng": "House news </br> Shows",
-        "link": ""
+        "link": "/news"
     },{
         "name": "Приобрести уникальные вещи",
         "nameEng": "Buy unique goods",
-        "link": ""
+        "link": "/buy"
     },
     {
         "name": "Услуги",
         "nameEng": "Services",
-        "link": ""
+        "link": "/buy"
     }
 ]

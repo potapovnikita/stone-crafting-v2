@@ -1,5 +1,5 @@
 <template lang="pug">
-    .main-container Содержимое главное страницы
+    .news-container Содержимое страницы "Новости/Выставки"
 
 </template>
 
@@ -25,7 +25,7 @@
 </script>
 
 <style lang="stylus">
-    .main-container
+    .news-container
         color whiteMain
         display flex
         flex-direction column

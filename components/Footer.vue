@@ -69,13 +69,18 @@
             justify-content center
             padding 10px 20px
             margin-bottom 30px
+
             .item
+                font-family $IntroRegularCaps
+                font-size $FontSizeMenu
+                text-transform uppercase
                 text-align center
                 cursor pointer
                 padding 10px 15px
+                opacity 0.8
 
                 &:hover
-                    text-decoration underline
+                    opacity 1
 
         .footer_line
             height 1px
@@ -88,6 +93,9 @@
             display flex
             justify-content space-around
             padding 10px 20px
+            font-family $IntroRegular
+            font-size $FontSizeMenu+2
+
 
             .column
                 display flex
@@ -129,6 +137,8 @@
         .copyright
             margin-top 20px
             text-align center
+            font-family $IntroRegular
+            font-size $FontSizeMenu
 
 
 
