@@ -13,7 +13,7 @@
                             .content
                                 .title {{lang === 'ru' ? item.name : item.nameEng}}
                                 .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
-                            nuxt-link.button(:to="{path: `/gallery/${item.id}`}") Подробнее
+                            .button(@click="this.$router.push({path:`/gallery/${item.id}`})") Подробнее
 
         // for mobile version
         .collections-blocks.mobile
@@ -358,6 +358,7 @@
                                 opacity 0
                                 .title
                                     margin-bottom 15px
+
                             .button
                                 border 1px solid silverMain
                                 padding 5px 10px
