@@ -91,9 +91,96 @@
                     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
                     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
                     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
-
                 }
-            }
+            },
+            initContent() {
+                const container = document.querySelector('.collections-blocks.desktop')
+                const block = Array.from(document.querySelectorAll('.itemBlock'))
+                const top = block[0].clientWidth;
+
+                container.style.height = block.length/2 * block[0].clientWidth + 'px'
+
+                let width
+
+                block.forEach((item, index) => {
+                    const description = item.querySelectorAll('.description')[0];
+                    const spec = item.querySelectorAll('.spec')[0];
+                    const image = item.querySelectorAll('.image')[0];
+
+                    if (width) {
+                        image.style.height = width + 'px'
+                    } else {
+                        image.style.height = Math.ceil(item.clientWidth) + 'px'
+                        width = Math.ceil(item.clientWidth)
+                    }
+
+                    description.style.width = item.clientWidth/2 + 'px'
+                    spec.style.width = item.clientWidth/2 * 3 + 'px'
+
+
+                    if (index % 2 === 0) {
+                        item.style.left = '0'
+                        description.classList.add('left')
+                        spec.style.right = 'auto'
+                    } else {
+                        item.style.left = '50%'
+                        description.classList.add('right')
+                        spec.style.left = 'auto'
+                    }
+
+                    // дабавляем и удаляем наведение на блок картинки
+                    item.addEventListener('mouseenter', (e) => {
+                        description.classList.add('hovered')
+                        item.classList.add('hovered')
+                        spec.style.width = item.clientWidth/2 * 3 + 'px'
+                    })
+
+                    item.addEventListener('mouseleave', (e) => {
+                        description.classList.remove('hovered')
+                        item.classList.remove('hovered')
+                        spec.style.width = item.clientWidth/2 + 'px'
+                    })
+
+
+                    switch (index+1) {
+                        case 1:
+                        case 2:
+                            item.style.top = top * 0 + 'px'
+                            break;
+                        case 3:
+                        case 4:
+                            item.style.top = top * 1 + 'px'
+                            break;
+                        case 5:
+                        case 6:
+                            item.style.top = top * 2 + 'px'
+                            break;
+                        case 7:
+                        case 8:
+                            item.style.top = top * 3 + 'px'
+                            break;
+                        case 9:
+                        case 10:
+                            item.style.top = top * 4 + 'px'
+                            break;
+                        case 11:
+                        case 12:
+                            item.style.top = top * 5 + 'px'
+                            break;
+                        case 13:
+                        case 14:
+                            item.style.top = top * 6 + 'px'
+                            break;
+                        default: item.style.display = 'none'
+                    }
+
+                    // this.visible(item)
+
+                    // document.addEventListener('scroll', () => {
+                    //     this.visible(item)
+                    // })
+                })
+            },
         },
         components: {
         },
@@ -103,93 +190,10 @@
             ]),
         },
         mounted() {
-            const container = document.querySelector('.collections-blocks.desktop')
-
-            const block = Array.from(document.querySelectorAll('.itemBlock'))
-            const blockHeight = 600;
-            const top = 600;
-            const length = block.length
-
-            container.style.height = block.length/2 * blockHeight + 'px'
-
-            let width
-
-            block.forEach((item, index) => {
-                const description = item.querySelectorAll('.description')[0];
-                const spec = item.querySelectorAll('.spec')[0];
-                const image = item.querySelectorAll('.image')[0];
-                if (width) {
-                    image.style.height = width + 'px'
-                } else {
-                    image.style.height = Math.ceil(item.clientWidth) + 'px'
-                    width = Math.ceil(item.clientWidth)
-                }
-
-                description.style.width = item.clientWidth/2 + 'px'
-                spec.style.width = item.clientWidth/2 * 3 + 'px'
-
-
-                if (index % 2 === 0) {
-                    item.style.left = '0'
-                    description.classList.add('left')
-                    spec.style.right = 'auto'
-                } else {
-                    item.style.left = '50%'
-                    description.classList.add('right')
-                    spec.style.left = 'auto'
-                }
-
-                // дабавляем и удаляем наведение на блок картинки
-                item.addEventListener('mouseenter', (e) => {
-                    description.classList.add('hovered')
-                    item.classList.add('hovered')
-                    spec.style.width = item.clientWidth/2 * 3 + 'px'
-                })
-
-                item.addEventListener('mouseleave', (e) => {
-                    description.classList.remove('hovered')
-                    item.classList.remove('hovered')
-                    spec.style.width = item.clientWidth/2 + 'px'
-                })
-
-
-                switch (index+1) {
-                    case 1:
-                    case 2:
-                        item.style.top = top * 0 + 'px'
-                        break;
-                    case 3:
-                    case 4:
-                        item.style.top = top * 1 + 'px'
-                        break;
-                    case 5:
-                    case 6:
-                        item.style.top = top * 2 + 'px'
-                        break;
-                    case 7:
-                    case 8:
-                        item.style.top = top * 3 + 'px'
-                        break;
-                    case 9:
-                    case 10:
-                        item.style.top = top * 4 + 'px'
-                        break;
-                    case 11:
-                    case 12:
-                        item.style.top = top * 5 + 'px'
-                        break;
-                    case 13:
-                    case 14:
-                        item.style.top = top * 6 + 'px'
-                        break;
-                    default: item.style.display = 'none'
-                }
-
-                // this.visible(item)
-                //
-                // document.addEventListener('scroll', () => {
-                //     this.visible(item)
-                // })
+            this.initContent()
+            window.addEventListener('resize', () => {
+                console.log(1)
+                this.initContent()
             })
         },
     }
@@ -223,7 +227,7 @@
                 width 50%
                 overflow hidden
                 float left
-                transition all .6s ease-in-out, opacity 1s ease-in
+                transition all .5s ease-in-out, opacity 0
 
                 &.hovered
                     z-index 10
@@ -259,11 +263,11 @@
                                 min-height 100%;
                                 display block
                                 position relative
-                                transition all .6s ease-in-out
+                                transition all .5s ease-in
                                 z-index 4
                     .spec
                         text-align left
-                        transition width 0.7s
+                        transition width 0.5s
                         position absolute
                         top 0
                         bottom 0
@@ -279,11 +283,11 @@
                             top 0
                             opacity 0
                             transform translate3d(0, 0, 0)
-                            transition opacity 0.5s ease-in-out, transform 1s ease-in-out, z-index 4s ease-in-out
+                            transition transform .6s ease-in
                             padding 20px
                             z-index 10
                             .content
-                                transition opacity 1s ease-in
+                                transition opacity .8s ease-in
                                 opacity 0
                                 .title
                                     margin-bottom 15px
@@ -292,7 +296,7 @@
                                 right 0
                                 transform translate3d(-100%, 0, 0)
                                 &.hovered
-                                    /*z-index 10*/
+                                    z-index 10
                                     opacity 1
                                     transform translate3d(-200%, 0, 0)
 
@@ -303,7 +307,7 @@
                                 left 0
                                 transform translate3d(100%, 0, 0)
                                 &.hovered
-                                    /*z-index 10*/
+                                    z-index 10
                                     opacity 1
                                     transform translate3d(200%, 0, 0)
 
