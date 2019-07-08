@@ -12,7 +12,7 @@
                         .description
                             .content
                                 .title {{lang === 'ru' ? item.name : item.nameEng}}
-                                .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
+                                .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
         // for mobile version
         .collections-blocks.mobile
@@ -29,7 +29,7 @@
                     .description(v-touch:swipe.right="swipe")
                         .blur
                         .title {{lang === 'ru' ? item.name : item.nameEng}}
-                        .text(v-html="lang === 'ru' ? item.description : item.descriptionEng")
+                        .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
 </template>
 
@@ -93,9 +93,79 @@
                     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
                 }
             },
-            initContent() {
+            hideAll() {
+                const container = document.querySelector('.collections-blocks.desktop')
+
+                const descriptionList = Array.from(container.querySelectorAll('.description'));
+                descriptionList.forEach((elem) => {
+                    elem.classList.remove('hovered')
+                })
+
+                const itemList = Array.from(container.querySelectorAll('.item'));
+                itemList.forEach((elem) => {
+                    elem.classList.remove('hovered')
+                    elem.parentNode.classList.remove('hovered')
+                })
+            },
+
+            showAll() {
+                const container = document.querySelector('.collections-blocks.desktop')
+
+                const descriptionList = Array.from(container.querySelectorAll('.description'));
+                descriptionList.forEach((elem) => {
+                    elem.classList.add('hovered')
+                })
+
+                const itemList = Array.from(container.querySelectorAll('.item'));
+                itemList.forEach((elem) => {
+                    elem.classList.add('hovered')
+                    elem.parentNode.classList.add('hovered')
+                })
+            },
+            initContentTablet() {
                 const tabletWidth = 1024
 
+                const container = document.querySelector('.collections-blocks.desktop')
+                const block = Array.from(document.querySelectorAll('.itemBlock'))
+                const top = block[0].clientWidth;
+
+                container.style.height = block.length * block[0].clientWidth + 'px'
+
+                let width
+
+                block.forEach((item, index) => {
+                    const description = item.querySelectorAll('.description')[0];
+                    const spec = item.querySelectorAll('.spec')[0];
+                    const image = item.querySelectorAll('.image')[0];
+
+                    if (width) {
+                        image.style.height = width + 'px'
+                    } else {
+                        image.style.height = Math.ceil(item.clientWidth) + 'px'
+                        width = Math.ceil(item.clientWidth)
+                    }
+
+                    description.style.width = item.clientWidth + 'px'
+                    spec.style.width = item.clientWidth * 2
+
+                    item.style.position = 'absolute'
+
+                    item.style.left = '0'
+                    description.classList.add('left')
+                    spec.style.right = 'auto'
+
+                    this.showAll()
+                    spec.style.top = '5px'
+                    spec.style.bottom = '5px'
+                    spec.style.left = '5px'
+                    spec.style.right = '5px'
+
+                    item.style.top = top * index + 'px'
+                })
+            },
+
+            initContent() {
+                const tabletWidth = 1024
                 const container = document.querySelector('.collections-blocks.desktop')
                 const block = Array.from(document.querySelectorAll('.itemBlock'))
                 const top = block[0].clientWidth;
@@ -118,7 +188,7 @@
 
                     description.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 + 'px' : item.clientWidth + 'px'
                     spec.style.width =  document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
-
+                    item.style.float = 'left'
 
                     if (index % 2 === 0) {
                         item.style.left = '0'
@@ -139,6 +209,7 @@
                     }, false)
 
                     item.addEventListener('touchstart', (e) => {
+                        this.hideAll()
                         description.classList.add('hovered')
                         item.classList.add('hovered')
                         item.parentNode.classList.add('hovered')
@@ -151,14 +222,6 @@
                         item.parentNode.classList.remove('hovered')
                         spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
                     }, false)
-
-                    item.addEventListener('touchend', (e) => {
-                        description.classList.remove('hovered')
-                        item.classList.remove('hovered')
-                        item.parentNode.classList.remove('hovered')
-                        spec.style.width = document.body.offsetWidth > tabletWidth ? item.clientWidth/2 * 3 + 'px' : item.clientWidth * 2
-                    }, false)
-
 
                     switch (index+1) {
                         case 1:
@@ -191,12 +254,6 @@
                             break;
                         default: item.style.display = 'none'
                     }
-
-                    // this.visible(item)
-
-                    // document.addEventListener('scroll', () => {
-                    //     this.visible(item)
-                    // })
                 })
             },
         },
@@ -208,7 +265,12 @@
             ]),
         },
         mounted() {
-            this.initContent()
+            if ("ontouchstart" in document.documentElement) {
+                this.initContentTablet()
+            } else {
+                this.initContent()
+            }
+
             window.addEventListener('resize', () => {
                 this.initContent()
             }, false)
@@ -236,7 +298,6 @@
                 max-width 600px
                 width 50%
                 overflow hidden
-                float left
 
                 &.hovered
                     z-index 10
