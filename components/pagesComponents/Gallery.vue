@@ -189,9 +189,9 @@
                             min-height $sizeBig
                             max-height $sizeBig
                             &:hover
-                                border 1px solid black
+                                border 1px solid silverMain
                             &.active
-                                border 1px solid black
+                                border 1px solid silverMain
 
                 .photo
                     height 600px
