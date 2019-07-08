@@ -129,7 +129,7 @@
                     }
 
                     // дабавляем и удаляем наведение на блок картинки
-                    item.addEventListener('mouseenter', (e) => {
+                    item.addEventListener('mouseenter touchstart', (e) => {
                         description.classList.add('hovered')
                         item.classList.add('hovered')
                         spec.style.width = item.clientWidth/2 * 3 + 'px'

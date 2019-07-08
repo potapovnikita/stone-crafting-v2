@@ -259,7 +259,7 @@
         opacity 0
         width 100%
         top 200px
-        font-family $FuturaFont
+        font-family $IntroRegularCaps
         font-size $FontSizeMenuMobile
         color whiteMain
         font-weight bold
@@ -274,6 +274,7 @@
     @media only screen and (max-width 1200px)
         .menu
             .menu_row
+                font-size $FontSizeMenuTablet
                 justify-content center
 
     @media only screen and (max-width 767px)
