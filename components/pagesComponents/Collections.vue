@@ -13,6 +13,7 @@
                             .content
                                 .title {{lang === 'ru' ? item.name : item.nameEng}}
                                 .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
+                            nuxt-link.button(:to="{path: `/gallery/${item.id}`}") Подробнее
 
         // for mobile version
         .collections-blocks.mobile
@@ -48,12 +49,6 @@
             getImg(url) {
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
-            },
-            filterMuseum(int) {
-                return this.museum.filter((item, index) => {
-                    if (int === 1) return index % 2 === 0
-                    else return index % 2 !== 0
-                })
             },
             swipe(direction, event) {
                 const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
@@ -123,8 +118,6 @@
                 })
             },
             initContentTablet() {
-                const tabletWidth = 1024
-
                 const container = document.querySelector('.collections-blocks.desktop')
                 const block = Array.from(document.querySelectorAll('.itemBlock'))
                 const top = block[0].clientWidth;
@@ -165,7 +158,7 @@
             },
 
             initContent() {
-                const tabletWidth = 1024
+                const tabletWidth = 1025
                 const container = document.querySelector('.collections-blocks.desktop')
                 const block = Array.from(document.querySelectorAll('.itemBlock'))
                 const top = block[0].clientWidth;
@@ -265,15 +258,19 @@
             ]),
         },
         mounted() {
+            // проверяем, есть и возможность тача на устройстве
             if ("ontouchstart" in document.documentElement) {
                 this.initContentTablet()
+                window.addEventListener('resize', () => {
+                    this.initContentTablet()
+                }, false)
+
             } else {
                 this.initContent()
+                window.addEventListener('resize', () => {
+                    this.initContent()
+                }, false)
             }
-
-            window.addEventListener('resize', () => {
-                this.initContent()
-            }, false)
         },
     }
 </script>
@@ -361,6 +358,17 @@
                                 opacity 0
                                 .title
                                     margin-bottom 15px
+                            .button
+                                border 1px solid silverMain
+                                padding 5px 10px
+                                position absolute
+                                bottom 15px
+                                right 15px
+                                cursor pointer
+
+                                &:hover
+                                    background-color silverMain
+                                    color darkRed
 
                             &.right
                                 right 0
@@ -389,7 +397,7 @@
             display none
 
 
-    @media only screen and (max-width 1024px)
+    @media only screen and (max-width 1025px)
         .collections-container
             .collections-blocks.desktop
                 .item
