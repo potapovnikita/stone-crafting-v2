@@ -328,6 +328,15 @@
             display none
 
 
+    @media only screen and (max-width 1024px)
+        .collections-blocks.desktop
+            .item
+                .image
+                    .spec
+                        .description
+                            font-size 13px
+
+
     @media only screen and (max-width 767px)
         .collections-container
             padding 20px 20px
