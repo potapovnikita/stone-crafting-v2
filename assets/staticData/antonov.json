@@ -1,0 +1,833 @@
+[
+    {
+        "id": "antiques",
+        "name": "Антиквариат",
+        "nameEng": "Antiques",
+        "items": [
+            {
+                "id": "bedouin",
+                "name": "Скульптура &laquo;Бедуин&raquo;",
+                "nameEng": "Sculpture &laquo;Bedouin&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "52 500",
+                "background": "img/stone-art/antiques/bedouin/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/bedouin/1.png",
+                    "img/stone-art/antiques/bedouin/2.png",
+                    "img/stone-art/antiques/bedouin/3.png",
+                    "img/stone-art/antiques/bedouin/4.png",
+                    "img/stone-art/antiques/bedouin/5.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/bedouin/preview/1.png",
+                    "img/stone-art/antiques/bedouin/preview/2.png",
+                    "img/stone-art/antiques/bedouin/preview/3.png",
+                    "img/stone-art/antiques/bedouin/preview/4.png",
+                    "img/stone-art/antiques/bedouin/preview/5.png"
+                ]
+
+            },
+            {
+                "id": "tryst",
+                "name": "Скульптура &laquo;Свидание&raquo;",
+                "nameEng": "Sculpture &laquo;Tryst&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "61 500",
+                "background": "img/stone-art/antiques/tryst/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/tryst/1.png",
+                    "img/stone-art/antiques/tryst/2.png",
+                    "img/stone-art/antiques/tryst/3.png",
+                    "img/stone-art/antiques/tryst/4.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/tryst/preview/1.png",
+                    "img/stone-art/antiques/tryst/preview/2.png",
+                    "img/stone-art/antiques/tryst/preview/3.png",
+                    "img/stone-art/antiques/tryst/preview/4.png"
+                ]
+
+            },
+            {
+                "id": "dancer",
+                "name": "Скульптура &laquo;Танцовщица&raquo;",
+                "nameEng": "Sculpture &laquo;Dancer&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, позолота, мрамор",
+                "materialEng": "Bronze, gilding, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "81 000",
+                "background": "img/stone-art/antiques/dancer/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/dancer/1.png",
+                    "img/stone-art/antiques/dancer/2.png",
+                    "img/stone-art/antiques/dancer/3.png",
+                    "img/stone-art/antiques/dancer/4.png",
+                    "img/stone-art/antiques/dancer/5.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/dancer/preview/1.png",
+                    "img/stone-art/antiques/dancer/preview/2.png",
+                    "img/stone-art/antiques/dancer/preview/3.png",
+                    "img/stone-art/antiques/dancer/preview/4.png",
+                    "img/stone-art/antiques/dancer/preview/5.png"
+                ]
+
+            },
+            {
+                "id": "dancer2",
+                "name": "Скульптура &laquo;Танцовщица в восточном наряде&raquo;",
+                "nameEng": "Sculpture &laquo;Dancer in oriental outfit&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "29 250",
+                "background": "img/stone-art/antiques/dancer2/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/dancer2/1.png",
+                    "img/stone-art/antiques/dancer2/2.png",
+                    "img/stone-art/antiques/dancer2/3.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/dancer2/preview/1.png",
+                    "img/stone-art/antiques/dancer2/preview/2.png",
+                    "img/stone-art/antiques/dancer2/preview/3.png"
+                ]
+
+            },
+            {
+                "id": "romeo",
+                "name": "Скульптура &laquo;Ромео и Джульетта&raquo;",
+                "nameEng": "Sculpture &laquo;Romeo and Juliet&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "57 000",
+                "background": "img/stone-art/antiques/romeo/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/romeo/1.png",
+                    "img/stone-art/antiques/romeo/2.png",
+                    "img/stone-art/antiques/romeo/3.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/romeo/preview/1.png",
+                    "img/stone-art/antiques/romeo/preview/2.png",
+                    "img/stone-art/antiques/romeo/preview/3.png"
+                ]
+
+            },
+            {
+                "id": "lady",
+                "name": "Скульптура &laquo;Дама с лилиями&raquo;",
+                "nameEng": "Sculpture &laquo;Lady with lilies&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "37 500",
+                "background": "img/stone-art/antiques/lady/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/lady/1.png",
+                    "img/stone-art/antiques/lady/2.png",
+                    "img/stone-art/antiques/lady/3.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/lady/preview/1.png",
+                    "img/stone-art/antiques/lady/preview/2.png",
+                    "img/stone-art/antiques/lady/preview/3.png"
+                ]
+
+            },
+            {
+                "id": "napkin_holder",
+                "name": "Скульптура &laquo;Салфетница&raquo;",
+                "nameEng": "Sculpture &laquo;Napkin holder&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "28 500",
+                "background": "img/stone-art/antiques/napkin_holder/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/napkin_holder/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/napkin_holder/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "lenin",
+                "name": "Скульптура &laquo;В.И. Ленин&raquo;",
+                "nameEng": "Sculpture &laquo;V.I. Lenin&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Чугун  (Каслинское литье)",
+                "materialEng": "Cast Iron (Kasli Casting)",
+                "year": "",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "54 000",
+                "background": "img/stone-art/antiques/lenin/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/lenin/1.png",
+                    "img/stone-art/antiques/lenin/2.png",
+                    "img/stone-art/antiques/lenin/3.png",
+                    "img/stone-art/antiques/lenin/4.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/lenin/preview/1.png",
+                    "img/stone-art/antiques/lenin/preview/2.png",
+                    "img/stone-art/antiques/lenin/preview/3.png",
+                    "img/stone-art/antiques/lenin/preview/4.png"
+                ]
+
+            },
+            {
+                "id": "lenin2",
+                "name": "Скульптура &laquo;В.И. Ленин&raquo;",
+                "nameEng": "Sculpture &laquo;V.I. Lenin&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Силумин",
+                "materialEng": "Silumin",
+                "year": "",
+                "yearEng": "",
+                "price": "18 000",
+                "background": "img/stone-art/antiques/lenin2/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/lenin2/1.png",
+                    "img/stone-art/antiques/lenin2/2.png",
+                    "img/stone-art/antiques/lenin2/3.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/lenin2/preview/1.png",
+                    "img/stone-art/antiques/lenin2/preview/2.png",
+                    "img/stone-art/antiques/lenin2/preview/3.png"
+                ]
+
+            },
+            {
+                "id": "commissars",
+                "name": "Скульптура &laquo;Комиссары&raquo;",
+                "nameEng": "Sculpture &laquo;Commissars&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Чугун  (Каслинское литье)",
+                "materialEng": "Cast Iron (Kasli Casting)",
+                "year": "",
+                "yearEng": "",
+                "price": "79 500",
+                "background": "img/stone-art/antiques/commissars/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/commissars/1.png",
+                    "img/stone-art/antiques/commissars/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/commissars/preview/1.png",
+                    "img/stone-art/antiques/commissars/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "danila_master",
+                "name": "Скульптура &laquo;Данила-мастер&raquo;",
+                "nameEng": "Sculpture &laquo;Danila master&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Чугун (Каслинское литье)",
+                "materialEng": "Cast Iron (Kasli Casting)",
+                "year": "",
+                "yearEng": "",
+                "price": "39 000",
+                "background": "img/stone-art/antiques/danila_master/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/danila_master/1.png",
+                    "img/stone-art/antiques/danila_master/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/danila_master/preview/1.png",
+                    "img/stone-art/antiques/danila_master/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "kirov",
+                "name": "Скульптурный бюст &laquo;С.М. Киров&raquo;",
+                "nameEng": "Sculptural bust &laquo;S.M. Kirov&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Фарфор",
+                "materialEng": "Porcelain",
+                "year": "",
+                "yearEng": "",
+                "price": "54 000 ",
+                "background": "img/stone-art/antiques/kirov/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/kirov/1.png",
+                    "img/stone-art/antiques/kirov/2.png",
+                    "img/stone-art/antiques/kirov/3.png",
+                    "img/stone-art/antiques/kirov/4.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/kirov/preview/1.png",
+                    "img/stone-art/antiques/kirov/preview/2.png",
+                    "img/stone-art/antiques/kirov/preview/3.png",
+                    "img/stone-art/antiques/kirov/preview/4.png"
+                ]
+
+            },
+            {
+                "id": "rhino",
+                "name": "Скульптура &laquo;Носорог&raquo;",
+                "nameEng": "Sculpture &laquo;Rhino&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор итальянский",
+                "materialEng": "Bronze, italian marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "24 000",
+                "background": "img/stone-art/antiques/rhino/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/rhino/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/rhino/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "the_last_supper",
+                "name": "Скульптура &laquo;Тайная вечеря&raquo;",
+                "nameEng": "Sculpture &laquo;The Last Supper&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "43 500",
+                "background": "img/stone-art/antiques/the_last_supper/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/the_last_supper/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/the_last_supper/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "bulls",
+                "name": "Скульптура &laquo;Быки&raquo;",
+                "nameEng": "Sculpture &laquo;Bulls&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Бронза, мрамор",
+                "materialEng": "Bronze, marble",
+                "year": "нач. ХХ в. Европа",
+                "yearEng": "beginning ХХ century Europe",
+                "price": "21 000",
+                "background": "img/stone-art/antiques/bulls/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/bulls/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/bulls/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "dagger",
+                "name": "Кинжал",
+                "nameEng": "Dagger",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Слоновая кость",
+                "materialEng": "Ivory",
+                "year": "",
+                "yearEng": "",
+                "price": "23 000",
+                "background": "img/stone-art/antiques/dagger/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/dagger/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/dagger/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "household_tool",
+                "name": "Древнее бытовое орудие",
+                "nameEng": "Ancient household tool",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Кость мамонта",
+                "materialEng": "Mammoth bone",
+                "year": "",
+                "yearEng": "",
+                "price": "",
+                "background": "img/stone-art/antiques/household_tool/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/antiques/household_tool/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/antiques/household_tool/preview/1.png"
+                ]
+
+            },
+        ]
+    },
+    {
+        "id": "icons",
+        "name": "Иконы",
+        "nameEng": "Icons",
+        "items": [
+            {
+                "id": "andrew",
+                "name": "Икона &laquo;Св. Апостол Андрей Первозванный&raquo;",
+                "nameEng": "Icon &laquo;St. Apostle Andrew the First-Called&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро",
+                "materialEng": "Silver",
+                "year": "",
+                "yearEng": "",
+                "price": "20 000",
+                "background": "img/stone-art/icons/andrew/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/andrew/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/andrew/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "seraphim",
+                "name": "Икона &laquo;Серафим Саровский Чудотворец&raquo;",
+                "nameEng": "Icon &laquo;Seraphim of Sarov the Wonderworker;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро",
+                "materialEng": "Silver",
+                "year": "",
+                "yearEng": "",
+                "price": "20 000",
+                "background": "img/stone-art/icons/seraphim/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/seraphim/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/seraphim/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "sergius",
+                "name": "Икона &laquo;Св. Сергий Радонежский&raquo;",
+                "nameEng": "Icon &laquo;St. Sergius of Radonezh&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Финифть, серебро, золото, жемчуг",
+                "materialEng": "Enamel, silver, gold, pearl",
+                "year": "",
+                "yearEng": "",
+                "price": "30 000",
+                "background": "img/stone-art/icons/sergius/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/sergius/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/sergius/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "michael",
+                "name": "Икона &laquo;Архангел Михаил&raquo;",
+                "nameEng": "Icon &laquo;Archangel Michael&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Финифть, серебро, золото, жемчуг",
+                "materialEng": "Enamel, silver, gold, pearl",
+                "year": "",
+                "yearEng": "",
+                "price": "30 000",
+                "background": "img/stone-art/icons/michael/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/michael/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/michael/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "aleksey",
+                "name": "Икона &laquo;Царевич Алексей&raquo;",
+                "nameEng": "Icon &laquo;Tsarevich Aleksey&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро, золото",
+                "materialEng": "Silver, gold",
+                "year": "",
+                "yearEng": "",
+                "price": "10 000",
+                "background": "img/stone-art/icons/aleksey/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/aleksey/1.png",
+                    "img/stone-art/icons/aleksey/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/aleksey/preview/1.png",
+                    "img/stone-art/icons/aleksey/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "catherine",
+                "name": "Икона &laquo;Святая Екатерина&raquo;",
+                "nameEng": "Icon &laquo;St. Catherine&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро, золото",
+                "materialEng": "Silver, gold",
+                "year": "",
+                "yearEng": "",
+                "price": "10 000",
+                "background": "img/stone-art/icons/catherine/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/catherine/1.png",
+                    "img/stone-art/icons/catherine/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/catherine/preview/1.png",
+                    "img/stone-art/icons/catherine/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "mother_of_god",
+                "name": "Икона хрустальная &laquo;Божья матерь&raquo;",
+                "nameEng": "Crystal icon &laquo;Mother of God&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Гранат, топаз, кварц, серебро, финифть",
+                "materialEng": "Garnet, topaz, quartz, silver, enamel",
+                "year": "",
+                "yearEng": "",
+                "price": "120 000",
+                "background": "img/stone-art/icons/mother_of_god/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/icons/mother_of_god/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/icons/mother_of_god/preview/1.png"
+                ]
+
+            }
+
+        ]
+    },
+    {
+        "id": "stone-crafting",
+        "name": "Камнерезная пластика",
+        "nameEng": "Stone-crafting plastic",
+        "items": [
+            {
+                "id": "chickens",
+                "name": "Камнерезная миниатюра &laquo;Цыплята&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Chickens&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Горный хрусталь, золото, окаменелое дерево, бриллианты",
+                "materialEng": "Rhinestone, gold, petrified wood, diamonds",
+                "year": "",
+                "yearEng": "",
+                "price": "185 000",
+                "background": "img/stone-art/stone-crafting/chickens/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/chickens/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/chickens/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "fish",
+                "name": "Камнерезная миниатюра &laquo;Рыбка&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Fish&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Дымчатый кварц, серебро, яшма, бриллианты ",
+                "materialEng": "Smoky quartz, silver, jasper, diamonds",
+                "year": "",
+                "yearEng": "",
+                "price": "19 000",
+                "background": "img/stone-art/stone-crafting/fish/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/fish/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/fish/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "fish2",
+                "name": "Камнерезная миниатюра &laquo;Рыбка&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Fish&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Кварц, серебро, яшма, бриллианты",
+                "materialEng": "Quartz, silver, jasper, diamonds",
+                "year": "",
+                "yearEng": "",
+                "price": "19 000",
+                "background": "img/stone-art/stone-crafting/fish2/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/fish2/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/fish2/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "piglet",
+                "name": "Камнерезная миниатюра &laquo;Поросенок&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Piglet&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Кварцит, изумруды",
+                "materialEng": "Quartzite, emeralds",
+                "year": "",
+                "yearEng": "",
+                "price": "12 000",
+                "background": "img/stone-art/stone-crafting/piglet/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/piglet/1.png",
+                    "img/stone-art/stone-crafting/piglet/2.png",
+                    "img/stone-art/stone-crafting/piglet/3.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/piglet/preview/1.png",
+                    "img/stone-art/stone-crafting/piglet/preview/2.png",
+                    "img/stone-art/stone-crafting/piglet/preview/3.png"
+                ]
+
+            },
+            {
+                "id": "lamb",
+                "name": "Камнерезная миниатюра &laquo;Барашек&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Lamb&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Горный хрусталь, золото, яшма, бриллианты",
+                "materialEng": "Rhinestone, gold, jasper, diamonds",
+                "year": "",
+                "yearEng": "",
+                "price": "68 000",
+                "background": "img/stone-art/stone-crafting/lamb/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/lamb/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/lamb/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "doggy",
+                "name": "Камнерезная миниатюра &laquo;Собачка&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Doggy&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Кварц, бриллианты",
+                "materialEng": "Quartz, diamonds",
+                "year": "",
+                "yearEng": "",
+                "price": "35 000",
+                "background": "img/stone-art/stone-crafting/doggy/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/doggy/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/doggy/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "deer",
+                "name": "Камнерезная миниатюра &laquo;Олень&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Deer&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Яшма, долерит, кремний, сердолик, хрусталь",
+                "materialEng": "Jasper, Dolerite, Silicon, Carnelian, Crystal",
+                "year": "",
+                "yearEng": "",
+                "price": "185 000",
+                "background": "img/stone-art/stone-crafting/deer/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/deer/1.png",
+                    "img/stone-art/stone-crafting/deer/2.png"
+
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/deer/preview/1.png",
+                    "img/stone-art/stone-crafting/deer/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "bird",
+                "name": "Камнерезная миниатюра &laquo;Птичка&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Bird&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Кварц",
+                "materialEng": "Quartz",
+                "year": "",
+                "yearEng": "",
+                "price": "25 000",
+                "background": "img/stone-art/stone-crafting/bird/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/bird/1.png",
+                    "img/stone-art/stone-crafting/bird/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/bird/preview/1.png",
+                    "img/stone-art/stone-crafting/bird/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "wolf",
+                "name": "Камнерезная миниатюра &laquo;Волк&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Wolf&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Магнезит, долерит, кахолонг, хрусталь, тигровый глаз, родонит",
+                "materialEng": "Magnesite, dolerite, cacholong, crystal, tiger eye, rhodonite",
+                "year": "",
+                "yearEng": "",
+                "price": "600 000",
+                "background": "img/stone-art/stone-crafting/wolf/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/wolf/1.png",
+                    "img/stone-art/stone-crafting/wolf/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/wolf/preview/1.png",
+                    "img/stone-art/stone-crafting/wolf/preview/2.png"
+                ]
+
+            },
+            {
+                "id": "the_frog_princess",
+                "name": "Камнерезная миниатюра &laquo;Царевна-лягушка&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;The Frog Princess&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Жадеит, нефрит, бронза, серебрение, золочение ",
+                "materialEng": "Jadeite, jade, bronze, silvering, gilding",
+                "year": "2017",
+                "yearEng": "2017",
+                "price": "400 000",
+                "background": "img/stone-art/stone-crafting/the_frog_princess/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/the_frog_princess/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/the_frog_princess/preview/1.png"
+                ]
+
+            },
+            {
+                "id": "bear_fun",
+                "name": "Камнерезная миниатюра &laquo;Медвежьи забавы&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Bear Fun&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро, змеевик, хрусталь, тигровый глаз, бронза, чернение, серебрение",
+                "materialEng": "Silver, coil, crystal, tiger's eye, bronze, blackening, silvering",
+                "year": "",
+                "yearEng": "",
+                "price": "1 300 000",
+                "background": "img/stone-art/stone-crafting/bear_fun/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/bear_fun/1.png",
+                    "img/stone-art/stone-crafting/bear_fun/2.png",
+                    "img/stone-art/stone-crafting/bear_fun/3.png",
+                    "img/stone-art/stone-crafting/bear_fun/4.png",
+                    "img/stone-art/stone-crafting/bear_fun/5.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/bear_fun/preview/1.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/2.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/3.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/4.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/5.png"
+                ]
+
+            },
+            {
+                "id": "birds_of_paradise",
+                "name": "Сувенир &laquo;Райские птицы&raquo;",
+                "nameEng": "Souvenir &laquo;Birds of Paradise&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Мрамор, бронза, серебро, золочение, чернение, жемчуг",
+                "materialEng": "Marble, bronze, silver, gilding, blackening, pearls",
+                "year": "",
+                "yearEng": "",
+                "price": "360 000",
+                "background": "img/stone-art/stone-crafting/birds_of_paradise/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/birds_of_paradise/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/birds_of_paradise/preview/1.png"
+                ]
+
+            }
+        ]
+    },
+    {
+        "id": "souvenirs",
+        "name": "Сувениры с Урала",
+        "nameEng": "Souvenirs from Ural",
+        "items": []
+    },
+    {
+        "id": "watches",
+        "name": "Часы",
+        "nameEng": "Watches",
+        "items": []
+    }
+]

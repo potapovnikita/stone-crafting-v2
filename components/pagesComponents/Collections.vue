@@ -1,12 +1,12 @@
 <template lang="pug">
-    .collections-container
+    .common-container.collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
         .collections-blocks.desktop
             .item.itemBlock(v-for="(item, index) in museum" :key="item.id")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
                     .media
                         .preview
-                            img.imgHeight(:src="getImg(item.img)")
+                            img.imgHeight(:src="getImg(item.imagesPreview[0])")
 
                     .spec
                         .description
@@ -26,7 +26,7 @@
                         .point.active
                         .point
                     .image
-                        img(:src="getImg(item.img)")
+                        img(:src="getImg(item.imagesPreview[0])")
                     .description(v-touch:swipe.right="swipe")
                         .blur
                         .title {{lang === 'ru' ? item.name : item.nameEng}}
@@ -275,15 +275,9 @@
     }
 </script>
 
+
 <style lang="stylus">
     .collections-container
-        display flex
-        flex-direction column
-        justify-content center
-        text-align center
-        text-align -webkit-center
-        padding 30px 60px
-
         .collections-blocks.desktop
             position relative
             max-width 1200px

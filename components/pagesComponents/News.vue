@@ -1,5 +1,5 @@
 <template lang="pug">
-    .news-container Содержимое страницы "Новости/Выставки"
+    .common-container.news-container Содержимое страницы "Новости/Выставки"
 
 </template>
 
@@ -25,11 +25,5 @@
 </script>
 
 <style lang="stylus">
-    .news-container
-        color whiteMain
-        display flex
-        flex-direction column
-        justify-content center
-        text-align center
-        text-align -webkit-center
+
 </style>

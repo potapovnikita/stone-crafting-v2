@@ -1,11 +1,11 @@
 <template lang="pug">
-        .gallery-container
+    .common-container.gallery-container
             .video-section
                 .video-wrapper
                     h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                    video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
+                    .image(v-if="currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
+                    video(v-if="!currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
-                    .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesFull[0])}")
                     <!--.image-prepicture(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesPreview[0])}")-->
 
             .description-wrapper
@@ -40,7 +40,6 @@
 
     // if (process.browser) {
     //     window.onNuxtReady(() => {
-    //         console.log(1);
     //         const smHousingPic = document.querySelector('.image-prepicture')
     //         if (smHousingPic) smHousingPic.classList.add('faded')
     //     })
@@ -110,14 +109,7 @@
     }*/
 
     .gallery-container
-        display flex
-        flex-direction column
-        justify-content center
-        text-align center
-        text-align -webkit-center
-        position relative
-        color whiteMain
-
+        padding 0
         .video-section
             position relative
             height 100vh
