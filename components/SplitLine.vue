@@ -1,9 +1,11 @@
 <template lang="pug">
-    .line
+    .line(:class="{reverse: reverse}")
 </template>
 
 <script>
-    export default {}
+    export default {
+        props: ['reverse'],
+    }
 </script>
 
 <style lang="stylus">
@@ -13,4 +15,7 @@
         left 40%
         right 40%
         position absolute
+        &.reverse
+            background darkRed
 </style>
+

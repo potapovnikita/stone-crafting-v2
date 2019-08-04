@@ -6,7 +6,6 @@
                     .image(v-if="currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
                     video(v-if="!currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
-                    <!--.image-prepicture(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.imagesPreview[0])}")-->
 
             .description-wrapper
                 .column
@@ -31,10 +30,6 @@
 
 <script>
     import { mapState } from 'vuex'
-
-    import Header from '~/components/Header.vue'
-    import Footer from '~/components/Footer.vue'
-    import SplitLine from '~/components/SplitLine.vue'
 
     import Museum from '~/assets/staticData/museum.json'
 
@@ -86,9 +81,6 @@
             },
         },
         components: {
-            Header,
-            Footer,
-            SplitLine,
         },
         mounted() {
             this.activePhoto = this.getActivePhoto(0)

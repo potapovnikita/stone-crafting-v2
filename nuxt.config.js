@@ -25,6 +25,7 @@ module.exports = {
         // ],
     ],
     css: [
+        '~assets/styles/font-awesome.styl',
         '~assets/styles/fonts.styl',
         '~assets/styles/global.styl',
         // 'swiper/dist/css/swiper.css',

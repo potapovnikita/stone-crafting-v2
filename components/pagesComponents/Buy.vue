@@ -1,23 +1,35 @@
 <template lang="pug">
-    .common-container
+    .common-container.reverse
         .shop_wrapper
             .shop_filter
-                .item(v-for="item in shop"
-                    :class="{active: activeMenu.id === item.id}"
-                    @click="setActive(item.id)")  {{ lang === 'ru' ? item.name : item.nameEng }}
-            .shop_items
-                .item(v-for="item in activeMenu.items")
-                    .image
-                        .photo(:style="{backgroundImage: getBgImg(item.imagesFull[item.activeImgId])}" @click="setActiveImg(item, activeIndex + 1)")
-                        .slides
-                            <!--.img(v-for="img in item.imagesFull")-->
-                    .description
-                        .name(v-html="lang === 'ru' ? item.name : item.nameEng")
-                        .desc(v-html="lang === 'ru' ? item.desc : item.descEng")
-                        .material(v-html="lang === 'ru' ? item.material : item.materialEng")
-                        .year(v-html="lang === 'ru' ? item.year : item.yearEng")
-                        .price(v-html="lang === 'ru' ? item.price : item.price")
+                .item(v-for="item in shop")
+                    .section_name(:class="{active: activeMenu.id === item.id}"
+                                    @click="setActive(item.id)") {{ lang === 'ru' ? item.name : item.nameEng }}
+                    .item_inner(v-if="item.innerSection"
+                                v-for="elem in item.innerSection"
+                                :class="{active: activeMenu.id === elem.id}"
+                                @click="setActive(elem.id, true)") - {{ lang === 'ru' ? elem.name : elem.nameEng }}
 
+            .shop_items
+                .item(v-for="(item, index) in activeMenu.items" :key="item.id")
+                    .image
+                        .photo(:style="{backgroundImage: getBgImg(item.imagesFull[item.activeImgId])}"
+                                @click="setActiveImg(item, item.activeImgId + 1, index)")
+                        .slides
+                            .img(v-for="(img, idx) in item.imagesPreview")
+                                img(:src="getImg(img)" :class="{active: idx === item.activeImgId}" @click="setActiveImg(item, idx, index)")
+                        .button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
+                    .description
+                        div
+                            h2(v-html="lang === 'ru' ? item.name : item.nameEng")
+                            .line-sm
+                            .desc(v-if="item.desc" v-html="lang === 'ru' ? item.desc : item.descEng")
+                            .material(v-if="item.material" v-html="lang === 'ru' ? 'Материал: ' + item.material : 'Material: ' + item.materialEng")
+                            .size(v-if="item.size" v-html="lang === 'ru' ? 'Размер: ' + item.size : 'Size: ' + item.sizeEng")
+                            .year(v-if="item.year" v-html="lang === 'ru' ? item.year : item.yearEng")
+                            .price(v-if="item.price" v-html="lang === 'ru' ? 'Цена: ' + item.price + ' ₽' : 'Price: ' + item.price + ' ₽'")
+                            .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
+                        .button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
 
 </template>
 
@@ -33,6 +45,7 @@
                 shop: Shop,
                 activeMenu: [],
                 activeIndex: 0,
+                activeInnerIndex: 0,
                 name: '',
                 phone: '',
                 errorName: false,
@@ -44,21 +57,43 @@
                 statusSuccess: false,
             }
         },
+        watch: {
+
+        },
         components: {
         },
         methods: {
-            setActive(id) {
-                this.activeMenu = this.shop.find((item) => {
-                    return item.id === id
-                })
+            setActive(id, inner) {
+                if (inner) {
+                    this.shop.forEach((item) => {
+                       if (item.innerSection) {
+                           this.activeMenu = item.innerSection.find((item) => {
+                               return item.id === id
+                           })
+                       }
+                    })
+
+                } else {
+                    this.activeMenu = this.shop.find((item) => {
+                        return item.id === id
+                    })
+                }
             },
-            setActiveImg(item, id) {
+            setActiveImg(item, id, index) {
+                if (id >= item.imagesFull.length) id = 0
+                if (id < 0) id = item.imagesFull.length - 1
                 item.activeImgId = id
+                this.$set(this.activeMenu.items, index, item)
             },
             getBgImg(url) {
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `url(${imageUrl})` : ''
             },
+            getImg(url) {
+                const imageUrl = require('~/assets/' + `${url}`)
+                return url ? `${imageUrl}` : ''
+            },
+
             submitForm() {
                 this.emailStatus = ''
                 this.emailStatusErr = ''
@@ -108,14 +143,19 @@
         },
         mounted() {
             this.shop.forEach((item) => {
-                console.log(item)
                 item.items.forEach((photos) => {
-                    console.log('photos', photos)
                     photos.activeImgId = this.activeIndex
                 })
+                if (item.innerSection) {
+                    item.innerSection.forEach((innerPhotos) => {
+                        innerPhotos.items.forEach((photos) => {
+                            photos.activeImgId = this.activeInnerIndex
+                        })
+                    })
+                }
             })
             this.activeMenu = this.shop[0]
-            console.log(this.activeMenu.items)
+
             this.statusSuccess = false;
         },
         destroyed() {
@@ -125,34 +165,150 @@
 </script>
 
 <style lang="stylus">
-    .buy-container
-        background-color #f7f8fb
+    $sizeMin = 80px
+
     .shop_wrapper
         display flex
         flex-direction row
         width 100%
         .shop_filter
             width 30%
+            padding 5px
             .item
-                text-align center
-                display flex
-                justify-content center
-                flex-direction column
-                cursor pointer
-                padding 5px
-                &.active
-                    text-decoration underline
-                &:hover
-                    text-decoration underline
+                max-width 230px
+
+                .item_inner
+                    text-align right !important
+
+                .item_inner,
+                .section_name
+                    text-align center
+                    display flex
+                    justify-content center
+                    flex-direction column
+                    cursor pointer
+                    padding 5px
+                    color darkRed
+                    margin-bottom 3px
+                    background-color backgroundReverse
+                    &.active
+                        border 1px solid
+                        background-color darkRed
+                        color backgroundReverse
+                    &:hover
+                        border 1px solid
+                        background-color darkRed
+                        color backgroundReverse
         .shop_items
             width 70%
             .item
                 width 100%
                 display flex
                 flex-direction row
+                border 1px solid darkRed
+                padding 10px
+                margin-bottom 10px
                 .image
                     width 50%
+                    padding 10px
+                    .button
+                        display none
+                    .photo
+                        height 300px
+                        max-height 225px
+                        background-size contain
+                        background-position center
+                        background-repeat no-repeat
+                        margin-bottom 10px
+                        background-color darkRed
+                        cursor pointer
+
+                    .slides
+                        width 100%
+                        display flex
+                        flex-direction row
+                        flex-wrap wrap
+                        .img
+                            cursor pointer
+                            padding 0 2px 2px 2px
+
+                            img
+                                min-width $sizeMin
+                                max-width $sizeMin
+                                min-height $sizeMin
+                                max-height $sizeMin
+
+                                &:hover
+                                    border 1px solid darkRed
+                                &.active
+                                    border 1px solid darkRed
                 .description
                     width 50%
+                    text-align left
+                    padding 10px
+                    color darkRed
+                    display flex
+                    flex-direction column
+                    justify-content space-between
 
+                    h2
+                        color darkRed
+
+                    .line-sm
+                        width 100px
+                        height 1px
+                        margin 8px auto 15px
+                        background darkRed
+
+                    .desc
+                        margin-bottom 10px
+                    .material
+                        margin-bottom 10px
+                    .year
+                        margin-bottom 10px
+                    .price
+                        margin-bottom 10px
+                .button
+                    text-align center
+                    cursor pointer
+                    border 1px solid
+                    padding 5px 10px
+                    color darkRed
+                    background-color backgroundReverse
+                    &:hover
+                        color backgroundReverse
+                        background-color darkRed
+
+    @media only screen and (max-width 767px)
+        .shop_wrapper
+            margin-top 40px
+            flex-direction column
+            .shop_filter
+                width 100%
+                display flex
+                flex-direction column
+                justify-content center
+                margin-bottom 10px
+            .shop_items
+                width 100%
+
+    @media only screen and (max-width 550px)
+        .shop_wrapper
+            .shop_filter
+                flex-wrap nowrap
+            .shop_items
+                .item
+                    width 100%
+                    padding 0
+                    flex-direction column-reverse
+                    .image, .description
+                        width 100%
+                    .image
+                        .slides
+                            justify-content center
+                        .button
+                            display block
+                    .description
+                        .button
+                            display none
 </style>

@@ -1,9 +1,9 @@
 <template lang="pug">
-    page-container
-        Header(placeholder="true")
+    page-container(reverse="true")
+        Header(placeholder="true", reverse="true")
         Buy
-        SplitLine
-        Footer
+        SplitLine(reverse="true")
+        Footer(reverse="true")
 </template>
 
 <script>

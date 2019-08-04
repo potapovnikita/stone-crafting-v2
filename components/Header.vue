@@ -1,8 +1,8 @@
 <template lang="pug">
     div
-        #header.menu_container
-            .logo_row
-                nuxt-link(to="/") Тут будет логотип
+        #header(:class="{'menu_container-reverse': reverse, 'menu_container': !reverse}")
+            .logo_row(:class="{'reverse': reverse}")
+                nuxt-link(to="/" :class="{'reverse': reverse}") Тут будет логотип
                 .local
                     span(@click="changeLocal('ru')" :class="{'active': lang === 'ru'}") RU
                     span(@click="changeLocal('eng')" :class="{'active': lang === 'eng'}") ENG
@@ -10,15 +10,15 @@
             label
                 input(type="checkbox")
 
-                span.hamburger_menu
-                    span.hamburger
+                span.hamburger_menu(:class="{'reverse': reverse}")
+                    span.hamburger(:class="{'reverse': reverse}")
                 .hamburger_menu-items_container
                     .menu_item(v-for="item in menu")
-                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng")
-            .menu#menu
+                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+            .menu#menu(:class="{'reverse': reverse}")
                 .menu_row
                     .menu_item(v-for="item in menu")
-                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng")
+                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
 
         .header_placeholder(v-if="placeholder")
 
@@ -36,7 +36,7 @@
                 menu: Menu
             }
         },
-        props: ['placeholder'],
+        props: ['placeholder', 'reverse'],
         computed: {
             ...mapState('localization', [
                 'lang',
@@ -84,6 +84,42 @@
     .header_placeholder
         min-height 150px
 
+    .menu_container-reverse
+        color blackRed
+        position fixed
+        top 0
+        left 0
+        right 0
+        z-index 1000
+
+        &:before
+        &:after
+            position absolute
+            top 0
+            bottom -15px
+            right: 0
+            left 0
+            z-index 2
+            content ''
+
+        &:before
+            /*background-image backgroundReverse*/
+            background-image linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 243, 237, 0.9) 50%)
+
+        &:after
+            opacity 0
+            /*background-image backgroundReverse*/
+            background-image linear-gradient(to top, rgba(255, 255, 255, 0), backgroundReverse 100%)
+
+        &.header_scrolled
+            .menu
+                transform translateY(-40px)
+                opacity 0
+            &:hover
+                .menu
+                    transform translateY(0px)
+                    opacity 1
+
     .menu_container
         color whiteMain
         position fixed
@@ -118,6 +154,7 @@
                     transform translateY(0px)
                     opacity 1
 
+
     .logo_row
         position relative
         display flex
@@ -129,6 +166,9 @@
         color whiteMain
         height 50px
         z-index 3
+
+        &.reverse
+            color darkRed
 
         .local
             right 30px
@@ -163,6 +203,9 @@
         transition all .6s
         z-index 3
         position relative
+
+        &.reverse
+            color darkRed
 
         &_item
             padding 10px 15px
@@ -199,6 +242,9 @@
         box-shadow 0 0 0 0 #000, 0 0 0 0 #000
         cursor pointer
 
+    label .hamburger_menu.reverse
+        box-shadow 0 0 0 0 darkRed, 0 0 0 0 darkRed
+
     label .hamburger
         position absolute
         top 135px
@@ -209,6 +255,18 @@
         display block
         transform-origin center
         transition .5s ease-in-out
+
+    label .hamburger.reverse
+        background darkRed
+
+    label .hamburger.reverse:after, label .hamburger.reverse:before
+        transition .5s ease-in-out
+        content ""
+        position absolute
+        display block
+        width 100%
+        height 100%
+        background darkRed
 
     label .hamburger:after, label .hamburger:before
         transition .5s ease-in-out
@@ -232,6 +290,11 @@
         box-shadow 0 0 0 100vw #000, 0 0 0 100vh #000
         border-radius 0
         background #000
+
+    label input:checked + .hamburger_menu.reverse
+        box-shadow 0 0 0 100vw darkRed, 0 0 0 100vh darkRed
+        border-radius 0
+        background darkRed
 
     label input:checked + .hamburger_menu .hamburger
         transform rotate(45deg)
@@ -268,8 +331,10 @@
 
         .menu_item
             text-align center
-            color whiteMain
+            color whiteMain !important
             z-index 101
+            a
+                color whiteMain !important
 
     @media only screen and (max-width 1200px)
         .menu
