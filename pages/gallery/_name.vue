@@ -1,7 +1,7 @@
 <template lang="pug">
     page-container
         Header
-        gallery
+        Gallery
         SplitLine
         Footer
 </template>
