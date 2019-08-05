@@ -8,7 +8,7 @@
                     .item_inner(v-if="item.innerSection"
                                 v-for="elem in item.innerSection"
                                 :class="{active: activeMenu.id === elem.id}"
-                                @click="setActive(elem.id, true)") - {{ lang === 'ru' ? elem.name : elem.nameEng }}
+                                @click="setActive(elem.id, true)") {{ lang === 'ru' ? elem.name : elem.nameEng }}
 
             .shop_items
                 .item(v-for="(item, index) in activeMenu.items" :key="item.id")
@@ -176,9 +176,6 @@
             padding 5px
             .item
                 max-width 230px
-
-                .item_inner
-                    text-align right !important
 
                 .item_inner,
                 .section_name

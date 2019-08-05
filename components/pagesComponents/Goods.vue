@@ -2,9 +2,9 @@
     .common-container.goods-container
         .video-section
             .video-wrapper
-                h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                .image(v-if="currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
-                video(v-if="!currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
+                h1(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
+                .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
+                video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                     source(:src="getImg(currentProduct.video)" type="video/mp4")
 
         .description-wrapper
@@ -21,32 +21,32 @@
                 .text
                     h2(v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
                     .line-sm
-                    .description.text_default-white(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
-                    .about.text_default-white(v-html="lang === 'ru' ? currentProduct.about : currentProduct.aboutEng")
+                    .desc(v-if="currentProduct.desc" v-html="lang === 'ru' ? currentProduct.desc : currentProduct.descEng")
+                    .material(v-if="currentProduct.material" v-html="lang === 'ru' ? 'Материал: ' + currentProduct.material : 'Material: ' + currentProduct.materialEng")
+                    .size(v-if="currentProduct.size" v-html="lang === 'ru' ? 'Размер: ' + currentProduct.size : 'Size: ' + currentProduct.sizeEng")
+                    .year(v-if="currentProduct.year" v-html="lang === 'ru' ? currentProduct.year : currentProduct.yearEng")
+                    .price(v-if="currentProduct.price" v-html="lang === 'ru' ? 'Цена: ' + currentProduct.price + ' ₽' : 'Price: ' + currentProduct.price + ' ₽'")
+                    .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
+                    .button(@click="scrollToForm()") {{lang === 'ru' ? 'Купить' : 'Buy' }}
         .photo_gallery
-
+        Feedback
 
 </template>
 
+
 <script>
     import { mapState } from 'vuex'
+    import zenscroll from 'zenscroll'
 
-    import Museum from '~/assets/staticData/museum.json'
+    import Feedback from '~/components/Feedback.vue'
 
-    // if (process.browser) {
-    //     window.onNuxtReady(() => {
-    //         const smHousingPic = document.querySelector('.image-prepicture')
-    //         if (smHousingPic) smHousingPic.classList.add('faded')
-    //     })
-    // }
 
-    /**
-     * Плавная загрузка изображений
-     */
+    import Shop from '~/assets/staticData/antonov.json'
+
     export default {
         data() {
             return {
-                products: Museum,
+                products: Shop,
                 activePhoto: '',
                 activeIndex: 0
             }
@@ -56,9 +56,21 @@
                 'lang',
             ]),
             currentProduct() {
-                // по id изделия из url находим нужное изделие
-                return this.products
-                    .find(item => item.id === this.$route.path.split('/').pop())
+                let product = {}
+
+                this.products.forEach((category) => {
+                    category.items.forEach((item) => {
+                        if (item.id === this.$route.path.split('/').pop()) product = item
+                        // если среди категорий не нашли элемент, то ищем в подкатегориях (если они есть)
+                        if (!product.name && item.innerSection) {
+                            item.innerSection.forEach((inner) => {
+                                if (inner.id === this.$route.path.split('/').pop()) product = inner
+                            })
+                        }
+                    })
+                })
+
+                return product
             },
         },
         methods: {
@@ -79,11 +91,13 @@
                 if (index < 0) index = this.currentProduct.imagesFull.length - 1
                 this.activePhoto = this.getActivePhoto(index)
             },
+            scrollToForm() {
+                const scrollElem = document.getElementById('form')
+                zenscroll.to(scrollElem)
+            },
         },
         components: {
-            Header,
-            Footer,
-            SplitLine,
+            Feedback,
         },
         mounted() {
             this.activePhoto = this.getActivePhoto(0)
@@ -235,8 +249,25 @@
                         height 1px
                         margin-bottom 15px
                         background silverMain
-                    .description
-                        margin-bottom 15px
+                    .desc,
+                    .material,
+                    .size,
+                    .year,
+                    .price
+                        margin-bottom 10px
+
+                    .button
+                        margin-top 40px
+                        width 200px
+                        text-align center
+                        cursor pointer
+                        border 1px solid
+                        padding 5px 10px
+                        color darkRed
+                        background-color backgroundReverse
+                        &:hover
+                            color backgroundReverse
+                            background-color darkRed
 
 
         @media only screen and (max-width 1441px)

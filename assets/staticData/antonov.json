@@ -848,24 +848,8 @@
 
             },
             {
-                "id": "birds_of_paradise",
-                "name": "Сувенир &laquo;Райские птицы&raquo;",
-                "nameEng": "Souvenir &laquo;Birds of Paradise&raquo;",
-                "description": "",
-                "descriptionEng": "",
-                "material": "Мрамор, бронза, серебро, золочение, чернение, жемчуг",
-                "materialEng": "Marble, bronze, silver, gilding, blackening, pearls",
-                "year": "",
-                "yearEng": "",
-                "price": "360 000",
-                "background": "img/stone-art/stone-crafting/birds_of_paradise/background/1.png",
-                "imagesFull": [
-                    "img/stone-art/stone-crafting/birds_of_paradise/1.png"
-                ],
-                "imagesPreview": [
-                    "img/stone-art/stone-crafting/birds_of_paradise/preview/1.png"
-                ]
-
+                "id": "birds_of_paradise"
+                
             },
             {
                 "id": "rose2",
@@ -910,7 +894,8 @@
                     "img/stone-art/souvenirs/chapel/preview/1.png",
                     "img/stone-art/souvenirs/chapel/preview/2.png",
                     "img/stone-art/souvenirs/chapel/preview/3.png",
-                    "img/stone-art/souvenirs/chapel/preview/5.png"
+                    "img/stone-art/souvenirs/chapel/preview/5.png",
+                    "img/stone-art/souvenirs/chapel/preview/6.png"
                 ]
 
             },
@@ -1070,7 +1055,7 @@
                     "img/stone-art/souvenirs/silver_boar_and_eagle_owl/1.png"
                 ],
                 "imagesPreview": [
-                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl/preview/1.png"
+                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl/preview/1.png"                
                 ]
 
             },
@@ -1092,7 +1077,7 @@
                     "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/1.png"
                 ],
                 "imagesPreview": [
-                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/preview/1.png"
+                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/preview/1.png"                
                 ]
 
             },
@@ -1131,36 +1116,13 @@
                     "img/stone-art/souvenirs/pendant/preview/6.png",
                     "img/stone-art/souvenirs/pendant/preview/7.png",
                     "img/stone-art/souvenirs/pendant/preview/8.png",
-                    "img/stone-art/souvenirs/pendant/preview/9.png"
+                    "img/stone-art/souvenirs/pendant/preview/9.png"                
                 ]
 
             },
             {
-                "id": "bear_fun",
-                "name": "Камнерезная миниатюра &laquo;Медвежьи забавы&raquo;",
-                "nameEng": "Stone-carving miniature &laquo;Bear Fun&raquo;",
-                "description": "",
-                "descriptionEng": "",
-                "material": "Серебро, змеевик, хрусталь, тигровый глаз, бронза, чернение, серебрение",
-                "materialEng": "Silver, coil, crystal, tiger's eye, bronze, blackening, silvering",
-                "year": "",
-                "yearEng": "",
-                "price": "1 300 000",
-                "background": "img/stone-art/stone-crafting/bear_fun/background/1.png",
-                "imagesFull": [
-                    "img/stone-art/stone-crafting/bear_fun/1.png",
-                    "img/stone-art/stone-crafting/bear_fun/2.png",
-                    "img/stone-art/stone-crafting/bear_fun/3.png",
-                    "img/stone-art/stone-crafting/bear_fun/4.png",
-                    "img/stone-art/stone-crafting/bear_fun/5.png"
-                ],
-                "imagesPreview": [
-                    "img/stone-art/stone-crafting/bear_fun/preview/1.png",
-                    "img/stone-art/stone-crafting/bear_fun/preview/2.png",
-                    "img/stone-art/stone-crafting/bear_fun/preview/3.png",
-                    "img/stone-art/stone-crafting/bear_fun/preview/4.png",
-                    "img/stone-art/stone-crafting/bear_fun/preview/5.png"
-                ]
+                "id": "bear_fun"
+                
             },
             {
                 "id": "stone_painting",
@@ -1208,17 +1170,17 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_egg/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/3.png"
+                            "img/stone-art/souvenirs/easter_egg/1.png",
+                            "img/stone-art/souvenirs/easter_egg/2.png",
+                            "img/stone-art/souvenirs/easter_egg/3.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/3.png"
+                            "img/stone-art/souvenirs/easter_egg/preview/1.png",
+                            "img/stone-art/souvenirs/easter_egg/preview/2.png",
+                            "img/stone-art/souvenirs/easter_egg/preview/3.png"              
                         ]
 
                     },
@@ -1235,19 +1197,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg2/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_egg2/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/4.png"
+                            "img/stone-art/souvenirs/easter_egg2/1.png",
+                            "img/stone-art/souvenirs/easter_egg2/2.png",
+                            "img/stone-art/souvenirs/easter_egg2/3.png",
+                            "img/stone-art/souvenirs/easter_egg2/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/4.png"
+                            "img/stone-art/souvenirs/easter_egg2/preview/1.png",
+                            "img/stone-art/souvenirs/easter_egg2/preview/2.png",
+                            "img/stone-art/souvenirs/easter_egg2/preview/3.png",
+                            "img/stone-art/souvenirs/easter_egg2/preview/4.png"              
                         ]
 
                     },
@@ -1264,19 +1226,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg3/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_egg3/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/4.png"
+                            "img/stone-art/souvenirs/easter_egg3/1.png",
+                            "img/stone-art/souvenirs/easter_egg3/2.png",
+                            "img/stone-art/souvenirs/easter_egg3/3.png",
+                            "img/stone-art/souvenirs/easter_egg3/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/4.png"
+                            "img/stone-art/souvenirs/easter_egg3/preview/1.png",
+                            "img/stone-art/souvenirs/easter_egg3/preview/2.png",
+                            "img/stone-art/souvenirs/easter_egg3/preview/3.png",
+                            "img/stone-art/souvenirs/easter_egg3/preview/4.png"              
                         ]
 
                     },
@@ -1293,19 +1255,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg4/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_egg4/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/4.png"
+                            "img/stone-art/souvenirs/easter_egg4/1.png",
+                            "img/stone-art/souvenirs/easter_egg4/2.png",
+                            "img/stone-art/souvenirs/easter_egg4/3.png",
+                            "img/stone-art/souvenirs/easter_egg4/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/4.png"
+                            "img/stone-art/souvenirs/easter_egg4/preview/1.png",
+                            "img/stone-art/souvenirs/easter_egg4/preview/2.png",
+                            "img/stone-art/souvenirs/easter_egg4/preview/3.png",
+                            "img/stone-art/souvenirs/easter_egg4/preview/4.png"              
                         ]
 
                     },
@@ -1322,21 +1284,21 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg5/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_egg5/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/4.png"
+                            "img/stone-art/souvenirs/easter_egg5/1.png",
+                            "img/stone-art/souvenirs/easter_egg5/2.png",
+                            "img/stone-art/souvenirs/easter_egg5/3.png",
+                            "img/stone-art/souvenirs/easter_egg5/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/1.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/2.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/3.png",
-                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/4.png"
+                            "img/stone-art/souvenirs/easter_egg5/preview/1.png",
+                            "img/stone-art/souvenirs/easter_egg5/preview/2.png",
+                            "img/stone-art/souvenirs/easter_egg5/preview/3.png",
+                            "img/stone-art/souvenirs/easter_egg5/preview/4.png"              
                         ]
-                    }
+                    }                   
                 ]
             }
         ]
