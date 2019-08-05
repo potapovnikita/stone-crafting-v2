@@ -848,8 +848,24 @@
 
             },
             {
-                "id": "birds_of_paradise"
-                
+                "id": "birds_of_paradise",
+                "name": "Сувенир &laquo;Райские птицы&raquo;",
+                "nameEng": "Souvenir &laquo;Birds of Paradise&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Мрамор, бронза, серебро, золочение, чернение, жемчуг",
+                "materialEng": "Marble, bronze, silver, gilding, blackening, pearls",
+                "year": "",
+                "yearEng": "",
+                "price": "360 000",
+                "background": "img/stone-art/stone-crafting/birds_of_paradise/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/birds_of_paradise/1.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/birds_of_paradise/preview/1.png"
+                ]
+
             },
             {
                 "id": "rose2",
@@ -894,8 +910,7 @@
                     "img/stone-art/souvenirs/chapel/preview/1.png",
                     "img/stone-art/souvenirs/chapel/preview/2.png",
                     "img/stone-art/souvenirs/chapel/preview/3.png",
-                    "img/stone-art/souvenirs/chapel/preview/5.png",
-                    "img/stone-art/souvenirs/chapel/preview/6.png"
+                    "img/stone-art/souvenirs/chapel/preview/5.png"
                 ]
 
             },
@@ -1055,7 +1070,7 @@
                     "img/stone-art/souvenirs/silver_boar_and_eagle_owl/1.png"
                 ],
                 "imagesPreview": [
-                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl/preview/1.png"                
+                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl/preview/1.png"
                 ]
 
             },
@@ -1077,7 +1092,7 @@
                     "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/1.png"
                 ],
                 "imagesPreview": [
-                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/preview/1.png"                
+                    "img/stone-art/souvenirs/silver_boar_and_eagle_owl2/preview/1.png"
                 ]
 
             },
@@ -1116,13 +1131,36 @@
                     "img/stone-art/souvenirs/pendant/preview/6.png",
                     "img/stone-art/souvenirs/pendant/preview/7.png",
                     "img/stone-art/souvenirs/pendant/preview/8.png",
-                    "img/stone-art/souvenirs/pendant/preview/9.png"                
+                    "img/stone-art/souvenirs/pendant/preview/9.png"
                 ]
 
             },
             {
-                "id": "bear_fun"
-                
+                "id": "bear_fun",
+                "name": "Камнерезная миниатюра &laquo;Медвежьи забавы&raquo;",
+                "nameEng": "Stone-carving miniature &laquo;Bear Fun&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "Серебро, змеевик, хрусталь, тигровый глаз, бронза, чернение, серебрение",
+                "materialEng": "Silver, coil, crystal, tiger's eye, bronze, blackening, silvering",
+                "year": "",
+                "yearEng": "",
+                "price": "1 300 000",
+                "background": "img/stone-art/stone-crafting/bear_fun/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/stone-crafting/bear_fun/1.png",
+                    "img/stone-art/stone-crafting/bear_fun/2.png",
+                    "img/stone-art/stone-crafting/bear_fun/3.png",
+                    "img/stone-art/stone-crafting/bear_fun/4.png",
+                    "img/stone-art/stone-crafting/bear_fun/5.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/stone-crafting/bear_fun/preview/1.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/2.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/3.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/4.png",
+                    "img/stone-art/stone-crafting/bear_fun/preview/5.png"
+                ]
             },
             {
                 "id": "stone_painting",
@@ -1170,17 +1208,17 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_egg/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_egg/1.png",
-                            "img/stone-art/souvenirs/easter_egg/2.png",
-                            "img/stone-art/souvenirs/easter_egg/3.png"
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/3.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_egg/preview/1.png",
-                            "img/stone-art/souvenirs/easter_egg/preview/2.png",
-                            "img/stone-art/souvenirs/easter_egg/preview/3.png"              
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg/preview/3.png"
                         ]
 
                     },
@@ -1197,19 +1235,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_egg2/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg2/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_egg2/1.png",
-                            "img/stone-art/souvenirs/easter_egg2/2.png",
-                            "img/stone-art/souvenirs/easter_egg2/3.png",
-                            "img/stone-art/souvenirs/easter_egg2/4.png"
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_egg2/preview/1.png",
-                            "img/stone-art/souvenirs/easter_egg2/preview/2.png",
-                            "img/stone-art/souvenirs/easter_egg2/preview/3.png",
-                            "img/stone-art/souvenirs/easter_egg2/preview/4.png"              
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg2/preview/4.png"
                         ]
 
                     },
@@ -1226,19 +1264,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_egg3/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg3/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_egg3/1.png",
-                            "img/stone-art/souvenirs/easter_egg3/2.png",
-                            "img/stone-art/souvenirs/easter_egg3/3.png",
-                            "img/stone-art/souvenirs/easter_egg3/4.png"
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_egg3/preview/1.png",
-                            "img/stone-art/souvenirs/easter_egg3/preview/2.png",
-                            "img/stone-art/souvenirs/easter_egg3/preview/3.png",
-                            "img/stone-art/souvenirs/easter_egg3/preview/4.png"              
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg3/preview/4.png"
                         ]
 
                     },
@@ -1255,19 +1293,19 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_egg4/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg4/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_egg4/1.png",
-                            "img/stone-art/souvenirs/easter_egg4/2.png",
-                            "img/stone-art/souvenirs/easter_egg4/3.png",
-                            "img/stone-art/souvenirs/easter_egg4/4.png"
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_egg4/preview/1.png",
-                            "img/stone-art/souvenirs/easter_egg4/preview/2.png",
-                            "img/stone-art/souvenirs/easter_egg4/preview/3.png",
-                            "img/stone-art/souvenirs/easter_egg4/preview/4.png"              
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg4/preview/4.png"
                         ]
 
                     },
@@ -1284,21 +1322,21 @@
                         "size": "",
                         "sizeEng": "",
                         "price": "18 000",
-                        "background": "img/stone-art/souvenirs/easter_egg5/background/1.png",
+                        "background": "img/stone-art/souvenirs/easter_eggs/easter_egg5/background/1.png",
                         "imagesFull": [
-                            "img/stone-art/souvenirs/easter_egg5/1.png",
-                            "img/stone-art/souvenirs/easter_egg5/2.png",
-                            "img/stone-art/souvenirs/easter_egg5/3.png",
-                            "img/stone-art/souvenirs/easter_egg5/4.png"
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/4.png"
 
                         ],
                         "imagesPreview": [
-                            "img/stone-art/souvenirs/easter_egg5/preview/1.png",
-                            "img/stone-art/souvenirs/easter_egg5/preview/2.png",
-                            "img/stone-art/souvenirs/easter_egg5/preview/3.png",
-                            "img/stone-art/souvenirs/easter_egg5/preview/4.png"              
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/1.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/2.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/3.png",
+                            "img/stone-art/souvenirs/easter_eggs/easter_egg5/preview/4.png"
                         ]
-                    }                   
+                    }
                 ]
             }
         ]
@@ -1357,6 +1395,336 @@
                     "img/stone-art/watches/nicholas/preview/2.png"
                 ]
 
+            }
+
+        ]
+    },
+    {
+        "id": "paintings",
+        "name": "Картины",
+        "nameEng": "Paintings",
+        "items": [
+            {
+                "id": "winter_headquarters",
+                "name": "&laquo;Зима. Военный штаб округа&raquo;",
+                "nameEng": "&laquo;Winter. Military Headquarters&raquo;",
+                "description": "Повторение первой картины. Масленый дубликат.",
+                "descriptionEng": "Repetition of the first picture. Buttered duplicate.",
+                "material": "",
+                "materialEng": "",
+                "year": "",
+                "yearEng": "",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "30 000",
+                "background": "img/stone-art/paintings/winter_headquarters/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/winter_headquarters/1.png",
+                    "img/stone-art/paintings/winter_headquarters/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/winter_headquarters/preview/1.png",
+                    "img/stone-art/paintings/winter_headquarters/preview/2.png"
+                ]
+            },
+            {
+                "id": "spring_headquarters",
+                "name": "&laquo;Весна. Военный штаб округа&raquo;",
+                "nameEng": "&laquo;Spring. Military Headquarters&raquo;",
+                "description": "Повторение первой картины. Масленый дубликат.",
+                "descriptionEng": " Repetition of the first picture. Buttered duplicate.",
+                "material": "",
+                "materialEng": "",
+                "year": "",
+                "yearEng": "",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "30 000",
+                "background": "img/stone-art/paintings/spring_headquarters/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/spring_headquarters/1.png",
+                    "img/stone-art/paintings/spring_headquarters/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/spring_headquarters/preview/1.png",
+                    "img/stone-art/paintings/spring_headquarters/preview/2.png"
+                ]
+            },
+            {
+                "id": "elk",
+                "name": "&laquo;Лось. Зима&raquo;",
+                "nameEng": "&laquo;Elk. Winter&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2008, Казань",
+                "yearEng": "2008, Kazan",
+                "author":"Альберт Тимершин",
+                "authorEng":"Albert Timershin",
+                "price": "150 000",
+                "background": "img/stone-art/paintings/elk/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/elk/1.png",
+                    "img/stone-art/paintings/elk/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/elk/preview/1.png",
+                    "img/stone-art/paintings/elk/preview/2.png"
+                ]
+            },
+            {
+                "id": "winter_row",
+                "name": "&laquo;Зимняя строка. Обховский санаторий&raquo;",
+                "nameEng": "&laquo;Winter row. Obkhov sanatorium &raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2014",
+                "yearEng": "2014",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "90 000",
+                "background": "img/stone-art/paintings/winter_row/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/winter_row/1.png",
+                    "img/stone-art/paintings/winter_row/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/winter_row/preview/1.png",
+                    "img/stone-art/paintings/winter_row/preview/2.png"
+                ]
+            },
+            {
+                "id": "uktus",
+                "name": "&laquo;Уктус. Река Патрушиха&raquo;",
+                "nameEng": "&laquo;Uktus. Patrusheha Rivers&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2019",
+                "yearEng": "2019",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "100 000",
+                "background": "img/stone-art/paintings/uktus/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/uktus/1.png",
+                    "img/stone-art/paintings/uktus/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/uktus/preview/1.png",
+                    "img/stone-art/paintings/uktus/preview/2.png"
+                ]
+            },
+            {
+                "id": "verkhoturye",
+                "name": "&laquo;Весенний свет. Верхотурье. Православная святыня. Новопокровский монастырь&raquo;",
+                "nameEng": "&laquo;Spring Light. Verkhoturye. Orthodox shrine. Novopokrovsky monastery&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2019",
+                "yearEng": "2019",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "90 000",
+                "background": "img/stone-art/paintings/verkhoturye/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/verkhoturye/1.png",
+                    "img/stone-art/paintings/verkhoturye/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/verkhoturye/preview/1.png",
+                    "img/stone-art/paintings/verkhoturye/preview/2.png"
+                ]
+            },
+            {
+                "id": "period",
+                "name": "&laquo;Период весны&raquo;",
+                "nameEng": "&laquo;The period of spring&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2011",
+                "yearEng": "2011",
+                "author":"Марс Сафин",
+                "authorEng":"Mars Safin",
+                "price": "60 000",
+                "background": "img/stone-art/paintings/period/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/period/1.png",
+                    "img/stone-art/paintings/period/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/period/preview/1.png",
+                    "img/stone-art/paintings/period/preview/2.png"
+                ]
+            },
+            {
+                "id": "old_duck",
+                "name": "&laquo;Старая Утка (село). Уральские места. С покоса&raquo;",
+                "nameEng": "&laquo;Old Duck (village). Ural places. From the mowing&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2014",
+                "yearEng": "2014",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "90 000",
+                "background": "img/stone-art/paintings/old_duck/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/old_duck/1.png",
+                    "img/stone-art/paintings/old_duck/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/old_duck/preview/1.png",
+                    "img/stone-art/paintings/old_duck/preview/2.png"
+                ]
+            },
+            {
+                "id": "chusovaya",
+                "name": "&laquo;Река Чусовая. Первый снег (триптих)&raquo;",
+                "nameEng": "&laquo;Chusovaya River. First snow (triptych)&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2011",
+                "yearEng": "2011",
+                "author":"Александр Ремезов",
+                "authorEng":"Alexander Remezov",
+                "price": "80 000",
+                "background": "img/stone-art/paintings/chusovaya/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/chusovaya/1.png",
+                    "img/stone-art/paintings/chusovaya/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/chusovaya/preview/1.png",
+                    "img/stone-art/paintings/chusovaya/preview/2.png"
+                ]
+            },
+            {
+                "id": "chusovaya2",
+                "name": "&laquo;Река Чусовая. Зимняя сказка (триптих)&raquo;",
+                "nameEng": "&laquo;Chusovaya River. Winter's Tale (triptych)&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2011",
+                "yearEng": "2011",
+                "author":"Александр Ремезов",
+                "authorEng":"Alexander Remezov",
+                "price": "80 000",
+                "background": "img/stone-art/paintings/chusovaya2/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/chusovaya2/1.png",
+                    "img/stone-art/paintings/chusovaya2/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/chusovaya2/preview/1.png",
+                    "img/stone-art/paintings/chusovaya2/preview/2.png"
+                ]
+            },
+            {
+                "id": "chusovaya3",
+                "name": "&laquo;Река Чусовая. Винокуренный камень реки Чусовой (триптих)&raquo;",
+                "nameEng": "&laquo;Distilled stone of the Chusovaya River&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2011",
+                "yearEng": "2011",
+                "author":"Александр Ремезов ",
+                "authorEng":"Alexander Remezov",
+                "price": "80 000",
+                "background": "img/stone-art/paintings/chusovaya3/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/chusovaya3/1.png",
+                    "img/stone-art/paintings/chusovaya3/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/chusovaya3/preview/1.png",
+                    "img/stone-art/paintings/chusovaya3/preview/2.png"
+                ]
+            },
+            {
+                "id": "plodnaya",
+                "name": "&laquo;Деревня Плодневая. Вечер в Плодневой&raquo;",
+                "nameEng": "&laquo;The village of Plodnaya. Evening in Plodnevaya&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2011",
+                "yearEng": "2011",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "30 000",
+                "background": "img/stone-art/paintings/plodnaya/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/plodnaya/1.png",
+                    "img/stone-art/paintings/plodnaya/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/plodnaya/preview/1.png",
+                    "img/stone-art/paintings/plodnaya/preview/2.png"
+                ]
+            },
+            {
+                "id": "radishchev",
+                "name": "&laquo;8 Марта - Радищева. Дожди заиграли союзы&raquo;",
+                "nameEng": "&laquo;March 8 - Radishchev. Rains played alliances&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2008",
+                "yearEng": "2008",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "120 000",
+                "background": "img/stone-art/paintings/radishchev/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/radishchev/1.png",
+                    "img/stone-art/paintings/radishchev/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/radishchev/preview/1.png",
+                    "img/stone-art/paintings/radishchev/preview/2.png"
+                ]
+            },
+            {
+                "id": "karagay",
+                "name": "&laquo;Карагай. Башкирия. Санаторий Зимушка&raquo;",
+                "nameEng": "&laquo;Karagay. Bashkiria. Sanatorium Zimushka&raquo;",
+                "description": "",
+                "descriptionEng": "",
+                "material": "",
+                "materialEng": "",
+                "year": "2012",
+                "yearEng": "2012",
+                "author":"Алексей Ефремов",
+                "authorEng":"Alexey Efremov",
+                "price": "90 000",
+                "background": "img/stone-art/paintings/karagay/background/1.png",
+                "imagesFull": [
+                    "img/stone-art/paintings/karagay/1.png",
+                    "img/stone-art/paintings/karagay/2.png"
+                ],
+                "imagesPreview": [
+                    "img/stone-art/paintings/karagay/preview/1.png",
+                    "img/stone-art/paintings/karagay/preview/2.png"
+                ]
             }
 
         ]

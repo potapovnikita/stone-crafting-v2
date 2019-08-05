@@ -34,7 +34,6 @@
 </template>
 
 <script>
-    import * as emailjs from 'emailjs-com/dist/email'
     import { mapState } from 'vuex'
 
     import Shop from '~/assets/staticData/antonov.json'
@@ -46,21 +45,7 @@
                 activeMenu: [],
                 activeIndex: 0,
                 activeInnerIndex: 0,
-                name: '',
-                phone: '',
-                errorName: false,
-                errorPhone: false,
-                emailStatus: '',
-                emailStatusErr: '',
-                // phoneNumber: Contacts.Contacts.Phone,
-                preload: false,
-                statusSuccess: false,
             }
-        },
-        watch: {
-
-        },
-        components: {
         },
         methods: {
             setActive(id, inner) {
@@ -93,48 +78,6 @@
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
             },
-
-            submitForm() {
-                this.emailStatus = ''
-                this.emailStatusErr = ''
-
-                const data = {
-                    service_id: 'forsage_service',
-                    template_id: 'template_5dGSiEff',
-                    user_id: 'user_JaUNu8x9vuWUpoOfjGNgp',
-                    template_params: {
-                        'name': this.name,
-                        'phone': this.phone
-                    }
-                };
-
-                if (!this.name) {
-                    this.errorName = true
-                }
-
-                if (!this.phone) {
-                    this.errorPhone = true
-                }
-
-                if (this.phone && this.name) {
-                    this.errorName = false
-                    this.errorPhone = false
-
-                    this.preload = true
-                    emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
-                        .then((res) => {
-                            this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
-                            this.name = ''
-                            this.phone = ''
-                            this.preload = false
-                            this.statusSuccess = true
-                        }, (error) => {
-                            this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${phoneNumber}`
-                            this.preload = false
-                            this.statusSuccess = false
-                        });
-                }
-            }
         },
         computed: {
             ...mapState('localization', [
@@ -155,12 +98,7 @@
                 }
             })
             this.activeMenu = this.shop[0]
-
-            this.statusSuccess = false;
         },
-        destroyed() {
-            this.statusSuccess = false
-        }
     }
 </script>
 
