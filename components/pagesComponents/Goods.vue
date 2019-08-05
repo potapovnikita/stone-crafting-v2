@@ -29,7 +29,7 @@
                     .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                     .button(@click="scrollToForm()") {{lang === 'ru' ? 'Купить' : 'Buy' }}
         .photo_gallery
-        Feedback
+        Feedback(:type="currentProduct.name")
 
 </template>
 

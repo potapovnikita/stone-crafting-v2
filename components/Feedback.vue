@@ -50,6 +50,7 @@
                 statusSuccess: false,
             }
         },
+        props: ['type'],
         components: {
         },
         methods: {
@@ -67,7 +68,8 @@
                     template_params: {
                         'name': this.name,
                         'phone': this.phone,
-                        'comment': this.comment
+                        'comment': this.comment,
+                        'type': this.type
                     }
                 };
 
