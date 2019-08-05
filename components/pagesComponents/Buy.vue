@@ -26,7 +26,7 @@
                             .desc(v-if="item.desc" v-html="lang === 'ru' ? item.desc : item.descEng")
                             .material(v-if="item.material" v-html="lang === 'ru' ? 'Материал: ' + item.material : 'Material: ' + item.materialEng")
                             .size(v-if="item.size" v-html="lang === 'ru' ? 'Размер: ' + item.size : 'Size: ' + item.sizeEng")
-                            .year(v-if="item.year" v-html="lang === 'ru' ? item.year : item.yearEng")
+                            .year(v-if="item.year" v-html="lang === 'ru' ? 'Год: ' + item.year : 'Year: ' + item.yearEng")
                             .price(v-if="item.price" v-html="lang === 'ru' ? 'Цена: ' + item.price + ' ₽' : 'Price: ' + item.price + ' ₽'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                         .button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")

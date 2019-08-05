@@ -24,7 +24,7 @@
                     .desc(v-if="currentProduct.desc" v-html="lang === 'ru' ? currentProduct.desc : currentProduct.descEng")
                     .material(v-if="currentProduct.material" v-html="lang === 'ru' ? 'Материал: ' + currentProduct.material : 'Material: ' + currentProduct.materialEng")
                     .size(v-if="currentProduct.size" v-html="lang === 'ru' ? 'Размер: ' + currentProduct.size : 'Size: ' + currentProduct.sizeEng")
-                    .year(v-if="currentProduct.year" v-html="lang === 'ru' ? currentProduct.year : currentProduct.yearEng")
+                    .year(v-if="currentProduct.year" v-html="lang === 'ru' ? 'Год: ' + currentProduct.year : 'Year: ' + currentProduct.yearEng")
                     .price(v-if="currentProduct.price" v-html="lang === 'ru' ? 'Цена: ' + currentProduct.price + ' ₽' : 'Price: ' + currentProduct.price + ' ₽'")
                     .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                     .button(@click="scrollToForm()") {{lang === 'ru' ? 'Купить' : 'Buy' }}
