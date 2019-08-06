@@ -30,6 +30,7 @@
                     .button(@click="scrollToForm()") {{lang === 'ru' ? 'Купить' : 'Buy' }}
         .photo_gallery
         Feedback(:type="currentProduct.name")
+        RandomGallery
 
 </template>
 
@@ -39,6 +40,7 @@
     import zenscroll from 'zenscroll'
 
     import Feedback from '~/components/Feedback.vue'
+    import RandomGallery from '~/components/RandomGallery.vue'
 
 
     import Shop from '~/assets/staticData/antonov.json'
@@ -98,6 +100,7 @@
         },
         components: {
             Feedback,
+            RandomGallery,
         },
         mounted() {
             this.activePhoto = this.getActivePhoto(0)

@@ -32,10 +32,13 @@
                         .title {{lang === 'ru' ? item.name : item.nameEng}}
                         .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
+        RandomGallery
+
 </template>
 
 <script>
     import { mapState } from 'vuex'
+    import RandomGallery from '~/components/RandomGallery.vue'
 
     import Museum from '~/assets/staticData/museum.json'
 
@@ -251,6 +254,7 @@
             },
         },
         components: {
+            RandomGallery
         },
         computed: {
             ...mapState('localization', [
