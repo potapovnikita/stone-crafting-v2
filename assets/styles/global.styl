@@ -68,6 +68,34 @@ a.reverse
     padding 30px 60px
 
 
+.lds-dual-ring {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position relative
+    top -50px
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid orangeMain;
+    border-color: backgroundReverse transparent backgroundReverse transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media only screen and (max-width 767px)
     h1
         font-size 35px
