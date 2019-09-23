@@ -150,12 +150,10 @@
                         display none
                     .photo
                         height 300px
-                        max-height 225px
                         background-size contain
                         background-position center
                         background-repeat no-repeat
                         margin-bottom 10px
-                        background-color darkRed
                         cursor pointer
 
                     .slides
@@ -163,6 +161,8 @@
                         display flex
                         flex-direction row
                         flex-wrap wrap
+                        justify-content: center;
+
                         .img
                             cursor pointer
                             padding 0 2px 2px 2px
@@ -224,6 +224,8 @@
                 flex-direction column
                 justify-content center
                 margin-bottom 10px
+                align-items: center;
+
             .shop_items
                 width 100%
 

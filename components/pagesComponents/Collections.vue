@@ -112,6 +112,7 @@
                 const descriptionList = Array.from(container.querySelectorAll('.description'));
                 descriptionList.forEach((elem) => {
                     elem.classList.add('hovered')
+                    elem.classList.add('touch')
                 })
 
                 const itemList = Array.from(container.querySelectorAll('.item'));
@@ -376,7 +377,8 @@
                                     z-index 10
                                     opacity 1
                                     transform translate3d(-200%, 0, 0)
-
+                                    &.touch
+                                        transform translate3d(-100%, 0, 0)
                                     .content
                                         opacity 1
 
@@ -387,6 +389,8 @@
                                     z-index 10
                                     opacity 1
                                     transform translate3d(200%, 0, 0)
+                                    &.touch
+                                        transform translate3d(100%, 0, 0)
 
                                     .content
                                         opacity 1

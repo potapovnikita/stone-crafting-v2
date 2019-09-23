@@ -3,20 +3,24 @@
         h2.title.title-random {{lang === 'ru' ? 'Возможно, Вам понравится' : 'You might like it'}}
         no-ssr
             .random-items
+                .items(v-if="goodsSortSlice.length")
+                    .arrow-left(@click="slideLeft()")
+                    .items_transform
+                        .item(v-for="(good, index) in goodsSortSlice"
+                            v-if="index < 3"
+                            :style="{backgroundImage: getBgImg(good.background)}"
+                            @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
+                            )
+                            .mask
                 .items
-                    .item(v-for="(good, index) in goodsSort"
-                        v-if="index < 3"
-                        :style="{backgroundImage: getBgImg(good.background)}"
-                        @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
-                        )
-                        .mask
-                .items
-                    .item(v-for="(good, index) in goodsSort"
-                        v-if="index >= 3"
-                        :style="{backgroundImage: getBgImg(good.background)}"
-                        @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
-                        )
-                        .mask
+                    .arrow-right(@click="slideRight()")
+                    .items_transform
+                        .item(v-for="(good, index) in goodsSortSlice"
+                            v-if="index >= 3"
+                            :style="{backgroundImage: getBgImg(good.background)}"
+                            @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
+                            )
+                            .mask
             .button(@click="$nuxt.$router.push({path:`/buy`})") {{lang === 'ru' ? 'Смотреть все' : 'See All'}}
 
 
@@ -33,7 +37,9 @@
     export default {
         data() {
             return {
-                goodsNotSort: Antonov
+                goodsNotSort: Antonov,
+                goodsSortSlice: [],
+                transform: 6,
             }
         },
         props: ['type'],
@@ -44,7 +50,27 @@
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `url(${imageUrl})` : ''
             },
+            slideRight() {
+                this.transform = this.transform < this.goodsSort.length
+                    ? this.transform + 6
+                    : 6
 
+                this.goodsSortSlice = this.goodsSort.slice(this.transform - 6, this.transform)
+                if (this.goodsSortSlice.length < 6) {
+                    this.goodsSortSlice = this.goodsSort.slice(this.goodsSort.length - 6, this.goodsSort.length)
+                }
+            },
+
+            slideLeft() {
+                if (this.transform <= 6) {
+                    this.transform = this.goodsSort.length
+                } else this.transform = this.transform - 6
+
+                this.goodsSortSlice = this.goodsSort.slice(this.transform - 6, this.transform)
+                if (this.goodsSortSlice.length < 6) {
+                    this.goodsSortSlice = this.goodsSort.slice(0, 6)
+                }
+            },
         },
         computed: {
             ...mapState('localization', [
@@ -63,16 +89,21 @@
                     })
                 })
 
-                let GOODS_RAND = []
-                for (let i = 1; i <= 6; i++) { // берем 6 случайных элементов из массива
-                    GOODS_RAND.push( GOODS[Math.floor(Math.random() * GOODS.length)])
-                }
-
-                return GOODS_RAND
+                // let GOODS_RAND = []
+                // for (let i = 1; i <= 6; i++) { // берем 6 случайных элементов из массива
+                //     let randomItem = null
+                //
+                //     do {
+                //         randomItem = GOODS[Math.floor(Math.random() * GOODS.length)];
+                //     } while (GOODS_RAND.find(item => randomItem.id === item.id));
+                //
+                //     GOODS_RAND.push(randomItem)
+                // }
+                return GOODS
             }
         },
-        async created() {
-
+        async mounted() {
+            this.goodsSortSlice = this.goodsSort.slice(0, 6)
         },
     }
 
@@ -90,27 +121,67 @@
             flex-wrap wrap
             justify-content center
             margin-bottom 15px
+            position relative
+            /*max-width 996px*/
+
+            /*@media only screen and (max-width 900px)*/
+                /*max-width 500px*/
+
+            /*@media only screen and (max-width 767px)*/
+                /*max-width 335px*/
+
+            /*@media only screen and (max-width 400px)*/
+                /*max-width 300px*/
+
+            .arrow-right,
+            .arrow-left
+                position absolute
+                height 100%
+                width 20px
+                cursor pointer
+                &:hover
+                    background-color darkRed
+
+            .arrow-left
+                left -30px
+                background url('~assets/img/left-arrow.png') no-repeat 50%
+                background-size 80%
+
+            .arrow-right
+                right -30px
+                background url('~assets/img/right-arrow.png') no-repeat 50%
+                background-size 80%
+
+
             .items
-                display flex
-                flex-direction row
-                flex-wrap nowrap
-                .item
-                    background-size cover
-                    background-repeat no-repeat
-                    width 150px
-                    height 150px
-                    margin 8px
+                position relative
+                .items_transform
                     display flex
-                    position relative
-                    cursor pointer
-                    &:hover
-                        box-shadow 0 0 10px rgba(255, 255, 255, 0.5)
-                    .mask
-                        position absolute
-                        top 0
-                        bottom 0
-                        left 0
-                        right 0
+                    flex-direction row
+                    flex-wrap nowrap
+
+                    .item
+                        background-size cover
+                        background-repeat no-repeat
+                        min-width 150px
+                        min-height 150px
+                        margin 8px
+                        display flex
+                        position relative
+                        cursor pointer
+                        &:hover
+                            box-shadow 0 0 10px rgba(255, 255, 255, 0.5)
+                        .mask
+                            position absolute
+                            top 0
+                            bottom 0
+                            left 0
+                            right 0
+                        @media only screen and (max-width 767px)
+                            min-width 100px
+                            max-width 100px
+                            min-height 100px
+                            max-height 100px
         .button
             margin-top 40px
             width 200px
@@ -130,12 +201,4 @@
             color white
             margin-bottom 20px
 
-
-    @media only screen and (max-width 767px)
-        .random_container
-            .random-items
-                .items
-                    .item
-                        width 100px
-                        height 100px
 </style>

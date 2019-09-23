@@ -246,6 +246,11 @@
                         max-width 400px
                         max-height  450px
 
+        @media only screen and (max-width 767px)
+            .description-wrapper
+                padding 30px 20px
+
+
 
 
 </style>

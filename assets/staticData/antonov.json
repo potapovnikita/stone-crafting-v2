@@ -1499,7 +1499,7 @@
             {
                 "id": "uktus",
                 "name": "&laquo;Уктус. Река Патрушиха&raquo;",
-                "nameEng": "&laquo;Uktus. Patrusheha Rivers&raquo;",
+                "nameEng": "&laquo;Uktus. Patrusheha River&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1568,7 +1568,7 @@
             {
                 "id": "old_duck",
                 "name": "&laquo;Старая Утка (село). Уральские места. С покоса&raquo;",
-                "nameEng": "&laquo;Old Duck (village). Ural places. From the mowing&raquo;",
+                "nameEng": "&laquo;Old Duck (village). Ural places.&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1591,7 +1591,7 @@
             {
                 "id": "chusovaya",
                 "name": "&laquo;Река Чусовая. Первый снег (триптих)&raquo;",
-                "nameEng": "&laquo;Chusovaya River. First snow (triptych)&raquo;",
+                "nameEng": "&laquo;Chusovaya River. First snow&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1614,7 +1614,7 @@
             {
                 "id": "chusovaya2",
                 "name": "&laquo;Река Чусовая. Зимняя сказка (триптих)&raquo;",
-                "nameEng": "&laquo;Chusovaya River. Winter's Tale (triptych)&raquo;",
+                "nameEng": "&laquo;Chusovaya River. Winter's Tale&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1637,7 +1637,7 @@
             {
                 "id": "chusovaya3",
                 "name": "&laquo;Река Чусовая. Винокуренный камень реки Чусовой (триптих)&raquo;",
-                "nameEng": "&laquo;Distilled stone of the Chusovaya River&raquo;",
+                "nameEng": "Chusovaya River&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1660,7 +1660,7 @@
             {
                 "id": "plodnaya",
                 "name": "&laquo;Деревня Плодневая. Вечер в Плодневой&raquo;",
-                "nameEng": "&laquo;The village of Plodnaya. Evening in Plodnevaya&raquo;",
+                "nameEng": "&laquo;The village of Plodnevaya. Evening in Plodnevaya&raquo;",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",
@@ -1683,7 +1683,7 @@
             {
                 "id": "radishchev",
                 "name": "&laquo;8 Марта - Радищева. Дожди заиграли союзы&raquo;",
-                "nameEng": "&laquo;March 8 - Radishchev. Rains played alliances&raquo;",
+                "nameEng": "&laquo;March 8 - Radishchev.",
                 "description": "",
                 "descriptionEng": "",
                 "material": "",

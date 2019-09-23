@@ -95,7 +95,7 @@
             },
             scrollToForm() {
                 const scrollElem = document.getElementById('form')
-                zenscroll.to(scrollElem)
+                zenscroll.center(scrollElem)
             },
         },
         components: {
@@ -233,7 +233,7 @@
                             opacity 0.4
 
                     .img
-                        background-size: cover;
+                        background-size: contain;
                         background-position: center;
                         background-repeat: no-repeat;
                         width 100%
@@ -287,7 +287,9 @@
                     .photo
                         max-width 400px
                         max-height  450px
-
+        @media only screen and (max-width 767px)
+            .description-wrapper
+                padding 30px 20px
 
 
 </style>
