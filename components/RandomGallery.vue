@@ -122,16 +122,10 @@
             justify-content center
             margin-bottom 15px
             position relative
-            /*max-width 996px*/
+            align-items: center;
 
-            /*@media only screen and (max-width 900px)*/
-                /*max-width 500px*/
-
-            /*@media only screen and (max-width 767px)*/
-                /*max-width 335px*/
-
-            /*@media only screen and (max-width 400px)*/
-                /*max-width 300px*/
+            @media only screen and (max-width 1100px)
+                flex-direction column
 
             .arrow-right,
             .arrow-left
@@ -146,11 +140,15 @@
                 left -30px
                 background url('~assets/img/left-arrow.png') no-repeat 50%
                 background-size 80%
+                @media only screen and (max-width 1100px)
+                    top 50%
 
             .arrow-right
                 right -30px
                 background url('~assets/img/right-arrow.png') no-repeat 50%
                 background-size 80%
+                @media only screen and (max-width 1100px)
+                    bottom 50%
 
 
             .items
@@ -182,6 +180,11 @@
                             max-width 100px
                             min-height 100px
                             max-height 100px
+                        @media only screen and (max-width 400px)
+                            min-width 80px
+                            max-width 80px
+                            min-height 80px
+                            max-height 80px
         .button
             margin-top 40px
             width 200px
