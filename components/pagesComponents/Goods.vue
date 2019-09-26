@@ -63,14 +63,22 @@
                 this.products.forEach((category) => {
                     category.items.forEach((item) => {
                         if (item.id === this.$route.path.split('/').pop()) product = item
-                        // если среди категорий не нашли элемент, то ищем в подкатегориях (если они есть)
-                        if (!product.name && item.innerSection) {
-                            item.innerSection.forEach((inner) => {
-                                if (inner.id === this.$route.path.split('/').pop()) product = inner
+                    })
+                });
+
+                // если среди категорий не нашли элемент, то ищем в подкатегориях (если они есть)
+                // todo костыль, желательно надо перепилить структуру данных
+                if (!product.name) {
+                    this.products.forEach((category) => {
+                        if (category.innerSection) {
+                            category.innerSection.forEach((inner) => {
+                                inner.items.forEach(innerItem => {
+                                    if (innerItem.id === this.$route.path.split('/').pop()) product = innerItem
+                                })
                             })
                         }
-                    })
-                })
+                    });
+                }
 
                 return product
             },

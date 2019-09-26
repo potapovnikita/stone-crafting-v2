@@ -87,20 +87,22 @@
                 if (err) {
                     console.error("Возникла ощибка", err.message);
                 } else {
-                    // оставляем только последние 6 фотографий профиля
-                    this.news = res.data
+                    // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
+                    res.data.forEach(item => {
+                        if (item.tags.length && item.tags.find(tag => tag.toLowerCase() === 'камнерезныйдом')) this.news.push(item)
+                    })
+
                     console.log(this.news)
-                    console.log(res.data)
                 }
             });
         },
         watch: {},
         updated() {
             if (this.news.length > 0) {
-                console.log(121212, document.querySelectorAll('.description'))
-
                 const elems = [...document.querySelectorAll('.description')]
                 elems.forEach((item) => {
+                    this.visible(item);
+
                     // Запускаем функцию при прокрутке страницы
                     window && window.addEventListener('scroll', () => {
                         this.visible(item);
@@ -108,13 +110,13 @@
                 })
             }
         },
-        mounted() {
-        }
     }
 </script>
 
 <style lang="stylus">
     .news-container
+        .lds-dual-ring
+            margin 0 auto
         .news-list
             display flex
             flex-direction column
@@ -186,7 +188,7 @@
                         &:hover
                             transform scale(1.1)
 
-        @media only screen and (max-width 767px)
+        @media only screen and (max-width 768px)
             .news-list
                 .news-item
                     flex-direction column-reverse

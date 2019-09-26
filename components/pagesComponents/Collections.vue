@@ -343,7 +343,7 @@
                         z-index 3
 
                         .description
-                            background darkRed
+                            background #660F28
                             height 100%
                             position absolute
                             top 0
@@ -357,6 +357,12 @@
                                 opacity 0
                                 .title
                                     margin-bottom 15px
+                                    font-size 30px
+                                    font-style: italic;
+
+                                .text
+                                    font-size 16px
+
 
                             .button
                                 border 1px solid silverMain
@@ -378,6 +384,7 @@
                                     opacity 1
                                     transform translate3d(-200%, 0, 0)
                                     &.touch
+                                        background-color: rgba(102,15,40, 0.6);
                                         transform translate3d(-100%, 0, 0)
                                     .content
                                         opacity 1
@@ -390,6 +397,7 @@
                                     opacity 1
                                     transform translate3d(200%, 0, 0)
                                     &.touch
+                                        background-color: rgba(102,15,40, 0.6);
                                         transform translate3d(100%, 0, 0)
 
                                     .content
@@ -485,11 +493,13 @@
                                 bottom 0
                                 left 0
                                 right 0
-                                background-color: rgba(139, 0, 0, 0.5);
+                                background-color: rgba(102,15,40, 0.6);
                             .text
                                 position relative
+                                font-size 15px
                             .title
                                 position relative
                                 margin-bottom: 40px
+                                font-size 30px
 
 </style>

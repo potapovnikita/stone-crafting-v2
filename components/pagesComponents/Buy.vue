@@ -61,8 +61,9 @@
                 } else {
                     this.activeMenu = this.shop.find((item) => {
                         return item.id === id
-                    })
+                    });
                 }
+                window.location.hash = id
             },
             setActiveImg(item, id, index) {
                 if (id >= item.imagesFull.length) id = 0
@@ -97,7 +98,24 @@
                     })
                 }
             })
-            this.activeMenu = this.shop[0]
+
+            if (window.location.hash) {
+                const hashItem = this.shop.find(item => item.id === window.location.href.split('#')[1])
+                let hashItemInner = {}
+                this.shop.forEach((category) => {
+                    if (category.innerSection) {
+                        hashItemInner =  category.innerSection.find(item => item.id === window.location.href.split('#')[1])
+                    }
+                })
+                if (hashItem) this.setActive(hashItem.id)
+                else if (hashItemInner) this.setActive(hashItemInner.id, true)
+                else {
+                    this.setActive(this.shop[0].id)
+                }
+            }
+            else {
+                this.setActive(this.shop[0].id)
+            }
         },
     }
 </script>
