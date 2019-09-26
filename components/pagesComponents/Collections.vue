@@ -286,6 +286,7 @@
         .collections-blocks.desktop
             position relative
             max-width 1200px
+            margin 0 auto
             &.hovered
                 .item:not(.hovered)
                     opacity 0.5
