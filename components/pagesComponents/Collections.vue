@@ -1,6 +1,7 @@
 <template lang="pug">
     .common-container.collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
+        // for desktop version
         .collections-blocks.desktop
             .item.itemBlock(v-for="(item, index) in museum" :key="item.id")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
@@ -286,7 +287,9 @@
         .collections-blocks.desktop
             position relative
             max-width 1200px
-            margin 0 auto
+            @media only screen and (min-width 1500px)
+                left calc(50% - 600px)
+
             &.hovered
                 .item:not(.hovered)
                     opacity 0.5

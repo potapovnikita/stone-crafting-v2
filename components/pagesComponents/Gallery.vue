@@ -249,6 +249,7 @@
         @media only screen and (max-width 767px)
             .description-wrapper
                 padding 30px 20px
+                flex-direction: column-reverse;
 
 
 
