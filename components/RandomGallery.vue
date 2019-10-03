@@ -8,7 +8,7 @@
                     .items_transform
                         .item(v-for="(good, index) in goodsSortSlice"
                             v-if="index < 3"
-                            :style="{backgroundImage: getBgImg(good.background)}"
+                            :style="{backgroundImage: getBgImg(good.imagesPreview[0])}"
                             @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
                             )
                             .mask
@@ -17,7 +17,7 @@
                     .items_transform
                         .item(v-for="(good, index) in goodsSortSlice"
                             v-if="index >= 3"
-                            :style="{backgroundImage: getBgImg(good.background)}"
+                            :style="{backgroundImage: getBgImg(good.imagesPreview[0])}"
                             @click="$nuxt.$router.push({path:`/goods/${good.id}`})"
                             )
                             .mask
