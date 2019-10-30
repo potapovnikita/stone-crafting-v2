@@ -2,7 +2,9 @@
     div
         #header(:class="{'menu_container-reverse': reverse, 'menu_container': !reverse}")
             .logo_row(:class="{'reverse': reverse}")
-                nuxt-link(to="/" :class="{'reverse': reverse}") Тут будет логотип
+                nuxt-link(to="/" :class="{'reverse': reverse}") ЛОГОТИП
+                    <!--img(:src="switchLogo === 'ru' ? require('~/assets/img/logo-rus.gif') : require('~/assets/img/logo-eng1.gif')")-->
+
                 .local
                     span(@click="changeLocal('ru')" :class="{'active': lang === 'ru'}") RU
                     span(@click="changeLocal('eng')" :class="{'active': lang === 'eng'}") ENG
@@ -33,7 +35,8 @@
     export default {
         data() {
             return {
-                menu: Menu
+                menu: Menu,
+                switchLogo: 'eng',
             }
         },
         props: ['placeholder', 'reverse'],
@@ -63,6 +66,10 @@
                 if (this.isScrolled(page) || this.isScrolled(pageSafari)) header.classList.add('header_scrolled')
                 else header.classList.remove('header_scrolled')
             })
+
+            setInterval(() => {
+                this.switchLogo = this.switchLogo === 'eng' ? 'ru' : 'eng';
+            }, 1000 * 60)
             // // for parallax effect
             // window.addEventListener('scroll', () => {
             //     const scrollPosition = window.pageYOffset
@@ -112,11 +119,11 @@
             background-image linear-gradient(to top, rgba(255, 255, 255, 0), backgroundReverse 100%)
 
         &.header_scrolled
-            .menu
+            .menu,.logo_row
                 transform translateY(-40px)
                 opacity 0
             &:hover
-                .menu
+                .menu,.logo_row
                     transform translateY(0px)
                     opacity 1
 
@@ -166,6 +173,7 @@
         color whiteMain
         height 50px
         z-index 3
+        transition all .6s
 
         &.reverse
             color darkRed
