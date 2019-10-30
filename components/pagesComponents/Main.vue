@@ -4,10 +4,7 @@
             .video-wrapper
                 <!--.image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")-->
                 video(loop="true" preload="auto" autoplay="true" muted="muted")
-                    source(src="~/assets/video/main.mp4" type="video/mp4")
-
-
-
+                    source(src="https://yadi.sk/i/ENhsNEHMpYSOwQ" type="video/mp4")
 </template>
 
 <script>
