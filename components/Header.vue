@@ -2,8 +2,10 @@
     div
         #header(:class="{'menu_container-reverse': reverse, 'menu_container': !reverse}")
             .logo_row(:class="{'reverse': reverse}")
-                nuxt-link(to="/" :class="{'reverse': reverse}") ЛОГОТИП
-                    <!--img(:src="switchLogo === 'ru' ? require('~/assets/img/logo-rus.gif') : require('~/assets/img/logo-eng1.gif')")-->
+                nuxt-link(to="/" :class="{'reverse': reverse}")
+                    .logo(:class="{'reverse': reverse}")
+                        MainLogoRed(v-if="reverse")
+                        MainLogoWhite(v-else)
 
                 .local
                     span(@click="changeLocal('ru')" :class="{'active': lang === 'ru'}") RU
@@ -29,14 +31,15 @@
 <script>
     import { mapMutations, mapState } from 'vuex'
     import Menu from '~/assets/staticData/menu.json'
-
-    import zenscroll from 'zenscroll'
+    import MainLogoRed from '~/assets/img/logo_antonov_red.svg'
+    import MainLogoWhite from '~/assets/img/logo_antonov_white.svg'
 
     export default {
         data() {
             return {
                 menu: Menu,
                 switchLogo: 'eng',
+                curScroll: 0,
             }
         },
         props: ['placeholder', 'reverse'],
@@ -46,7 +49,8 @@
             ]),
         },
         components: {
-
+            MainLogoWhite,
+            MainLogoRed,
         },
         methods: {
             ...mapMutations({
@@ -54,7 +58,10 @@
             }),
             isScrolled(el) {
                 return el.scrollTop > 0;
-            }
+            },
+            getScroll(el) {
+                return el.scrollTop;
+            },
         },
         mounted() {
             const page = document.documentElement
@@ -65,6 +72,16 @@
             document.addEventListener('scroll', () => {
                 if (this.isScrolled(page) || this.isScrolled(pageSafari)) header.classList.add('header_scrolled')
                 else header.classList.remove('header_scrolled')
+
+                const newScroll = page
+                    ? this.getScroll(page)
+                    : this.getScroll(pageSafari)
+
+                if (newScroll < this.curScroll) {
+                    header.classList.contains('header_scrolled') && header.classList.remove('header_scrolled')
+                }
+
+                this.curScroll = newScroll
             })
 
             setInterval(() => {
@@ -119,11 +136,11 @@
             background-image linear-gradient(to top, rgba(255, 255, 255, 0), backgroundReverse 100%)
 
         &.header_scrolled
-            .menu,.logo_row
+            .menu
                 transform translateY(-40px)
                 opacity 0
             &:hover
-                .menu,.logo_row
+                .menu
                     transform translateY(0px)
                     opacity 1
 
@@ -140,7 +157,7 @@
             position absolute
             top 0
             bottom -15px
-            right: 0
+            right 0
             left 0
             z-index 2
             content ''
@@ -177,6 +194,10 @@
 
         &.reverse
             color darkRed
+        .logo
+            svg
+                height 60px
+                width 200px
 
         .local
             right 30px
@@ -199,7 +220,7 @@
         display flex
         width 100%
         justify-content center
-        margin-top 20px
+        margin-top 45px
         padding 0 118px
         font-family $IntroRegularCaps
         font-size $FontSizeMenu

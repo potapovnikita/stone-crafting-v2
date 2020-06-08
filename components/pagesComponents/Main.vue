@@ -43,7 +43,7 @@
                     position absolute
                     overflow hidden
                     height 100vh
-                    top -90px
+                    top -150px
                     left 0
                     width 100vw
                     @media only screen and (max-width 767px)

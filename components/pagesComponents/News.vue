@@ -80,15 +80,17 @@
         },
         async created() {
             //https://www.instagram.com/oauth/authorize/?client_id=3a74836a83d8482f864d327f82079cb8&redirect_uri=https://stone-crafting.com/&response_type=token
-            const TOKEN = '198320409.bdaacdc.ad9cc9aa8fc84ea2bd9a51a134b35394' // токен для доступа к api
+            // токен для доступа к api, при смене пароля менять токен тут https://www.instagram.com/developer/clients/manage/
+            const TOKEN = '198320409.bdaacdc.bc3cc4df0a4242ea88889ce3d7efda9d'
             const USER_ID = 'self' // id пользователя
 
             jsonp(`https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}`, null, (err, res) => {
                 if (err) {
-                    console.error("Возникла ощибка", err.message);
+                    console.error("Возникла ошибка", err.message);
                 } else {
                     // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
-                    res.data.forEach(item => {
+                    console.log(res)
+                    res.data && res.data.forEach(item => {
                         if (item.tags.length && item.tags.find(tag => tag.toLowerCase() === 'камнерезныйдом')) this.news.push(item)
                     })
 
@@ -186,7 +188,7 @@
                         height 100%
                         transition transform 0.5s ease-in
                         &:hover
-                            transform scale(1.1)
+                            transform scale(1.015)
 
         @media only screen and (max-width 768px)
             .news-list

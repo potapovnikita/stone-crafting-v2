@@ -63,7 +63,7 @@
         padding 30px 60px
         align-items center
         &.reverse
-            color darkred
+            color darkRed
 
         .footer_menu
             display flex
@@ -91,7 +91,7 @@
             background-color silverMain
             margin-bottom 20px
             &.reverse
-                background-color darkred
+                background-color darkRed
 
         .footer_block
             width 100%

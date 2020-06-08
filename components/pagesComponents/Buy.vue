@@ -1,6 +1,17 @@
 <template lang="pug">
     .common-container.reverse
-        .shop_wrapper
+        .shop_wrapper(v-if="!isAuth")
+            .auth-container
+                h2.reverse {{ lang === 'ru' ? 'Введите пароль для доступа к предложениям' : 'Enter password for show offers' }}
+                input.password(:type="inputType"
+                        v-model="password"
+                        :placeholder="lang === 'ru' ? 'Пароль' : 'Password'"
+                        autocomplete="off"
+                        )
+                button(@click="checkPass()") Войти
+                .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
+
+        .shop_wrapper(v-if="isAuth")
             .shop_filter
                 .item(v-for="item in shop")
                     .section_name(:class="{active: activeMenu.id === item.id}"
@@ -29,12 +40,14 @@
                             .year(v-if="item.year" v-html="lang === 'ru' ? 'Год: ' + item.year : 'Year: ' + item.yearEng")
                             .price(v-if="item.price" v-html="lang === 'ru' ? 'Цена: ' + item.price + ' ₽' : 'Price: ' + item.price + ' ₽'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
-                        .button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
+                        //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
+                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item.id)")
 
 </template>
 
 <script>
     import { mapState } from 'vuex'
+    import Cookies from 'universal-cookie';
 
     import Shop from '~/assets/staticData/antonov.json'
 
@@ -45,9 +58,17 @@
                 activeMenu: [],
                 activeIndex: 0,
                 activeInnerIndex: 0,
+                isAuth: null,
+                inputType: 'password',
+                password: '',
+                curPass: '12345678',
+                errorPass: false,
             }
         },
         methods: {
+            download(id) {
+
+            },
             setActive(id, inner) {
                 if (inner) {
                     this.shop.forEach((item) => {
@@ -79,6 +100,16 @@
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
             },
+            checkPass() {
+                this.errorPass = false;
+                if (this.curPass === this.password) {
+                    new Cookies().set('token', 'auth')
+                    this.isAuth = true
+                } else {
+                    this.isAuth = false
+                    this.errorPass = true;
+                }
+            }
         },
         computed: {
             ...mapState('localization', [
@@ -116,6 +147,8 @@
             else {
                 this.setActive(this.shop[0].id)
             }
+
+            this.isAutn = new Cookies().get('token')
         },
     }
 </script>
@@ -127,6 +160,52 @@
         display flex
         flex-direction row
         width 100%
+
+        .auth-container
+            display flex
+            flex-direction column
+            align-items center
+            justify-content center
+            margin 0 auto
+
+            .password
+                max-width 280px
+                width 280px
+                padding 10px 20px 11px
+                cursor pointer
+                outline none
+                border 1px solid darkRed
+                color darkRed
+                margin-bottom 20px
+                font-size 16px
+
+                &::placeholder
+                    color darkRed
+
+            button
+                width 280px
+                max-width 280px
+                padding 10px 20px 11px
+                cursor pointer
+                outline none
+                border 1px solid darkRed
+                background-color darkRed
+                color white
+                transition background-color .3s ease, color .3s ease
+
+                &:hover
+                    background white
+                    color darkRed
+            .error
+                font-size 15px
+                color red
+            h2
+                margin-bottom 20px
+
+                &.reverse
+                    color darkRed
+
+
         .shop_filter
             width 30%
             padding 5px

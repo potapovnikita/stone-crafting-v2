@@ -12,13 +12,13 @@
         "nameEng": "House news </br> Shows",
         "link": "/news"
     },{
-        "name": "Купить уникальные вещи",
-        "nameEng": "Buy unique goods",
-        "link": "/buy"
+        "name": "Предложения для партнеров",
+        "nameEng": "Offers for partners",
+        "link": "/offers"
     },
     {
-        "name": "Услуги",
-        "nameEng": "Services",
-        "link": "/services"
+        "name": "Виртуальный музей",
+        "nameEng": "Virtual Museum",
+        "link": "/virtual-museum"
     }
 ]

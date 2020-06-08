@@ -35,7 +35,7 @@ export default {
                 { property: 'og:description', content: 'by Alexey Antonov' },
                 { property: 'og:type', content: 'website' },
                 { property: 'og:url', content: 'stone-crafting.ru' },
-                { property: 'og:image', content: 'https://forsagedanceschool.ru/favicon.ico' }
+                { property: 'og:image', content: 'https://stone-crafting.ru/favicon.ico' }
             ]
         }
     }
