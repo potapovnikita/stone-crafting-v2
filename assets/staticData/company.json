@@ -2,72 +2,118 @@
   "company": {
     "aboutRu": "Камнерезный Дом Алексея Антонова <br><br> &nbsp;&nbsp;&nbsp;&nbsp;Создан уральским мастером по художественной обработке камня, членом союза художников России – Алексеем Антоновым, чья творческая деятельность началась с 1987 года. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Основное направление — это создание уникальных произведений камнерезного и ювелирного искусства в лучших традициях К. Фаберже и А. Денисова-Уральского. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день это компания, предоставляющая все виды деятельности, связанные с камнем: от создания элитарных произведений искусства до интерьеров и сувенирной продукции. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Коллекционное собрание Дома», целью которого служит популяризация искусства, представляет интересы лучших мастеров Урала, профессионалов в области ювелирного и камнерезного дела.",
     "aboutEng": "Stone-crafting House by Alexey Antonov <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Founded by Alexeу Antonov - the Ural master, a member of the Union of Artists (Russia), whose creative activity began in 1987. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The main direction of the company is to make unique works of stone-cutting and jewelry art in the best traditions of K. Faberge and A. Denisov-Uralsky. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The «Stone-crafting House by Alexey Antonov» provides all kinds of services related to stone: from the creation of masterpieces to interiors and souvenirs. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Collection of the House», whose goal is to popularize art, represents the interests of the best masters of the Urals in the field of jewelry and stone cutting.",
-    "catalogs": {
-      "cat1": "../catalogs/catalog1.pdf",
-      "cat2": "../catalogs/catalog2.pdf",
-      "cat3": "../catalogs/catalog3.pdf"
-    },
-    "catImgs": [
-      "./img/about/cat1.png",
-      "./img/about/cat2.png",
-      "./img/about/cat3.png"
-    ],
-    "articles": {
-      "1": {
-        "link": "../articles/antonov.pdf",
-        "name": "Алексей Антонов. Русская история в камне.",
-        "nameEng": "Alexey Antonov. Russian history in stone."
-      },
-      "2": {
-        "link": "../articles/faberje.pdf",
-        "name": "От Карла Фаберже до Антонова",
-        "nameEng": "From Carl Faberge to Antonov"
-      },
-      "3": {
-        "link": "../articles/tamerlan.pdf",
-        "name": "Легенда Тамерлана",
-        "nameEng": "Legend of Tamerlane"
-      }
-    },
-    "smi": {
-      "links": {
-        "1": {
-          "name": "Алексей Антонов. Русская история в камне.",
-          "nameEng": "Alexey Antonov. Russian history in stone.",
-          "src": "http://favorit-info.com/fakty/35-lyudi-i-delo/112-aleksej-antonov-russkaya-istoriya-v-kamne"
+    "catalogs": [
+        {
+            "link": "/catalogs/catalog1.pdf",
+            "name": "Камнерезные фигуры",
+            "nameEng": "Stone-crafting figures",
+            "background": "img/catalogs/cat1.png"
+        },
+        {
+            "link": "/catalogs/catalog2.pdf",
+            "name": "Каменные цветы",
+            "nameEng": "Stone flowers",
+            "background": "img/catalogs/cat2.png"
+        },
+        {
+            "link": "/catalogs/catalog3.pdf",
+            "name": "Фантазийная огранка",
+            "nameEng": "Fancy cut",
+            "background": "img/catalogs/cat3.png"
         }
+    ],
+    "awards": [
+        {
+            "name": "Член Союза художников России.",
+            "nameEng": "Member of the Union of Artists of Russia.",
+            "img": "img/awards/1.png"
+        },
+        {
+            "name": "В 2004 награждён золотой медалью ВДНХ.",
+            "nameEng": "In 2004 Antonov was awarded the VDNH gold medal.",
+            "img": "img/awards/2.png"
+        },
+        {
+            "name": "В 2008 г. награждён орденом A. Денисов-Уральский, присвоено звание «Заслуженный деятель камнерезного искусства».",
+            "nameEng": "In 2008 Antonov was awarded the Order of A. Denisov-Uralsky, and was awarded the title “Honored artist of Stone-Cutting Art”.",
+            "img": "img/awards/3.png"
+        },
+        {
+            "name": "В 2010 г. награжден почетным знаком Мемориального фонда Карла Фаберже за вклад в развитие российского ювелирного искусства.",
+            "nameEng": "In 2010, he was awarded the honorary badge of the Carl Faberge Memorial Fund for his contribution to the development of Russian jewelry.",
+            "img": "img/awards/4.png"
+        },
+        {
+            "name": "В 2012 г. удостоен звания «Главный Мастер» за развитие искусства и продолжение традиций К. Фаберже.",
+            "nameEng": "In 2012, he was awarded the title “Chief Master” for the development of art and the continuation of the traditions of Faberge.",
+            "img": "img/awards/5.png"
+        },
+        {
+            "name": "В 2013 г. награжден Орденом Карла Фаберже за вклад в развитие камнерезного и ювелирного искусства, присвоено звание «Заслуженный Ювелир».",
+            "nameEng": "In 2013 he was awarded the Carl Faberge Order for his contribution to the development of stone-cutting and jewelry art, and was awarded the title “Honored Jeweler”.",
+            "img": "img/awards/6.png"
+        },
+        {
+            "name": "В 2018 г. награждён орденом высшей степени - Бриллиантовым орденом Карла Фаберже.",
+            "nameEng": "In 2018, he was awarded the Order of the highest degree - the Diamond Order of Carl Faberge.",
+            "img": "img/awards/7.png"
+        }
+    ],
+    "articles": [
+      {
+        "link": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87",
+        "name": "Алексей Антонов. Википедия.",
+        "nameEng": "Alexey Antonov. Wikipedia.",
+        "background": "img/articles/wiki.png"
       },
-      "videos": {
-        "1": {
+      {
+        "link": "/articles/antonov.pdf",
+        "name": "Алексей Антонов. Русская история в камне.",
+        "nameEng": "Alexey Antonov. Russian history in stone.",
+        "background": "img/articles/antonov.png"
+      },
+      {
+        "link": "/articles/faberje.pdf",
+        "name": "От Карла Фаберже до Антонова",
+        "nameEng": "From Carl Faberge to Antonov",
+        "background": "img/articles/faberge.png"
+      },
+      {
+        "link": "/articles/tamerlan.pdf",
+        "name": "Легенда Тамерлана",
+        "nameEng": "Legend of Tamerlane",
+        "background": "img/articles/legend.png"
+      }
+    ],
+    "smi": {
+      "videos": [
+        {
           "name": "О Камнерезном Доме Антонова",
           "nameEng": "About Stone-crafting house. TV channel OTV.",
-          "src": "../videos/otv.mp4",
-          "poster": "../videos/otv.png",
-          "channelImg": "../img/videos/otv.png"
+          "src": "video/smiVideos/otv.mp4",
+          "poster": "video/smiVideos/otv.png"
         },
-        "2": {
+        {
           "name": "Уральский мастер",
           "nameEng": "Ural master. Fourth TV channel.",
-          "src": "../videos/4canal.mp4",
-          "poster": "../videos/4canal.png",
-          "channelImg": "../img/videos/4tv.png"
+          "src": "video/smiVideos/4canal.mp4",
+          "poster": "video/smiVideos/4canal.png"
         },
-        "3": {
+        {
           "name": "«Орёл & Решка» в Камнерезном Доме",
           "nameEng": "Orel & Reshka in Stone-crafting house. Friday TV channel.",
-          "src": "../videos/friday.mp4",
-          "poster": "../videos/friday.png",
-          "channelImg": "../img/videos/Oir2018.png"
+          "src": "video/smiVideos/friday.mp4",
+          "poster": "video/smiVideos/friday.png"
         }
-      }
+      ]
     },
-    "videos": {
-      "1": {
+    "films": [
+      {
         "name": "Открытие экспозиции",
         "nameEng": "Exposition opening",
-        "src": "../videos/opening.mp4",
-        "poster": "../videos/opening.jpg"
+        "src": "video/smiVideos/opening.mp4",
+        "poster": "video/smiVideos/opening.jpg"
       }
-    }
+    ]
   }
 }

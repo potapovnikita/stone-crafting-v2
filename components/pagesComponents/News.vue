@@ -15,7 +15,7 @@
                             img.img(:src="post.images.standard_resolution.url", :alt="post.user.full_name")
                     .inner(v-if="post.type === 'video'")
                         .lines
-                        .over
+                        .over(v-if="post.videos.low_resolution")
                             video.video(preload="auto" controls :poster="post.images.standard_resolution.url" autoplay muted)
                                 source(:src="post.videos.low_resolution.url" type="video/mp4" :poster="post.images.standard_resolution.url" style="zIndex: '-1'")
 
@@ -89,11 +89,9 @@
                     console.error("Возникла ошибка", err.message);
                 } else {
                     // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
-                    console.log(res)
                     res.data && res.data.forEach(item => {
                         if (item.tags.length && item.tags.find(tag => tag.toLowerCase() === 'камнерезныйдом')) this.news.push(item)
                     })
-
                     console.log(this.news)
                 }
             });

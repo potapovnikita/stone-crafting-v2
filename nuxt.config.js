@@ -63,7 +63,7 @@ module.exports = {
                     exclude: /(node_modules)/
                 })
             }
-            config.module.rules.filter(r => r.test.toString().includes('svg')).forEach(r => { r.test = /\.(png|jpe?g|gif)$/ });
+            config.module.rules.filter(r => r.test.toString().includes('svg')).forEach(r => { r.test = /\.(png|jpe?g|gif|pdf)$/ });
 
             config.module.rules.push({
                 test: /\.svg$/,
