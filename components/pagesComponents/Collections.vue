@@ -287,6 +287,8 @@
         .collections-blocks.desktop
             position relative
             max-width 1200px
+            margin: 0 auto;
+
             @media only screen and (min-width 1500px)
                 left calc(50% - 600px)
 
