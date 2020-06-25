@@ -33,7 +33,7 @@
                         .title {{lang === 'ru' ? item.name : item.nameEng}}
                         .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
-        RandomGallery
+        //RandomGallery
 
 </template>
 
@@ -267,11 +267,13 @@
             // проверяем, есть и возможность тача на устройстве
             if ("ontouchstart" in document.documentElement) {
                 this.initContentTablet()
+                this.initContentTablet()
                 window.addEventListener('resize', () => {
                     this.initContentTablet()
                 }, false)
 
             } else {
+                this.initContent()
                 this.initContent()
                 window.addEventListener('resize', () => {
                     this.initContent()
