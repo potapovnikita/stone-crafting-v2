@@ -1,7 +1,7 @@
 <template lang="pug">
     .common-container
         h1 {{ lang === 'ru' ? 'О компании' : 'About company' }}
-        .description
+        .descriptionAbout
             img.photo(src="~/assets/img/aleksei_antonov.jpg" alt="Antonov")
             .text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
@@ -87,7 +87,7 @@
 </script>
 
 <style lang="stylus">
-    .description
+    .descriptionAbout
         justify-content center
         display flex
         flex-direction row

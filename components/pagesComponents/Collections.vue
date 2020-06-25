@@ -254,6 +254,26 @@
                     }
                 })
             },
+            init() {
+                // проверяем, есть и возможность тача на устройстве
+                if ("ontouchstart" in document.documentElement) {
+                    console.log(111111)
+                    this.initContentTablet()
+                    this.initContentTablet()
+                    window.addEventListener('resize', () => {
+                        this.initContentTablet()
+                    }, false)
+
+                } else {
+                    console.log(2222222)
+
+                    this.initContent()
+                    this.initContent()
+                    window.addEventListener('resize', () => {
+                        this.initContent()
+                    }, false)
+                }
+            },
         },
         components: {
             RandomGallery
@@ -264,21 +284,23 @@
             ]),
         },
         mounted() {
-            // проверяем, есть и возможность тача на устройстве
-            if ("ontouchstart" in document.documentElement) {
-                this.initContentTablet()
-                this.initContentTablet()
-                window.addEventListener('resize', () => {
-                    this.initContentTablet()
-                }, false)
+            const ro = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    const height = entry.contentBoxSize
+                        ? entry.contentBoxSize.height
+                        : entry.contentRect.height
 
-            } else {
-                this.initContent()
-                this.initContent()
-                window.addEventListener('resize', () => {
-                    this.initContent()
-                }, false)
-            }
+                    console.log('height', height)
+
+                    if (height === 3570) {
+                        ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
+                        this.init();
+                    }
+                }
+            })
+
+            const container = document.querySelector('.collections-blocks.desktop')
+            ro.observe(container)
         },
     }
 </script>
@@ -351,7 +373,7 @@
                         z-index 3
 
                         .description
-                            background #660F28
+                            background #54081e
                             height 100%
                             position absolute
                             top 0
@@ -389,7 +411,7 @@
                                 transform translate3d(-100%, 0, 0)
                                 &.hovered
                                     z-index 10
-                                    opacity 1
+                                    opacity 0.9
                                     transform translate3d(-200%, 0, 0)
                                     &.touch
                                         background-color: rgba(102,15,40, 0.6);
@@ -402,7 +424,7 @@
                                 transform translate3d(100%, 0, 0)
                                 &.hovered
                                     z-index 10
-                                    opacity 1
+                                    opacity 0.9
                                     transform translate3d(200%, 0, 0)
                                     &.touch
                                         background-color: rgba(102,15,40, 0.6);
