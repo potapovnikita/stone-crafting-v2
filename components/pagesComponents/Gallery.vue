@@ -134,8 +134,8 @@
                     display block
                     position absolute
                     left 50%
-                    top 50%
-                    transform translate(-50%, -50%)
+                    top 0
+                    transform translate(-50%, 0)
                     z-index 1
 
                 h1
