@@ -41,14 +41,14 @@
                             .price(v-if="item.price" v-html="lang === 'ru' ? 'Цена: ' + item.price + ' ₽' : 'Price: ' + item.price + ' ₽'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
-                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item.id)")
+                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item)")
 
 </template>
 
 <script>
     import { mapState } from 'vuex'
+    import downloadImagesAsZip from 'files-download-zip'
     import Cookies from 'universal-cookie';
-
     import Shop from '~/assets/staticData/antonov.json'
 
     export default {
@@ -58,7 +58,7 @@
                 activeMenu: [],
                 activeIndex: 0,
                 activeInnerIndex: 0,
-                isAuth: null,
+                isAuth: true,
                 inputType: 'password',
                 password: '',
                 curPass: '12345678',
@@ -66,8 +66,14 @@
             }
         },
         methods: {
-            download(id) {
-
+            download(item) {
+                const imgDataArray = [];
+                item.imagesFull.forEach(i => {
+                    imgDataArray.push(this.getImg(i))
+                })
+                const zipFileName = `${this.lang === 'ru' ? 'stone-crafting images' : 'stone-crafting images'}`;
+                window.alert = () => {} // блокируем алерты - костыль для библиотеки
+                downloadImagesAsZip.execute(imgDataArray, zipFileName, () => { });
             },
             setActive(id, inner) {
                 if (inner) {
