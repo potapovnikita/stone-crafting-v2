@@ -4,19 +4,19 @@
     "aboutEng": "Stone-crafting House by Alexey Antonov <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Founded by Alexeу Antonov - the Ural master, a member of the Union of Artists (Russia), whose creative activity began in 1987. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The main direction of the company is to make unique works of stone-cutting and jewelry art in the best traditions of K. Faberge and A. Denisov-Uralsky. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The «Stone-crafting House by Alexey Antonov» provides all kinds of services related to stone: from the creation of masterpieces to interiors and souvenirs. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Collection of the House», whose goal is to popularize art, represents the interests of the best masters of the Urals in the field of jewelry and stone cutting.",
     "catalogs": [
         {
-            "link": "/catalogs/catalog1.pdf",
+            "link": "/articles/antonov.pdf",
             "name": "Камнерезные фигуры",
             "nameEng": "Stone-crafting figures",
             "background": "img/catalogs/cat1.png"
         },
         {
-            "link": "/catalogs/catalog1.pdf",
+            "link": "/articles/antonov.pdf",
             "name": "Каменные цветы",
             "nameEng": "Stone flowers",
             "background": "img/catalogs/cat2.png"
         },
         {
-            "link": "/catalogs/catalog1.pdf",
+            "link": "/articles/antonov.pdf",
             "name": "Фантазийная огранка",
             "nameEng": "Fancy cut",
             "background": "img/catalogs/cat3.png"
