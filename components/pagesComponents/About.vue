@@ -97,9 +97,12 @@
         @media only screen and (max-width 500px)
             flex-direction column
 
+        .photo
+            max-width 300px
+
         .text
             text-align left
-            padding 20px 30px
+            padding 0 30px 20px
             max-width 700px
 
     .caption_section
