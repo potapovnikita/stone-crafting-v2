@@ -142,6 +142,7 @@
                     position absolute
                     bottom 0
                     z-index 2
+
         .description-wrapper
             padding 30px 60px
             display flex

@@ -109,10 +109,14 @@
     },
     "films": [
       {
-        "name": "Открытие экспозиции",
-        "nameEng": "Exposition opening",
-        "src": "video/smiVideos/opening.mp4",
-        "poster": "video/smiVideos/opening.jpg"
+        "name": "Интервью основателя Камнерезного Дома",
+        "nameEng": "Interview with the founder of the Stone-crafting House",
+        "src": "iframe(width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aynIfVRD85U\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen)"
+      },
+      {
+        "name": "Процесс создания камнерезных работ",
+        "nameEng": "The process of creating stone-crafting works",
+        "src": "iframe(width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/lmYMq8y7Z5k\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen)"
       }
     ]
   }

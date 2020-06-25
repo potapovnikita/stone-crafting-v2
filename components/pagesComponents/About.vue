@@ -36,7 +36,16 @@
 
 
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
-            .smi Тут будут фильмы
+            .films
+
+                .videoFilm
+                    .video
+                        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/aynIfVRD85U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+                .videoFilm
+                    .video
+                        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/lmYMq8y7Z5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
@@ -64,6 +73,7 @@
                 awards: Company.company.awards,
                 catalogs: Company.company.catalogs,
                 smi: Company.company.smi.videos,
+                films: Company.company.films,
             }
         },
         components: {
@@ -149,8 +159,11 @@
                     @media only screen and (max-width 500px)
                         margin-bottom 10px
 
+        .films
         .smi
             margin-bottom 40px
+
+            .videoFilm
             .videoSmi
                 .name
                     font-family $IntroRegularCaps
@@ -163,6 +176,7 @@
                     margin-bottom 30px
 
                     video
+                    iframe
                         background black
 
         .articles
