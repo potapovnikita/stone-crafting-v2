@@ -23,13 +23,14 @@
                     .text {{ lang === 'ru' ? article.name : article.nameEng }}
 
             h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
-            .smi
-                .videoSmi(v-for="item in smi")
-                    .name {{ lang === 'ru' ? item.name : item.nameEng }}
-                    .video
-                        video(controls="controls" width="100%" height="100%" :poster="getImg(item.poster)")
-                            source(:src="getImg(item.src)")
-                            | Тег video не поддерживается вашим браузером.
+            .smi Тут будут видео СМИ
+<!--            .smi-->
+<!--                .videoSmi(v-for="item in smi")-->
+<!--                    .name {{ lang === 'ru' ? item.name : item.nameEng }}-->
+<!--                    .video-->
+<!--                        video(controls="controls" width="100%" height="100%" :poster="getImg(item.poster)")-->
+<!--                            source(:src="getImg(item.src)")-->
+<!--                            | Тег video не поддерживается вашим браузером.-->
 
 
 
