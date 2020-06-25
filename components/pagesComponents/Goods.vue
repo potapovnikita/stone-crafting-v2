@@ -30,7 +30,7 @@
                     .button(@click="scrollToForm()") {{lang === 'ru' ? 'Купить' : 'Buy' }}
         .photo_gallery
         Feedback(:type="currentProduct.name")
-        RandomGallery
+        //RandomGallery
 
 </template>
 
