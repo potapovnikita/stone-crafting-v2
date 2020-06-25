@@ -10,13 +10,13 @@
             "background": "img/catalogs/cat1.png"
         },
         {
-            "link": "/catalogs/catalog2.pdf",
+            "link": "/catalogs/catalog1.pdf",
             "name": "Каменные цветы",
             "nameEng": "Stone flowers",
             "background": "img/catalogs/cat2.png"
         },
         {
-            "link": "/catalogs/catalog3.pdf",
+            "link": "/catalogs/catalog1.pdf",
             "name": "Фантазийная огранка",
             "nameEng": "Fancy cut",
             "background": "img/catalogs/cat3.png"
