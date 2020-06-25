@@ -58,7 +58,7 @@
                 activeMenu: [],
                 activeIndex: 0,
                 activeInnerIndex: 0,
-                isAuth: true,
+                isAuth: null,
                 inputType: 'password',
                 password: '',
                 curPass: '12345678',
