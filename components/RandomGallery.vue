@@ -31,6 +31,7 @@
 <script>
     import Antonov from '~/assets/staticData/antonov.json'
     import { mapState } from 'vuex'
+    import { getImgExternal } from '~/plugins/getUrl'
 
 
 
@@ -47,8 +48,7 @@
         },
         methods: {
             getBgImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `url(${imageUrl})` : ''
+                return `url(${getImgExternal(url)})`
             },
             slideRight() {
                 this.transform = this.transform < this.goodsSort.length

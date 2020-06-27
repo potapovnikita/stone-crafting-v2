@@ -40,7 +40,7 @@
 <script>
     import { mapState } from 'vuex'
     import RandomGallery from '~/components/RandomGallery.vue'
-
+    import { getImgExternal } from '~/plugins/getUrl'
     import Museum from '~/assets/staticData/museum.json'
 
     export default {
@@ -51,8 +51,7 @@
         },
         methods: {
             getImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `${imageUrl}` : ''
+                return getImgExternal(url)
             },
             swipe(direction, event) {
                 const descBlock = event.target.parentElement.parentElement.lastChild.classList.contains('description')
@@ -257,7 +256,6 @@
             init() {
                 // проверяем, есть и возможность тача на устройстве
                 if ("ontouchstart" in document.documentElement) {
-                    console.log(111111)
                     this.initContentTablet()
                     this.initContentTablet()
                     window.addEventListener('resize', () => {
@@ -265,8 +263,6 @@
                     }, false)
 
                 } else {
-                    console.log(2222222)
-
                     this.initContent()
                     this.initContent()
                     window.addEventListener('resize', () => {
@@ -289,8 +285,6 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
-
-                    console.log('height', height)
 
                     if (height === 3570) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px

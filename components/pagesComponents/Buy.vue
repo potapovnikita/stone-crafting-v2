@@ -50,6 +50,7 @@
     import downloadImagesAsZip from 'files-download-zip'
     import Cookies from 'universal-cookie';
     import Shop from '~/assets/staticData/antonov.json'
+    import { getImgExternal } from '~/plugins/getUrl'
 
     export default {
         data() {
@@ -99,12 +100,10 @@
                 this.$set(this.activeMenu.items, index, item)
             },
             getBgImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `url(${imageUrl})` : ''
+                return `url(${getImgExternal(url)})`
             },
             getImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `${imageUrl}` : ''
+                return getImgExternal(url)
             },
             checkPass() {
                 this.errorPass = false;

@@ -42,6 +42,7 @@
     import Feedback from '~/components/Feedback.vue'
     import RandomGallery from '~/components/RandomGallery.vue'
 
+    import { getImgExternal } from '~/plugins/getUrl'
 
     import Shop from '~/assets/staticData/antonov.json'
 
@@ -85,12 +86,10 @@
         },
         methods: {
             getImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `${imageUrl}` : ''
+                return getImgExternal(url);
             },
             getBgImg(url) {
-                const imageUrl = require('~/assets/' + `${url}`)
-                return url ? `url(${imageUrl})` : ''
+                return `url(${getImgExternal(url)})`
             },
             getActivePhoto(index) {
                 this.activeIndex = index
