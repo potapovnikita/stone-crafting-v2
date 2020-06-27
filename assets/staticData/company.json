@@ -2,26 +2,6 @@
   "company": {
     "aboutRu": "Камнерезный Дом Алексея Антонова <br><br> &nbsp;&nbsp;&nbsp;&nbsp;Создан уральским мастером по художественной обработке камня, членом союза художников России – Алексеем Антоновым, чья творческая деятельность началась с 1987 года. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Основное направление — это создание уникальных произведений камнерезного и ювелирного искусства в лучших традициях К. Фаберже и А. Денисова-Уральского. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день это компания, предоставляющая все виды деятельности, связанные с камнем: от создания элитарных произведений искусства до интерьеров и сувенирной продукции. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Коллекционное собрание Дома», целью которого служит популяризация искусства, представляет интересы лучших мастеров Урала, профессионалов в области ювелирного и камнерезного дела.",
     "aboutEng": "Stone-crafting House by Alexey Antonov <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Founded by Alexeу Antonov - the Ural master, a member of the Union of Artists (Russia), whose creative activity began in 1987. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The main direction of the company is to make unique works of stone-cutting and jewelry art in the best traditions of K. Faberge and A. Denisov-Uralsky. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The «Stone-crafting House by Alexey Antonov» provides all kinds of services related to stone: from the creation of masterpieces to interiors and souvenirs. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Collection of the House», whose goal is to popularize art, represents the interests of the best masters of the Urals in the field of jewelry and stone cutting.",
-    "catalogs": [
-        {
-            "link": "/articles/antonov.pdf",
-            "name": "Камнерезные фигуры",
-            "nameEng": "Stone-crafting figures",
-            "background": "img/catalogs/cat1.png"
-        },
-        {
-            "link": "/articles/antonov.pdf",
-            "name": "Каменные цветы",
-            "nameEng": "Stone flowers",
-            "background": "img/catalogs/cat2.png"
-        },
-        {
-            "link": "/articles/antonov.pdf",
-            "name": "Фантазийная огранка",
-            "nameEng": "Fancy cut",
-            "background": "img/catalogs/cat3.png"
-        }
-    ],
     "awards": [
         {
             "name": "Член Союза художников России.",
@@ -59,6 +39,26 @@
             "img": "img/awards/7.png"
         }
     ],
+    "catalogs": [
+      {
+          "link": "/catalogs/catalog1.pdf",
+          "name": "Камнерезные фигуры",
+          "nameEng": "Stone-crafting figures",
+          "background": "img/catalogs/cat1.png"
+      },
+      {
+          "link": "/catalogs/catalog2.pdf",
+          "name": "Каменные цветы",
+          "nameEng": "Stone flowers",
+          "background": "img/catalogs/cat2.png"
+      },
+      {
+          "link": "/catalogs/catalog3.pdf",
+          "name": "Фантазийная огранка",
+          "nameEng": "Fancy cut",
+          "background": "img/catalogs/cat3.png"
+      }
+    ],
     "articles": [
       {
         "link": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87",
@@ -91,13 +91,13 @@
           "name": "О Камнерезном Доме Антонова",
           "nameEng": "About Stone-crafting house. TV channel OTV.",
           "src": "video/smiVideos/otv.mp4",
-          "poster": "video/smiVideos/friday.png"
+          "poster": "video/smiVideos/otv.png"
         },
         {
           "name": "Уральский мастер",
           "nameEng": "Ural master. Fourth TV channel.",
           "src": "video/smiVideos/4canal.mp4",
-          "poster": "video/smiVideos/friday.png"
+          "poster": "video/smiVideos/4canal.png"
         },
         {
           "name": "«Орёл & Решка» в Камнерезном Доме",

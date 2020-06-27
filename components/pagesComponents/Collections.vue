@@ -2,7 +2,8 @@
     .common-container.collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
         // for desktop version
-        .collections-blocks.desktop
+        .lds-dual-ring(v-if="!isInit")
+        .collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
             .item.itemBlock(v-for="(item, index) in museum" :key="item.id")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
                     .media
@@ -17,7 +18,7 @@
                             .button(@click="this.$router.push({path:`/gallery/${item.id}`})") Подробнее
 
         // for mobile version
-        .collections-blocks.mobile
+        .collections-blocks.mobile(:style="{opacity: isInit ? 1 : 0  }")
             .item-column
                 nuxt-link.item(v-for="(item, index) in museum"
                         v-touch:swipe.left="swipe"
@@ -47,6 +48,7 @@
         data() {
             return {
                 museum: Museum,
+                isInit: false,
             }
         },
         methods: {
@@ -269,6 +271,7 @@
                         this.initContent()
                     }, false)
                 }
+                this.isInit = true;
             },
         },
         components: {
@@ -285,7 +288,6 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
-
                     if (height === 3570) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
@@ -302,6 +304,9 @@
 
 <style lang="stylus">
     .collections-container
+        .lds-dual-ring
+            margin 0 auto
+
         .collections-blocks.desktop
             position relative
             max-width 1200px
