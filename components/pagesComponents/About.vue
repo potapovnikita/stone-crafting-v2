@@ -12,50 +12,41 @@
                     .imgAward(:style="{backgroundImage: getBgImg(award.img)}")
                     .textAward {{ lang === 'ru' ? award.name : award.nameEng }}
 
-            h2.ristretto {{ lang === 'ru' ? 'Статьи' : 'Articles' }}
-            .articles
-                a.article(v-for="article in articles"
-                    :href="article.link"
-                    target="_blank"
-                    :style="{backgroundImage: getBgImg(article.background)}"
-                )
-                    .mask
-                    .text {{ lang === 'ru' ? article.name : article.nameEng }}
+            div(v-if="lang === 'ru'")
+                h2.ristretto {{ lang === 'ru' ? 'Статьи' : 'Articles' }}
+                .articles
+                    .article(v-for="article in articles")
+                        .item(:style="{backgroundImage: getBgImg(article.background)}")
+                            .mask
+                        .text
+                            | {{ lang === 'ru' ? article.name : article.nameEng }}
+                            br
+                            a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
+
 
             h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
-            .smi Тут будут видео СМИ
-            //.smi
-                .videoSmi(v-for="item in smi")
-                    .name {{ lang === 'ru' ? item.name : item.nameEng }}
+            .smi(v-for="item in smi")
+                .videoSmi
                     .video
-                        video(controls="controls" width="100%" height="100%" :poster="getImg(item.poster)")
-                            source(:src="getImg(item.src)")
-                            | Тег video не поддерживается вашим браузером.
+                        iframe(width="100%" height="100%" :src="item.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+            .hint(v-if="lang === 'ru'") Turn on the subtitles on the video to see the English version
 
 
 
 
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
-            .films
-
+            .films(v-for="film in films")
                 .videoFilm
                     .video
-                        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/aynIfVRD85U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-
-                .videoFilm
-                    .video
-                        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/lmYMq8y7Z5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-
+                        iframe(width="100%" height="100%" :src="film.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .hint(v-if="lang === 'ru'") Turn on the subtitles on the video to see the English version
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
-                a.catalog(v-for="catalog in catalogs"
-                    :href="catalog.link"
-                    target="_blank"
-                    :style="{backgroundImage: getBgImg(catalog.background)}"
-                )
-                    .maskCat
-                    .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
+                a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
+                    .item(:style="{backgroundImage: getBgImg(catalog.background)}")
+                    .text.textCat {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
 
 
@@ -158,10 +149,11 @@
 
                     @media only screen and (max-width 500px)
                         margin-bottom 10px
-
+        .hint
+            margin-bottom 40px
         .films
         .smi
-            margin-bottom 40px
+            margin-bottom 20px
 
             .videoFilm
             .videoSmi
@@ -183,8 +175,11 @@
         .catalogs
             display flex
             flex-direction row
+            flex-wrap wrap
             justify-content center
             margin-bottom 40px
+            flex-basis 100px
+            max-width 900px
 
             @media only screen and (max-width 600px)
                 flex-direction column
@@ -192,31 +187,46 @@
             .catalog
             .article
                 display flex
-                align-items center
-                justify-content center
-                margin 10px 10px
+                flex-direction column
                 width 200px
-                height 200px
-                padding 20px
-                background-color darkRed
-                cursor pointer
-                transition transform .3s linear
-                background-position center
-                background-repeat no-repeat
-                background-size cover
-                position relative
+                margin 10px 10px
+
+                .item
+                    display flex
+                    align-items center
+                    justify-content center
+                    width 200px
+                    height 200px
+                    background-color darkRed
+                    transition transform .3s linear
+                    background-position center
+                    background-repeat no-repeat
+                    background-size cover
+                    position relative
+                    margin-bottom 15px
 
 
                 .text
-                    height 100%
                     display flex
-                    align-items center
-                    font-family $IntroRegularCaps
+                    width 100%
+                    align-items flex-start
+                    text-align left
+                    flex-direction column
+                    bottom -60px
                     font-size $FontSizeMenu
-                    text-transform uppercase
                     color whiteMain
                     font-weight bold
                     z-index 1
+
+                    a
+                        margin-top 10px
+                        text-decoration underline
+                        &:hover
+                            text-decoration none
+                .textCat
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                 .maskCat
                 .mask
@@ -226,17 +236,10 @@
                     right 0
                     position absolute
                     background-color black
-                    opacity 0.85
-
-                    &:hover
-                        transform scale(1.03)
+                    opacity 0.6
 
                 .maskCat
                     opacity 0.4
-
-
-                &:hover
-                    transform scale(1.03)
 
 
 </style>

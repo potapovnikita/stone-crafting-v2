@@ -61,6 +61,12 @@
     ],
     "articles": [
       {
+        "link": "http://cyclowiki.org/wiki/%D0%9A%D0%B0%D0%BC%D0%BD%D0%B5%D1%80%D0%B5%D0%B7%D0%BD%D1%8B%D0%B9_%D0%94%D0%BE%D0%BC_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D1%8F_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0",
+        "name": "Камнерезный Дом Алексея Антонова. Википедия.",
+        "nameEng": "Stone-Crafting house by Alexey Antonov. Wikipedia.",
+        "background": "img/articles/wiki.png"
+      },
+      {
         "link": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87",
         "name": "Алексей Антонов. Википедия.",
         "nameEng": "Alexey Antonov. Wikipedia.",
@@ -83,41 +89,88 @@
         "name": "Легенда Тамерлана",
         "nameEng": "Legend of Tamerlane",
         "background": "img/articles/legend.png"
-      }
+      },
+      {
+        "link": "https://ekaterinburg.bezformata.com/listnews/ekspo-2025-vstupyat-sverdlovskie/62639715/",
+        "name": "В борьбу за ЭКСПО-2025 вступят свердловские камнерезы и ювелиры",
+        "background": "img/articles/expo.png"
+      },
+      {
+        "link": "/articles/sobaka.jpg",
+        "name": "Золотой Джокер. Журнал Собака.ru",
+        "background": "img/articles/sobaka.png"
+      },
+      {
+        "link": "https://www.e1.ru/news/spool/news_id-66362410.html",
+        "name": "На Урале создали тореадора из камней, которых уже нет в природе.",
+        "background": "img/articles/e1.png"
+      },
+        {
+            "link": "/articles/statya_antonov.pdf",
+            "name": "Алексей Антонов – уральский художник-камнерез, продолжатель дела Фаберже и Денисова – Уральского.",
+            "nameEng": "Alexey Antonov is an Ural stone-cutting artist, the successor of Faberge and Denisov-Uralsky.",
+            "background": "img/articles/statya_antonov.png"
+        },
+        {
+            "link": "/articles/tatiana_faberje.pdf",
+            "name": "Татьяна Фаберже о коллекции фигурок 1812 года Алексея Антонова",
+            "nameEng": "Tatyana Faberge on the collection of figures of 1812 by Alexey Antonov.",
+            "background": "img/articles/tatiana_faberje.png"
+        },
+        {
+            "link": "https://ru.rbth.com/watch/429-urals-stone-cutters",
+            "name": "$1 млн за фигуру: как работают современные камнерезы (ФОТО)",
+            "nameEng": "$ 1 million per figure: how modern stone cutters work (PHOTO)",
+            "background": "img/articles/1mln.png"
+        }
     ],
     "smi": {
       "videos": [
         {
-          "name": "О Камнерезном Доме Антонова",
-          "nameEng": "About Stone-crafting house. TV channel OTV.",
-          "src": "video/smiVideos/otv.mp4",
-          "poster": "video/smiVideos/otv.png"
+          "name": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер\n",
+          "src": "https://www.youtube.com/embed/aynIfVRD85U"
         },
         {
-          "name": "Уральский мастер",
-          "nameEng": "Ural master. Fourth TV channel.",
-          "src": "video/smiVideos/4canal.mp4",
-          "poster": "video/smiVideos/4canal.png"
+          "name": "RU: Интервью для InteraTV в Екатеринбурге / Interview InteraTV\n",
+          "src": "https://www.youtube.com/embed/dJGDzkVOXoc"
         },
-        {
-          "name": "«Орёл & Решка» в Камнерезном Доме",
-          "nameEng": "Orel & Reshka in Stone-crafting house. Friday TV channel.",
-          "src": "video/smiVideos/friday.mp4",
-          "poster": "video/smiVideos/friday.png"
-        }
+          {
+              "name": "RU|EN sub: Work creation process / Процесс создания работ\n",
+              "src": "https://www.youtube.com/embed/Ou2HLSY7Ie4"
+          },
+          {
+              "name": "RU: Выставка в Екатеринбурге / Exhibition\n",
+              "src": "https://www.youtube.com/embed/InTha0wl0Q4"
+          },
+          {
+              "name": "RU|EN sub: FAQ about us / Часто задаваемые вопросы о нас. Chamovskikh Channel.\n",
+              "src": "https://www.youtube.com/embed/O3ePOK4dQzE"
+          },
+          {
+              "name": "Мастерская Алексея Антонова (Мастера Екатеринбурга)\n",
+              "src": "https://www.youtube.com/embed/f7Wr6vCnxbg"
+          }
       ]
     },
     "films": [
-      {
-        "name": "Интервью основателя Камнерезного Дома",
-        "nameEng": "Interview with the founder of the Stone-crafting House",
-        "src": "iframe(width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aynIfVRD85U\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen)"
-      },
-      {
-        "name": "Процесс создания камнерезных работ",
-        "nameEng": "The process of creating stone-crafting works",
-        "src": "iframe(width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/lmYMq8y7Z5k\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen)"
-      }
+        {
+            "src": "https://www.youtube.com/embed/X0XGvWUbjHk"
+        },
+        {
+            "src": "https://www.youtube.com/embed/OvlRygZPz9Q"
+        },
+        {
+            "src": "https://www.youtube.com/embed/BtApR4FS66o"
+        },
+        {
+            "src": "https://www.youtube.com/embed/d_Tt5ys9giE"
+        },
+        {
+            "src": "https://www.youtube.com/embed/lmYMq8y7Z5k"
+        },
+        {
+            "src": "https://www.youtube.com/embed/1AgqqINlNME"
+        }
     ]
   }
 }
