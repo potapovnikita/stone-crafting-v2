@@ -459,8 +459,6 @@
 
     @media only screen and (max-width 767px)
         .collections-container
-            padding 20px 20px
-
             .collections-blocks.desktop
                 display none
             .collections-blocks.mobile

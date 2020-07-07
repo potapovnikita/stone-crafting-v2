@@ -3,7 +3,9 @@
         h1 {{ lang === 'ru' ? 'О компании' : 'About company' }}
         .descriptionAbout
             img.photo(src="~/assets/img/aleksei_antonov.png" alt="Antonov")
-            .text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
+            .text
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
+                .ception(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
         .caption_section
             h2.ristretto {{ lang === 'ru' ? 'Награды и звания' : 'Awards and titles' }}
@@ -84,6 +86,69 @@
                 'lang',
             ]),
         },
+        mounted() {
+            const descriptionAbout = document.querySelector('.descriptionAbout');
+            const awards = document.querySelectorAll('.award');
+            const articles = document.querySelectorAll('.article');
+            const catalogs = document.querySelectorAll('.catalog');
+
+            // для текста описания
+            const showDesc = new IntersectionObserver((entries) => {
+                if (entries[0].intersectionRatio > 0) {
+                    entries[0].target && entries[0].target.childNodes.forEach(node => {
+                        node.style.transform = 'translateY(0)';
+                        node.style.opacity = 1;
+                        showDesc.unobserve(entries[0].target);
+                    })
+                }
+            });
+
+            // для наград
+            const showAward = new IntersectionObserver((entries) => {
+                if (entries[0].intersectionRatio > 0) {
+                    entries.forEach(i => {
+                        i.target.style.transform = 'translateY(0)';
+                        i.target.style.opacity = 1;
+                        showAward.unobserve(i.target);
+                    })
+                }
+            });
+
+            // для статей
+            const showArticle = new IntersectionObserver((entries) => {
+                if (entries[0].intersectionRatio > 0) {
+                    entries.forEach(i => {
+                        i.target.style.transform = 'translateY(0)';
+                        i.target.style.opacity = 1;
+                        showArticle.unobserve(i.target);
+                    })
+                }
+            });
+
+            // для каталогов
+            const showCatalog = new IntersectionObserver((entries) => {
+                if (entries[0].intersectionRatio > 0) {
+                    entries.forEach(i => {
+                        i.target.style.transform = 'translateY(0)';
+                        i.target.style.opacity = 1;
+                        showCatalog.unobserve(i.target);
+                    })
+                }
+            });
+
+
+            showDesc.observe(descriptionAbout);
+            awards.forEach(award => {
+                showAward.observe(award);
+            })
+            articles.forEach(article => {
+                showArticle.observe(article);
+            })
+            catalogs.forEach(catalog => {
+                showCatalog.observe(catalog);
+            })
+
+        }
     }
 </script>
 
@@ -95,9 +160,21 @@
         align-items: flex-start
         margin-bottom 30px
 
-        @media only screen and (max-width 500px)
+        @media only screen and (max-width 660px)
             flex-direction column
+            align-items: center
 
+            .photo
+                margin-bottom 20px
+            .text
+                .title
+                    text-align center
+
+        .photo
+        .text
+            transition all 0.5s ease-in
+            opacity 0
+            transform translateY(300px)
         .photo
             width 300px
             max-width 300px
@@ -107,6 +184,13 @@
             text-align left
             padding 0 30px 20px
             max-width 700px
+            font-family $IntroRegular
+            font-size $FontSize16
+            .title
+                margin-bottom 15px
+                font-family $IntroRegularCaps
+                font-size $FontSize3
+
 
     .caption_section
         .awards
@@ -117,6 +201,9 @@
             justify-content center
 
             .award
+                transition all 0.5s ease-in
+                opacity 0
+                transform translateY(200px)
                 background-color white
                 display flex
                 padding 20px 10px
@@ -160,7 +247,7 @@
             .videoFilm
             .videoSmi
                 .name
-                    font-family $IntroRegularCaps
+                    font-family $IntroRegular
                     font-size $FontSize3
                     margin-bottom 15px
 
@@ -188,6 +275,9 @@
 
             .catalog
             .article
+                transition all 0.5s ease-in
+                opacity 0
+                transform translateY(150px)
                 display flex
                 flex-direction column
                 width 200px
@@ -215,6 +305,7 @@
                     text-align left
                     flex-direction column
                     bottom -60px
+                    font-family $IntroRegular
                     font-size $FontSizeMenu
                     color whiteMain
                     font-weight bold
