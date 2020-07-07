@@ -7,22 +7,22 @@
                 .description
                     .line_top
                     .line_bottom
-                    .text(v-if="post.caption && post.caption.text") {{getDescription(post.caption.text, lang)}}
+                    .text(v-if="post.caption") {{getDescription(post.caption, lang)}}
                 .photo
-                    .inner(v-if="post.type === 'image'")
+                    .inner(v-if="post.media_type === 'IMAGE'")
                         .lines
                         .over
-                            img.img(:src="post.images.standard_resolution.url", :alt="post.user.full_name")
-                    .inner(v-if="post.type === 'video'")
+                            img.img(:src="post.media_url", :alt="post.caption")
+                    .inner(v-if="post.media_type === 'VIDEO'")
                         .lines
-                        .over(v-if="post.videos.low_resolution")
-                            video.video(preload="auto" controls :poster="post.images.standard_resolution.url" autoplay muted)
-                                source(:src="post.videos.low_resolution.url" type="video/mp4" :poster="post.images.standard_resolution.url" style="zIndex: '-1'")
+                        .over(v-if="post.media_url")
+                            video.video(preload="auto" controls :poster="post.media_url" autoplay muted)
+                                source(:src="post.media_url" type="video/mp4" :poster="post.media_url" style="zIndex: '-1'")
 
-                    .inner(v-if="post.type === 'carousel'")
+                    .inner(v-if="post.media_type === 'CAROUSEL_ALBUM'")
                         .lines
                         .over
-                            img.carousel.img(:src="post.images.standard_resolution.url", :alt="post.user.full_name")
+                            img.carousel.img(:src="post.media_url", :alt="post.media_type")
 
 </template>
 
@@ -78,27 +78,45 @@
                 'lang',
             ]),
         },
-        async created() {
+        async mounted() {
             //https://www.instagram.com/oauth/authorize/?client_id=3a74836a83d8482f864d327f82079cb8&redirect_uri=https://stone-crafting.com/&response_type=token
             // токен для доступа к api, при смене пароля менять токен тут https://www.instagram.com/developer/clients/manage/
-            const TOKEN = '198320409.bdaacdc.bc3cc4df0a4242ea88889ce3d7efda9d'
-            const USER_ID = 'self' // id пользователя
 
-            jsonp(`https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}`, null, (err, res) => {
+
+            // запрос
+            /*
+            * curl -X POST https://api.instagram.com/oauth/access_token -F client_id=983242938773357 -F client_secret=ac3d40b0da4fc62cd5244ed75e068166 -F grant_type=authorization_code -F redirect_uri=https://stone-crafting.com/ -F code=AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
+            * */
+            // code AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
+            // {"access_token": "IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz", "user_id": 17841401452273098}%
+            // {"id":"17841401452273098","username":"stone.crafting.house"}%
+
+            /*
+            запрос для получения длинного аксесс токена (2 мес):
+            curl -X GET 'https://graph.instagram.com/access_token?grant_type=ig_exchange_token&&client_secret=ac3d40b0da4fc62cd5244ed75e068166&access_token=IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz'
+            ответ:
+            {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
+            */
+            const TOKEN = 'IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3'
+            const USER_ID = '17841401452273098' // id пользователя
+
+            // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
+            // old https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}
+
+            jsonp(`https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`, null, (err, res) => {
                 if (err) {
                     console.error("Возникла ошибка", err.message);
                 } else {
                     // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
                     res.data && res.data.forEach(item => {
-                        if (item.tags.length && item.tags.find(tag => tag.toLowerCase() === 'камнерезныйдом')) this.news.push(item)
+                        if (item.caption && item.caption.toLowerCase().match(/#камнерезныйдом/gi)) this.news.push(item)
                     })
-                    console.log(this.news)
                 }
             });
         },
         watch: {},
         updated() {
-            if (this.news.length > 0) {
+            if (this.news.length > 0 && window.document) {
                 const elems = [...document.querySelectorAll('.description')]
                 elems.forEach((item) => {
                     this.visible(item);

@@ -67,7 +67,6 @@
             const page = document.documentElement
             const pageSafari = document.body
             const header = document.getElementById('header')
-            const menu = document.getElementById('menu')
 
             document.addEventListener('scroll', () => {
                 if (this.isScrolled(page) || this.isScrolled(pageSafari)) header.classList.add('header_scrolled')

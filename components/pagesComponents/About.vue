@@ -2,7 +2,7 @@
     .common-container
         h1 {{ lang === 'ru' ? 'О компании' : 'About company' }}
         .descriptionAbout
-            img.photo(src="~/assets/img/aleksei_antonov.jpg" alt="Antonov")
+            img.photo(src="~/assets/img/aleksei_antonov.png" alt="Antonov")
             .text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
         .caption_section
@@ -30,7 +30,7 @@
                     .video
                         iframe(width="100%" height="100%" :src="item.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
-            .hint(v-if="lang === 'ru'") Turn on the subtitles on the video to see the English version
+            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
 
 
 
@@ -40,7 +40,7 @@
                 .videoFilm
                     .video
                         iframe(width="100%" height="100%" :src="film.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .hint(v-if="lang === 'ru'") Turn on the subtitles on the video to see the English version
+            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
@@ -99,7 +99,9 @@
             flex-direction column
 
         .photo
+            width 300px
             max-width 300px
+            background-color: hsl(0,0%,10%);
 
         .text
             text-align left
