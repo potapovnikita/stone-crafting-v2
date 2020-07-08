@@ -251,6 +251,9 @@
                         case 14:
                             item.style.top = top * 6 + 'px'
                             break;
+                        case 15:
+                            item.style.top = top * 7 + 'px'
+                            break;
                         default: item.style.display = 'none'
                     }
                 })
@@ -288,6 +291,8 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
+
+                    console.log('height', height)
                     if (height === 3570) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
@@ -296,7 +301,9 @@
             })
 
             const container = document.querySelector('.collections-blocks.desktop')
-            ro.observe(container)
+
+            if (window.innerWidth > 768) ro.observe(container)
+            else this.init();
         },
     }
 </script>

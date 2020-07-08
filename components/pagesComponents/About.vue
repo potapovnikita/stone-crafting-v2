@@ -17,7 +17,7 @@
             div(v-if="lang === 'ru'")
                 h2.ristretto {{ lang === 'ru' ? 'Статьи' : 'Articles' }}
                 .articles
-                    .article(v-for="article in articles")
+                    a.article(v-for="article in articles" :href="article.link" target="_blank")
                         .item(:style="{backgroundImage: getBgImg(article.background)}")
                             .mask
                         .text
@@ -27,22 +27,18 @@
 
 
             h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
+            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
             .smi(v-for="item in smi")
                 .videoSmi
                     .video
                         iframe(width="100%" height="100%" :src="item.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
-            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-
-
-
-
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
+            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
             .films(v-for="film in films")
                 .videoFilm
                     .video
                         iframe(width="100%" height="100%" :src="film.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
@@ -239,10 +235,10 @@
                     @media only screen and (max-width 500px)
                         margin-bottom 10px
         .hint
-            margin-bottom 40px
+            margin-bottom 20px
         .films
         .smi
-            margin-bottom 20px
+            margin-bottom 40px
 
             .videoFilm
             .videoSmi
@@ -329,10 +325,28 @@
                     right 0
                     position absolute
                     background-color black
-                    opacity 0.6
+                    opacity 0.2
 
                 .maskCat
                     opacity 0.4
+
+        .catalogs
+            .catalog
+                width 220px
+                height 180px
+                .item
+                    width 220px
+                    height 180px
+
+            @media only screen and (max-width 850px)
+                .catalog
+                    width 180px
+                    height 140px
+                    .item
+                        width 180px
+                        height 140px
+            @media only screen and (max-width 650px)
+                flex-direction column
 
 
 </style>
