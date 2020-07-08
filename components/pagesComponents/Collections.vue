@@ -265,12 +265,14 @@
                     this.initContentTablet()
                     window.addEventListener('resize', () => {
                         this.initContentTablet()
+                        this.initContentTablet()
                     }, false)
 
                 } else {
                     this.initContent()
                     this.initContent()
                     window.addEventListener('resize', () => {
+                        this.initContent()
                         this.initContent()
                     }, false)
                 }
@@ -292,7 +294,6 @@
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
 
-                    console.log('height', height)
                     if (height === 3570) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
@@ -302,7 +303,7 @@
 
             const container = document.querySelector('.collections-blocks.desktop')
 
-            if (window.innerWidth > 768) ro.observe(container)
+            if (window.innerWidth > 767) ro.observe(container)
             else this.init();
         },
     }

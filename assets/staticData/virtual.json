@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Международный центр искусств «Главный проспект». Екатеринбург, пр. Ленина 8.",
+        "nameEng": "International center for the arts \"Main avenue\". Yekaterinburg, st. Lenina 8.",
+        "src": "https://www.google.com/maps/embed?pb=!4v1594242822358!6m8!1m7!1sCAoSLEFGMVFpcFBERUlhcUFyYTZHTENRaGVUbW41TTdoc0lLdkFLVU9OVDhYaExj!2m2!1d56.8363512!2d60.5865783!3f144.40485785781902!4f2.4682870467842264!5f0.7820865974627469"
+    },
+    {
+        "name": "Зал Сказок (-1 этаж)",
+        "nameEng": "Hall of fairy tales (-1 floor)",
+        "src": "https://www.google.com/maps/embed?pb=!4v1594243465539!6m8!1m7!1sCAoSLEFGMVFpcE9VMzUwRC0xOUhSUEFTSnY4SzZuZWdwMGNVZnA1QkNjSzdiRzJp!2m2!1d56.8362148!2d60.5867361!3f342.21!4f6.269999999999996!5f0.4000000000000002"
+    },
+    {
+        "name": "Музей камня. Зал №1 (-1 этаж)",
+        "nameEng": "The Stone Museum. Hall #1 (-1 floor)",
+        "src": "https://www.google.com/maps/embed?pb=!4v1594243617402!6m8!1m7!1sCAoSLEFGMVFpcE5rTld3RTQxZUw0MW0wc0R5ZDdDUW9KOXloRDZua0NVZ0dtWkY4!2m2!1d56.836192!2d60.5863481!3f99.29!4f-1.5499999999999972!5f0.4000000000000002"
+    },
+    {
+        "name": "Музей камня. Зал №2 (-1 этаж)",
+        "nameEng": "The Stone Museum. Hall #2 (-1 floor)",
+        "src": "https://www.google.com/maps/embed?pb=!4v1591619040850!6m8!1m7!1sCAoSLEFGMVFpcE9XRXI5aXMxX3kxdUYyUjZKUUpQYU9xVkZBRTVMRVNPNUhPQTN2!2m2!1d56.8361106!2d60.5863706!3f0!4f0!5f0.7820865974627469"
+    },
+    {
+        "name": "Зал Коррида (1 этаж)",
+        "nameEng": "Corrida Hall (1 floor)",
+        "src": "https://www.google.com/maps/embed?pb=!4v1591619106913!6m8!1m7!1sCAoSLEFGMVFpcFB1WjEybEM1T1l5SFRxRFpGYWhjcDhGbHpUd05Hdjh0LWl0TlVJ!2m2!1d56.8361092!2d60.58628849999999!3f320!4f0!5f0.7820865974627469"
+    },
+    {
+        "name": "Тайная золотая комната",
+        "nameEng": "The secret Golden room",
+        "src": "https://www.google.com/maps/embed?pb=!4v1594243852143!6m8!1m7!1sCAoSLEFGMVFpcFA1SXozTW9ERDRGTVZqT2w0VkhNWktmU2JZY2RRbnplaVhvWElH!2m2!1d56.8360175!2d60.5863852!3f42.88!4f0!5f0.5970117501821992"
+    },
+    {
+        "name": "Салон ANTONOV (центральный вход)",
+        "nameEng": "Boutique ANTONOV (central entrance)",
+        "src": "https://www.google.com/maps/embed?pb=!4v1594243933879!6m8!1m7!1sCAoSLEFGMVFpcFBIZ2JQN0ZRWWp5X09LZl9lY0F0c0JMV0s5T2F0MFFWbTBLMGJ1!2m2!1d56.8362098!2d60.58651150000001!3f201.27!4f-2.7900000000000063!5f0.5970117501821992"
+    }
+]

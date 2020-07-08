@@ -243,6 +243,9 @@
             opacity 0.8
             line-height 1.4
 
+            @media only screen and (max-width 820px)
+                padding 10px 8px
+
             &:hover
                 opacity 1
                 cursor pointer

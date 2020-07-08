@@ -60,7 +60,7 @@
         color whiteMain
         display flex
         flex-direction column
-        padding 30px 60px
+        padding 30px 40px
         align-items center
         &.reverse
             color darkRed
@@ -81,7 +81,13 @@
                 cursor pointer
                 padding 10px 15px
                 opacity 0.8
+                line-height 1.4
 
+
+                @media only screen and (max-width 1200px)
+                    font-size 11px
+                @media only screen and (max-width 820px)
+                    padding 10px 8px
                 &:hover
                     opacity 1
 

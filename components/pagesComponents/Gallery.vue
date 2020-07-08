@@ -3,7 +3,7 @@
             .video-section
                 .video-wrapper
                     h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                    .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImgLocal(currentProduct.background)}")
+                    .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
                     video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
                         source(:src="getImgLocal(currentProduct.video)" type="video/mp4")
 
@@ -109,9 +109,13 @@
                 position absolute
                 overflow hidden
                 height 100vh
-                top 0
+                top 20px
                 left 0
                 width 100vw
+
+                @media only screen and (max-width 767px)
+                    height calc(100vh - 40px)
+                    top 40px
 
                 .image
                     width: 100%;
