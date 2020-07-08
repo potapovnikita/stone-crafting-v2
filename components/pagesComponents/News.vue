@@ -71,6 +71,24 @@
                 } else {
                     return text
                 }
+            },
+            async getNews(USER_ID, TOKEN, req) {
+
+                const request = req || `https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`
+
+                console.log(request)
+                await jsonp(request, null, (err, res) => {
+                    if (err) {
+                        console.error("Возникла ошибка", err.message);
+                    } else {
+                        console.log(res)
+                        // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
+                        res.data && res.data.forEach(item => {
+                            if (item.caption && item.caption.toLowerCase().match(/#камнерезныйдом/gi)) this.news.push(item)
+                        })
+                        if (res.paging && res.paging.next) this.getNews(USER_ID, TOKEN, res.paging.next)
+                    }
+                });
             }
         },
         computed: {
@@ -103,16 +121,7 @@
             // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
             // old https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}
 
-            jsonp(`https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`, null, (err, res) => {
-                if (err) {
-                    console.error("Возникла ошибка", err.message);
-                } else {
-                    // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
-                    res.data && res.data.forEach(item => {
-                        if (item.caption && item.caption.toLowerCase().match(/#камнерезныйдом/gi)) this.news.push(item)
-                    })
-                }
-            });
+            this.getNews(USER_ID, TOKEN);
         },
         watch: {},
         updated() {
