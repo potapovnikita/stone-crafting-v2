@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/yandex-metrika": "^0.1.1",
-    "axios": "^0.18.0",
+    "axios": "^0.19.2",
     "emailjs-com": "^2.3.2",
     "files-download-zip": "^3.1.1",
     "fs": "0.0.1-security",

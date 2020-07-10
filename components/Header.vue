@@ -17,8 +17,8 @@
                 span.hamburger_menu(:class="{'reverse': reverse}")
                     span.hamburger(:class="{'reverse': reverse}")
                 .hamburger_menu-items_container
-                    .menu_item(v-for="item in menu")
-                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+                    nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
+                        span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
             .menu#menu(:class="{'reverse': reverse}")
                 .menu_row
                     .menu_item(v-for="item in menu")
@@ -33,12 +33,13 @@
     import Menu from '~/assets/staticData/menu.json'
     import MainLogoRed from '~/assets/img/logo_antonov_red.svg'
     import MainLogoWhite from '~/assets/img/logo_antonov_white.svg'
+    import axios from "axios";
+    import { getLang } from "../store/localization";
 
     export default {
         data() {
             return {
                 menu: Menu,
-                switchLogo: 'eng',
                 curScroll: 0,
             }
         },
@@ -62,11 +63,25 @@
             getScroll(el) {
                 return el.scrollTop;
             },
+            async getLangSrv() {
+                if (getLang()) return getLang()
+                const { data } = await axios.get('http://api.ipstack.com/check?access_key=4d12c4ce0a213074e07c1091f228a2e3')
+                if (data) {
+                    console.log(data)
+                    return data.country_code === 'RU' ? 'ru' : 'eng'
+                }
+                else return 'ru'
+            }
         },
-        mounted() {
+        async mounted() {
             const page = document.documentElement
             const pageSafari = document.body
             const header = document.getElementById('header')
+
+            if (!this.lang) {
+                const lang = await this.getLangSrv()
+                this.changeLocal(lang)
+            }
 
             document.addEventListener('scroll', () => {
                 if (this.isScrolled(page) || this.isScrolled(pageSafari)) header.classList.add('header_scrolled')
@@ -82,22 +97,6 @@
 
                 this.curScroll = newScroll
             })
-
-            setInterval(() => {
-                this.switchLogo = this.switchLogo === 'eng' ? 'ru' : 'eng';
-            }, 1000 * 60)
-            // // for parallax effect
-            // window.addEventListener('scroll', () => {
-            //     const scrollPosition = window.pageYOffset
-            //     let bgParallax = document.getElementsByClassName('header_container')[0]
-            //     const limit = bgParallax.offsetTop + bgParallax.offsetHeight
-            //
-            //     if (scrollPosition > bgParallax.offsetTop && scrollPosition <= limit){
-            //         bgParallax.style.backgroundPositionY = (50 - 100 * scrollPosition/limit) + '%'
-            //     } else {
-            //         bgParallax.style.backgroundPositionY = '50%'
-            //     }
-            // });
         }
     }
 
@@ -361,9 +360,12 @@
         visibility hidden
 
         .menu_item
+            display flex
+            flex-direction column
             text-align center
             color whiteMain !important
             z-index 101
+            span
             a
                 color whiteMain !important
 

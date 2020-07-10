@@ -23,7 +23,15 @@
 
         .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
         .videoVirtual
-            iframe(width="100%" height="100%" src="https://www.youtube.com/embed/f7Wr6vCnxbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/f7Wr6vCnxbg"
+                frameborder="0"
+                allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                :hl="lang === 'ru' ? 'ru' : 'en'"
+                )
 
 
 
@@ -91,4 +99,9 @@
                 background black
                 height 400px
                 max-width 700px
+                @media only screen and (max-width 500px)
+                    height 250px
+
+                @media only screen and (max-width 400px)
+                    height 210px
 </style>

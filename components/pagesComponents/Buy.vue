@@ -49,7 +49,7 @@
     import { mapState } from 'vuex'
     import downloadImagesAsZip from 'files-download-zip'
     import Cookies from 'universal-cookie';
-    import Shop from '~/assets/staticData/antonov.json'
+    import Shop from '~/assets/staticData/shop.json'
     import { getImgExternal } from '~/plugins/getUrl'
 
     export default {

@@ -14,7 +14,7 @@
                     .imgAward(:style="{backgroundImage: getBgImg(award.img)}")
                     .textAward {{ lang === 'ru' ? award.name : award.nameEng }}
 
-            div(v-if="lang === 'ru'")
+            div(v-show="lang === 'ru'")
                 h2.ristretto {{ lang === 'ru' ? 'Статьи' : 'Articles' }}
                 .articles
                     a.article(v-for="article in articles" :href="article.link" target="_blank")
@@ -31,14 +31,27 @@
             .smi(v-for="item in smi")
                 .videoSmi
                     .video
-                        iframe(width="100%" height="100%" :src="item.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        iframe(width="100%" height="100%"
+                            :src="item.src"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            :hl="lang === 'ru' ? 'ru' : 'en'"
+                            allowfullscreen
+                            )
 
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
             .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
             .films(v-for="film in films")
                 .videoFilm
                     .video
-                        iframe(width="100%" height="100%" :src="film.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        iframe(width="100%"
+                            height="100%"
+                            :src="film.src"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            :hl="lang === 'ru' ? 'ru' : 'en'"
+                            allowfullscreen
+                            )
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
@@ -251,6 +264,12 @@
                     height 400px
                     max-width 700px
                     margin-bottom 30px
+
+                    @media only screen and (max-width 500px)
+                        height 250px
+
+                    @media only screen and (max-width 400px)
+                        height 210px
 
                     video
                     iframe

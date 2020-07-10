@@ -1,8 +1,8 @@
-const getLang = () => process.browser && localStorage.getItem('lang')
+export const getLang = () => process.browser && localStorage.getItem('lang')
 const setLang = (lang) => process.browser && localStorage.setItem('lang', lang)
 
 export const state = () => ({
-    lang: getLang() ? getLang() : 'ru'
+    lang: getLang() || ''
 })
 
 export const mutations = {

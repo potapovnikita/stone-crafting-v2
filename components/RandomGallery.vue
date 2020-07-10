@@ -29,7 +29,7 @@
 </template>
 
 <script>
-    import Antonov from '~/assets/staticData/antonov.json'
+    import Shop from '~/assets/staticData/shop.json'
     import { mapState } from 'vuex'
     import { getImgExternal } from '~/plugins/getUrl'
 
@@ -38,7 +38,7 @@
     export default {
         data() {
             return {
-                goodsNotSort: Antonov,
+                goodsNotSort: Shop,
                 goodsSortSlice: [],
                 transform: 6,
             }

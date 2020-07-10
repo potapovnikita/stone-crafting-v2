@@ -44,7 +44,7 @@
 
     import { getImgExternal } from '~/plugins/getUrl'
 
-    import Shop from '~/assets/staticData/antonov.json'
+    import Shop from '~/assets/staticData/shop.json'
 
     export default {
         data() {
