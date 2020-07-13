@@ -16,7 +16,7 @@
                     .inner(v-if="post.media_type === 'VIDEO'")
                         .lines
                         .over(v-if="post.media_url")
-                            video.video(preload="auto" controls :poster="post.media_url" autoplay muted)
+                            video.video(preload="auto" controls :poster="post.media_url" autoplay muted playsinline)
                                 source(:src="post.media_url" type="video/mp4" :poster="post.media_url" style="zIndex: '-1'")
 
                     .inner(v-if="post.media_type === 'CAROUSEL_ALBUM'")

@@ -4,7 +4,7 @@
                 .video-wrapper
                     h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
                     .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
-                    video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted")
+                    video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted" playsinline)
                         source(:src="getImgLocal(currentProduct.video)" type="video/mp4")
 
             .description-wrapper
