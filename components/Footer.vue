@@ -12,6 +12,9 @@
                     a.icon.youtube(:href="contacts.inst" :class="{reverse: reverse}")
                     a.icon.instagram(:href="contacts.inst" :class="{reverse: reverse}")
                     a.icon.facebook(:href="contacts.inst" :class="{reverse: reverse}")
+                .item.policy
+                    nuxt-link(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'" :class="{reverse: reverse}")
+
 
 
             .column.address_column
@@ -113,6 +116,13 @@
                 flex-direction column
                 .item
                     margin-bottom 5px
+
+                    &.policy
+                        margin-top 10px
+
+                        &:hover
+                            text-decoration underline
+
                     &.icons
                         margin-top 10px
                         display flex

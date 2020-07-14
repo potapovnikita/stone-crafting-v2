@@ -1,5 +1,5 @@
 <template lang="pug">
-    .common-container
+    .common-container.about-container
         h1 {{ lang === 'ru' ? 'О компании' : 'About company' }}
         .descriptionAbout
             img.photo(src="~/assets/img/aleksei_antonov.png" alt="Antonov")
@@ -28,8 +28,10 @@
 
             h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
             .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-            .smi(v-for="item in smi")
+            .smi(v-for="(item, index) in smi" v-show="index === activeSmi")
                 .videoSmi
+                    .iconArrow(@click="onPreviousSmi()")
+                        ChevronLeftIcon(size="3x")
                     .video
                         iframe(width="100%" height="100%"
                             :src="item.src"
@@ -38,11 +40,15 @@
                             :hl="lang === 'ru' ? 'ru' : 'en'"
                             allowfullscreen
                             )
+                    .iconArrow(@click="onNextSmi()")
+                        ChevronRightIcon(size="3x")
 
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
             .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-            .films(v-for="film in films")
+            .films(v-for="(film, index) in films" v-show="index === activeFilm")
                 .videoFilm
+                    .iconArrow(@click="onPreviousFilm()")
+                        ChevronLeftIcon(size="3x")
                     .video
                         iframe(width="100%"
                             height="100%"
@@ -52,6 +58,8 @@
                             :hl="lang === 'ru' ? 'ru' : 'en'"
                             allowfullscreen
                             )
+                    .iconArrow(@click="onNextFilm()")
+                        ChevronRightIcon(size="3x")
 
             h2.ristretto {{ lang === 'ru' ? 'Каталоги' : 'Catalogs' }}
             .catalogs
@@ -64,6 +72,7 @@
 </template>
 
 <script>
+    import { ChevronRightIcon, ChevronLeftIcon  } from 'vue-feather-icons'
     import { mapState } from 'vuex'
     import Company from '~/assets/staticData/company.json'
 
@@ -76,9 +85,13 @@
                 catalogs: Company.company.catalogs,
                 smi: Company.company.smi.videos,
                 films: Company.company.films,
+                activeSmi: 0,
+                activeFilm: 0,
             }
         },
         components: {
+            ChevronRightIcon,
+            ChevronLeftIcon,
         },
         methods: {
             getBgImg(url) {
@@ -88,7 +101,24 @@
             getImg(url) {
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
+            },
+            onNextSmi() {
+                if (this.activeSmi >= this.smi.length - 1) this.activeSmi = 0
+                else this.activeSmi = this.activeSmi + 1
+            },
+            onPreviousSmi() {
+                if (this.activeSmi === 0) this.activeSmi = this.smi.length - 1
+                else this.activeSmi = this.activeSmi - 1
+            },
+            onNextFilm() {
+                if (this.activeFilm >= this.films.length - 1) this.activeFilm = 0
+                else this.activeFilm = this.activeFilm + 1
+            },
+            onPreviousFilm() {
+                if (this.activeFilm === 0) this.activeFilm = this.films.length - 1
+                else this.activeFilm = this.activeFilm - 1
             }
+
         },
         computed: {
             ...mapState('localization', [
@@ -162,6 +192,15 @@
 </script>
 
 <style lang="stylus">
+    .about-container
+        h2
+            padding 10px
+            border 1px solid silverMain
+            border-left none
+            border-right none
+            margin-bottom 25px
+            ine-height 1
+
     .descriptionAbout
         justify-content center
         display flex
@@ -253,8 +292,25 @@
         .smi
             margin-bottom 40px
 
+            .iconArrow
+                cursor pointer
+                display flex
+                align-items center
+                justify-content center
+
+                &:hover
+                    svg
+                        stroke #7f828b
+
             .videoFilm
             .videoSmi
+                display inline-flex
+                flex-direction row
+                justify-content center
+                flex-wrap nowrap
+                width 100%
+                margin 0 auto
+
                 .name
                     font-family $IntroRegular
                     font-size $FontSize3
@@ -264,6 +320,7 @@
                     height 400px
                     max-width 700px
                     margin-bottom 30px
+                    width: 100%;
 
                     @media only screen and (max-width 500px)
                         height 250px
@@ -281,16 +338,17 @@
             flex-direction row
             flex-wrap wrap
             justify-content center
+            margin 0 auto
             margin-bottom 40px
             flex-basis 100px
-            max-width 900px
+            max-width 1000px
 
             @media only screen and (max-width 600px)
                 flex-direction column
 
             .catalog
             .article
-                transition all 0.5s ease-in
+                transition transform 0.5s, opacity 0.5s ease-in
                 opacity 0
                 transform translateY(150px)
                 display flex
@@ -348,6 +406,26 @@
 
                 .maskCat
                     opacity 0.4
+
+            .article
+                background-color rgba(102, 15, 40, 0.4)
+                width 300px
+                @media only screen and (max-width 350px)
+                    width 250px
+
+                &:hover
+                    box-shadow: 0 5px 6px 0 rgba(102, 15, 40, .3);
+
+                .item
+                    width 300px
+                    height 150px
+                    background-position top
+                    @media only screen and (max-width 350px)
+                        width 250px
+
+                .text
+                    padding 0 10px 5px
+                    height 80px
 
         .catalogs
             .catalog

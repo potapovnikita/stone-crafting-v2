@@ -129,29 +129,35 @@
     "smi": {
       "videos": [
         {
-          "name": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер\n",
-          "src": "https://www.youtube.com/embed/aynIfVRD85U"
+            "name": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/aynIfVRD85U"
         },
         {
-          "name": "RU: Интервью для InteraTV в Екатеринбурге / Interview InteraTV\n",
-          "src": "https://www.youtube.com/embed/dJGDzkVOXoc"
+            "name": "RU: Интервью для InteraTV в Екатеринбурге / Interview InteraTV",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/dJGDzkVOXoc"
         },
-          {
-              "name": "RU|EN sub: Work creation process / Процесс создания работ\n",
-              "src": "https://www.youtube.com/embed/Ou2HLSY7Ie4"
-          },
-          {
-              "name": "RU: Выставка в Екатеринбурге / Exhibition\n",
-              "src": "https://www.youtube.com/embed/InTha0wl0Q4"
-          },
-          {
-              "name": "RU|EN sub: FAQ about us / Часто задаваемые вопросы о нас. Chamovskikh Channel.\n",
-              "src": "https://www.youtube.com/embed/O3ePOK4dQzE"
-          },
-          {
-              "name": "Мастерская Алексея Антонова (Мастера Екатеринбурга)\n",
-              "src": "https://www.youtube.com/embed/f7Wr6vCnxbg"
-          }
+        {
+            "name": "RU|EN sub: Work creation process / Процесс создания работ",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/Ou2HLSY7Ie4"
+        },
+        {
+            "name": "RU: Выставка в Екатеринбурге / Exhibition",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/InTha0wl0Q4"
+        },
+        {
+            "name": "RU|EN sub: FAQ about us / Часто задаваемые вопросы о нас. Chamovskikh Channel.",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/O3ePOK4dQzE"
+        },
+        {
+            "name": "Мастерская Алексея Антонова (Мастера Екатеринбурга)",
+            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "src": "https://www.youtube.com/embed/f7Wr6vCnxbg"
+        }
       ]
     },
     "films": [
