@@ -252,7 +252,12 @@
                             item.style.top = top * 6 + 'px'
                             break;
                         case 15:
+                        case 16:
                             item.style.top = top * 7 + 'px'
+                            break;
+                        case 17:
+                        case 18:
+                            item.style.top = top * 8 + 'px'
                             break;
                         default: item.style.display = 'none'
                     }
@@ -293,8 +298,7 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
-
-                    if (height === 3570) {
+                    if (height === 4335) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
                     }
