@@ -129,54 +129,66 @@
     "smi": {
       "videos": [
         {
-            "name": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "name": "Антонов. Уральский мастер",
+            "nameEng": "Antonov. Ural stone cutter",
             "src": "https://www.youtube.com/embed/aynIfVRD85U"
         },
         {
-            "name": "RU: Интервью для InteraTV в Екатеринбурге / Interview InteraTV",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "name": "Интервью для InteraTV в Екатеринбурге",
+            "nameEng": "Interview InteraTV",
             "src": "https://www.youtube.com/embed/dJGDzkVOXoc"
         },
         {
-            "name": "RU|EN sub: Work creation process / Процесс создания работ",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "name": "Процесс создания работ",
+            "nameEng": "Work creation process",
             "src": "https://www.youtube.com/embed/Ou2HLSY7Ie4"
         },
         {
-            "name": "RU: Выставка в Екатеринбурге / Exhibition",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "name": "Выставка в Екатеринбурге",
+            "nameEng": "Exhibition",
             "src": "https://www.youtube.com/embed/InTha0wl0Q4"
         },
         {
-            "name": "RU|EN sub: FAQ about us / Часто задаваемые вопросы о нас. Chamovskikh Channel.",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "name": "Часто задаваемые вопросы о нас. Канал Chamovskikh.",
+            "nameEng": "FAQ about us. Chamovskikh Channel",
             "src": "https://www.youtube.com/embed/O3ePOK4dQzE"
         },
         {
             "name": "Мастерская Алексея Антонова (Мастера Екатеринбурга)",
-            "nameEng": "RU|EN sub: Antonov. Ural stone cutter / Антонов. Уральский мастер",
+            "nameEng": "Workshop of Alexey Antonov (Masters of Yekaterinburg)",
             "src": "https://www.youtube.com/embed/f7Wr6vCnxbg"
         }
       ]
     },
     "films": [
         {
+            "name": "Джокер 2020. Новый шедевр Дома!",
+            "nameEng": "Joker 2020. The best or nothing",
             "src": "https://www.youtube.com/embed/X0XGvWUbjHk"
         },
         {
+            "name": "Искусство в камне. Тореодор",
+            "nameEng": "The masterpiece of art. Toreador ",
             "src": "https://www.youtube.com/embed/OvlRygZPz9Q"
         },
         {
+            "name": "Новый шедевр Тореадор",
+            "nameEng": "New masterpiece Toreador",
             "src": "https://www.youtube.com/embed/BtApR4FS66o"
         },
         {
+            "name": "Процесс создания работ",
+            "nameEng": "Work creation process",
             "src": "https://www.youtube.com/embed/d_Tt5ys9giE"
         },
         {
+            "name": "Камнерезное искусство (EN sub)",
+            "nameEng": "Stone-carving art",
             "src": "https://www.youtube.com/embed/lmYMq8y7Z5k"
         },
         {
+            "name": "Экспозиция Камнерезного Дома в Екатеринбурге",
+            "nameEng": "Exposition",
             "src": "https://www.youtube.com/embed/1AgqqINlNME"
         }
     ]

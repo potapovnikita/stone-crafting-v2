@@ -29,6 +29,7 @@
             h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
             .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
             .smi(v-for="(item, index) in smi" v-show="index === activeSmi")
+                .videoName {{ lang === 'ru' ? item.name : item.nameEng }}
                 .videoSmi
                     .iconArrow(@click="onPreviousSmi()")
                         ChevronLeftIcon(size="3x")
@@ -46,6 +47,7 @@
             h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
             .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
             .films(v-for="(film, index) in films" v-show="index === activeFilm")
+                .videoName {{ lang === 'ru' ? film.name : film.nameEng }}
                 .videoFilm
                     .iconArrow(@click="onPreviousFilm()")
                         ChevronLeftIcon(size="3x")
@@ -291,6 +293,11 @@
         .films
         .smi
             margin-bottom 40px
+
+            .videoName
+                margin-bottom 20px
+                font-family $IntroRegular
+                font-size $FontSize3
 
             .iconArrow
                 cursor pointer
