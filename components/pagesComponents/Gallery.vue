@@ -232,11 +232,13 @@
                     h2
                         margin-bottom 15px
                         text-align left
+
                     .line-sm
                         width 100px
                         height 1px
                         margin-bottom 15px
                         background silverMain
+
                     .description
                         margin-bottom 15px
 
@@ -254,6 +256,8 @@
                     .slider,
                     .photo
                         max-width 400px
+
+                    .photo
                         max-height  450px
 
         @media only screen and (max-width 767px)

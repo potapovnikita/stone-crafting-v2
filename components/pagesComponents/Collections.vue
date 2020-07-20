@@ -259,6 +259,14 @@
                         case 18:
                             item.style.top = top * 8 + 'px'
                             break;
+                        case 19:
+                        case 20:
+                            item.style.top = top * 9 + 'px'
+                            break;
+                        case 21:
+                        case 22:
+                            item.style.top = top * 10 + 'px'
+                            break;
                         default: item.style.display = 'none'
                     }
                 })
@@ -266,11 +274,11 @@
             init() {
                 // проверяем, есть и возможность тача на устройстве
                 if ("ontouchstart" in document.documentElement) {
-                    this.initContentTablet()
-                    this.initContentTablet()
+                    this.initContent()
+                    this.initContent()
                     window.addEventListener('resize', () => {
-                        this.initContentTablet()
-                        this.initContentTablet()
+                        this.initContent()
+                        this.initContent()
                     }, false)
 
                 } else {
@@ -298,7 +306,8 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize.height
                         : entry.contentRect.height
-                    if (height === 4335) {
+                    console.log(height)
+                    if (Math.floor(height) === 6582) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
                     }
