@@ -15,7 +15,10 @@
                             .content
                                 .title {{lang === 'ru' ? item.name : item.nameEng}}
                                 .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
+
                             .button(@click="this.$router.push({path:`/gallery/${item.id}`})") Подробнее
+                            .closeIcon(v-if="isVisibleClose" @click="closeDescription($event)")
+                                xIcon(size="1.5x" class="custom-class")
 
         // for mobile version
         .collections-blocks.mobile(:style="{opacity: isInit ? 1 : 0  }")
@@ -43,6 +46,7 @@
     import RandomGallery from '~/components/RandomGallery.vue'
     import { getImgExternal } from '~/plugins/getUrl'
     import Museum from '~/assets/staticData/museum.json'
+    import { XIcon  } from 'vue-feather-icons'
 
     export default {
         data() {
@@ -52,6 +56,11 @@
             }
         },
         methods: {
+            closeDescription(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                this.hideAll();
+            },
             getImg(url) {
                 return getImgExternal(url)
             },
@@ -273,7 +282,7 @@
             },
             init() {
                 // проверяем, есть и возможность тача на устройстве
-                if ("ontouchstart" in document.documentElement) {
+                if ('ontouchstart' in document.documentElement) {
                     this.initContent()
                     this.initContent()
                     window.addEventListener('resize', () => {
@@ -293,12 +302,16 @@
             },
         },
         components: {
-            RandomGallery
+            RandomGallery,
+            XIcon,
         },
         computed: {
             ...mapState('localization', [
                 'lang',
             ]),
+            isVisibleClose() {
+                return process.client && 'ontouchstart' in document.documentElement;
+            },
         },
         mounted() {
             const ro = new ResizeObserver(entries => {
@@ -413,7 +426,18 @@
                                 .text
                                     font-size 16px
 
-
+                            .closeIcon
+                                display flex
+                                align-items center
+                                justify-content center
+                                position absolute
+                                width 30px
+                                height 30px
+                                bottom 15px
+                                right 115px
+                                &:hover
+                                    svg
+                                        stroke #7f828b
                             .button
                                 border 1px solid silverMain
                                 padding 5px 10px
