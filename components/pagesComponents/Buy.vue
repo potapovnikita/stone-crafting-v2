@@ -29,7 +29,8 @@
                         .slides
                             .img(v-for="(img, idx) in item.imagesPreview")
                                 img(:src="getImg(img)" :class="{active: idx === item.activeImgId}" @click="setActiveImg(item, idx, index)")
-                        .button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
+                        //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
+                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item)")
                     .description
                         div
                             h2(v-html="lang === 'ru' ? item.name : item.nameEng")
