@@ -31,8 +31,8 @@
 <script>
     import { mapMutations, mapState } from 'vuex'
     import Menu from '~/assets/staticData/menu.json'
-    import MainLogoRed from '~/assets/img/logo_antonov_red.svg'
-    import MainLogoWhite from '~/assets/img/logo_antonov_white.svg'
+    import MainLogoRed from '~/assets/img/logo_antonov_red_new.svg'
+    import MainLogoWhite from '~/assets/img/logo_antonov_white_new.svg'
     import axios from "axios";
     import { getLang } from "../store/localization";
 
