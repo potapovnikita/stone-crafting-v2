@@ -2,10 +2,14 @@
     .common-container.policy-container
         h1(v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'")
         .tabs
-            .tab(:class="{'active': activeTab === 1}" v-html="lang === 'ru' ? 'Политика 1' : 'Policy 1'" @click="activeTab = 1")
-            .tab(:class="{'active': activeTab === 2}" v-html="lang === 'ru' ? 'Политика 2' : 'Policy 2'" @click="activeTab = 2")
-        .policy-content(v-if="activeTab === 1") Политика 1
-        .policy-content(v-if="activeTab === 2") Политика 2
+            .tab(:class="{'active': activeTab === 1}" v-html="lang === 'ru' ? 'Политика персональных данных' : 'Personal data policy'" @click="activeTab = 1")
+            .tab(:class="{'active': activeTab === 2}" v-html="lang === 'ru' ? 'Термины и определения' : 'Terms and conditions'" @click="activeTab = 2")
+
+
+        .policy-content(v-if="activeTab === 1")
+            div(v-html="lang === 'ru' ? policy.personalRu : policy.personalEng")
+        .policy-content(v-if="activeTab === 2")
+            div(v-html="lang === 'ru' ? policy.policyRu : policy.policyEng")
 
 
 
@@ -17,12 +21,13 @@
 <script>
 import { mapState } from 'vuex'
 
-import Company from '~/assets/staticData/company.json'
+import Policy from '~/assets/staticData/policy.json'
 
 export default {
     data() {
         return {
             activeTab: 1,
+            policy: Policy,
         }
     },
     components: {
@@ -39,6 +44,10 @@ export default {
     .policy-container
         h1
          padding-bottom 36px
+
+        .policy-content
+            text-align left
+            margin 20px 30px
 
         .tabs
             display inline-flex
