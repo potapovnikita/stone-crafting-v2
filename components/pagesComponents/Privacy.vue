@@ -3,7 +3,7 @@
         h1(v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'")
         .tabs
             .tab(:class="{'active': activeTab === 1}" v-html="lang === 'ru' ? 'Политика персональных данных' : 'Personal data policy'" @click="activeTab = 1")
-            .tab(:class="{'active': activeTab === 2}" v-html="lang === 'ru' ? 'Термины и определения' : 'Terms and conditions'" @click="activeTab = 2")
+            .tab(:class="{'active': activeTab === 2}" v-html="lang === 'ru' ? 'Пользовательское соглашение' : 'Terms of use'" @click="activeTab = 2")
 
 
         .policy-content(v-if="activeTab === 1")
@@ -48,6 +48,7 @@ export default {
         .policy-content
             text-align left
             margin 20px 30px
+            height: 100%;
 
         .tabs
             display inline-flex
