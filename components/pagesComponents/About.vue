@@ -2,10 +2,71 @@
     .common-container.about-container
         h1 {{ lang === 'ru' ? 'О компании' : 'About company' }}
         .descriptionAbout
-            img.photo(src="~/assets/img/aleksei_antonov.png" alt="Antonov")
+            img.photo.left(src="~/assets/img/about/aleksei_antonov.png" alt="Antonov")
             .text
                 .title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                 .ception(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
+
+        .descriptionAbout.reverse
+            .text.left
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu2 : company.aboutTitleEng2")
+                .ception(v-html="lang === 'ru' ? company.aboutRu2 : company.aboutEng2")
+            img.photo(src="~/assets/img/about/road.png" alt="Antonov")
+
+
+        .descriptionAbout
+            video.video.left(preload="auto" controls autoplay muted playsinline)
+                source(src="~/assets/img/about/toreodor.mp4" type="video/mp4" style="zIndex: '-1'")
+            .text
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu3 : company.aboutTitleEng3")
+                .ception(v-html="lang === 'ru' ? company.aboutRu3 : company.aboutEng3")
+
+        .descriptionAbout.reverse
+            .text.left
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu4 : company.aboutTitleEng4")
+                .ception(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
+            .photo
+                client-only
+                    carousel(:navigationEnabled="true" :perPage="1" paginationActiveColor="#b0a74a" :autoplay="true" :autoplayHoverPause="true" :loop="true")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/1.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/2.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/3.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/4.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/5.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/6.jpg" alt="Antonov")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/7.jpg" alt="Antonov")
+                        slide
+                            video.carouselPhoto(preload="auto" controls autoplay muted playsinline)
+                                source(src="~/assets/img/about/carousel/8.mp4" type="video/mp4" style="zIndex: '-1'")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/9.jpg" alt="Antonov")
+
+
+        .descriptionAbout
+            img.photo.left(src="~/assets/img/about/skurlov.png" alt="Antonov")
+            .text
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
+                .ception(v-html="lang === 'ru' ? company.aboutRu5 : company.aboutEng5")
+
+        .descriptionAbout.reverse
+            .text.left
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu6 : company.aboutTitleEng6")
+                .ception(v-html="lang === 'ru' ? company.aboutRu6 : company.aboutEng6")
+            img.photo(src="~/assets/img/about/faberge.png" alt="Antonov")
+
+        .descriptionAbout
+            img.photo.left(src="~/assets/img/about/eltsina.png" alt="Antonov")
+            .text
+                .title(v-html="lang === 'ru' ? company.aboutTitleRu7 : company.aboutTitleEng7")
+                .ception(v-html="lang === 'ru' ? company.aboutRu7 : company.aboutEng7")
+
 
         .caption_section
             h2.ristretto {{ lang === 'ru' ? 'Награды и звания' : 'Awards and titles' }}
@@ -76,6 +137,8 @@
 <script>
     import { ChevronRightIcon, ChevronLeftIcon  } from 'vue-feather-icons'
     import { mapState } from 'vuex'
+    // import { Carousel, Slide } from 'vue-carousel';
+
     import Company from '~/assets/staticData/company.json'
 
     export default {
@@ -94,6 +157,8 @@
         components: {
             ChevronRightIcon,
             ChevronLeftIcon,
+            // Carousel,
+            // Slide
         },
         methods: {
             getBgImg(url) {
@@ -128,21 +193,23 @@
             ]),
         },
         mounted() {
-            const descriptionAbout = document.querySelector('.descriptionAbout');
+            const descriptionsAbout = document.querySelectorAll('.descriptionAbout');
             const awards = document.querySelectorAll('.award');
             const articles = document.querySelectorAll('.article');
             const catalogs = document.querySelectorAll('.catalog');
 
             // для текста описания
             const showDesc = new IntersectionObserver((entries) => {
-                if (entries[0].intersectionRatio > 0) {
-                    entries[0].target && entries[0].target.childNodes.forEach(node => {
-                        node.style.transform = 'translateY(0)';
-                        node.style.opacity = 1;
-                        showDesc.unobserve(entries[0].target);
-                    })
-                }
-            });
+                entries.forEach(e => {
+                    if (e.intersectionRatio > 0) {
+                        e.target && e.target.childNodes.forEach(node => {
+                            node.style.transform = 'translateX(0)';
+                            node.style.opacity = 1;
+                            showDesc.unobserve(e.target);
+                        })
+                    }
+                })
+            }, { threshold: [0.5, 1] });
 
             // для наград
             const showAward = new IntersectionObserver((entries) => {
@@ -178,7 +245,9 @@
             });
 
 
-            showDesc.observe(descriptionAbout);
+            descriptionsAbout.forEach(desc => {
+                showDesc.observe(desc);
+            })
             awards.forEach(award => {
                 showAward.observe(award);
             })
@@ -194,6 +263,9 @@
 </script>
 
 <style lang="stylus">
+    .VueCarousel-navigation-button
+        color white !important
+
     .about-container
         h2
             padding 10px
@@ -208,27 +280,43 @@
         display flex
         flex-direction row
         align-items: flex-start
-        margin-bottom 30px
+        margin-bottom 50px
+
+        &.reverse
+            @media only screen and (max-width 660px)
+                flex-direction column-reverse
 
         @media only screen and (max-width 660px)
             flex-direction column
             align-items: center
+            margin-bottom 30px
 
             .photo
+            .video
                 margin-bottom 20px
             .text
                 .title
                     text-align center
 
+        .video
         .photo
         .text
             transition all 0.5s ease-in
             opacity 0
-            transform translateY(300px)
+            transform translateX(200px)
+
+            &.left
+                transform translateX(-200px)
+
+        .video
+            background-color: hsl(0,0%,10%);
+
+        .carouselPhoto
+        .video
         .photo
             width 300px
             max-width 300px
-            background-color: hsl(0,0%,10%);
+            min-height 200px
 
         .text
             text-align left

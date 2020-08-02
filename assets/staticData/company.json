@@ -2,8 +2,42 @@
   "company": {
     "aboutTitleRu": "Камнерезный Дом Алексея Антонова",
     "aboutTitleEng": "Stone-crafting House by Alexey Antonov",
-    "aboutRu": "&nbsp;&nbsp;&nbsp;&nbsp;Создан уральским мастером по художественной обработке камня, членом союза художников России – Алексеем Антоновым, чья творческая деятельность началась с 1987 года. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Основное направление — это создание уникальных произведений камнерезного и ювелирного искусства в лучших традициях К. Фаберже и А. Денисова-Уральского. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день это компания, предоставляющая все виды деятельности, связанные с камнем: от создания элитарных произведений искусства до интерьеров и сувенирной продукции. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Коллекционное собрание Дома», целью которого служит популяризация искусства, представляет интересы лучших мастеров Урала, профессионалов в области ювелирного и камнерезного дела.",
-    "aboutEng": "<br><br> &nbsp;&nbsp;&nbsp;&nbsp; Founded by Alexeу Antonov - the Ural master, a member of the Union of Artists (Russia), whose creative activity began in 1987. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The main direction of the company is to make unique works of stone-cutting and jewelry art in the best traditions of K. Faberge and A. Denisov-Uralsky. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;The «Stone-crafting House by Alexey Antonov» provides all kinds of services related to stone: from the creation of masterpieces to interiors and souvenirs. <br><br> &nbsp;&nbsp;&nbsp;&nbsp;«Collection of the House», whose goal is to popularize art, represents the interests of the best masters of the Urals in the field of jewelry and stone cutting.",
+    "aboutRu": "Бренд создан уральским мастером &mdash; камнерезом по&nbsp;художественной обработке камня, членом союза художников России &mdash; Алексеем Антоновым, чья творческая деятельность началась с&nbsp;1988&nbsp;года. Алексей Антонов является мастером во втором поколении. По&nbsp;примеру отца, он&nbsp;с раннего возраста увлекся камнем и совершенствовал свои навыки. Сегодня он&nbsp;один из&nbsp;лучших мастеров не только России, но&nbsp;и&nbsp;мира.",
+    "aboutEng": "The brand was created by Alexey Antonov – a Ural master and stone – cutter in artistic stone processing, a member of the Union of artists of Russia, whose creative activity began in 1988. Alexey Antonov is a second-generation master. Following his father&#39;s example, he became interested in stone from an early age and improved his skills. Today, he is one of the best masters not only in Russia, but also in the world.",
+    "img": "img/aleksei_antonov.png",
+
+    "aboutTitleRu2": "Дорога к мастерству – это дорога длиною в жизнь",
+    "aboutTitleEng2": "The road to mastery is a life-long road",
+    "aboutRu2": "В&nbsp;давние времена традиции камнерезов передавались среди &laquo;своих&raquo;, а&nbsp;секреты  создания художественных работ не разглашались. Только спустя десятилетия Алексей Антонов и&nbsp;его команда достигли высочайшего мастерства камнеобработки и&nbsp;являются одними из&nbsp;немногих хранителями этих знаний и&nbsp;традиций.",
+    "aboutEng2": "In ancient times, the traditions of stone cutters were passed only among selected people and the secrets of creating artistic works were not disclosed. Only decades later, Alexey Antonov and his team achieved the highest skill in stone processing and they are almost the only ones who keep this secret knowledge and tradition in the 21st century.",
+
+    "aboutTitleRu3": "Инновации в сфере камнерезного и ювелирного искусства",
+    "aboutTitleEng3": "Innovations in the field of stone carving and jewelry art",
+    "aboutRu3": "Уникальная технология работы с&nbsp;камнем, унаследованная от&nbsp;знаменитых предшественников Карла Фаберже и&nbsp;Алексея Денисова-Уральского, совершенствовалась на&nbsp;протяжении 30-ти лет и&nbsp;сегодня компания обладает собственными изобретениями и патентами.",
+    "aboutEng3": "The unique technology of&nbsp;working with stone was inherited by&nbsp;us from famous predecessors such as&nbsp;Karl Faberge and Alexey Denisov- Uralsky. Our team has been improving their skills for 30&nbsp;years and today the company has its own inventions and patents.",
+
+    "aboutTitleRu4": "Коллекция Камнерезного Дома Антонова",
+    "aboutTitleEng4": "Collection of Stone-Cutting House by Antonov",
+    "aboutRu4": "Собственная частная коллекция, целью которой является популяризация искусства, представляет работы наших лучших мастеров. Коллекция создавалась более 13 лет и&nbsp;включает в&nbsp;себя проекты, не&nbsp;имеющие аналогов в&nbsp;мире. Увидеть работы можно в частных галереях и&nbsp;государственных музеях в Екатеринбурге и&nbsp;Москве. Выездные выставки по&nbsp;другим городам и&nbsp;странам афишируются в наших социальных сетях.",
+    "aboutEng4": "Our own private collection contributes to&nbsp;the development of&nbsp;art, where we&nbsp;present the works of&nbsp;our best masters. The collection has been created for more than 13&nbsp;years and includes projects that have no&nbsp;analogues in&nbsp;the world. The works can be&nbsp;seen in&nbsp;private galleries and state museums in&nbsp;Russia. Information about exhibitions in&nbsp;other countries can be&nbsp;found in&nbsp;our social networks.",
+
+    "aboutTitleRu5": "Валентин Скурлов",
+    "aboutTitleEng5": "Valentin Skurlov",
+    "aboutRu5": "Кандидат искусствоведения, эксперт по&nbsp;оценке художественных ценностей Министерства культуры&nbsp;РФ, консультант по&nbsp;Фабрже Аукционного дома Christie&rsquo;s. &laquo;Его успех&nbsp;&mdash; это верность историческим традициям. Он&nbsp;сумел вобрать все лучшее и продвинуть эстетические идеи на&nbsp;рубеже XX&nbsp;&mdash; XXI веков, родив собственное направление полихромной практически монументальной камнерезной скульптуры. Такого еще не&nbsp;было. Идущий первым никогда не&nbsp;будет вторым&raquo;.",
+    "aboutEng5": "Candidate of&nbsp;art history, expert in&nbsp;the evaluation of artistic values of&nbsp;the Ministry of&nbsp;culture of&nbsp;the Russian Federation, Faberge consultant at&nbsp;Christie&#39;s Auction house. &laquo;Antonov&#39;s success is&nbsp;loyalty to&nbsp;historical traditions. He was able to&nbsp;absorb all the best and promote aesthetic ideas at&nbsp;the turn of&nbsp;the XX-XXI&nbsp;centuries, giving birth to his own direction of&nbsp;polychrome monumental stone carving sculpture. This has never happened before. The one who goes first will never be&nbsp;second&raquo;.",
+
+    "aboutTitleRu6": "Татьяна Фаберже",
+    "aboutTitleEng6": "Tatiana Faberge",
+    "aboutRu6": "Правнучка знаменитого придворного ювелира Карла Фаберже, историограф фирмы &laquo;Фаберже&raquo;, почетный председатель Мемориального Фонда Фаберже.<br/><br/> &laquo;С&nbsp;каждым годом арт-объекты подобного класса будут дорожать, поскольку не&nbsp;тиражируются. Антиквариат делается сегодня, для этого изделия должны быть высокохудожественными, что я&nbsp;и наблюдаю в&nbsp;творчестве художников и&nbsp;мастеров команды Алексея Антонова. Работы доказывают, что возможности реализма в&nbsp;каменном искусстве&nbsp;&mdash; безграничны. Спасибо Алексей, Вы&nbsp;открываете новые горизонты, не&nbsp;доступные Фаберже!&raquo;",
+    "aboutEng6": "Great-granddaughter of&nbsp;the famous Imperial jeweler Karl Faberge, historiographer of&nbsp;the Faberge firm, honorary Chairman of&nbsp;the Faberge Memorial Fund. &laquo;Every year, art objects of&nbsp;this class will become more expensive, because they are not replicated. Antiques are made today. To&nbsp;do&nbsp;this, products must be&nbsp;highly artistic and this is&nbsp;what&nbsp;I see in&nbsp;the work of artists and masters of&nbsp;the team of&nbsp;Alexey Antonov. The works prove that the possibilities of&nbsp;realism in stone art are limitless. Thank you Alexey, you open new horizons that were not available to&nbsp;Faberge!&raquo;.",
+
+    "aboutTitleRu7": "Наина Ельцина",
+    "aboutTitleEng7": "Naina Yeltsina",
+    "aboutRu7": "Первая леди России, жена первого президента Российской Федерации, автор книг. <br/><br/> &laquo;Соединив в&nbsp;одно целое знания старых мастеров, свой 30&nbsp;летний опыт работы с&nbsp;камнем, новейшие изобретения и&nbsp;техники им&nbsp;удалось создать мировой прецедент в&nbsp;отрасли, где традиции и&nbsp;технологии не&nbsp;менялись тысячелетиями&raquo;.",
+    "aboutEng7": "First lady of Russia, wife of the first president of the Russian Federation, author of books. &laquo;By&nbsp;combining the knowledge of&nbsp;the old masters, 30-year experience in&nbsp;working with stone, and the latest inventions and techniques they have managed to&nbsp;create a&nbsp;global precedent in&nbsp;an&nbsp;industry where traditions and technologies have not changed for thousands of&nbsp;years&raquo;",
+
+
+
     "awards": [
         {
             "name": "Член Союза художников России.",
