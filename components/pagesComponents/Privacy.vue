@@ -49,6 +49,7 @@ export default {
             text-align left
             margin 20px 30px
             height: 100%;
+            display: table;
 
         .tabs
             display inline-flex
