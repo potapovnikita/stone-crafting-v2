@@ -7,6 +7,9 @@
                 .title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                 .ception(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
+        .historyButton
+            .button(@click="$nuxt.$router.push({path:`/history`})") {{lang === 'ru' ? 'История бренда' : 'Brand history'}}
+
         .descriptionAbout.reverse
             .text.left
                 .title(v-html="lang === 'ru' ? company.aboutTitleRu2 : company.aboutTitleEng2")
@@ -48,7 +51,7 @@
                         slide
                             img.carouselPhoto(src="~/assets/img/about/carousel/9.jpg" alt="Antonov")
 
-        h1 {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
+        h2 {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
         .descriptionAbout
             img.photo.left(src="~/assets/img/about/skurlov.png" alt="Antonov")
             .text
@@ -137,7 +140,6 @@
 <script>
     import { ChevronRightIcon, ChevronLeftIcon  } from 'vue-feather-icons'
     import { mapState } from 'vuex'
-    // import { Carousel, Slide } from 'vue-carousel';
 
     import Company from '~/assets/staticData/company.json'
 
@@ -157,8 +159,6 @@
         components: {
             ChevronRightIcon,
             ChevronLeftIcon,
-            // Carousel,
-            // Slide
         },
         methods: {
             getBgImg(url) {
@@ -273,7 +273,25 @@
             border-left none
             border-right none
             margin-bottom 25px
-            ine-height 1
+            line-height 1
+
+
+    .historyButton
+        .button
+            margin-bottom 60px
+            font-size $FontSize3
+            width 260px
+            text-align center
+            cursor pointer
+            border 1px solid white
+            padding 20px 30px
+            color white
+            background-color inherit
+            transition background-color .3s ease, color .3s ease
+
+            &:hover
+                color black
+                background-color white
 
     .descriptionAbout
         justify-content center
