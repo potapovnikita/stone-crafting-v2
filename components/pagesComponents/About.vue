@@ -48,7 +48,7 @@
                         slide
                             img.carouselPhoto(src="~/assets/img/about/carousel/9.jpg" alt="Antonov")
 
-
+        h1 {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
         .descriptionAbout
             img.photo.left(src="~/assets/img/about/skurlov.png" alt="Antonov")
             .text
