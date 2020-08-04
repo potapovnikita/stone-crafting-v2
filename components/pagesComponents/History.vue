@@ -2,7 +2,7 @@
     .common-container.history-container
         h1(v-html="lang === 'ru' ? 'История бренда' : 'Brand history'")
         .tabs
-            .tab(v-for="(item, index) in history" :class="{'active': activeTab === index}" @click="activeTab = index") {{item.year}}
+            .tab(v-for="(item, index) in history" :class="{'active': activeTab === index}" @click="historyClick(index)") {{item.year}}
 
         .descriptionHistory(v-for="(item, index) in history")
             img.photo(v-if="item.img && !item.video" :src="getImg(item.img)" :class="{left: index%2 === 0}")
@@ -30,6 +30,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import zenscroll from 'zenscroll'
 
 import History from '~/assets/staticData/history.json'
 
@@ -48,6 +49,12 @@ export default {
         ]),
     },
     methods: {
+        historyClick(index) {
+            this.activeTab = index
+            const descriptionsHistory = document.querySelectorAll('.descriptionHistory');
+
+            zenscroll.center(descriptionsHistory[index])
+        },
         getImg(url) {
             const imageUrl = require('~/assets/' + `${url}`)
             return url ? `${imageUrl}` : ''
@@ -165,15 +172,16 @@ export default {
             .ception
                 line-height 1.2
 
-
-
-
     .tabs
-        display inline-flex
-        justify-content center
-        margin-bottom 40px
-        flex-direction row
-        flex-wrap wrap
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        margin: auto 0;
 
         .tab
             cursor pointer
@@ -181,9 +189,10 @@ export default {
             font-size $FontSize3
             opacity 0.8
             transition all .3s ease
-            border 1px solid #120000
+            border 1px solid rgba(255, 255, 255, .0);
             border-left none
             border-right none
+            margin-bottom 5px
 
             &:hover
                 border 1px solid white
