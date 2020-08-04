@@ -97,12 +97,11 @@ export default {
         &:nth-child(even)
             flex-direction row-reverse
 
-        &.reverse
             @media only screen and (max-width 660px)
                 flex-direction column-reverse
 
         @media only screen and (max-width 660px)
-            flex-direction column
+            flex-direction column-reverse
             align-items: center
             margin-bottom 30px
 
