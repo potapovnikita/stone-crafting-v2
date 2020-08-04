@@ -11,7 +11,7 @@
 
             .photo(v-if="item.img && item.video" :class="{left: index%2 === 0}")
                 client-only
-                    carousel(:navigationEnabled="true" :perPage="1" paginationActiveColor="#b0a74a" :autoplay="true" :autoplayHoverPause="true" :loop="true")
+                    carousel(:perPage="1" paginationActiveColor="#b0a74a" :autoplay="true" :autoplayHoverPause="true" :loop="true")
                         slide
                             img.carouselPhoto(:src="getImg(item.img)")
                         slide
@@ -86,9 +86,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.VueCarousel-navigation-button
-    color white !important
-    z-index 1
 
 .history-container
     h1
