@@ -317,10 +317,11 @@
             const ro = new ResizeObserver(entries => {
                 for (let entry of entries) {
                     const height = entry.contentBoxSize
-                        ? entry.contentBoxSize.height
+                        ? entry.contentBoxSize[0].blockSize
                         : entry.contentRect.height
                     console.log(height)
-                    if (Math.floor(height) === 6582) {
+                    console.log(entry)
+                    if (Math.floor(height) > 6582) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();
                     }
@@ -344,10 +345,7 @@
         .collections-blocks.desktop
             position relative
             max-width 1200px
-            margin: 0 auto;
-
-            @media only screen and (min-width 1500px)
-                left calc(50% - 600px)
+            margin: 0 auto
 
             &.hovered
                 .item:not(.hovered)

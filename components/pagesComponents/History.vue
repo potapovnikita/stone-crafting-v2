@@ -11,7 +11,7 @@
 
             .photo(v-if="item.img && item.video" :class="{left: index%2 === 0}")
                 client-only
-                    carousel(:perPage="1" paginationActiveColor="#b0a74a" :autoplay="true" :autoplayHoverPause="true" :loop="true")
+                    carousel(:navigationEnabled="false" :perPage="1" paginationActiveColor="#b0a74a" :autoplay="true" :autoplayHoverPause="true" :loop="true")
                         slide
                             img.carouselPhoto(:src="getImg(item.img)")
                         slide
@@ -23,6 +23,7 @@
                 .title(v-if="item.name" v-html="lang === 'ru' ? item.name : item.nameEng")
                 .year {{item.year}}
                 .ception(v-html="lang === 'ru' ? item.text : item.textEng")
+                .addText(v-if="item.afterText" v-html="lang === 'ru' ? item.afterText : item.afterTextEng")
 
 
 
@@ -81,11 +82,27 @@ export default {
         descriptionsHistory.forEach(desc => {
             showDesc.observe(desc);
         })
+
+        // let left = document.getElementsByClassName('VueCarousel-navigation-button VueCarousel-navigation-prev')
+        // let right = document.getElementsByClassName('VueCarousel-navigation-button VueCarousel-navigation-next')
+        // var leftInt = setInterval(() => {
+        //     if (left[0] && right[0]) {
+        //         clearInterval(leftInt);
+        //         left[0].innerHTML = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAYAAAAHbrgUAAAAAXNSR0IArs4c6QAAAMNJREFUWAntlcERgzAMBO1UQAkpgRLSKaVAB0kJKQEqMCfG9+Vn5ZHVjOYYeJxZTqKU5GqtTepVPSdbl9LN39Kob+oBZBhvbvNd13kEMBeBKLDnhF6oSTuBY8ONHzdGLeZMxW4fH7ZwEGp2O4Fjt48ft/8dtb5otpizXnmB84eV8ayOH0vU4vupKmMOcRGHhIMHCUiYgJVMQMIErGQCEiZgJROQMAErmYCECVjJxB2Jhx9maK31I5+X+lBX9W9KmXja+QTqI6yJ9reXAwAAAABJRU5ErkJggg=="/>`;
+        //         right[0].innerHTML = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAYAAAAHbrgUAAAAAXNSR0IArs4c6QAAALRJREFUWAntlMENhDAMBFMCJVACJdEZpUAH0Akl5NaIlVD+MUg3liyTDxsmE0qtdVKv6qG8UQre1FG7On8TEao+1FFsAhJFHuDE9TeAhH+KkICECXjiBCRMwBMnIGECnjgBCRPwxIkvkjh1LFG7N5c2FbpE8l1zWnAEKXRxsibhOfTBfkuHcAjXlwBXjavW17Dm7QiHcI0SfZcIh3B9DWve/r/CBQh9/fyKcM9T0AbG5zrz+QcZsbUbjCobhwAAAABJRU5ErkJggg=="/>`;
+        //     }
+        // }, 1000)
     }
 }
 </script>
 
 <style lang="stylus">
+//.VueCarousel-navigation-button.VueCarousel-navigation-prev,
+//.VueCarousel-navigation-button.VueCarousel-navigation-next
+//    img
+//        width 15px
+//    @media only screen and (max-width 660px)
+//        display none
 
 .history-container
     h1
@@ -166,8 +183,10 @@ export default {
                 border-right none
                 border-bottom none
 
-            .ception
+            .ception,
+            .addText
                 line-height 1.2
+                margin-bottom 20px
 
     .tabs
         display: inline-flex;
