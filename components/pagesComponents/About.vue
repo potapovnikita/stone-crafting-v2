@@ -46,10 +46,12 @@
                         slide
                             img.carouselPhoto(src="~/assets/img/about/carousel/7.jpg" alt="Antonov")
                         slide
-                            video.carouselPhoto(preload="auto" controls autoplay muted playsinline)
-                                source(src="~/assets/img/about/carousel/8.mp4" type="video/mp4" style="zIndex: '-1'")
+                            img.carouselPhoto(src="~/assets/img/about/carousel/8.jpg" alt="Antonov")
                         slide
-                            img.carouselPhoto(src="~/assets/img/about/carousel/9.jpg" alt="Antonov")
+                            video.carouselPhoto(preload="auto" controls autoplay muted playsinline)
+                                source(src="~/assets/img/about/carousel/9.mp4" type="video/mp4" style="zIndex: '-1'")
+                        slide
+                            img.carouselPhoto(src="~/assets/img/about/carousel/10.jpg" alt="Antonov")
 
         h2 {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
         .descriptionAbout

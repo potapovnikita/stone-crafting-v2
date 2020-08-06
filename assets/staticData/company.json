@@ -141,6 +141,8 @@
         "name": "На Урале создали тореадора из камней, которых уже нет в природе.",
         "background": "img/articles/e1.png"
       },
+
+
         {
             "link": "/articles/statya_antonov.pdf",
             "name": "Алексей Антонов – уральский художник-камнерез, продолжатель дела Фаберже и Денисова – Уральского.",
@@ -153,6 +155,8 @@
             "nameEng": "Tatyana Faberge on the collection of figures of 1812 by Alexey Antonov.",
             "background": "img/articles/tatiana_faberje.png"
         },
+
+
         {
             "link": "https://ru.rbth.com/watch/429-urals-stone-cutters",
             "name": "$1 млн за фигуру: как работают современные камнерезы (ФОТО)",

@@ -1,15 +1,15 @@
 [
     {
         "id": "torero",
-        "name": "Тореадор (Новый!)",
+        "name": "Тореадор",
         "img": "img/stone-art/historical/torero/preview/1.jpg",
         "shortDesc": "Камнерезная и ювелирная скульптура.",
         "shortDescEng": "Stone carving and jewelry sculpture.",
-        "description": "<i>Камнерезная и ювелирная скульптура.</i>",
-        "about": "<b>Камни:</b> кремний, кахолонг, яшма, гранат, долерит, родусит, хрусталь, родонит, соколиный глаз. <br><br> <b>Металл:</b> бронза, серебро, золото, серебрение, золочение. <br><br> <b>Год создания:</b> 2019.",
+        "description": "<i>Камнерезная и ювелирная скульптура.</i>Это самая большая в мире скульптура, выполненная из\nдрагоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.<br><br>Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в\nвысоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли.\nЗавершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась\nбрендом ANTONOV более 2-х лет.",
+        "about": "<b>Камни:</b> кахолонг, яшма, гранат, долерит, родонит, кристалл, кремний, родонит, соколиный глаз. <br><br> <b>Металл:</b> бронза, серебро, золото, серебрение, золочение. <br><br> <b>Год создания:</b> 2019.",
         "nameEng": "Torero (new!)",
-        "descriptionEng": "<i>Stone carving and jewelry sculpture.</i>",
-        "aboutEng": "<b>Stones:</b>  silicon, cacholong, jasper, garnet, dolerite, rhodusite, crystal, rhodonite, falcon eye. <br><br> <b>Metals:</b> bronze, silver, gold, silvering, gilding. <br><br> <b>Year of creation:</b> 2019.",
+        "descriptionEng": "<i>Stone carving and jewelry sculpture.</i> This is the largest stone carving figure in the world. <br><br>The unique technique invented by our company made it possible to create works over a meter in height.\nThe Toreador was created for an exhibition at the Louvre in 2019. The detail and realism in the sculpture\nof this height is a real breakthrough in the industry.<br><br>The work was created for more than 2 years by the ANTONOV brand.",
+        "aboutEng": "<b>Stones:</b>  cacholong, jasper, garnet, dolerite, rhodonite, crystal, silicon, rhodonite, falcon eye. <br><br> <b>Metals:</b> bronze, silver, gold, silvering, gilding. <br><br> <b>Year of creation:</b> 2019.",
         "video": "video/gallery/toreo.mp4",
         "background": "img/stone-art/historical/torero/1.png",
         "imagesFull": [
@@ -93,7 +93,7 @@
     },
     {
         "id": "jokerNew",
-        "name": "Джокер (Новый!)",
+        "name": "Джокер",
         "img": "img/stone-art/historical/jokerNew/preview/1.jpg",
         "shortDesc": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
         "shortDescEng": "A playing card with image of a court jester.",

@@ -18,11 +18,9 @@
 
 
             .column.address_column
-                .title {{lang === 'ru' ? 'Адреса салонов' : 'Addresses of salons' }}:
+                //.title {{lang === 'ru' ? 'Адреса салонов' : 'Addresses of salons' }}:
                 .addresses
-                    .item {{lang === 'ru' ? contacts.addressRu : contacts.addressEng}}
-                    .item {{lang === 'ru' ? contacts.addressRu : contacts.addressEng}}
-                    .item {{lang === 'ru' ? contacts.addressRu : contacts.addressEng}}
+                    .item(v-for="address in contacts.adresses" v-html="lang === 'ru' ? address.addressRu : address.addressEng")
 
         .copyright © Stone-crafting House by Alexey Antonov
 
@@ -55,7 +53,6 @@
 
         }
     }
-
 </script>
 
 <style lang="stylus">
@@ -115,7 +112,7 @@
                 display flex
                 flex-direction column
                 .item
-                    margin-bottom 5px
+                    margin-bottom 10px
 
                     &.policy
                         margin-top 10px

@@ -27,11 +27,38 @@
             ...mapState('localization', [
                 'lang',
             ]),
+            ...mapState('pagePreload', [
+                'load',
+            ]),
         },
+        mounted() {
+            var count = 0;
+            var int = setInterval(() => {
+                if (!this.load) {
+                    var videoHeight = document.getElementsByTagName('video')[0].clientHeight;
+                    var wrapper = document.getElementsByClassName('video-wrapper')[0];
+                    var section = document.getElementsByClassName('video-section')[0];
+                    var footer = document.getElementsByClassName('footer_container')[0];
+                    if (videoHeight && footer && section && wrapper) {
+                        wrapper.style.height = videoHeight + 'px';
+                        section.style.height = videoHeight + 'px';
+                        footer.classList.add('footer-add');
+                        count++;
+                        if (count > 5) clearInterval(int);
+                    }
+                }
+
+            }, 1000)
+        }
     }
 </script>
 
 <style lang="stylus">
+    .footer-add
+        margin-top: -150px !important
+
+        @media only screen and (max-width 767px)
+            margin-top: -70px !important
     .main-container
         zoom 1
         &.main-container
