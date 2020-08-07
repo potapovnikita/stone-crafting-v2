@@ -5,7 +5,7 @@
     "adresses": [
         {
             "addressRu": "Адрес Салона ANTONOV:<br>Екатеринбург. Международный центр искусств \"Главный Проспект\"",
-            "addressEng": "Address of ANTONOV Boutique:<br>Yekaterinburg. International Center for the Arts \"Glavny Prospekt\":<br><br>"
+            "addressEng": "Address of ANTONOV Boutique:<br>Yekaterinburg. International Center for the Arts \"Glavny Prospekt\"<br><br>"
         },
         {
             "addressRu": "Адрес музея Камнерезного Дома Антонова:<br>Екатеринбург. Международный центр искусств \"Главный Проспект\"",
@@ -14,6 +14,8 @@
     ],
     "inst": "https://www.instagram.com/stone.crafting.house/",
     "instName": " stone.crafting.house",
+    "youtube": "https://www.youtube.com/channel/UCMw8wxXahBkakZ1lvgP5AAw/featured",
+    "youtubeName": " stone.crafting.house",
     "peoples": [
         {
             "name": "Антонова Ирина Алексеевна",
