@@ -7,7 +7,8 @@
             a.item(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
 
         .contact
-            .caption {{ lang === 'ru' ? 'E-mail ' : 'E-mail' }}:
+            .caption
+                nobr {{ lang === 'ru' ? 'E-mail ' : 'E-mail' }}:
             a.item(v-if="contacts.email" :href="'mailto:' + contacts.email") {{contacts.email}}
 
         .descriptionContact
@@ -16,8 +17,9 @@
                 .text
                     .name(v-html="lang === 'ru' ? item.name : item.nameEng")
                     .role(v-html="lang === 'ru' ? item.role : item.roleEng")
-                    a.phone(:href="'tel:' + item.phone") {{item.phone}}
-                        |
+                    a.phone(v-if="item.phone" :href="'tel:' + item.phone") {{item.phone}}
+                        .icon
+                            Whatsapp
                     a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
 
         .addresses
@@ -30,14 +32,18 @@
 <script>
 import { mapState } from 'vuex'
 import Contacts from '~/assets/staticData/contacts.json'
+import Whatsapp from '~/assets/img/contacts/whatsapp.svg'
+
 
 export default {
     data() {
         return {
             contacts: Contacts,
+
         }
     },
     components: {
+        Whatsapp,
     },
     computed: {
         ...mapState('localization', [
@@ -64,6 +70,7 @@ export default {
     .contact,
     .addresses
         display flex
+        flex-wrap wrap
         margin 0 auto
         margin-bottom 30px
         width 800px
@@ -73,9 +80,14 @@ export default {
             width 100%
             justify-content center
 
+        @media only screen and (max-width 400px)
+            flex-direction column
+            align-items center
+
         .caption
             display inline-flex
             margin-right 15px
+            margin-bottom 10px
 
     .addresses
         flex-direction column
@@ -103,6 +115,7 @@ export default {
             align-items center
             width 800px
             margin-bottom 40px
+            padding 0 15px
 
             @media only screen and (max-width 1024px)
                 width 500px
@@ -127,7 +140,16 @@ export default {
                 font-size $FontSize16
 
                 @media only screen and (max-width 600px)
-                    width 300px
+                    max-width 300px
+                    padding 0 15px 20px
+                    font-size $FontSizeMenu
+
+                @media only screen and (max-width 400px)
+                    min-width 200px
+                    max-width 200px
+
+                @media only screen and (max-width 350px)
+                    font-size 14px
 
 
                 .name
@@ -139,6 +161,14 @@ export default {
                 .email
                     display block
                     margin-bottom 10px
+                .phone
+                    display inline-flex
+                    align-items center
+                    .icon
+                        margin-left 15px
+                        svg
+                            width 25px
+                            height 25px
 
 
 </style>
