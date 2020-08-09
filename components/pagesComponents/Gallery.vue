@@ -6,6 +6,8 @@
                     .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
                     video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted" playsinline)
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
+                    //video(v-if="currentProduct.video && isMobile" loop="true" preload="auto" autoplay="true" muted="muted" playsinline)
+                        source(:src="getImg(currentProduct.videoMob ? currentProduct.videoMob : currentProduct.video)" type="video/mp4")
 
             .description-wrapper
                 .column
@@ -34,13 +36,6 @@
 
     import Museum from '~/assets/staticData/museum.json'
 
-    // if (process.browser) {
-    //     window.onNuxtReady(() => {
-    //         const smHousingPic = document.querySelector('.image-prepicture')
-    //         if (smHousingPic) smHousingPic.classList.add('faded')
-    //     })
-    // }
-
     /**
      * Плавная загрузка изображений
      */
@@ -60,6 +55,9 @@
                 // по id изделия из url находим нужное изделие
                 return this.products
                     .find(item => item.id === this.$route.path.split('/').pop())
+            },
+            isMobile() {
+                return process.browser && document.documentElement.clientWidth < 769
             },
         },
         methods: {
