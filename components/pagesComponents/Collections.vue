@@ -319,8 +319,8 @@
                     const height = entry.contentBoxSize
                         ? entry.contentBoxSize[0].blockSize
                         : entry.contentRect.height
-                    console.log(height)
-                    console.log(entry)
+                    // console.log(height)
+                    // console.log(entry)
                     if (Math.floor(height) > 6582) {
                         ro.unobserve(entry.target) // прекращаем наблюдение, когда ширина элемента достигла 500px
                         this.init();

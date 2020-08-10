@@ -147,7 +147,8 @@
 
                 h1
                     position absolute
-                    bottom 0
+                    //bottom 0
+                    top 70vh
                     z-index 2
 
         .description-wrapper

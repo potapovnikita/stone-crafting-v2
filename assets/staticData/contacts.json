@@ -1,15 +1,19 @@
 {
     "phoneMain": "+7 (922)119-71-11",
-    "phones": "+7&nbsp;(922)&nbsp;119&#8209;71&#8209;11, +7&nbsp;(965)&nbsp;505&#8209;00&#8209;33",
+    "phoneMain2": "+7 (965)505-00-33",
     "email": "stone-craftinghouse@mail.ru",
     "adresses": [
         {
-            "addressRu": "Адрес Салона ANTONOV:<br>Екатеринбург. Международный центр искусств \"Главный Проспект\"",
-            "addressEng": "Address of ANTONOV Boutique:<br>Yekaterinburg. International Center for the Arts \"Glavny Prospekt\"<br><br>"
+            "addressNameRu": "Адрес Салона ANTONOV",
+            "addressNameEng": "Address of ANTONOV Boutique",
+            "addressRu": "Екатеринбург. Международный центр искусств \"Главный Проспект.\"",
+            "addressEng": "Yekaterinburg. International Center for the Arts \"Glavny Prospekt.\""
         },
         {
-            "addressRu": "Адрес музея Камнерезного Дома Антонова:<br>Екатеринбург. Международный центр искусств \"Главный Проспект\"",
-            "addressEng": "Address of the Museum of the Stone crafting House by Antonov:<br>Yekaterinburg. International Center for the Arts \"Glavny Prospekt\""
+            "addressNameRu": "Адрес музея Камнерезного Дома Антонова",
+            "addressNameEng": "Address of the Museum of the Stone crafting House by Antonov",
+            "addressRu": "Екатеринбург. Международный центр искусств \"Главный Проспект.\"",
+            "addressEng": "Yekaterinburg. International Center for the Arts \"Glavny Prospekt.\""
         }
     ],
     "inst": "https://www.instagram.com/stone.crafting.house/",

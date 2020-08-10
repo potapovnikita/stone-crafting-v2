@@ -3,8 +3,10 @@
         h1(v-html="lang === 'ru' ? 'Контакты' : 'Contacts'")
 
         .contact
-            .caption {{lang === 'ru' ? 'Телефон' : 'Phone number'}}:
-            a.item(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
+            .caption {{lang === 'ru' ? 'Телефоны' : 'Phone numbers'}}:
+            .item
+                a(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
+                a(:href="'tel:' + contacts.phoneMain2") {{contacts.phoneMain2}}
 
         .contact
             .caption
@@ -17,14 +19,32 @@
                 .text
                     .name(v-html="lang === 'ru' ? item.name : item.nameEng")
                     .role(v-html="lang === 'ru' ? item.role : item.roleEng")
-                    a.phone(v-if="item.phone" :href="'tel:' + item.phone") {{item.phone}}
+                    a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
                         .icon
                             Whatsapp
                     a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
 
         .addresses
-            .item(v-for="address in contacts.adresses" v-html="lang === 'ru' ? address.addressRu : address.addressEng")
+            h3(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
+            .itemAdd(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
 
+        .videoVirtual
+            iframe(
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/kKuR4VxWJ44"
+                frameborder="0"
+                allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                :hl="lang === 'ru' ? 'ru' : 'en'"
+            )
+
+        .addresses
+            h3(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
+            .itemAdd(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
+
+        .museumButton
+            .button(@click="$nuxt.$router.push({path:`/virtual-museum`})") {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
 
 
 </template>
@@ -70,11 +90,16 @@ export default {
     .contact,
     .addresses
         display flex
+        justify-content center
         flex-wrap wrap
         margin 0 auto
         margin-bottom 30px
         width 800px
         font-size $FontSize2
+
+        h3
+            text-align center
+            margin-bottom 15px
 
         @media only screen and (max-width 1024px)
             width 100%
@@ -89,11 +114,21 @@ export default {
             margin-right 15px
             margin-bottom 10px
 
+        .item
+            display flex
+            flex-direction column
+            align-items flex-start
+
+            a
+                margin-bottom 10px
+
     .addresses
         flex-direction column
-        text-align  left
-        .item
+        .itemAdd
             margin-bottom 20px
+            display flex
+            justify-content center
+            text-align center
 
 
     .descriptionContact
@@ -112,6 +147,7 @@ export default {
         .people
             display flex
             flex-direction row
+            justify-content center
             align-items center
             width 800px
             margin-bottom 40px
@@ -165,10 +201,39 @@ export default {
                     display inline-flex
                     align-items center
                     .icon
-                        margin-left 15px
                         svg
                             width 25px
                             height 25px
 
+    .museumButton
+        .button
+            margin-bottom 60px
+            font-size $FontSize3
+            width 260px
+            text-align center
+            cursor pointer
+            border 1px solid white
+            padding 20px 30px
+            color white
+            background-color inherit
+            transition background-color .3s ease, color .3s ease
+
+            &:hover
+                color black
+                background-color white
+
+    .videoVirtual
+        margin-bottom 30px
+
+        video
+        iframe
+            background black
+            height 400px
+            max-width 700px
+            @media only screen and (max-width 500px)
+                height 250px
+
+            @media only screen and (max-width 400px)
+                height 210px
 
 </style>

@@ -9,8 +9,8 @@
                 a.item(:href="'tel:' + contacts.phoneMain" :class="{reverse: reverse}") {{contacts.phoneMain}}
                 .item {{contacts.email}}
                 .item.icons
-                    a.icon.youtube(:href="contacts.youtube" :class="{reverse: reverse}")
-                    a.icon.instagram(:href="contacts.inst" :class="{reverse: reverse}")
+                    a.icon.youtube(:href="contacts.youtube" target="_blank" :class="{reverse: reverse}")
+                    a.icon.instagram(:href="contacts.inst" target="_blank" :class="{reverse: reverse}")
                 .item.policy
                     nuxt-link(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'" :class="{reverse: reverse}")
 
