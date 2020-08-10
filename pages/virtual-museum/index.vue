@@ -12,7 +12,7 @@
     import Header from '~/components/Header.vue'
     import Footer from '~/components/Footer.vue'
     import SplitLine from '~/components/SplitLine.vue'
-    
+
     export default {
         components: {
             PageContainer,
@@ -25,5 +25,6 @@
 </script>
 
 <style lang="stylus">
-
+    body
+        background-color blackRed
 </style>

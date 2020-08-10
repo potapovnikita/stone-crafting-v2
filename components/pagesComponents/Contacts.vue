@@ -150,11 +150,16 @@ export default {
             justify-content center
             align-items center
             width 800px
+            margin 0 auto
             margin-bottom 40px
             padding 0 15px
 
             @media only screen and (max-width 1024px)
                 width 500px
+                justify-content center
+
+            @media only screen and (max-width 600px)
+                width 100%
                 justify-content center
 
             .photo
@@ -176,7 +181,8 @@ export default {
                 font-size $FontSize16
 
                 @media only screen and (max-width 600px)
-                    max-width 300px
+                    max-width 250px
+                    min-width 240px
                     padding 0 15px 20px
                     font-size $FontSizeMenu
 

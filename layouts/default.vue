@@ -18,6 +18,10 @@ html {
     -webkit-box-sizing: border-box;
 }
 
+body {
+    background-color: #120000;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;

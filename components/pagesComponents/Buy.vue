@@ -154,8 +154,13 @@
                 this.setActive(this.shop[0].id)
             }
 
-            this.isAutn = new Cookies().get('token')
+            this.isAuth = new Cookies().get('token')
+            document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
+            window.scrollTo(0, 0);
         },
+        destroyed() {
+            document.getElementsByTagName('body')[0].style.backgroundColor = '#120000'
+        }
     }
 </script>
 

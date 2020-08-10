@@ -4,7 +4,7 @@
         // for desktop version
         .lds-dual-ring(v-if="!isInit")
         .collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
-            .item.itemBlock(v-for="(item, index) in museum" :key="item.id")
+            .item.itemBlock(v-for="(item, index) in museum" :key="item.id" @click="setCurrentScroll()")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
                     .media
                         .preview
@@ -47,6 +47,7 @@
     import { getImgExternal } from '~/plugins/getUrl'
     import Museum from '~/assets/staticData/museum.json'
     import { XIcon  } from 'vue-feather-icons'
+    import Cookies from 'universal-cookie';
 
     export default {
         data() {
@@ -56,6 +57,9 @@
             }
         },
         methods: {
+            setCurrentScroll() {
+                new Cookies().set('scroll', window.pageYOffset)
+            },
             closeDescription(e) {
                 e.stopPropagation();
                 e.preventDefault();
@@ -299,6 +303,10 @@
                     }, false)
                 }
                 this.isInit = true;
+                const scroll = new Cookies().get('scroll')
+                if (scroll)  {
+                    window.scrollTo(0, scroll);
+                }
             },
         },
         components: {

@@ -122,6 +122,9 @@
     $sizeBig = 121px
     $sizeMin = 96px
 
+    body {
+        background-color: #faf3ed;
+    }
 
     /*.faded {
         opacity: 0 !important;

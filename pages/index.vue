@@ -50,5 +50,7 @@ export default {
 
 
 <style lang="stylus">
+    body
+        background-color blackRed
 </style>
 
