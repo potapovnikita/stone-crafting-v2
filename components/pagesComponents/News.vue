@@ -82,9 +82,9 @@
                         console.error("Возникла ошибка", err.message);
                     } else {
                         console.log(res)
-                        // оставляем только посты с тэгом "КАМНЕРЕЗНЫЙДОМ"
+                        // оставляем только посты с тэгом "stonecraftinghousebyantonov"
                         res.data && res.data.forEach(item => {
-                            if (item.caption && item.caption.toLowerCase().match(/#камнерезныйдом/gi)) this.news.push(item)
+                            if (item.caption && item.caption.toLowerCase().match(/#stonecraftinghousebyantonov/gi)) this.news.push(item)
                         })
                         if (res.paging && res.paging.next) this.getNews(USER_ID, TOKEN, res.paging.next)
                     }

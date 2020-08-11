@@ -32,7 +32,7 @@
             iframe(
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/kKuR4VxWJ44"
+                src="https://www.youtube.com/embed/kKuR4VxWJ44?rel=0&showinfo=0"
                 frameborder="0"
                 allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -174,13 +174,19 @@ export default {
                     min-height 100px
 
             .text
-                min-width 300px
+                min-width 700px
+                max-width 700px
                 text-align left
                 padding 0 30px 20px
                 font-family $IntroRegular
                 font-size $FontSize16
 
-                @media only screen and (max-width 600px)
+                @media only screen and (max-width 1024px)
+                    min-width 500px
+                    max-width 500px
+                    justify-content center
+
+                @media only screen and (max-width 700px)
                     max-width 250px
                     min-width 240px
                     padding 0 15px 20px

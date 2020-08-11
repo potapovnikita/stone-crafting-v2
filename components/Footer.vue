@@ -17,9 +17,8 @@
 
 
             .column.address_column
-                //.title {{lang === 'ru' ? 'Адреса салонов' : 'Addresses of salons' }}:
                 .addresses
-                    .item(v-for="address in contacts.adresses" v-html="lang === 'ru' ? address.addressRu : address.addressEng")
+                    .item(v-for="(address, index) in contacts.adresses" v-if="index === 0" v-html="lang === 'ru' ? address.addressRu : address.addressEng")
 
         .copyright © Stone-crafting House by Alexey Antonov
 
