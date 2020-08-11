@@ -39,6 +39,7 @@
 <script>
     import { mapState } from 'vuex'
     import Virtual from '~/assets/staticData/virtual.json'
+    import zenscroll from 'zenscroll'
 
     export default {
         data() {
@@ -67,6 +68,9 @@
                 'lang',
             ]),
         },
+        mounted() {
+
+        }
     }
 </script>
 

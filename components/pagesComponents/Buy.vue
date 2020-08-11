@@ -52,6 +52,7 @@
     import Cookies from 'universal-cookie';
     import Shop from '~/assets/staticData/shop.json'
     import { getImgExternal } from '~/plugins/getUrl'
+    import zenscroll from "zenscroll";
 
     export default {
         data() {
@@ -157,6 +158,8 @@
             this.isAuth = new Cookies().get('token')
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
+            const header = document.getElementById('container')
+            zenscroll.to(header)
         },
         destroyed() {
             document.getElementsByTagName('body')[0].style.backgroundColor = '#120000'

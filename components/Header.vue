@@ -12,13 +12,13 @@
                     span(@click="changeLocal('eng')" :class="{'active': lang === 'eng'}") ENG
 
             label
-                input(type="checkbox")
+                input#inputMenu(type="checkbox")
 
                 span.hamburger_menu(:class="{'reverse': reverse}")
                     span.hamburger(:class="{'reverse': reverse}")
-                .hamburger_menu-items_container
+                .hamburger_menu-items_container()
                     nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
-                        span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+                        span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}" @click="clickMenu(item.link)")
             .menu#menu(:class="{'reverse': reverse}")
                 .menu_row
                     .menu_item(v-for="item in menu")
@@ -57,6 +57,13 @@
             ...mapMutations({
                 changeLocal: 'localization/changeLocal'
             }),
+            clickMenu(url) {
+                console.log(url)
+                console.log('window.location.pathname', window.location.pathname)
+                if (url === window.location.pathname) {
+                    document.getElementById('inputMenu').click()
+                }
+            },
             isScrolled(el) {
                 return el.scrollTop > 0;
             },
