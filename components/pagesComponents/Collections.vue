@@ -2,7 +2,7 @@
     .common-container.collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
         // for desktop version
-        .lds-dual-ring(v-if="!isInit")
+        .lds-dual-ring(v-show="!isInit")
         .collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
             .item.itemBlock(v-for="(item, index) in museum" :key="item.id" @click="setCurrentScroll()")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
@@ -17,27 +17,27 @@
                                 .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
                             .button(@click="this.$router.push({path:`/gallery/${item.id}`})") Подробнее
-                            .closeIcon(v-if="isVisibleClose" @click="closeDescription($event)")
+                            .closeIcon(v-show="isVisibleClose" @click="closeDescription($event)")
                                 xIcon(size="1.5x" class="custom-class")
 
         // for mobile version
         .collections-blocks.mobile(:style="{opacity: isInit ? 1 : 0  }")
-            .item-column
-                nuxt-link.item(v-for="(item, index) in museum"
-                        v-touch:swipe.left="swipe"
-                        :key="item.id"
-                        :to="{path: `/gallery/${item.id}`}")
-                    .points
-                        .point.active
-                        .point
-                    .image
-                        img(:src="getImg(item.imagesPreview[0])")
-                    .description(v-touch:swipe.right="swipe")
-                        .blur
-                        .title {{lang === 'ru' ? item.name : item.nameEng}}
-                        .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
+            client-only
+                .item-column
+                    nuxt-link.item(v-for="(item, index) in museum"
+                            v-touch:swipe.left="swipe"
+                            :key="item.id"
+                            :to="{path: `/gallery/${item.id}`}")
+                        .points
+                            .point.active
+                            .point
+                        .image
+                            img(:src="getImg(item.imagesPreview[0])")
+                        .description(v-touch:swipe.right="swipe")
+                            .blur
+                            .title {{lang === 'ru' ? item.name : item.nameEng}}
+                            .text(v-html="lang === 'ru' ? item.shortDesc : item.shortDescEng")
 
-        //RandomGallery
 
 </template>
 
