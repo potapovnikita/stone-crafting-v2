@@ -5,6 +5,7 @@ export const state = () => ({
     lang: getLang() || ''
 })
 
+
 export const mutations = {
     changeLocal (state, lang) {
         state.lang = lang
