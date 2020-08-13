@@ -11,23 +11,3 @@ export const mutations = {
         setLang(lang)
     }
 }
-const gulp = require('gulp');
-const GulpSSH = require('gulp-ssh')
-
-const config = {
-    host: '31.31.196.159',
-    port: 22,
-    username: 'u0507339',
-    password: 's!Q2L6zE',
-}
-
-const gulpSSH = new GulpSSH({
-    ignoreErrors: false,
-    sshConfig: config
-})
-
-gulp.task('deploy:production', function () {
-    return gulp
-        .src(['dist/**/*'])
-        .pipe(gulpSSH.dest('www/stone-crafting.com/'))
-})
