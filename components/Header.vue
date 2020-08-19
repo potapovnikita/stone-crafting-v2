@@ -85,8 +85,15 @@
             const pageSafari = document.body
             const header = document.getElementById('header')
 
+
             if (!this.lang) {
-                const lang = await this.getLangSrv()
+                const navigator = window.navigator
+                let lang= '';
+                if (navigator && navigator.language) {
+                    if (navigator.language.slice(0, 2) === 'ru') lang = 'ru'
+                    else lang = 'eng'
+                } else lang = await this.getLangSrv()
+
                 this.changeLocal(lang)
             }
 
