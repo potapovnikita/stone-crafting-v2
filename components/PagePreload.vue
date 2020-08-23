@@ -1,6 +1,6 @@
 <template lang="pug">
     .preload(v-if="load")
-        video#video(preload="auto" playsinline autoplay muted width="100%")
+        video#videoPreload(playsinline autoplay muted width="100%")
             source(src="~/assets/video/preload.mp4" type="video/mp4")
 
 </template>
@@ -24,7 +24,7 @@
             ]),
         },
         mounted() {
-            const vid = document.getElementById("video");
+            const vid = document.getElementById("videoPreload");
             const interval = setInterval(() => {
                 if (vid.ended) {
                     this.offLoad();
