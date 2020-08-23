@@ -4,7 +4,7 @@
                 .video-wrapper
                     h1 {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
                     .image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")
-                    video(v-if="currentProduct.video" loop="true" preload="auto" autoplay="true" muted="muted" playsinline)
+                    video#video(v-if="currentProduct.video" playsinline loop="true" autoplay="true" muted="muted")
                         source(:src="getImg(currentProduct.video)" type="video/mp4")
                     //video(v-if="currentProduct.video && isMobile" loop="true" preload="auto" autoplay="true" muted="muted" playsinline)
                         source(:src="getImg(currentProduct.videoMob ? currentProduct.videoMob : currentProduct.video)" type="video/mp4")
@@ -87,6 +87,8 @@
         },
         mounted() {
             this.activePhoto = this.getActivePhoto(0)
+            const vid = document.getElementById('video')
+            vid.play();
         },
         created() {
 
