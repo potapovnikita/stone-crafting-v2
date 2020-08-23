@@ -25,6 +25,7 @@
         },
         mounted() {
             const vid = document.getElementById("videoPreload");
+            vid.play();
             const interval = setInterval(() => {
                 if (vid.ended) {
                     this.offLoad();

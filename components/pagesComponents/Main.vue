@@ -3,7 +3,7 @@
         .video-section
             .video-wrapper
                 <!--.image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")-->
-                video(loop="true" autoplay="true" muted="muted" playsinline)
+                video#video(loop="true" autoplay="true" muted="muted" playsinline)
                     source(src="~/assets/video/main.mp4" type="video/mp4")
 
 
@@ -56,6 +56,9 @@
                 this.computedStyleFooter();
             })
             this.computedStyleFooter();
+            const vid = document.getElementById('video')
+            vid.play();
+
         }
     }
 </script>
