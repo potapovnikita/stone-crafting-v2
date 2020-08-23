@@ -3,7 +3,7 @@
         .video-section
             .video-wrapper
                 <!--.image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")-->
-                video#video(loop="true" autoplay="true" muted="muted" playsinline)
+                video#video(playsinline autoplay="true" loop="true" muted="muted")
                     source(src="~/assets/video/main.mp4" type="video/mp4")
 
 

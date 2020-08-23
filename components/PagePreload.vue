@@ -1,6 +1,6 @@
 <template lang="pug">
     .preload(v-if="load")
-        video#videoPreload(playsinline autoplay muted width="100%")
+        video#videoPreload(playsinline autoplay muted  width="100%")
             source(src="~/assets/video/preload.mp4" type="video/mp4")
 
 </template>
