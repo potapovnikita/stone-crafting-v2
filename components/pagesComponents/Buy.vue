@@ -13,6 +13,7 @@
 
         .shop_wrapper(v-if="isAuth")
             .shop_filter
+                .item(v-if="!categoriesArray.length" v-html="lang === 'ru' ? 'Категорий нет' : 'Categories is not set'")
                 .item(v-for="item in categoriesArray")
                     .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
                                     @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
@@ -22,6 +23,7 @@
                                 @click="setActive(elem.id, true)") {{ lang === 'ru' ? elem.name : elem.nameEng }}
 
             .shop_items
+                .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
                 .item(v-for="(good, index) in goodsArrayFiltered" :key="good.id")
                     .image
                         .photo(:style="{backgroundImage: getBgImg(good.photos[good.activeImgId])}"
@@ -189,6 +191,7 @@
                 })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
+                console.log('hashItem', hashItem)
                 this.setActive(hashItem || this.categoriesArray[0])
             }
         },
@@ -273,6 +276,7 @@
             width 30%
             padding 5px
             .item
+                color darkRed
                 max-width 230px
 
                 .item_inner,
@@ -303,6 +307,7 @@
                 border 1px solid darkRed
                 padding 10px
                 margin-bottom 10px
+                color darkRed
                 .image
                     width 50%
                     padding 10px
