@@ -58,7 +58,11 @@
             this.computedStyleFooter();
             const vid = document.getElementById('video')
             vid.play();
-
+        },
+        destroyed() {
+            window.removeEventListener('resize', () => {
+                this.computedStyleFooter();
+            })
         }
     }
 </script>

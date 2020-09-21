@@ -1,6 +1,6 @@
 <template lang="pug">
     page-container
-        page-preload
+        //page-preload
         Header(placeholder="true")
         main-page
         Footer

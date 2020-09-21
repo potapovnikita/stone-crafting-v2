@@ -13,52 +13,60 @@
 
         .shop_wrapper(v-if="isAuth")
             .shop_filter
-                .item(v-for="item in shop")
-                    .section_name(:class="{active: activeMenu.id === item.id}"
-                                    @click="setActive(item.id)") {{ lang === 'ru' ? item.name : item.nameEng }}
-                    .item_inner(v-if="item.innerSection"
+                .item(v-for="item in categoriesArray")
+                    .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
+                                    @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
+                    //.item_inner(v-if="item.innerSection"
                                 v-for="elem in item.innerSection"
                                 :class="{active: activeMenu.id === elem.id}"
                                 @click="setActive(elem.id, true)") {{ lang === 'ru' ? elem.name : elem.nameEng }}
 
             .shop_items
-                .item(v-for="(item, index) in activeMenu.items" :key="item.id")
+                .item(v-for="(good, index) in goodsArrayFiltered" :key="good.id")
                     .image
-                        .photo(:style="{backgroundImage: getBgImg(item.imagesFull[item.activeImgId])}"
-                                @click="setActiveImg(item, item.activeImgId + 1, index)")
+                        .photo(:style="{backgroundImage: getBgImg(good.photos[good.activeImgId])}"
+                                @click="setActiveImg(good, good.activeImgId + 1, index)")
                         .slides
-                            .img(v-for="(img, idx) in item.imagesPreview")
-                                img(:src="getImg(img)" :class="{active: idx === item.activeImgId}" @click="setActiveImg(item, idx, index)")
+                            .img(v-for="(img, idx) in good.photos")
+                                img(:src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
-                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item)")
+                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
                     .description
                         div
-                            h2(v-html="lang === 'ru' ? item.name : item.nameEng")
+                            h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
-                            .desc(v-if="item.desc" v-html="lang === 'ru' ? item.desc : item.descEng")
-                            .material(v-if="item.material" v-html="lang === 'ru' ? 'Материал: ' + item.material : 'Material: ' + item.materialEng")
-                            .size(v-if="item.size" v-html="lang === 'ru' ? 'Размер: ' + item.size : 'Size: ' + item.sizeEng")
-                            .year(v-if="item.year" v-html="lang === 'ru' ? 'Год: ' + item.year : 'Year: ' + item.yearEng")
-                            .price(v-if="item.price" v-html="lang === 'ru' ? 'Цена: ' + item.price + ' ₽' : 'Price: ' + item.price + ' ₽'")
+                            .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
+                            .material(v-if="good.material" v-html="lang === 'ru' ? 'Материал: ' + good.material : 'Material: ' + good.materialEng")
+                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size + 'мм' : 'Size: ' + good.size + 'mm'")
+                            .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.yearEng")
+                            .price(v-if="good.price" v-html="lang === 'ru' ? 'Цена: ' + good.price + ' ₽' : 'Price: ' + getDollarPrice(good.price) + ' $'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
+                            // наличие
+                            // тема
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
-                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(item)")
+                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
 
 </template>
 
 <script>
     import { mapState } from 'vuex'
     import downloadImagesAsZip from 'files-download-zip'
+    import { saveAs } from 'file-saver';
+
     import Cookies from 'universal-cookie';
     import Shop from '~/assets/staticData/shop.json'
-    import { getImgExternal } from '~/plugins/getUrl'
     import zenscroll from "zenscroll";
+    import * as fb from "@/plugins/firebase";
+    import {arrayBufferToBase64, getFilesFromData, urlToPromise} from "@/plugins/getUrl";
+    import axios from "axios";
+    import JSZip from "jszip";
+
 
     export default {
         data() {
             return {
                 shop: Shop,
-                activeMenu: [],
+                activeMenu: null,
                 activeIndex: 0,
                 activeInnerIndex: 0,
                 isAuth: null,
@@ -66,47 +74,65 @@
                 password: '',
                 curPass: '12345678',
                 errorPass: false,
+
+                categoriesArray: [],
+                goodsArray: [],
+                goodsArrayFiltered: [],
+                currency: null,
             }
         },
         methods: {
-            download(item) {
-                const imgDataArray = [];
-                item.imagesFull.forEach(i => {
-                    imgDataArray.push(this.getImg(i))
-                })
-                const zipFileName = `${this.lang === 'ru' ? 'stone-crafting images' : 'stone-crafting images'}`;
-                window.alert = () => {} // блокируем алерты - костыль для библиотеки
-                downloadImagesAsZip.execute(imgDataArray, zipFileName, () => { });
+            getDollarPrice(price) {
+                console.log('this.currency', this.currency)
+                return this.currency ? (price * this.currency).toFixed(2) : 'Price not specified'
             },
-            setActive(id, inner) {
-                if (inner) {
-                    this.shop.forEach((item) => {
-                       if (item.innerSection) {
-                           this.activeMenu = item.innerSection.find((item) => {
-                               return item.id === id
-                           })
-                       }
-                    })
+            async download(good) {
+                const zip = new JSZip();
 
-                } else {
-                    this.activeMenu = this.shop.find((item) => {
-                        return item.id === id
-                    });
-                }
-                window.location.hash = id
+                good.photos.forEach((i) => {
+                    console.log('i', i);
+                    const data = urlToPromise(i.url);
+                    zip.file(i.name, data, { binary: true });
+                })
+
+                const content = await zip.generateAsync({type:"blob"});
+                console.log(content)
+
+                saveAs(content, "stone-crafting.zip");
+                // location.href="data:application/zip;base64," + content;
+
+                // imgDataArray.push(...getFilesFromData(good.photos))
+
+                // console.log(imgDataArray)
+                // const zipFileName = `${this.lang === 'ru' ? 'stone-crafting images' : 'stone-crafting images'}`;
+                // window.alert = () => {} // блокируем алерты - костыль для библиотеки
+
+
+
+
+
+                // downloadImagesAsZip.execute(imgDataArray, zipFileName, () => { });
+            },
+            setActive(category) {
+                this.activeMenu = this.categoriesArray.find((item) => {
+                    return item.query === category.query
+                });
+                console.log('category', category)
+                window.location.hash = category.query
+
+                this.goodsArrayFiltered = this.goodsArray.filter(good => good.category.id === this.activeMenu.id)
             },
             setActiveImg(item, id, index) {
-                if (id >= item.imagesFull.length) id = 0
-                if (id < 0) id = item.imagesFull.length - 1
+                if (id >= item.photos.length) id = 0
+                if (id < 0) id = item.photos.length - 1
                 item.activeImgId = id
-                this.$set(this.activeMenu.items, index, item)
             },
-            getBgImg(url) {
-                return `url(${getImgExternal(url)})`
+            getBgImg(file) {
+                return `url(${file.url})`
             },
-            getImg(url) {
-                return getImgExternal(url)
-            },
+            // getImg(url) {
+            //     return getImgExternal(url)
+            // },
             checkPass() {
                 this.errorPass = false;
                 if (this.curPass === this.password) {
@@ -116,6 +142,37 @@
                     this.isAuth = false
                     this.errorPass = true;
                 }
+            },
+            async initApp() {
+                await fb.categoriesCollection.get().then(data => {
+                    data.forEach(doc => {
+                        let category = doc.data()
+                        category.id = doc.id
+
+                        this.categoriesArray.push(category)
+                    })
+
+                    console.log('categoriesArray', this.categoriesArray)
+
+                })
+                await fb.goodsCollection.get().then(data => {
+                    data.forEach(doc => {
+                        let good = doc.data()
+                        good.id = doc.id
+                        good.activeImgId = this.activeIndex
+
+                        this.goodsArray.push(good)
+                    })
+
+                    console.log('goodsArray', this.goodsArray)
+                })
+
+                await axios.get('https://api.exchangeratesapi.io/latest?base=RUB').then(({ data }) => {
+                    if (data.rates.USD) this.currency = data.rates.USD;
+                })
+
+                const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
+                this.setActive(hashItem || this.categoriesArray[0])
             }
         },
         computed: {
@@ -123,38 +180,13 @@
                 'lang',
             ]),
         },
-        mounted() {
-            this.shop.forEach((item) => {
-                item.items.forEach((photos) => {
-                    photos.activeImgId = this.activeIndex
-                })
-                if (item.innerSection) {
-                    item.innerSection.forEach((innerPhotos) => {
-                        innerPhotos.items.forEach((photos) => {
-                            photos.activeImgId = this.activeInnerIndex
-                        })
-                    })
-                }
-            })
+        watch: {
+            isAuth(newVal) {
+                if (newVal) this.initApp();
+            },
+        },
 
-            if (window.location.hash) {
-                const hashItem = this.shop.find(item => item.id === window.location.href.split('#')[1])
-                let hashItemInner = {}
-                this.shop.forEach((category) => {
-                    if (category.innerSection) {
-                        hashItemInner =  category.innerSection.find(item => item.id === window.location.href.split('#')[1])
-                    }
-                })
-                if (hashItem) this.setActive(hashItem.id)
-                else if (hashItemInner) this.setActive(hashItemInner.id, true)
-                else {
-                    this.setActive(this.shop[0].id)
-                }
-            }
-            else {
-                this.setActive(this.shop[0].id)
-            }
-
+        async mounted() {
             this.isAuth = new Cookies().get('token')
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
