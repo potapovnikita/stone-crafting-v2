@@ -36,11 +36,25 @@
                             h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
                             .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
+                            .themes
+                                span.title(v-html="lang === 'ru' ? 'Темы: ' : 'Themes: '")
+                                .theme
+                                    span(v-if="good.themes.length" v-for="theme in good.themes" v-html="lang === 'ru' ? theme.name : theme.nameEng")
+                                    span(v-if="!good.themes.length" v-html="lang === 'ru' ? + 'Темы не указаны' :  'Themes not set'")
+
                             .material(v-if="good.material" v-html="lang === 'ru' ? 'Материал: ' + good.material : 'Material: ' + good.materialEng")
                             .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size + 'мм' : 'Size: ' + good.size + 'mm'")
                             .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.yearEng")
                             .price(v-if="good.price" v-html="lang === 'ru' ? 'Цена: ' + good.price + ' ₽' : 'Price: ' + getDollarPrice(good.price) + ' $'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
+                            .stock(v-if="good.inStock" v-html="lang === 'ru' ? 'Наличие: ' + good.inStock.name : 'Existence: ' + good.inStock.nameEng")
+                            .stock(v-else v-html="lang === 'ru' ? 'Наличие: Не указано' : 'Existence: Not set'")
+                            .cities
+                                span.title(v-html="lang === 'ru' ? 'Города: ' : 'Cities: '")
+                                .city
+                                    span(v-if="good.cities.length" v-for="city in good.cities" v-html="lang === 'ru' ? city.name : city.nameEng")
+                                    span(v-if="!good.cities.length" v-html="lang === 'ru' ? + 'Города не указаны' :  'Cities not set'")
+
                             // наличие
                             // тема
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
@@ -118,9 +132,12 @@
                     return item.query === category.query
                 });
                 console.log('category', category)
-                window.location.hash = category.query
+                window.location.hash = category.query;
 
-                this.goodsArrayFiltered = this.goodsArray.filter(good => good.category.id === this.activeMenu.id)
+                console.log('this.goodsArray', this.goodsArray)
+                console.log('this.activeMenu', this.activeMenu)
+
+                this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
             },
             setActiveImg(item, id, index) {
                 if (id >= item.photos.length) id = 0
@@ -346,6 +363,19 @@
                         margin-bottom 10px
                     .price
                         margin-bottom 10px
+                    .stock
+                        margin-bottom 10px
+                    .cities,
+                    .themes
+                        display: inline-flex;
+                        margin-bottom 10px
+                        .title
+                            margin-right 6px
+                        .city,
+                        .theme
+                            display flex
+                            flex-direction column
+
                 .button
                     text-align center
                     cursor pointer
