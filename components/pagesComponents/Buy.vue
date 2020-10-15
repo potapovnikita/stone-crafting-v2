@@ -26,11 +26,17 @@
                 .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
                 .item(v-for="(good, index) in goodsArrayFiltered" :key="good.id")
                     .image
-                        .photo(:style="{backgroundImage: getBgImg(good.photos[good.activeImgId])}"
+                        .photo(v-if="good.files[good.activeImgId].type === 'photo'"
+                            :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
+                            @click="setActiveImg(good, good.activeImgId + 1, index)")
+                        .photo(v-if="good.files[good.activeImgId].type === 'video'"
                                 @click="setActiveImg(good, good.activeImgId + 1, index)")
+                            video(:src="good.files[good.activeImgId].url" :class="{active: idx === good.activeImgId}" controls)
+
                         .slides
-                            .img(v-for="(img, idx) in good.photos")
-                                img(:src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
+                            .img(v-for="(img, idx) in good.files")
+                                img(v-if="img.type === 'photo'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
+                                video(v-if="img.type === 'video'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
                         .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
                     .description
@@ -56,11 +62,18 @@
                                 .city
                                     span(v-if="good.cities.length" v-for="city in good.cities" v-html="lang === 'ru' ? city.name : city.nameEng")
                                     span(v-if="!good.cities.length" v-html="lang === 'ru' ? + 'Города не указаны' :  'Cities not set'")
+                            .documents(v-if="good.documents.length")
+                                .name {{lang === 'ru' ? 'Документы:' :  'Documents:'}}
+                                a.doc(v-for="doc in good.documents" :href="doc.url" target="_blank") {{doc.name}}
 
                             // наличие
                             // тема
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
-                        .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
+                        .button(
+                            v-html="lang === 'ru' ? load ? 'Идет скачивание...' : 'Скачать материалы' : load ? 'Downloading...' : 'Download info'"
+                            @click="download(good)"
+                            :class="{'disabled': load}"
+                            )
 
 </template>
 
@@ -90,11 +103,11 @@
                 password: '',
                 curPass: '12345678',
                 errorPass: false,
-
                 categoriesArray: [],
                 goodsArray: [],
                 goodsArrayFiltered: [],
                 currency: null,
+                load: false,
             }
         },
         methods: {
@@ -103,55 +116,35 @@
                 return this.currency ? (price * this.currency).toFixed(2) : 'Price not specified'
             },
             async download(good) {
+                this.load = true;
                 const zip = new JSZip();
 
-                good.photos.forEach((i) => {
+                good.files.forEach((i) => {
                     console.log('i', i);
                     const data = urlToPromise(i.url);
                     zip.file(i.name, data, { binary: true });
                 })
 
                 const content = await zip.generateAsync({type:"blob"});
-                console.log(content)
-
+                this.load = false;
                 saveAs(content, "stone-crafting.zip");
-                // location.href="data:application/zip;base64," + content;
-
-                // imgDataArray.push(...getFilesFromData(good.photos))
-
-                // console.log(imgDataArray)
-                // const zipFileName = `${this.lang === 'ru' ? 'stone-crafting images' : 'stone-crafting images'}`;
-                // window.alert = () => {} // блокируем алерты - костыль для библиотеки
-
-
-
-
-
-                // downloadImagesAsZip.execute(imgDataArray, zipFileName, () => { });
             },
             setActive(category) {
                 this.activeMenu = this.categoriesArray.find((item) => {
                     return item.query === category.query
                 });
-                console.log('category', category)
                 window.location.hash = category.query;
-
-                console.log('this.goodsArray', this.goodsArray)
-                console.log('this.activeMenu', this.activeMenu)
-
                 this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
             },
             setActiveImg(item, id, index) {
-                if (id >= item.photos.length) id = 0
-                if (id < 0) id = item.photos.length - 1
+                console.log('item', item)
+                if (id >= item.files.length) id = 0
+                if (id < 0) id = item.files.length - 1
                 item.activeImgId = id
             },
             getBgImg(file) {
                 return `url(${file.url})`
             },
-            // getImg(url) {
-            //     return getImgExternal(url)
-            // },
             checkPass() {
                 this.errorPass = false;
                 if (this.curPass === this.password) {
@@ -179,6 +172,16 @@
                         let good = doc.data()
                         good.id = doc.id
                         good.activeImgId = this.activeIndex
+                        good.files = [
+                            ...good.photos.map(photo => ({
+                                ...photo,
+                                type: 'photo',
+                            })),
+                            ...good.videos.map(video => ({
+                                ...video,
+                                type: 'video',
+                            })),
+                        ]
 
                         this.goodsArray.push(good)
                     })
@@ -258,7 +261,6 @@
                 background-color darkRed
                 color white
                 transition background-color .3s ease, color .3s ease
-
                 &:hover
                     background white
                     color darkRed
@@ -321,6 +323,11 @@
                         margin-bottom 10px
                         cursor pointer
 
+                        video
+                            height 100%
+                            width 100%
+                            background-color: black
+
                     .slides
                         width 100%
                         display flex
@@ -332,7 +339,8 @@
                             cursor pointer
                             padding 0 2px 2px 2px
 
-                            img
+                            img,
+                            video
                                 min-width $sizeMin
                                 max-width $sizeMin
                                 min-height $sizeMin
@@ -380,6 +388,19 @@
                         .theme
                             display flex
                             flex-direction column
+                    .documents
+                        display flex
+                        flex-direction column
+                        .name
+                            margin-bottom 5px
+                        a.doc
+                            margin-left 5px
+                            color darkRed
+                            cursor pointer
+                            text-decoration underline
+                            &:hover
+                                text-decoration none
+
 
                 .button
                     text-align center
@@ -388,6 +409,9 @@
                     padding 5px 10px
                     color darkRed
                     background-color backgroundReverse
+                    &.disabled
+                        opacity 0.7
+                        pointer-events none
                     &:hover
                         color backgroundReverse
                         background-color darkRed

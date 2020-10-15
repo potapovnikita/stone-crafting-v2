@@ -49,7 +49,6 @@ export const dataURLtoFile = (dataurl, filename) => {
 
 
 export const urlToPromise = (url) => {
-    console.log('url', url)
     return new Promise(function(resolve, reject) {
         JSZipUtils.getBinaryContent(url, function (err, data) {
             if (err) {
