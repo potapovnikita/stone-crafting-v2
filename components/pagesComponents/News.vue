@@ -100,8 +100,10 @@
             //https://www.instagram.com/oauth/authorize/?client_id=3a74836a83d8482f864d327f82079cb8&redirect_uri=https://stone-crafting.com/&response_type=token
             // токен для доступа к api, при смене пароля менять токен тут https://www.instagram.com/developer/clients/manage/
 
+            // такой ответ после редиректа, нужно взять код и применить его в следующем запросе
+            // https://stone-crafting.com/?code=AQCWh9xV4gp8AdizxM7Pn7179sQdSZoPhYbwut2_D4cs15RKpg-vdjiX0XZ_tHtLfNBAReaSSdbc02Ji3R-jKMUbQkbRSG1nnL5pqJLDhnQ2eU6a1TpRHDBcfwz1eMnOqnGfQFKCU0g9La1dby9ubRZ7ACEJ_0DKETB-HnubJWrrZCwjiGtlqW4QIxeiKyyXHx8jKZ_fkZ9A-0xUmANuA1ZlMFR1hWHmnyF5LdJcLwjzWA#_
 
-            // запрос
+            // запрос для краткосрочноко маркера
             /*
             * curl -X POST https://api.instagram.com/oauth/access_token -F client_id=983242938773357 -F client_secret=ac3d40b0da4fc62cd5244ed75e068166 -F grant_type=authorization_code -F redirect_uri=https://stone-crafting.com/ -F code=AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
             * */
@@ -110,12 +112,14 @@
             // {"id":"17841401452273098","username":"stone.crafting.house"}%
 
             /*
+            далее нужно получить токен с большим временем действия (2 мес)
             запрос для получения длинного аксесс токена (2 мес):
             curl -X GET 'https://graph.instagram.com/access_token?grant_type=ig_exchange_token&&client_secret=ac3d40b0da4fc62cd5244ed75e068166&access_token=IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz'
             ответ:
+            копируем токен в токен
             {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
             */
-            const TOKEN = 'IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3'
+            const TOKEN = 'IGQVJXZADdKVWpfalRSMVNESVpaRzdZAV1A2XzA2MTJEWk53Y01lV3FEVUlpSEJrMjRRWkZAJM0ZA1WDg5MTBUVExnclh6UXF6aEFhM0RjeXNzZAG5wSGRPTnZAJNENpb0RvY3E5aVd5SENB'
             const USER_ID = '17841401452273098' // id пользователя
 
             // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
