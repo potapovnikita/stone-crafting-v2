@@ -19,7 +19,6 @@
 <script>
     import vClickOutside from 'v-click-outside'
 
-    import Button from '~/components/Button.vue'
     import CloseLogo from '~/assets/img/close.svg'
     import Feedback from '~/components/Feedback.vue'
     import Prices from '~/components/Prices.vue'
@@ -36,7 +35,6 @@
             clickOutside: vClickOutside.directive
         },
         components: {
-            Button,
             CloseLogo,
             Feedback,
             Prices

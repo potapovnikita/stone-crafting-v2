@@ -1,94 +1,60 @@
-<template lang="pug">
-    button.button(:class="classList",  @click="onClick()") {{name}}
+<template lang='pug'>
+    button(:type ="type || 'button'" @click="onClick && onClick()" :disabled="disabled") {{name}}
+        span.loader(v-if="disabled")
+            LoaderIcon
+
 </template>
 
 <script>
-    import zenscroll from 'zenscroll'
+import { LoaderIcon } from 'vue-feather-icons'
 
-    export default {
-        props: ['name', 'type', 'clickAction'],
-        data() {
-          return {
-
-          }
-        },
-        computed: {
-            classList() {
-                return [this.type]
-            }
-        },
-        mounted() {
-        },
-        methods: {
-            onClick() {
-                this.clickAction
-                    ? this.clickAction === 'feedback'
-                        ? this.feedback('feedback')
-                        : this.clickAction()
-                    : false
-            },
-            feedback: (elem = '') => {
-                const scrollElem = document.getElementById(elem)
-                zenscroll.to(scrollElem)
-            },
-        }
+export default {
+    name: 'Button',
+    components: {
+        LoaderIcon,
+    },
+    props: {
+        name: String,
+        onClick: Function,
+        type: String,
+        disabled: Boolean,
+    },
+    created() {
     }
+}
 </script>
 
-<style lang="stylus">
-    button
-        border none
-    .button.default
-        color whiteMain
-        padding 14px 50px 14px
-        border-radius 30px
-        background-color orangeMain
-        font-family $FuturaFont
-        font-size $FontSize3
-        font-weight bold
-        font-style normal
-        font-stretch normal
-        line-height 1.2
-        letter-spacing 0.4px
-        transition background-color .3s ease, color .3s ease
-        outline none
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="stylus" scoped>
+button
+    position relative
+    background darkRed
+    padding 11px 26px 10px
+    color whiteMain
+    outline none
+    cursor pointer
+    border 1px solid darkRed
+    &:hover
+        background darken(darkRed, 20%)
+    &:active
+        background darken(darkRed, 25%)
+    &:disabled
+        background-color light_grey
+        cursor default
+        pointer-events none
+        border 1px solid light_grey
+.loader
+    animation: spin 4s linear infinite;
+    position absolute
+    right 2px
+    top 8px
+    svg
+        width 20px
+        height 20px
+        stroke darkRed
 
-        &:hover
-            cursor pointer
-            color orangeMain
-            background whiteMain
+@keyframes spin
+    100% { transform:rotate(360deg); }
 
-    .button.small
-        color whiteMain
-        border 1px solid whiteMain
-        padding 10px 46px 11px
-        border-radius 30px
-        background-color orangeMain
-        font-family $ProximaNovaFont
-        font-size 16px
-        font-weight bold
-        letter-spacing 0.6px
-        transition background-color .3s ease, color .3s ease
-        outline none
-        cursor pointer
 
-        &:hover
-            color orangeMain
-            background whiteMain
-            border 1px solid orangeMain
-        &.borderNone
-            border none
-        &.reverse
-            background-color whiteMain
-            border 1px solid orangeMain
-            color orangeMain
-
-            &:hover
-                color whiteMain
-                background orangeMain
-                border 1px solid orangeMain
-
-    @media only screen and (max-width 450px)
-        .button.default
-            font-size 17px
 </style>

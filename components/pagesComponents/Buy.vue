@@ -13,6 +13,8 @@
 
         .shop_wrapper(v-if="isAuth")
             .shop_filter
+                h3.reverse Категории
+
                 .item(v-if="!categoriesArray.length" v-html="lang === 'ru' ? 'Категорий нет' : 'Categories is not set'")
                 .item(v-for="item in categoriesArray")
                     .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
@@ -24,7 +26,29 @@
 
             .shop_items
                 .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
-                .item(v-for="(good, index) in goodsArrayFiltered" :key="good.id")
+
+                h3.reverse Фильтр
+                .filters(v-if="goodsArrayFiltered.length")
+                    .form_item__container
+                        Input(name="material" v-model.trim="filterState.search" placeholder="Поиск по тексту" width="100%")
+                    //.form_item__container
+                        Select(:options="categoriesArray" :value.sync="filterState.category" placeholder="Категории" isMulti)
+                    .form_item__container
+                        Select(:options="themes" :value.sync="filterState.themes" placeholder="Темы" isMulti)
+                    .form_item__container
+                        Select(:options="cities" :value.sync="filterState.cities" placeholder="Города" isMulti)
+                    .form_item__container
+                        Select(:options="stockStatuses" :value.sync="filterState.inStock" placeholder="Наличие" isMulti)
+                    .form_item__container
+                        .sort
+                            .type(:class="{'active': filterState.price === 'bottomToTop'}" @click="setSortPrice('bottomToTop')") Цена
+                                ChevronsUpIcon
+                            .type(:class="{'active': filterState.price === 'topToBottom'}" @click="setSortPrice('topToBottom')") Цена
+                                ChevronsDownIcon
+                    .form_item__container
+                        Button(name='Сбросить фильтр' :onClick="() => resetFilter()")
+
+                .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
                         .photo(v-if="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
@@ -44,6 +68,8 @@
                             h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
                             .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
+                            .material(v-if="good.number" v-html="lang === 'ru' ? 'Номер товара: ' + good.number : 'Number of good: ' + good.number")
+
                             .themes
                                 span.title(v-html="lang === 'ru' ? 'Темы: ' : 'Themes: '")
                                 .theme
@@ -83,18 +109,31 @@
     import { saveAs } from 'file-saver';
 
     import Cookies from 'universal-cookie';
-    import Shop from '~/assets/staticData/shop.json'
     import zenscroll from "zenscroll";
     import * as fb from "@/plugins/firebase";
-    import {arrayBufferToBase64, getFilesFromData, urlToPromise} from "@/plugins/getUrl";
+    import { urlToPromise } from "@/plugins/getUrl";
     import axios from "axios";
     import JSZip from "jszip";
+    import { ChevronsDownIcon, ChevronsUpIcon } from 'vue-feather-icons'
+
+    import Input from "@/components/Input";
+    import Select from "@/components/Select";
+    import Button from "@/components/Button";
+
+    import { themes, cities, stockStatuses } from "@/plugins/constants"
+
 
 
     export default {
+        components: {
+            Input,
+            Select,
+            Button,
+            ChevronsDownIcon,
+            ChevronsUpIcon,
+        },
         data() {
             return {
-                shop: Shop,
                 activeMenu: null,
                 activeIndex: 0,
                 activeInnerIndex: 0,
@@ -108,9 +147,48 @@
                 goodsArrayFiltered: [],
                 currency: null,
                 load: false,
+                themes,
+                cities,
+                stockStatuses,
+                filterState: {
+                    themes: [],
+                    cities: [],
+                    inStock: [],
+                    category: [],
+                    price: null,
+                    search: '',
+                },
             }
         },
         methods: {
+            resetFilter() {
+                this.$set(this.filterState, 'themes', []);
+                this.$set(this.filterState, 'cities', []);
+                this.$set(this.filterState, 'inStock', []);
+                this.$set(this.filterState, 'category', []);
+                this.$set(this.filterState, 'price', null);
+                this.$set(this.filterState, 'search', '');
+            },
+            searchByAll(arr, search) {
+                const searched = [];
+                const searchProp = ['name', 'description', 'nameEng', 'descriptionEng', 'material', 'materialEng', 'year', 'yearEng', 'price', 'size'];
+
+                for(let i = 0; i < arr.length; i++) {
+                    const good = arr[i];
+                    for(let j = 0; j < Object.keys(good).length; j++) {
+                        const key = Object.keys(good)[j];
+                        if (searchProp.includes(key) && good[key].includes(search)) {
+                            searched.push(good);
+                            break;
+                        }
+                    }
+                }
+                return searched;
+            },
+            setSortPrice(type) {
+                const filter = this.filterState.price === type ? null : type
+                this.$set(this.filterState, 'price', filter)
+            },
             getDollarPrice(price) {
                 console.log('this.currency', this.currency)
                 return this.currency ? (price * this.currency).toFixed(2) : 'Price not specified'
@@ -202,6 +280,60 @@
             ...mapState('localization', [
                 'lang',
             ]),
+            filterStateIsEmpty() {
+                const { themes, cities, inStock, category, price, search } = this.filterState;
+                return !themes.length && !cities.length && !inStock.length && !category.length && !price && !search;
+            },
+            filteredGoods() {
+                const { themes, cities, inStock, category, price, search } = this.filterState;
+
+                const goods = [...this.goodsArrayFiltered];
+                const filtered = []
+
+                if (this.filterStateIsEmpty) return goods
+
+                const isHave = [];
+                goods.forEach((good) => {
+                    if (themes.length) {
+                        isHave.push(good.themes
+                            .some(({ id }) => themes
+                                .map(i => i.id)
+                                .includes(id)
+                            )
+                        )
+                    }
+
+                    if (cities.length) {
+                        isHave.push(good.cities
+                            .some(({ id }) => cities
+                                .map(i => i.id)
+                                .includes(id)
+                            )
+                        )
+                    }
+
+                    if (inStock.length) {
+                        isHave.push(inStock
+                            .some(i => i.id === good.inStock.id)
+                        )
+                    }
+
+                    if (category.length) {
+                        isHave.push(category
+                            .some(i => i.id === good.category.id)
+                        )
+                    }
+
+                    if (!isHave.includes(false)) filtered.push(good)
+
+                })
+
+                if (price === 'bottomToTop') filtered.sort((a, b) => Number(a.price) - Number(b.price))
+                if (price === 'topToBottom') filtered.sort((a, b) => Number(b.price) - Number(a.price))
+                if (search.length > 2) return this.searchByAll(filtered, search)
+
+                return filtered
+            }
         },
         watch: {
             isAuth(newVal) {
@@ -277,6 +409,10 @@
         .shop_filter
             width 30%
             padding 5px
+
+            h3
+                margin-bottom 15px
+
             .item
                 color darkRed
                 max-width 230px
@@ -302,6 +438,41 @@
                         color backgroundReverse
         .shop_items
             width 70%
+            padding 5px
+
+            h3
+                margin-bottom 15px
+            .filters
+                display inline-flex
+                flex-wrap wrap
+                justify-content: center;
+
+
+                .form_item__container
+                    margin-right 10px
+
+                    .sort
+                        display flex
+                        flex-direction row
+                        flex-wrap nowrap
+                        justify-content center
+
+                        .type
+                            display flex
+                            align-items center
+                            justify-content center
+                            width 140px
+                            font-size 15px
+                            background-color light_grey
+                            padding 5px
+                            border 1px solid light_grey
+                            color white
+                            cursor pointer
+                            margin-right 1px
+                            border-radius 5px
+                            &.active
+                                background-color darkRed
+                                border 1px solid darkRed
             .item
                 width 100%
                 display flex
