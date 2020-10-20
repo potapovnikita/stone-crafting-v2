@@ -5,7 +5,7 @@
         .values(v-if="isMulti && value && value.length")
           .select_item(v-for="option in value")
             | {{option.name}}
-            .icon.delete(@click="(e) => removeOption(option)")
+            .icon.delete(@click.stop.prevent="(e) => removeOption(option)")
               XIcon
         .value(v-else-if="!isMulti && value") {{value.name}}
         .placeholder(v-else) {{placeholder}}
@@ -100,6 +100,7 @@ export default {
     position relative
     z-index 1
     background-color white
+    max-width 300px
 
     .placeholder
       color rgb(117, 117, 117);

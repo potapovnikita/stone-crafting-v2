@@ -50,50 +50,39 @@
 
                 .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
-                        .photo(v-if="good.files[good.activeImgId].type === 'photo'"
+                        .photo(v-show="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
-                        .photo(v-if="good.files[good.activeImgId].type === 'video'"
+                        .photo(v-show="good.files[good.activeImgId].type === 'video'"
                                 @click="setActiveImg(good, good.activeImgId + 1, index)")
                             video(:src="good.files[good.activeImgId].url" :class="{active: idx === good.activeImgId}" controls)
 
                         .slides
                             .img(v-for="(img, idx) in good.files")
-                                img(v-if="img.type === 'photo'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
-                                video(v-if="img.type === 'video'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
+                                img(v-show="img.type === 'photo'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
+                                video(v-show="img.type === 'video'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
                         .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
                     .description
                         div
                             h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
+                            .material(v-if="good.number" v-html="lang === 'ru' ? 'Уникальный номер: ' + good.number : 'Unique number: ' + good.number")
                             .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
-                            .material(v-if="good.number" v-html="lang === 'ru' ? 'Номер товара: ' + good.number : 'Number of good: ' + good.number")
-
-                            .themes
-                                span.title(v-html="lang === 'ru' ? 'Темы: ' : 'Themes: '")
-                                .theme
-                                    span(v-if="good.themes.length" v-for="theme in good.themes" v-html="lang === 'ru' ? theme.name : theme.nameEng")
-                                    span(v-if="!good.themes.length" v-html="lang === 'ru' ? + 'Темы не указаны' :  'Themes not set'")
-
                             .material(v-if="good.material" v-html="lang === 'ru' ? 'Материал: ' + good.material : 'Material: ' + good.materialEng")
-                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size + 'мм' : 'Size: ' + good.size + 'mm'")
+                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size : 'Size: ' + good.size")
                             .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.yearEng")
-                            .price(v-if="good.price" v-html="lang === 'ru' ? 'Цена: ' + good.price + ' ₽' : 'Price: ' + getDollarPrice(good.price) + ' $'")
+                            .price(v-if="good.price" v-html="lang === 'ru' ? 'Цена: ' + parsePrice(good.price) + ' ₽' : 'Price: ' + parsePrice(getDollarPrice(good.price)) + ' $'")
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                             .stock(v-if="good.inStock" v-html="lang === 'ru' ? 'Наличие: ' + good.inStock.name : 'Existence: ' + good.inStock.nameEng")
-                            .stock(v-else v-html="lang === 'ru' ? 'Наличие: Не указано' : 'Existence: Not set'")
-                            .cities
-                                span.title(v-html="lang === 'ru' ? 'Города: ' : 'Cities: '")
+                            .cities(v-if="good.cities.length")
+                                span.title(v-html="lang === 'ru' ? 'Город: ' : 'City: '")
                                 .city
-                                    span(v-if="good.cities.length" v-for="city in good.cities" v-html="lang === 'ru' ? city.name : city.nameEng")
-                                    span(v-if="!good.cities.length" v-html="lang === 'ru' ? + 'Города не указаны' :  'Cities not set'")
+                                    span(v-for="city in good.cities" v-html="lang === 'ru' ? city.name : city.nameEng")
                             .documents(v-if="good.documents.length")
                                 .name {{lang === 'ru' ? 'Документы:' :  'Documents:'}}
                                 a.doc(v-for="doc in good.documents" :href="doc.url" target="_blank") {{doc.name}}
 
-                            // наличие
-                            // тема
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
                         .button(
                             v-html="lang === 'ru' ? load ? 'Идет скачивание...' : 'Скачать материалы' : load ? 'Downloading...' : 'Download info'"
@@ -171,7 +160,7 @@
             },
             searchByAll(arr, search) {
                 const searched = [];
-                const searchProp = ['name', 'description', 'nameEng', 'descriptionEng', 'material', 'materialEng', 'year', 'yearEng', 'price', 'size'];
+                const searchProp = ['name', 'description', 'nameEng', 'descriptionEng', 'material', 'materialEng', 'year', 'yearEng', 'price', 'size', 'number'];
 
                 for(let i = 0; i < arr.length; i++) {
                     const good = arr[i];
@@ -190,8 +179,10 @@
                 this.$set(this.filterState, 'price', filter)
             },
             getDollarPrice(price) {
-                console.log('this.currency', this.currency)
-                return this.currency ? (price * this.currency).toFixed(2) : 'Price not specified'
+                return this.currency ? (price.replace(/[^+\d.]/g, '') * this.currency).toFixed(2) : 'Price not specified'
+            },
+            parsePrice(val) {
+                return Number(val.replace(/[^+\d.]/g, '')).toLocaleString();
             },
             async download(good) {
                 this.load = true;
@@ -215,7 +206,6 @@
                 this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
             },
             setActiveImg(item, id, index) {
-                console.log('item', item)
                 if (id >= item.files.length) id = 0
                 if (id < 0) id = item.files.length - 1
                 item.activeImgId = id
@@ -290,6 +280,7 @@
                 const goods = [...this.goodsArrayFiltered];
                 const filtered = []
 
+                goods.forEach(i => i.activeImgId = 0);
                 if (this.filterStateIsEmpty) return goods
 
                 const isHave = [];
@@ -314,7 +305,7 @@
 
                     if (inStock.length) {
                         isHave.push(inStock
-                            .some(i => i.id === good.inStock.id)
+                            .some(i => i.id === good.inStock && good.inStock.id)
                         )
                     }
 
@@ -539,14 +530,11 @@
                         margin 8px auto 15px
                         background darkRed
 
-                    .desc
-                        margin-bottom 10px
-                    .material
-                        margin-bottom 10px
-                    .year
-                        margin-bottom 10px
-                    .price
-                        margin-bottom 10px
+                    .desc,
+                    .material,
+                    .year,
+                    .size,
+                    .price,
                     .stock
                         margin-bottom 10px
                     .cities,
