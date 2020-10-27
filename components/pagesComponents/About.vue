@@ -7,6 +7,20 @@
                 .title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                 .ception(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
+        .demo
+            Button(name='О бренде' :onClick="() => sampleTest('О бренде')")
+
+            Button(name='Сбросить фильтр' :onClick="() => resetFilter()" large)
+
+            ButtonArrow(:onClick="() => sampleTest('ArrowLeft')")
+            ButtonArrow(arrowRight :onClick="() => sampleTest('ArrowRight')")
+            Checkbox(v-model="checkboxValue")
+            p(v-if="checkboxValue") true
+            Input(type="text" name="testInput" placeholder="Имя" v-model="testInputValue")
+            p(v-if="testInputValue") {{testInputValue}}
+            Input(type="text" name="testInputPhone" placeholder="+7(999)-999-9999" v-model="testInputPhone" mask="+7(###)-###-####")
+            p(v-if="testInputPhone") {{testInputPhone}}
+
         .historyButton
             .button(@click="$nuxt.$router.push({path:`/history`})") {{lang === 'ru' ? 'История бренда' : 'Brand history'}}
 
@@ -144,6 +158,10 @@
     import { mapState } from 'vuex'
 
     import Company from '~/assets/staticData/company.json'
+    import Button from "@/components/ui/Button";
+    import ButtonArrow from "@/components/ui/ButtonArrow";
+    import Checkbox from "@/components/ui/Checkbox";
+    import Input from "@/components/ui/Input";
 
     export default {
         data() {
@@ -156,11 +174,18 @@
                 films: Company.company.films,
                 activeSmi: 0,
                 activeFilm: 0,
+                checkboxValue: false,
+                testInputValue: '',
+                testInputPhone: '',
             }
         },
         components: {
             ChevronRightIcon,
             ChevronLeftIcon,
+            Button,
+            ButtonArrow,
+            Checkbox,
+            Input,
         },
         methods: {
             getBgImg(url) {
@@ -186,6 +211,9 @@
             onPreviousFilm() {
                 if (this.activeFilm === 0) this.activeFilm = this.films.length - 1
                 else this.activeFilm = this.activeFilm - 1
+            },
+            sampleTest(message) {
+                console.log(message)
             },
 
         },
@@ -572,6 +600,7 @@
                         height 140px
             @media only screen and (max-width 650px)
                 flex-direction column
-
+    .demo
+        margin 20px
 
 </style>
