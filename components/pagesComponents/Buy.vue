@@ -19,10 +19,6 @@
                 .item(v-for="item in categoriesArray")
                     .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
                                     @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
-                    //.item_inner(v-if="item.innerSection"
-                                v-for="elem in item.innerSection"
-                                :class="{active: activeMenu.id === elem.id}"
-                                @click="setActive(elem.id, true)") {{ lang === 'ru' ? elem.name : elem.nameEng }}
 
             .shop_items
                 .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
@@ -50,18 +46,17 @@
 
                 .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
-                        //.photo(v-show="good.files[good.activeImgId].type === 'photo'"
+                        .photo(v-show="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
-                        //.photo(v-show="good.files[good.activeImgId].type === 'video'"
+                        .photo(v-show="good.files[good.activeImgId].type === 'video'"
                                 @click="setActiveImg(good, good.activeImgId + 1, index)")
                             video(:src="good.files[good.activeImgId].url" :class="{active: idx === good.activeImgId}" controls)
 
                         .slides
-                            //.img(v-for="(img, idx) in good.files")
+                            .img(v-for="(img, idx) in good.files")
                                 img(v-show="img.type === 'photo'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                                 video(v-show="img.type === 'video'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
-                        //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
                         .button(v-html="lang === 'ru' ? 'Скачать материалы' : 'Download info'" @click="download(good)")
                     .description
                         div
