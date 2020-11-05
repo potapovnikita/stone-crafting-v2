@@ -50,15 +50,15 @@
 
                 .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
-                        .photo(v-show="good.files[good.activeImgId].type === 'photo'"
+                        //.photo(v-show="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
-                        .photo(v-show="good.files[good.activeImgId].type === 'video'"
+                        //.photo(v-show="good.files[good.activeImgId].type === 'video'"
                                 @click="setActiveImg(good, good.activeImgId + 1, index)")
                             video(:src="good.files[good.activeImgId].url" :class="{active: idx === good.activeImgId}" controls)
 
                         .slides
-                            .img(v-for="(img, idx) in good.files")
+                            //.img(v-for="(img, idx) in good.files")
                                 img(v-show="img.type === 'photo'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                                 video(v-show="img.type === 'video'" :src="img.url" :class="{active: idx === good.activeImgId}" @click="setActiveImg(good, idx, index)")
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
@@ -70,9 +70,12 @@
                             .material(v-if="good.number" v-html="lang === 'ru' ? 'Уникальный номер: ' + good.number : 'Unique number: ' + good.number")
                             .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
                             .material(v-if="good.material" v-html="lang === 'ru' ? 'Материал: ' + good.material : 'Material: ' + good.materialEng")
-                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size : 'Size: ' + good.size")
-                            .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.yearEng")
-                            .price(v-if="good.price" v-html="lang === 'ru' ? 'Цена: ' + parsePrice(good.price) + ' ₽' : 'Price: ' + parsePrice(getDollarPrice(good.price)) + ' $'")
+                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size : 'Size: ' + good.sizeEng")
+                            .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.year")
+                            .price(
+                                v-if="good.pricetoView && good.pricetoView.from"
+                                v-html="lang === 'ru' ? 'Цена: ' + good.pricetoView.string + ' ₽' : 'Price: ' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                            )
                             .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
                             .stock(v-if="good.inStock" v-html="lang === 'ru' ? 'Наличие: ' + good.inStock.name : 'Existence: ' + good.inStock.nameEng")
                             .cities(v-if="good.cities.length")
@@ -110,8 +113,6 @@
     import Button from "@/components/Button";
 
     import { themes, cities, stockStatuses } from "@/plugins/constants"
-
-
 
     export default {
         components: {
@@ -178,11 +179,20 @@
                 const filter = this.filterState.price === type ? null : type
                 this.$set(this.filterState, 'price', filter)
             },
-            getDollarPrice(price) {
-                return this.currency ? (price.replace(/[^+\d.]/g, '') * this.currency).toFixed(2) : 'Price not specified'
-            },
-            parsePrice(val) {
-                return Number(val.replace(/[^+\d.]/g, '')).toLocaleString();
+            parsePrice(val, cur) {
+                if (!val) return null;
+                const currency = cur || 1;
+                console.log(val);
+                const separatedPrice = val.split('-')
+                const price = {
+                    from: Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed(),
+                    to: separatedPrice[1] ? Number(separatedPrice[1].replace(/[^+\d.]/g, '') * currency).toFixed() : null,
+                }
+
+                return {
+                    ...price,
+                    string: `${price.from}${price.to && ' - ' + price.to}`
+                }
             },
             async download(good) {
                 this.load = true;
@@ -250,6 +260,7 @@
                                 type: 'video',
                             })),
                         ]
+                        good.pricetoView = this.parsePrice(good.price);
 
                         this.goodsArray.push(good)
                     })
@@ -319,8 +330,12 @@
 
                 })
 
-                if (price === 'bottomToTop') filtered.sort((a, b) => Number(a.price) - Number(b.price))
-                if (price === 'topToBottom') filtered.sort((a, b) => Number(b.price) - Number(a.price))
+                if (price === 'bottomToTop') filtered.sort((a, b) =>
+                    Number(a.pricetoView && a.pricetoView.from || 100000000) - Number(b.pricetoView && b.pricetoView.from || 100000000)
+                )
+                if (price === 'topToBottom') filtered.sort((a, b) =>
+                    Number(b.pricetoView && b.pricetoView.from  || 0) - Number(a.pricetoView && a.pricetoView.from || 0)
+                )
                 if (search.length > 2) return this.searchByAll(filtered, search)
 
                 return filtered
