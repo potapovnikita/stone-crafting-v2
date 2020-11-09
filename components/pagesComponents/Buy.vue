@@ -16,6 +16,9 @@
                 h3.reverse Категории
 
                 .item(v-if="!categoriesArray.length" v-html="lang === 'ru' ? 'Категорий нет' : 'Categories is not set'")
+                .item
+                    .section_name(:class="{active: !activeMenu}"
+                        @click="setActive('All')") {{ lang === 'ru' ? 'Все категории' : 'All categories' }}
                 .item(v-for="item in categoriesArray")
                     .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
                                     @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
@@ -51,7 +54,9 @@
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
                         .photo(v-show="good.files[good.activeImgId].type === 'video'"
                                 @click="setActiveImg(good, good.activeImgId + 1, index)")
-                            video(:src="good.files[good.activeImgId].url" :class="{active: idx === good.activeImgId}" controls)
+                            video(:src="good.files[good.activeImgId].url"
+                                controls
+                                )
 
                         .slides
                             .img(v-for="(img, idx) in good.files")
@@ -162,7 +167,7 @@
                     const good = arr[i];
                     for(let j = 0; j < Object.keys(good).length; j++) {
                         const key = Object.keys(good)[j];
-                        if (searchProp.includes(key) && good[key].includes(search)) {
+                        if (searchProp.includes(key) && good[key].toLowerCase().includes(search.toLowerCase())) {
                             searched.push(good);
                             break;
                         }
@@ -177,7 +182,6 @@
             parsePrice(val, cur) {
                 if (!val) return null;
                 const currency = cur || 1;
-                console.log(val);
                 const separatedPrice = val.split('-')
                 const price = {
                     from: Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed(),
@@ -186,7 +190,7 @@
 
                 return {
                     ...price,
-                    string: `${price.from}${price.to && ' - ' + price.to}`
+                    string: `${price.from}${price.to ? ' - ' + price.to : ''}`
                 }
             },
             async download(good) {
@@ -204,11 +208,17 @@
                 saveAs(content, "stone-crafting.zip");
             },
             setActive(category) {
-                this.activeMenu = this.categoriesArray.find((item) => {
-                    return item.query === category.query
-                });
-                window.location.hash = category.query;
-                this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
+                if (category !== 'All') {
+                    this.activeMenu = this.categoriesArray.find((item) => {
+                        return item.query === category.query
+                    });
+                    window.location.hash = category.query;
+                    this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
+                } else {
+                    this.activeMenu = null;
+                    window.location.hash = 'all';
+                    this.goodsArrayFiltered = this.goodsArray;
+                }
             },
             setActiveImg(item, id, index) {
                 if (id >= item.files.length) id = 0
@@ -236,9 +246,6 @@
 
                         this.categoriesArray.push(category)
                     })
-
-                    console.log('categoriesArray', this.categoriesArray)
-
                 })
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
@@ -259,8 +266,6 @@
 
                         this.goodsArray.push(good)
                     })
-
-                    console.log('goodsArray', this.goodsArray)
                 })
 
                 await axios.get('https://api.exchangeratesapi.io/latest?base=RUB').then(({ data }) => {
@@ -268,8 +273,7 @@
                 })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
-                console.log('hashItem', hashItem)
-                this.setActive(hashItem || this.categoriesArray[0])
+                this.setActive(hashItem || 'All')
             }
         },
         computed: {
@@ -289,8 +293,8 @@
                 goods.forEach(i => i.activeImgId = 0);
                 if (this.filterStateIsEmpty) return goods
 
-                const isHave = [];
                 goods.forEach((good) => {
+                    const isHave = [];
                     if (themes.length) {
                         isHave.push(good.themes
                             .some(({ id }) => themes
