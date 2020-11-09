@@ -68,22 +68,23 @@
                             h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
                             .material(v-if="good.number" v-html="lang === 'ru' ? 'Уникальный номер: ' + good.number : 'Unique number: ' + good.number")
-                            .desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
-                            .material(v-if="good.material" v-html="lang === 'ru' ? 'Материал: ' + good.material : 'Material: ' + good.materialEng")
-                            .size(v-if="good.size" v-html="lang === 'ru' ? 'Размер: ' + good.size : 'Size: ' + good.sizeEng")
-                            .year(v-if="good.year" v-html="lang === 'ru' ? 'Год: ' + good.year : 'Year: ' + good.year")
+                            b.desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
+                            .material(v-if="good.material" v-html="lang === 'ru' ? '<b>Материал: </b>' + good.material : '<b>Material: </b>' + good.materialEng")
+                            .size(v-if="good.size" v-html="lang === 'ru' ? '<b>Размер: </b>' + good.size : '<b>Size: </b>' + good.sizeEng")
+                            .year(v-if="good.year" v-html="lang === 'ru' ? '<b>Год: </b>' + good.year : '<b>Year: </b>' + good.year")
                             .price(
                                 v-if="good.pricetoView && good.pricetoView.from"
-                                v-html="lang === 'ru' ? 'Цена: ' + good.pricetoView.string + ' ₽' : 'Price: ' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                                v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
                             )
-                            .price(v-else v-html="lang === 'ru' ? 'Цена: по запросу' : 'Price: on request'")
-                            .stock(v-if="good.inStock" v-html="lang === 'ru' ? 'Наличие: ' + good.inStock.name : 'Existence: ' + good.inStock.nameEng")
+                            .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
+                            .stock(v-if="good.inStock" v-html="lang === 'ru' ? '<b>Наличие: </b>' + good.inStock.name : '<b>Existence: </b>' + good.inStock.nameEng")
                             .cities(v-if="good.cities.length")
-                                span.title(v-html="lang === 'ru' ? 'Город: ' : 'City: '")
+                                b
+                                    span.title(v-html="lang === 'ru' ? 'Город: ' : 'City: '")
                                 .city
                                     span(v-for="city in good.cities" v-html="lang === 'ru' ? city.name : city.nameEng")
                             .documents(v-if="good.documents.length")
-                                .name {{lang === 'ru' ? 'Документы:' :  'Documents:'}}
+                                b.name {{lang === 'ru' ? 'Документы:' :  'Documents:'}}
                                 a.doc(v-for="doc in good.documents" :href="doc.url" target="_blank") {{doc.name}}
 
                         //.button(v-html="lang === 'ru' ? 'Подробнее' : 'More'" @click="$router.push({path:`/goods/${item.id}`})")
@@ -537,6 +538,7 @@
 
                     h2
                         color darkRed
+                        font-weight: bold;
 
                     .line-sm
                         width 100px
@@ -573,6 +575,10 @@
                             text-decoration underline
                             &:hover
                                 text-decoration none
+
+                    .desc
+                        display block
+                        margin-bottom 25px
 
 
                 .button
