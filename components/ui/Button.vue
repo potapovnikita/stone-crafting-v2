@@ -32,16 +32,17 @@ export default {
     position relative
     min-width 280px
     padding 20px 20px 24px
+    font-family $TenorSans-Regular
     font-size 20px
     line-height 26px
-    background-color #111111
+    background-color transparent
     color whiteMain
     outline none
     cursor pointer
-    border 1px solid #FCE086
+    border 1px solid goldNew
     &:hover,
-     &:active
-        background #FCE086
+    &:active
+        background goldNew
         color #222222
     &:disabled
         background-color light_grey
@@ -50,7 +51,13 @@ export default {
         border 1px solid light_grey
 
     &--large
-        min-width  494px
-        padding 29px 20px 36px 
+        min-width 494px
+        padding 29px 20px 36px
+
+    @media only screen and (max-width 767px)
+        min-width 206px
+        padding 17px 20px 22px
+        font-size 16px
+        line-height 21px
 
 </style>

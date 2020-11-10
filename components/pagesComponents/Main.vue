@@ -1,12 +1,22 @@
 <template lang="pug">
     .common-container.main-container
-        .video-section
-            .video-wrapper
-                <!--.image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")-->
-                video#video(playsinline autoplay="true" loop="true" muted="muted")
-                    source(src="~/assets/video/main.mp4" type="video/mp4")
+        .header-container
+            .header-pic
+            .header-container__title-container
+                .header-container__circle
+                h1.header-container__title
+                    | Камнерезный Дом Антонова
+                p.header-container__sub-title
+                    | Камнерезное и ювелирное искусство
+                .header-container__line
+                .header-container__year-wrapper
+                    .header-container__double-line
+                    p.text_sverdlovsk
+                        | с 1968 года
 
-
+        BrandHistory
+        LinksPanel
+        Tradition
 
 </template>
 
@@ -14,6 +24,10 @@
     import { mapState } from 'vuex'
 
     import Company from '~/assets/staticData/company.json'
+    import Button from "@/components/ui/Button";
+    import BrandHistory from "@/components/pagesComponents/BrandHistory";
+    import LinksPanel from "@/components/pagesComponents/LinksPanel";
+    import Tradition from "@/components/pagesComponents/Tradition";
 
     export default {
         data() {
@@ -22,6 +36,10 @@
             }
         },
         components: {
+            Button,
+            BrandHistory,
+            LinksPanel,
+            Tradition,
         },
         computed: {
             ...mapState('localization', [
@@ -56,8 +74,8 @@
                 this.computedStyleFooter();
             })
             this.computedStyleFooter();
-            const vid = document.getElementById('video')
-            vid.play();
+            // const vid = document.getElementById('video')
+            // vid.play();
         },
         destroyed() {
             window.removeEventListener('resize', () => {
@@ -68,6 +86,111 @@
 </script>
 
 <style lang="stylus">
+    .header-container
+        position relative
+        height 982px
+
+        &__circle
+            position absolute
+            top 0
+            left 0
+            right 0
+            margin 0 auto
+            width 722px
+            height 100%
+            border 1px solid rgba(255, 255, 255, 0.07)
+            border-radius 50%
+
+        &__title-container
+            position relative
+            height 722px
+            padding-top 195px
+
+        &__title
+            font-size 68px
+            margin-bottom 14px
+
+        &__sub-title
+            margin-bottom 35px
+            font-size 19px
+            line-height 140%
+            letter-spacing 0.3em
+            text-transform uppercase
+            color goldNew
+
+        &__line
+            position absolute
+            left 0
+            right 0
+            width 53px
+            height 1px
+            margin 0 auto
+            background goldNew
+
+        &__year-wrapper
+            position relative
+            padding-top 30px
+            margin-top 102px
+
+        &__double-line
+            position absolute
+            top 0
+            left 0
+            right 0
+            width 163px
+            height 4px
+            margin 0 auto
+            border 1px solid #6A6A6A
+            border-left none
+            border-right none
+
+        @media only screen and (max-width 767px)
+            height 100vh
+
+            &__circle
+                width 409px
+                height 409px
+                margin 0
+
+            &__title-container
+                height 409px
+                margin-top 109px
+                padding-top 108px
+
+            &__title
+                font-size 32px
+                line-height 34px
+                margin-bottom 33px
+
+            &__sub-title
+                margin-bottom 52px
+                font-size 13px
+                line-height 19px
+                letter-spacing 0.3em
+                text-transform uppercase
+                color goldNew
+
+            &__line
+                width 39px
+
+            &__year-wrapper
+                padding-top 33px
+                margin 0
+            
+            &__double-line
+                display none
+
+    .header-pic
+        position absolute
+        width 100%
+        height 100%
+        background url('~assets/img/main/header-main.png')
+        background-size cover
+
+        @media only screen and (max-width 767px)
+            background url('~assets/img/main/header-main-mb.png') no-repeat
+            background-size cover
+
     .footer-add
         margin-top: -150px !important
 
@@ -103,4 +226,5 @@
                         position absolute
                         width 100%
                         z-index 1
+
 </style>
