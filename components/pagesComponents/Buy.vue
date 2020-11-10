@@ -68,7 +68,7 @@
                             h2(v-html="lang === 'ru' ? good.name : good.nameEng")
                             .line-sm
                             .material(v-if="good.number" v-html="lang === 'ru' ? 'Уникальный номер: ' + good.number : 'Unique number: ' + good.number")
-                            b.desc(v-if="good.description" v-html="lang === 'ru' ? good.description : good.descriptionEng")
+                            .desc(v-if="good.description" v-html="lang === 'ru' ? '<b>Описание: </b>' + good.description : '<b>Description: </b>' + good.descriptionEng")
                             .material(v-if="good.material" v-html="lang === 'ru' ? '<b>Материал: </b>' + good.material : '<b>Material: </b>' + good.materialEng")
                             .size(v-if="good.size" v-html="lang === 'ru' ? '<b>Размер: </b>' + good.size : '<b>Size: </b>' + good.sizeEng")
                             .year(v-if="good.year" v-html="lang === 'ru' ? '<b>Год: </b>' + good.year : '<b>Year: </b>' + good.year")
@@ -214,7 +214,9 @@
                         return item.query === category.query
                     });
                     window.location.hash = category.query;
-                    this.goodsArrayFiltered = this.goodsArray.filter(good => good.category && good.category.id === this.activeMenu.id)
+                    this.goodsArrayFiltered = this.goodsArray.filter((good) => {
+                        return good.category && good.category.length && good.category.some(i => i.id === this.activeMenu.id)
+                    })
                 } else {
                     this.activeMenu = null;
                     window.location.hash = 'all';
@@ -321,8 +323,11 @@
                     }
 
                     if (category.length) {
-                        isHave.push(category
-                            .some(i => i.id === good.category.id)
+                        isHave.push(good.category
+                            .some(({ id }) => category
+                                .map(i => i.id)
+                                .includes(id)
+                            )
                         )
                     }
 
@@ -538,7 +543,6 @@
 
                     h2
                         color darkRed
-                        font-weight: bold;
 
                     .line-sm
                         width 100px
