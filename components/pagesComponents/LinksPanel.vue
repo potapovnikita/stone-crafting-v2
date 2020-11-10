@@ -41,16 +41,18 @@
         justify-content center
         align-items center
         position relative
-        min-width 840px
+        min-width 470px
         min-height 470px
 
         &--man
             background url('~assets/img/linksPanel/bg-man.png') no-repeat
             background-size cover
+            background-position center
 
         &--museum
             background url('~assets/img/linksPanel/bg-museum.png') no-repeat
             background-size cover
+            background-position center
     
     &__wrapper-content
         position relative
@@ -86,14 +88,6 @@
         line-height 42px
         text-align center
         letter-spacing 0.03em
-
-    @media only screen and (max-width 1679px)
-        flex-direction column
-        align-items center
-            
-        &__item
-            flex-grow 0
-            width 840px
 
     @media only screen and (max-width 767px)
         display block
