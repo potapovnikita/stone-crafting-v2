@@ -253,21 +253,24 @@
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
                         let good = doc.data()
-                        good.id = doc.id
-                        good.activeImgId = this.activeIndex
-                        good.files = [
-                            ...good.photos.map(photo => ({
-                                ...photo,
-                                type: 'photo',
-                            })),
-                            ...good.videos.map(video => ({
-                                ...video,
-                                type: 'video',
-                            })),
-                        ]
-                        good.pricetoView = this.parsePrice(good.price);
+                        if (good.visibility && good.visibility.find(v => v.code === 'partners')) {
+                            good.id = doc.id
+                            good.activeImgId = this.activeIndex
+                            good.files = [
+                                ...good.photos.map(photo => ({
+                                    ...photo,
+                                    type: 'photo',
+                                })),
+                                ...good.videos.map(video => ({
+                                    ...video,
+                                    type: 'video',
+                                })),
+                            ]
+                            good.pricetoView = this.parsePrice(good.price);
 
-                        this.goodsArray.push(good)
+                            this.goodsArray.push(good)
+                        }
+
                     })
                 })
 
@@ -323,7 +326,7 @@
                     }
 
                     if (category.length) {
-                        isHave.push(good.category
+                        isHave.push(good.category && good.category
                             .some(({ id }) => category
                                 .map(i => i.id)
                                 .includes(id)
