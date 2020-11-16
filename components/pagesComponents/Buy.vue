@@ -29,23 +29,23 @@
                 h3.reverse Фильтр
                 .filters(v-if="goodsArrayFiltered.length")
                     .form_item__container
-                        Input(name="material" v-model.trim="filterState.search" placeholder="Поиск по тексту" width="100%")
+                        Input(name="material" v-model.trim="filterState.search" :placeholder="lang === 'ru' ? 'Поиск по тексту' : 'Search by text'" width="100%")
                     //.form_item__container
                         Select(:options="categoriesArray" :value.sync="filterState.category" placeholder="Категории" isMulti)
                     .form_item__container
-                        Select(:options="themes" :value.sync="filterState.themes" placeholder="Темы" isMulti)
+                        Select(:options="themes" :value.sync="filterState.themes" :placeholder="lang === 'ru' ? 'Темы' : 'Themes'" isMulti)
                     .form_item__container
-                        Select(:options="cities" :value.sync="filterState.cities" placeholder="Города" isMulti)
+                        Select(:options="cities" :value.sync="filterState.cities" :placeholder="lang === 'ru' ? 'Города' : 'Cities'" isMulti)
                     .form_item__container
-                        Select(:options="stockStatuses" :value.sync="filterState.inStock" placeholder="Наличие" isMulti)
+                        Select(:options="stockStatuses" :value.sync="filterState.inStock" :placeholder="lang === 'ru' ? 'Наличие' : 'Availability'" isMulti)
                     .form_item__container
                         .sort
-                            .type(:class="{'active': filterState.price === 'bottomToTop'}" @click="setSortPrice('bottomToTop')") Цена
+                            .type(:class="{'active': filterState.price === 'bottomToTop'}" @click="setSortPrice('bottomToTop')") {{lang === 'ru' ? 'Цена' : 'Price'}}
                                 ChevronsUpIcon
-                            .type(:class="{'active': filterState.price === 'topToBottom'}" @click="setSortPrice('topToBottom')") Цена
+                            .type(:class="{'active': filterState.price === 'topToBottom'}" @click="setSortPrice('topToBottom')") {{lang === 'ru' ? 'Цена' : 'Price'}}
                                 ChevronsDownIcon
                     .form_item__container
-                        Button(name='Сбросить фильтр' :onClick="() => resetFilter()")
+                        Button(:name="lang === 'ru' ? 'Сбросить фильтр' : 'Reset filter'" :onClick="() => resetFilter()")
 
                 .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
