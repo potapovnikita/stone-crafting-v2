@@ -1,0 +1,57 @@
+{
+    "left": [
+        {
+            "titleRu": "1. кахолонг",
+            "titleEng": "1. stone1",
+            "background": "img/toreroMap/stone1.png"
+        },
+        {
+            "titleRu": "2. родонит",
+            "titleEng": "2. stone2",
+            "background": "img/toreroMap/stone2.png"
+        },
+        {
+            "titleRu": "3. соколиный глаз",
+            "titleEng": "3. stone3",
+            "background": "img/toreroMap/stone3.png"
+        },
+        {
+            "titleRu": "4. гранат",
+            "titleEng": "4. stone4",
+            "background": "img/toreroMap/stone4.png"
+        },
+        {
+            "titleRu": "5. Серебро",
+            "titleEng": "5. stone5",
+            "background": "img/toreroMap/stone5.png"
+        }
+    ],
+
+    "right": [
+        {
+            "titleRu": "5. кахолонг",
+            "titleEng": "5. stone5",
+            "background": "img/toreroMap/stoneRight5.png"
+        },
+        {
+            "titleRu": "6. родонит",
+            "titleEng": "6. stone6",
+            "background": "img/toreroMap/stone6.png"
+        },
+        {
+            "titleRu": "7. соколиный глаз",
+            "titleEng": "7. stone7",
+            "background": "img/toreroMap/stone2.png"
+        },
+        {
+            "titleRu": "8. кремний",
+            "titleEng": "8. stone8",
+            "background": "img/toreroMap/stone8.png"
+        },
+        {
+            "titleRu": "9. Золото",
+            "titleEng": "9. stone9",
+            "background": "img/toreroMap/stone9.png"
+        }
+    ]
+}

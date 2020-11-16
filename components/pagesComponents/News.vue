@@ -1,5 +1,31 @@
 <template lang="pug">
     .common-container.news-container
+        .header-container
+            .header-pic
+            .header-container__title-container
+                .header-container__circle
+                h1.header-container__title
+                    | Тореадор
+
+                p.header-container__sub-title
+                    | Год создания: 2019
+                
+                .header-container__line
+
+        .about-film-container(v-if="filmAbout")
+            .about-film-container__media(v-if="uniq")
+                 video.about-film-container__video(preload="auto" controls :poster="uniq.media_url" muted playsinline)
+                    source(:src="uniq.media_url" type="video/mp4" :poster="uniq.media_url" style="zIndex: '-1'")
+            .about-film-container__info
+                h2.about-film-container__title {{getFilmAboutTitle()}}
+
+                .about-film-container__double-line
+                p(v-for="str in getFilmAboutTexts()") {{str}}
+
+        ToreroMap
+
+        ToreroShow
+
         h1(v-html="lang === 'ru' ? 'Новости' : 'News'")
         .lds-dual-ring(v-if="!news.length")
         .news-list(v-if="news.length")
@@ -16,7 +42,7 @@
                     .inner(v-if="post.media_type === 'VIDEO'")
                         .lines
                         .over(v-if="post.media_url")
-                            video.video(preload="auto" controls :poster="post.media_url" autoplay muted playsinline)
+                            video.video(preload="auto" controls :poster="post.media_url" muted playsinline)
                                 source(:src="post.media_url" type="video/mp4" :poster="post.media_url" style="zIndex: '-1'")
 
                     .inner(v-if="post.media_type === 'CAROUSEL_ALBUM'")
@@ -29,17 +55,22 @@
 <script>
     import { mapState } from 'vuex'
     import jsonp from 'jsonp'
-
     import Company from '~/assets/staticData/company.json'
+    import ToreroMap from "@/components/pagesComponents/ToreroMap"
+    import ToreroShow from "@/components/pagesComponents/ToreroShow"
 
     export default {
         data() {
             return {
                 company: Company,
+                filmAbout: Company.company.filmAbout,
                 news: [],
+                uniq: {},
             }
         },
         components: {
+            ToreroMap,
+            ToreroShow,
         },
         methods: {
             visible: (el) => {
@@ -72,6 +103,20 @@
                     return text
                 }
             },
+            getFilmAboutTitle() {
+                if(this.lang === 'ru') {
+                    return this.filmAbout.titleRu
+                } else {
+                    return this.filmAbout.titleEng
+                }
+            },
+            getFilmAboutTexts() {
+                if(this.lang === 'ru') {
+                    return this.filmAbout.textsRu
+                } else {
+                    return this.filmAbout.textsEng
+                }
+            },
             async getNews(USER_ID, TOKEN, req) {
 
                 const request = req || `https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`
@@ -87,6 +132,10 @@
                             if (item.caption && item.caption.toLowerCase().match(/#stonecraftinghousebyantonov/gi)) this.news.push(item)
                         })
                         if (res.paging && res.paging.next) this.getNews(USER_ID, TOKEN, res.paging.next)
+                    }
+                    if (this.news.length) {
+                        this.uniq = this.news.find((item) => item.media_type === 'VIDEO')
+                        console.log(this.uniq)
                     }
                 });
             }
@@ -146,6 +195,94 @@
 
 <style lang="stylus">
     .news-container
+        .header-container
+            position relative
+            height 683px
+            padding-top 137px
+
+            &__title-container
+                position relative
+                height 446px
+                padding-top 101px
+
+            &__circle
+                position absolute
+                top 0
+                left 0
+                right 0
+                margin 0 auto
+                width 446px
+                height 100%
+                border 1px solid rgba(255, 255, 255, 0.07)
+                border-radius 50%
+
+            &__title
+                font-size 68px
+                line-height 95px
+                margin-bottom 30px
+
+            &__sub-title
+                margin-bottom 81px
+                font-size 19px
+                line-height 27px
+                letter-spacing 0.3em
+                text-transform uppercase
+                color goldNew
+
+            &__line
+                position absolute
+                left 0
+                right 0
+                width 53px
+                height 1px
+                margin 0 auto
+                background goldNew
+
+        .header-pic
+            position absolute
+            top 0
+            width 100%
+            height 100%
+            background url('~assets/img/news/header-main.png') no-repeat
+            background-position center
+            background-size cover
+
+        .about-film-container
+            display flex
+            justify-content space-between
+            padding-top 130px
+            padding-bottom 200px
+
+            &__media
+                overflow hidden
+                max-width 798px
+
+            &__video
+                width 100%
+
+            &__info
+                max-width 593px
+                padding-left 60px
+                text-align left
+
+            &__title
+                margin-bottom 52px
+                text-align left
+            
+            &__double-line
+                width 100px
+                height 4px
+                margin-bottom 52px
+                border 1px solid goldNew
+                border-left none
+                border-right none
+
+            p
+                text-align left
+
+            & p + p
+                margin-top 50px
+        
         .lds-dual-ring
             margin 0 auto
         .news-list

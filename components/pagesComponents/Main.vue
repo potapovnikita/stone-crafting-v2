@@ -185,10 +185,12 @@
         width 100%
         height 100%
         background url('~assets/img/main/header-main.png')
+        background-position center
         background-size cover
 
         @media only screen and (max-width 767px)
             background url('~assets/img/main/header-main-mb.png') no-repeat
+            background-position center
             background-size cover
 
     .footer-add
