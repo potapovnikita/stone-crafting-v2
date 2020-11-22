@@ -26,7 +26,7 @@
             .shop_items
                 .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
 
-                h3.reverse Фильтр
+                h3.reverse {{lang === 'ru' ? 'Фильтр' : 'Filter'}}
                 .filters(v-if="goodsArrayFiltered.length")
                     .form_item__container
                         Input(name="material" v-model.trim="filterState.search" :placeholder="lang === 'ru' ? 'Поиск по тексту' : 'Search by text'" width="100%")
@@ -47,6 +47,8 @@
                     .form_item__container
                         Button(:name="lang === 'ru' ? 'Сбросить фильтр' : 'Reset filter'" :onClick="() => resetFilter()")
 
+                h4(v-if="filteredGoods.length === 0")
+                    | {{lang === 'ru' ? 'Товаров по фильтру не найдено, задайте другие параметры поиска или сбросьте фильтр' : 'No goods found by filter, please set other search parameters or reset the filter'}}
                 .item(v-for="(good, index) in filteredGoods" :key="good.id")
                     .image
                         .photo(v-show="good.files[good.activeImgId].type === 'photo'"
@@ -98,7 +100,6 @@
 
 <script>
     import { mapState } from 'vuex'
-    import downloadImagesAsZip from 'files-download-zip'
     import { saveAs } from 'file-saver';
 
     import Cookies from 'universal-cookie';
@@ -125,6 +126,7 @@
         },
         data() {
             return {
+                queryParams: (new URL(document.location)).searchParams,
                 activeMenu: null,
                 activeIndex: 0,
                 activeInnerIndex: 0,
@@ -280,6 +282,8 @@
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
                 this.setActive(hashItem || 'All')
+
+                if (this.queryParams.get('id')) this.filterState.search = this.queryParams.get('id');
             }
         },
         computed: {
@@ -356,7 +360,7 @@
         },
 
         async mounted() {
-            this.isAuth = new Cookies().get('token')
+            this.isAuth = new Cookies().get('token') || this.curPass === this.queryParams.get('p');
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
             const header = document.getElementById('container')
@@ -370,6 +374,9 @@
 
 <style lang="stylus">
     $sizeMin = 80px
+
+    h4
+     color darkRed
 
     .shop_wrapper
         display flex
