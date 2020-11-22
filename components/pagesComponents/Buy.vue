@@ -376,6 +376,7 @@
             });
         },
         destroyed() {
+            window.removeEventListener('scroll', () => {})
             document.getElementsByTagName('body')[0].style.backgroundColor = '#120000'
         }
     }
