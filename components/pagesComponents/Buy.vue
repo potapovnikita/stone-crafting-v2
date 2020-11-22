@@ -49,7 +49,7 @@
 
                 h4(v-if="filteredGoods.length === 0")
                     | {{lang === 'ru' ? 'Товаров по фильтру не найдено, задайте другие параметры поиска или сбросьте фильтр' : 'No goods found by filter, please set other search parameters or reset the filter'}}
-                .item(v-for="(good, index) in filteredGoods" :key="good.id")
+                .item(v-for="(good, index) in filteredGoods" v-if="index < visibleGoods" :key="good.id")
                     .image
                         .photo(v-show="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
@@ -126,6 +126,7 @@
         },
         data() {
             return {
+                visibleGoods: 5,
                 queryParams: (new URL(document.location)).searchParams,
                 activeMenu: null,
                 activeIndex: 0,
@@ -225,7 +226,7 @@
                     this.goodsArrayFiltered = this.goodsArray;
                 }
             },
-            setActiveImg(item, id, index) {
+            setActiveImg(item, id) {
                 if (id >= item.files.length) id = 0
                 if (id < 0) id = item.files.length - 1
                 item.activeImgId = id
@@ -295,6 +296,8 @@
                 return !themes.length && !cities.length && !inStock.length && !category.length && !price && !search;
             },
             filteredGoods() {
+                this.visibleGoods = 5;
+
                 const { themes, cities, inStock, category, price, search } = this.filterState;
 
                 const goods = [...this.goodsArrayFiltered];
@@ -365,6 +368,12 @@
             window.scrollTo(0, 0);
             const header = document.getElementById('container')
             zenscroll.to(header)
+
+            window.addEventListener('scroll', () =>{
+                if ((document.documentElement.offsetHeight + document.documentElement.scrollTop) === document.documentElement.scrollHeight) {
+                    this.visibleGoods += 5;
+                }
+            });
         },
         destroyed() {
             document.getElementsByTagName('body')[0].style.backgroundColor = '#120000'
