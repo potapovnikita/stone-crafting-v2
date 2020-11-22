@@ -127,7 +127,7 @@
         data() {
             return {
                 visibleGoods: 5,
-                queryParams: (new URL(document.location)).searchParams,
+                queryParams: null,
                 activeMenu: null,
                 activeIndex: 0,
                 activeInnerIndex: 0,
@@ -363,14 +363,15 @@
         },
 
         async mounted() {
+            this.queryParams = (new URL(window.document.location)).searchParams;
             this.isAuth = new Cookies().get('token') || this.curPass === this.queryParams.get('p');
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
             const header = document.getElementById('container')
             zenscroll.to(header)
 
-            window.addEventListener('scroll', () =>{
-                if ((document.documentElement.offsetHeight + document.documentElement.scrollTop) === document.documentElement.scrollHeight) {
+            window.addEventListener('scroll', () => {
+                if ((document.documentElement.scrollTop + window.innerHeight + 300) > document.documentElement.offsetHeight) {
                     this.visibleGoods += 5;
                 }
             });
