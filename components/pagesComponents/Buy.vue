@@ -234,7 +234,7 @@
                 item.activeImgId = id
             },
             getBgImg(file) {
-                return `url(${file.url})`
+                return `url('${file.url}')`
             },
             checkPass() {
                 this.errorPass = false;
@@ -373,7 +373,7 @@
             zenscroll.to(header)
 
             window.addEventListener('scroll', () => {
-                if ((document.documentElement.scrollTop + window.innerHeight + 300) > document.documentElement.offsetHeight) {
+                if ((document.documentElement.scrollTop + window.innerHeight + 500) > document.documentElement.offsetHeight) {
                     this.visibleGoods += 5;
                 }
             });
