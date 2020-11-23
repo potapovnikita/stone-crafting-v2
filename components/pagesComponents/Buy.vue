@@ -330,7 +330,7 @@
 
                     if (inStock.length) {
                         isHave.push(inStock
-                            .some(i => i.id === good.inStock && good.inStock.id)
+                            .some(i => good.inStock && i.id === good.inStock.id)
                         )
                     }
 
