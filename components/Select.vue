@@ -4,10 +4,10 @@
       .select(@click="isOpen= !isOpen" :class="{'opened': isOpen}")
         .values(v-if="isMulti && value && value.length")
           .select_item(v-for="option in value")
-            | {{option.name}}
+            | {{ lang === 'ru' ? option.name : option.nameEng ? option.nameEng : option.name }}
             .icon.delete(@click.stop.prevent="(e) => removeOption(option)")
               XIcon
-        .value(v-else-if="!isMulti && value") {{value.name}}
+        .value(v-else-if="!isMulti && value") {{ lang === 'ru' ? value.name : value.nameEng ? value.nameEng : value.name }}
         .placeholder(v-else) {{placeholder}}
 
         .arrow
@@ -15,7 +15,7 @@
           ChevronUpIcon(v-else)
       .options(v-if="isOpen" v-click-outside="open")
         .option(v-for="option in optionsFilter" @click="selectOption(option)" :class="{'selected': isSelected(option)}")
-          .name {{option.name}}
+          .name {{ lang === 'ru' ? option.name : option.nameEng ? option.nameEng : option.name }}
     .errorText(v-if="error") {{error}}
 
 </template>
@@ -23,6 +23,7 @@
 <script>
 import { ChevronDownIcon, ChevronUpIcon, XIcon } from 'vue-feather-icons'
 import ClickOutside from 'vue-click-outside'
+import {mapState} from "vuex";
 
 export default {
   name: 'Select',
@@ -72,6 +73,9 @@ export default {
     }
   },
   computed: {
+    ...mapState('localization', [
+      'lang',
+    ]),
     optionsFilter() {
       return this.options
     }

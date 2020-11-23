@@ -13,7 +13,7 @@
 
         .shop_wrapper(v-if="isAuth")
             .shop_filter
-                h3.reverse Категории
+                h3.reverse {{ lang === 'ru' ? 'Категории' : 'Categories' }}
 
                 .item(v-if="!categoriesArray.length" v-html="lang === 'ru' ? 'Категорий нет' : 'Categories is not set'")
                 .item
