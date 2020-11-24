@@ -212,7 +212,8 @@
                 saveAs(content, "stone-crafting.zip");
             },
             setActive(category) {
-                this.filterState.search = '';
+                const numGood = this.queryParams.get('id');
+                if (numGood && this.filteredGoods.find(g => g.number === numGood)) this.filterState.search = '';
 
                 if (category !== 'All') {
                     this.activeMenu = this.categoriesArray.find((item) => {
