@@ -69,7 +69,6 @@
         margin-bottom 52px
         text-align left
         line-height 52px
-        letter-spacing 0.03em
 
     &__double-line
         width 100px
