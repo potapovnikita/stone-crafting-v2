@@ -50,7 +50,7 @@
                 h4(v-if="filteredGoods.length === 0")
                     | {{lang === 'ru' ? 'Товаров по фильтру не найдено, задайте другие параметры поиска или сбросьте фильтр' : 'No goods found by filter, please set other search parameters or reset the filter'}}
                 .item(v-for="(good, index) in filteredGoods" v-if="index < visibleGoods" :key="good.id")
-                    .image
+                    .image(v-if="isShowMedia")
                         .photo(v-show="good.files[good.activeImgId].type === 'photo'"
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
@@ -114,7 +114,7 @@
     import Select from "@/components/Select";
     import Button from "@/components/Button";
 
-    import { themes, cities, stockStatuses } from "@/plugins/constants"
+    import {themes, cities, stockStatuses, DEFAULT_PASS} from "@/plugins/constants"
 
     export default {
         components: {
@@ -126,6 +126,7 @@
         },
         data() {
             return {
+                isShowMedia: window.location.port !== '3000',
                 visibleGoods: 5,
                 queryParams: null,
                 activeMenu: null,
@@ -134,7 +135,7 @@
                 isAuth: null,
                 inputType: 'password',
                 password: '',
-                curPass: '12345678',
+                curPass: DEFAULT_PASS,
                 errorPass: false,
                 categoriesArray: [],
                 goodsArray: [],
@@ -202,9 +203,9 @@
                 const zip = new JSZip();
 
                 good.files.forEach((i) => {
-                    console.log('i', i);
                     const data = urlToPromise(i.url);
-                    zip.file(i.name, data, { binary: true });
+                    const name = i.name.split('____')[0];
+                    zip.file(name, data, { binary: true });
                 })
 
                 const content = await zip.generateAsync({type:"blob"});

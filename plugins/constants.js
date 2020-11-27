@@ -1,3 +1,5 @@
+export const DEFAULT_PASS = '1305091973';
+
 export const stockStatuses = [
     {
         id: 1,
