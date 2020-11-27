@@ -126,7 +126,7 @@
         },
         data() {
             return {
-                isShowMedia: window.location.port !== '3000',
+                isShowMedia: true,
                 visibleGoods: 5,
                 queryParams: null,
                 activeMenu: null,
