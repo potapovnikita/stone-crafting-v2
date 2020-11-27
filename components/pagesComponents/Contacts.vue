@@ -1,33 +1,51 @@
 <template lang="pug">
     .common-container.contacts-container
-        h1(v-html="lang === 'ru' ? 'Контакты' : 'Contacts'")
+        h1.title(v-html="lang === 'ru' ? 'Контакты' : 'Contacts'")
 
-        .contact
-            .caption {{lang === 'ru' ? 'Телефоны' : 'Phone numbers'}}:
-            .item
-                a(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
-                a(:href="'tel:' + contacts.phoneMain2") {{contacts.phoneMain2}}
+        .contact-info
+            p.label
+                | email
 
-        .contact
-            .caption
-                nobr {{ lang === 'ru' ? 'E-mail ' : 'E-mail' }}:
-            a.item(v-if="contacts.email" :href="'mailto:' + contacts.email") {{contacts.email}}
+            .wrapper-link
+                a.info(v-if="contacts.email" :href="'mailto:' + contacts.email") {{contacts.email}}
+                .underline
 
-        .descriptionContact
-            .people(v-for="(item, index) in contacts.peoples")
-                img.photo(v-if="item.img" :src="getImg(item.img)")
-                .text
-                    .name(v-html="lang === 'ru' ? item.name : item.nameEng")
-                    .role(v-html="lang === 'ru' ? item.role : item.roleEng")
-                    a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
-                        .icon
-                            Whatsapp
-                    a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
+        .contact-info
+            p.label {{lang === 'ru' ? 'телефон' : 'phone numbers'}}
 
-        .addresses
-            h3(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
-            .itemAdd(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
+            .phones
+                a.info(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
+                a.info(:href="'tel:' + contacts.phoneMain2") {{contacts.phoneMain2}}
 
+        h2.sub-title {{lang === 'ru' ? 'Официальные представители:' : 'Official representatives'}}
+
+        .double-line
+        div
+            .people-list
+                .people(v-for="(item, index) in contacts.peoples")
+                    img.photo(v-if="item.img" :src="getImg(item.img)")
+                    .text
+                        h3.name(v-html="lang === 'ru' ? item.name : item.nameEng")
+                        p.role(v-html="lang === 'ru' ? item.role : item.roleEng")
+
+                        .wrapper-people-contact
+                            .wrapper-link
+                                a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
+                                .underline
+
+                            a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
+                                Whatsapp
+        
+        .info {{ lang === 'ru' ? 'Партнеры' : 'Partners' }}
+
+        .partner-list(v-if="contacts.partners")
+            .partner(v-for="(item, index) in contacts.partners")
+                img.photo(:src="getImg(item.img)" alt="partner")
+                p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
+                a.link(:href="item.href" target="_blank") {{item.href}}
+        
+        h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
+        h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
         .videoVirtual
             iframe(
                 width="100%"
@@ -39,9 +57,10 @@
                 :hl="lang === 'ru' ? 'ru' : 'en'"
             )
 
-        .addresses
-            h3(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
-            .itemAdd(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
+        h2(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
+        h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
+
+        Button(@click="$nuxt.$router.push({path:`/virtual-museum`})" large) {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
 
         .museumButton
             .button(@click="$nuxt.$router.push({path:`/virtual-museum`})") {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
@@ -53,6 +72,7 @@
 import { mapState } from 'vuex'
 import Contacts from '~/assets/staticData/contacts.json'
 import Whatsapp from '~/assets/img/contacts/whatsapp.svg'
+import Button from "@/components/ui/Button"
 
 
 export default {
@@ -64,6 +84,7 @@ export default {
     },
     components: {
         Whatsapp,
+        Button
     },
     computed: {
         ...mapState('localization', [
@@ -84,138 +105,139 @@ export default {
 <style lang="stylus">
 
 .contacts-container
-    h1
-        padding-bottom 36px
+    background url('~assets/img/contacts/bg-top.png') no-repeat
+    background-size contain
 
-    .contact,
-    .addresses
-        display flex
-        justify-content center
-        flex-wrap wrap
-        margin 0 auto
-        margin-bottom 30px
-        width 800px
-        font-size $FontSize2
+    .title
+        line-height 73px
+        margin-bottom 26px
 
-        h3
-            text-align center
-            margin-bottom 15px
+    .contact-info
+        margin-bottom 35px
 
-        @media only screen and (max-width 1024px)
+        .label
+            margin-bottom 9px
+            font-size 24px
+            line-height 34px
+            letter-spacing unset
+            color #414141
+
+    .info
+        font-family $TenorSans-Regular
+        font-weight normal
+        font-size 30px
+        line-height 42px
+
+    .wrapper-link
+        display inline-block
+
+        .underline
             width 100%
-            justify-content center
+            height 1px
+            background goldNew
+    
+    .phones
+        margin-bottom 12px
+        a + a
+            margin-left 30px
 
-        @media only screen and (max-width 400px)
-            flex-direction column
-            align-items center
+    .sub-title
+        margin-bottom 18px
 
-        .caption
-            display inline-flex
-            margin-right 15px
-            margin-bottom 10px
+    .double-line
+        width 100px
+        height 4px
+        margin 0 auto
+        margin-bottom 21px
+        border 1px solid goldNew
+        border-left none
+        border-right none
 
-        .item
-            display flex
-            flex-direction column
-            align-items flex-start
-
-            a
-                margin-bottom 10px
-
-    .addresses
-        flex-direction column
-        .itemAdd
-            margin-bottom 20px
-            display flex
-            justify-content center
-            text-align center
-
-
-    .descriptionContact
+    .people-list
         display flex
-        flex-direction column
-        align-items: center
-        margin-top 40px
-        margin-bottom 50px
-
-        @media only screen and (max-width 660px)
-            margin-bottom 30px
-
-            .photo
-                margin-bottom 20px
+        align-items center
+        justify-content space-between
+        flex-wrap wrap
+        max-width 1430px
+        margin-bottom 60px
 
         .people
             display flex
             flex-direction row
-            justify-content center
-            align-items center
-            width 800px
-            margin 0 auto
-            margin-bottom 40px
-            padding 0 15px
-
-            @media only screen and (max-width 1024px)
-                width 500px
-                justify-content center
-
-            @media only screen and (max-width 600px)
-                width 100%
-                justify-content center
+            justify-content space-between
+            align-items flex-start
+            width 670px
+            margin-bottom 30px
 
             .photo
-                width 200px
-                max-width 200px
-                min-height 200px
-
-                @media only screen and (max-width 600px)
-                    width 100px
-                    height 100px
-                    max-width 100px
-                    min-height 100px
+                width 235px
+                height 235px
+                padding 24px
+                border 1px solid rgba(255, 255, 255, 0.07)
+                border-radius 50%
 
             .text
-                min-width 700px
-                max-width 700px
+                width 396px
+                padding-top 30px
                 text-align left
-                padding 0 30px 20px
-                font-family $IntroRegular
-                font-size $FontSize16
-
-                @media only screen and (max-width 1024px)
-                    min-width 500px
-                    max-width 500px
-                    justify-content center
-
-                @media only screen and (max-width 700px)
-                    max-width 250px
-                    min-width 240px
-                    padding 0 15px 20px
-                    font-size $FontSizeMenu
-
-                @media only screen and (max-width 400px)
-                    min-width 200px
-                    max-width 200px
-
-                @media only screen and (max-width 350px)
-                    font-size 14px
-
 
                 .name
-                    font-size $FontSize2
-                    margin-bottom 15px
+                    margin-bottom 18px
+                    font-size 26px
+                    line-height 39px
 
-                .role,
-                .phone,
-                .email
-                    display block
-                    margin-bottom 10px
-                .phone
-                    display inline-flex
+                .role
+                    margin-bottom 22px
+                    text-align left
+
+                .wrapper-people-contact
+                    display flex
                     align-items center
-                    .icon
-                        svg
-                            width 25px
-                            height 25px
+
+                    .email
+                        font-family $TenorSans-Regular
+                        font-weight normal
+                        font-size 16px
+                        line-height 24px
+                        letter-spacing 0.03em
+                        color whiteMain
+
+                    .phone
+                        font-size 0
+                        margin-left 30px
+
+    .partner-list
+        margin-bottom 76px
+
+        .partner
+            display block
+            margin 25px 0
+
+            .photo
+                width 205px
+                height 205px
+                padding 8px
+                margin-bottom 10px
+                border 1px solid rgba(255, 255, 255, 0.07)
+                border-radius 50%
+
+            .text
+                margin-bottom 2px
+
+            .link
+                font-family $TenorSans-Regular
+                font-weight normal
+                font-size 18px
+                line-height 27px
+                text-align center
+                letter-spacing 0.03em
+                color whiteMain
+
+    .addr-name
+        margin-top 15px
+        margin-bottom 36px
+        font-size 26px
+        line-height 39px
 
     .museumButton
         .button
@@ -247,5 +269,90 @@ export default {
 
             @media only screen and (max-width 400px)
                 height 210px
+
+    @media only screen and (max-width 767px)
+        background url('~assets/img/contacts/bg-mb.png')
+
+        .title
+            margin-bottom 40px
+            font-size 28px
+            line-height 39px
+
+        .label
+            font-size 22px
+            line-height 31px
+
+        .info
+            font-size 20px
+            line-height 28px
+
+        .phones
+            display flex
+            flex-direction column
+            margin 0
+
+            a + a
+                margin-left 0
+
+        .sub-title
+            margin-bottom 24px
+
+        .double-line
+            width 50px
+            margin-bottom 43px
+
+        .people-list
+            display block
+            max-width unset
+            margin 0 auto
+            margin-bottom 60px
+
+            .people
+                display block
+                width 100%
+                margin-bottom 30px
+
+                .photo
+                    width 193px
+                    height 193px
+                    padding 20px
+
+                .text
+                    width 100%
+                    padding 0
+                    text-align center
+
+                    .name
+                        margin-bottom 12px
+                        font-size 22px
+                        line-height 33px
+
+                    .role
+                        margin-bottom 18px
+                        font-size 18px
+                        line-height 27px
+                        text-align center
+
+                    .wrapper-people-contact
+                        justify-content center
+
+        .partner-list
+            margin-bottom 50px
+
+            .partner
+                .photo
+                    width 193px
+                    height 193px
+                    margin-bottom 10px
+
+                .text
+                    font-size 18px
+                    line-height 27px
+
+        .addr-name
+            margin-top 8px
+            margin-bottom 34px
+            font-size 16px
+            line-height 24px
 
 </style>

@@ -38,5 +38,13 @@
             "email": "jameskimplease@gmail.com",
             "img": "img/contacts/james.png"
         }
+    ],
+    "partners": [
+        {
+            "name": "Ювелирный дом CHAMOVSKIKH",
+            "nameEng": "CHAMOVSKIKH House",
+            "href": "www.chamovskikh.com",
+            "img": "img/contacts/partner.png"
+        }
     ]
 }
