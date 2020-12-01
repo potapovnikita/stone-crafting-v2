@@ -11,7 +11,10 @@
                 button(@click="checkPass()") Войти
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
-        .shop_wrapper(v-if="isAuth")
+        .shop_wrapper(v-if="isAuth && isGoodsLoading")
+            .good-loader
+                LoaderIcon
+        .shop_wrapper(v-if="isAuth && !isGoodsLoading")
             .shop_filter
                 h3.reverse {{ lang === 'ru' ? 'Категории' : 'Categories' }}
 
@@ -108,7 +111,7 @@
     import { urlToPromise } from "@/plugins/getUrl";
     import axios from "axios";
     import JSZip from "jszip";
-    import { ChevronsDownIcon, ChevronsUpIcon } from 'vue-feather-icons'
+    import { ChevronsDownIcon, ChevronsUpIcon, LoaderIcon } from 'vue-feather-icons'
 
     import Input from "@/components/Input";
     import Select from "@/components/Select";
@@ -123,10 +126,12 @@
             Button,
             ChevronsDownIcon,
             ChevronsUpIcon,
+            LoaderIcon,
         },
         data() {
             return {
-                isShowMedia: true,
+                isGoodsLoading: false,
+                isShowMedia: true, // при разработке лучше не грузить медиа с сервера
                 visibleGoods: 5,
                 queryParams: null,
                 activeMenu: null,
@@ -249,6 +254,7 @@
                 }
             },
             async initApp() {
+                this.isGoodsLoading = true;
                 await fb.categoriesCollection.get().then(data => {
                     data.forEach(doc => {
                         let category = doc.data()
@@ -289,6 +295,9 @@
                 this.setActive(hashItem || 'All')
 
                 if (this.queryParams.get('id')) this.filterState.search = this.queryParams.get('id');
+
+                // конец инициализации
+                this.isGoodsLoading = false;
             }
         },
         computed: {
@@ -397,6 +406,15 @@
         display flex
         flex-direction row
         width 100%
+
+        .good-loader
+            margin 0 auto;
+            animation: spin 4s linear infinite;
+
+            svg
+                width 30px
+                height 30px
+                stroke darkRed
 
         .auth-container
             display flex
