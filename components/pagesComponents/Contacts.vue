@@ -65,7 +65,6 @@
         .museumButton
             .button(@click="$nuxt.$router.push({path:`/virtual-museum`})") {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
 
-
 </template>
 
 <script>
@@ -105,8 +104,7 @@ export default {
 <style lang="stylus">
 
 .contacts-container
-    background url('~assets/img/contacts/bg-top.png') no-repeat
-    background-size contain
+    background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 111.47%), url('~assets/img/contacts/bg-top.png') top center no-repeat, url('~assets/img/contacts/bg-bottom.png') bottom center no-repeat, linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
 
     .title
         line-height 73px
@@ -270,6 +268,19 @@ export default {
             @media only screen and (max-width 400px)
                 height 210px
 
+    .wrapper-bg
+        position relative
+
+    .bg-bottom
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        width 100%
+        height 953px
+        background url('~assets/img/contacts/bg-bottom.png'), linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
+        background-repeat no-repeat
+
     @media only screen and (max-width 767px)
         background url('~assets/img/contacts/bg-mb.png')
 
@@ -354,5 +365,8 @@ export default {
             margin-bottom 34px
             font-size 16px
             line-height 24px
+
+        .wrapper-bg
+            display none
 
 </style>

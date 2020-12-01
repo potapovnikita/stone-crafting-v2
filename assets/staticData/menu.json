@@ -1,28 +1,33 @@
 [
     {
+        "name": "Главная страница",
+        "nameEng": "Main",
+        "link": "/"
+    },
+    {
+        "name": "Сокровища музеев",
+        "nameEng": "Museum treasures",
+        "link": "/collections"
+    },
+    {
         "name": "О камнерезном Доме",
         "nameEng": "About stone-crafting House",
         "link": "/about"
     },
     {
-        "name": "Сокровища музеев </br> Коллекция дома",
-        "nameEng": "Museum treasures </br> House collection",
-        "link": "/collections"
-    },
-    {
-        "name": "Новости дома </br> Выставки",
-        "nameEng": "House news </br> Shows",
+        "name": "Новости дома",
+        "nameEng": "House news",
         "link": "/news"
     },
     {
-        "name": "Предложения</br>для партнеров",
-        "nameEng": "Offers</br>for partners",
-        "link": "/offers"
+        "name": "Виртуальный музей",
+        "nameEng": "Virtual Museum",
+        "link": "/virtual-museum"
     },
     {
-        "name": "Виртуальный</br>музей",
-        "nameEng": "Virtual</br>Museum",
-        "link": "/virtual-museum"
+        "name": "Предложения для партнеров",
+        "nameEng": "Offers for partners",
+        "link": "/offers"
     },
     {
         "name": "Контакты",

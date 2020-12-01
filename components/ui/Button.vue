@@ -6,7 +6,6 @@
         :disabled="disabled"
         )
             slot
-                span {{name}}
 </template>
 
 <script>
@@ -14,7 +13,6 @@
 export default {
     name: 'Button',
     props: {
-        name: String,
         onClick: Function,
         type: String,
         disabled: Boolean,

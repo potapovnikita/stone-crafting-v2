@@ -11,7 +11,7 @@
     import Header from '~/components//Header.vue'
     import PageContainer from '~/components/PageContainer.vue'
     import SplitLine from '~/components/SplitLine.vue'
-    import Footer from '~/components/Footer.vue'
+    import Footer from '~/components/FooterNew.vue'
 
     export default {
         components: {

@@ -2,20 +2,31 @@
     .brand-history-container
         .brand-history-container__line
         .brand-history-container__bg-pic-bottom
-        h2.brand-history-container__title
-            | История бренда
+        h2.brand-history-container__title {{lang === 'ru' ? data.title : data.titleEng}}
 
-        p.brand-history-container__text
-            | Бренд создан уральским мастером — камнерезом по художественной обработке камня, членом союза художников России — Алексеем Антоновым.
+        p.brand-history-container__text {{lang === 'ru' ? data.text : data.textEng}}
 
         .brand-history-container__button
-            Button(name='О бренде' :onClick="() => sampleTest('О бренде')")
+            Button(:onClick="() => $nuxt.$router.push({path:`${data.href}`})") {{lang === 'ru' ? data.btnName : data.btnNameEng}}
 </template>
 <script>
+    import { mapState } from 'vuex'
+    import BrandHistory from '~/assets/staticData/brandHistory.json'
     import Button from "@/components/ui/Button";
     export default {
-         components: {
+        name: "BrandHistory",
+        components: {
             Button,
+        },
+        data() {
+            return {
+                data: BrandHistory,
+            }
+        },
+        computed: {
+            ...mapState('localization', [
+                'lang',
+            ]),
         },
     }
 </script>
@@ -23,9 +34,9 @@
 <style lang="stylus">
     .brand-history-container
         position relative
+        min-height 335px
         padding 50px
-        background url('~assets/img/brandHistory/bg-main.png') no-repeat
-        background-size cover
+        background url('~assets/img/brandHistory/bg-main.png') top center no-repeat
 
         &__line
             position absolute

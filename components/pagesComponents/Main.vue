@@ -1,18 +1,14 @@
 <template lang="pug">
     .common-container.main-container
         .header-container
-            .header-pic
             .header-container__title-container
                 .header-container__circle
-                h1.header-container__title
-                    | Камнерезный Дом Антонова
-                p.header-container__sub-title
-                    | Камнерезное и ювелирное искусство
+                h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Title on eng' }}
+                p.header-container__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Title on eng' }}
                 .header-container__line
                 .header-container__year-wrapper
                     .header-container__double-line
-                    p.text_sverdlovsk
-                        | с 1968 года
+                    p.text_sverdlovsk {{ lang === 'ru' ? 'с 1968 года' : 'since 1968' }}
 
         BrandHistory
         LinksPanel
@@ -25,8 +21,8 @@
 
     import Company from '~/assets/staticData/company.json'
     import Button from "@/components/ui/Button";
-    import BrandHistory from "@/components/pagesComponents/BrandHistory";
-    import LinksPanel from "@/components/pagesComponents/LinksPanel";
+    import BrandHistory from "@/components/blocksComponents/BrandHistory";
+    import LinksPanel from "@/components/blocksComponents/LinksPanel";
     import Tradition from "@/components/pagesComponents/Tradition";
 
     export default {
@@ -87,8 +83,8 @@
 
 <style lang="stylus">
     .header-container
-        position relative
         height 982px
+        background url('~assets/img/main/header-main.png') top center no-repeat
 
         &__circle
             position absolute
@@ -104,6 +100,7 @@
         &__title-container
             position relative
             height 722px
+            margin-top 148px
             padding-top 195px
 
         &__title
@@ -179,14 +176,6 @@
             
             &__double-line
                 display none
-
-    .header-pic
-        position absolute
-        width 100%
-        height 100%
-        background url('~assets/img/main/header-main.png')
-        background-position center
-        background-size cover
 
         @media only screen and (max-width 767px)
             background url('~assets/img/main/header-main-mb.png') no-repeat

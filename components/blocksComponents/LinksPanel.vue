@@ -1,31 +1,42 @@
 <template lang="pug">
-    .links-panel-container
-        .links-panel-container__item.links-panel-container__item--man
+    .links-panel-container(v-if="dataList")
+        .links-panel-container__item.links-panel-container__item--bg(
+            v-for="item in dataList" 
+            :style="{backgroundImage: getBgImg(item.background)}"
+        )
             .links-panel-container__wrapper-content
                 .links-panel-container__circle
                 .links-panel-container__wrapper-icon
-                    StoneIcon
+                    .links-panel-container__icon(:style="{backgroundImage: getBgImg(item.icon)}")
                 .links-panel-container__wrapper-link
-                    a.links-panel-container__link(href="/" target="_blank")
-                        | Сокровища Музеев Коллекция Дома
-
-        .links-panel-container__item.links-panel-container__item--museum
-            .links-panel-container__wrapper-content
-                .links-panel-container__circle
-                .links-panel-container__wrapper-icon
-                    MuseumIcon
-                .links-panel-container__wrapper-link
-                    a.links-panel-container__link(href="/" target="_blank")
-                        | Виртуальный музей Камнерезного Дома
-
+                    nuxt-link.links-panel-container__link(:to="item.href" v-html="lang === 'ru' ? item.name : item.nameEng")
 </template>
 <script>
+    import { mapState } from 'vuex'
+    import { getBgImgLocal } from '~/plugins/getUrl'
+    import LinksPanel from '~/assets/staticData/linksPanel.json'
     import StoneIcon from '~/assets/img/linksPanel/stone.svg';
     import MuseumIcon from '~/assets/img/linksPanel/museum.svg';
     export default {
+        name: "LinksPanel",
+        data() {
+            return {
+                dataList: LinksPanel,
+            }
+        },
         components: {
             StoneIcon,
             MuseumIcon,
+        },
+        methods: {
+            getBgImg(url) {
+                return getBgImgLocal(url)
+            },
+        },
+        computed: {
+            ...mapState('localization', [
+                'lang',
+            ]),
         },
     }
 </script>
@@ -34,6 +45,8 @@
 .links-panel-container
     display flex
     flex-direction row
+    flex-wrap wrap
+    justify-content center
 
     &__item
         display flex
@@ -53,7 +66,11 @@
             background url('~assets/img/linksPanel/bg-museum.png') no-repeat
             background-size cover
             background-position center
-    
+
+        &--bg
+            background-size cover
+            background-position center
+
     &__wrapper-content
         position relative
         padding-top 42px
@@ -71,8 +88,13 @@
         z-index 1
 
     &__wrapper-icon
-        height 64px
+        height 65px
         margin-bottom 25px
+
+    &__icon
+        height 100%
+        background-repeat no-repeat
+        background-position center
     
     &__wrapper-link
         position relative
