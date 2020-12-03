@@ -38,6 +38,7 @@ export default {
     color whiteMain
     outline none
     cursor pointer
+    overflow hidden
     border 1px solid goldNew
     &:hover,
     &:active

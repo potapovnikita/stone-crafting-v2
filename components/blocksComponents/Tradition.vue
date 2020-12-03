@@ -2,8 +2,7 @@
     .tradition-container
         .tradition-container__pic-top-left
         .tradition-container__wrapper-title
-            h2.tradition-container__title
-                | Вековые традиции объемной каменной мозаики
+            h2.tradition-container__title {{lang === 'ru' ? 'Вековые традиции объемной каменной мозаики' : 'Tile on eng' }}
             .tradition-container__double-line
         .tradition-container__pic-top-right
         .tradition-container__buttons-panel(v-if="data.buttons")
@@ -124,6 +123,34 @@
             &:hover
                 .icon
                     stroke #222
+
+        @media only screen and (max-width 1280px)
+            padding-top 72px
+            padding-bottom 29px
+
+            &__pic-top-left
+                background-size 80%
+                background-position -100px -50px
+
+            &__pic-top-right
+                background-size 80%
+                background-position 40px 50px
+
+            &__wrapper-title
+                padding-bottom 25px
+
+            &__title
+                max-width 510px
+
+            &__btn-container
+                min-width 468px
+                padding 38px 45px 40px
+
+                .icon
+                    margin-right 35px
+
+                .text
+                    font-size 22px
 
         @media only screen and (max-width 767px)
             padding-top 42px

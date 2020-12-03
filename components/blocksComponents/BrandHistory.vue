@@ -41,7 +41,7 @@
 
         &__line
             position absolute
-            top -50px
+            top -40px
             left 0
             right 0
             width 1px
@@ -66,6 +66,18 @@
         &__button
             margin-top 35px
 
+        @media only screen and (max-width 1280px)
+            padding 64px 10px 75px
+            min-height 260px
+            background url('~assets/img/brandHistory/bg-main-ip.png') top center no-repeat
+
+            &__bg-pic-bottom
+                background url('~assets/img/brandHistory/bg-bottom-ip.png') no-repeat
+            
+            &__title
+                margin-bottom 26px
+                line-height 48px
+        
         @media only screen and (max-width 767px)
             padding 98px 10px 108px
             background url('~assets/img/brandHistory/bg-main-mb.png') no-repeat

@@ -142,6 +142,26 @@
             border-left none
             border-right none
 
+        @media only screen and (max-width 1280px)
+            height 703px
+            background url('~assets/img/main/header-main-ip.png') top center no-repeat
+
+            &__title-container
+                position relative
+                height 580px
+                margin-top 110px
+                padding-top 180px
+            
+            &__title
+                font-size 52px
+
+            &__circle
+                width 580px
+
+            &__year-wrapper
+                padding-top 25px
+                margin-top 83px
+
         @media only screen and (max-width 767px)
             height 100vh
 

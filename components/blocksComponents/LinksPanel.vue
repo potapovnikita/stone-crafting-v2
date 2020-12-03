@@ -91,6 +91,8 @@
     &__wrapper-content
         position relative
         padding-top 42px
+        min-width 408px
+        min-height 216px
     
     &__circle
         position absolute
@@ -115,7 +117,6 @@
     
     &__wrapper-link
         position relative
-        max-width 408px
         z-index 2
 
     &__link
@@ -124,9 +125,32 @@
         color whiteMain
         text-align center
         font-weight 400
-        line-height 42px
-        text-align center
+        line-height 140%
         letter-spacing 0.03em
+
+    @media only screen and (max-width 1280px)
+        &__item
+            min-width 470px
+            min-height 330px
+
+        &__wrapper-content
+            min-width 283px
+            min-height 156px
+            padding-top 30px
+
+        &__circle
+            width 192px
+            height 192px
+
+        &__wrapper-icon
+            height 50px
+            margin-bottom 16px
+
+        &__icon
+            background-size contain
+
+        &__link
+            font-size 22px
 
     @media only screen and (max-width 767px)
         display block
