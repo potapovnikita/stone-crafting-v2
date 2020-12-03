@@ -23,7 +23,7 @@
     import Button from "@/components/ui/Button";
     import BrandHistory from "@/components/blocksComponents/BrandHistory";
     import LinksPanel from "@/components/blocksComponents/LinksPanel";
-    import Tradition from "@/components/pagesComponents/Tradition";
+    import Tradition from "@/components/blocksComponents/Tradition";
 
     export default {
         data() {
@@ -85,6 +85,7 @@
     .header-container
         height 982px
         background url('~assets/img/main/header-main.png') top center no-repeat
+        background-size cover
 
         &__circle
             position absolute

@@ -1,0 +1,14 @@
+{
+    "buttons": [
+        {
+            "name": "Сделать\n индивидуальный заказ",
+            "nameEng": "Name on eng",
+            "link": "/"
+        },
+        {
+            "name": "Салон Antonov Online\n магазин уникальных вещей",
+            "nameEng": "Name on eng",
+            "link": "/"
+        }
+    ]
+}

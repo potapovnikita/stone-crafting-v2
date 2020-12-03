@@ -60,10 +60,15 @@
         h2(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
         h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
 
-        Button(@click="$nuxt.$router.push({path:`/virtual-museum`})" large) {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
-
-        .museumButton
-            .button(@click="$nuxt.$router.push({path:`/virtual-museum`})") {{lang === 'ru' ? 'Посетить виртуальный музей' : 'Visit virtual museum'}}
+        .buttons-panel
+            Button(
+                :classNames="['buttons-panel__btn']"
+                :onClick="() => $nuxt.$router.push({path:'/virtual-museum'})"
+                disabledPadding
+                large)
+                .buttons-panel__btn-container
+                    MuseumIcon.icon
+                    span.text {{lang === 'ru' ? 'Посетить\n виртуальный музей' : 'Visit\n virtual museum'}}
 
 </template>
 
@@ -72,7 +77,7 @@ import { mapState } from 'vuex'
 import Contacts from '~/assets/staticData/contacts.json'
 import Whatsapp from '~/assets/img/contacts/whatsapp.svg'
 import Button from "@/components/ui/Button"
-
+import MuseumIcon from '~/assets/img/contacts/museum.svg'
 
 export default {
     data() {
@@ -83,7 +88,8 @@ export default {
     },
     components: {
         Whatsapp,
-        Button
+        Button,
+        MuseumIcon,
     },
     computed: {
         ...mapState('localization', [
@@ -104,10 +110,10 @@ export default {
 <style lang="stylus">
 
 .contacts-container
+    padding-top 117px
     background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 111.47%), url('~assets/img/contacts/bg-top.png') top center no-repeat, url('~assets/img/contacts/bg-bottom.png') bottom center no-repeat, linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
 
     .title
-        line-height 73px
         margin-bottom 26px
 
     .contact-info
@@ -116,7 +122,7 @@ export default {
         .label
             margin-bottom 9px
             font-size 24px
-            line-height 34px
+            line-height 140%
             letter-spacing unset
             color #414141
 
@@ -124,7 +130,7 @@ export default {
         font-family $TenorSans-Regular
         font-weight normal
         font-size 30px
-        line-height 42px
+        line-height 140%
 
     .wrapper-link
         display inline-block
@@ -182,7 +188,7 @@ export default {
                 .name
                     margin-bottom 18px
                     font-size 26px
-                    line-height 39px
+                    line-height 150%
 
                 .role
                     margin-bottom 22px
@@ -237,22 +243,27 @@ export default {
         font-size 26px
         line-height 39px
 
-    .museumButton
-        .button
-            margin-bottom 60px
-            font-size $FontSize3
-            width 260px
-            text-align center
-            cursor pointer
-            border 1px solid white
-            padding 20px 30px
-            color white
-            background-color inherit
-            transition background-color .3s ease, color .3s ease
+    .buttons-panel
+        &__btn-container
+            display flex
+            justify-content center
+            align-items center
+            min-width 637px
+            padding 50px 45px 64px
 
+            .icon
+                margin-right 60px
+
+            .text
+                font-size 30px
+                line-height 130%
+                letter-spacing 0.03em
+                text-align left
+                white-space pre-line
+        &__btn
             &:hover
-                color black
-                background-color white
+                .icon
+                    stroke #222
 
     .videoVirtual
         margin-bottom 30px
@@ -281,21 +292,85 @@ export default {
         background url('~assets/img/contacts/bg-bottom.png'), linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
         background-repeat no-repeat
 
+    @media only screen and (max-width 1280px)
+        padding 96px 20px 60px
+
+        .title
+            margin-bottom 11px
+
+        .info
+            font-size 26px
+
+        .sub-title
+            margin-bottom 36px
+
+        .double-line
+            margin-bottom 52px
+
+        .people-list
+            max-width unset
+            margin-bottom 50px
+
+            .people
+                justify-content space-around
+                max-width 485px
+                min-width 420px
+                width 100%
+                margin-bottom 30px
+
+                .photo
+                    width 120px
+                    height 120px
+                    padding 12px
+
+                .text
+                    max-width 336px
+                    padding 0
+
+                    .name
+                        margin-bottom 6px
+                        font-size 22px
+
+                    .role
+                        margin-bottom 10px
+                        font-size 14px
+                        line-height 21px
+
+        .addr-name
+            margin-top 6px
+            margin-bottom 30px
+            font-size 18px
+            line-height 27px
+
+        .buttons-panel
+            margin-bottom 31px
+
+            &__btn-container
+                min-width 466px
+                padding 39px 22px 47px
+
+                .icon
+                    width 57px
+                    height 57px  
+                    margin-right 30px
+
+                .text
+                    font-size 22px
+
     @media only screen and (max-width 767px)
+        padding-top 76px
         background url('~assets/img/contacts/bg-mb.png')
 
         .title
             margin-bottom 40px
             font-size 28px
-            line-height 39px
 
-        .label
-            font-size 22px
-            line-height 31px
+        .contact-info
+            .label
+                font-size 22px
 
         .info
             font-size 20px
-            line-height 28px
 
         .phones
             display flex
@@ -321,6 +396,8 @@ export default {
             .people
                 display block
                 width 100%
+                max-width unset
+                min-width unset
                 margin-bottom 30px
 
                 .photo
@@ -336,7 +413,6 @@ export default {
                     .name
                         margin-bottom 12px
                         font-size 22px
-                        line-height 33px
 
                     .role
                         margin-bottom 18px
@@ -368,5 +444,21 @@ export default {
 
         .wrapper-bg
             display none
+
+        .buttons-panel
+            margin-bottom 8px
+
+            &__btn-container
+                min-width unset
+                padding 24px 26px 30px
+
+                .icon
+                    width 34px
+                    height 24px 
+                    margin-right 35px
+
+                .text
+                    font-size 16px
+                    white-space normal
 
 </style>

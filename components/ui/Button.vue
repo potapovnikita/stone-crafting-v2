@@ -1,6 +1,6 @@
 <template lang='pug'>
     button(
-        :class="['btn',  classNames? classNames : '', { 'btn--large': large }]"
+        :class="['btn', classNames? classNames : '', { 'btn--large': large }, { 'btn--noPadding': disabledPadding }]"
         :type ="type || 'button'" 
         @click="onClick && onClick()" 
         :disabled="disabled"
@@ -18,6 +18,7 @@ export default {
         disabled: Boolean,
         large: Boolean,
         classNames: Array,
+        disabledPadding: Boolean,
     },
     created() {
     }
@@ -52,10 +53,17 @@ export default {
         min-width 494px
         padding 29px 20px 36px
 
+    @media only screen and (max-width 1280px)
+        &--large
+            min-width 400px
+
     @media only screen and (max-width 767px)
         min-width 206px
         padding 17px 20px 22px
         font-size 16px
         line-height 21px
+
+    &--noPadding
+        padding 0
 
 </style>

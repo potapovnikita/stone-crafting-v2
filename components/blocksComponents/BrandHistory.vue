@@ -37,6 +37,7 @@
         min-height 335px
         padding 50px
         background url('~assets/img/brandHistory/bg-main.png') top center no-repeat
+        background-size cover
 
         &__line
             position absolute

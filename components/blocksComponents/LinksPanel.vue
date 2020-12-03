@@ -1,6 +1,20 @@
 <template lang="pug">
     .links-panel-container(v-if="dataList")
-        .links-panel-container__item.links-panel-container__item--bg(
+        // for desctop version
+        nuxt-link.links-panel-container__item.desktop.links-panel-container__item--bg(
+            v-for="(item, index) in dataList"
+            :key="`link_${index}`"
+            :to="item.href"
+            :style="{backgroundImage: getBgImg(item.background)}")
+                .links-panel-container__wrapper-content
+                    .links-panel-container__circle
+                    .links-panel-container__wrapper-icon
+                        .links-panel-container__icon(:style="{backgroundImage: getBgImg(item.icon)}")
+                    .links-panel-container__wrapper-link
+                        span.links-panel-container__link(v-html="lang === 'ru' ? item.name : item.nameEng")
+
+        // for mobile version
+        .links-panel-container__item.mobile.links-panel-container__item--bg(
             v-for="item in dataList" 
             :style="{backgroundImage: getBgImg(item.background)}"
         )
@@ -56,6 +70,9 @@
         position relative
         min-width 470px
         min-height 470px
+
+        &.mobile
+            display none
 
         &--man
             background url('~assets/img/linksPanel/bg-man.png') no-repeat
@@ -119,6 +136,12 @@
             height 315px
             min-width unset
             min-height unset
+
+            &.desktop
+                display none
+
+            &.mobile
+                display flex
 
             &--man
                 background url('~assets/img/linksPanel/bg-man-mb.png') no-repeat
