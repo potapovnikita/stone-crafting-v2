@@ -1,6 +1,6 @@
 <template lang="pug">
     .common-container.reverse
-        .shop_wrapper(v-if="!isAuth")
+        .shop_wrapper(v-if="!isAuth && !authenticating")
             .auth-container
                 h2.reverse {{ lang === 'ru' ? 'Введите пароль для доступа к предложениям' : 'Enter password for show offers' }}
                 input.password(:type="inputType"
@@ -11,7 +11,7 @@
                 button(@click="checkPass()") Войти
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
-        .shop_wrapper(v-if="isAuth && isGoodsLoading")
+        .shop_wrapper(v-if="isAuth && isGoodsLoading || authenticating")
             .good-loader
                 LoaderIcon
         .shop_wrapper(v-if="isAuth && !isGoodsLoading")
@@ -131,6 +131,7 @@
         data() {
             return {
                 isGoodsLoading: false,
+                authenticating: true,
                 isShowMedia: true, // при разработке лучше не грузить медиа с сервера
                 visibleGoods: 5,
                 queryParams: null,
@@ -378,6 +379,8 @@
         async mounted() {
             this.queryParams = (new URL(window.document.location)).searchParams;
             this.isAuth = new Cookies().get('token') || this.curPass === this.queryParams.get('p');
+            this.authenticating = false;
+
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
             const header = document.getElementById('container')
