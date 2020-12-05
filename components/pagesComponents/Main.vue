@@ -143,8 +143,6 @@
             border-right none
 
         @media only screen and (max-width 1280px)
-            height 703px
-            background url('~assets/img/main/header-main-ip.png') top center no-repeat
 
             &__title-container
                 position relative
@@ -162,6 +160,10 @@
                 padding-top 25px
                 margin-top 83px
 
+        @media only screen and (max-width 1024px)
+            height 703px
+            background url('~assets/img/main/header-main-ip.png') top center no-repeat
+        
         @media only screen and (max-width 767px)
             height 100vh
 

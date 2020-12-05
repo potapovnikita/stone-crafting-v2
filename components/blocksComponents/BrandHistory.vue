@@ -67,20 +67,22 @@
             margin-top 35px
 
         @media only screen and (max-width 1280px)
+            &__title
+                margin-bottom 26px
+                line-height 48px
+
+        @media only screen and (max-width 1024px)
             padding 64px 10px 75px
             min-height 260px
             background url('~assets/img/brandHistory/bg-main-ip.png') top center no-repeat
 
             &__bg-pic-bottom
                 background url('~assets/img/brandHistory/bg-bottom-ip.png') no-repeat
-            
-            &__title
-                margin-bottom 26px
-                line-height 48px
         
         @media only screen and (max-width 767px)
             padding 98px 10px 108px
             background url('~assets/img/brandHistory/bg-main-mb.png') no-repeat
+            background-size cover
 
             &__title
                 margin-bottom 20px
@@ -88,6 +90,5 @@
             &__bg-pic-bottom
                 background-size 40%
                 background-position -17% bottom
-
 
 </style>

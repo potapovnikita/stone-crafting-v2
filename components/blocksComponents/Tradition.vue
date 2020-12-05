@@ -8,7 +8,8 @@
         .tradition-container__pic-bottom
         .tradition-container__slides-panel(v-if="slides")
             client-only
-                carousel(:perPage="1" paginationActiveColor="#fce086")
+                button(@click.prevent="prewExpert") Prev
+                carousel(:paginationEnabled="false" :perPage="1" ref="traditionCarousel" paginationActiveColor="#fce086")
                     slide(v-for="item in slides" :key="item.id")
                         .slide-item
                             .slide-item__container-img
@@ -17,21 +18,10 @@
                                 img.slide-item__photo(v-if="item.img" :src="getImgLocal(item.img)" alt="img")
 
                             .slide-item__container-text(:class="item.textBlockClass ? `${item.textBlockClass}-${item.id}` : ''")
-                                .slide-item__century-panel
-                                    .slide-item__centry-item
-                                        span
-                                            | XIX
-                                        .slide-item__centry-circle.active
-
-                                    .slide-item__centry-item
-                                        span
-                                            | XX
-                                        .slide-item__centry-circle
-
-                                    .slide-item__centry-item
-                                        span
-                                            | XXI
-                                        .slide-item__centry-circle
+                                .slide-item__century-panel(v-if="centuryList")
+                                    .slide-item__centry-item(v-for="century in centuryList")
+                                        span(:class="{'active': century.name === item.century}") {{century.name}}
+                                        .slide-item__centry-circle(:class="{'active': century.name === item.century}")
 
                                     .slide-item__line-panel
                                         .slide-item__line-start
@@ -41,6 +31,7 @@
                                 p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
 
                                 nuxt-link.slide-item__link(v-if="item.link" :to="item.link.href" v-html="lang === 'ru' ? item.link.name : item.link.nameEng")
+                button(@click.prevent="nextExpert") Next
 
         .tradition-container__buttons-panel(v-if="buttons")
             Button(
@@ -89,6 +80,7 @@
         },
         data() {
             return {
+                centuryList: Tradition.centuryList,
                 slides: Tradition.slides,
                 buttons: Tradition.buttons,
             }
@@ -96,6 +88,12 @@
         methods: {
             getImgLocal(url) {
                 return getImgLocal(url)
+            },
+            prewExpert() {
+                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getPreviousPage());
+            },
+            nextExpert() {
+                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getNextPage());
             },
         },
         computed: {
@@ -194,7 +192,10 @@
                     span
                         margin-bottom 12px
                         font-size 30px
-                        color goldNew
+                        color rgba(255, 255, 255, 0.36)
+
+                        &.active
+                            color goldNew
 
                 &__centry-circle
                     width 12px
@@ -246,8 +247,8 @@
                         max-width 398px
 
             .slide-item__container-text.wrapper-text-fist
-                background url('~assets/img/tradition/slides/1/bg-text.png') no-repeat
-                background-size: contain
+                min-height 392px
+                background url('~assets/img/tradition/slides/1/bg-text.png') 30px 20px no-repeat
 
         .VueCarousel-pagination
             margin-top 74px
@@ -294,9 +295,6 @@
                 background-size 80%
                 background-position 40px 50px
 
-            &__pic-bottom
-                background-position 100px
-
             &__wrapper-title
                 padding-bottom 25px
 
@@ -338,6 +336,10 @@
                         img
                             max-width 261px
 
+                .slide-item__container-text.wrapper-text-fist
+                    min-height unset
+                    background-position center 40px
+
             .VueCarousel-pagination
                 margin-top 0
 
@@ -350,6 +352,10 @@
 
                 .text
                     font-size 22px
+
+        @media only screen and (max-width 1024px)
+            &__pic-bottom
+                background-position 100px
 
         @media only screen and (max-width 767px)
             padding-top 42px
@@ -367,6 +373,7 @@
             &__pic-bottom
                 height 563px
                 background-size cover
+                background-position bottom right
             
             &__title
                 max-width 252px
@@ -388,6 +395,10 @@
                         max-width 349px
                         margin 0
 
+                    &__text
+                        font-size 16px
+                        line-height 24px
+
                     &__century-panel
                         width 295px
                         margin 0 auto 42px
@@ -403,7 +414,8 @@
                             max-width 244px
 
                 .slide-item__container-text.wrapper-text-fist
-                    background-position top center
+                    background-position center 50px
+                    background-size 87%
 
             &__buttons-panel
                 display block

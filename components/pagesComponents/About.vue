@@ -131,10 +131,6 @@
             .button(@click="$nuxt.$router.push({path:`/history`})") {{lang === 'ru' ? 'История бренда' : 'Brand history'}}
 
         .demo
-            Button(name='О бренде' :onClick="() => sampleTest('О бренде')")
-
-            Button(name='Сбросить фильтр' :onClick="() => resetFilter()" large)
-
             ButtonArrow(:onClick="() => sampleTest('ArrowLeft')")
             ButtonArrow(arrowRight :onClick="() => sampleTest('ArrowRight')")
             Checkbox(v-model="checkboxValue")
