@@ -1,11 +1,8 @@
 <template lang="pug">
     .tradition-container
-        .tradition-container__pic-top-left
         .tradition-container__wrapper-title
             h2.tradition-container__title {{lang === 'ru' ? 'Вековые традиции объемной каменной мозаики' : 'Tile on eng' }}
             .tradition-container__double-line
-        .tradition-container__pic-top-right
-        .tradition-container__pic-bottom
         .tradition-container__slides-panel(v-if="slides")
             client-only
                 button(@click.prevent="prewExpert") Prev
@@ -108,32 +105,6 @@
     .tradition-container
         position relative
         padding-top 148px
-        min-height 1600px
-        background url('~assets/img/tradition/bg-main.png') no-repeat
-
-        &__pic-top-left
-            position absolute
-            top 0
-            left 0
-            width 663px
-            height 415px
-            background url('~assets/img/tradition/bg-top-left.png') no-repeat
-            background-position 0 -42px
-
-        &__pic-top-right
-            position absolute
-            top 0
-            right 0
-            width 181px
-            height 345px
-            background url('~assets/img/tradition/bg-top-right.png') no-repeat
-
-        &__pic-bottom
-            position absolute
-            bottom 0
-            width 100%
-            height 897px
-            background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/tradition/bg-bottom.png') bottom right no-repeat
 
         &__wrapper-title
             position relative
@@ -257,6 +228,7 @@
         &__buttons-panel
             display flex
             justify-content space-around
+            margin-bottom 93px 
 
         &__btn-container
             display flex
@@ -285,15 +257,6 @@
 
         @media only screen and (max-width 1280px)
             padding-top 72px
-            padding-bottom 29px
-
-            &__pic-top-left
-                background-size 80%
-                background-position -100px -50px
-
-            &__pic-top-right
-                background-size 80%
-                background-position 40px 50px
 
             &__wrapper-title
                 padding-bottom 25px
@@ -340,8 +303,8 @@
                     min-height unset
                     background-position center 40px
 
-            .VueCarousel-pagination
-                margin-top 0
+            &__buttons-panel
+                margin-bottom 29px
 
             &__btn-container
                 min-width 466px
@@ -359,22 +322,7 @@
 
         @media only screen and (max-width 767px)
             padding-top 42px
-            min-height 1650px
 
-            &__pic-top-left
-                background-position -68px 0
-                background-size 30%
-
-            &__pic-top-right
-                top unset
-                background-position top right
-                background-size 50%
-
-            &__pic-bottom
-                height 563px
-                background-size cover
-                background-position bottom right
-            
             &__title
                 max-width 252px
 
@@ -419,9 +367,13 @@
 
             &__buttons-panel
                 display block
+                margin-bottom 50px 
 
                 button
                     margin-bottom 20px
+
+                    &:last-child
+                        margin-bottom 0
 
             &__btn-container
                 width 100%

@@ -20,11 +20,13 @@
 
             .column
                 .item.links
-                    a.link(:href="contacts.youtube" target="_blank")
-                        | Youtube
-                    a.link(:href="contacts.inst" target="_blank")
-                        | Instagram
-                    nuxt-link.link(to="/news" v-html="lang === 'ru' ? 'Новости' : 'News'")
+                    .wrapper-links
+                        a.link(:href="contacts.inst" target="_blank")
+                            | Instagram
+                        a.link(:href="contacts.youtube" target="_blank")
+                            | Youtube
+
+                        nuxt-link.link(to="/news" v-html="lang === 'ru' ? 'Новости' : 'News'")
 
 </template>
 
@@ -58,6 +60,7 @@
 
 <style lang="stylus">
     .footer_container
+        position relative
         color whiteMain
         display flex
         flex-direction column
@@ -77,12 +80,10 @@
             padding 25px 0
             font-family $TenorSans-Regular
             letter-spacing 0.03em
+            text-align left
 
             .column
-                width 320px
-
-                &:last-child
-                    text-align right
+                width 300px
 
                 .item
                     font-size 14px
@@ -101,6 +102,7 @@
                         color #8F8F8F
 
                     &.copyright
+                        white-space nowrap
                         color #8F8F8F
 
                     &.policy
@@ -108,15 +110,50 @@
                             text-decoration underline
 
                     &.links
-                        & a + a
-                            margin-left 18px
+                        position relative
+                        text-align right
+
+                        .wrapper-links
+                            & a + a
+                                margin-left 42px
 
                         .link
                             color goldNew
 
+    @media only screen and (max-width 1280px)
+        .footer_container
+            padding 0 25px
+
+            .footer_block
+                .column
+                    width 265px 
+
+                    .item
+                        font-size 14px
+                        line-height 21px
+
+                        &.contacts
+                            font-size 18px
+                            line-height 27px
+
+                            &.title
+                                margin-bottom 7px
+
+                        &.street
+                            font-size 14px
+                            line-height 18px
+
+                        &.copyright
+                            letter-spacing normal
+
+                        &.links
+                            .wrapper-links
+                                position absolute
+                                right 0
+
     @media only screen and (max-width 767px)
         .footer_container
-            padding 30px 10px
+            padding 0px 10px
 
             .footer_block
                 flex-direction column-reverse

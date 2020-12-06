@@ -12,7 +12,12 @@
 
         BrandHistory
         LinksPanel
-        Tradition
+        .wrapper-page
+            .pic-top-left
+            .pic-top-right
+            .pic-bottom
+            Tradition
+            Footer
 
 </template>
 
@@ -24,6 +29,7 @@
     import BrandHistory from "@/components/blocksComponents/BrandHistory";
     import LinksPanel from "@/components/blocksComponents/LinksPanel";
     import Tradition from "@/components/blocksComponents/Tradition";
+    import Footer from '~/components/FooterNew.vue'
 
     export default {
         data() {
@@ -36,6 +42,7 @@
             BrandHistory,
             LinksPanel,
             Tradition,
+            Footer,
         },
         computed: {
             ...mapState('localization', [
@@ -205,6 +212,35 @@
             background-position center
             background-size cover
 
+    .wrapper-page
+        position relative
+        min-height 1600px
+        background url('~assets/img/tradition/bg-main.png') no-repeat
+
+        .pic-top-left
+            position absolute
+            top 0
+            left 0
+            width 663px
+            height 415px
+            background url('~assets/img/tradition/bg-top-left.png') no-repeat
+            background-position 0 -42px
+
+        .pic-top-right
+            position absolute
+            top 0
+            right 0
+            width 181px
+            height 345px
+            background url('~assets/img/tradition/bg-top-right.png') no-repeat
+
+        .pic-bottom
+            position absolute
+            bottom 0
+            width 100%
+            height 897px
+            background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/tradition/bg-bottom.png') bottom right no-repeat
+    
     .footer-add
         margin-top: -150px !important
 
@@ -240,5 +276,42 @@
                         position absolute
                         width 100%
                         z-index 1
+
+    @media only screen and (max-width 1280px)
+        .wrapper-page
+            min-height 1210px
+            
+            .pic-top-left
+                background-size 80%
+                background-position -100px -50px
+
+            .pic-top-right
+                background-size 80%
+                background-position 40px 50px
+
+    @media only screen and (max-width 1024px)
+        .wrapper-page
+            .pic-bottom
+                bottom -275px
+                background-position 100px
+
+    @media only screen and (max-width 767px)
+        .wrapper-page
+            min-height 1650px
+
+            .pic-top-left
+                background-position -68px 0
+                background-size 30%
+
+            .pic-top-right
+                top unset
+                background-position right 162px
+                background-size 50%
+
+            .pic-bottom
+                height 563px
+                bottom 0
+                background-size cover
+                background-position bottom right
 
 </style>
