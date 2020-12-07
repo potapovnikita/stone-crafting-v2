@@ -4,7 +4,7 @@
             :classNames="['btn__arrow', {'btn__arrow--right': arrowRight}]"
             :type ="'button'"
             :disabled="disabled"
-            :onClick="test"
+            @parentbtnclick="onClick && onClick()"
         )
             Arrow
 </template>
@@ -15,7 +15,7 @@ import Button from "@/components/ui/Button";
 import Arrow from '~/assets/img/arrow.svg'
 
 export default {
-    name: 'ButtonArrow',
+    name: "ButtonArrow",
     components: {
         Button,
         Arrow,
@@ -25,14 +25,6 @@ export default {
         disabled: Boolean,
         arrowRight: Boolean,
     },
-    methods: {
-        test() {
-            console.log('Ololo!!!');
-            onClick && onClick()
-        },
-    },
-    created() {
-    }
 }
 </script>
 

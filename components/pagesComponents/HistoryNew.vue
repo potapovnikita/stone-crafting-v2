@@ -2,27 +2,38 @@
     .histoyAbout
         h2.histoyAbout__title {{ lang === 'ru' ? 'История бренда' : 'Brand history' }}
         .histoyAbout__double-line
-        client-only
-            carousel(:navigationEnabled="false" :perPage="1" paginationActiveColor="#b0a74a" :loop="true")
-                slide(v-for="(item, index) in history" :key="`$slide_${index}`")
-                    .histoyAbout__container
-                        .histoyAbout__content
-                            h3.histoyAbout__sub-title {{item.year}}
-                            p.histoyAbout__text(v-html="lang === 'ru' ? item.text : item.textEng")
-                        .histoyAbout__media
-                            .histoyAbout__circle
-                            img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
-                            video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
-                                source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
+        .histoyAbout__slides-panel(v-if="history")
+            client-only
+                .slider
+                    .buttons-desktop.btn-left
+                        ButtonArrow(:onClick="prewSlide")
+                    .buttons-desktop.btn-right
+                         ButtonArrow(:onClick="nextSlide" arrowRight)
+
+                    carousel(:paginationEnabled="false" :perPage="1" paginationActiveColor="#b0a74a" :loop="true" ref="historyCarousel")
+                        slide(v-for="(item, index) in history" :key="`$slide_${index}`")
+                            .histoyAbout__container
+                                .histoyAbout__content
+                                    h3.histoyAbout__sub-title {{item.year}}
+                                    p.histoyAbout__text(v-html="lang === 'ru' ? item.text : item.textEng")
+                                .histoyAbout__media
+                                    .histoyAbout__circle
+                                    img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
+                                    video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
+                                        source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
 
 </template>
 <script>
 import { mapState } from 'vuex'
 import History from '~/assets/staticData/historyNew.json'
 import { getImgLocal } from '~/plugins/getUrl'
+import ButtonArrow from "@/components/ui/ButtonArrow"
 
 export default {
     name: 'HistoryNew',
+    components: {
+        ButtonArrow,
+    },
     data() {
         return {
             history: History,
@@ -31,6 +42,12 @@ export default {
     methods: {
         getImg(url) {
             return getImgLocal(url)
+        },
+        prewSlide() {
+            this.$refs.historyCarousel.goToPage(this.$refs.historyCarousel.getPreviousPage());
+        },
+        nextSlide() {
+            this.$refs.historyCarousel.goToPage(this.$refs.historyCarousel.getNextPage());
         },
     },
     computed: {
@@ -42,6 +59,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .histoyAbout
+    .slider
+        po
+
+        .btn-desktop
+            display block
 
     &__title
         margin-bottom 18px
@@ -53,6 +75,27 @@ export default {
         border 1px solid goldNew
         border-left none
         border-right none
+
+    &__slides-panel
+        position relative
+        margin 19px 40px 90px
+
+        .slider
+            padding 0 90px
+
+        .buttons-desktop
+            position absolute
+            top 0
+            display flex
+            align-items center
+            width 60px
+            height 100%
+
+            &.btn-left
+                left 0
+
+            &.btn-right
+                right 0
 
     &__container
         display flex
@@ -100,6 +143,12 @@ export default {
         min-height 286px
 
     @media only screen and (max-width 767px)
+        .slider
+            display block
+
+            .btn-desktop
+                display none
+
         &__double-line
             width 50px
 

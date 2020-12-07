@@ -2,7 +2,7 @@
     button(
         :class="['btn', classNames? classNames : '', { 'btn--large': large }, { 'btn--noPadding': disabledPadding }]"
         :type ="type || 'button'" 
-        @click="onClick && onClick()" 
+        @click="handleClick" 
         :disabled="disabled"
         )
             slot
@@ -20,8 +20,15 @@ export default {
         classNames: Array,
         disabledPadding: Boolean,
     },
-    created() {
-    }
+    methods: {
+        handleClick() {
+            if (this.onClick) {
+                this.onClick()
+            } else {
+                this.$emit("parentbtnclick");
+            }
+        },
+    },
 }
 </script>
 

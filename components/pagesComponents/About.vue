@@ -36,6 +36,32 @@
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
             img.photo(src="~/assets/img/about/show.png" alt="Exhibition")
 
+        .expertsAbout
+            .wrapper
+                .circle
+                    .wrapper__btn.left
+                        ButtonArrow(:onClick="prewSlide")
+                    .wrapper__btn.right
+                        ButtonArrow(:onClick="nextSlide" arrowRight)
+
+                h2.title {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
+                client-only
+                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="expertsCarousel")
+                        slide
+                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
+                            p.text(v-html="lang === 'ru' ? company.aboutRu5 : company.aboutEng5")
+
+                        slide
+                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu6 : company.aboutTitleEng6")
+                            p.text(v-html="lang === 'ru' ? company.aboutRu6 : company.aboutEng6")
+
+                        slide
+                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu7 : company.aboutTitleEng7")
+                            p.text(v-html="lang === 'ru' ? company.aboutRu7 : company.aboutEng7")
+        
         .about-us
             h2.about-us__title(v-html="lang === 'ru' ? 'О нас' : 'About us'")
             .about-us__double-line
@@ -80,34 +106,6 @@
                             a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
                                 .item(:style="{backgroundImage: getBgImg(catalog.background)}")
                                 .text.textCat {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
-            
-        .expertsAbout
-            .wrapper
-                .circle
-                    .wrapper__btn
-                        ButtonArrow(:onClick="() => sampleTest('ArrowLeft')")
-                        button(@click.prevent="prewExpert") Prev
-                    .wrapper__btn
-                        ButtonArrow(arrowRight :onClick="() => sampleTest('ArrowRight')")
-                        button(@click.prevent="nextExpert") Next
-
-                h2.title {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
-                client-only
-                    carousel(:paginationEnabled="false" :perPage="1" ref="expertsCarousel")
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu5 : company.aboutEng5")
-
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu6 : company.aboutTitleEng6")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu6 : company.aboutEng6")
-
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu7 : company.aboutTitleEng7")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu7 : company.aboutEng7")
 
         .projectsAbout(v-if="projects.length")
             h2.projectsAbout__title {{ lang === 'ru' ? 'Проекты совместного участия' : 'Projects' }}
@@ -125,59 +123,7 @@
                                 :key="`item_${index}`"
                             ) {{ lang === 'ru' ? item.text : item.textEng }}
 
-                        ButtonArrow(arrowRight :onClick="() => sampleTest('ArrowRight')")
-        
-        .historyButton
-            .button(@click="$nuxt.$router.push({path:`/history`})") {{lang === 'ru' ? 'История бренда' : 'Brand history'}}
-
-        .demo
-            ButtonArrow(:onClick="() => sampleTest('ArrowLeft')")
-            ButtonArrow(arrowRight :onClick="() => sampleTest('ArrowRight')")
-            Checkbox(v-model="checkboxValue")
-            p(v-if="checkboxValue") true
-            Input(type="text" name="testInput" placeholder="Имя" v-model="testInputValue")
-            p(v-if="testInputValue") {{testInputValue}}
-            Input(type="text" name="testInputPhone" placeholder="+7(999)-999-9999" v-model="testInputPhone" mask="+7(###)-###-####")
-            p(v-if="testInputPhone") {{testInputPhone}}
-        
-        .caption_section
-
-            h2.ristretto {{ lang === 'ru' ? 'СМИ о нас' : 'Mass Media about us' }}
-            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-            .smi(v-for="(item, index) in smi" v-show="index === activeSmi")
-                .videoName {{ lang === 'ru' ? item.name : item.nameEng }}
-                .videoSmi
-                    .iconArrow(@click="onPreviousSmi()")
-                        ChevronLeftIcon(size="3x")
-                    .video
-                        iframe(width="100%" height="100%"
-                            :src="item.src"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            :hl="lang === 'ru' ? 'ru' : 'en'"
-                            allowfullscreen
-                            )
-                    .iconArrow(@click="onNextSmi()")
-                        ChevronRightIcon(size="3x")
-
-            h2.ristretto {{ lang === 'ru' ? 'Фильмы о Камнерезном Доме Алексея Антонова' : 'Movies about the Stone-crafting House by Alexey Antonov' }}
-            .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-            .films(v-for="(film, index) in films" v-show="index === activeFilm")
-                .videoName {{ lang === 'ru' ? film.name : film.nameEng }}
-                .videoFilm
-                    .iconArrow(@click="onPreviousFilm()")
-                        ChevronLeftIcon(size="3x")
-                    .video
-                        iframe(width="100%"
-                            height="100%"
-                            :src="film.src"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            :hl="lang === 'ru' ? 'ru' : 'en'"
-                            allowfullscreen
-                            )
-                    .iconArrow(@click="onNextFilm()")
-                        ChevronRightIcon(size="3x")
+                        ButtonArrow(arrowRight :onClick="() => $nuxt.$router.push({path:`${project.href}`})")
 
 </template>
 
@@ -254,10 +200,10 @@
             sampleTest(message) {
                 console.log(message)
             },
-            prewExpert() {
+            prewSlide() {
                 this.$refs.expertsCarousel.goToPage(this.$refs.expertsCarousel.getPreviousPage());
             },
-            nextExpert() {
+            nextSlide() {
                 this.$refs.expertsCarousel.goToPage(this.$refs.expertsCarousel.getNextPage());
             },
         },
@@ -355,8 +301,9 @@
 
     .about-container
         position relative
-        background url('~assets/img/about/bg.png')
-        background-size contain
+        padding 0
+        padding-top 120px
+        background url('~assets/img/about/bg.png') no-repeat, url('~assets/img/about/bg.png') 1900px no-repeat
 
         &__bg-top
             position absolute
@@ -372,7 +319,10 @@
 
         &__description
             display flex
-            justify-content space-around
+            justify-content space-between
+            max-width 1420px
+            padding-left 70px
+            margin 0 auto
             margin-bottom 50px
 
         &__description-pic
@@ -417,7 +367,7 @@
 
         &__bg-top-history
             position absolute
-            top 0
+            top -200px
             right 0
             width 223px
             height 406px
@@ -574,6 +524,12 @@
         .wrapper__btn
             position relative
             z-index 1
+
+            &.left
+                right 30px
+
+            &.right
+                left 30px
 
         .title
             margin-bottom 43px

@@ -214,8 +214,9 @@
 
     .wrapper-page
         position relative
-        min-height 1600px
+        min-height 1550px
         background url('~assets/img/tradition/bg-main.png') no-repeat
+        background-size cover
 
         .pic-top-left
             position absolute

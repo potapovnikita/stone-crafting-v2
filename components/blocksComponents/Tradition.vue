@@ -5,30 +5,33 @@
             .tradition-container__double-line
         .tradition-container__slides-panel(v-if="slides")
             client-only
-                button(@click.prevent="prewExpert") Prev
-                carousel(:paginationEnabled="false" :perPage="1" ref="traditionCarousel" paginationActiveColor="#fce086")
-                    slide(v-for="item in slides" :key="item.id")
-                        .slide-item
-                            .slide-item__container-img
-                                div(v-if="item.imgBlock" :class="`${item.imgBlock.className}-${item.id}`")
-                                    img.slide-item__photo(:src="getImgLocal(item.imgBlock.img)" alt="img")
-                                img.slide-item__photo(v-if="item.img" :src="getImgLocal(item.img)" alt="img")
+                .buttons-desktop.btn-left
+                        ButtonArrow(:onClick="prewSlide")
+                .buttons-desktop.btn-right
+                        ButtonArrow(:onClick="nextSlide" arrowRight)
+                .slider
+                    carousel(:paginationEnabled="false" :loop="true" :perPage="1" ref="traditionCarousel")
+                        slide(v-for="item in slides" :key="item.id")
+                            .slide-item
+                                .slide-item__container-img
+                                    div(v-if="item.imgBlock" :class="`${item.imgBlock.className}-${item.id}`")
+                                        img.slide-item__photo(:src="getImgLocal(item.imgBlock.img)" alt="img")
+                                    img.slide-item__photo(v-if="item.img" :src="getImgLocal(item.img)" alt="img")
 
-                            .slide-item__container-text(:class="item.textBlockClass ? `${item.textBlockClass}-${item.id}` : ''")
-                                .slide-item__century-panel(v-if="centuryList")
-                                    .slide-item__centry-item(v-for="century in centuryList")
-                                        span(:class="{'active': century.name === item.century}") {{century.name}}
-                                        .slide-item__centry-circle(:class="{'active': century.name === item.century}")
+                                .slide-item__container-text(:class="item.textBlockClass ? `${item.textBlockClass}-${item.id}` : ''")
+                                    .slide-item__century-panel(v-if="centuryList")
+                                        .slide-item__centry-item(v-for="century in centuryList")
+                                            span(:class="{'active': century.name === item.century}") {{century.name}}
+                                            .slide-item__centry-circle(:class="{'active': century.name === item.century}")
 
-                                    .slide-item__line-panel
-                                        .slide-item__line-start
-                                        .slide-item__line-middle
-                                        .slide-item__line-end
+                                        .slide-item__line-panel
+                                            .slide-item__line-start
+                                            .slide-item__line-middle
+                                            .slide-item__line-end
 
-                                p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
+                                    p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
 
-                                nuxt-link.slide-item__link(v-if="item.link" :to="item.link.href" v-html="lang === 'ru' ? item.link.name : item.link.nameEng")
-                button(@click.prevent="nextExpert") Next
+                                    nuxt-link.slide-item__link(v-if="item.link" :to="item.link.href" v-html="lang === 'ru' ? item.link.name : item.link.nameEng")
 
         .tradition-container__buttons-panel(v-if="buttons")
             Button(
@@ -65,6 +68,7 @@
     import BoutiqueIcon from '~/assets/img/tradition/boutique.svg'
     import MbIndividIcon from '~/assets/img/tradition/individ-mb.svg'
     import MbBoutiqueIcon from '~/assets/img/tradition/boutique-mb.svg'
+    import ButtonArrow from "@/components/ui/ButtonArrow"
 
     export default {
         name: "Tradition",
@@ -74,6 +78,7 @@
             BoutiqueIcon,
             MbIndividIcon,
             MbBoutiqueIcon,
+            ButtonArrow,
         },
         data() {
             return {
@@ -86,10 +91,10 @@
             getImgLocal(url) {
                 return getImgLocal(url)
             },
-            prewExpert() {
+            prewSlide() {
                 this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getPreviousPage());
             },
-            nextExpert() {
+            nextSlide() {
                 this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getNextPage());
             },
         },
@@ -127,12 +132,29 @@
 
         &__slides-panel
             position relative
-            margin 85px 0 167px
+            margin 80px 40px 167px
             font-family $TenorSans-Regular
             font-weight normal
             font-size 18px
             line-height 150%
             letter-spacing 0.03em
+
+            .slider
+                padding 0 90px
+
+            .buttons-desktop
+                position absolute
+                top 0
+                display flex
+                align-items center
+                width 60px
+                height 100%
+
+                &.btn-left
+                    left 0
+
+                &.btn-right
+                    right 0
 
             .slide-item
                 display flex
@@ -265,7 +287,7 @@
                 max-width 510px
 
             &__slides-panel
-                margin-bottom 120px 
+                margin 100px 30px 120px
                 font-size 16px
 
                 .slide-item
@@ -328,6 +350,9 @@
 
             &__slides-panel
                 margin 38px 0
+
+                .buttons-desktop
+                    display none
 
                 .slide-item
                     display block

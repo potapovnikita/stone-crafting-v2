@@ -3,7 +3,6 @@
         //page-preload
         Header(placeholder="true")
         main-page
-        Footer
 
 </template>
 
@@ -11,7 +10,6 @@
 import MainPage from '~/components/pagesComponents/Main.vue'
 import PageContainer from '~/components/PageContainer.vue'
 import PagePreload from '~/components/PagePreload.vue'
-import Footer from '~/components/FooterNew.vue'
 import Header from '~/components/HeaderNew.vue'
 
 export default {
@@ -19,7 +17,6 @@ export default {
         MainPage,
         PageContainer,
         PagePreload,
-        Footer,
         Header,
     },
     head() {
