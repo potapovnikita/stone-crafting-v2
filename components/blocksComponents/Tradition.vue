@@ -5,11 +5,11 @@
             .tradition-container__double-line
         .tradition-container__slides-panel(v-if="slides")
             client-only
-                .buttons-desktop.btn-left
-                        ButtonArrow(:onClick="prewSlide")
-                .buttons-desktop.btn-right
-                        ButtonArrow(:onClick="nextSlide" arrowRight)
                 .slider
+                    .buttons-desktop.btn-left
+                        ButtonArrow(:onClick="prewSlide")
+                    .buttons-desktop.btn-right
+                            ButtonArrow(:onClick="nextSlide" arrowRight)
                     carousel(:paginationEnabled="false" :loop="true" :perPage="1" ref="traditionCarousel")
                         slide(v-for="item in slides" :key="item.id")
                             .slide-item
@@ -32,6 +32,10 @@
                                     p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
 
                                     nuxt-link.slide-item__link(v-if="item.link" :to="item.link.href" v-html="lang === 'ru' ? item.link.name : item.link.nameEng")
+
+                .slider-pagination(v-if="pageCount > 0")
+                    .box(v-for="(item, index) in slides" :key="`point_${item.id}`")
+                        .circle(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
         .tradition-container__buttons-panel(v-if="buttons")
             Button(
@@ -85,6 +89,8 @@
                 centuryList: Tradition.centuryList,
                 slides: Tradition.slides,
                 buttons: Tradition.buttons,
+                currentSlide: 0,
+                pageCount: 0,
             }
         },
         methods: {
@@ -92,17 +98,38 @@
                 return getImgLocal(url)
             },
             prewSlide() {
-                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getPreviousPage());
+                this.currentSlide = this.$refs.traditionCarousel.getPreviousPage()
+                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getPreviousPage())
             },
             nextSlide() {
-                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getNextPage());
+                this.currentSlide = this.$refs.traditionCarousel.getNextPage()
+                this.$refs.traditionCarousel.goToPage(this.$refs.traditionCarousel.getNextPage())
             },
+            navigateTo(index) {
+                this.currentSlide = index
+                this.$refs.traditionCarousel.goToPage(index)
+            }
         },
         computed: {
             ...mapState('localization', [
                 'lang',
             ]),
         },
+        mounted() {
+            this.$nextTick(() => {
+                const prew = this.$refs.traditionCarousel.getPreviousPage()
+                const next = this.$refs.traditionCarousel.getNextPage()
+                this.pageCount = this.$refs.traditionCarousel.pageCount
+                if (next === 0 || next > prew) {
+                    this.currentSlide = prew + 1
+                    return
+                }
+                if (next < prew) {
+                    this.currentSlide = next - 1
+                    return
+                }
+            })
+        }
     }
 </script>
 
@@ -131,8 +158,7 @@
             border-right none
 
         &__slides-panel
-            position relative
-            margin 80px 40px 167px
+            margin 80px 40px 177px
             font-family $TenorSans-Regular
             font-weight normal
             font-size 18px
@@ -140,6 +166,7 @@
             letter-spacing 0.03em
 
             .slider
+                position relative
                 padding 0 90px
 
             .buttons-desktop
@@ -243,9 +270,30 @@
                 min-height 392px
                 background url('~assets/img/tradition/slides/1/bg-text.png') 30px 20px no-repeat
 
-        .VueCarousel-pagination
-            margin-top 74px
+            .slider-pagination
+                display flex
+                justify-content center
+                margin-top 122px
 
+                .box
+                    display flex
+                    align-items center
+                    justify-content center
+                    flex-shrink 0
+                    width 16px
+                    height 16px
+
+                    .circle
+                        width 8px
+                        height 8px
+                        border 1px solid rgba(143, 143, 143, 0.3)
+                        border-radius 50%
+                        cursor pointer
+
+                        &.active
+                            width 12px
+                            height 12px
+                            border 1px solid #96785F
 
         &__buttons-panel
             display flex
@@ -325,6 +373,9 @@
                     min-height unset
                     background-position center 40px
 
+                .slider-pagination
+                    margin-top 20px
+
             &__buttons-panel
                 margin-bottom 29px
 
@@ -350,6 +401,9 @@
 
             &__slides-panel
                 margin 38px 0
+
+                .slider
+                    padding 0
 
                 .buttons-desktop
                     display none
