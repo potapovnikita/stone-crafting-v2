@@ -35,6 +35,7 @@ export default {
 .mission
     display block
     padding 65px 50px
+    margin 0 40px
     border 1px solid rgba(252, 224, 134, 0.3)
 
     &__title
@@ -76,21 +77,45 @@ export default {
     &__opt-text
         max-width 422px
 
-    @media only screen and (max-width 767px)
-        padding 30px 0 30px 18px
+    @media only screen and (max-width 1280px)
+        padding 35px 10px 45px
+        margin 0
+
+        &__title
+            margin-bottom 20px
+            line-height 48px
 
         &__double-line
-            width 50px
             margin-bottom 20px
 
         &__text
+            max-width 779px
+            margin-bottom 36px
+            font-size 21px
+            line-height 31px
+
+        &__sub-title
+            margin-bottom 30px
+            font-size 22px
+            line-height 33px
+
+        &__opt-text
+            max-width 284px
+
+    @media only screen and (max-width 767px)
+        padding 30px 0 60px 18px
+        margin 0
+
+        &__double-line
+            width 50px
+
+        &__text
+            max-width unset
             margin-bottom 40px
             font-size 16px
             line-height 24px
 
         &__sub-title
-            margin-bottom 30px
-            font-size 22px
             line-height 29px
 
         &__list
@@ -111,6 +136,7 @@ export default {
             margin-right 17px
 
         &__opt-text
+            max-width unset
             font-size 16px
             line-height 24px
             text-align left

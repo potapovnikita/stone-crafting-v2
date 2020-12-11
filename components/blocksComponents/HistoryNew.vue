@@ -8,9 +8,9 @@
                     .buttons-desktop.btn-left
                         ButtonArrow(:onClick="prewSlide")
                     .buttons-desktop.btn-right
-                         ButtonArrow(:onClick="nextSlide" arrowRight)
+                        ButtonArrow(:onClick="nextSlide" arrowRight)
 
-                    carousel(:paginationEnabled="false" :perPage="1" paginationActiveColor="#b0a74a" :loop="true" ref="historyCarousel")
+                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="historyCarousel")
                         slide(v-for="(item, index) in history" :key="`$slide_${index}`")
                             .histoyAbout__container
                                 .histoyAbout__content
@@ -21,6 +21,17 @@
                                     img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
                                     video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
                                         source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
+
+                    .buttons-mobile
+                        ButtonArrow(:onClick="prewSlide")
+                        ButtonArrow(:onClick="nextSlide" arrowRight)
+
+                .slider-pagination(v-if="pageCount")
+                    ul.slider-pagination__list
+                        li(v-for="(item, index) in history" :key="`$slide_${index}`")
+                            .slider-pagination__box
+                                .slider-pagination__label {{item.year}}
+                                .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
 </template>
 <script>
@@ -37,6 +48,8 @@ export default {
     data() {
         return {
             history: History,
+            currentSlide: 0,
+            pageCount: 0,
         }
     },
     methods: {
@@ -44,26 +57,77 @@ export default {
             return getImgLocal(url)
         },
         prewSlide() {
+            this.currentSlide = this.$refs.historyCarousel.getPreviousPage()
             this.$refs.historyCarousel.goToPage(this.$refs.historyCarousel.getPreviousPage());
         },
         nextSlide() {
+            this.currentSlide = this.$refs.historyCarousel.getNextPage()
             this.$refs.historyCarousel.goToPage(this.$refs.historyCarousel.getNextPage());
         },
+        navigateTo(index) {
+            this.currentSlide = index
+            this.$refs.historyCarousel.goToPage(index)
+        }
     },
     computed: {
         ...mapState('localization', [
             'lang',
         ]),
-    },    
+    },
+    mounted() {
+        this.$nextTick(() => {
+            const prew = this.$refs.historyCarousel.getPreviousPage()
+            const next = this.$refs.historyCarousel.getNextPage()
+            this.pageCount = this.$refs.historyCarousel.pageCount
+            if (next === 0 || next > prew) {
+                this.currentSlide = prew + 1
+                return
+            }
+            if (next < prew) {
+                this.currentSlide = next - 1
+                return
+            }
+        })
+    }
 }
 </script>
 <style lang="stylus" scoped>
 .histoyAbout
     .slider
-        po
-
         .btn-desktop
             display block
+
+    .slider-pagination
+
+        &__list
+            display flex
+            justify-content center
+            padding 0
+            list-style-type none
+
+        &__box
+            display block
+
+        &__label
+            margin-bottom 8px
+            font-family $TenorSans-Regular
+            font-weight normal
+            font-size 20px
+            line-height 150%
+            text-align center
+            letter-spacing 0.03em
+            color rgba(255, 255, 255, 0.36)
+
+        &__dot
+            width 12px
+            height 12px
+            border 1px solid #616D76
+            border-radius 50%
+            cursor pointer
+
+            &.active
+                background goldNew
+
 
     &__title
         margin-bottom 18px
@@ -97,6 +161,9 @@ export default {
             &.btn-right
                 right 0
 
+        .buttons-mobile
+            display none
+
     &__container
         display flex
         flex-direction row
@@ -105,17 +172,17 @@ export default {
         max-width 1100px
 
     &__content
+        flex-shrink 2
+        max-width 533px
         text-align left
     
     &__sub-title
         margin-bottom 21px
         font-size 40px
-        line-height 60px
+        line-height 150%
         color rgba(255, 255, 255, 0.36)
 
     &__text
-        flex-shrink 2
-        max-width 533px
         text-align left
 
     &__media
@@ -137,17 +204,54 @@ export default {
 
     &__photo,
     &__video,
-    carouselPhoto
+    &__carouselPhoto
         position relative
         width 385px
         min-height 286px
 
-    @media only screen and (max-width 767px)
-        .slider
-            display block
+    @media only screen and (max-width 1280px)
+        &__title
+            margin-bottom 28px
 
-            .btn-desktop
+        &__double-line
+            margin-bottom 0
+
+        &__slides-panel
+            margin 0 0 50px
+
+            .slider
+                padding 0
+
+            .buttons-desktop
                 display none
+
+            .buttons-mobile
+                display flex
+                justify-content space-between
+                padding 45px 0 18px
+
+        &__container
+            max-width unset
+
+        &__content
+            max-width 468px
+        
+        &__sub-title
+            font-size 34px
+            line-height 51px
+
+        &__text
+            font-size 18px
+            line-height 24px
+
+    @media only screen and (max-width 767px)
+        &__slides-panel
+            margin 0 0 50px
+            .slider
+                display block
+
+                .btn-desktop
+                    display none
 
         &__double-line
             width 50px

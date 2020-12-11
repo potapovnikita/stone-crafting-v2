@@ -57,12 +57,10 @@ export default {
 
     &__list
         display flex
+        justify-content space-between
         align-items center
         flex-wrap wrap
         margin-bottom 40px
-
-        & img + img
-            margin-left 35px
     
     &__award-img
         flex-shrink 0
@@ -92,6 +90,10 @@ export default {
         &.is-active
             display block
 
+    @media only screen and (max-width 1280px)
+        &__details
+            margin-bottom 20px
+
     @media only screen and (max-width 767px)
         &__title
             font-size 22px
@@ -99,12 +101,5 @@ export default {
 
          &__list
             justify-content space-between
-
-            & img + img
-                margin-left 0
-            
-            & img
-                margin-right 30px 
-                margin-bottom 30px
                  
 </style>

@@ -2,17 +2,18 @@
     .common-container.about-container
         .about-container__bg-top
         h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}
-        .about-container__description
-            .about-container__description-pic
-                img.about-container__description-img(src="~/assets/img/about/aleksei.png" alt="Antonov")
-            .about-container__description-content
-                h2.about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
-                .about-container__description-double-line
-                p.about-container__description-text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
-
-        Awards
-        .about-container__bg-before-history
+        .about-container__wrapper-description
             .about-container__bg-top-history
+            .about-container__description
+                .about-container__wrapper-man
+                    .about-container__description-pic
+                        img.about-container__description-img(src="~/assets/img/about/aleksei.png" alt="Antonov")
+                    Awards
+
+                .about-container__description-content
+                    h2.about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
+                    .about-container__description-double-line
+                    p.about-container__description-text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
         HistoryNew
 
@@ -38,7 +39,7 @@
 
         .expertsAbout
             .wrapper
-                .circle
+                .circle.mobile-hide
                     .wrapper__btn.left
                         ButtonArrow(:onClick="prewSlide")
                     .wrapper__btn.right
@@ -136,9 +137,9 @@
     import ButtonArrow from "@/components/ui/ButtonArrow"
     import Checkbox from "@/components/ui/Checkbox"
     import Input from "@/components/ui/Input"
-    import HistoryNew from "@/components/pagesComponents/HistoryNew"
-    import Awards from "@/components/pagesComponents/Awards"
-    import Mission from "@/components/pagesComponents/Mission"
+    import HistoryNew from "@/components/blocksComponents/HistoryNew"
+    import Awards from "@/components/blocksComponents/Awards"
+    import Mission from "@/components/blocksComponents/Mission"
     import Tabs from "@/components/pagesComponents/Tabs"
     import Tab from "@/components/pagesComponents/Tab"
 
@@ -317,18 +318,30 @@
             line-height 73px
             margin-bottom 66px
 
+        &__wrapper-description
+            position relative
+
+        &__bg-top-history
+            position absolute
+            bottom -60px
+            right -20px
+            width 223px
+            height 406px
+            background url('~assets/img/about/bg-before-history.png') no-repeat
+            background-size cover
+
         &__description
             display flex
             justify-content space-between
             max-width 1420px
             padding-left 70px
-            margin 0 auto
             margin-bottom 50px
 
         &__description-pic
             position relative
             width 608px
             height 429px
+            margin-bottom 39px
             background url('~assets/img/about/bg-aleksei.png') no-repeat
             background-size cover
 
@@ -347,6 +360,7 @@
             text-align left
 
         &__description-title
+            max-width 405px
             margin-bottom 40px
             line-height 52px
             text-align left
@@ -361,19 +375,6 @@
 
         &__description-text
             text-align left
-
-        &__bg-before-history
-            position relative
-
-        &__bg-top-history
-            position absolute
-            top -200px
-            right 0
-            width 223px
-            height 406px
-            background url('~assets/img/about/bg-before-history.png') no-repeat
-            background-size cover
-
 
     .historyButton
         .button
@@ -403,6 +404,7 @@
         &__title
             max-width 544px
             margin-bottom 30px
+            text-align left
             color goldNew
 
         &__text
@@ -414,8 +416,7 @@
         .carouselPhoto
         .video
         .photo
-            width 594px
-            height 406px
+            max-width 594px
             padding 10px
             border 1px solid rgba(150, 120, 95, 0.3)
 
@@ -423,9 +424,30 @@
             @media only screen and (max-width 767px)
                 flex-direction column-reverse
 
+        @media only screen and (max-width 1280px)
+            max-width 1600px
+            padding 64px 0
+
+            &__title
+                max-width 457px
+                margin-bottom 33px
+                font-size 22px
+                line-height 33px
+
+            &__text
+                max-width 457px
+                font-size 16px
+
+            .carouselPhoto
+            .video
+            .photo
+                max-width 482px
+                padding 8px
+
+        
         @media only screen and (max-width 767px)
             flex-direction column
-            align-items: center
+            align-items center
             margin-bottom 40px
             padding 0
 
@@ -446,8 +468,7 @@
             .carouselPhoto
             .video
             .photo
-                width 352px
-                height 242px
+                width 100%
                 padding 5px 6px
 
             .text
@@ -532,6 +553,7 @@
                 left 30px
 
         .title
+            line-height 150%
             margin-bottom 43px
 
         .photo
@@ -545,12 +567,41 @@
         .name
             margin-bottom 27px
             font-size 26px
-            line-height 39px
+            line-height 150%
 
         .text
             max-width 1130px
             font-size 16px
-            line-height 24px
+            line-height 150%
+
+        @media only screen and (max-width 1280px)
+            .title
+                margin-bottom 55px
+
+            .text
+                max-width 974px
+
+        @media only screen and (max-width 767px)
+            .wrapper
+                padding 0
+                margin 40px 0
+
+            .circle
+                &.mobile-hide
+                    display none
+
+            .title
+                margin-bottom 15px
+                font-size 22px
+                line-height 29px
+
+            .name
+                margin-bottom 33px
+                font-size 20px
+
+            .text
+                max-width unset
+                font-size 14px
 
     .projectsAbout
         display block
@@ -819,8 +870,57 @@
     .demo
         margin 20px
 
+    @media only screen and (max-width 1280px)
+        .about-container
+            padding 96px 20px 0
+
+            &__bg-top
+                width 346px
+                height 201px
+                background-size contain
+                background-repeat no-repeat
+
+            &__title
+                line-height 67px
+                margin-bottom 93px
+
+            &__bg-top-history
+                background-size 60%
+                background-position center right
+
+            &__description
+                justify-content space-between
+                max-width unset
+                padding 0
+                margin 0
+                margin-bottom 40px
+
+            &__description-pic
+                max-width 489px
+                max-height 344px
+                margin-bottom 45px
+
+            &__description-img
+                max-width 210px
+
+            &__description-content
+                max-width 474px
+                padding-left 25px
+
+            &__description-title
+                margin-bottom 36px
+                line-height 42px
+
+            &__description-double-line
+                margin-bottom 43px
+
+            &__description-text
+                font-size 16px
+                line-height 24px
+    
     @media only screen and (max-width 767px)
         .about-container
+            padding 76px 12px 0
 
             &__bg-top
                 width 126px
