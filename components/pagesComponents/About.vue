@@ -1,7 +1,7 @@
 <template lang="pug">
     .common-container.about-container
         .about-container__bg-top
-        h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}
+        h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}        
         .about-container__wrapper-description
             .about-container__bg-top-history
             .about-container__description
@@ -34,39 +34,25 @@
             .text
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu3 : company.aboutTitleEng3")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu3 : company.aboutEng3")
+                .descriptionAbout__btn-desktop
+                    Button(:onClick="() => $nuxt.$router.push({path:'/'})") {{lang === 'ru' ? 'Подробнее' : 'More'}}
+                .descriptionAbout__btn-mobile
+                    .descriptionAbout__line
+                    nuxt-link.descriptionAbout__link(to="/" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
         
         .descriptionAbout.reverse
             .text.left
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu4 : company.aboutTitleEng4")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
+                .descriptionAbout__btn-desktop
+                    Button(:onClick="() => $nuxt.$router.push({path:'/'})") {{lang === 'ru' ? 'Подробнее' : 'More'}}
+                .descriptionAbout__btn-mobile
+                    .descriptionAbout__line
+                    nuxt-link.descriptionAbout__link(to="/" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
             img.photo(src="~/assets/img/about/show.png" alt="Exhibition")
 
-        .expertsAbout
-            .wrapper
-                .circle.mobile-hide
-                    .wrapper__btn.left
-                        ButtonArrow(:onClick="prewSlide")
-                    .wrapper__btn.right
-                        ButtonArrow(:onClick="nextSlide" arrowRight)
+        ExpertsAbout
 
-                h2.title {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
-                client-only
-                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="expertsCarousel")
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu5 : company.aboutEng5")
-
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu6 : company.aboutTitleEng6")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu6 : company.aboutEng6")
-
-                        slide
-                            img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
-                            h3.name(v-html="lang === 'ru' ? company.aboutTitleRu7 : company.aboutTitleEng7")
-                            p.text(v-html="lang === 'ru' ? company.aboutRu7 : company.aboutEng7")
-        
         .about-us
             h2.about-us__title(v-html="lang === 'ru' ? 'О нас' : 'About us'")
             .about-us__double-line
@@ -143,6 +129,7 @@
     import Input from "@/components/ui/Input"
     import HistoryNew from "@/components/blocksComponents/HistoryNew"
     import Awards from "@/components/blocksComponents/Awards"
+    import ExpertsAbout from '@/components/blocksComponents/ExpertsAbout'
     import Mission from "@/components/blocksComponents/Mission"
     import Tabs from "@/components/pagesComponents/Tabs"
     import Tab from "@/components/pagesComponents/Tab"
@@ -173,6 +160,7 @@
             Input,
             HistoryNew,
             Awards,
+            ExpertsAbout,
             Mission,
             Tabs,
             Tab,
@@ -403,6 +391,13 @@
             line-height 24px
             text-align left
 
+        &__btn-desktop
+            margin-top 51px
+            text-align left
+
+        &__btn-mobile
+            display none
+
         .carouselPhoto
         .video
         .photo
@@ -427,6 +422,28 @@
             &__text
                 max-width 457px
                 font-size 16px
+            
+            &__btn-desktop
+                display none
+
+            &__btn-mobile
+                display block
+                margin-top 42px
+                text-align left
+
+            &__line
+                width 20px
+                height 1px
+                margin-bottom 15px
+                border 1px solid goldNew
+
+            &__link
+                font-family $TenorSans-Regular
+                font-weight normal
+                font-size 16px
+                line-height 150%
+                letter-spacing 0.03em
+                color goldNew !important
 
             .carouselPhoto
             .video
@@ -454,6 +471,9 @@
             &__text
                 font-size 14px
                 line-height 21px
+
+            &__link
+                font-size 14px
 
             .carouselPhoto
             .video
@@ -511,87 +531,6 @@
 
             &.is-active
                 color goldNew
-
-    .expertsAbout
-        .wrapper
-            position relative
-            padding-top 90px
-            padding-bottom 84px
-
-        .circle
-            display flex
-            justify-content space-between
-            align-items center
-            position absolute
-            top 0
-            left 0
-            right 0
-            margin 0 auto
-            width 820px
-            height 820px
-            border 1px solid rgba(255, 255, 255, 0.07)
-            border-radius 50%
-
-        .wrapper__btn
-            position relative
-            z-index 1
-
-            &.left
-                right 30px
-
-            &.right
-                left 30px
-
-        .title
-            line-height 150%
-            margin-bottom 43px
-
-        .photo
-            width 344px
-            height 344px
-            padding 22px
-            margin-bottom 36px
-            border 1px solid rgba(255, 255, 255, 0.08)
-            border-radius 50%
-
-        .name
-            margin-bottom 27px
-            font-size 26px
-            line-height 150%
-
-        .text
-            max-width 1130px
-            font-size 16px
-            line-height 150%
-
-        @media only screen and (max-width 1280px)
-            .title
-                margin-bottom 55px
-
-            .text
-                max-width 974px
-
-        @media only screen and (max-width 767px)
-            .wrapper
-                padding 0
-                margin 40px 0
-
-            .circle
-                &.mobile-hide
-                    display none
-
-            .title
-                margin-bottom 15px
-                font-size 22px
-                line-height 29px
-
-            .name
-                margin-bottom 33px
-                font-size 20px
-
-            .text
-                max-width unset
-                font-size 14px
 
     .projectsAbout
         display block
