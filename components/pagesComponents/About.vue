@@ -8,13 +8,17 @@
                 .about-container__wrapper-man
                     .about-container__description-pic
                         img.about-container__description-img(src="~/assets/img/about/aleksei.png" alt="Antonov")
-                    Awards
+                    .about-container__awards-desktop
+                        Awards
 
                 .about-container__description-content
                     h2.about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                     .about-container__description-double-line
                     p.about-container__description-text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
+        .about-container__awards-mobile
+            Awards
+        
         HistoryNew
 
         Mission
@@ -376,22 +380,8 @@
         &__description-text
             text-align left
 
-    .historyButton
-        .button
-            margin-bottom 60px
-            font-size $FontSize3
-            width 260px
-            text-align center
-            cursor pointer
-            border 1px solid white
-            padding 20px 30px
-            color white
-            background-color inherit
-            transition background-color .3s ease, color .3s ease
-
-            &:hover
-                color black
-                background-color white
+        &__awards-mobile
+            display none
 
     .descriptionAbout
         justify-content space-around
@@ -623,6 +613,7 @@
             justify-content space-between
             max-width 1406px
             padding 0
+            margin-bottom 66px
             list-style-type none
 
         &__project
@@ -917,6 +908,36 @@
             &__description-text
                 font-size 16px
                 line-height 24px
+
+        .projectsAbout
+            &__title
+                margin-bottom 30px
+                line-height 48px
+
+            &__double-line
+                margin-bottom 38px
+
+            &__projects-list
+                max-width unset
+                margin-bottom 80px
+
+            &__project
+                margin-bottom 48px
+
+            &__project-items
+                margin-bottom 25px
+
+                & > li:before
+                    content "\2022"
+                    padding 0 9px 0 0
+                    display table-cell
+                    width .5rem
+
+                & > li
+                    max-width 400px
+                    min-width 300px
+                    font-size 20px
+                    line-height 28px
     
     @media only screen and (max-width 767px)
         .about-container
@@ -932,13 +953,20 @@
                 font-size 28px
                 line-height 39px
 
+            &__bg-top-history
+                right -35px
+                background-size 35%
+                background-position bottom right
+
             &__description
                 display block
+                margin-bottom 70px
 
             &__description-pic
                 width 100%
                 max-width 375px
                 height 254px
+                margin-bottom 27px
 
             &__description-img
                 width 151px
@@ -962,6 +990,12 @@
                 font-size 14px
                 line-height 21px
                 text-align left
+
+            &__awards-desktop
+                display none
+
+            &__awards-mobile
+                display block
 
         .projectsAbout
             display block

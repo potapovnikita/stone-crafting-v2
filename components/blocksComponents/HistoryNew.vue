@@ -30,8 +30,9 @@
                     ul.slider-pagination__list
                         li(v-for="(item, index) in history" :key="`$slide_${index}`")
                             .slider-pagination__box
-                                .slider-pagination__label {{item.year}}
-                                .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
+                                .slider-pagination__label(v-if="item.pagination.showLabel") {{item.year}}
+                                .slider-pagination__wrapper-dot(:class="item.pagination.class")
+                                    .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
 </template>
 <script>
@@ -105,11 +106,20 @@ export default {
             padding 0
             list-style-type none
 
+            & > li:first-child
+                .slider-pagination__label
+                    left 9px
+
         &__box
-            display block
+            display flex
+            align-items flex-end
+            position relative
+            height 52px
 
         &__label
-            margin-bottom 8px
+            position absolute
+            top 0
+            left -17px
             font-family $TenorSans-Regular
             font-weight normal
             font-size 20px
@@ -117,6 +127,78 @@ export default {
             text-align center
             letter-spacing 0.03em
             color rgba(255, 255, 255, 0.36)
+
+        &__wrapper-dot
+            text-align left
+
+            &.dot-1968
+                width 112px
+                padding-left 23px
+                background url('~assets/img/history/desktopLines/line-1968.png') center no-repeat
+
+            &.dot-1988
+                width 97px
+                background url('~assets/img/history/desktopLines/line-1988.png') 19px center no-repeat
+
+            &.dot-1991
+                width 91px
+                background url('~assets/img/history/desktopLines/line-1991.png') 21px center no-repeat
+            
+            &.dot-1992
+                width 90px
+                background url('~assets/img/history/desktopLines/line-1992.png') 18px center no-repeat
+
+            &.dot-1996
+                width 98px
+                background url('~assets/img/history/desktopLines/line-1996.png') 20px center no-repeat
+
+            &.dot-2000
+                width 99px
+                background url('~assets/img/history/desktopLines/line-2000.png') 19px center no-repeat
+
+            &.dot-2006
+                width 100px
+                background url('~assets/img/history/desktopLines/line-2006.png') 27px center no-repeat
+
+            &.dot-2007
+                width 51px
+                background url('~assets/img/history/desktopLines/line-2007.png') 25px center no-repeat
+
+            &.dot-2007_2
+                width 47px
+                background url('~assets/img/history/desktopLines/line-2007_2.png') 20px center no-repeat
+
+            &.dot-2010
+                width 96px
+                background url('~assets/img/history/desktopLines/line-2010.png') 23px center no-repeat
+
+            &.dot-2016
+                width 91px
+                background url('~assets/img/history/desktopLines/line-2010.png') 22px center no-repeat
+
+            &.dot-2017
+                width 44px
+                background url('~assets/img/history/desktopLines/line-2017.png') 22px center no-repeat
+
+            &.dot-2017_2
+                width 47px
+                background url('~assets/img/history/desktopLines/line-2017_2.png') 21px center no-repeat
+
+            &.dot-2018
+                width 48px
+                background url('~assets/img/history/desktopLines/line-2018.png') 21px center no-repeat
+
+            &.dot-2018_2
+                width 48px
+                background url('~assets/img/history/desktopLines/line-2018_2.png') 20px center no-repeat
+
+            &.dot-2019
+                width 91px
+                background url('~assets/img/history/desktopLines/line-2019.png') 23px center no-repeat
+            
+            &.dot-2020
+                width 70px
+                background url('~assets/img/history/desktopLines/line-2020.png') 23px center no-repeat
 
         &__dot
             width 12px
@@ -127,7 +209,6 @@ export default {
 
             &.active
                 background goldNew
-
 
     &__title
         margin-bottom 18px
@@ -230,6 +311,98 @@ export default {
                 justify-content space-between
                 padding 45px 0 18px
 
+            .slider-pagination
+
+                &__list
+
+                    & > li:first-child
+                        .slider-pagination__label
+                            left 7px
+
+                &__box
+                    height 37px
+
+                &__label
+                    left -10px
+                    font-size 14px
+
+                &__wrapper-dot
+                    &.dot-1968
+                        width 82px
+                        padding-left 18px
+                        background url('~assets/img/history/ipadLines/line-1968.png') center no-repeat
+
+                    &.dot-1988
+                        width 68px
+                        background url('~assets/img/history/ipadLines/line-1988.png') 14px center no-repeat
+
+                    &.dot-1991
+                        width 66px
+                        background url('~assets/img/history/ipadLines/line-1991.png') 15px center no-repeat
+                    
+                    &.dot-1992
+                        width 65px
+                        background url('~assets/img/history/ipadLines/line-1992.png') 13px center no-repeat
+
+                    &.dot-1996
+                        width 71px
+                        background url('~assets/img/history/ipadLines/line-1996.png') 14px center no-repeat
+
+                    &.dot-2000
+                        width 72px
+                        background url('~assets/img/history/ipadLines/line-2000.png') 14px center no-repeat
+
+                    &.dot-2006
+                        width 73px
+                        background url('~assets/img/history/ipadLines/line-2006.png') 19px center no-repeat
+
+                    &.dot-2007
+                        width 37px
+                        background url('~assets/img/history/ipadLines/line-2007.png') 18px center no-repeat
+
+                    &.dot-2007_2
+                        width 34px
+                        background url('~assets/img/history/ipadLines/line-2007_2.png') 14px center no-repeat
+
+                    &.dot-2010
+                        width 70px
+                        background url('~assets/img/history/ipadLines/line-2010.png') 17px center no-repeat
+
+                    &.dot-2016
+                        width 66px
+                        background url('~assets/img/history/ipadLines/line-2010.png') 16px center no-repeat
+
+                    &.dot-2017
+                        width 32px
+                        background url('~assets/img/history/ipadLines/line-2017.png') 16px center no-repeat
+
+                    &.dot-2017_2
+                        width 34px
+                        background url('~assets/img/history/ipadLines/line-2017_2.png') 15px center no-repeat
+
+                    &.dot-2018
+                        width 35px
+                        background url('~assets/img/history/ipadLines/line-2018.png') 15px center no-repeat
+
+                    &.dot-2018_2
+                        width 35px
+                        background url('~assets/img/history/ipadLines/line-2018_2.png') 14px center no-repeat
+
+                    &.dot-2019
+                        width 66px
+                        background url('~assets/img/history/ipadLines/line-2019.png') 17px center no-repeat
+                    
+                    &.dot-2020
+                        width 52px
+                        background url('~assets/img/history/ipadLines/line-2020.png') 17px center no-repeat
+
+                &__dot
+                    width 9px
+                    height 9px
+
+            &.active
+                background goldNew
+
         &__container
             max-width unset
 
@@ -252,6 +425,12 @@ export default {
 
                 .btn-desktop
                     display none
+
+                .buttons-mobile
+                    display none
+
+            .slider-pagination
+                display none
 
         &__double-line
             width 50px

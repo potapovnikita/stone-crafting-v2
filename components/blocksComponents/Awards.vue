@@ -64,7 +64,7 @@ export default {
     
     &__award-img
         flex-shrink 0
-        opacity .3
+        opacity .7
         cursor pointer
 
         &:hover
@@ -100,6 +100,12 @@ export default {
             line-height 33px
 
          &__list
-            justify-content space-between
+            justify-content center
+            margin-left -34px
+            margin-bottom 0
+
+            img
+                margin-left 34px
+                margin-bottom 31px
                  
 </style>
