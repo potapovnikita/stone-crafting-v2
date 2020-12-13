@@ -177,7 +177,7 @@ export default {
 
             &.desktop-hide
                 display flex
-                align-items: center
+                align-items center
                 justify-content center
                 padding-top 26px
 
