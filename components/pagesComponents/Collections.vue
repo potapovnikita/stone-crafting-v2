@@ -1,6 +1,15 @@
 <template lang="pug">
     .common-container.collections-container
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
+        CollectionItem(v-for="(item, index) in museumNew"
+            :key="item.id"
+            :title="item.title"
+            :text="item.text"
+            :imgUrl="item.img"
+            :imgBgUrl="item.background"
+            :isReverse="index % 2 == 0"
+        )
+
         // for desktop version
         .lds-dual-ring(v-show="!isInit")
         .collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
@@ -44,16 +53,19 @@
 <script>
     import { mapState } from 'vuex'
     import RandomGallery from '~/components/RandomGallery.vue'
-    import { getImgExternal } from '~/plugins/getUrl'
+    import { getImgExternal, getImgLocal } from '~/plugins/getUrl'
     import Museum from '~/assets/staticData/museum.json'
     import { XIcon  } from 'vue-feather-icons'
     import Cookies from 'universal-cookie';
+    import CollectionItem from "@/components/pagesComponents/CollectionItem";
+    import MuseumNew from '~/assets/staticData/museumNew.json';
 
     export default {
         data() {
             return {
                 museum: Museum,
                 isInit: false,
+                museumNew: MuseumNew,
             }
         },
         methods: {
@@ -312,6 +324,7 @@
         components: {
             RandomGallery,
             XIcon,
+            CollectionItem,
         },
         computed: {
             ...mapState('localization', [

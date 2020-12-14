@@ -1,9 +1,8 @@
-<template lang="pug">
+;<template lang="pug">
     page-container
         //page-preload
         Header(placeholder="true")
         main-page
-        Footer
 
 </template>
 
@@ -11,15 +10,13 @@
 import MainPage from '~/components/pagesComponents/Main.vue'
 import PageContainer from '~/components/PageContainer.vue'
 import PagePreload from '~/components/PagePreload.vue'
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
+import Header from '~/components/HeaderNew.vue'
 
 export default {
     components: {
         MainPage,
         PageContainer,
         PagePreload,
-        Footer,
         Header,
     },
     head() {
@@ -51,6 +48,6 @@ export default {
 
 <style lang="stylus">
     body
-        background-color blackRed
+        background-color blackBackground
 </style>
 

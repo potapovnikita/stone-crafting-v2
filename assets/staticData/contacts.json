@@ -16,6 +16,20 @@
             "addressEng": "Yekaterinburg. International Center for the Arts \"Glavny Prospekt.\""
         }
     ],
+    "footerAdresses": [
+        {
+            "addressNameRu": "Салон ANTONOV",
+            "addressNameEng": "ANTONOV Boutique",
+            "addressRu": "Международный центр искусств \"Главный Проспект.\" пр. Ленина, 8",
+            "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
+        },
+        {
+            "addressNameRu": "Mузей Камнерезного Дома",
+            "addressNameEng": "The Museum of the Stone crafting House",
+            "addressRu": "Международный центр искусств \"Главный Проспект.\" пр. Ленина, 8",
+            "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
+        }
+    ],
     "inst": "https://www.instagram.com/stone.crafting.house/",
     "instName": " stone.crafting.house",
     "youtube": "https://www.youtube.com/channel/UCMw8wxXahBkakZ1lvgP5AAw/featured",
@@ -37,6 +51,14 @@
             "roleEng": "Official Representative for Asia",
             "email": "jameskimplease@gmail.com",
             "img": "img/contacts/james.png"
+        }
+    ],
+    "partners": [
+        {
+            "name": "Ювелирный дом CHAMOVSKIKH",
+            "nameEng": "CHAMOVSKIKH House",
+            "href": "www.chamovskikh.com",
+            "img": "img/contacts/partner.png"
         }
     ]
 }

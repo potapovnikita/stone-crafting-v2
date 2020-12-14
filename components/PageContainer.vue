@@ -20,7 +20,7 @@
 
 <style lang="stylus">
     .container
-        background-color blackRed
+        background-color blackBackground
         margin 0 auto
         position relative
         min-height 100vh

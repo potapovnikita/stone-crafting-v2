@@ -1,25 +1,28 @@
 h1
-    font-family $RistrettoPro
-    font-size 40px
+    font-family $TenorSans-Regular
+    font-size 52px
     color whiteMain
     text-align center
     font-weight 400
-    font-style normal
-    font-stretch normal
-    line-height 1.11
-    letter-spacing 3px
-    padding 0.9em 1.2em 2em 1.2em
-    text-transform uppercase
+    line-height 140%
+    text-align center
 
 h2
-    font-family $Lazurski-Regular
-    font-size 30px
-    color whiteMain
+    font-family $TenorSans-Regular
+    font-size 40px
+    color goldNew
     text-align center
     font-weight 400
-    font-style normal
-    font-stretch normal
-    line-height 1.11
+    line-height 60px
+    letter-spacing 0.03em
+
+h3
+    font-family $TenorSans-Regular
+    font-size 24px
+    font-weight 400
+    line-height 36px
+    letter-spacing 0.03em
+    color whiteMain
 
 h3.reverse
     font-family $Lazurski-Regular
@@ -43,6 +46,23 @@ h2.ristretto
     text-transform uppercase
     padding-bottom 30px
 
+p
+    font-family $TenorSans-Regular
+    font-weight normal
+    font-size 18px
+    line-height 27px
+    text-align center
+    letter-spacing 0.03em
+    color whiteMain
+
+.text_sverdlovsk
+    font-family $Sverdlovsk
+    font-weight normal
+    font-size 35px
+    line-height 140%
+    text-align center
+    letter-spacing 0.04em
+    color whiteMain
 
 .text_default
     font-family $IntroRegular
@@ -87,10 +107,12 @@ a.reverse
     justify-content center
     text-align center
     text-align -webkit-center
+    max-width 1680px
+    margin 0 auto
     padding 30px 60px
 
     @media only screen and (max-width 767px)
-        padding 80px 20px 30px
+        padding 80px 10px 30px
 
 
 .lds-dual-ring {
@@ -121,6 +143,14 @@ a.reverse
     }
 }
 
+@media only screen and (max-width 1280px)
+    h1
+        font-size 48px
+
+    h2
+        font-size 32px
+        line-height 42px
+
 @media only screen and (max-width 767px)
     h1
         font-size 35px
@@ -131,9 +161,23 @@ a.reverse
 
 @media only screen and (max-width 450px)
     h1
-        font-size 30px
+        font-size 28px
+        line-height 39px
     h2
-        font-size 25px
+        font-size 22px
+        line-height 29px
+        letter-spacing 0.03em
+
+    p
+        font-size 14px
+        line-height 21px
+        letter-spacing 0.03em
+
+    .text_sverdlovsk
+        font-size 28px
+        line-height 39px
+        letter-spacing 0.04em
+
 
 @media only screen and (max-width 350px)
     h1

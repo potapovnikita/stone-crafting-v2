@@ -1,12 +1,23 @@
 <template lang="pug">
     .common-container.main-container
-        .video-section
-            .video-wrapper
-                <!--.image(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.background)}")-->
-                video#video(playsinline autoplay="true" loop="true" muted="muted")
-                    source(src="~/assets/video/main.mp4" type="video/mp4")
+        .header-container
+            .header-container__title-container
+                .header-container__circle
+                h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Title on eng' }}
+                p.header-container__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Title on eng' }}
+                .header-container__line
+                .header-container__year-wrapper
+                    .header-container__double-line
+                    p.text_sverdlovsk {{ lang === 'ru' ? 'с 1968 года' : 'since 1968' }}
 
-
+        BrandHistory
+        LinksPanel
+        .wrapper-page
+            .pic-top-left
+            .pic-top-right
+            .pic-bottom
+            Tradition
+            Footer
 
 </template>
 
@@ -14,6 +25,11 @@
     import { mapState } from 'vuex'
 
     import Company from '~/assets/staticData/company.json'
+    import Button from "@/components/ui/Button";
+    import BrandHistory from "@/components/blocksComponents/BrandHistory";
+    import LinksPanel from "@/components/blocksComponents/LinksPanel";
+    import Tradition from "@/components/blocksComponents/Tradition";
+    import Footer from '~/components/FooterNew.vue'
 
     export default {
         data() {
@@ -22,6 +38,11 @@
             }
         },
         components: {
+            Button,
+            BrandHistory,
+            LinksPanel,
+            Tradition,
+            Footer,
         },
         computed: {
             ...mapState('localization', [
@@ -56,8 +77,8 @@
                 this.computedStyleFooter();
             })
             this.computedStyleFooter();
-            const vid = document.getElementById('video')
-            vid.play();
+            // const vid = document.getElementById('video')
+            // vid.play();
         },
         destroyed() {
             window.removeEventListener('resize', () => {
@@ -68,6 +89,159 @@
 </script>
 
 <style lang="stylus">
+    .header-container
+        height 982px
+        background url('~assets/img/main/header-main.png') top center no-repeat
+        background-size cover
+
+        &__circle
+            position absolute
+            top 0
+            left 0
+            right 0
+            margin 0 auto
+            width 722px
+            height 100%
+            border 1px solid rgba(255, 255, 255, 0.07)
+            border-radius 50%
+
+        &__title-container
+            position relative
+            height 722px
+            margin-top 148px
+            padding-top 195px
+
+        &__title
+            font-size 68px
+            margin-bottom 14px
+
+        &__sub-title
+            margin-bottom 35px
+            font-size 19px
+            line-height 140%
+            letter-spacing 0.3em
+            text-transform uppercase
+            color goldNew
+
+        &__line
+            position absolute
+            left 0
+            right 0
+            width 53px
+            height 1px
+            margin 0 auto
+            background goldNew
+
+        &__year-wrapper
+            position relative
+            padding-top 30px
+            margin-top 102px
+
+        &__double-line
+            position absolute
+            top 0
+            left 0
+            right 0
+            width 163px
+            height 4px
+            margin 0 auto
+            border 1px solid #6A6A6A
+            border-left none
+            border-right none
+
+        @media only screen and (max-width 1280px)
+
+            &__title-container
+                position relative
+                height 580px
+                margin-top 110px
+                padding-top 180px
+            
+            &__title
+                font-size 52px
+
+            &__circle
+                width 580px
+
+            &__year-wrapper
+                padding-top 25px
+                margin-top 83px
+
+        @media only screen and (max-width 1024px)
+            height 703px
+            background url('~assets/img/main/header-main-ip.png') top center no-repeat
+        
+        @media only screen and (max-width 767px)
+            height 100vh
+
+            &__circle
+                width 409px
+                height 409px
+                margin 0
+
+            &__title-container
+                height 409px
+                margin-top 109px
+                padding-top 108px
+
+            &__title
+                font-size 32px
+                line-height 34px
+                margin-bottom 33px
+
+            &__sub-title
+                margin-bottom 52px
+                font-size 13px
+                line-height 19px
+                letter-spacing 0.3em
+                text-transform uppercase
+                color goldNew
+
+            &__line
+                width 39px
+
+            &__year-wrapper
+                padding-top 33px
+                margin 0
+            
+            &__double-line
+                display none
+
+        @media only screen and (max-width 767px)
+            background url('~assets/img/main/header-main-mb.png') no-repeat
+            background-position center
+            background-size cover
+
+    .wrapper-page
+        position relative
+        min-height 1550px
+        background url('~assets/img/tradition/bg-main.png') no-repeat
+        background-size cover
+
+        .pic-top-left
+            position absolute
+            top 0
+            left 0
+            width 663px
+            height 415px
+            background url('~assets/img/tradition/bg-top-left.png') no-repeat
+            background-position 0 -42px
+
+        .pic-top-right
+            position absolute
+            top 0
+            right 0
+            width 181px
+            height 345px
+            background url('~assets/img/tradition/bg-top-right.png') no-repeat
+
+        .pic-bottom
+            position absolute
+            bottom 0
+            width 100%
+            height 897px
+            background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/tradition/bg-bottom.png') bottom right no-repeat
+    
     .footer-add
         margin-top: -150px !important
 
@@ -103,4 +277,42 @@
                         position absolute
                         width 100%
                         z-index 1
+
+    @media only screen and (max-width 1280px)
+        .wrapper-page
+            min-height 1210px
+            
+            .pic-top-left
+                background-size 80%
+                background-position -100px -50px
+
+            .pic-top-right
+                background-size 80%
+                background-position 40px 50px
+
+    @media only screen and (max-width 1024px)
+        .wrapper-page
+            .pic-bottom
+                bottom -275px
+                background-position 100px
+
+    @media only screen and (max-width 767px)
+        .wrapper-page
+            min-height 1650px
+
+            .pic-top-left
+                background-position -68px 0
+                background-size 30%
+
+            .pic-top-right
+                top unset
+                background-position right 162px
+                background-size 50%
+
+            .pic-bottom
+                height 563px
+                bottom 0
+                background-size cover
+                background-position bottom right
+
 </style>
