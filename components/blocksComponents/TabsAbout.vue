@@ -41,9 +41,10 @@
                     .catalogs.mobile-hide
                         a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
                             .item(:style="{backgroundImage: getBgImg(catalog.background)}")
-                            .text.textCat {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
+                            .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
                     .catalogs.desktop-hide
+                        MobileCatalogSlider
 
 </template>
 <script>
@@ -55,6 +56,7 @@ import Tabs from '@/components/pagesComponents/Tabs'
 import Tab from '@/components/pagesComponents/Tab'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import MobileArticleSlider from '@/components/blocksComponents/MobileArticleSlider'
+import MobileCatalogSlider from '@/components/blocksComponents/MobileCatalogSlider'
 
 export default {
     name: 'TabsAbout',
@@ -64,10 +66,6 @@ export default {
             catalogs: Company.company.catalogs,
             films: Company.company.films,
             activeFilm: 0,
-            currentSlideArticle: 0,
-            currentSlideCatalog: 0,
-            articlePageCount: 0,
-            catalogPageCount: 0,
         }
     },
     components: {
@@ -77,6 +75,7 @@ export default {
         Tabs,
         Tab,
         MobileArticleSlider,
+        MobileCatalogSlider,
     },
     methods: {
         getBgImg(url) {
@@ -228,9 +227,6 @@ export default {
         max-width 1650px
         margin-left -128px
 
-        @media only screen and (max-width 600px)
-            flex-direction column
-
         .catalog
         .article
             transition transform 0.5s, opacity 0.5s ease-in
@@ -317,21 +313,4 @@ export default {
             margin 0
             max-width unset
 
-    .catalogs
-        .catalog
-            width 220px
-            height 180px
-            .item
-                width 220px
-                height 180px
-
-        @media only screen and (max-width 850px)
-            .catalog
-                width 180px
-                height 140px
-                .item
-                    width 180px
-                    height 140px
-        @media only screen and (max-width 650px)
-            flex-direction column
 </style>

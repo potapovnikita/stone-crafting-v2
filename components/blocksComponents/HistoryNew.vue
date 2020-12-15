@@ -10,7 +10,7 @@
                     .buttons-desktop.btn-right
                         ButtonArrow(:onClick="nextSlide" arrowRight)
 
-                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="historyCarousel")
+                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="historyCarousel")
                         slide(v-for="(item, index) in history" :key="`$slide_${index}`")
                             .histoyAbout__container
                                 .histoyAbout__content
@@ -34,17 +34,22 @@
                                 .slider-pagination__wrapper-dot(:class="item.pagination.class")
                                     .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
+                .slider-pagination-mobile
+                    HistoryMobileSlider(:dotsCount="4" :currentDot="currentSlide" :slidesList="history" @mobilepaginationclick="navigateTo")
+
 </template>
 <script>
 import { mapState } from 'vuex'
 import History from '~/assets/staticData/historyNew.json'
 import { getImgLocal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
+import HistoryMobileSlider from '@/components/blocksComponents/HistoryMobileSlider'
 
 export default {
     name: 'HistoryNew',
     components: {
         ButtonArrow,
+        HistoryMobileSlider,
     },
     data() {
         return {
@@ -68,7 +73,10 @@ export default {
         navigateTo(index) {
             this.currentSlide = index
             this.$refs.historyCarousel.goToPage(index)
-        }
+        },
+        handlePageChange(num) {
+            this.currentSlide = num
+        },
     },
     computed: {
         ...mapState('localization', [
@@ -209,6 +217,9 @@ export default {
 
             &.active
                 background goldNew
+
+    .slider-pagination-mobile
+        display none
 
     &__title
         margin-bottom 18px
@@ -431,6 +442,9 @@ export default {
 
             .slider-pagination
                 display none
+            
+            .slider-pagination-mobile
+                display block
 
         &__double-line
             width 50px
