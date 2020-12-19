@@ -1,6 +1,11 @@
 <template lang="pug">
     .common-container.about-container
+        .about-container__page-bg
+        .about-container__page-bg.top1859
+        .about-container__page-bg.top3718
+        .about-container__page-bg.bottom
         .about-container__bg-top
+        .about-container__bg-bottom-right
         h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}
         .about-container__wrapper-description
             .about-container__bg-top-history
@@ -77,6 +82,8 @@
 
                         ButtonArrow(arrowRight :onClick="() => $nuxt.$router.push({path:`${project.href}`})")
 
+        Footer
+
 </template>
 
 <script>
@@ -93,6 +100,7 @@
     import ExpertsAbout from '@/components/blocksComponents/ExpertsAbout'
     import Mission from "@/components/blocksComponents/Mission"
     import TabsAbout from '@/components/blocksComponents/TabsAbout'
+    import Footer from '~/components/FooterNew.vue'
 
     export default {
         data() {
@@ -116,6 +124,7 @@
             ExpertsAbout,
             Mission,
             TabsAbout,
+            Footer,
         },
         methods: {
             getBgImg(url) {
@@ -136,18 +145,34 @@
 </script>
 
 <style lang="stylus">
-    .VueCarousel-navigation-button
-        color white !important
-    .VueCarousel-navigation-button.VueCarousel-navigation-prev,
-    .VueCarousel-navigation-button.VueCarousel-navigation-next
-        img
-            width 15px
-
     .about-container
         position relative
         padding 0
         padding-top 120px
-        background url('~assets/img/about/bg.png') no-repeat, url('~assets/img/about/bg.png') 1900px no-repeat
+
+        &__page-bg
+            position absolute
+            top 0
+            left 0
+            right 0
+            width 100%
+            height 1859px
+            background url('~assets/img/about/bg.png') no-repeat
+            background-size cover
+
+            &.top1859
+                top 1859px
+
+            &.top3718
+                top 3718px
+                background linear-gradient(180deg, rgba(17, 17, 17, 0) 27.27%, #111111 92.04%), url('~assets/img/about/bg.png') no-repeat
+                background-size cover
+
+            &.bottom
+                top unset
+                bottom 0
+                background url('~assets/img/about/bg-bottom.png') no-repeat
+                background-size cover
 
         &__bg-top
             position absolute
@@ -157,12 +182,22 @@
             height 262px
             background url('~assets/img/about/bg-top.png')
 
+        &__bg-bottom-right
+            position absolute
+            right 0
+            bottom 0
+            width 682px
+            height 676px
+            background url('~assets/img/about/bg-bottom-right.png')
+
         &__title
+            position relative
             line-height 73px
             margin-bottom 66px
 
         &__wrapper-description
             position relative
+            padding 0 20px
 
         &__bg-top-history
             position absolute
@@ -227,7 +262,8 @@
         display flex
         flex-direction row
         align-items center
-        max-width 1600px
+        width 1600px
+        margin 0 auto
         padding 64px 0
 
         &__title
@@ -257,11 +293,13 @@
             border 1px solid rgba(150, 120, 95, 0.3)
 
         &.reverse
-            @media only screen and (max-width 767px)
+            @media only screen and (max-width 1000px)
                 flex-direction column-reverse
 
+        @media only screen and (max-width 1600px)
+            width 100%
+
         @media only screen and (max-width 1280px)
-            max-width 1600px
             padding 64px 0
 
             &__title
@@ -303,11 +341,11 @@
                 padding 8px
 
         
-        @media only screen and (max-width 767px)
+        @media only screen and (max-width 1000px)
             flex-direction column
             align-items center
             margin-bottom 40px
-            padding 0
+            padding 0 20px
 
             .photo
             .video
@@ -350,6 +388,8 @@
             background-color: hsl(0,0%,10%);
 
     .about-us
+        position relative
+
         &__title
             margin-bottom 18px
 
@@ -384,7 +424,8 @@
                 color goldNew
 
     .projectsAbout
-        display block
+        position relative
+        margin 0 40px
 
         &__title
             margin-bottom 18px
@@ -441,13 +482,19 @@
 
     @media only screen and (max-width 1280px)
         .about-container
-            padding 96px 20px 0
+            padding-top 96px
 
             &__bg-top
                 width 346px
                 height 201px
                 background-size contain
                 background-repeat no-repeat
+
+            &__bg-bottom-right
+                width 682px
+                height 676px
+                background-repeat no-repeat
+                background-position 100px 270px
 
             &__title
                 line-height 67px
@@ -488,6 +535,8 @@
                 line-height 24px
 
         .projectsAbout
+            margin 0 20px
+
             &__title
                 margin-bottom 30px
                 line-height 48px
@@ -516,10 +565,10 @@
                     min-width 300px
                     font-size 20px
                     line-height 28px
-    
-    @media only screen and (max-width 767px)
+
+    @media only screen and (max-width 900px)
         .about-container
-            padding 76px 12px 0
+            padding-top 76px
 
             &__bg-top
                 width 126px
@@ -574,6 +623,31 @@
 
             &__awards-mobile
                 display block
+                position relative
+                margin 0 20px
+            
+    @media only screen and (max-width 767px)
+        .about-container
+            &__page-bg
+                width 100%
+                height 100%
+                background url('~assets/img/about/bg.png')
+                background-size contain
+
+                &.top1859
+                    display none
+
+                &.top3718
+                   display none
+
+                &.bottom
+                    display none
+
+            &__bg-bottom-right
+                width 100%
+                height 572px
+                background url('~assets/img/about/bg-bottom-mb.png') no-repeat
+                background-size cover
 
         .projectsAbout
             display block

@@ -85,14 +85,14 @@ export default {
         text-align left
 
     &__wrapper-pic
-        width 351px
+        width 350px
         padding 4px
         margin-bottom 30px
         border 1px solid rgba(150, 120, 95, 0.3)
         
     &__pic
-        width 341px
-        height 263px
+        width 340px
+        height 261px
         background-position center
         background-repeat no-repeat
         background-size cover
@@ -127,6 +127,7 @@ export default {
         .slider-pagination
             display flex
             justify-content center
+            flex-wrap wrap
             padding 0 20px
             list-style-type none
 

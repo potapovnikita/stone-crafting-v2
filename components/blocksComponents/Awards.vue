@@ -33,12 +33,10 @@ export default {
             return getImgLocal(url)
         },
         onFocus(focused) {
-            console.log('onFocus')
             const temp = [ ...this.data]
             temp.forEach(award => {
                 award.isActive = (award.img === focused.img);
             });
-            console.log(temp)
             this.data = temp
         }
     },
@@ -47,6 +45,11 @@ export default {
             'lang',
         ]),
     },
+    mounted() {
+        const temp = [ ...this.data]
+        temp[0].isActive = true
+        this.data = temp
+    }
 }
 </script>
 <style lang="stylus" scoped>

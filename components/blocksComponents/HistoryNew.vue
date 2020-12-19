@@ -102,6 +102,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .histoyAbout
+    position relative
+
     .slider
         .btn-desktop
             display block
@@ -309,7 +311,7 @@ export default {
             margin-bottom 0
 
         &__slides-panel
-            margin 0 0 50px
+            margin 0 20px 50px
 
             .slider
                 padding 0
@@ -416,6 +418,7 @@ export default {
 
         &__container
             max-width unset
+            flex-basis 965px
 
         &__content
             max-width 468px
@@ -430,7 +433,6 @@ export default {
 
     @media only screen and (max-width 767px)
         &__slides-panel
-            margin 0 0 50px
             .slider
                 display block
 
@@ -445,6 +447,7 @@ export default {
             
             .slider-pagination-mobile
                 display block
+                margin-left -10px
 
         &__double-line
             width 50px

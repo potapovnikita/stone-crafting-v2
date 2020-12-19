@@ -42,6 +42,7 @@ export default {
 .tabs
     display flex
     justify-content center
+    position relative
     padding 0
     margin-bottom 64px
     list-style-type none

@@ -309,6 +309,7 @@ export default {
 
             &.desktop-hide
                 display block
+                padding 0 12px
 
             margin 0
             max-width unset

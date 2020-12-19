@@ -151,10 +151,10 @@ export default {
         .text
             max-width 974px
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 1000px)
         .wrapper
             padding 0
-            margin 40px 0 60px
+            margin 40px 10px 60px
 
         .circle
             &.mobile-hide
