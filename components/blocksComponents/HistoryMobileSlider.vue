@@ -38,7 +38,7 @@ export default {
             if (dif === this.dotsCount - 1) {
                 // Если листаем влево и точка слева "за видимой областью"
                 if (Math.abs(this.offset) !== 0 && newVal * dotWidth < Math.abs(this.offset)) {
-                    this.offset = this.offset - 4 * dotWidth * -1
+                    this.offset = this.offset - this.dotsCount * dotWidth * -1
                 }
             }
             if (dif === 0) {
@@ -49,7 +49,7 @@ export default {
                 else if (newVal * dotWidth === Math.abs(this.offset)) return
                 // Если листаем влево и точка слева "за видимой областью"
                 else 
-                    this.offset = this.offset - 4 * dotWidth * -1
+                    this.offset = this.offset - this.dotsCount * dotWidth * -1
             }
         },
     },

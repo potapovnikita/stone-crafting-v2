@@ -34,6 +34,9 @@
                                 .slider-pagination__wrapper-dot(:class="item.pagination.class")
                                     .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
+                .slider-pagination-width1000
+                    HistoryMobileSlider(:dotsCount="8" :currentDot="currentSlide" :slidesList="history" @mobilepaginationclick="navigateTo")
+
                 .slider-pagination-mobile
                     HistoryMobileSlider(:dotsCount="4" :currentDot="currentSlide" :slidesList="history" @mobilepaginationclick="navigateTo")
 
@@ -219,6 +222,9 @@ export default {
 
             &.active
                 background goldNew
+
+    .slider-pagination-width1000
+        display none
 
     .slider-pagination-mobile
         display none
@@ -431,20 +437,31 @@ export default {
             font-size 18px
             line-height 24px
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 1000px)
         &__slides-panel
             .slider
-                display block
-
-                .btn-desktop
-                    display none
-
                 .buttons-mobile
                     display none
 
             .slider-pagination
                 display none
+
+            .slider-pagination-width1000
+                display block
+                width 701px
+                overflow hidden
+
+    @media only screen and (max-width 767px)
+        &__slides-panel
+            .slider
+                display block
+
+                .buttons-mobile
+                    display none
             
+            .slider-pagination-width1000
+                display none
+
             .slider-pagination-mobile
                 display block
                 margin-left -10px
