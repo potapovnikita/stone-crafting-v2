@@ -1,0 +1,40 @@
+{
+    "id": "jokerNew",
+    "name": "Джокер 2020",
+    "img": "img/stone-art/historical/jokerNew/preview/1.jpg",
+    "shortDesc": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
+    "shortDescEng": "A playing card with image of a court jester.",
+    "description": "<i>Вся наша жизнь – игра! <br>Есть особая карта в колоде, на которой изображен придворный шут – «Джокер». Шутник-весельчак, он – хозяин игры. <br>Он может одним своим присутствием сыграть со всеми злую шутку, а может обеспечить счастливчику головокружительный успех! Ведь «Джокер» символизирует непокорность судьбе.</i>",
+    "about": "<b>Камни:</b> яшма, малахит, долерит, родонит, лазурит, чароит, флюорит, амазанит, лепидолит, апатит, кахолонг, хрусталь. <br><br> <b>Металл:</b> серебро, бронза, серебрение, золочение. <br><br> <b>Год создания:</b> 2020.",
+    "nameEng": "Joker 2020",
+    "descriptionEng": "<i>A playing card with image of a court jester. <br>It is an additional trump card in the deck.</i>",
+    "aboutEng": "<b>Stones:</b> jasper, malachite, dolerite, rhodonite, lapis lazuli, charoite, fluorite, amazanite, lepidolite, apatite, cacholong, crystal. <br><br> <b>Metals:</b> silver, bronze, silvering, gilding. <br><br> <b>Year of creation:</b> 2020.",
+    "video": "video/gallery/joker.mp4",
+    "background": "img/stone-art/historical/jokerNew/1.png",
+    "imagesFull": [
+        "img/stone-art/historical/jokerNew/1.png",
+        "img/stone-art/historical/jokerNew/2.png",
+        "img/stone-art/historical/jokerNew/3.png",
+        "img/stone-art/historical/jokerNew/4.png",
+        "img/stone-art/historical/jokerNew/5.png",
+        "img/stone-art/historical/jokerNew/6.png",
+        "img/stone-art/historical/jokerNew/7.png",
+        "img/stone-art/historical/jokerNew/8.png",
+        "img/stone-art/historical/jokerNew/9.png",
+        "img/stone-art/historical/jokerNew/10.png",
+        "img/stone-art/historical/jokerNew/11.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/historical/jokerNew/preview/1.png",
+        "img/stone-art/historical/jokerNew/preview/2.png",
+        "img/stone-art/historical/jokerNew/preview/3.png",
+        "img/stone-art/historical/jokerNew/preview/4.png",
+        "img/stone-art/historical/jokerNew/preview/5.png",
+        "img/stone-art/historical/jokerNew/preview/6.png",
+        "img/stone-art/historical/jokerNew/preview/7.png",
+        "img/stone-art/historical/jokerNew/preview/8.png",
+        "img/stone-art/historical/jokerNew/preview/9.png",
+        "img/stone-art/historical/jokerNew/preview/10.png",
+        "img/stone-art/historical/jokerNew/preview/11.png"
+    ]
+}

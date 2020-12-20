@@ -1,0 +1,42 @@
+{
+    "id": "makedon",
+    "name": "Александр Македонский",
+    "img": "img/stone-art/historical/makedon/preview/1.jpg",
+    "shortDesc": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
+    "shortDescEng": "Conqueror and king of Macedonia",
+    "description": "<i>Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.</i>",
+    "about": "<b>Камни:</b> пирит, флюорит, амазонит, халцедон, кварцит, родонит, яшма, тигровый глаз, долерит, радусит, кахолонг, мрамор. <br><br> <b>Металл:</b> золото, серебро, бронза. <br><br> <b>Год создания:</b> 2019.",
+    "nameEng": "Alexander the Great",
+    "descriptionEng": "<i>Conqueror and king of Macedonia</i>",
+    "aboutEng": "<b>Stones:</b> pyrite, fluorite, amazonite, chalcedony, quartzite, rhodonite, jasper, tiger’s eye, dolerite, radusite, cacholong, marble. <br><br> <b>Metals:</b> gold, silver, bronze. <br><br> <b>Year of creation:</b> 2019.",
+    "video": "video/gallery/makedonski.mp4",
+    "background": "img/stone-art/historical/makedon/1.png",
+    "imagesFull": [
+        "img/stone-art/historical/makedon/1.png",
+        "img/stone-art/historical/makedon/2.png",
+        "img/stone-art/historical/makedon/3.png",
+        "img/stone-art/historical/makedon/4.png",
+        "img/stone-art/historical/makedon/5.png",
+        "img/stone-art/historical/makedon/6.png",
+        "img/stone-art/historical/makedon/7.png",
+        "img/stone-art/historical/makedon/8.png",
+        "img/stone-art/historical/makedon/9.png",
+        "img/stone-art/historical/makedon/10.png",
+        "img/stone-art/historical/makedon/11.png",
+        "img/stone-art/historical/makedon/12.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/historical/makedon/preview/1.png",
+        "img/stone-art/historical/makedon/preview/2.png",
+        "img/stone-art/historical/makedon/preview/3.png",
+        "img/stone-art/historical/makedon/preview/4.png",
+        "img/stone-art/historical/makedon/preview/5.png",
+        "img/stone-art/historical/makedon/preview/6.png",
+        "img/stone-art/historical/makedon/preview/7.png",
+        "img/stone-art/historical/makedon/preview/8.png",
+        "img/stone-art/historical/makedon/preview/9.png",
+        "img/stone-art/historical/makedon/preview/10.png",
+        "img/stone-art/historical/makedon/preview/11.png",
+        "img/stone-art/historical/makedon/preview/12.png"
+    ]
+}
