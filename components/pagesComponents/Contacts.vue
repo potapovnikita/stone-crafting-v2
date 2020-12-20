@@ -1,74 +1,81 @@
 <template lang="pug">
     .common-container.contacts-container
-        h1.title(v-html="lang === 'ru' ? 'Контакты' : 'Contacts'")
+        .contacts-container__bg-top
+        .contacts-container__bg-bottom
+        .contacts-container__wrapper
+            h1.title(v-html="lang === 'ru' ? 'Контакты' : 'Contacts'")
 
-        .contact-info
-            p.label
-                | email
+            .contact-info
+                p.label
+                    | email
 
-            .wrapper-link
-                a.info(v-if="contacts.email" :href="'mailto:' + contacts.email") {{contacts.email}}
-                .underline
+                .wrapper-link
+                    a.info(v-if="contacts.email" :href="'mailto:' + contacts.email") {{contacts.email}}
+                    .underline
 
-        .contact-info
-            p.label {{lang === 'ru' ? 'телефон' : 'phone numbers'}}
+            .contact-info
+                p.label {{lang === 'ru' ? 'телефон' : 'phone numbers'}}
 
-            .phones
-                a.info(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
-                a.info(:href="'tel:' + contacts.phoneMain2") {{contacts.phoneMain2}}
+                .phones
+                    a.info(:href="'tel:' + contacts.phoneMain") {{contacts.phoneMain}}
+                    a.info(:href="'tel:' + contacts.phoneMain2") {{contacts.phoneMain2}}
 
-        h2.sub-title {{lang === 'ru' ? 'Официальные представители:' : 'Official representatives'}}
+            h2.sub-title {{lang === 'ru' ? 'Официальные представители:' : 'Official representatives'}}
 
-        .double-line
-        div
-            .people-list
-                .people(v-for="(item, index) in contacts.peoples")
-                    img.photo(v-if="item.img" :src="getImg(item.img)")
-                    .text
-                        h3.name(v-html="lang === 'ru' ? item.name : item.nameEng")
-                        p.role(v-html="lang === 'ru' ? item.role : item.roleEng")
+            .double-line
+            div
+                .people-list
+                    .people(v-for="(item, index) in contacts.peoples")
+                        img.photo(v-if="item.img" :src="getImg(item.img)")
+                        .text
+                            h3.name(v-html="lang === 'ru' ? item.name : item.nameEng")
+                            p.role(v-html="lang === 'ru' ? item.role : item.roleEng")
 
-                        .wrapper-people-contact
-                            .wrapper-link
-                                a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
-                                .underline
+                            .wrapper-people-contact
+                                .wrapper-link
+                                    a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
+                                    .underline
 
-                            a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
-                                Whatsapp
-        
-        .info {{ lang === 'ru' ? 'Партнеры' : 'Partners' }}
+                                a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
+                                    Whatsapp
+            
+            .info {{ lang === 'ru' ? 'Партнеры' : 'Partners' }}
 
-        .partner-list(v-if="contacts.partners")
-            .partner(v-for="(item, index) in contacts.partners")
-                img.photo(:src="getImg(item.img)" alt="partner")
-                p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
-                a.link(:href="item.href" target="_blank") {{item.href}}
-        
-        h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
-        h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
-        .videoVirtual
-            iframe(
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/kKuR4VxWJ44?rel=0&showinfo=0"
-                frameborder="0"
-                allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                :hl="lang === 'ru' ? 'ru' : 'en'"
-            )
+            .partner-list(v-if="contacts.partners")
+                .partner(v-for="(item, index) in contacts.partners")
+                    img.photo(:src="getImg(item.img)" alt="partner")
+                    p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
+                    a.link(:href="item.href" target="_blank") {{item.href}}
+            
+            h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
+            h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
+            .videoVirtual
+                iframe(
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/kKuR4VxWJ44?rel=0&showinfo=0"
+                    frameborder="0"
+                    allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    :hl="lang === 'ru' ? 'ru' : 'en'"
+                )
 
-        h2(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
-        h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
+            h2(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
+            h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
 
-        .buttons-panel
-            Button(
-                :classNames="['buttons-panel__btn']"
-                :onClick="() => $nuxt.$router.push({path:'/virtual-museum'})"
-                disabledPadding
-                large)
-                .buttons-panel__btn-container
-                    MuseumIcon.icon
-                    span.text {{lang === 'ru' ? 'Посетить\n виртуальный музей' : 'Visit\n virtual museum'}}
+            .buttons-panel
+                Button(
+                    :classNames="['buttons-panel__btn']"
+                    :onClick="() => $nuxt.$router.push({path:'/virtual-museum'})"
+                    disabledPadding
+                    large)
+                    .buttons-panel__btn-container
+                        MuseumIcon.icon.desktop
+                        MuseumMbIcon.icon.mobile
+                        MuseumMbSmallIcon.icon.mobile-small
+                        span.text {{lang === 'ru' ? 'Посетить\n виртуальный музей' : 'Visit\n virtual museum'}}
+
+        Footer
 
 </template>
 
@@ -78,6 +85,9 @@ import Contacts from '~/assets/staticData/contacts.json'
 import Whatsapp from '~/assets/img/contacts/whatsapp.svg'
 import Button from "@/components/ui/Button"
 import MuseumIcon from '~/assets/img/contacts/museum.svg'
+import MuseumMbIcon from '~/assets/img/contacts/museumMb.svg'
+import MuseumMbSmallIcon from '~/assets/img/contacts/museumMb-small.svg'
+import Footer from '~/components/FooterNew.vue'
 
 export default {
     data() {
@@ -90,6 +100,9 @@ export default {
         Whatsapp,
         Button,
         MuseumIcon,
+        MuseumMbIcon,
+        MuseumMbSmallIcon,
+        Footer,
     },
     computed: {
         ...mapState('localization', [
@@ -110,8 +123,32 @@ export default {
 <style lang="stylus">
 
 .contacts-container
+    position relative
     padding-top 117px
-    background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 111.47%), url('~assets/img/contacts/bg-top.png') top center no-repeat, url('~assets/img/contacts/bg-bottom.png') bottom center no-repeat, linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
+    background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
+
+    &__bg-top
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 100%
+        height 1168px
+        background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 111.47%), url('~assets/img/contacts/bg-top.png') no-repeat top center
+        background-size cover
+
+    &__bg-bottom
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        width 100%
+        height 953px
+        background url('~assets/img/contacts/bg-bottom.png') no-repeat bottom center
+        background-size cover
+
+    &__wrapper
+        position relative
 
     .title
         margin-bottom 26px
@@ -244,6 +281,8 @@ export default {
         line-height 39px
 
     .buttons-panel
+        margin-bottom 28px
+
         &__btn-container
             display flex
             justify-content center
@@ -253,6 +292,12 @@ export default {
 
             .icon
                 margin-right 60px
+
+                &.mobile
+                    display none
+
+                &.mobile-small
+                    display none
 
             .text
                 font-size 30px
@@ -292,22 +337,13 @@ export default {
         background url('~assets/img/contacts/bg-bottom.png'), linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
         background-repeat no-repeat
 
-    @media only screen and (max-width 1280px)
-        padding 96px 20px 60px
-
-        .title
-            margin-bottom 11px
-
-        .info
-            font-size 26px
-
-        .sub-title
-            margin-bottom 36px
+    @media only screen and (max-width 1440px)
 
         .double-line
             margin-bottom 52px
 
         .people-list
+            justify-content space-around
             max-width unset
             margin-bottom 50px
 
@@ -336,6 +372,24 @@ export default {
                         font-size 14px
                         line-height 21px
 
+    @media only screen and (max-width 1280px)
+        padding-top 96px
+
+        &__bg-top
+            height 793px
+
+        &__bg-bottom
+            height 580px
+
+        .title
+            margin-bottom 11px
+
+        .info
+            font-size 26px
+
+        .sub-title
+            margin-bottom 36px
+
         .addr-name
             margin-top 6px
             margin-bottom 30px
@@ -343,7 +397,7 @@ export default {
             line-height 27px
 
         .buttons-panel
-            margin-bottom 31px
+            margin-bottom 91px
 
             &__btn-container
                 min-width 466px
@@ -354,12 +408,28 @@ export default {
                     height 57px  
                     margin-right 30px
 
+                    &.desktop
+                        display none
+
+                    &.mobile
+                        display block
+
                 .text
                     font-size 22px
 
     @media only screen and (max-width 767px)
         padding-top 76px
         background url('~assets/img/contacts/bg-mb.png')
+        background-size contain
+
+        &__bg-top
+            display none
+
+        &__bg-bottom
+            display none
+
+        &__wrapper
+            padding 0 12px
 
         .title
             margin-bottom 40px
@@ -446,16 +516,22 @@ export default {
             display none
 
         .buttons-panel
-            margin-bottom 8px
+            margin-bottom 68px
 
             &__btn-container
                 min-width unset
                 padding 24px 26px 30px
 
                 .icon
-                    width 34px
-                    height 24px 
+                    width 37px
+                    height 34px 
                     margin-right 35px
+
+                    &.mobile
+                        display none
+
+                    &.mobile-small
+                        display block
 
                 .text
                     font-size 16px
