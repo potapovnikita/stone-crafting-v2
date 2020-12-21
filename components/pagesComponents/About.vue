@@ -1,7 +1,12 @@
 <template lang="pug">
     .common-container.about-container
+        .about-container__page-bg
+        .about-container__page-bg.top1859
+        .about-container__page-bg.top3718
+        .about-container__page-bg.bottom
         .about-container__bg-top
-        h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}        
+        .about-container__bg-bottom-right
+        h1.about-container__title {{ lang === 'ru' ? 'О Камнерезном Доме' : 'About company' }}
         .about-container__wrapper-description
             .about-container__bg-top-history
             .about-container__description
@@ -57,47 +62,8 @@
             h2.about-us__title(v-html="lang === 'ru' ? 'О нас' : 'About us'")
             .about-us__double-line
 
-        client-only
-            Tabs
-                Tab(:name="lang === 'ru' ? 'Фильмы' : 'Movies'" :classNames="['about-us__tab']")
-                    .caption_section
-                        .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
-                        .films(v-for="(film, index) in films" v-show="index === activeFilm")
-                            .videoName {{ lang === 'ru' ? film.name : film.nameEng }}
-                            .videoFilm
-                                .iconArrow(@click="onPreviousFilm()")
-                                    ChevronLeftIcon(size="3x")
-                                .video
-                                    iframe(width="100%"
-                                        height="100%"
-                                        :src="film.src"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        :hl="lang === 'ru' ? 'ru' : 'en'"
-                                        allowfullscreen
-                                        )
-                                .iconArrow(@click="onNextFilm()")
-                                    ChevronRightIcon(size="3x")
-                    
-                Tab(:name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
-                    .caption_section
-                        .articles
-                            a.article(v-for="article in articles" :href="article.link" target="_blank")
-                                .item(:style="{backgroundImage: getBgImg(article.background)}")
-                                    .mask
-                                p.text
-                                    | {{ lang === 'ru' ? article.name : article.nameEng }}
-                                
-                                .line
-
-                                a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
-                Tab(:name="lang === 'ru' ? 'Каталоги' : 'Catalogs'" :classNames="['about-us__tab']")
-                    .caption_section
-                        .catalogs
-                            a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
-                                .item(:style="{backgroundImage: getBgImg(catalog.background)}")
-                                .text.textCat {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
-
+        TabsAbout
+        
         .projectsAbout(v-if="projects.length")
             h2.projectsAbout__title {{ lang === 'ru' ? 'Проекты совместного участия' : 'Projects' }}
             .projectsAbout__double-line
@@ -116,6 +82,8 @@
 
                         ButtonArrow(arrowRight :onClick="() => $nuxt.$router.push({path:`${project.href}`})")
 
+        Footer
+
 </template>
 
 <script>
@@ -131,21 +99,14 @@
     import Awards from "@/components/blocksComponents/Awards"
     import ExpertsAbout from '@/components/blocksComponents/ExpertsAbout'
     import Mission from "@/components/blocksComponents/Mission"
-    import Tabs from "@/components/pagesComponents/Tabs"
-    import Tab from "@/components/pagesComponents/Tab"
+    import TabsAbout from '@/components/blocksComponents/TabsAbout'
+    import Footer from '~/components/FooterNew.vue'
 
     export default {
         data() {
             return {
                 company: Company.company,
-                articles: Company.company.articles,
-                awards: Company.company.awards,
-                catalogs: Company.company.catalogs,
-                smi: Company.company.smi.videos,
-                films: Company.company.films,
                 projects: Company.company.projects,
-                activeSmi: 0,
-                activeFilm: 0,
                 checkboxValue: false,
                 testInputValue: '',
                 testInputPhone: '',
@@ -162,8 +123,8 @@
             Awards,
             ExpertsAbout,
             Mission,
-            Tabs,
-            Tab,
+            TabsAbout,
+            Footer,
         },
         methods: {
             getBgImg(url) {
@@ -174,129 +135,44 @@
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
             },
-            onNextSmi() {
-                if (this.activeSmi >= this.smi.length - 1) this.activeSmi = 0
-                else this.activeSmi = this.activeSmi + 1
-            },
-            onPreviousSmi() {
-                if (this.activeSmi === 0) this.activeSmi = this.smi.length - 1
-                else this.activeSmi = this.activeSmi - 1
-            },
-            onNextFilm() {
-                if (this.activeFilm >= this.films.length - 1) this.activeFilm = 0
-                else this.activeFilm = this.activeFilm + 1
-            },
-            onPreviousFilm() {
-                if (this.activeFilm === 0) this.activeFilm = this.films.length - 1
-                else this.activeFilm = this.activeFilm - 1
-            },
-            sampleTest(message) {
-                console.log(message)
-            },
-            prewSlide() {
-                this.$refs.expertsCarousel.goToPage(this.$refs.expertsCarousel.getPreviousPage());
-            },
-            nextSlide() {
-                this.$refs.expertsCarousel.goToPage(this.$refs.expertsCarousel.getNextPage());
-            },
         },
         computed: {
             ...mapState('localization', [
                 'lang',
             ]),
         },
-        mounted() {
-            const descriptionsAbout = document.querySelectorAll('.descriptionAbout');
-            const awards = document.querySelectorAll('.award');
-            const articles = document.querySelectorAll('.article');
-            const catalogs = document.querySelectorAll('.catalog');
-
-            // для текста описания
-            const showDesc = new IntersectionObserver((entries) => {
-                entries.forEach(e => {
-                    if (e.intersectionRatio > 0) {
-                        e.target && e.target.childNodes.forEach(node => {
-                            node.style.transform = 'translateX(0)';
-                            node.style.opacity = 1;
-                            showDesc.unobserve(e.target);
-                        })
-                    }
-                })
-            }, { threshold: [0.5, 1] });
-
-            // для наград
-            const showAward = new IntersectionObserver((entries) => {
-                if (entries[0].intersectionRatio > 0) {
-                    entries.forEach(i => {
-                        i.target.style.transform = 'translateY(0)';
-                        i.target.style.opacity = 1;
-                        showAward.unobserve(i.target);
-                    })
-                }
-            });
-
-            // для статей
-            const showArticle = new IntersectionObserver((entries) => {
-                if (entries[0].intersectionRatio > 0) {
-                    entries.forEach(i => {
-                        i.target.style.transform = 'translateY(0)';
-                        i.target.style.opacity = 1;
-                        showArticle.unobserve(i.target);
-                    })
-                }
-            });
-
-            // для каталогов
-            const showCatalog = new IntersectionObserver((entries) => {
-                if (entries[0].intersectionRatio > 0) {
-                    entries.forEach(i => {
-                        i.target.style.transform = 'translateY(0)';
-                        i.target.style.opacity = 1;
-                        showCatalog.unobserve(i.target);
-                    })
-                }
-            });
-
-
-            descriptionsAbout.forEach(desc => {
-                showDesc.observe(desc);
-            })
-            awards.forEach(award => {
-                showAward.observe(award);
-            })
-            articles.forEach(article => {
-                showArticle.observe(article);
-            })
-            catalogs.forEach(catalog => {
-                showCatalog.observe(catalog);
-            })
-
-            let left = document.getElementsByClassName('VueCarousel-navigation-button VueCarousel-navigation-prev')
-            let right = document.getElementsByClassName('VueCarousel-navigation-button VueCarousel-navigation-next')
-            var leftInt = setInterval(() => {
-                if (left[0] && right[0]) {
-                    clearInterval(leftInt);
-                    left[0].innerHTML = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAYAAAAHbrgUAAAAAXNSR0IArs4c6QAAAMNJREFUWAntlcERgzAMBO1UQAkpgRLSKaVAB0kJKQEqMCfG9+Vn5ZHVjOYYeJxZTqKU5GqtTepVPSdbl9LN39Kob+oBZBhvbvNd13kEMBeBKLDnhF6oSTuBY8ONHzdGLeZMxW4fH7ZwEGp2O4Fjt48ft/8dtb5otpizXnmB84eV8ayOH0vU4vupKmMOcRGHhIMHCUiYgJVMQMIErGQCEiZgJROQMAErmYCECVjJxB2Jhx9maK31I5+X+lBX9W9KmXja+QTqI6yJ9reXAwAAAABJRU5ErkJggg=="/>`;
-                    right[0].innerHTML = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA8CAYAAAAHbrgUAAAAAXNSR0IArs4c6QAAALRJREFUWAntlMENhDAMBFMCJVACJdEZpUAH0Akl5NaIlVD+MUg3liyTDxsmE0qtdVKv6qG8UQre1FG7On8TEao+1FFsAhJFHuDE9TeAhH+KkICECXjiBCRMwBMnIGECnjgBCRPwxIkvkjh1LFG7N5c2FbpE8l1zWnAEKXRxsibhOfTBfkuHcAjXlwBXjavW17Dm7QiHcI0SfZcIh3B9DWve/r/CBQh9/fyKcM9T0AbG5zrz+QcZsbUbjCobhwAAAABJRU5ErkJggg=="/>`;
-                }
-            }, 1000)
-        }
     }
 </script>
 
 <style lang="stylus">
-    .VueCarousel-navigation-button
-        color white !important
-    .VueCarousel-navigation-button.VueCarousel-navigation-prev,
-    .VueCarousel-navigation-button.VueCarousel-navigation-next
-        img
-            width 15px
-
     .about-container
         position relative
         padding 0
         padding-top 120px
-        background url('~assets/img/about/bg.png') no-repeat, url('~assets/img/about/bg.png') 1900px no-repeat
+
+        &__page-bg
+            position absolute
+            top 0
+            left 0
+            right 0
+            width 100%
+            height 1859px
+            background url('~assets/img/about/bg.png') no-repeat
+            background-size cover
+
+            &.top1859
+                top 1859px
+
+            &.top3718
+                top 3718px
+                background linear-gradient(180deg, rgba(17, 17, 17, 0) 27.27%, #111111 92.04%), url('~assets/img/about/bg.png') no-repeat
+                background-size cover
+
+            &.bottom
+                top unset
+                bottom 0
+                background url('~assets/img/about/bg-bottom.png') no-repeat
+                background-size cover
 
         &__bg-top
             position absolute
@@ -306,12 +182,22 @@
             height 262px
             background url('~assets/img/about/bg-top.png')
 
+        &__bg-bottom-right
+            position absolute
+            right 0
+            bottom 0
+            width 682px
+            height 676px
+            background url('~assets/img/about/bg-bottom-right.png')
+
         &__title
+            position relative
             line-height 73px
             margin-bottom 66px
 
         &__wrapper-description
             position relative
+            padding 0 20px
 
         &__bg-top-history
             position absolute
@@ -376,7 +262,8 @@
         display flex
         flex-direction row
         align-items center
-        max-width 1600px
+        width 1600px
+        margin 0 auto
         padding 64px 0
 
         &__title
@@ -406,11 +293,13 @@
             border 1px solid rgba(150, 120, 95, 0.3)
 
         &.reverse
-            @media only screen and (max-width 767px)
+            @media only screen and (max-width 1000px)
                 flex-direction column-reverse
 
+        @media only screen and (max-width 1600px)
+            width 100%
+
         @media only screen and (max-width 1280px)
-            max-width 1600px
             padding 64px 0
 
             &__title
@@ -452,11 +341,11 @@
                 padding 8px
 
         
-        @media only screen and (max-width 767px)
+        @media only screen and (max-width 1000px)
             flex-direction column
             align-items center
             margin-bottom 40px
-            padding 0
+            padding 0 20px
 
             .photo
             .video
@@ -499,6 +388,8 @@
             background-color: hsl(0,0%,10%);
 
     .about-us
+        position relative
+
         &__title
             margin-bottom 18px
 
@@ -533,7 +424,8 @@
                 color goldNew
 
     .projectsAbout
-        display block
+        position relative
+        margin 0 40px
 
         &__title
             margin-bottom 18px
@@ -588,227 +480,21 @@
                 letter-spacing 0.03em
                 color whiteMain
 
-    .caption_section
-        .awards
-            margin-bottom 40px
-            display flex
-            flex-direction row
-            flex-wrap wrap
-            justify-content center
-
-            .award
-                transition all 0.5s ease-in
-                opacity 0
-                transform translateY(200px)
-                background-color white
-                display flex
-                padding 20px 10px
-                border 3px solid gold
-                margin 0 10px 20px
-                max-width 420px
-                justify-content center
-                align-items center
-
-                @media only screen and (max-width 500px)
-                    flex-direction column
-                    padding 10px
-
-                .textAward
-                    display flex
-                    align-items center
-                    text-align left
-                    color black
-                    font-family $IntroRegularCaps
-                    font-size 13px
-                    padding 0 20px
-                    line-height 1.5
-                    @media only screen and (max-width 500px)
-                        text-align center
-
-                .imgAward
-                    background-repeat no-repeat
-                    background-position center
-                    background-size contain
-                    min-width 150px
-                    height 150px
-
-                    @media only screen and (max-width 500px)
-                        margin-bottom 10px
-        .hint
-            margin-bottom 20px
-        .films
-        .smi
-            margin-bottom 40px
-
-            .videoName
-                margin-bottom 20px
-                font-family $IntroRegular
-                font-size $FontSize3
-
-            .iconArrow
-                cursor pointer
-                display flex
-                align-items center
-                justify-content center
-
-                &:hover
-                    svg
-                        stroke #7f828b
-
-            .videoFilm
-            .videoSmi
-                display inline-flex
-                flex-direction row
-                justify-content center
-                flex-wrap nowrap
-                width 100%
-                margin 0 auto
-
-                .name
-                    font-family $IntroRegular
-                    font-size $FontSize3
-                    margin-bottom 15px
-
-                .video
-                    height 400px
-                    max-width 700px
-                    margin-bottom 30px
-                    width: 100%;
-
-                    @media only screen and (max-width 500px)
-                        height 250px
-
-                    @media only screen and (max-width 400px)
-                        height 210px
-
-                    video
-                    iframe
-                        background black
-
-        .articles
-        .catalogs
-            display flex
-            flex-direction row
-            flex-wrap wrap
-            justify-content center
-            margin 0 auto
-            margin-bottom 40px
-            flex-basis 100px
-            max-width 1000px
-
-            @media only screen and (max-width 600px)
-                flex-direction column
-
-            .catalog
-            .article
-                transition transform 0.5s, opacity 0.5s ease-in
-                opacity 0
-                transform translateY(150px)
-                display flex
-                flex-direction column
-                width 200px
-                margin 10px 10px
-
-                .item
-                    display flex
-                    align-items center
-                    justify-content center
-                    width 200px
-                    height 200px
-                    background-color darkRed
-                    transition transform .3s linear
-                    background-position center
-                    background-repeat no-repeat
-                    background-size cover
-                    position relative
-                    margin-bottom 15px
-
-
-                .text
-                    display flex
-                    width 100%
-                    align-items flex-start
-                    text-align left
-                    flex-direction column
-                    bottom -60px
-                    font-family $IntroRegular
-                    font-size $FontSizeMenu
-                    color whiteMain
-                    font-weight bold
-                    z-index 1
-
-                    a
-                        margin-top 10px
-                        text-decoration underline
-                        &:hover
-                            text-decoration none
-                .textCat
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                .maskCat
-                .mask
-                    top 0
-                    bottom 0
-                    left 0
-                    right 0
-                    position absolute
-                    background-color black
-                    opacity 0.2
-
-                .maskCat
-                    opacity 0.4
-
-            .article
-                background-color rgba(102, 15, 40, 0.4)
-                width 300px
-                @media only screen and (max-width 350px)
-                    width 250px
-
-                &:hover
-                    box-shadow: 0 5px 6px 0 rgba(102, 15, 40, .3);
-
-                .item
-                    width 300px
-                    height 150px
-                    background-position top
-                    @media only screen and (max-width 350px)
-                        width 250px
-
-                .text
-                    padding 0 10px 5px
-                    height 80px
-
-        .catalogs
-            .catalog
-                width 220px
-                height 180px
-                .item
-                    width 220px
-                    height 180px
-
-            @media only screen and (max-width 850px)
-                .catalog
-                    width 180px
-                    height 140px
-                    .item
-                        width 180px
-                        height 140px
-            @media only screen and (max-width 650px)
-                flex-direction column
-    .demo
-        margin 20px
-
     @media only screen and (max-width 1280px)
         .about-container
-            padding 96px 20px 0
+            padding-top 96px
 
             &__bg-top
                 width 346px
                 height 201px
                 background-size contain
                 background-repeat no-repeat
+
+            &__bg-bottom-right
+                width 682px
+                height 676px
+                background-repeat no-repeat
+                background-position 100px 270px
 
             &__title
                 line-height 67px
@@ -849,6 +535,8 @@
                 line-height 24px
 
         .projectsAbout
+            margin 0 20px
+
             &__title
                 margin-bottom 30px
                 line-height 48px
@@ -877,10 +565,10 @@
                     min-width 300px
                     font-size 20px
                     line-height 28px
-    
-    @media only screen and (max-width 767px)
+
+    @media only screen and (max-width 900px)
         .about-container
-            padding 76px 12px 0
+            padding-top 76px
 
             &__bg-top
                 width 126px
@@ -935,6 +623,31 @@
 
             &__awards-mobile
                 display block
+                position relative
+                margin 0 20px
+            
+    @media only screen and (max-width 767px)
+        .about-container
+            &__page-bg
+                width 100%
+                height 100%
+                background url('~assets/img/about/bg.png')
+                background-size contain
+
+                &.top1859
+                    display none
+
+                &.top3718
+                   display none
+
+                &.bottom
+                    display none
+
+            &__bg-bottom-right
+                width 100%
+                height 572px
+                background url('~assets/img/about/bg-bottom-mb.png') no-repeat
+                background-size cover
 
         .projectsAbout
             display block

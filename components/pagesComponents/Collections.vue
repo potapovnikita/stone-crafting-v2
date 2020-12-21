@@ -3,6 +3,7 @@
         h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
         CollectionItem(v-for="(item, index) in museumNew"
             :key="item.id"
+            :id="item.id"
             :title="item.title"
             :text="item.text"
             :imgUrl="item.img"
@@ -360,6 +361,8 @@
 
 <style lang="stylus">
     .collections-container
+        padding-top 117px
+
         .lds-dual-ring
             margin 0 auto
 

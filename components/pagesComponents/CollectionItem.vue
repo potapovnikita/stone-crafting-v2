@@ -9,7 +9,7 @@
                 .collection-item__double-line
                 p.collection-item__text {{text}}
 
-                ButtonArrow()
+                ButtonArrow(:onClick="() => $nuxt.$router.push({path:`/gallery/${id}`})" arrowRight)
 
 </template>
 <script>
@@ -21,6 +21,7 @@
             ButtonArrow,
         },
         props: {
+            id: String,
             title: String,
             text: String,
             imgUrl: String,

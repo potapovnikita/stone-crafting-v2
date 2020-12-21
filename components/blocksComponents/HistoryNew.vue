@@ -10,7 +10,7 @@
                     .buttons-desktop.btn-right
                         ButtonArrow(:onClick="nextSlide" arrowRight)
 
-                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="historyCarousel")
+                    carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="historyCarousel")
                         slide(v-for="(item, index) in history" :key="`$slide_${index}`")
                             .histoyAbout__container
                                 .histoyAbout__content
@@ -34,17 +34,25 @@
                                 .slider-pagination__wrapper-dot(:class="item.pagination.class")
                                     .slider-pagination__dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
 
+                .slider-pagination-width1000
+                    HistoryMobileSlider(:dotsCount="8" :currentDot="currentSlide" :slidesList="history" @mobilepaginationclick="navigateTo")
+
+                .slider-pagination-mobile
+                    HistoryMobileSlider(:dotsCount="4" :currentDot="currentSlide" :slidesList="history" @mobilepaginationclick="navigateTo")
+
 </template>
 <script>
 import { mapState } from 'vuex'
 import History from '~/assets/staticData/historyNew.json'
 import { getImgLocal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
+import HistoryMobileSlider from '@/components/blocksComponents/HistoryMobileSlider'
 
 export default {
     name: 'HistoryNew',
     components: {
         ButtonArrow,
+        HistoryMobileSlider,
     },
     data() {
         return {
@@ -68,7 +76,10 @@ export default {
         navigateTo(index) {
             this.currentSlide = index
             this.$refs.historyCarousel.goToPage(index)
-        }
+        },
+        handlePageChange(num) {
+            this.currentSlide = num
+        },
     },
     computed: {
         ...mapState('localization', [
@@ -94,6 +105,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .histoyAbout
+    position relative
+
     .slider
         .btn-desktop
             display block
@@ -210,6 +223,12 @@ export default {
             &.active
                 background goldNew
 
+    .slider-pagination-width1000
+        display none
+
+    .slider-pagination-mobile
+        display none
+
     &__title
         margin-bottom 18px
 
@@ -298,7 +317,7 @@ export default {
             margin-bottom 0
 
         &__slides-panel
-            margin 0 0 50px
+            margin 0 20px 50px
 
             .slider
                 padding 0
@@ -405,6 +424,7 @@ export default {
 
         &__container
             max-width unset
+            flex-basis 965px
 
         &__content
             max-width 468px
@@ -417,20 +437,34 @@ export default {
             font-size 18px
             line-height 24px
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 1000px)
         &__slides-panel
-            margin 0 0 50px
             .slider
-                display block
-
-                .btn-desktop
-                    display none
-
                 .buttons-mobile
                     display none
 
             .slider-pagination
                 display none
+
+            .slider-pagination-width1000
+                display block
+                width 701px
+                overflow hidden
+
+    @media only screen and (max-width 767px)
+        &__slides-panel
+            .slider
+                display block
+
+                .buttons-mobile
+                    display none
+            
+            .slider-pagination-width1000
+                display none
+
+            .slider-pagination-mobile
+                display block
+                margin-left -10px
 
         &__double-line
             width 50px

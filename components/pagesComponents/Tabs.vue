@@ -21,11 +21,6 @@ export default {
             tabs: [],
         }
     },
-    created() {
-        this.tabs = this.$children
-        console.log('created()!!!!!!!!!!!!!!!!!!!')
-        console.log(this.tabs)
-    },
     methods: {
         selectTab(selectedTab) {
             this.tabs.forEach(tab => {
@@ -39,7 +34,7 @@ export default {
         ]),
     },
     mounted() {
-        
+        this.tabs = this.$children      
     }
 }
 </script>
@@ -47,6 +42,7 @@ export default {
 .tabs
     display flex
     justify-content center
+    position relative
     padding 0
     margin-bottom 64px
     list-style-type none
@@ -56,7 +52,7 @@ export default {
 
     &__label
         font-size 30px
-        line-height 45px
+        line-height 150%
         color #9F9F9F
 
         &:hover
@@ -69,16 +65,22 @@ export default {
         display block
         margin-bottom 128px
 
+    @media only screen and (max-width 1280px)
+        margin-bottom 39px
+
+        &__label
+            font-size 22px
+
     @media only screen and (max-width 767px)
+        margin-bottom 27px
+
         & > li + li
             margin-left 45px
 
         &__label
             font-size 20px
-            line-height 30px
 
-
-
-
+        &__details
+            margin-bottom 70px
 
 </style>

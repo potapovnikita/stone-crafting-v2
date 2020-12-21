@@ -34,6 +34,7 @@ export default {
 <style lang="stylus">
 .mission
     display block
+    position relative
     padding 65px 50px
     margin 0 40px
     border 1px solid rgba(252, 224, 134, 0.3)
@@ -79,7 +80,7 @@ export default {
 
     @media only screen and (max-width 1280px)
         padding 35px 10px 45px
-        margin 0
+        margin 0 20px 40px
 
         &__title
             margin-bottom 20px
@@ -104,7 +105,6 @@ export default {
 
     @media only screen and (max-width 767px)
         padding 30px 0 60px 18px
-        margin 0
 
         &__double-line
             width 50px

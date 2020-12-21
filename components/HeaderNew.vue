@@ -244,7 +244,7 @@
                 font-size $FontSizeMenuTablet
                 justify-content center
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 768px)
         .logo_row
             padding-top 10px
 
