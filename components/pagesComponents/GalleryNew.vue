@@ -22,6 +22,8 @@
 
         ToreroShow
 
+        Footer
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -29,6 +31,7 @@ import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import ToreroMap from '@/components/pagesComponents/ToreroMap'
 import ToreroShow from '@/components/pagesComponents/ToreroShow'
+import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'
 import Makedon from '~/assets/staticData/models/makedon.json'
@@ -38,6 +41,7 @@ export default {
         GalleryPhotosSlider,
         ToreroMap,
         ToreroShow,
+        Footer,
     },
     data() {
         return {
