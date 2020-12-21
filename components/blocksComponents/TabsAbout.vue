@@ -1,7 +1,7 @@
 <template lang="pug">
     client-only
         Tabs
-            Tab(:name="lang === 'ru' ? 'Фильмы' : 'Movies'" :classNames="['about-us__tab']")
+            Tab(tabName="movies" :name="lang === 'ru' ? 'Фильмы' : 'Movies'" :classNames="['about-us__tab']")
                 .caption_section
                     .hint(v-if="lang === 'eng'") Turn on the subtitles on the video to see the English version
                     .films(v-for="(film, index) in films" v-show="index === activeFilm")
@@ -21,7 +21,7 @@
                             .iconArrow(@click="onNextFilm()")
                                 ChevronRightIcon(size="3x")
                 
-            Tab(:name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
+            Tab(tabName="articles" :name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
                 .caption_section
                     .articles.mobile-hide
                         a.article(v-for="article in articles" :href="article.link" target="_blank")
@@ -36,7 +36,7 @@
                     .articles.desktop-hide
                         MobileArticleSlider
                                 
-            Tab(:name="lang === 'ru' ? 'Каталоги' : 'Catalogs'" :classNames="['about-us__tab']")
+            Tab(tabName="catalogs" :name="lang === 'ru' ? 'Каталоги' : 'Catalogs'" :classNames="['about-us__tab']")
                 .caption_section
                     .catalogs.mobile-hide
                         a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")

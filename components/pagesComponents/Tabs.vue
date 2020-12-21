@@ -24,7 +24,7 @@ export default {
     methods: {
         selectTab(selectedTab) {
             this.tabs.forEach(tab => {
-                tab.isActive = (tab.name == selectedTab.name);
+                tab.isActive = (tab.tabName == selectedTab.tabName);
             });
         }
     },
@@ -63,6 +63,7 @@ export default {
 
     &__details
         display block
+        position relative
         margin-bottom 128px
 
     @media only screen and (max-width 1280px)

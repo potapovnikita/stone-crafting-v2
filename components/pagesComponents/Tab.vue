@@ -1,11 +1,12 @@
 <template lang="pug">
-    div(v-show="isActive" :name="name" :class="['tab',  classNames? classNames : '']")
+    div(v-show="isActive" :tabName="tabName" :name="name" :class="['tab',  classNames? classNames : '']")
         slot
 </template>
 <script>
 export default {
     name: 'Tab',
     props: {
+        tabName: String,
         name: String,
         selected: Boolean,
         classNames: Array,
@@ -17,7 +18,7 @@ export default {
     },
     computed: {
         href() {
-            return '#' + this.name.toLowerCase();
+            return '#' + this.tabName.toLowerCase()
         }
     },
     mounted() {
