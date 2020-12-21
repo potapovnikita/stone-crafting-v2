@@ -57,7 +57,10 @@
         {
             "name": "Ювелирный дом CHAMOVSKIKH",
             "nameEng": "CHAMOVSKIKH House",
-            "href": "www.chamovskikh.com",
+            "href": {
+                "name": "www.chamovskikh.com",
+                "link":"http://www.chamovskikh.com"
+            },
             "img": "img/contacts/partner.png"
         }
     ]

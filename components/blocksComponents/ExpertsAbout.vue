@@ -11,17 +11,17 @@
             client-only
                 carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="expertsCarousel")
                     slide
-                        img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                        img.photo(src="~/assets/img/about/experts/skurlov.png" alt="skurlov")
                         h3.name(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
                         p.text(v-html="lang === 'ru' ? company.aboutRu5 : company.aboutEng5")
 
                     slide
-                        img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                        img.photo(src="~/assets/img/about/experts/faberge.png" alt="faberge")
                         h3.name(v-html="lang === 'ru' ? company.aboutTitleRu6 : company.aboutTitleEng6")
                         p.text(v-html="lang === 'ru' ? company.aboutRu6 : company.aboutEng6")
 
                     slide
-                        img.photo(src="~/assets/img/about/experts/skurlov.png" alt="Antonov")
+                        img.photo(src="~/assets/img/about/experts/eltsina.png" alt="eltsina")
                         h3.name(v-html="lang === 'ru' ? company.aboutTitleRu7 : company.aboutTitleEng7")
                         p.text(v-html="lang === 'ru' ? company.aboutRu7 : company.aboutEng7")
 

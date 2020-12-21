@@ -468,9 +468,13 @@ export default {
 
         &__double-line
             width 50px
+            margin-bottom 6px
 
         &__container
             flex-direction column-reverse
+
+        &__content
+            max-width 350px
 
         &__sub-title
             margin-bottom 5px
@@ -487,6 +491,16 @@ export default {
 
         &__photo,
         &__video
+            width 350px
+            height auto
+
+    @media only screen and (max-width 380px)
+        &__content
+            max-width unset
+
+        &__photo,
+        &__video
             width 100%
             height auto
+
 </style>

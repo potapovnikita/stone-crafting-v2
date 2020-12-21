@@ -1,14 +1,14 @@
 [
     {
         "name": "Сокровища Музеев<br> Коллекция Дома",
-        "nameEng": "Name on eng",
+        "nameEng": "Museum treasures",
         "background": "img/linksPanel/bg-man.png",
         "href": "/collections",
         "icon": "img/linksPanel/stone.png"
     },
     {
         "name": "Виртуальный музей<br> Камнерезного Дома",
-        "nameEng": "Name on eng",
+        "nameEng": "Virtual Museum",
         "background": "img/linksPanel/bg-museum.png",
         "href": "/virtual-museum",
         "icon": "img/linksPanel/museum.png"

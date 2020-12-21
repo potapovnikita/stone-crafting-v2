@@ -3,7 +3,7 @@
         .header-container
             .header-container__title-container
                 .header-container__circle
-                h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Title on eng' }}
+                h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Stone-crafting House by Alexey Antonov' }}
                 p.header-container__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Title on eng' }}
                 .header-container__line
                 .header-container__year-wrapper

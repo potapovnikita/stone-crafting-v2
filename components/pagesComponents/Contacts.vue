@@ -45,7 +45,7 @@
                 .partner(v-for="(item, index) in contacts.partners")
                     img.photo(:src="getImg(item.img)" alt="partner")
                     p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
-                    a.link(:href="item.href" target="_blank") {{item.href}}
+                    a.link(:href="item.href.link" target="_blank") {{item.href.name}}
             
             h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
             h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
