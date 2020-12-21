@@ -1,3 +1,5 @@
+export const DEFAULT_PASS = '1305091973';
+
 export const stockStatuses = [
     {
         id: 1,
@@ -40,15 +42,6 @@ export const cities = [
     },
 ]
 
-// Охота
-// Религиозная тема
-// Восточная тема
-// Исторические персоны
-// Герои сказок и былин
-// Россия
-// Америка
-// Азия
-// Европа
 export const themes = [
     {
         id: 1,
@@ -67,8 +60,8 @@ export const themes = [
     },
     {
         id: 4,
-        name: 'Исторические персоны',
-        nameEng: 'Historical persons',
+        name: 'Исторические персонажи',
+        nameEng: 'Historical personages',
     },
     {
         id: 5,
@@ -94,5 +87,20 @@ export const themes = [
         id: 9,
         name: 'Европа',
         nameEng: 'Europe',
+    },
+    {
+        id: 10,
+        name: 'Цветы',
+        nameEng: 'Flowers',
+    },
+    {
+        id: 11,
+        name: 'Животные',
+        nameEng: 'Animals',
+    },
+    {
+        id: 12,
+        name: 'Спорт',
+        nameEng: 'Sport',
     },
 ]

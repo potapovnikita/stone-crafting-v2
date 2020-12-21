@@ -42,14 +42,29 @@ export default {
 
 <style lang="stylus">
     .policy-container
+        position relative
+        padding 0
+        padding-top 120px
+        background url('~assets/img/privacy/privacy-bg.png') no-repeat
+        background-size contain
+        font-family $TenorSans-Regular
+        letter-spacing 0.03em
+
         h1
          padding-bottom 36px
 
         .policy-content
+
             text-align left
-            margin 20px 30px
+            margin 20px 300px
             height: 100%;
             display: table;
+
+            @media only screen and (max-width 1500px)
+                margin 20px 40px
+
+            p
+                text-align left
 
         .tabs
             display inline-flex
