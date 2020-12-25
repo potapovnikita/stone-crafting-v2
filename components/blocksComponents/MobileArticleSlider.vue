@@ -82,6 +82,7 @@ export default {
 <style lang="stylus" scoped>
 .articleSliderMb
     &__article
+        max-width 350px
         text-align left
 
     &__wrapper-pic

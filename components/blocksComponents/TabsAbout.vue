@@ -37,14 +37,15 @@
                         MobileArticleSlider
                                 
             Tab(tabName="catalogs" :name="lang === 'ru' ? 'Каталоги' : 'Catalogs'" :classNames="['about-us__tab']")
-                .caption_section
-                    .catalogs.mobile-hide
-                        a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
-                            .item(:style="{backgroundImage: getBgImg(catalog.background)}")
-                            .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
+                template(v-slot:default="slotProps")
+                    .caption_section
+                        .catalogs.mobile-hide
+                            a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
+                                .item(:style="{backgroundImage: getBgImg(catalog.background)}")
+                                .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
-                    .catalogs.desktop-hide
-                        MobileCatalogSlider
+                        .catalogs.desktop-hide
+                            MobileCatalogSlider(v-if="slotProps.activated")
 
 </template>
 <script>

@@ -24,7 +24,7 @@ import { mapState } from 'vuex'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import Company from '~/assets/staticData/company.json'
 export default {
-    name: 'MobileArticleSlider',
+    name: 'MobileCatalogSlider',
     data() {
         return {
             catalogs: Company.company.catalogs,
@@ -78,6 +78,7 @@ export default {
 <style lang="stylus" scoped>
 .catalogSliderMb
     &__catalog
+        max-width 350px
         text-align left
 
     &__wrapper-pic

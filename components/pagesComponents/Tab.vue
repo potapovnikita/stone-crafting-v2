@@ -1,6 +1,6 @@
 <template lang="pug">
     div(v-show="isActive" :tabName="tabName" :name="name" :class="['tab',  classNames? classNames : '']")
-        slot
+        slot(v-bind:activated="isActive")
 </template>
 <script>
 export default {
