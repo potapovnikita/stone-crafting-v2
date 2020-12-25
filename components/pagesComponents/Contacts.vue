@@ -24,6 +24,17 @@
                             Whatsapp
                     a.email(v-if="item.email" :href="'mailto:' + item.email") {{item.email}}
 
+            .people
+                img.icon(:src="getImg('img/chamovskih.png')")
+                .text
+                    .name(v-if="lang === 'ru'") Ювелирный дом CHAMOVSKIKH
+                    .name(v-else) CHAMOVSKIKH Jewelry House
+                    .role(v-if="lang === 'ru'") Партнер и эксклюзивный дистрибьютор Камнерезного Дома "ANTONOV" на федеральном уровне. Чтобы оформить заказ в Екатеринбурге, обратитесь к специалистам Дома Антонова. Оформить заказ из другого региона помогут представители CHAMOVSKIKH.
+                    .role(v-else) The partner and exclusive distributor of the Stone-crafting House by "ANTONOV" at the federal level.
+                    a.phone(href="tel:88002349922") 8 (800) 234-99-22
+                    a.email(href="www.chamovskikh.com" target="_blank") www.chamovskikh.com
+
+
         .addresses
             h3(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
             .itemAdd(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
@@ -161,6 +172,11 @@ export default {
             @media only screen and (max-width 600px)
                 width 100%
                 justify-content center
+            .icon
+                width 200px
+
+                @media only screen and (max-width 600px)
+                    width 100px
 
             .photo
                 width 200px
