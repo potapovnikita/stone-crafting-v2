@@ -20,6 +20,14 @@
 
         ToreroMap
 
+        .gallerySmi-block
+            h2.gallerySmi-block__title
+                | СМИ о тореадоре
+
+            .gallerySmi-block__double-line
+
+            UnitNews
+
         ToreroShow
 
         Footer
@@ -29,6 +37,7 @@
 import { mapState } from 'vuex'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
+import UnitNews from '@/components/blocksComponents/UnitNews'
 import ToreroMap from '@/components/pagesComponents/ToreroMap'
 import ToreroShow from '@/components/pagesComponents/ToreroShow'
 import Footer from '~/components/FooterNew.vue'
@@ -40,6 +49,7 @@ export default {
     components: {
         GalleryPhotosSlider,
         ToreroMap,
+        UnitNews,
         ToreroShow,
         Footer,
     },
@@ -141,6 +151,24 @@ export default {
         &__text
             text-align left
 
+    .gallerySmi-block
+        position relative
+        padding 110px 20px
+        background url('~assets/img/GalleryNew/unit-news-bg.png') no-repeat
+        background-size cover
+
+        &__title
+            margin-bottom 52px
+            line-height 130%
+
+        &__double-line
+            width 100px
+            height 4px
+            border 1px solid goldNew
+            border-left none
+            border-right none
+
+    
     @media only screen and (max-width 1680px)
         .galleryAbout-block
             justify-content space-between
@@ -148,5 +176,24 @@ export default {
 
             &__content
                 padding-left 42px
+
+    @media only screen and (max-width 1280px)
+        .gallerySmi-block
+            padding 67px 20px
+
+            &__title
+                margin-bottom 38px
+
+    @media only screen and (max-width 767px)
+        .gallerySmi-block
+            padding 45px 10px 42px
+            background transparent
+
+            &__title
+                margin-bottom 24px
+                font-size 22px
+
+            &__double-line
+                width 50px
 
 </style>
