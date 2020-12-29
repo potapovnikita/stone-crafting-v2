@@ -28,7 +28,7 @@
 
             UnitNews(:mediaList="currentProduct.media")
 
-        ToreroShow
+        ToreroShow(:showData="currentProduct.showBlock")
 
         Footer
 
@@ -39,7 +39,7 @@ import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import UnitNews from '@/components/blocksComponents/UnitNews'
 import ToreroMap from '@/components/pagesComponents/ToreroMap'
-import ToreroShow from '@/components/pagesComponents/ToreroShow'
+import ToreroShow from '@/components/blocksComponents/ToreroShow'
 import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'

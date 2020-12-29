@@ -57,7 +57,7 @@
     import jsonp from 'jsonp'
     import Company from '~/assets/staticData/company.json'
     import ToreroMap from "@/components/pagesComponents/ToreroMap"
-    import ToreroShow from "@/components/pagesComponents/ToreroShow"
+    import ToreroShow from "@/components/blocksComponents/ToreroShow"
 
     export default {
         data() {

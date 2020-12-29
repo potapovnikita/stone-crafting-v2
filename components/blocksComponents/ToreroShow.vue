@@ -18,24 +18,21 @@
                                     p.torero-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
                 .torero-show-container__btn
-                    Button(v-if="item.btn" :name="lang === 'ru' ? item.btn.textRu : item.btn.textEng" large)
+                    Button(v-if="item.btn" large) {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
         
         .torero-show-container__pic(:style="{backgroundImage: getBgImg(showData.background)}")
 </template>
 <script>
 import { mapState } from 'vuex'
 import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
-import ToreroShow from '~/assets/staticData/toreroShow.json'
 import Button from "@/components/ui/Button";
 export default {
     name: 'ToreroShow',
+    props: {
+        showData: Object,
+    },
     components: {
         Button,
-    },
-    data() {
-        return {
-            showData: ToreroShow,
-        }
     },
     methods: {
         getBgImg(url) {
