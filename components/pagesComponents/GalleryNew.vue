@@ -20,13 +20,13 @@
 
         ToreroMap
 
-        .gallerySmi-block
+        .gallerySmi-block(v-if="currentProduct.media")
             h2.gallerySmi-block__title
                 | СМИ о тореадоре
 
             .gallerySmi-block__double-line
 
-            UnitNews
+            UnitNews(:mediaList="currentProduct.media")
 
         ToreroShow
 
