@@ -99,7 +99,7 @@ export default {
 
         &__title
             font-size 68px
-            line-height 95px
+            line-height 140%
             margin-bottom 58px
 
         &__line
@@ -111,7 +111,7 @@ export default {
 
         &__sub-title
             font-size 19px
-            line-height 27px
+            line-height 140%
             letter-spacing 0.3em
             text-transform uppercase
             color goldNew
@@ -149,6 +149,7 @@ export default {
             border-right none
 
         &__text
+            line-height 150%
             text-align left
 
     .gallerySmi-block
@@ -178,13 +179,125 @@ export default {
                 padding-left 42px
 
     @media only screen and (max-width 1280px)
+        .header-container
+            height 583px
+
+            &__title-container
+                position relative
+                height 446px
+                margin-top 97px
+                padding-top 131px
+
+            &__title
+                font-size 48px
+                margin-bottom 16px
+
+        .galleryAbout-block
+            justify-content center
+            padding 60px 0
+
+            &__media
+                flex-basis 448px
+
+            &__info
+                flex-basis 524px
+
+            &__content
+                max-width 524px
+                padding-left 38px
+
+            &__title
+                margin-bottom 41px
+                font-size 32px
+
+            &__double-line
+                margin-bottom 36px
+
+            &__text
+                font-size 16px
+
         .gallerySmi-block
             padding 67px 20px
 
             &__title
                 margin-bottom 38px
 
+    @media only screen and (max-width 1023px)
+        .galleryAbout-block
+            padding 40px 0
+
+            &__media
+                flex-basis 350px
+
+            &__info
+                flex-basis 380px
+
+            &__content
+                max-width 380px
+                padding-left 15px
+
+            &__title
+                margin-bottom 30px
+                font-size 27px
+
+            &__double-line
+                margin-bottom 25px
+
+            &__text
+                font-size 15px
+
     @media only screen and (max-width 767px)
+        .header-container
+            height 476px
+
+            &__title-container
+                position relative
+                height 311px
+                margin-top 104px
+                padding-top 94px
+
+            &__circle
+                width 311px
+
+            &__title
+                font-size 28px
+                margin-bottom 66px
+
+            &__line
+                width 39px
+                margin 0 auto 30px
+
+            &__sub-title
+                font-size 13px
+
+        .galleryAbout-block
+            display block
+            max-width 450px
+            margin 0 auto
+            padding 28px 0
+
+            &__media
+                flex-basis unset
+                margin-bottom 25px
+
+            &__info
+                flex-basis unset
+
+            &__content
+                max-width unset
+                padding-left 0
+
+            &__title
+                margin-bottom 24px
+                font-size 22px
+
+            &__double-line
+                width 50px
+                margin-bottom 31px
+
+            &__text
+                font-size 14px
+
         .gallerySmi-block
             padding 45px 10px 42px
             background transparent
@@ -195,5 +308,11 @@ export default {
 
             &__double-line
                 width 50px
+
+    @media only screen and (max-width 490px)
+        .galleryAbout-block
+            max-width unset
+            margin 0
+            padding 28px 10px
 
 </style>
