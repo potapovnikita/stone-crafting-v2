@@ -4,7 +4,7 @@
         ul.model-container__stones(v-if="toreroMap")
             li(v-for="stone in toreroMap.stonesLeft")
                 .model-container__wrapper-stone
-                    .model-container__stone-slot
+                    .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                         .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                     p.model-container__stone-title {{getStoneTitle(stone)}}
 
@@ -13,12 +13,12 @@
                 v-for="(stone, index) in stonesList"
                 v-if="stone.stoneClassName"
                 :key="stone.id"
-                :class="`${toreroMap.modelClassName}--${stone.stoneClassName}`") {{stone.label}}
+                :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
 
         ul.model-container__stones(v-if="toreroMap")
             li(v-for="stone in toreroMap.stonesRight")
                 .model-container__wrapper-stone
-                    .model-container__stone-slot
+                    .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                         .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                     p.model-container__stone-title {{getStoneTitle(stone)}}
     
@@ -34,6 +34,7 @@ export default {
     data() {
         return {
            stonesList: [],
+           activeStone: '',
         }
     },
     methods: {
@@ -47,6 +48,9 @@ export default {
                 return stone.titleEng
             }
         },
+        onStoneClick(value) {
+            this.activeStone = value;
+        },
     },
     computed: {
         ...mapState('localization', [
@@ -54,7 +58,6 @@ export default {
         ]),
     },
     mounted() {
-        console.log('ModelMap mounted()')
         this.stonesList = [].concat(this.toreroMap.stonesLeft, this.toreroMap.stonesRight)
         console.log(this.stonesList)
     }
@@ -90,6 +93,9 @@ export default {
 
         &:hover
             border 1px solid goldNew
+        
+        &.active
+            border 1px solid goldNew
 
     &__stone-pic
         width 100%
@@ -118,6 +124,12 @@ export default {
         color whiteMain
         background rgba(0, 0, 0, 0.45)
         border-radius 50%
+
+        &.active
+            width 36px
+            height 36px
+            font-size 18px
+            color red
 
     .torero
         padding 100px 30px
