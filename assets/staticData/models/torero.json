@@ -140,6 +140,91 @@
             }
         }
     ],
+    "modelMap": {
+        "modelClassName": "torero",
+        "stonesLeft": [
+            {
+                "id": "toreroStone1",
+                "label": 1,
+                "titleRu": "1. кахолонг",
+                "titleEng": "1. stone1",
+                "background": "img/toreroMap/stone1.png",
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "toreroStone2",
+                "label": 2,
+                "titleRu": "2. родонит",
+                "titleEng": "2. stone2",
+                "background": "img/toreroMap/stone2.png"
+            },
+            {
+                "id": "toreroStone3",
+                "label": 3,
+                "titleRu": "3. соколиный глаз",
+                "titleEng": "3. stone3",
+                "background": "img/toreroMap/stone3.png",
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "toreroStone4",
+                "label": 4,
+                "titleRu": "4. гранат",
+                "titleEng": "4. stone4",
+                "background": "img/toreroMap/stone4.png",
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "toreroStone5",
+                "label": 5,
+                "titleRu": "5. Серебро",
+                "titleEng": "5. stone5",
+                "background": "img/toreroMap/stone5.png",
+                "stoneClassName": "stone5"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "toreroStone5",
+                "label": 5,
+                "titleRu": "5. кахолонг",
+                "titleEng": "5. stone5",
+                "background": "img/toreroMap/stoneRight5.png"
+            },
+            {
+                "id": "toreroStone6",
+                "label": 6,
+                "titleRu": "6. родонит",
+                "titleEng": "6. stone6",
+                "background": "img/toreroMap/stone6.png",
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "toreroStone7",
+                "label": 7,
+                "titleRu": "7. соколиный глаз",
+                "titleEng": "7. stone7",
+                "background": "img/toreroMap/stone2.png",
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "toreroStone8",
+                "label": 8,
+                "titleRu": "8. кремний",
+                "titleEng": "8. stone8",
+                "background": "img/toreroMap/stone8.png",
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "toreroStone9",
+                "label": 9,
+                "titleRu": "9. Золото",
+                "titleEng": "9. stone9",
+                "background": "img/toreroMap/stone9.png",
+                "stoneClassName": "stone9"
+            }
+        ]
+    },
     "showBlock": {
         "titleRu": "Увидеть тореадора",
         "titleEng": "Title on eng",

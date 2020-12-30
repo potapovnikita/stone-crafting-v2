@@ -22,10 +22,6 @@
                 .about-film-container__double-line
                 p(v-for="str in getFilmAboutTexts()") {{str}}
 
-        ToreroMap
-
-        ToreroShow
-
         h1(v-html="lang === 'ru' ? 'Новости' : 'News'")
         .lds-dual-ring(v-if="!news.length")
         .news-list(v-if="news.length")
@@ -56,7 +52,6 @@
     import { mapState } from 'vuex'
     import jsonp from 'jsonp'
     import Company from '~/assets/staticData/company.json'
-    import ToreroMap from "@/components/pagesComponents/ToreroMap"
     import ToreroShow from "@/components/blocksComponents/ToreroShow"
 
     export default {
@@ -67,10 +62,6 @@
                 news: [],
                 uniq: {},
             }
-        },
-        components: {
-            ToreroMap,
-            ToreroShow,
         },
         methods: {
             visible: (el) => {

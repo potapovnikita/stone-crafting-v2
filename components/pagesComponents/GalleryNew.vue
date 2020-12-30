@@ -18,7 +18,7 @@
 
         GalleryPhotosSlider(v-if="currentProduct.imagesPreview" :imgSrcList="currentProduct.imagesPreview")
 
-        ToreroMap
+        ModelMap(v-if="currentProduct.modelMap" :toreroMap="currentProduct.modelMap")
 
         .gallerySmi-block(v-if="currentProduct.media")
             h2.gallerySmi-block__title
@@ -38,7 +38,7 @@ import { mapState } from 'vuex'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import UnitNews from '@/components/blocksComponents/UnitNews'
-import ToreroMap from '@/components/pagesComponents/ToreroMap'
+import ModelMap from '@/components/blocksComponents/ModelMap'
 import ToreroShow from '@/components/blocksComponents/ToreroShow'
 import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
@@ -48,7 +48,7 @@ export default {
     name: 'GalleryNew',
     components: {
         GalleryPhotosSlider,
-        ToreroMap,
+        ModelMap,
         UnitNews,
         ToreroShow,
         Footer,
