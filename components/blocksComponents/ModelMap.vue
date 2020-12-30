@@ -59,7 +59,6 @@ export default {
     },
     mounted() {
         this.stonesList = [].concat(this.toreroMap.stonesLeft, this.toreroMap.stonesRight)
-        console.log(this.stonesList)
     }
 }
 </script>
