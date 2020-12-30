@@ -1,26 +1,27 @@
 <template lang="pug">
-    .model-container(:class="toreroMap.modelClassName")
-        div(:class="`${toreroMap.modelClassName}__bg-pic`")
-        ul.model-container__stones(v-if="toreroMap")
-            li(v-for="stone in toreroMap.stonesLeft")
-                .model-container__wrapper-stone
-                    .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
-                        .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
-                    p.model-container__stone-title {{getStoneTitle(stone)}}
+    .model-container
+        div(:class="toreroMap.modelClassName")
+            div(:class="`${toreroMap.modelClassName}__bg-pic`")
+            ul.model-container__stones(v-if="toreroMap")
+                li(v-for="stone in toreroMap.stonesLeft")
+                    .model-container__wrapper-stone
+                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                            .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
+                        p.model-container__stone-title {{getStoneTitle(stone)}}
 
-        div(:class="`${toreroMap.modelClassName}__pic`")
-            .model-container__point(
-                v-for="(stone, index) in stonesList"
-                v-if="stone.stoneClassName"
-                :key="stone.id"
-                :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
+            div(:class="`${toreroMap.modelClassName}__pic`")
+                .model-container__point(
+                    v-for="(stone, index) in stonesList"
+                    v-if="stone.stoneClassName"
+                    :key="stone.id"
+                    :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
 
-        ul.model-container__stones(v-if="toreroMap")
-            li(v-for="stone in toreroMap.stonesRight")
-                .model-container__wrapper-stone
-                    .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
-                        .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
-                    p.model-container__stone-title {{getStoneTitle(stone)}}
+            ul.model-container__stones(v-if="toreroMap")
+                li(v-for="stone in toreroMap.stonesRight")
+                    .model-container__wrapper-stone
+                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                            .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
+                        p.model-container__stone-title {{getStoneTitle(stone)}}
     
 </template>
 <script>
@@ -64,9 +65,6 @@ export default {
 </script>
 <style lang="stylus">
 .model-container
-    position relative
-    display flex
-    align-items center
 
     &__stones
         position relative
@@ -125,69 +123,114 @@ export default {
         border-radius 50%
 
         &.active
-            width 36px
-            height 36px
-            font-size 18px
-            color red
+            background-color goldNew
+            color #000
 
-    .torero
-        padding 100px 30px
+.torero
+    display flex
+    justify-content space-between
+    position relative
+    max-width 1320px
+
+    .model-container__stones
+        margin-top 170px
+        padding-left 20px
+
+    &__bg-pic
+        position absolute
+        width 100%
+        height 100%
+        background linear-gradient(142.6deg, rgba(17, 17, 17, 0) 21.67%, #111111 90.98%), url('~assets/img/toreroMap/bg-main.png')
+        background-repeat no-repeat
+        background-position left bottom
+
+    &__pic
+        position relative
+        left 0
+        right 0
+        width 670px
+        height 1059px
+        background url('~assets/img/toreroMap/torero.png')
+        background-repeat no-repeat
+        background-position center
+
+    &--stone1
+        top 741px
+        left 516px
+
+    &--stone3
+        top 243px
+        left 252px
+
+    &--stone4
+        top 636px
+        left 448px
+
+    &--stone5
+        top 920px
+        left 372px
+
+    &--stone6
+        top 598px
+        left 152px
+
+    &--stone7
+        top 832px
+        left 243px
+
+    &--stone8
+        top 126px
+        left 295px
+
+    &--stone9
+        top 256px
+        left 126px
+
+    @media only screen and (max-width 1440px)
+        max-width 1120px
+
+        .model-container__stones
+            margin-top 120px
+            padding-left 10px
 
         &__bg-pic
-            position absolute
-            left 0
-            right 0
-            margin 0 auto
-            width 100%
-            height 758px
-            background linear-gradient(142.6deg, rgba(17, 17, 17, 0) 21.67%, #111111 90.98%), url('~assets/img/toreroMap/bg-main.png')
-            background-repeat no-repeat
-            background-position center
+            background-size 70%
 
         &__pic
-            position relative
-            left 0
-            right 0
-            margin 0 auto
-            width 670px
-            height 1059px
-            background url('~assets/img/toreroMap/torero.png')
-            background-repeat no-repeat
-            background-position center
+            width 506px
+            height 800px
+            background-size cover
 
         &--stone1
-            top 741px
-            left 516px
+            top 552px
+            left 385px
 
         &--stone3
-            top 243px
-            left 252px
+            top 182px
+            left 193px
 
         &--stone4
-            top 636px
-            left 448px
+            top 473px
+            left 338px
 
         &--stone5
-            top 920px
-            left 372px
+            top 695px
+            left 274px
 
         &--stone6
-            top 598px
-            left 152px
+            top 440px
+            left 115px
 
         &--stone7
-            top 832px
-            left 243px
+            top 621px
+            left 183px
 
         &--stone8
-            top 126px
-            left 295px
+            top 90px
+            left 216px
 
         &--stone9
-            top 256px
-            left 126px
-
-    
-
+            top 189px
+            left 99px
     
 </style>
