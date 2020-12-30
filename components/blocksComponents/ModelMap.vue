@@ -126,6 +126,11 @@ export default {
             background-color goldNew
             color #000
 
+    @media only screen and (max-width 1280px)
+        &__point
+            width 22px
+            height 22px
+
 .torero
     display flex
     justify-content space-between
@@ -232,5 +237,52 @@ export default {
         &--stone9
             top 189px
             left 99px
-    
+
+    @media only screen and (max-width 1280px)
+        max-width 974px
+
+        .model-container__stones
+            margin-top 30px
+            padding-left 0
+
+        &__bg-pic
+            background-position 40% 108%
+
+        &__pic
+            width 422px
+            height 669px
+            margin-left 60px
+
+        &--stone1
+            top 466px
+            left 318px
+
+        &--stone3
+            top 149px
+            left 157px
+
+        &--stone4
+            top 400px
+            left 270px
+
+        &--stone5
+            top 576px
+            left 231px
+
+        &--stone6
+            top 378px
+            left 101px
+
+        &--stone7
+            top 519px
+            left 150px
+
+        &--stone8
+            top 75px
+            left 181px
+
+        &--stone9
+            top 157px
+            left 82px
+
 </style>
