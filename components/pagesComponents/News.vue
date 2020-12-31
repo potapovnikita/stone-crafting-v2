@@ -52,7 +52,6 @@
     import { mapState } from 'vuex'
     import jsonp from 'jsonp'
     import Company from '~/assets/staticData/company.json'
-    import ToreroShow from "@/components/blocksComponents/ToreroShow"
 
     export default {
         data() {
