@@ -151,6 +151,7 @@ export default {
     .news-container
         justify-content inherit;
         min-height 90vh;
+        padding 30px 60px;
         padding-top: 140px;
 
         h1
