@@ -138,4 +138,83 @@ export default {
         color goldNew
         cursor pointer
 
+    @media only screen and (max-width 1280px)
+        justify-content space-around
+        max-width unset
+
+        &__media
+            flex-basis 480px
+
+            &--wide
+                max-width 900px
+                margin-bottom 46px
+
+        &__info
+            max-width 468px
+
+            &--wide
+                max-width 900px
+
+        &__title
+            margin-bottom 32px
+            font-size 26px
+
+        &__text
+            margin-bottom 20px
+            font-size 16px
+
+    @media only screen and (max-width 1000px)
+        &__media
+            flex-basis 352px
+
+            &--wide
+                max-width unset
+                margin-bottom 46px
+
+        &__info
+            max-width 352px
+
+            &--wide
+                max-width unset
+
+        &__title
+            margin-bottom 25px
+            font-size 24px
+
+        &__line
+            margin-bottom 30px
+
+        &__text
+            margin-bottom 20px
+            font-size 16px
+
+    @media only screen and (max-width 767px)
+        display block
+
+        &__media
+            flex-basis unset
+            max-width 352px
+            margin-bottom 30px
+
+        &__info
+            max-width 352px
+            padding 0
+
+            &--wide
+                max-width unset
+                text-align left
+
+                .unitNewsItem__title
+                    text-align left
+
+                .unitNewsItem__text
+                    text-align left
+
+        &__title
+            font-size 22px
+
+        &__text
+            margin-bottom 18px
+            font-size 14px
+
 </style>

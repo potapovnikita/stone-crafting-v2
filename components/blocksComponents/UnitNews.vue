@@ -16,15 +16,18 @@
                         :fullTextEng="item.more !== undefined ? item.more.textEng : ''"
                         :wideBlock="item.wideBlock"
                     )
-
-        ul.slider-pagination(v-if="pageCount > 0")
-            li(v-for="(item, index) in pageCount" :key="`dot_${index}`")
-                .box
-                    .dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
+        .unitNews__controls
+            ButtonArrow.desktop-hide(:onClick="prewSlide")
+            ul.slider-pagination(v-if="pageCount > 0")
+                li(v-for="(item, index) in pageCount" :key="`dot_${index}`")
+                    .box
+                        .dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
+            ButtonArrow.desktop-hide(:onClick="nextSlide" arrowRight)
     
 </template>
 <script>
 import UnitNewsItem from '@/components/blocksComponents/UnitNewsItem'
+import ButtonArrow from '@/components/ui/ButtonArrow'
 
 export default {
     name: 'UnitNews',
@@ -33,6 +36,7 @@ export default {
     },
     components: {
         UnitNewsItem,
+        ButtonArrow,
     },
     data() {
         return {
@@ -48,6 +52,14 @@ export default {
             this.currentSlide = index
             this.$refs.unitNewsCarousel.goToPage(index)
         },
+        prewSlide() {
+            this.currentSlide = this.$refs.unitNewsCarousel.getPreviousPage()
+            this.$refs.unitNewsCarousel.goToPage(this.$refs.unitNewsCarousel.getPreviousPage());
+        },
+        nextSlide() {
+            this.currentSlide = this.$refs.unitNewsCarousel.getNextPage()
+            this.$refs.unitNewsCarousel.goToPage(this.$refs.unitNewsCarousel.getNextPage());
+        },
     },
     mounted() {
         this.$nextTick(() => {
@@ -60,6 +72,10 @@ export default {
 .unitNews
     display block
     padding-top 79px
+
+    &__controls
+        .desktop-hide
+            display none
 
     .slider-pagination
         display flex
@@ -92,5 +108,24 @@ export default {
                     width 12px
                     height 12px
                     border 1px solid #96785F
+
+    @media only screen and (max-width 1280px)
+        padding-top 60px
+
+    @media only screen and (max-width 1000px)
+        padding-top 33px
+
+    @media only screen and (max-width 767px)
+        &__controls
+            display flex
+            align-items center
+            justify-content space-around
+            padding-top 30px
+
+            .desktop-hide
+                display flex
+
+        .slider-pagination
+            padding 0          
 
 </style>

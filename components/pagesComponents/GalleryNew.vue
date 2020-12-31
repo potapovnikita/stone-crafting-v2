@@ -300,7 +300,8 @@ export default {
 
         .gallerySmi-block
             padding 45px 10px 42px
-            background transparent
+            background-size 100% 50%
+            background-position bottom
 
             &__title
                 margin-bottom 24px
