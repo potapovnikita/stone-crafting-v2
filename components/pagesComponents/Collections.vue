@@ -12,8 +12,8 @@
         )
 
         // for desktop version
-        .lds-dual-ring(v-show="!isInit")
-        .collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
+        //.lds-dual-ring(v-show="!isInit")
+        //.collections-blocks.desktop(:style="{opacity: isInit ? 1 : 0  }")
             .item.itemBlock(v-for="(item, index) in museum" :key="item.id" @click="setCurrentScroll()")
                 nuxt-link.image(:to="{path: `/gallery/${item.id}`}")
                     .media
@@ -31,7 +31,7 @@
                                 xIcon(size="1.5x" class="custom-class")
 
         // for mobile version
-        .collections-blocks.mobile(:style="{opacity: isInit ? 1 : 0  }")
+        //.collections-blocks.mobile(:style="{opacity: isInit ? 1 : 0  }")
             client-only
                 .item-column
                     nuxt-link.item(v-for="(item, index) in museum"
