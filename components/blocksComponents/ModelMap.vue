@@ -2,7 +2,7 @@
     .model-container
         div(:class="toreroMap.modelClassName")
             div(:class="`${toreroMap.modelClassName}__bg-pic`")
-            ul.model-container__stones(v-if="toreroMap")
+            ul.model-container__stones.mobile-hide(v-if="toreroMap")
                 li(v-for="stone in toreroMap.stonesLeft")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
@@ -16,12 +16,27 @@
                     :key="stone.id"
                     :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
 
-            ul.model-container__stones(v-if="toreroMap")
+            ul.model-container__stones.mobile-hide(v-if="toreroMap")
                 li(v-for="stone in toreroMap.stonesRight")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                         p.model-container__stone-title {{getStoneTitle(stone)}}
+
+            .model-container__stones-mobile-container
+                ul.model-container__stones(v-if="toreroMap")
+                    li(v-for="stone in toreroMap.stonesLeft")
+                        .model-container__wrapper-stone
+                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                                .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
+                            p.model-container__stone-title {{getStoneTitle(stone)}}
+
+                ul.model-container__stones(v-if="toreroMap")
+                    li(v-for="stone in toreroMap.stonesRight")
+                        .model-container__wrapper-stone
+                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                                .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
+                            p.model-container__stone-title {{getStoneTitle(stone)}}
     
 </template>
 <script>
@@ -104,7 +119,7 @@ export default {
 
     &__stone-title
         font-size 16px
-        line-height 24px
+        line-height 150%
         text-align left
         color #9F9F9F
 
@@ -126,10 +141,39 @@ export default {
             background-color goldNew
             color #000
 
+    &__stones-mobile-container
+        display none
+    
     @media only screen and (max-width 1280px)
         &__point
             width 22px
             height 22px
+
+    @media only screen and (max-width 1000px)
+        &__stone-slot
+            width 34px
+            height 34px
+            padding 4px
+            margin-right 9px
+
+        &__stone-title
+            font-size 12px
+
+        &__point
+            font-size 12px
+
+    @media only screen and (max-width 767px)
+        &__stones
+            & li + li
+                padding-top 2px
+
+        &__stones-mobile-container
+            display flex
+            justify-content center
+            padding 37px 10px 10px
+
+            & > ul + ul
+                margin-left 10px
 
 .torero
     display flex
@@ -284,5 +328,88 @@ export default {
         &--stone9
             top 157px
             left 82px
+
+    @media only screen and (max-width 1000px)
+        max-width unset
+        padding 0 10px
+
+        .model-container__stones
+            margin-top 50px
+
+        &__bg-pic
+            width 1000px
+            height 634px
+            background-position 20% 108%
+
+        &__pic
+            width 401px
+            height 634px
+            margin-left 0
+
+        &--stone1
+            top 440px
+            left 303px
+
+        &--stone3
+            top 142px
+            left 147px
+
+        &--stone4
+            top 380px
+            left 265px
+
+        &--stone5
+            top 547px
+            left 219px
+
+        &--stone6
+            top 363px
+            left 97px
+
+        &--stone7
+            top 494px
+            left 141px
+
+        &--stone8
+            top 71px
+            left 171px
+
+        &--stone9
+            top 148px
+            left 79px
+
+    @media only screen and (max-width 920px)
+        &__bg-pic
+            background-position 0 108%
+
+    @media only screen and (max-width 767px)
+        display block
+        padding 0
+
+        .model-container__stones
+            margin-top 0
+
+            &.mobile-hide
+                display none
+
+        &__bg-pic
+            background-position -50px 108%
+
+    @media only screen and (max-width 700px)
+
+        &__bg-pic
+            background-position -90px 108%
+
+    @media only screen and (max-width 630px)
+        &__bg-pic
+            background-position -120px 108%
+
+    @media only screen and (max-width 560px)
+        &__bg-pic
+            background-position -170px 108%
+
+    @media only screen and (max-width 490px)
+        &__bg-pic
+            background-position -220px 108%
 
 </style>
