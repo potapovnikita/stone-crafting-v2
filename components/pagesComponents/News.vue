@@ -119,7 +119,7 @@
             копируем токен в токен
             {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
             */
-            const TOKEN = 'IGQVJXZADdKVWpfalRSMVNESVpaRzdZAV1A2XzA2MTJEWk53Y01lV3FEVUlpSEJrMjRRWkZAJM0ZA1WDg5MTBUVExnclh6UXF6aEFhM0RjeXNzZAG5wSGRPTnZAJNENpb0RvY3E5aVd5SENB'
+            const TOKEN = 'IGQVJVdE9BZAHhtQUdHeW4xUEhRei16TUpjeXdTU0FPeGc1djdZAdVRzZA0NuOGtOMkNOMmhmbGxYZAVVCNnJNV2E0YW1fd0E0dmVZAVjlOdThVTlcxTnNUYXBPM3JJdHBtRUdlWG9zSDVR'
             const USER_ID = '17841401452273098' // id пользователя
 
             // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
