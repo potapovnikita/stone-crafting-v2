@@ -1,0 +1,58 @@
+{
+    "options":
+        [            
+            {
+                "name": "Бронза",
+                "nameEng": "Name on eng",
+                "links": [
+                    {
+                        "name": "Большие формы",
+                        "nameEng": "Name on eng"
+                    },
+                    {
+                        "name": "Малые форма",
+                        "nameEng": "Name on eng"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Камнерезное и ювелирное искусство",
+                "nameEng": "Name on eng",
+                "links": [
+                    {
+                        "name": "Инновационные скульптуры",
+                        "nameEng": "Name on eng"
+                    },
+                    {
+                        "name": "Объемная каменная мозаика",
+                        "nameEng": "Name on eng"
+                    },
+                    {
+                        "name": "Флорентийская мозаика",
+                        "nameEng": "Name on eng"
+                    }
+                ]
+               
+            },
+            {
+                "name": "Интерьер",
+                "nameEng": "Interior",
+                "links": [
+                    {
+                        "name": "Камень в интерьере",
+                        "nameEng": "Name on eng"
+                    },
+                    {
+                        "name": "Преметы интерьера",
+                        "nameEng": "Name on eng"
+                    },
+                    {
+                        "name": "Арт-объекты",
+                        "nameEng": "Name on eng"
+                    }
+                ]
+               
+            }
+        ]
+}
