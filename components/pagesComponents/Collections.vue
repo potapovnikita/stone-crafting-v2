@@ -1,11 +1,13 @@
 <template lang="pug">
     .common-container.collections-container
-        h1 {{ lang === 'ru' ? 'Коллекции' : 'Collections' }}
+        h1 {{ lang === 'ru' ? 'Сокровища музеев' : 'Collections' }}
         CollectionItem(v-for="(item, index) in museumNew"
             :key="item.id"
             :id="item.id"
             :title="item.title"
+            :titleEng="item.titleEng"
             :text="item.text"
+            :textEng="item.textEng"
             :imgUrl="item.img"
             :imgBgUrl="item.background"
             :isReverse="index % 2 == 0"

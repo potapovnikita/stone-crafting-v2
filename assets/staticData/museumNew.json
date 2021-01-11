@@ -2,21 +2,26 @@
     {
         "id": "torero",
         "title": "Тореадор",
+        "titleEng": "Torero",
         "text": "Это самая большая в мире скульптура, выполненная из драгоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.",
-        "img": "img/collections/torero/0.png",
-        "background": "img/collections/torero/1.png"
+        "textEng": "Text on eng",
+        "img": "img/collections/torero/0.png"
     },
     {
         "id": "jokerNew",
         "title": "Джокер",
+        "titleEng": "Joker",
         "text": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
+        "textEng": "Text on eng",
         "img": "img/collections/joker/0.png",
         "background": "img/collections/joker/1.png"
     },
     {
         "id": "makedon",
         "title": "Александр Македонский",
+        "titleEng": "Alexander the Great",
         "text": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
+        "textEng": "Text on eng",
         "img": "img/collections/makedon/0.png",
         "background": "img/collections/makedon/1.png"
     }
