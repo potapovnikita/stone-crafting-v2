@@ -24,5 +24,32 @@
         "textEng": "Text on eng",
         "img": "img/collections/makedon/0.png",
         "background": "img/collections/makedon/1.png"
+    },
+    {
+        "id": "genghiskhan",
+        "title": "Чингисхан",
+        "titleEng": "Genghis Khan",
+        "text": "Первый великий хан Монгольской империи, объединивший разрозненные монгольские и тюркские племена.",
+        "textEng": "The founder and first great khan of the Mongolian empire.",
+        "img": "img/collections/genghiskhan/0.png",
+        "background": "img/collections/genghiskhan/1.png"
+    },
+    {
+        "id": "tamerlan",
+        "title": "Тамерлан",
+        "titleEng": "Tamerlane",
+        "text": "Среднеазиатский тюркский полководец и завоеватель, сыгравший существенную роль в истории Средней, Южной и Западной Азии, а также Кавказа, Поволжья и Руси.",
+        "textEng": "The Middle Asian Turkic commander and conqueror.",
+        "img": "img/collections/tamerlan/0.png",
+        "background": "img/collections/tamerlan/1.png"
+    },
+    {
+        "id": "suvorov",
+        "title": "Суворов",
+        "titleEng": "Suvorov",
+        "text": "Великий русский полководец, генералиссимус. Основоположник отечественной военной теории.",
+        "textEng": "Great Russian commander, generalissimo. <br>National hero of Russia.",
+        "img": "img/collections/suvorov/0.png",
+        "background": "img/collections/suvorov/1.png"
     }
 ]

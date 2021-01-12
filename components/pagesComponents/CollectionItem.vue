@@ -255,4 +255,264 @@
             max-width 204px
             max-height 425px
 
+.makedon-model
+    position relative
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1247px
+        height 675px
+        margin 0 auto
+        background url('~assets/img/collections/makedon/3.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1078px
+
+    &__wrapper-media
+        max-width 553px
+        max-height 806px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top 0
+            left 0
+            right 0
+            width 698px
+            height 939px
+            background-repeat no-repeat
+            background-size contain
+
+        &__wrapper-content
+            max-width 784px
+
+        &__wrapper-media
+            max-width 312px
+            max-height 648px
+
+    @media only screen and (max-width 1024px)
+        &__bg
+            top 40px
+            left 15%
+            width 100%
+
+    @media only screen and (max-width 840px)
+
+        &__bg
+            position absolute
+            top 0
+            left 0
+            right 0
+            height 425px
+            background url('~assets/img/collections/joker/1-mb.png')
+            background-repeat no-repeat
+            background-position center
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 204px
+            max-height 425px
+
+.genghiskhan-model
+    position relative
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1280px
+        height 720px
+        margin 0 auto
+        background url('~assets/img/collections/genghiskhan/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1103px
+
+    &__wrapper-media
+        max-width 549px
+        max-height 820px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top 0
+            left 0
+            right 0
+            width 1024px
+            height 602px
+            background url('~assets/img/collections/genghiskhan/1-ip.png') no-repeat
+            background-size contain
+
+        &__wrapper-content
+            max-width 842px
+
+        &__wrapper-media
+            max-width 433px
+            max-height 647px
+
+    @media only screen and (max-width 1024px)
+        &__bg
+            top 0
+            left 0
+            width 100%
+
+    @media only screen and (max-width 840px)
+
+        &__bg
+            position absolute
+            top 0
+            left 0
+            right 0
+            height 428px
+            background url('~assets/img/collections/genghiskhan/1-mb.png') no-repeat
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 301px
+            max-height 449px
+
+.tamerlan-model
+    position relative
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1110px
+        height 595px
+        margin 0 auto
+        background url('~assets/img/collections/tamerlan/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1070px
+
+    &__wrapper-media
+        max-width 546px
+        max-height 770px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top 0
+            left 0
+            right 0
+            width 944px
+            height 506px
+            background url('~assets/img/collections/tamerlan/1.png') no-repeat
+            background-size contain
+
+        &__wrapper-content
+            max-width 825px
+
+        &__wrapper-media
+            max-width 384px
+            max-height 542px
+
+    @media only screen and (max-width 1024px)
+        &__bg
+            top 0
+            left 0
+            width 100%
+
+    @media only screen and (max-width 840px)
+
+        &__bg
+            position absolute
+            top 0
+            left 0
+            right 0
+            height 393px
+            background url('~assets/img/collections/tamerlan/1-mb.png') no-repeat
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 281px
+            max-height 395px
+
+.suvorov-model
+    position relative
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 713px
+        height 664px
+        margin 0 auto
+        background url('~assets/img/collections/suvorov/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1036px
+
+    &__wrapper-media
+        max-width 401px
+        max-height 749px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top 0
+            left 0
+            right 0
+
+        &__wrapper-content
+            max-width 755px
+
+        &__wrapper-media
+            max-width 310px
+            max-height 578px
+
+    @media only screen and (max-width 1024px)
+        &__bg
+            top 0
+            left 0
+            width 100%
+
+    @media only screen and (max-width 840px)
+
+        &__bg
+            position absolute
+            top 0
+            left 0
+            right 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 235px
+            max-height 438px
+
 </style>
