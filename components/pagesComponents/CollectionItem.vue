@@ -194,11 +194,12 @@
         top 0
         left 0
         right 0
-        width 803px
-        height 1080px
+        width 1064px
+        height 886px
         margin 0 auto
         background url('~assets/img/collections/joker/1.png')
         background-repeat no-repeat
+        background-position 210px 15px
 
     &__wrapper-content
         position relative
@@ -214,13 +215,11 @@
     @media only screen and (max-width 1280px)
 
         &__bg
-            top 0
-            left 0
-            right 0
-            width 698px
-            height 939px
+            width 784px
+            height 648px
+            background url('~assets/img/collections/joker/1-ip.png')
+            background-position -50px -80px
             background-repeat no-repeat
-            background-size contain
 
         &__wrapper-content
             max-width 784px
@@ -229,23 +228,15 @@
             max-width 312px
             max-height 648px
 
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 40px
-            left 15%
-            width 100%
-
     @media only screen and (max-width 840px)
 
         &__bg
-            position absolute
-            top 0
-            left 0
-            right 0
-            height 425px
-            background url('~assets/img/collections/joker/1-mb.png')
+            top -20px
+            width 431px
+            height 581px
+            background url('~assets/img/collections/joker/1.png')
             background-repeat no-repeat
-            background-position center
+            background-size contain
 
         &__wrapper-content
             flex-direction column !important
@@ -254,6 +245,11 @@
         &__wrapper-media
             max-width 204px
             max-height 425px
+
+    @media only screen and (max-width 431px)
+        &__bg
+            left -20%
+            right -20%
 
 .makedon-model
     position relative
@@ -285,8 +281,8 @@
             top 0
             left 0
             right 0
-            width 698px
-            height 939px
+            width 1056px
+            height 571px
             background-repeat no-repeat
             background-size contain
 
@@ -310,8 +306,8 @@
             top 0
             left 0
             right 0
-            height 425px
-            background url('~assets/img/collections/joker/1-mb.png')
+            height 349px
+            background url('~assets/img/collections/makedon/1-mb.png') no-repeat
             background-repeat no-repeat
             background-position center
 
