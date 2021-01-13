@@ -51,5 +51,23 @@
         "textEng": "Great Russian commander, generalissimo. <br>National hero of Russia.",
         "img": "img/collections/suvorov/0.png",
         "background": "img/collections/suvorov/1.png"
+    },
+    {
+        "id": "peter",
+        "title": "Петр I",
+        "titleEng": "Peter I",
+        "text": "Последний царь всея Руси и первый Император Всероссийский. Государь-реформатор, радикально изменивший структуру управления и общественный уклад России, создавший флот и регулярную армию, преобразовавший экономику, сделавший науку и образование политической необходимостью.",
+        "textEng": "Text on eng",
+        "img": "img/collections/peter/0.png",
+        "background": "img/collections/peter/1.png"
+    },
+    {
+        "id": "catherine",
+        "title": "Екатерина II",
+        "titleEng": "Catherine II",
+        "text": "Российская императрица, царствование которой стало одним из самых значительных периодов русской истории.",
+        "textEng": "Text on eng",
+        "img": "img/collections/catherine/0.png",
+        "background": "img/collections/catherine/1.png"
     }
 ]

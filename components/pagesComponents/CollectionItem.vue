@@ -511,4 +511,160 @@
             max-width 235px
             max-height 438px
 
+.peter-model
+    position relative
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1195px
+        height 606px
+        margin 0 auto
+        background url('~assets/img/collections/peter/1.png') no-repeat
+        background-position 75px 43px
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1019px
+
+    &__wrapper-media
+        max-width 486px
+        max-height 734px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            width 1061px
+            height 538px
+            background url('~assets/img/collections/peter/1.png') no-repeat
+            background-size contain
+
+        &__wrapper-content
+            max-width 845px
+
+        &__wrapper-media
+            max-width 380px
+            max-height 574px
+
+    @media only screen and (max-width 1023px)
+        &__bg
+           left -10%
+           right -10%
+
+        &__wrapper-content
+            max-width 810px
+
+    @media only screen and (max-width 840px)
+
+        &__bg
+            left 0
+            right 0
+            width 793px
+            height 402px
+            background url('~assets/img/collections/peter/1.png') no-repeat
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 300px
+            max-height 453px
+
+    @media only screen and (max-width 793px)
+        &__bg
+            top 30px
+            left -45%
+            right -55%
+
+    @media only screen and (max-width 370px)
+        &__bg
+            left -50%
+            right -50%
+
+    @media only screen and (max-width 350px)
+        &__bg
+            left -58%
+            right -42%
+
+.catherine-model
+    position relative
+    margin-top 137px
+    margin-bottom 30px
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1081px
+        height 695px
+        margin 0 auto
+        background url('~assets/img/collections/catherine/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1011px
+
+    &__wrapper-media
+        max-width 318px
+        max-height 731px
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top -137px
+            left -195px
+
+        &__wrapper-content
+            max-width 740px
+
+        &__wrapper-media
+            max-width 230px
+            max-height 529px
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+        margin-bottom 0
+
+        &__bg
+            top 0
+            left -62%
+            right -38%
+            width 860px
+            height 553px
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 194px
+            max-height 446px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left -80%
+            right -20%
+
+    @media only screen and (max-width 410px)
+        &__bg
+            left -90%
+            right -10%
+
+    @media only screen and (max-width 340px)
+        &__bg
+            left -100%
+            right 0
+
 </style>
