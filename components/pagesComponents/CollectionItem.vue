@@ -667,4 +667,316 @@
             left -100%
             right 0
 
+.schemamonk-model
+    position relative
+    margin-top 217px
+
+    &__bg
+        position absolute
+        top -37px
+        left 0
+        right 0
+        width 1238px
+        height 757px
+        margin 0 auto
+        background url('~assets/img/collections/schemamonk/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 990px
+
+    &__wrapper-media
+        max-width 395px
+        max-height 728px
+
+    @media only screen and (max-width 1280px)
+        margin-top 80px
+
+        &__bg
+            top -110px
+            width 1212px
+
+        &__wrapper-content
+            max-width 807px
+
+        &__wrapper-media
+            max-width 295px
+            max-height 544px
+
+    @media only screen and (max-width 1212px)
+        &__bg
+            left -10%
+            right -23%
+            
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+        margin-bottom 0
+
+        &__bg
+            top 0
+            left -50%
+            right -10%
+            width 1062px
+            height 663px
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            margin-top 128px
+            max-width 249px
+            max-height 458px
+
+    @media only screen and (max-width 650px)
+        &__bg
+            left -80%
+            right -20%
+
+    @media only screen and (max-width 510px)
+        &__bg
+            left -95%
+            right -25%
+
+    @media only screen and (max-width 470px)
+        &__bg
+            left -110%
+            right -30%
+
+    @media only screen and (max-width 410px)
+        &__bg
+            left -130%
+            right -35%
+    
+    @media only screen and (max-width 370px)
+        &__bg
+            left -140%
+            right -40%
+
+     @media only screen and (max-width 350px)
+
+        &__bg
+            left -155%
+            right -50%
+
+.scarlet-model
+    position relative
+    margin-top 185px
+
+    &__bg
+        position absolute
+        top 30px
+        left 0
+        right 0
+        width 1400px
+        height 724px
+        margin 0 auto
+        background url('~assets/img/collections/scarlet/1.png') no-repeat
+        background-position 390px 0px
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1075px
+
+    &__wrapper-media
+        max-width 508px
+        max-height 818px
+
+    @media only screen and (max-width 1280px)
+        margin-top 130px
+
+        &__bg
+            top -130px
+            width 1081px
+            background url('~assets/img/collections/scarlet/1.png') no-repeat
+            background-position 100px 0px
+
+        &__wrapper-content
+            max-width 822px
+
+        &__wrapper-media
+            max-width 358px
+            max-height 576px
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+
+        &__bg
+            top -70px
+            left 0
+            right 0
+            width 755px
+            height 506px
+            background url('~assets/img/collections/scarlet/1-mb.png') no-repeat
+            background-position 200px 0px
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 259px
+            max-height 444px
+
+    @media only screen and (max-width 767px)
+        margin-top 70px
+
+    @media only screen and (max-width 755px)
+         &__bg
+            left -80%
+            right -80%
+            background-position 190px 0px
+
+.babayaga-model
+    position relative
+    margin-top 160px
+    z-index 1
+
+    &__bg
+        position absolute
+        top -80px
+        left 0
+        right 0
+        width 750px
+        height 819px
+        margin 0 auto
+        background url('~assets/img/collections/babayaga/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1186px
+
+    &__wrapper-media
+        max-width 508px
+        max-height 767px
+
+    @media only screen and (max-width 1280px)
+        margin-top 235px
+
+        &__bg
+            top -130px
+            width 645px
+            height 707px
+            background url('~assets/img/collections/babayaga/1-ip.png') no-repeat
+            background-position 20px 0
+
+        &__wrapper-content
+            max-width 816px
+
+        &__wrapper-media
+            max-width 372px
+            max-height 562px
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+
+        &__bg
+            top 0
+            width 470px
+            height 513px
+            background url('~assets/img/collections/babayaga/1.png') no-repeat
+            background-position -20px 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            margin-top 100px
+            max-width 264px
+            max-height 400px
+
+    @media only screen and (max-width 470px)
+        &__bg
+            left -60px
+            right -60px
+
+.groznyy-model
+    position relative
+    margin-top 138px
+
+    &__bg
+        position absolute
+        top 180px
+        left 0
+        right 0
+        width 1388px
+        height 641px
+        margin 0 auto
+        background url('~assets/img/collections/groznyy/1.png') no-repeat
+        background-position 420px 0
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1137px
+
+    &__wrapper-media
+        max-width 565px
+        max-height 844px
+
+    @media only screen and (max-width 1387px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 1280px)
+
+        &__bg
+            top -50px
+            left 0
+            right 0
+            width 1024px
+            background-position 0 0
+
+        &__wrapper-content
+            max-width 825px
+
+        &__wrapper-media
+            max-width 357px
+            max-height 534px
+
+    @media only screen and (max-width 1023px)
+        &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 840px)
+        margin-top 30px
+
+        &__bg
+            top -80px
+            width 716px
+            height 449px
+            background-size cover
+            background-position -20px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 278px
+            max-height 415px
+
+     @media only screen and (max-width 715px)
+        &__bg
+            left -60%
+            right -60%
+
+
 </style>
