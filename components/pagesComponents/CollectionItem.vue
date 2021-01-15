@@ -978,5 +978,365 @@
             left -60%
             right -60%
 
+.watery-model
+    position relative
+    margin-top 222px
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1430px
+        height 748px
+        margin 0 auto
+        background url('~assets/img/collections/watery/1.png') no-repeat
+        background-position 13px 0
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1113px
+
+    &__wrapper-media
+        max-width 540px
+        max-height 785px
+
+    @media only screen and (max-width 1429px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 1280px)
+        margin-top 118px
+
+        &__bg
+            top -30px
+            left -10%
+            right -10%
+            width 1118px
+            height 604px
+            background-position -16px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 860px
+
+        &__wrapper-media
+            max-width 418px
+            max-height 608px
+
+    @media only screen and (max-width 870px)
+         &__bg
+            left -20%
+            right -20%
+
+        &__wrapper-content
+            max-width 820px
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+
+        &__bg
+            top 0
+            left -70%
+            right -70%
+            width 742px
+            height 400px
+            background-position -70px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 290px
+            max-height 422px
+            margin-top 40px
+
+.dvorovoy-model
+    position relative
+    margin-top 278px
+
+    &__bg
+        position absolute
+        top -25px
+        left 0
+        right 0
+        width 1126px
+        height 670px
+        margin 0 auto
+        background url('~assets/img/collections/dvorovoy/1.png') no-repeat
+        background-position 260px 0
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1091px
+
+    &__wrapper-media
+        max-width 528px
+        max-height 654px
+
+    @media only screen and (max-width 1280px)
+        margin-top 215px
+
+        &__bg
+            top -127px
+            width 896px
+            height 670px
+            background-position 0 0
+
+        &__wrapper-content
+            max-width 813px
+
+        &__wrapper-media
+            max-width 380px
+            max-height 470px
+
+    @media only screen and (max-width 895px)
+         &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+
+        &__bg
+            top 45px
+            left -70%
+            right -70%
+            width 506px
+            height 378px
+            background url('~assets/img/collections/dvorovoy/1-mb.png') no-repeat
+            background-position 62px 0
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 316px
+            max-height 392px
+            margin-top 55px
+
+.goldfish-model
+    position relative
+    margin-top 241px
+
+    &__bg
+        position absolute
+        top 75px
+        left 0
+        right 0
+        width 1210px
+        height 645px
+        margin 0 auto
+        background url('~assets/img/collections/goldfish/1.png') no-repeat
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1094px
+
+    &__wrapper-media
+        max-width 493px
+        max-height 792px
+
+    @media only screen and (max-width 1280px)
+        margin-top 76px
+
+        &__bg
+            top 0
+            width 901px
+            height 645px
+
+        &__wrapper-content
+            max-width 826px
+
+        &__wrapper-media
+            max-width 344px
+            max-height 552px
+            margin-top 88px
+
+    @media only screen and (max-width 900px)
+         &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 840px)
+        margin-top 15px
+        z-index 2
+
+        &__bg
+            left -70%
+            right -70%
+            width 531px
+            height 381px
+            background-position -13px 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 270px
+            max-height 433px
+            margin-top 21px
+            margin-bottom 70px
+
+.kikimora-model
+    position relative
+    margin-top 187px
+
+    &__bg
+        position absolute
+        top 120px
+        left 0
+        right 0
+        width 942px
+        height 600px
+        margin 0 auto
+        background url('~assets/img/collections/kikimora/1.png') no-repeat
+        background-position 153px 0
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1044px
+
+    &__wrapper-media
+        max-width 472px
+        max-height 785px
+
+    @media only screen and (max-width 1280px)
+        margin-top 143px
+
+        &__bg
+            top 0
+            width 910px
+            background-position 20px 0
+
+        &__wrapper-content
+            max-width 810px
+
+        &__wrapper-media
+            max-width 337px
+            max-height 560px
+            margin-top 20px
+            margin-bottom 20px
+
+    @media only screen and (max-width 909px)
+         &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 840px)
+        margin-top 0
+        z-index 1
+
+        &__bg
+            top -67px
+            left -70%
+            right -70%
+            width 534px
+            height 476px
+            background-position -118px 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 276px
+            max-height 459px
+            margin-top 56px
+            margin-bottom 11px
+
+.koschei-model
+    position relative
+    margin-top 168px
+
+    &__bg
+        position absolute
+        top 15px
+        left 0
+        right 0
+        width 1276px
+        height 805px
+        margin 0 auto
+        background url('~assets/img/collections/koschei/1.png') no-repeat
+        background-position -75px 0
+
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 1098px
+
+    &__wrapper-media
+        max-width 660px
+        max-height 853px
+
+    @media only screen and (max-width 1280px)
+        margin-top 86px
+
+        &__bg
+            top 0
+            width 910px
+            height 617px
+            background-position 0 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 867px
+
+        &__wrapper-media
+            max-width 427px
+            max-height 552px
+            margin-top 43px
+            margin-bottom 20px
+
+    @media only screen and (max-width 909px)
+        &__bg
+            left -10%
+            right -10%
+
+        &__wrapper-content
+            max-width 825px
+
+    @media only screen and (max-width 840px)
+        margin-top 43px
+
+        &__bg
+            top -81px
+            left -70%
+            right -70%
+            width 587px
+            height 394px
+            background-position 0 0
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 306px
+            max-height 394px
+            margin-top 0
+            margin-bottom 22px
 
 </style>

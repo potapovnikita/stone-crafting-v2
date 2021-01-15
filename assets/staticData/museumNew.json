@@ -105,5 +105,50 @@
         "textEng": "Text on eng",
         "img": "img/collections/groznyy/0.png",
         "background": "img/collections/groznyy/1.png"
+    },
+    {
+        "id": "watery",
+        "title": "Водяной",
+        "titleEng": "Watery",
+        "text": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой.",
+        "textEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+        "img": "img/collections/watery/0.png",
+        "background": "img/collections/watery/1.png"
+    },
+    {
+        "id": "dvorovoy",
+        "title": "Дворовой",
+        "titleEng": "Dvorovoy",
+        "text": "Домашний дух древних славян,обитавший во дворе. Он являлся покровителем домашнего скота и помогал по хозяйству.",
+        "textEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+        "img": "img/collections/dvorovoy/0.png",
+        "background": "img/collections/dvorovoy/1.png"
+    },
+    {
+        "id": "goldfish",
+        "title": "Золотая рыбка",
+        "titleEng": "Goldfish",
+        "text": "Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина.",
+        "textEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.",
+        "img": "img/collections/goldfish/0.png",
+        "background": "img/collections/goldfish/1.png"
+    },
+    {
+        "id": "kikimora",
+        "title": "Кикимора",
+        "titleEng": "Kikimora",
+        "text": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить.",
+        "textEng": "Text on eng",
+        "img": "img/collections/kikimora/0.png",
+        "background": "img/collections/kikimora/1.png"
+    },
+    {
+        "id": "koschei",
+        "title": "Кощей Бессмертный",
+        "titleEng": "Koschei the Deathless",
+        "text": "Персонаж восточнославянской мифологии и фольклора. Злой чародей, смерть которого хранится на острие иглы, что спрятана в нескольких волшебных животных и предметах. Обожатель прекрасных дев и скупой хранитель сокровищ подземного мира.",
+        "textEng": "The evil wizard of the East Slavic mythology and folklore.",
+        "img": "img/collections/koschei/0.png",
+        "background": "img/collections/koschei/1.png"
     }
 ]
