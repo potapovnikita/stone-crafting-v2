@@ -1,7 +1,7 @@
 <template lang="pug">
     div(:class="`${id}-model`")
         div(:class="`${id}-model__bg`")
-        div(:class="[`${id}-model__wrapper-content`, {'model__content-reverse': isReverse }]")
+        div(:class="['model__wrapper-content', `${id}-model__wrapper-content`, {'model__content-reverse': isReverse }]")
             div(:class="`${id}-model__wrapper-media`")
                 img.model__photo(:src="getImg(imgUrl)")
             .model__content
@@ -60,6 +60,12 @@
         width 100%
         height auto
 
+    &__wrapper-content
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+    
     &__content
         text-align left
 
@@ -132,10 +138,6 @@
         background-repeat no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1094px
 
     &__wrapper-media
@@ -202,10 +204,6 @@
         background-position 210px 15px
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1064px
 
     &__wrapper-media
@@ -265,10 +263,6 @@
         background url('~assets/img/collections/makedon/3.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1078px
 
     &__wrapper-media
@@ -333,10 +327,6 @@
         background url('~assets/img/collections/genghiskhan/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1103px
 
     &__wrapper-media
@@ -399,10 +389,6 @@
         background url('~assets/img/collections/tamerlan/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1070px
 
     &__wrapper-media
@@ -465,10 +451,6 @@
         background url('~assets/img/collections/suvorov/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1036px
 
     &__wrapper-media
@@ -526,10 +508,6 @@
         background-position 75px 43px
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1019px
 
     &__wrapper-media
@@ -609,10 +587,6 @@
         background url('~assets/img/collections/catherine/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1011px
 
     &__wrapper-media
@@ -682,10 +656,6 @@
         background url('~assets/img/collections/schemamonk/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 990px
 
     &__wrapper-media
@@ -780,10 +750,6 @@
         background-position 390px 0px
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1075px
 
     &__wrapper-media
@@ -851,10 +817,6 @@
         background url('~assets/img/collections/babayaga/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1186px
 
     &__wrapper-media
@@ -919,10 +881,6 @@
         background-position 420px 0
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1137px
 
     &__wrapper-media
@@ -994,10 +952,6 @@
         background-position 13px 0
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1113px
 
     &__wrapper-media
@@ -1072,10 +1026,6 @@
         background-position 260px 0
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1091px
 
     &__wrapper-media
@@ -1140,10 +1090,6 @@
         background url('~assets/img/collections/goldfish/1.png') no-repeat
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1094px
 
     &__wrapper-media
@@ -1209,10 +1155,6 @@
         background-position 153px 0
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1044px
 
     &__wrapper-media
@@ -1280,10 +1222,6 @@
         background-position -75px 0
 
     &__wrapper-content
-        position relative
-        display flex
-        justify-content space-between
-        align-items center
         max-width 1098px
 
     &__wrapper-media
@@ -1338,5 +1276,63 @@
             max-height 394px
             margin-top 0
             margin-bottom 22px
+
+.pussBoots-model
+    position relative
+    margin-top 118px
+
+    &__bg
+        position absolute
+        top 139px
+        left 0
+        right 0
+        width 678px
+        height 565px
+        margin 0 auto
+        background url('~assets/img/collections/pussBoots/1.png') no-repeat
+        background-position 30px 0
+
+    &__wrapper-content
+        max-width 1130px
+
+    &__wrapper-media
+        max-width 445px
+        max-height 805px
+
+    @media only screen and (max-width 1280px)
+        margin-top 80px
+
+        &__bg
+            top 11px
+            background-position -132px 0
+
+        &__wrapper-content
+            max-width 803px
+
+        &__wrapper-media
+            max-width 355px
+            max-height 641px
+
+    @media only screen and (max-width 840px)
+        margin-top 16px
+
+        &__bg
+            top 43px
+            left -70%
+            right -70%
+            width 562px
+            height 469px
+            background-position -54px 0
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 299px
+            max-height 540px
+            margin-bottom 6px
+
 
 </style>

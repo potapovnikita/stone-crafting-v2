@@ -150,5 +150,14 @@
         "textEng": "The evil wizard of the East Slavic mythology and folklore.",
         "img": "img/collections/koschei/0.png",
         "background": "img/collections/koschei/1.png"
+    },
+    {
+        "id": "pussBoots",
+        "title": "Кот в сапогах",
+        "titleEng": "Puss Boots",
+        "text": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля.",
+        "textEng": "Text on eng.",
+        "img": "img/collections/pussBoots/0.png",
+        "background": "img/collections/pussBoots/1.png"
     }
 ]
