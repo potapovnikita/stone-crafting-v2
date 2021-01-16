@@ -165,7 +165,7 @@
         "title": "Овинник",
         "titleEng": "Ovinnik",
         "text": "В традиционных верованиях восточных славян Овинник - дух места, живущий в овине (на гумне), охраняющий его и хлеб от всякой напасти, беды и нечисти.",
-        "textEng": "Text on eng.",
+        "textEng": "A spirit of the threshing barn in Slavic folklore.",
         "img": "img/collections/ovinnik/0.png",
         "background": "img/collections/ovinnik/1.png"
     },
@@ -195,5 +195,41 @@
         "textEng": "Text on eng.",
         "img": "img/collections/lesovichok/0.png",
         "background": "img/collections/lesovichok/1.png"
+    },
+    {
+        "id": "rusalka",
+        "title": "Русалка",
+        "titleEng": "Mermaid",
+        "text": "Об этих удивительных созданиях сохранились упоминания в мифологии и фольклоре разных народов. Своим волшебным пением они заманивали моряков на верную гибель.",
+        "textEng": "In folklore, a mermaid is an aquatic creature with the head and upper body of a female human and the tail of a fish.",
+        "img": "img/collections/rusalka/0.png",
+        "background": "img/collections/rusalka/1.png"
+    },
+    {
+        "id": "snowqueen",
+        "title": "Снежная Королева",
+        "titleEng": "The Snow Queen",
+        "text": "Персонаж одноименной сказки Ганса Христиана Андерсена. Прекрасная и жестокая повелительница холодных ветров и снежных гор, восседающая на ледяном троне в сиянии кристаллов, способная заморозить любое сердце.",
+        "textEng": "Is an original fairy tale written by Hans Christian Andersen. The story centres on the struggle between good and evil.",
+        "img": "img/collections/snowqueen/0.png",
+        "background": "img/collections/snowqueen/1.png"
+    },
+    {
+        "id": "lebed",
+        "title": "Царевна-Лебедь",
+        "titleEng": "The Swan Princess",
+        "text": "Персонаж &laquo;Сказки о царе Салтане&raquo; А.С. Пушкина. Прекрасная царевна - волшебница, превратившаяся из птицы в женщину, подарившая князю Гвидону свою любовь и множество чудес в благодарность за спасение.",
+        "textEng": "The magical personage of a fairy tale «The Tale of Tsar Saltan» by Alexander Sergeyevich Pushkin.",
+        "img": "img/collections/lebed/0.png",
+        "background": "img/collections/lebed/1.png"
+    },
+    {
+        "id": "popovich",
+        "title": "Алёша Попович и Тугарин Змей",
+        "titleEng": "Title on eng",
+        "text": "Русский воин-путник, богатырь Алёша Попович прославился своими подвигами на благо отечества и князя.",
+        "textEng": "Text on eng",
+        "img": "img/collections/popovich/0.png",
+        "background": "img/collections/popovich/1.png"
     }
 ]

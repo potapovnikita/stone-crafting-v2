@@ -1380,7 +1380,7 @@
 
     @media only screen and (max-width 840px)
         margin-top 36px
-        z-index 3
+        z-index 5
 
         &__bg
             top 69px
@@ -1440,7 +1440,7 @@
 
     @media only screen and (max-width 840px)
         margin-top 44px
-        z-index 2
+        z-index 4
 
         &__bg
             top -82px
@@ -1516,7 +1516,7 @@
 
     @media only screen and (max-width 840px)
         margin-top 28px
-        z-index 1
+        z-index 3
 
         &__bg
             top -59px
@@ -1582,6 +1582,7 @@
 
     @media only screen and (max-width 840px)
         margin-top 76px
+        z-index 2
 
         &__bg
             top -107px
@@ -1601,6 +1602,289 @@
             max-height 469px
             margin-top 0
             margin-bottom 16px
+
+.rusalka-model
+    position relative
+    margin-top 112px
+
+    &__bg
+        position absolute
+        top 71px
+        left 0
+        right 0
+        width 1608px
+        height 758px
+        margin 0 auto
+        background url('~assets/img/collections/rusalka/1.png') no-repeat
+        background-position 222px 0
+
+    &__wrapper-content
+        max-width 1138px
+
+    &__wrapper-media
+        max-width 556px
+        max-height 882px
+
+    @media only screen and (max-width 1607px)
+        &__bg
+            left -12%
+            right -12%
+
+    @media only screen and (max-width 1280px)
+        margin-top 51px
+
+        &__bg
+            top 0
+            width 1144px
+            height 643px
+            background-position 38px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 856px
+
+        &__wrapper-media
+            max-width 382px
+            max-height 606px
+            margin-bottom 37px
+
+    @media only screen and (max-width 920px)
+        &__bg
+            left -18%
+            right -18%
+
+        &__wrapper-content
+            max-width 836px
+
+
+    @media only screen and (max-width 840px)
+        margin-top 55px
+        z-index 1
+
+        &__bg
+            top -70px
+            left -80%
+            right -80%
+            width 879px
+            height 494px
+            background-position -15px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 308px
+            max-height 489px
+            margin-bottom 34px
+
+.snowqueen-model
+    position relative
+    margin-top 115px
+
+    &__bg
+        position absolute
+        top 68px
+        left 0
+        right 0
+        width 1400px
+        height 656px
+        margin 0 auto
+        background url('~assets/img/collections/snowqueen/1.png') no-repeat
+        background-position 490px 0
+
+    &__wrapper-content
+        max-width 1171px
+
+    &__wrapper-media
+        max-width 530px
+        max-height 835px
+
+    @media only screen and (max-width 1399px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 1280px)
+        margin-top 78px
+
+        &__bg
+            top 0
+            left -5%
+            right -5%
+            width 920px
+            height 656px
+            background-position 124px 0
+
+        &__wrapper-content
+            max-width 880px
+
+        &__wrapper-media
+            max-width 361px
+            max-height 568px
+            margin-top 79px
+            margin-bottom 9px
+
+    @media only screen and (max-width 919px)
+        &__bg
+            left -10%
+            right -10%
+
+        &__wrapper-content
+            max-width 830px
+
+    @media only screen and (max-width 840px)
+        margin-top 56px
+
+        &__bg
+            top -89px
+            left -70%
+            right -70%
+            width 707px
+            height 531px
+            background-position -80px 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 280px
+            max-height 442px
+            margin-top 0
+            margin-bottom 62px
+
+.lebed-model
+    position relative
+    margin-top 233px
+
+    &__bg
+        position absolute
+        top 219px
+        left 0
+        right 0
+        width 638px
+        height 478px
+        margin 0 auto
+        background url('~assets/img/collections/lebed/1.png') no-repeat
+        background-position 23px 0
+
+    &__wrapper-content
+        max-width 1108px
+
+    &__wrapper-media
+        max-width 427px
+        max-height 783px
+
+    @media only screen and (max-width 1280px)
+        margin-top 188px
+
+        &__bg
+            top 0
+            width 638px
+            height 478px
+            background-position 68px 0
+
+        &__wrapper-content
+            max-width 798px
+
+        &__wrapper-media
+            max-width 300px
+            max-height 550px
+            margin-top 12px
+
+    @media only screen and (max-width 840px)
+        margin-top 9px
+
+        &__bg
+            top 0
+            left -70%
+            right -70%
+            width 781px
+            height 402px
+            background-position 0px 0
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 226px
+            max-height 414px
+            margin-top 0
+            margin-bottom 51px
+
+.popovich-model
+    position relative
+    margin-top 330px
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        width 1036px
+        height 523px
+        margin 0 auto
+        background url('~assets/img/collections/popovich/1.png') no-repeat
+        background-position 0 0
+
+    &__wrapper-content
+        max-width 1300px
+
+    &__wrapper-media
+        max-width 765px
+        max-height 495px
+        margin-top 51px
+
+    .model__content
+        max-width 489px
+
+    .model__text
+        width 100%
+        max-width unset
+
+    @media only screen and (max-width 1280px)
+        margin-top 170px
+
+        &__bg
+            width 896px
+            background-position 0 0
+
+        &__wrapper-content
+            max-width 901px
+
+        &__wrapper-media
+            max-width 420px
+            max-height 272px
+            margin-top 164px
+            margin-bottom 87px
+
+        .model__content
+            max-width 436px
+
+    @media only screen and (max-width 840px)
+        margin-top 53px
+
+        &__bg
+            left -10%
+            right -10%
+            width 423px
+            height 265px
+            background-position 0 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 358px
+            max-height 231px
+            margin-top 26px
+            margin-bottom 59px
 
 
 </style>
