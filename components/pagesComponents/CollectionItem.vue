@@ -1334,5 +1334,273 @@
             max-height 540px
             margin-bottom 6px
 
+.ovinnik-model
+    position relative
+    margin-top 195px
+
+    &__bg
+        position absolute
+        top 95px
+        left 0
+        right 0
+        width 1110px
+        height 675px
+        margin 0 auto
+        background url('~assets/img/collections/ovinnik/1.png') no-repeat
+        background-position -14px 0
+
+    &__wrapper-content
+        max-width 1103px
+
+    &__wrapper-media
+        max-width 479px
+        max-height 792px
+
+    @media only screen and (max-width 1280px)
+        margin-top 82px
+
+        &__bg
+            top 0
+            width 934px
+            height 568px
+            background-position 37px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 817px
+
+        &__wrapper-media
+            max-width 352px
+            max-height 581px
+
+    @media only screen and (max-width 933px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 840px)
+        margin-top 36px
+        z-index 3
+
+        &__bg
+            top 69px
+            left -70%
+            right -70%
+            width 670px
+            height 407px
+            background-position 0px 0
+            background-size contain
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 295px
+            max-height 488px
+            margin-bottom 23px
+
+.bannik-model
+    position relative
+    margin-top 154px
+
+    &__bg
+        position absolute
+        top 140px
+        left 0
+        right 0
+        width 1210px
+        height 552px
+        margin 0 auto
+        background url('~assets/img/collections/bannik/1.png') no-repeat
+        background-position 390px 0
+
+    &__wrapper-content
+        max-width 1054px
+
+    &__wrapper-media
+        max-width 523px
+        max-height 782px
+
+    @media only screen and (max-width 1280px)
+        margin-top 95px
+
+        &__bg
+            top 0
+            width 828px
+            background-position 0 0
+
+        &__wrapper-content
+            max-width 792px
+
+        &__wrapper-media
+            max-width 386px
+            max-height 577px
+            margin-top 45px
+
+    @media only screen and (max-width 840px)
+        margin-top 44px
+        z-index 2
+
+        &__bg
+            top -82px
+            left -70%
+            right -70%
+            background-position 0px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 320px
+            max-height 478px
+            margin-top 0
+            margin-bottom 15px
+
+.viking-model
+    position relative
+    margin-top 235px
+
+    &__bg
+        position absolute
+        top 23px
+        left 0
+        right 0
+        width 1329px
+        height 748px
+        margin 0 auto
+        background url('~assets/img/collections/viking/1.png') no-repeat
+        background-position 18px 0
+
+    &__wrapper-content
+        max-width 1158px
+
+    &__wrapper-media
+        max-width 540px
+        max-height 830px
+
+    @media only screen and (max-width 1328px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 1280px)
+        margin-top 52px
+
+        &__bg
+            top 0
+            left -15%
+            right -15%
+            width 1087px
+            height 612px
+            background-position -40px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 870px
+
+        &__wrapper-media
+            max-width 409px
+            max-height 629px
+            margin-top 21px
+
+    @media only screen and (max-width 900px)
+        &__wrapper-content
+            max-width 825px
+
+        &__bg
+            left -30%
+            right -30%
+            background-position -65px 0
+
+    @media only screen and (max-width 840px)
+        margin-top 28px
+        z-index 1
+
+        &__bg
+            top -59px
+            left -120%
+            right -120%
+            width 1192px
+            height 671px
+            background-position -42px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 334px
+            max-height 513px
+            margin-top 0
+            margin-bottom 35px
+
+.lesovichok-model
+    position relative
+    margin-top 195px
+
+    &__bg
+        position absolute
+        top 34px
+        left 0
+        right 0
+        width 1262px
+        height 730px
+        margin 0 auto
+        background url('~assets/img/collections/lesovichok/1.png') no-repeat
+        background-position 315px 0
+
+    &__wrapper-content
+        max-width 1083px
+
+    &__wrapper-media
+        max-width 514px
+        max-height 784px
+
+    @media only screen and (max-width 1280px)
+        margin-top 84px
+
+        &__bg
+            top 0
+            width 960px
+            background-position 44px 0
+
+        &__wrapper-content
+            max-width 852px
+
+        &__wrapper-media
+            max-width 396px
+            max-height 605px
+            margin-top 43px
+            margin-bottom 82px
+
+    @media only screen and (max-width 959px)
+        &__bg
+            left -5%
+            right -5%
+
+    @media only screen and (max-width 840px)
+        margin-top 76px
+
+        &__bg
+            top -107px
+            left -70%
+            right -70%
+            width 832px
+            height 632px
+            background-position 20px 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 307px
+            max-height 469px
+            margin-top 0
+            margin-bottom 16px
+
 
 </style>
