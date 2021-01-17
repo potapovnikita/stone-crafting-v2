@@ -2067,4 +2067,202 @@
         .model__content
             max-width unset
 
+.dobrynya-model
+    position relative
+    margin-top 369px
+    padding-bottom 81px
+
+    &__bg
+        position absolute
+        top -81px
+        left 0
+        right 0
+        width 1600px
+        height 774px
+        margin 0 auto
+        background url('~assets/img/collections/dobrynya/1.png') no-repeat
+        background-position 30px 0
+
+    &__wrapper-content
+        max-width 1069px
+
+    &__wrapper-media
+        max-width 541px
+        max-height 612px
+
+    .model__content
+        max-width 502px
+        margin-top 100px
+
+    .model__text
+        width 100%
+        max-width unset
+
+    @media only screen and (max-width 1600px)
+        &__bg
+            left -20%
+            right -20%
+
+    @media only screen and (max-width 1280px)
+        margin-top 242px
+        padding-bottom 0
+
+        &__bg
+            top -149px
+            width 1189px
+            height 575px
+            background-position -81px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 847px
+
+        &__wrapper-media
+            max-width 377px
+            max-height 426px
+
+        .model__content
+            max-width 440px
+            margin-top 52px
+
+        .model__title
+            max-width 403px
+
+    @media only screen and (max-width 900px)
+        &__bg
+            left -30%
+            right -30%
+
+        &__wrapper-content
+            max-width 825px
+
+    @media only screen and (max-width 840px)
+        margin-top 13px
+
+        &__bg
+            top 45px
+            left -70%
+            right -70%
+            width 630px
+            height 304px
+            background-position 0 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 325px
+            max-height 368px
+            margin-bottom 93px
+
+        .model__content
+            max-width unset
+            margin-top 0
+
+        .model__title
+            max-width unset
+
+.tsarevich-model
+    position relative
+    margin-top 291px
+    padding-bottom 226px
+
+    &__bg
+        position absolute
+        top -48px
+        left 0
+        right 0
+        width 1396px
+        height 581px
+        margin 0 auto
+        background url('~assets/img/collections/tsarevich/1.png') no-repeat
+        background-position 414px 0
+
+    &__wrapper-content
+        max-width 1320px
+
+    &__wrapper-media
+        max-width 738px
+        max-height 639px
+
+    .model__content
+        max-width 489px
+        margin-top 187px
+
+    .model__title
+        max-width 324px
+
+    .model__text
+        width 100%
+        max-width unset
+        margin-bottom 16px
+
+    @media only screen and (max-width 1395px)
+        &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 1280px)
+        margin-top 249px
+        padding-bottom 67px
+
+        &__bg
+            top -103px
+            width 1019px
+            background-position -81px 0
+
+        &__wrapper-content
+            max-width 952px
+
+        &__wrapper-media
+            max-width 404px
+            max-height 350px
+            margin-top 61px
+
+        .model__content
+            margin-top 0
+
+        .model__text
+            margin-bottom 41px
+
+    @media only screen and (max-width 970px)
+        &__bg
+            left -20%
+            right -20%
+
+        &__wrapper-content
+            max-width 825px
+
+    @media only screen and (max-width 840px)
+        margin-top 91px
+        padding-bottom 61px
+
+        &__bg
+            top -66px
+            left -70%
+            right -70%
+            width 687px
+            height 391px
+            background-position 0 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 356px
+            max-height 308px
+            margin-top 0
+            margin-bottom 69px
+
+        .model__content
+            max-width unset
+            margin-top 0
+
+        .model__title
+            max-width unset
+
 </style>

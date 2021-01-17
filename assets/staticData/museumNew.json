@@ -249,5 +249,23 @@
         "textEng": "Text on eng",
         "img": "img/collections/svyatogor/0.png",
         "background": "img/collections/svyatogor/1.png"
+    },
+    {
+        "id": "dobrynya",
+        "title": "Добрыня Никитич и Змей Горыныч",
+        "titleEng": "Title on eng",
+        "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+        "textEng": "Text on eng",
+        "img": "img/collections/dobrynya/0.png",
+        "background": "img/collections/dobrynya/1.png"
+    },
+    {
+        "id": "tsarevich",
+        "title": "Иван-царевич и серый волк",
+        "titleEng": "Title on eng",
+        "text": "По сюжету картины В. Васнецова «Иван-царевич на сером волке». Сказочное произведение русского изобразительного искусства, в основе которого сюжет народной сказки: Царевич с Еленой Прекрасной убегают от погони на верном сером волке.",
+        "textEng": "Text on eng",
+        "img": "img/collections/tsarevich/0.png",
+        "background": "img/collections/tsarevich/1.png"
     }
 ]
