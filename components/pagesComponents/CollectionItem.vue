@@ -1886,5 +1886,185 @@
             margin-top 26px
             margin-bottom 59px
 
+        .model__content
+            max-width unset
+
+.muromets-model
+    position relative
+    margin-top 480px
+
+    &__bg
+        position absolute
+        top -91px
+        left 0
+        right 0
+        width 1472px
+        height 704px
+        margin 0 auto
+        background url('~assets/img/collections/muromets/1.png') no-repeat
+        background-position 278px 0
+
+    &__wrapper-content
+        max-width 1169px
+
+    &__wrapper-media
+        max-width 672px
+        max-height 603px
+
+    .model__content
+        max-width 479px
+
+    .model__text
+        width 100%
+        max-width unset
+    
+    @media only screen and (max-width 1471px)
+        &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 1280px)
+        margin-top 267px
+        padding-bottom 85px
+
+        &__bg
+            top -133px
+            width 1046px
+            height 639px
+            background-position -41px 0
+            background-size cover
+
+        &__wrapper-content
+            max-width 881px
+
+        &__wrapper-media
+            max-width 454px
+            max-height 407px
+
+        .model__content
+            max-width 409px
+
+    @media only screen and (max-width 910px)
+        &__bg
+            left -15%
+            right -15%
+
+        &__wrapper-content
+            max-width 825px
+
+    @media only screen and (max-width 840px)
+        margin-top 81px
+        padding-bottom 0
+        z-index 1
+
+        &__bg
+            top 0
+            left -70%
+            right -70%
+            width 497px
+            height 311px
+            background url('~assets/img/collections/muromets/1-mb.png') no-repeat
+            background-position 58px 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 362px
+            max-height 325px
+            margin-bottom 52px
+
+        .model__content
+            max-width unset
+
+.svyatogor-model
+    position relative
+    margin-top 269px
+
+    &__bg
+        position absolute
+        top -50px
+        left 0
+        right 0
+        width 1374px
+        height 670px
+        margin 0 auto
+        background url('~assets/img/collections/svyatogor/1.png') no-repeat
+        background-position 190px 0
+
+    &__wrapper-content
+        max-width 1247px
+
+    &__wrapper-media
+        max-width 698px
+        max-height 658px
+
+    .model__content
+        max-width 489px
+        margin-top 200px
+
+    .model__text
+        width 100%
+        max-width unset
+    
+    @media only screen and (max-width 1373px)
+        &__bg
+            left -10%
+            right -10%
+
+    @media only screen and (max-width 1280px)
+        margin-top 337px
+        padding-bottom 28px
+
+        &__bg
+            top -209px
+            width 1104px
+            height 621px
+            background-size cover
+            background-position 0 0
+
+        &__wrapper-content
+            max-width 943px
+
+        &__wrapper-media
+            max-width 408px
+            max-height 384px
+
+        .model__content
+            max-width 480px
+            margin-top 0
+
+    @media only screen and (max-width 950px)
+        &__bg
+            left -15%
+            right -15%
+
+        &__wrapper-content
+            max-width 825px
+
+    @media only screen and (max-width 840px)
+        margin-top 107px
+        padding-bottom 0
+
+        &__bg
+            top -119px
+            left -70%
+            right -70%
+            width 719px
+            height 404px
+            background-position 0 0
+
+        &__wrapper-content
+            flex-direction column !important
+            max-width unset
+
+        &__wrapper-media
+            max-width 348px
+            max-height 328px
+            margin-bottom 48px
+
+        .model__content
+            max-width unset
 
 </style>

@@ -231,5 +231,23 @@
         "textEng": "Text on eng",
         "img": "img/collections/popovich/0.png",
         "background": "img/collections/popovich/1.png"
+    },
+    {
+        "id": "muromets",
+        "title": "Илья Муромец и Соловей-разбойник",
+        "titleEng": "Ilya Muromets",
+        "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+        "textEng": "Text on eng",
+        "img": "img/collections/muromets/0.png",
+        "background": "img/collections/muromets/1.png"
+    },
+    {
+        "id": "svyatogor",
+        "title": "Святогор и Микула",
+        "titleEng": "Title on eng",
+        "text": "Святогор, древнейший русский богатырь и житель гор, предстает величавым воином, внушающий восхищение своей силой. Святогор превосходит по своей мощи все мыслимые пределы человеческих возможностей.",
+        "textEng": "Text on eng",
+        "img": "img/collections/svyatogor/0.png",
+        "background": "img/collections/svyatogor/1.png"
     }
 ]
