@@ -77,11 +77,25 @@
                             .material(v-if="good.material" v-html="lang === 'ru' ? '<b>Материал: </b>' + good.material : '<b>Material: </b>' + good.materialEng")
                             .size(v-if="good.size" v-html="lang === 'ru' ? '<b>Размер: </b>' + good.size : '<b>Size: </b>' + good.sizeEng")
                             .year(v-if="good.year" v-html="lang === 'ru' ? '<b>Год: </b>' + good.year : '<b>Year: </b>' + good.year")
-                            .price(
-                                v-if="good.pricetoView && good.pricetoView.from"
-                                v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
-                            )
-                            .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
+                            div(v-if="isPartners")
+                                .price(
+                                    v-if="good.pricetoView && good.pricetoView.from"
+                                    v-html="lang === 'ru' ? '<b>Рекомендованная цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                                )
+                                .price(
+                                    v-if="good.pricetoViewClient && good.pricetoViewClient.from"
+                                    v-html="lang === 'ru' ? '<b>Минимальная цена: </b>' + good.pricetoViewClient.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoViewClient.string, currency).string + ' $'"
+                                )
+                                .price(
+                                    v-if="!(good.pricetoViewClient && good.pricetoViewClient.from) && !(good.pricetoView && good.pricetoView.from)"
+                                    v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'"
+                                    )
+                            div(v-else)
+                                .price(
+                                    v-if="good.pricetoView && good.pricetoView.from"
+                                    v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                                )
+                                .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
                             .stock(v-if="good.inStock" v-html="lang === 'ru' ? '<b>Наличие: </b>' + good.inStock.name : '<b>Existence: </b>' + good.inStock.nameEng")
                             .cities(v-if="good.cities.length")
                                 b
@@ -127,6 +141,12 @@
             ChevronsDownIcon,
             ChevronsUpIcon,
             LoaderIcon,
+        },
+        props: {
+            isPartners: {
+                type: Boolean,
+                default: false,
+            }
         },
         data() {
             return {
@@ -264,10 +284,12 @@
                         this.categoriesArray.push(category)
                     })
                 })
+
+                const visibilityType = this.isPartners ? 'partners' : 'clients';
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
                         let good = doc.data()
-                        if (good.visibility && good.visibility.find(v => v.code === 'partners')) {
+                        if (good.visibility && good.visibility.find(v => v.code === visibilityType)) {
                             good.id = doc.id
                             good.activeImgId = this.activeIndex
                             good.files = [
@@ -280,7 +302,9 @@
                                     type: 'video',
                                 })),
                             ]
+
                             good.pricetoView = this.parsePrice(good.price);
+                            good.pricetoViewClient= this.parsePrice(good.priceClient);
 
                             this.goodsArray.push(good)
                         }
