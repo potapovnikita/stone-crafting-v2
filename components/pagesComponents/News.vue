@@ -75,13 +75,10 @@
             async getNews(USER_ID, TOKEN, req) {
 
                 const request = req || `https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`
-
-                console.log(request)
                 await jsonp(request, null, (err, res) => {
                     if (err) {
                         console.error("Возникла ошибка", err.message);
                     } else {
-                        console.log(res)
                         // оставляем только посты с тэгом "stonecraftinghousebyantonov"
                         res.data && res.data.forEach(item => {
                             if (item.caption && item.caption.toLowerCase().match(/#stonecraftinghousebyantonov/gi)) this.news.push(item)
@@ -119,7 +116,7 @@
             копируем токен в токен
             {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
             */
-            const TOKEN = 'IGQVJVdE9BZAHhtQUdHeW4xUEhRei16TUpjeXdTU0FPeGc1djdZAdVRzZA0NuOGtOMkNOMmhmbGxYZAVVCNnJNV2E0YW1fd0E0dmVZAVjlOdThVTlcxTnNUYXBPM3JJdHBtRUdlWG9zSDVR'
+            const TOKEN = 'IGQVJYVHJ1amhWeGxGN01WNTRjOFdmbVZAuQUkzVmpLXzFKOFZADcWNBb09GRXRGamtUclFaUmhMZAERqdmZA3WWRyQ3FuN252MFRqNk82NGhJRXExNEJ3b0IycUFIRkRHQmJrM0ZALeEJ4UDg4clNObWg4UgZDZD'
             const USER_ID = '17841401452273098' // id пользователя
 
             // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
