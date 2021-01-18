@@ -10,9 +10,9 @@
     {
         "id": "jokerNew",
         "title": "Джокер",
-        "titleEng": "Joker",
+        "titleEng": "The Golden Joker",
         "text": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
-        "textEng": "Text on eng",
+        "textEng": "A playing card with image of a court jester.",
         "img": "img/collections/joker/0.png",
         "background": "img/collections/joker/1.png"
     },
@@ -21,7 +21,7 @@
         "title": "Александр Македонский",
         "titleEng": "Alexander the Great",
         "text": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
-        "textEng": "Text on eng",
+        "textEng": "Conqueror and king of Macedonia",
         "img": "img/collections/makedon/0.png",
         "background": "img/collections/makedon/1.png"
     },

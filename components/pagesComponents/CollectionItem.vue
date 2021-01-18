@@ -125,13 +125,15 @@
 
 .torero-model
     position relative
+    margin-top 20px
+    padding-bottom 10px
 
     &__bg
         position absolute
-        top 80px
-        left -107px
+        top 65px
+        left 0
         right 0
-        width 1125px
+        width 1178px
         height 758px
         margin 0 auto
         background url('~assets/img/collections/torero/1.png')
@@ -145,15 +147,18 @@
         max-height 813px
 
     @media only screen and (max-width 1280px)
+        margin-top 71px
+        padding-bottom 53px
 
         &__bg
-            top 30px
-            left 0
-            right 0
+            top 49px
+            left -10%
+            right -10%
             width 971px
             height 654px
+            background-position 144px 0
             background-repeat no-repeat
-            background-size contain
+            background-size cover
 
         &__wrapper-content
             max-width 812px
@@ -162,23 +167,17 @@
             max-width 410px
             max-height 650px
 
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 40px
-            left 15%
-            width 100%
-
     @media only screen and (max-width 840px)
+        margin-top 22px
+        padding-bottom 0
 
         &__bg
-            position absolute
-            top 0
-            left 0
-            right 0
-            height 425px
+            top 109px
+            width 468px
+            height 315px
             background url('~assets/img/collections/torero/1-mb.png')
             background-repeat no-repeat
-            background-position center bottom
+            background-position 47px 0
 
         &__wrapper-content
             flex-direction column !important
@@ -187,21 +186,28 @@
         &__wrapper-media
             max-width 271px
             max-height 432px
+            margin-bottom 23px
+
+    @media only screen and (max-width 390px)
+        &__bg
+            left -30%
+            right -30%
 
 .jokerNew-model
     position relative
+    margin-top 62px
 
     &__bg
         position absolute
-        top 0
+        top 13px
         left 0
         right 0
-        width 1064px
+        width 932px
         height 886px
         margin 0 auto
         background url('~assets/img/collections/joker/1.png')
         background-repeat no-repeat
-        background-position 210px 15px
+        background-position 147px 0
 
     &__wrapper-content
         max-width 1064px
@@ -211,12 +217,14 @@
         max-height 886px
 
     @media only screen and (max-width 1280px)
+        margin-top 42px
 
         &__bg
-            width 784px
-            height 648px
+            top -86px
+            width 698px
+            height 726px
             background url('~assets/img/collections/joker/1-ip.png')
-            background-position -50px -80px
+            background-position -100px 0
             background-repeat no-repeat
 
         &__wrapper-content
@@ -226,13 +234,18 @@
             max-width 312px
             max-height 648px
 
+        .model__content
+            margin-top -83px
+
     @media only screen and (max-width 840px)
+        margin-top 44px
 
         &__bg
-            top -20px
+            top -27px
             width 431px
             height 581px
             background url('~assets/img/collections/joker/1.png')
+            background-position -13px 0
             background-repeat no-repeat
             background-size contain
 
@@ -243,6 +256,10 @@
         &__wrapper-media
             max-width 204px
             max-height 425px
+            margin-bottom 16px
+
+        .model__content
+            margin-top 0
 
     @media only screen and (max-width 431px)
         &__bg
@@ -251,16 +268,18 @@
 
 .makedon-model
     position relative
+    margin-top 83px
 
     &__bg
         position absolute
-        top 0
+        top 117px
         left 0
         right 0
-        width 1247px
+        width 1620px
         height 675px
         margin 0 auto
         background url('~assets/img/collections/makedon/3.png') no-repeat
+        background-position 357px 0
 
     &__wrapper-content
         max-width 1078px
@@ -269,62 +288,68 @@
         max-width 553px
         max-height 806px
 
+    @media only screen and (max-width 1619px)
+         &__bg
+            left -20%
+            right -20%
+
     @media only screen and (max-width 1280px)
+        margin-top 75px
 
         &__bg
-            top 0
-            left 0
-            right 0
-            width 1056px
+            top 30px
+            width 1213px
             height 571px
             background-repeat no-repeat
+            background-position 181px 0
             background-size contain
 
         &__wrapper-content
             max-width 784px
 
         &__wrapper-media
-            max-width 312px
-            max-height 648px
-
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 40px
-            left 15%
-            width 100%
+            max-width 439px
+            max-height 640px
 
     @media only screen and (max-width 840px)
+        margin-top 16px
 
         &__bg
-            position absolute
-            top 0
-            left 0
-            right 0
+            top 47px
+            width 643px
             height 349px
             background url('~assets/img/collections/makedon/1-mb.png') no-repeat
             background-repeat no-repeat
-            background-position center
+            background-position 144px 0
 
         &__wrapper-content
             flex-direction column !important
             max-width unset
 
         &__wrapper-media
-            max-width 204px
-            max-height 425px
+            max-width 302px
+            max-height 440px
+            margin-bottom 28px
+
+    @media only screen and (max-width 470px)
+        &__bg
+            left -50%
+            right -50%
 
 .genghiskhan-model
     position relative
+    margin-top 200px
 
     &__bg
         position absolute
-        top 0
+        top 61px
         left 0
         right 0
         width 1280px
         height 720px
         margin 0 auto
         background url('~assets/img/collections/genghiskhan/1.png') no-repeat
+        background-position 100px 0
 
     &__wrapper-content
         max-width 1103px
@@ -334,14 +359,16 @@
         max-height 820px
 
     @media only screen and (max-width 1280px)
+        margin-top 107px
 
         &__bg
-            top 0
-            left 0
-            right 0
-            width 1024px
+            top 39px
+            left -15%
+            right -15%
+            width 1070px
             height 602px
             background url('~assets/img/collections/genghiskhan/1-ip.png') no-repeat
+            background-position 56px 0
             background-size contain
 
         &__wrapper-content
@@ -351,21 +378,17 @@
             max-width 433px
             max-height 647px
 
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 0
-            left 0
-            width 100%
-
     @media only screen and (max-width 840px)
+        margin-top 13px
 
         &__bg
-            position absolute
-            top 0
-            left 0
-            right 0
+            top 53px
+            left -70%
+            right -70%
+            width 760px
             height 428px
             background url('~assets/img/collections/genghiskhan/1-mb.png') no-repeat
+            background-position 200px 0
 
         &__wrapper-content
             flex-direction column !important
@@ -374,19 +397,23 @@
         &__wrapper-media
             max-width 301px
             max-height 449px
+            margin-bottom 39px
 
 .tamerlan-model
     position relative
+    margin-top 204px
+    padding-bottom 18px
 
     &__bg
         position absolute
-        top 0
+        top 193px
         left 0
         right 0
-        width 1110px
+        width 1280px
         height 595px
         margin 0 auto
         background url('~assets/img/collections/tamerlan/1.png') no-repeat
+        background-position 161px 0
 
     &__wrapper-content
         max-width 1070px
@@ -396,15 +423,18 @@
         max-height 770px
 
     @media only screen and (max-width 1280px)
+        margin-top 184px
+        padding-bottom 71px
 
         &__bg
-            top 0
-            left 0
-            right 0
+            top 107px
+            left -10%
+            right -10%
             width 944px
             height 506px
             background url('~assets/img/collections/tamerlan/1.png') no-repeat
-            background-size contain
+            background-position 29px 0
+            background-size cover
 
         &__wrapper-content
             max-width 825px
@@ -413,21 +443,19 @@
             max-width 384px
             max-height 542px
 
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 0
-            left 0
-            width 100%
-
     @media only screen and (max-width 840px)
+        margin-top 34px
+        padding-bottom 0
+        z-index 1
 
         &__bg
-            position absolute
-            top 0
-            left 0
-            right 0
+            top 46px
+            left -70%
+            right -70%
+            width 732px
             height 393px
             background url('~assets/img/collections/tamerlan/1-mb.png') no-repeat
+            background-position 177px 0
 
         &__wrapper-content
             flex-direction column !important
@@ -436,19 +464,22 @@
         &__wrapper-media
             max-width 281px
             max-height 395px
+            margin-bottom 44px
 
 .suvorov-model
     position relative
+    margin-top 186px
 
     &__bg
         position absolute
-        top 0
+        top 21px
         left 0
         right 0
-        width 713px
+        width 1000px
         height 664px
         margin 0 auto
         background url('~assets/img/collections/suvorov/1.png') no-repeat
+        background-position 224px 0
 
     &__wrapper-content
         max-width 1036px
@@ -458,32 +489,32 @@
         max-height 749px
 
     @media only screen and (max-width 1280px)
+        margin-top 92px
+        padding-bottom 14px
 
         &__bg
-            top 0
-            left 0
-            right 0
+            top -66px
+            width 713px
+            background-position -56px 0
 
         &__wrapper-content
-            max-width 755px
+            max-width 749px
 
         &__wrapper-media
-            max-width 310px
+            max-width 316px
             max-height 578px
 
-    @media only screen and (max-width 1024px)
-        &__bg
-            top 0
-            left 0
-            width 100%
-
     @media only screen and (max-width 840px)
+        margin-top 74px
+        padding-bottom 0
 
         &__bg
             position absolute
-            top 0
-            left 0
-            right 0
+            top -141px
+            left -70%
+            right -70%
+            width 713px
+            background-position 0 0
 
         &__wrapper-content
             flex-direction column !important
@@ -492,20 +523,22 @@
         &__wrapper-media
             max-width 235px
             max-height 438px
+            margin-bottom 21px
 
 .peter-model
     position relative
+    margin-top 207px
 
     &__bg
         position absolute
-        top 0
+        top 58px
         left 0
         right 0
-        width 1195px
+        width 1230px
         height 606px
         margin 0 auto
         background url('~assets/img/collections/peter/1.png') no-repeat
-        background-position 75px 43px
+        background-position 93px 0
 
     &__wrapper-content
         max-width 1019px
@@ -515,12 +548,17 @@
         max-height 734px
 
     @media only screen and (max-width 1280px)
+        margin-top 144px
 
         &__bg
+            top 18px
+            left -20%
+            right -20%
             width 1061px
             height 538px
             background url('~assets/img/collections/peter/1.png') no-repeat
-            background-size contain
+            background-position 0 0
+            background-size cover
 
         &__wrapper-content
             max-width 845px
@@ -529,23 +567,24 @@
             max-width 380px
             max-height 574px
 
-    @media only screen and (max-width 1023px)
-        &__bg
-           left -10%
-           right -10%
+    @media only screen and (max-width 880px)
 
         &__wrapper-content
-            max-width 810px
+            max-width 825px
 
     @media only screen and (max-width 840px)
+        margin-top 50px
+        z-index 2
 
         &__bg
-            left 0
-            right 0
+            top 30px
+            left -70%
+            right -70%
             width 793px
             height 402px
             background url('~assets/img/collections/peter/1.png') no-repeat
-            background-size contain
+            background-position 44px 0
+            background-size cover
 
         &__wrapper-content
             flex-direction column !important
@@ -554,37 +593,22 @@
         &__wrapper-media
             max-width 300px
             max-height 453px
-
-    @media only screen and (max-width 793px)
-        &__bg
-            top 30px
-            left -45%
-            right -55%
-
-    @media only screen and (max-width 370px)
-        &__bg
-            left -50%
-            right -50%
-
-    @media only screen and (max-width 350px)
-        &__bg
-            left -58%
-            right -42%
+            margin-bottom 19px
 
 .catherine-model
     position relative
-    margin-top 137px
-    margin-bottom 30px
+    margin-top 212px
 
     &__bg
         position absolute
-        top 0
+        top 36px
         left 0
         right 0
         width 1081px
         height 695px
         margin 0 auto
         background url('~assets/img/collections/catherine/1.png') no-repeat
+        background-position 12px 0
 
     &__wrapper-content
         max-width 1011px
@@ -594,10 +618,14 @@
         max-height 731px
 
     @media only screen and (max-width 1280px)
+        margin-top 211px
+        padding-bottom 29px
 
         &__bg
             top -137px
-            left -195px
+            left -15%
+            right -15%
+            background-position -100px 0
 
         &__wrapper-content
             max-width 740px
@@ -607,16 +635,18 @@
             max-height 529px
 
     @media only screen and (max-width 840px)
-        margin-top 0
+        margin-top 39px
         margin-bottom 0
+        z-index 1
 
         &__bg
-            top 0
-            left -62%
-            right -38%
+            top -55px
+            left -80%
+            right -80%
             width 860px
             height 553px
-            background-size contain
+            background-position -80px 0
+            background-size cover
 
         &__wrapper-content
             flex-direction column !important
@@ -625,29 +655,15 @@
         &__wrapper-media
             max-width 194px
             max-height 446px
-
-    @media only screen and (max-width 500px)
-        &__bg
-            left -80%
-            right -20%
-
-    @media only screen and (max-width 410px)
-        &__bg
-            left -90%
-            right -10%
-
-    @media only screen and (max-width 340px)
-        &__bg
-            left -100%
-            right 0
+            margin-bottom 35px
 
 .schemamonk-model
     position relative
-    margin-top 217px
+    margin-top 263px
 
     &__bg
         position absolute
-        top -37px
+        top -46px
         left 0
         right 0
         width 1238px
@@ -663,35 +679,34 @@
         max-height 728px
 
     @media only screen and (max-width 1280px)
-        margin-top 80px
+        margin-top 184px
+        z-index 1
 
         &__bg
-            top -110px
+            top -106px
+            left -20%
+            right -20%
             width 1212px
+            height 645px
 
         &__wrapper-content
             max-width 807px
 
         &__wrapper-media
             max-width 295px
-            max-height 544px
-
-    @media only screen and (max-width 1212px)
-        &__bg
-            left -10%
-            right -23%
-            
+            max-height 544px            
 
     @media only screen and (max-width 840px)
-        margin-top 0
-        margin-bottom 0
+        margin-top 10px
+        z-index 0
 
         &__bg
-            top 0
-            left -50%
-            right -10%
+            top -129px
+            left -100%
+            right -100%
             width 1062px
             height 663px
+            background-position -130px 0
             background-size cover
 
         &__wrapper-content
@@ -699,40 +714,9 @@
             max-width unset
 
         &__wrapper-media
-            margin-top 128px
             max-width 249px
             max-height 458px
-
-    @media only screen and (max-width 650px)
-        &__bg
-            left -80%
-            right -20%
-
-    @media only screen and (max-width 510px)
-        &__bg
-            left -95%
-            right -25%
-
-    @media only screen and (max-width 470px)
-        &__bg
-            left -110%
-            right -30%
-
-    @media only screen and (max-width 410px)
-        &__bg
-            left -130%
-            right -35%
-    
-    @media only screen and (max-width 370px)
-        &__bg
-            left -140%
-            right -40%
-
-     @media only screen and (max-width 350px)
-
-        &__bg
-            left -155%
-            right -50%
+            margin-bottom 54px
 
 .scarlet-model
     position relative
@@ -740,9 +724,9 @@
 
     &__bg
         position absolute
-        top 30px
-        left 0
-        right 0
+        top 47px
+        left -5%
+        right -5%
         width 1400px
         height 724px
         margin 0 auto
@@ -757,13 +741,16 @@
         max-height 818px
 
     @media only screen and (max-width 1280px)
-        margin-top 130px
+        margin-top 117px
+        padding-bottom 18px
 
         &__bg
             top -130px
+            left -15%
+            right -15%
             width 1081px
             background url('~assets/img/collections/scarlet/1.png') no-repeat
-            background-position 100px 0px
+            background-position 115px 0px
 
         &__wrapper-content
             max-width 822px
@@ -773,12 +760,13 @@
             max-height 576px
 
     @media only screen and (max-width 840px)
-        margin-top 0
+        margin-top 43px
+        padding-bottom 0
 
         &__bg
-            top -70px
-            left 0
-            right 0
+            top -42px
+            left -80%
+            right -80%
             width 755px
             height 506px
             background url('~assets/img/collections/scarlet/1-mb.png') no-repeat
@@ -791,24 +779,16 @@
         &__wrapper-media
             max-width 259px
             max-height 444px
-
-    @media only screen and (max-width 767px)
-        margin-top 70px
-
-    @media only screen and (max-width 755px)
-         &__bg
-            left -80%
-            right -80%
-            background-position 190px 0px
+            margin-bottom 61px
 
 .babayaga-model
     position relative
-    margin-top 160px
+    margin-top 170px
     z-index 1
 
     &__bg
         position absolute
-        top -80px
+        top -73px
         left 0
         right 0
         width 750px
@@ -824,10 +804,10 @@
         max-height 767px
 
     @media only screen and (max-width 1280px)
-        margin-top 235px
+        margin-top 211px
 
         &__bg
-            top -130px
+            top -124px
             width 645px
             height 707px
             background url('~assets/img/collections/babayaga/1-ip.png') no-repeat
@@ -841,10 +821,12 @@
             max-height 562px
 
     @media only screen and (max-width 840px)
-        margin-top 0
+        margin-top 70px
 
         &__bg
-            top 0
+            top -108px
+            left -70%
+            right -70%
             width 470px
             height 513px
             background url('~assets/img/collections/babayaga/1.png') no-repeat
@@ -856,14 +838,9 @@
             max-width unset
 
         &__wrapper-media
-            margin-top 100px
             max-width 264px
             max-height 400px
-
-    @media only screen and (max-width 470px)
-        &__bg
-            left -60px
-            right -60px
+            margin-bottom 30px
 
 .groznyy-model
     position relative
