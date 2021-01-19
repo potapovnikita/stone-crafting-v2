@@ -120,7 +120,7 @@
         "title": "Дворовой",
         "titleEng": "Dvorovoy",
         "text": "Домашний дух древних славян,обитавший во дворе. Он являлся покровителем домашнего скота и помогал по хозяйству.",
-        "textEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+        "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
         "img": "img/collections/dvorovoy/0.png",
         "background": "img/collections/dvorovoy/1.png"
     },
@@ -138,7 +138,7 @@
         "title": "Кикимора",
         "titleEng": "Kikimora",
         "text": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить.",
-        "textEng": "Text on eng",
+        "textEng": "The house spirit in Slavic mythology causing harm and troubles.",
         "img": "img/collections/kikimora/0.png",
         "background": "img/collections/kikimora/1.png"
     },
@@ -154,9 +154,9 @@
     {
         "id": "pussBoots",
         "title": "Кот в сапогах",
-        "titleEng": "Puss Boots",
+        "titleEng": "Puss in Boots",
         "text": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля.",
-        "textEng": "Text on eng.",
+        "textEng": "The personage of a fairy tale in European literature.",
         "img": "img/collections/pussBoots/0.png",
         "background": "img/collections/pussBoots/1.png"
     },
@@ -174,7 +174,7 @@
         "title": "Банник",
         "titleEng": "Bannik",
         "text": "В поверьях восточных славян «Банник» - дух, живущий в бане, её хозяин и хранитель.",
-        "textEng": "Text on eng.",
+        "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
         "img": "img/collections/bannik/0.png",
         "background": "img/collections/bannik/1.png"
     },
@@ -190,9 +190,9 @@
     {
         "id": "lesovichok",
         "title": "Лесовичок",
-        "titleEng": "Lesovichok",
+        "titleEng": "Silvan",
         "text": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность.",
-        "textEng": "Text on eng.",
+        "textEng": "The spirit of the forest in Slavic folklore. Owner of the forest.",
         "img": "img/collections/lesovichok/0.png",
         "background": "img/collections/lesovichok/1.png"
     },

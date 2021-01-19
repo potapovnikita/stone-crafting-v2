@@ -762,6 +762,7 @@
     @media only screen and (max-width 840px)
         margin-top 43px
         padding-bottom 0
+        z-index 2
 
         &__bg
             top -42px
@@ -784,7 +785,6 @@
 .babayaga-model
     position relative
     margin-top 170px
-    z-index 1
 
     &__bg
         position absolute
@@ -822,6 +822,7 @@
 
     @media only screen and (max-width 840px)
         margin-top 70px
+        z-index 1
 
         &__bg
             top -108px
@@ -870,9 +871,11 @@
             right -5%
 
     @media only screen and (max-width 1280px)
+        margin-top 148px
+        padding-bottom 53px
 
         &__bg
-            top -50px
+            top -54px
             left 0
             right 0
             width 1024px
@@ -892,9 +895,12 @@
 
     @media only screen and (max-width 840px)
         margin-top 30px
+        padding-bottom 0
 
         &__bg
             top -80px
+            left -60%
+            right -60%
             width 716px
             height 449px
             background-size cover
@@ -907,19 +913,15 @@
         &__wrapper-media
             max-width 278px
             max-height 415px
-
-     @media only screen and (max-width 715px)
-        &__bg
-            left -60%
-            right -60%
+            margin-bottom 35px
 
 .watery-model
     position relative
-    margin-top 222px
+    margin-top 233px
 
     &__bg
         position absolute
-        top 0
+        top -11px
         left 0
         right 0
         width 1430px
@@ -960,7 +962,7 @@
             max-height 608px
 
     @media only screen and (max-width 870px)
-         &__bg
+        &__bg
             left -20%
             right -20%
 
@@ -968,10 +970,10 @@
             max-width 820px
 
     @media only screen and (max-width 840px)
-        margin-top 0
+        margin-top 39px
 
         &__bg
-            top 0
+            top -39
             left -70%
             right -70%
             width 742px
@@ -985,7 +987,7 @@
         &__wrapper-media
             max-width 290px
             max-height 422px
-            margin-top 40px
+            margin-bottom 23px
 
 .dvorovoy-model
     position relative
@@ -1011,6 +1013,7 @@
 
     @media only screen and (max-width 1280px)
         margin-top 215px
+        padding-bottom 73px
 
         &__bg
             top -127px
@@ -1031,10 +1034,11 @@
             right -10%
 
     @media only screen and (max-width 840px)
-        margin-top 0
+        margin-top 55px
+        padding-bottom 0
 
         &__bg
-            top 45px
+            top -11px
             left -70%
             right -70%
             width 506px
@@ -1050,7 +1054,7 @@
         &__wrapper-media
             max-width 316px
             max-height 392px
-            margin-top 55px
+            margin-bottom 17px
 
 .goldfish-model
     position relative
@@ -1074,10 +1078,10 @@
         max-height 792px
 
     @media only screen and (max-width 1280px)
-        margin-top 76px
+        margin-top 107px
 
         &__bg
-            top 0
+            top -88px
             width 901px
             height 645px
 
@@ -1087,7 +1091,6 @@
         &__wrapper-media
             max-width 344px
             max-height 552px
-            margin-top 88px
 
     @media only screen and (max-width 900px)
          &__bg
@@ -1095,10 +1098,11 @@
             right -10%
 
     @media only screen and (max-width 840px)
-        margin-top 15px
+        margin-top 36px
         z-index 2
 
         &__bg
+            top -21px
             left -70%
             right -70%
             width 531px
@@ -1113,8 +1117,7 @@
         &__wrapper-media
             max-width 270px
             max-height 433px
-            margin-top 21px
-            margin-bottom 70px
+            margin-bottom 80px
 
 .kikimora-model
     position relative
@@ -1463,10 +1466,10 @@
             right -5%
 
     @media only screen and (max-width 1280px)
-        margin-top 52px
+        margin-top 73px
 
         &__bg
-            top 0
+            top -21px
             left -15%
             right -15%
             width 1087px
@@ -1480,7 +1483,9 @@
         &__wrapper-media
             max-width 409px
             max-height 629px
-            margin-top 21px
+
+        .model__content
+            margin-top 200px
 
     @media only screen and (max-width 900px)
         &__wrapper-content
@@ -1510,8 +1515,10 @@
         &__wrapper-media
             max-width 334px
             max-height 513px
-            margin-top 0
             margin-bottom 35px
+
+         .model__content
+            margin-top 0
 
 .lesovichok-model
     position relative
@@ -1683,10 +1690,10 @@
             right -5%
 
     @media only screen and (max-width 1280px)
-        margin-top 78px
+        margin-top 157px
 
         &__bg
-            top 0
+            top -79px
             left -5%
             right -5%
             width 920px
@@ -1699,7 +1706,6 @@
         &__wrapper-media
             max-width 361px
             max-height 568px
-            margin-top 79px
             margin-bottom 9px
 
     @media only screen and (max-width 919px)
@@ -1795,11 +1801,11 @@
 
 .popovich-model
     position relative
-    margin-top 330px
+    margin-top 381px
 
     &__bg
         position absolute
-        top 0
+        top -51px
         left 0
         right 0
         width 1036px
@@ -1814,10 +1820,10 @@
     &__wrapper-media
         max-width 765px
         max-height 495px
-        margin-top 51px
 
     .model__content
         max-width 489px
+        margin-top 88px
 
     .model__text
         width 100%
@@ -1827,6 +1833,7 @@
         margin-top 170px
 
         &__bg
+            top 0
             width 896px
             background-position 0 0
 
@@ -1841,6 +1848,7 @@
 
         .model__content
             max-width 436px
+            margin-top 87px
 
     @media only screen and (max-width 840px)
         margin-top 53px
@@ -1865,6 +1873,7 @@
 
         .model__content
             max-width unset
+            margin-top 0
 
 .muromets-model
     position relative

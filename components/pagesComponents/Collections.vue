@@ -94,7 +94,7 @@
             background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/collections/bg.png') bottom right no-repeat
 
         @media only screen and (max-width 1280px)
-             &__title
+            &__title
                 margin-bottom 15px
 
             &__sub-title
@@ -103,9 +103,13 @@
             &__bg-bottom
                 height 466px
                 background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/collections/bg-ip.png') bottom right no-repeat
+                z-index 1
+
+            .footer_container
+                z-index 1
 
         @media only screen and (max-width 767px)
-             &__title
+            &__title
                 font-size 28px
                 margin-bottom 16px
 
