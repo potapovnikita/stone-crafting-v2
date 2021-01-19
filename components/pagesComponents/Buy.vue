@@ -275,38 +275,46 @@
                 }
             },
             async initApp() {
+                const visibilityType = this.isPartners ? 'partners' : 'clients';
                 this.isGoodsLoading = true;
                 await fb.categoriesCollection.get().then(data => {
                     data.forEach(doc => {
                         let category = doc.data()
                         category.id = doc.id
 
-                        this.categoriesArray.push(category)
+                        // хардкод скрываемой категории в клиентах
+                        if (!(category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
+                            this.categoriesArray.push(category)
+                        }
+
                     })
                 })
 
-                const visibilityType = this.isPartners ? 'partners' : 'clients';
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
                         let good = doc.data()
-                        if (good.visibility && good.visibility.find(v => v.code === visibilityType)) {
-                            good.id = doc.id
-                            good.activeImgId = this.activeIndex
-                            good.files = [
-                                ...good.photos.map(photo => ({
-                                    ...photo,
-                                    type: 'photo',
-                                })),
-                                ...good.videos.map(video => ({
-                                    ...video,
-                                    type: 'video',
-                                })),
-                            ]
+                        // хардкод скрываемой категории в клиентах
+                        if (!(good.category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
 
-                            good.pricetoView = this.parsePrice(good.price);
-                            good.pricetoViewClient= this.parsePrice(good.priceClient);
+                            if (good.visibility && good.visibility.find(v => v.code === visibilityType)) {
+                                good.id = doc.id
+                                good.activeImgId = this.activeIndex
+                                good.files = [
+                                    ...good.photos.map(photo => ({
+                                        ...photo,
+                                        type: 'photo',
+                                    })),
+                                    ...good.videos.map(video => ({
+                                        ...video,
+                                        type: 'video',
+                                    })),
+                                ]
 
-                            this.goodsArray.push(good)
+                                good.pricetoView = this.parsePrice(good.price);
+                                good.pricetoViewClient = this.parsePrice(good.priceClient);
+
+                                this.goodsArray.push(good)
+                            }
                         }
 
                     })
