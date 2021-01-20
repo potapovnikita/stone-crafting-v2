@@ -45,6 +45,7 @@ import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'
 import Makedon from '~/assets/staticData/models/makedon.json'
 import Genghiskhan from '~/assets/staticData/models/genghiskhan.json'
+import Tamerlan from '~/assets/staticData/models/tamerlan.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -60,7 +61,8 @@ export default {
                 torero: Torero,
                 jokerNew: JokerNew,
                 makedon: Makedon,
-                genghiskhan: Genghiskhan,         
+                genghiskhan: Genghiskhan,
+                tamerlan: Tamerlan,
             },
         }
     },

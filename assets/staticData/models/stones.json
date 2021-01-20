@@ -72,9 +72,9 @@
         "photo": "img/collections/stones/stone1.png"
     },
     {
-        "id": "lapisLazuli",
+        "id": "lazurite",
         "name": "лазурит",
-        "nameEng": "lapis lazuli",
+        "nameEng": "lazurite",
         "photo": "img/collections/stones/stone1.png"
     },
     {
@@ -108,9 +108,9 @@
         "photo": "img/collections/stones/stone1.png"
     },
     {
-        "id": "cornelian",
+        "id": "carnelian",
         "name": "cердолик",
-        "nameEng": "cornelian",
+        "nameEng": "carnelian",
         "photo": "img/collections/stones/stone1.png"
     },
     {
@@ -135,6 +135,72 @@
         "id": "porphyrite",
         "name": "порфирит",
         "nameEng": "porphyrite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "uvarovite",
+        "name": "уваровит",
+        "nameEng": "uvarovite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "nephrite",
+        "name": "нефрит",
+        "nameEng": "nephrite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "aventurine",
+        "name": "авантюрин",
+        "nameEng": "aventurine",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "aventurineSlate",
+        "name": "авантюриновый сланец",
+        "nameEng": "aventurine slate",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "tigersEye",
+        "name": "тигровый глаз",
+        "nameEng": "tiger's eye",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "agate",
+        "name": "агат",
+        "nameEng": "agate",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "quartzite",
+        "name": "кварцит",
+        "nameEng": "quartzite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "irmenite",
+        "name": "ирнимит",
+        "nameEng": "irmenite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "gabbro",
+        "name": "габбро",
+        "nameEng": "gabbro",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "opal",
+        "name": "опал",
+        "nameEng": "opal",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "turquoise",
+        "name": "бирюза",
+        "nameEng": "turquoise",
         "photo": "img/collections/stones/stone1.png"
     }
 ]
