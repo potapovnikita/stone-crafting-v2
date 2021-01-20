@@ -44,6 +44,7 @@ import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'
 import Makedon from '~/assets/staticData/models/makedon.json'
+import Genghiskhan from '~/assets/staticData/models/genghiskhan.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -58,7 +59,8 @@ export default {
             models: {
                 torero: Torero,
                 jokerNew: JokerNew,
-                makedon: Makedon,                
+                makedon: Makedon,
+                genghiskhan: Genghiskhan,               
             },
         }
     },

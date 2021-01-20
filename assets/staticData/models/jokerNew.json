@@ -48,97 +48,61 @@
             {
                 "id": "malachite",
                 "label": 1,
-                "titleRu": "1. малахит",
-                "titleEng": "1. malachite",
-                "background": "img/collections/joker/stones/stone1.png",
                 "stoneClassName": "stone1"
             },
             {
                 "id": "charoite",
-                "label": 2,
-                "titleRu": "2. чароит",
-                "titleEng": "2. charoite",
-                "background": "img/collections/joker/stones/stone2.png"
+                "label": 2
             },
             {
                 "id": "dolerite",
                 "label": 3,
-                "titleRu": "3. долерит",
-                "titleEng": "3. dolerite",
-                "background": "img/collections/joker/stones/stone3.png",
                 "stoneClassName": "stone3"
             },
             {
                 "id": "jasper",
                 "label": 4,
-                "titleRu": "4. яшма",
-                "titleEng": "4. jasper",
-                "background": "img/collections/joker/stones/stone4.png",
                 "stoneClassName": "stone4"
             },
             {
                 "id": "cacholong",
                 "label": 5,
-                "titleRu": "5. кахолонг",
-                "titleEng": "5. cacholong",
-                "background": "img/collections/joker/stones/stone5.png",
                 "stoneClassName": "stone5"
             },
             {
-                "id": "lazuli",
-                "label": 6,
-                "titleRu": "6. лазурит",
-                "titleEng": "6. lazuli",
-                "background": "img/collections/torero/stones/stoneRight5.png"
+                "id": "lapisLazuli",
+                "label": 6
             }
         ],
         "stonesRight": [
             {
                 "id": "rhodonite",
                 "label": 7,
-                "titleRu": "7. родонит",
-                "titleEng": "7. rhodonite",
-                "background": "img/collections/torero/stones/stone6.png",
                 "stoneClassName": "stone6"
             },
             {
                 "id": "amazanite",
                 "label": 8,
-                "titleRu": "8. амазанит",
-                "titleEng": "8. amazanite",
-                "background": "img/collections/torero/stones/stone2.png",
                 "stoneClassName": "stone7"
             },
             {
                 "id": "fluorite",
                 "label": 9,
-                "titleRu": "9. флюорит",
-                "titleEng": "9. fluorite",
-                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone8"
             },
             {
                 "id": "lepidolite",
                 "label": 10,
-                "titleRu": "10. лепидолит",
-                "titleEng": "10. lepidolite",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone9"
             },
             {
                 "id": "gold",
                 "label": 11,
-                "titleRu": "11. золото",
-                "titleEng": "11. gold",
-                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone8"
             },
             {
                 "id": "silver",
                 "label": 12,
-                "titleRu": "12. серебро",
-                "titleEng": "12. silver",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone9"
             }
         ]

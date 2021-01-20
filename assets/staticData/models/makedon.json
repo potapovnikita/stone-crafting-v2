@@ -50,55 +50,34 @@
             {
                 "id": "marble",
                 "label": 1,
-                "titleRu": "1. мрамор",
-                "titleEng": "1. marble",
-                "background": "img/collections/joker/stones/stone1.png",
                 "stoneClassName": "stone1"
             },
             {
                 "id": "dolerite",
-                "label": 2,
-                "titleRu": "2. долерит",
-                "titleEng": "2. dolerite",
-                "background": "img/collections/joker/stones/stone2.png"
+                "label": 2
             },
             {
                 "id": "chalcedony",
                 "label": 3,
-                "titleRu": "3. халцедон",
-                "titleEng": "3. chalcedony",
-                "background": "img/collections/joker/stones/stone3.png",
                 "stoneClassName": "stone3"
             },
             {
                 "id": "jasper",
                 "label": 4,
-                "titleRu": "4. яшма",
-                "titleEng": "4. jasper",
-                "background": "img/collections/joker/stones/stone4.png",
                 "stoneClassName": "stone4"
             },
             {
                 "id": "fluorite",
                 "label": 5,
-                "titleRu": "5. флюорит",
-                "titleEng": "5. fluorite",
-                "background": "img/collections/joker/stones/stone5.png",
                 "stoneClassName": "stone5"
             },
             {
-                "id": "stone6",
-                "label": 6,
-                "titleRu": "6. cердолик ",
-                "titleEng": "6. stone6",
-                "background": "img/collections/torero/stones/stoneRight5.png"
+                "id": "cornelian",
+                "label": 6
             },
             {
                 "id": "cacholong",
                 "label": 7,
-                "titleRu": "7. кахолонг",
-                "titleEng": "7. cacholong",
-                "background": "img/collections/torero/stones/stone6.png",
                 "stoneClassName": "stone7"
             }
         ],
@@ -106,49 +85,31 @@
             {
                 "id": "radusite",
                 "label": 8,
-                "titleRu": "8. радусит",
-                "titleEng": "8. radusite",
-                "background": "img/collections/torero/stones/stone2.png",
                 "stoneClassName": "stone8"
             },
             {
                 "id": "pyrite",
                 "label": 9,
-                "titleRu": "9. пирит",
-                "titleEng": "9. pyrite",
-                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone9"
             },
             {
                 "id": "bronze",
                 "label": 10,
-                "titleRu": "10. бронза",
-                "titleEng": "10. bronze",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone10"
             },
             {
                 "id": "gold",
                 "label": 11,
-                "titleRu": "11. золото",
-                "titleEng": "11. gold",
-                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone11"
             },
             {
                 "id": "silver",
                 "label": 12,
-                "titleRu": "12. серебро",
-                "titleEng": "12. silver",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone12"
             },
             {
-                "id": "stone13",
+                "id": "porphyrite",
                 "label": 13,
-                "titleRu": "13. порфирит",
-                "titleEng": "13. stone13",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone13"
             }
         ]

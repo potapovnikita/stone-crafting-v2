@@ -147,81 +147,51 @@
             {
                 "id": "jasper",
                 "label": 1,
-                "titleRu": "1. яшма",
-                "titleEng": "1. jasper",
-                "background": "img/collections/torero/stones/stone1.png",
                 "stoneClassName": "stone1"
             },
             {
                 "id": "rhodonite",
-                "label": 2,
-                "titleRu": "2. родонит",
-                "titleEng": "2. rhodonite",
-                "background": "img/collections/torero/stones/stone2.png"
+                "label": 2
             },
             {
-                "id": "stone3",
+                "id": "rhodusite",
                 "label": 3,
-                "titleRu": "3. родусит",
-                "titleEng": "3. stone3",
-                "background": "img/collections/torero/stones/stone3.png",
                 "stoneClassName": "stone3"
             },
             {
                 "id": "dolerite",
                 "label": 4,
-                "titleRu": "4. долерит",
-                "titleEng": "4. dolerite",
-                "background": "img/collections/torero/stones/stone4.png",
                 "stoneClassName": "stone4"
             },
             {
                 "id": "silicon",
                 "label": 5,
-                "titleRu": "5. кремний",
-                "titleEng": "5. silicon",
-                "background": "img/collections/torero/stones/stone5.png",
                 "stoneClassName": "stone5"
             }
         ],
         "stonesRight": [
             {
                 "id": "cacholong",
-                "label": 6,
-                "titleRu": "6. кахолонг",
-                "titleEng": "6. cacholong",
-                "background": "img/collections/torero/stones/stoneRight5.png"
+                "label": 6
             },
             {
-                "id": "falcon eye",
+                "id": "falconEye",
                 "label": 7,
-                "titleRu": "7. соколиный глаз",
-                "titleEng": "7. falcon eye",
-                "background": "img/collections/torero/stones/stone6.png",
                 "stoneClassName": "stone6"
             },
             {
                 "id": "garnet",
                 "label": 8,
-                "titleRu": "8. гранат",
-                "titleEng": "8. garnet",
-                "background": "img/collections/torero/stones/stone2.png",
                 "stoneClassName": "stone7"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "titleRu": "9. золото",
-                "titleEng": "9. gold",
-                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone8"
             },
             {
                 "id": "silver",
                 "label": 10,
-                "titleRu": "10. серебро",
-                "titleEng": "10. silver",
-                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone9"
             }
         ]

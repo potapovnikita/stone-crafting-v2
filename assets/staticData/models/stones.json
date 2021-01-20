@@ -1,0 +1,140 @@
+[
+    {
+        "id": "jasper",
+        "name": "яшма",
+        "nameEng": "jasper",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "rhodonite",
+        "name": "родонит",
+        "nameEng": "rhodonite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "rhodusite",
+        "name": "родусит",
+        "nameEng": "rhodusite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "dolerite",
+        "name": "долерит",
+        "nameEng": "dolerite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "silicon",
+        "name": "кремний",
+        "nameEng": "silicon",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "cacholong",
+        "name": "кахолонг",
+        "nameEng": "cacholong",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "falconEye",
+        "name": "соколиный глаз",
+        "nameEng": "falcon eye",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "garnet",
+        "name": "гранат",
+        "nameEng": "garnet",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "gold",
+        "name": "золото",
+        "nameEng": "gold",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "silver",
+        "name": "серебро",
+        "nameEng": "silver",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "malachite",
+        "name": "малахит",
+        "nameEng": "malachite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "charoite",
+        "name": "чароит",
+        "nameEng": "charoite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "lapisLazuli",
+        "name": "лазурит",
+        "nameEng": "lapis lazuli",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "amazanite",
+        "name": "амазанит",
+        "nameEng": "amazanite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "fluorite",
+        "name": "флюорит",
+        "nameEng": "fluorite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "lepidolite",
+        "name": "лепидолит",
+        "nameEng": "lepidolite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "marble",
+        "name": "мрамор",
+        "nameEng": "marble",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "chalcedony",
+        "name": "халцедон",
+        "nameEng": "chalcedony",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "cornelian",
+        "name": "cердолик",
+        "nameEng": "cornelian",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "radusite",
+        "name": "радусит",
+        "nameEng": "radusite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "pyrite",
+        "name": "пирит",
+        "nameEng": "pyrite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "bronze",
+        "name": "бронза",
+        "nameEng": "bronze",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "porphyrite",
+        "name": "порфирит",
+        "nameEng": "porphyrite",
+        "photo": "img/collections/stones/stone1.png"
+    }
+]

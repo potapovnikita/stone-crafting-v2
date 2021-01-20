@@ -3,7 +3,7 @@
         div(:class="['model-container__wrapper-content', `${toreroMap.modelClassName}`]")
             div(:class="`${toreroMap.modelClassName}__bg-pic`")
             ul.model-container__stones.mobile-hide(v-if="toreroMap")
-                li(v-for="stone in toreroMap.stonesLeft")
+                li(v-for="stone in stonesListLeft")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
@@ -18,7 +18,7 @@
                     :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
 
             ul.model-container__stones.mobile-hide(v-if="toreroMap")
-                li(v-for="stone in toreroMap.stonesRight")
+                li(v-for="stone in stonesListRight")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
@@ -26,14 +26,14 @@
 
             .model-container__stones-mobile-container
                 ul.model-container__stones(v-if="toreroMap")
-                    li(v-for="stone in toreroMap.stonesLeft")
+                    li(v-for="stone in stonesListLeft")
                         .model-container__wrapper-stone
                             .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                                 .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                             p.model-container__stone-title {{getStoneTitle(stone)}}
 
                 ul.model-container__stones(v-if="toreroMap")
-                    li(v-for="stone in toreroMap.stonesRight")
+                    li(v-for="stone in stonesListRight")
                         .model-container__wrapper-stone
                             .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                                 .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
@@ -43,6 +43,7 @@
 <script>
 import { mapState } from 'vuex'
 import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
+import Stones from '~/assets/staticData/models/stones.json'
 export default {
     name: 'ModelMap',
     props: {
@@ -51,7 +52,10 @@ export default {
     data() {
         return {
            stonesList: [],
+           stonesListLeft: [],
+           stonesListRight: [],
            activeStone: '',
+           stones: Stones,
         }
     },
     methods: {
@@ -71,6 +75,24 @@ export default {
         onStoneClick(value) {
             this.activeStone = value;
         },
+        mappedStones(list) {
+            const mapped = []
+            list.forEach((item, index) => {
+            const stoneIndex = this.stones.findIndex(stone => stone.id === item.id)
+                if (stoneIndex >= 0) {
+                    const mappedStone = {
+                        id: this.stones[stoneIndex].id,
+                        label: item.label,
+                        titleRu: `${item.label} ${this.stones[stoneIndex].name}`,
+                        titleEng: `${item.label} ${this.stones[stoneIndex].nameEng}`,
+                        background: this.stones[stoneIndex].photo,
+                    }
+                    if (item.stoneClassName) mappedStone.stoneClassName = item.stoneClassName
+                    mapped.push(mappedStone)
+                }
+            })
+            return mapped;
+        }
     },
     computed: {
         ...mapState('localization', [
@@ -78,7 +100,9 @@ export default {
         ]),
     },
     mounted() {
-        this.stonesList = [].concat(this.toreroMap.stonesLeft, this.toreroMap.stonesRight)
+        this.stonesListLeft = this.mappedStones(this.toreroMap.stonesLeft)
+        this.stonesListRight = this.mappedStones(this.toreroMap.stonesRight)
+        this.stonesList = [].concat(this.stonesListLeft, this.stonesListRight)
     }
 }
 </script>
