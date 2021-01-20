@@ -60,7 +60,7 @@ export default {
                 torero: Torero,
                 jokerNew: JokerNew,
                 makedon: Makedon,
-                genghiskhan: Genghiskhan,               
+                genghiskhan: Genghiskhan,         
             },
         }
     },

@@ -2,13 +2,7 @@
     .common-container.collections-container
         .collections-container__bg-bottom
         h1.collections-container__title {{ lang === 'ru' ? 'Сокровища музеев' : 'Collections' }}
-        p.collections-container__sub-title(v-html="lang === 'ru' ? 'коллекция дома' : 'title on eng'") 
-            margin-bottom 27px
-            font-size 19px
-            line-height 140%
-            letter-spacing 0.3em
-            text-transform uppercase
-            color goldNew
+        p.collections-container__sub-title(v-html="lang === 'ru' ? 'коллекция дома' : 'title on eng'")
         CollectionItem(v-for="(item, index) in museumNew"
             :key="item.id"
             :id="item.id"
