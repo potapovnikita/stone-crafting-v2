@@ -1,6 +1,10 @@
 {
     "id": "makedon",
     "name": "Александр Македонский",
+    "creation": {
+        "title": "Год создания: 2019",
+        "titleEng": "Year of creation: 2019"
+    },
     "img": "img/stone-art/historical/makedon/preview/1.jpg",
     "shortDesc": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
     "shortDescEng": "Conqueror and king of Macedonia",
@@ -38,5 +42,115 @@
         "img/stone-art/historical/makedon/preview/10.png",
         "img/stone-art/historical/makedon/preview/11.png",
         "img/stone-art/historical/makedon/preview/12.png"
-    ]
+    ],
+    "modelMap": {
+        "modelClassName": "makedon",
+        "img": "img/collections/makedon/0.png",
+        "stonesLeft": [
+            {
+                "id": "marble",
+                "label": 1,
+                "titleRu": "1. мрамор",
+                "titleEng": "1. marble",
+                "background": "img/collections/joker/stones/stone1.png",
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "dolerite",
+                "label": 2,
+                "titleRu": "2. долерит",
+                "titleEng": "2. dolerite",
+                "background": "img/collections/joker/stones/stone2.png"
+            },
+            {
+                "id": "chalcedony",
+                "label": 3,
+                "titleRu": "3. халцедон",
+                "titleEng": "3. chalcedony",
+                "background": "img/collections/joker/stones/stone3.png",
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "jasper",
+                "label": 4,
+                "titleRu": "4. яшма",
+                "titleEng": "4. jasper",
+                "background": "img/collections/joker/stones/stone4.png",
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "fluorite",
+                "label": 5,
+                "titleRu": "5. флюорит",
+                "titleEng": "5. fluorite",
+                "background": "img/collections/joker/stones/stone5.png",
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "stone6",
+                "label": 6,
+                "titleRu": "6. cердолик ",
+                "titleEng": "6. stone6",
+                "background": "img/collections/torero/stones/stoneRight5.png"
+            },
+            {
+                "id": "cacholong",
+                "label": 7,
+                "titleRu": "7. кахолонг",
+                "titleEng": "7. cacholong",
+                "background": "img/collections/torero/stones/stone6.png",
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "radusite",
+                "label": 8,
+                "titleRu": "8. радусит",
+                "titleEng": "8. radusite",
+                "background": "img/collections/torero/stones/stone2.png",
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "pyrite",
+                "label": 9,
+                "titleRu": "9. пирит",
+                "titleEng": "9. pyrite",
+                "background": "img/collections/torero/stones/stone8.png",
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "bronze",
+                "label": 10,
+                "titleRu": "10. бронза",
+                "titleEng": "10. bronze",
+                "background": "img/collections/torero/stones/stone9.png",
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "gold",
+                "label": 11,
+                "titleRu": "11. золото",
+                "titleEng": "11. gold",
+                "background": "img/collections/torero/stones/stone8.png",
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "silver",
+                "label": 12,
+                "titleRu": "12. серебро",
+                "titleEng": "12. silver",
+                "background": "img/collections/torero/stones/stone9.png",
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "stone13",
+                "label": 13,
+                "titleRu": "13. порфирит",
+                "titleEng": "13. stone13",
+                "background": "img/collections/torero/stones/stone9.png",
+                "stoneClassName": "stone13"
+            }
+        ]
+    }
 }

@@ -4,7 +4,7 @@
     "nameEng": "Torero",
     "creation": {
         "title": "Год создания: 2019",
-        "titleEng": "since 2019"
+        "titleEng": "Year of creation: 2019"
     },
     "img": "img/stone-art/historical/torero/preview/1.jpg",
     "shortDesc": "Камнерезная и ювелирная скульптура. <br><br> Это самая большая в мире скульптура, выполненная из\nдрагоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.",
@@ -142,85 +142,86 @@
     ],
     "modelMap": {
         "modelClassName": "torero",
+        "img": "img/collections/torero/0.png",
         "stonesLeft": [
             {
-                "id": "toreroStone1",
+                "id": "jasper",
                 "label": 1,
-                "titleRu": "1. кахолонг",
-                "titleEng": "1. stone1",
-                "background": "img/toreroMap/stone1.png",
+                "titleRu": "1. яшма",
+                "titleEng": "1. jasper",
+                "background": "img/collections/torero/stones/stone1.png",
                 "stoneClassName": "stone1"
             },
             {
-                "id": "toreroStone2",
+                "id": "rhodonite",
                 "label": 2,
                 "titleRu": "2. родонит",
-                "titleEng": "2. stone2",
-                "background": "img/toreroMap/stone2.png"
+                "titleEng": "2. rhodonite",
+                "background": "img/collections/torero/stones/stone2.png"
             },
             {
-                "id": "toreroStone3",
+                "id": "stone3",
                 "label": 3,
-                "titleRu": "3. соколиный глаз",
+                "titleRu": "3. родусит",
                 "titleEng": "3. stone3",
-                "background": "img/toreroMap/stone3.png",
+                "background": "img/collections/torero/stones/stone3.png",
                 "stoneClassName": "stone3"
             },
             {
-                "id": "toreroStone4",
+                "id": "dolerite",
                 "label": 4,
-                "titleRu": "4. гранат",
-                "titleEng": "4. stone4",
-                "background": "img/toreroMap/stone4.png",
+                "titleRu": "4. долерит",
+                "titleEng": "4. dolerite",
+                "background": "img/collections/torero/stones/stone4.png",
                 "stoneClassName": "stone4"
             },
             {
-                "id": "toreroStone5",
+                "id": "silicon",
                 "label": 5,
-                "titleRu": "5. Серебро",
-                "titleEng": "5. stone5",
-                "background": "img/toreroMap/stone5.png",
+                "titleRu": "5. кремний",
+                "titleEng": "5. silicon",
+                "background": "img/collections/torero/stones/stone5.png",
                 "stoneClassName": "stone5"
             }
         ],
         "stonesRight": [
             {
-                "id": "toreroStone5",
-                "label": 5,
-                "titleRu": "5. кахолонг",
-                "titleEng": "5. stone5",
-                "background": "img/toreroMap/stoneRight5.png"
+                "id": "cacholong",
+                "label": 6,
+                "titleRu": "6. кахолонг",
+                "titleEng": "6. cacholong",
+                "background": "img/collections/torero/stones/stoneRight5.png"
             },
             {
-                "id": "toreroStone6",
-                "label": 6,
-                "titleRu": "6. родонит",
-                "titleEng": "6. stone6",
-                "background": "img/toreroMap/stone6.png",
+                "id": "falcon eye",
+                "label": 7,
+                "titleRu": "7. соколиный глаз",
+                "titleEng": "7. falcon eye",
+                "background": "img/collections/torero/stones/stone6.png",
                 "stoneClassName": "stone6"
             },
             {
-                "id": "toreroStone7",
-                "label": 7,
-                "titleRu": "7. соколиный глаз",
-                "titleEng": "7. stone7",
-                "background": "img/toreroMap/stone2.png",
+                "id": "garnet",
+                "label": 8,
+                "titleRu": "8. гранат",
+                "titleEng": "8. garnet",
+                "background": "img/collections/torero/stones/stone2.png",
                 "stoneClassName": "stone7"
             },
             {
-                "id": "toreroStone8",
-                "label": 8,
-                "titleRu": "8. кремний",
-                "titleEng": "8. stone8",
-                "background": "img/toreroMap/stone8.png",
+                "id": "gold",
+                "label": 9,
+                "titleRu": "9. золото",
+                "titleEng": "9. gold",
+                "background": "img/collections/torero/stones/stone8.png",
                 "stoneClassName": "stone8"
             },
             {
-                "id": "toreroStone9",
-                "label": 9,
-                "titleRu": "9. Золото",
-                "titleEng": "9. stone9",
-                "background": "img/toreroMap/stone9.png",
+                "id": "silver",
+                "label": 10,
+                "titleRu": "10. серебро",
+                "titleEng": "10. silver",
+                "background": "img/collections/torero/stones/stone9.png",
                 "stoneClassName": "stone9"
             }
         ]

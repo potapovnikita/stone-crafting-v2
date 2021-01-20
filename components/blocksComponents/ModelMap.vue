@@ -1,6 +1,6 @@
 <template lang="pug">
     .model-container
-        div(:class="toreroMap.modelClassName")
+        div(:class="['model-container__wrapper-content', `${toreroMap.modelClassName}`]")
             div(:class="`${toreroMap.modelClassName}__bg-pic`")
             ul.model-container__stones.mobile-hide(v-if="toreroMap")
                 li(v-for="stone in toreroMap.stonesLeft")
@@ -10,6 +10,7 @@
                         p.model-container__stone-title {{getStoneTitle(stone)}}
 
             div(:class="`${toreroMap.modelClassName}__pic`")
+                img.model-container__photo(:src="getImg(toreroMap.img)")
                 .model-container__point(
                     v-for="(stone, index) in stonesList"
                     v-if="stone.stoneClassName"
@@ -41,7 +42,7 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import { getBgImgLocal } from '~/plugins/getUrl'
+import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
 export default {
     name: 'ModelMap',
     props: {
@@ -54,6 +55,9 @@ export default {
         }
     },
     methods: {
+        getImg(url) {
+            return getImgLocal(url)
+        },
         getBgImg(url) {
             return getBgImgLocal(url)
         },
@@ -80,6 +84,15 @@ export default {
 </script>
 <style lang="stylus">
 .model-container
+
+    &__wrapper-content
+        display flex
+        justify-content space-between
+        position relative
+
+    &__photo
+        width 100%
+        height auto
 
     &__stones
         position relative
@@ -176,9 +189,6 @@ export default {
                 margin-left 10px
 
 .torero
-    display flex
-    justify-content space-between
-    position relative
     max-width 1320px
 
     .model-container__stones
@@ -189,19 +199,14 @@ export default {
         position absolute
         width 100%
         height 100%
-        background linear-gradient(142.6deg, rgba(17, 17, 17, 0) 21.67%, #111111 90.98%), url('~assets/img/toreroMap/bg-main.png')
+        background linear-gradient(142.6deg, rgba(17, 17, 17, 0) 21.67%, #111111 90.98%), url('~assets/img/collections/torero/card/bg-main.png')
         background-repeat no-repeat
         background-position left bottom
 
     &__pic
         position relative
-        left 0
-        right 0
         width 670px
         height 1059px
-        background url('~assets/img/toreroMap/torero.png')
-        background-repeat no-repeat
-        background-position center
 
     &--stone1
         top 741px
@@ -248,7 +253,6 @@ export default {
         &__pic
             width 506px
             height 800px
-            background-size cover
 
         &--stone1
             top 552px
