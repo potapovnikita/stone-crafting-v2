@@ -1,0 +1,114 @@
+{
+    "id": "koschei",
+    "name": "Кощей Бессмертный",
+    "img": "img/stone-art/fairytales/koshey/preview/1.jpg",
+    "shortDesc": "Персонаж восточнославянской мифологии и фольклора. Злой чародей, смерть которого хранится на острие иглы, что спрятана в нескольких волшебных животных и предметах.",
+    "shortDescEng": "The evil wizard of the East Slavic mythology and folklore.",
+    "description": "«Там царь Кощей над златом чахнет...» <br><br>Персонаж восточнославянской мифологии и фольклора. Злой чародей, смерть которого хранится на острие иглы, что спрятана в нескольких волшебных животных и предметах. Обожатель прекрасных дев и скупой хранитель сокровищ подземного мира.</i>",
+    "about": "<b>Высота:</b> 330&nbsp;мм. <br><b>Диаметр подставки:</b> 250&nbsp;мм. <br><br> <b>Камни:</b> яшма, долерит, тигровый глаз, пирит, гематит, халцедон, окаменелое дерево, авантюрин, изумруд, рубин, сапфир, бриллиант, хрусталь, ирнимит, кахолонг. <br><br><b>Металл:</b> золото, серебро, бронза, золочение. <br><br><b>Год создания:</b> 2015.",
+    "nameEng": "Koschei the Deathless",
+    "descriptionEng": "The evil wizard of the East Slavic mythology and folklore.</i>",
+    "aboutEng": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jasper, dolerite, tiger's eye, pyrite, hematite, chalcedony, petrified tree, aventurine, emerald, ruby, sapphire, diamond, crystal, irnimite, cacholong. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2015.",
+    "video": "video/gallery/koschei.mp4",
+    "background": "img/stone-art/fairytales/koshey/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/koshey/1.png",
+        "img/stone-art/fairytales/koshey/2.png",
+        "img/stone-art/fairytales/koshey/3.png",
+        "img/stone-art/fairytales/koshey/4.png",
+        "img/stone-art/fairytales/koshey/5.png",
+        "img/stone-art/fairytales/koshey/6.png",
+        "img/stone-art/fairytales/koshey/7.png",
+        "img/stone-art/fairytales/koshey/8.png",
+        "img/stone-art/fairytales/koshey/9.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/koshey/preview/1.png",
+        "img/stone-art/fairytales/koshey/preview/2.png",
+        "img/stone-art/fairytales/koshey/preview/3.png",
+        "img/stone-art/fairytales/koshey/preview/4.png",
+        "img/stone-art/fairytales/koshey/preview/5.png",
+        "img/stone-art/fairytales/koshey/preview/6.png",
+        "img/stone-art/fairytales/koshey/preview/7.png",
+        "img/stone-art/fairytales/koshey/preview/8.png",
+        "img/stone-art/fairytales/koshey/preview/9.png"
+    ],
+    "modelMap": {
+        "modelClassName": "koschei",
+        "img": "img/collections/koschei/0.png",
+        "stonesLeft": [
+            {
+                "id": "dolerite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "aventurine",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "hematite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "pyrite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "chalcedony",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "tigersEye",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "silver",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "bronze",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "emerald",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "ruby",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "sapphire",
+                "label": 14,
+                "stoneClassName": "stone14"
+            }
+        ]
+    }
+}

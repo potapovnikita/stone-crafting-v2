@@ -1,0 +1,131 @@
+{
+    "id": "pussBoots",
+    "name": "Кот в сапогах",
+    "img": "img/stone-art/fairytales/kotvsapogah/preview/1.jpg",
+    "shortDesc": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля. А также, мимоходом пообедавший великаном, который так опрометчиво превратился в мышь.",
+    "shortDescEng": "The personage of a fairy tale in European literature.",
+    "description": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля. А также, мимоходом пообедавший великаном, который так опрометчиво превратился в мышь.</i>",
+    "about": "<b>Высота:</b> - 450&nbsp;мм. <br><b>Диаметр подставки:</b> - 250&nbsp;мм. <br><br> <b>Камни:</b> нефрит, яшма, кварцит, халцедон, авантюрин, мрамор, родонит, сердолик, флюорит, тигровый глаз, окаменелое дерево, хрусталь. <br><br> <b>Металл:</b> золото, серебро, бронза. <br><br><b>Год создания:</b> 2016.",
+    "nameEng": "Puss in Boots",
+    "descriptionEng": "The personage of a fairy tale in European literature.</i>",
+    "aboutEng": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jade, jasper, quartzite, chalcedony, aventurine, marble, rhodonite, carnelian, fluorite, tiger's eye, petrified tree, crystal. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2016.",
+    "video": "",
+    "background": "img/stone-art/fairytales/kotvsapogah/1.jpg",
+    "imagesFull": [
+        "img/stone-art/fairytales/kotvsapogah/1.jpg",
+        "img/stone-art/fairytales/kotvsapogah/2.jpg",
+        "img/stone-art/fairytales/kotvsapogah/3.jpg",
+        "img/stone-art/fairytales/kotvsapogah/4.jpg",
+        "img/stone-art/fairytales/kotvsapogah/5.jpg",
+        "img/stone-art/fairytales/kotvsapogah/6.jpg",
+        "img/stone-art/fairytales/kotvsapogah/7.jpg",
+        "img/stone-art/fairytales/kotvsapogah/8.jpg",
+        "img/stone-art/fairytales/kotvsapogah/9.jpg",
+        "img/stone-art/fairytales/kotvsapogah/10.jpg",
+        "img/stone-art/fairytales/kotvsapogah/11.jpg",
+        "img/stone-art/fairytales/kotvsapogah/12.jpg",
+        "img/stone-art/fairytales/kotvsapogah/13.jpg",
+        "img/stone-art/fairytales/kotvsapogah/14.jpg",
+        "img/stone-art/fairytales/kotvsapogah/15.jpg"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/kotvsapogah/preview/1.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/2.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/3.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/4.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/5.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/6.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/7.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/8.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/9.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/10.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/11.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/12.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/13.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/14.jpg",
+        "img/stone-art/fairytales/kotvsapogah/preview/15.jpg"
+    ],
+    "modelMap": {
+        "modelClassName": "pussBoots",
+        "img": "img/collections/pussBoots/0.png",
+        "stonesLeft": [
+            {
+                "id": "nephrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "quartzite",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "jasper",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "fluorite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "chalcedony",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "marble",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "aventurine",
+                "label": 8,
+                "stoneClassName": "stone8"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "gabbro",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "quartz",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "rhodonite",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "carnelian",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "silver",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "topaz",
+                "label": 14,
+                "stoneClassName": "stone14"
+            },
+            {
+                "id": "bronze",
+                "label": 15,
+                "stoneClassName": "stone15"
+            }
+        ]
+    }
+}

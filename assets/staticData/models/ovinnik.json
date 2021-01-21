@@ -1,0 +1,114 @@
+{
+    "id": "ovinnik",
+    "name": "Овинник",
+    "img": "img/stone-art/fairytales/ovinnik/preview/1.jpg",
+    "shortDesc": "В традиционных верованиях восточных славян Овинник - дух места, живущий в овине (на гумне), охраняющий его и хлеб от всякой напасти, беды и нечисти.",
+    "shortDescEng": "A spirit of the threshing barn in Slavic folklore.",
+    "description": "В традиционных верованиях восточных славян Овинник - дух места, живущий в овине (на гумне), охраняющий его и хлеб от всякой напасти, беды и нечисти. Овинника уважали и задабривали, чтобы дом был полной чашей, а домочадцы жили в достатке.</i>",
+    "about": "<b>Высота:</b> 400&nbsp;мм. <br><b>Диаметр подставки:</b> 260&nbsp;мм. <br><br><b>Камни:</b> яшма, халцедон, амазонит, родусит, окаменелое дерево, моховой агат, кремний, кальцит, уваровит, халцедон, цитрин, ирнимит, родонит, кошачий глаз, хрусталь, кахолонг. <br><br><b>Металл:</b> серебро, бронза. <br><br><b>Год создания:</b> 2018.",
+    "nameEng": "Ovinnik",
+    "descriptionEng": "A spirit of the threshing barn in Slavic folklore.</i>",
+    "aboutEng": "<b>Height:</b> 400&nbsp;mm.  <br><b>Diameter of the base:</b> 260&nbsp;mm.  <br><br><b>Stones:</b> jasper, chalcedony, amazonite, rhodusite, petrified tree, agate, flint, calcite, uvarovite, chalcedony, citrine, irnimite, rhodonite, cat’s eye, crystal, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+    "video": "",
+    "background": "img/stone-art/fairytales/ovinnik/1.jpg",
+    "imagesFull": [
+        "img/stone-art/fairytales/ovinnik/1.jpg",
+        "img/stone-art/fairytales/ovinnik/2.jpg",
+        "img/stone-art/fairytales/ovinnik/3.jpg",
+        "img/stone-art/fairytales/ovinnik/4.jpg",
+        "img/stone-art/fairytales/ovinnik/5.jpg",
+        "img/stone-art/fairytales/ovinnik/6.jpg",
+        "img/stone-art/fairytales/ovinnik/7.jpg",
+        "img/stone-art/fairytales/ovinnik/8.jpg",
+        "img/stone-art/fairytales/ovinnik/9.jpg",
+        "img/stone-art/fairytales/ovinnik/10.jpg",
+        "img/stone-art/fairytales/ovinnik/11.jpg",
+        "img/stone-art/fairytales/ovinnik/12.jpg",
+        "img/stone-art/fairytales/ovinnik/13.jpg",
+        "img/stone-art/fairytales/ovinnik/14.jpg"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/ovinnik/preview/1.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/2.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/3.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/4.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/5.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/6.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/7.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/8.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/9.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/10.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/11.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/12.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/13.jpg",
+        "img/stone-art/fairytales/ovinnik/preview/14.jpg"
+    ],
+    "modelMap": {
+        "modelClassName": "ovinnik",
+        "img": "img/collections/ovinnik/0.png",
+        "stonesLeft": [
+            {
+                "id": "jadeite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "jasper",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "irmenite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "uvarovite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "calcite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "chalcedony",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "agate",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "rhodusite",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "quartz",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "bronze",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "silver",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}

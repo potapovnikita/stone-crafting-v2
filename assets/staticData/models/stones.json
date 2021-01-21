@@ -109,7 +109,7 @@
     },
     {
         "id": "carnelian",
-        "name": "cердолик",
+        "name": "сердолик",
         "nameEng": "carnelian",
         "photo": "img/collections/stones/stone1.png"
     },
@@ -201,6 +201,102 @@
         "id": "turquoise",
         "name": "бирюза",
         "nameEng": "turquoise",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "petrifiedTree",
+        "name": "окаменелое дерево",
+        "nameEng": "petrified tree",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "moonstone",
+        "name": "лунный камень",
+        "nameEng": "moonstone",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "quartz",
+        "name": "кварц",
+        "nameEng": "quartz",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "iceQuartz",
+        "name": "льдистый кварц",
+        "nameEng": "ice quartz",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "calcite",
+        "name": "кальцит",
+        "nameEng": "calcite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "jadeite",
+        "name": "жадеит",
+        "nameEng": "jadeite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "coral",
+        "name": "коралл",
+        "nameEng": "coral",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "magnesite",
+        "name": "магнезит",
+        "nameEng": "magnesite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "aragonite",
+        "name": "арагонит",
+        "nameEng": "aragonite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "rauchtopaz",
+        "name": "раухтопаз",
+        "nameEng": "rauchtopaz",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "topaz",
+        "name": "топаз",
+        "nameEng": "topaz",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "hematite",
+        "name": "гематит",
+        "nameEng": "hematite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "emerald",
+        "name": "изумруд",
+        "nameEng": "emerald",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "ruby",
+        "name": "рубин",
+        "nameEng": "ruby",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "sapphire",
+        "name": "сапфир",
+        "nameEng": "sapphire",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "vesuvian",
+        "name": "везувиан",
+        "nameEng": "vesuvian",
         "photo": "img/collections/stones/stone1.png"
     }
 ]

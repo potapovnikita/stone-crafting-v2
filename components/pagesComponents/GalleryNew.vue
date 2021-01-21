@@ -46,6 +46,15 @@ import JokerNew from '~/assets/staticData/models/jokerNew.json'
 import Makedon from '~/assets/staticData/models/makedon.json'
 import Genghiskhan from '~/assets/staticData/models/genghiskhan.json'
 import Tamerlan from '~/assets/staticData/models/tamerlan.json'
+import Schemamonk from '~/assets/staticData/models/schemamonk.json'
+import Watery from '~/assets/staticData/models/watery.json'
+import Dvorovoy from '~/assets/staticData/models/dvorovoy.json'
+import Goldfish from '~/assets/staticData/models/goldfish.json'
+import Koschei from '~/assets/staticData/models/koschei.json'
+import PussBoots from '~/assets/staticData/models/pussBoots.json'
+import Ovinnik from '~/assets/staticData/models/ovinnik.json'
+import Bannik from '~/assets/staticData/models/bannik.json'
+import Lesovichek from '~/assets/staticData/models/lesovichek.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -63,6 +72,15 @@ export default {
                 makedon: Makedon,
                 genghiskhan: Genghiskhan,
                 tamerlan: Tamerlan,
+                schemamonk: Schemamonk,
+                watery: Watery,
+                dvorovoy: Dvorovoy,
+                goldfish: Goldfish,
+                koschei: Koschei,
+                pussBoots: PussBoots,
+                ovinnik: Ovinnik,
+                bannik: Bannik,
+                lesovichek: Lesovichek,
             },
         }
     },

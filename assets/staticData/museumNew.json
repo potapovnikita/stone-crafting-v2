@@ -188,13 +188,13 @@
         "background": "img/collections/viking/1.png"
     },
     {
-        "id": "lesovichok",
+        "id": "lesovichek",
         "title": "Лесовичок",
         "titleEng": "Silvan",
         "text": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность.",
         "textEng": "The spirit of the forest in Slavic folklore. Owner of the forest.",
-        "img": "img/collections/lesovichok/0.png",
-        "background": "img/collections/lesovichok/1.png"
+        "img": "img/collections/lesovichek/0.png",
+        "background": "img/collections/lesovichek/1.png"
     },
     {
         "id": "rusalka",

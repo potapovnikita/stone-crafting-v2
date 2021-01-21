@@ -1520,7 +1520,7 @@
          .model__content
             margin-top 0
 
-.lesovichok-model
+.lesovichek-model
     position relative
     margin-top 195px
 
@@ -1532,7 +1532,7 @@
         width 1262px
         height 730px
         margin 0 auto
-        background url('~assets/img/collections/lesovichok/1.png') no-repeat
+        background url('~assets/img/collections/lesovichek/1.png') no-repeat
         background-position 315px 0
 
     &__wrapper-content
