@@ -1,46 +1,46 @@
 <template lang="pug">
-    .torero-show-container(v-if="showData")
-        .torero-show-container__pic.desktop-hide(:style="{backgroundImage: getBgImg(showData.background)}")
-        .torero-show-container__info-mb
+    .model-show-container(v-if="showData")
+        .model-show-container__pic.desktop-hide(:style="{backgroundImage: getBgImg(showData.background)}")
+        .model-show-container__info-mb
             img(:class="showData.iconPathMobileClass" :src="getImg(showData.iconPathMobile)")
-            h2.torero-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
-            ul.torero-show-container__list.torero-show-container__list--mb
+            h2.model-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
+            ul.model-show-container__list.model-show-container__list--mb
                 li(v-for="(item, index) in showData.infoList" :key="`info_${index}`")
-                    .torero-show-container__icon
+                    .model-show-container__icon
                         img(:class="item.iconClass" :src="getImg(item.iconPath)")
 
-                    p.torero-show-container__sub-title {{lang === 'ru' ? item.titleRu : item.titleEng}}
-                    ul.torero-show-container__list.torero-show-container__list--sub-list(v-if="item.options")
-                        li.torero-show-container__list-item(v-for="opt in item.options" :class="{ 'torero-show-container__list-item--gray': opt.isTextGrey }")
-                            p.torero-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
+                    p.model-show-container__sub-title {{lang === 'ru' ? item.titleRu : item.titleEng}}
+                    ul.model-show-container__list.model-show-container__list--sub-list(v-if="item.options")
+                        li.model-show-container__list-item(v-for="opt in item.options" :class="{ 'torero-show-container__list-item--gray': opt.isTextGrey }")
+                            p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
-                    .torero-show-container__btn-mb
+                    .model-show-container__btn-mb
                         Button(v-if="item.btn") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
-        .torero-show-container__info
-            h2.torero-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
-            .torero-show-container__wrapper-text(v-for="item in showData.infoList")
-                .torero-show-container__table
-                    .torero-show-container__table-row
-                        .torero-show-container__table-cell.mobile-hide
-                            .torero-show-container__icon
+        .model-show-container__info
+            h2.model-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
+            .model-show-container__wrapper-text(v-for="item in showData.infoList")
+                .model-show-container__table
+                    .model-show-container__table-row
+                        .model-show-container__table-cell.mobile-hide
+                            .model-show-container__icon
                                 img(:class="item.iconClass" :src="getImg(item.iconPath)")
-                        .torero-show-container__table-cell
-                            p.torero-show-container__sub-title {{lang === 'ru' ? item.titleRu : item.titleEng}}
-                    .torero-show-container__table-row
-                        .torero-show-container__table-cell.mobile-hide
-                        .torero-show-container__table-cell
-                            ul.torero-show-container__list.torero-show-container__list--sub-list(v-if="item.options")
-                                li.torero-show-container__list-item(v-for="opt in item.options" :class="{ 'torero-show-container__list-item--gray': opt.isTextGrey }")
-                                    p.torero-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
+                        .model-show-container__table-cell
+                            p.model-show-container__sub-title {{lang === 'ru' ? item.titleRu : item.titleEng}}
+                    .model-show-container__table-row
+                        .model-show-container__table-cell.mobile-hide
+                        .model-show-container__table-cell
+                            ul.model-show-container__list.model-show-container__list--sub-list(v-if="item.options")
+                                li.model-show-container__list-item(v-for="opt in item.options" :class="{ 'torero-show-container__list-item--gray': opt.isTextGrey }")
+                                    p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
-                .torero-show-container__btn-descktop
+                .model-show-container__btn-descktop
                     Button(v-if="item.btn" large) {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
-                .torero-show-container__btn-mb
+                .model-show-container__btn-mb
                     Button(v-if="item.btn") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
         
-        .torero-show-container__pic.mobile-hide(:style="{backgroundImage: getBgImg(showData.background)}")
+        .model-show-container__pic.mobile-hide(:style="{backgroundImage: getBgImg(showData.background)}")
 
 </template>
 <script>
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 <style lang="stylus">
-.torero-show-container
+.model-show-container
     display flex
     justify-content center
 

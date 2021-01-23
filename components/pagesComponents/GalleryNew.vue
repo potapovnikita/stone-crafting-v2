@@ -29,18 +29,17 @@
 
             UnitNews(:mediaList="currentProduct.media")
 
-        ToreroShow(:showData="currentProduct.showBlock")
+        ModelShow(:showData="currentProduct.showBlock")
 
         Footer
 
 </template>
 <script>
 import { mapState } from 'vuex'
-import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import UnitNews from '@/components/blocksComponents/UnitNews'
 import ModelMap from '@/components/blocksComponents/ModelMap'
-import ToreroShow from '@/components/blocksComponents/ToreroShow'
+import ModelShow from '@/components/blocksComponents/ModelShow'
 import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'
@@ -69,7 +68,7 @@ export default {
         GalleryPhotosSlider,
         ModelMap,
         UnitNews,
-        ToreroShow,
+        ModelShow,
         Footer,
     },
     data() {
