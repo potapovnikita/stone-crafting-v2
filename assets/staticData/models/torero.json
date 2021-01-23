@@ -197,12 +197,15 @@
         ]
     },
     "showBlock": {
+        "iconPathMobile": "img/toreroShow/placeIcon.png",
+        "iconPathMobileClass": "icon-mb",
         "titleRu": "Увидеть тореадора",
         "titleEng": "Title on eng",
         "background": "img/toreroShow/bg.png",
         "infoList": [
             {
                 "iconPath": "img/toreroShow/placeIcon.png",
+                "iconClass": "icon-place",
                 "titleRu": "В нашей частной коллекции в Международном центре искусств «Главный проспект»",
                 "titleEng": "Title on eng",
                 "options": [
@@ -227,6 +230,7 @@
             },
             {
                 "iconPath": "img/toreroShow/exhibitIcon.png",
+                "iconClass": "icon-exhibit",
                 "titleRu": "Выставочная история тореадора:",
                 "titleEng": "Title on eng",
                 "options": [

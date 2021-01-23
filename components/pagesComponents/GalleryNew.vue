@@ -1,5 +1,6 @@
 <template lang="pug">
     .common-container.gallery-container
+        .bg-bottom
         .header-container
             .header-container__title-container
                 .header-container__circle
@@ -111,6 +112,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .gallery-container
+    position relative
+
+    .bg-bottom
+        display none
+
     .header-container
         height 683px
         background url('~assets/img/news/header-main.png') top center no-repeat
@@ -345,6 +351,17 @@ export default {
 
             &__double-line
                 width 50px
+
+        .bg-bottom
+            display block
+            position absolute
+            left 0
+            right 0
+            bottom 0
+            width 100%
+            height 563px
+            background url('~assets/img/collections/bg-m.png') no-repeat
+            background-size cover
 
     @media only screen and (max-width 490px)
         .galleryAbout-block
