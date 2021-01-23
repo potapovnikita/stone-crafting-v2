@@ -1,6 +1,10 @@
 {
     "id": "koschei",
     "name": "Кощей Бессмертный",
+    "creation": {
+        "title": "Год создания: 2015",
+        "titleEng": "Year of creation: 2015"
+    },
     "img": "img/stone-art/fairytales/koshey/preview/1.jpg",
     "shortDesc": "Персонаж восточнославянской мифологии и фольклора. Злой чародей, смерть которого хранится на острие иглы, что спрятана в нескольких волшебных животных и предметах.",
     "shortDescEng": "The evil wizard of the East Slavic mythology and folklore.",

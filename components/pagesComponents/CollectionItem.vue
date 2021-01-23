@@ -10,7 +10,7 @@
                 .model__double-line
                 p.model__text(v-html="lang === 'ru' ? text : textEng")
 
-                ButtonArrow(:onClick="() => $nuxt.$router.push({path:`/gallery/${id}`})" arrowRight)
+                ButtonArrow(:onClick="clickHandler" arrowRight)
 
 </template>
 <script>
@@ -38,7 +38,11 @@
             },
             getBgImg(url) {
                 return getBgImgLocal(url)
-            }
+            },
+            clickHandler() {
+                this.$emit("collectionitembtnclick");
+                this.$nuxt.$router.push({path:`/gallery/${this.id}`})
+            },
         },
         computed: {
             ...mapState('localization', [

@@ -1,6 +1,10 @@
 {
     "id": "bannik",
     "name": "Банник",
+    "creation": {
+        "title": "Год создания: 2017",
+        "titleEng": "Year of creation: 2017"
+    },
     "img": "img/stone-art/fairytales/bannik/preview/1.jpg",
     "shortDesc": "В поверьях восточных славян &laquo;Банник&raquo; - дух, живущий в бане, её хозяин и хранитель.",
     "shortDescEng": "The Slavic spirit, keeper and owner of the bathhouse.",

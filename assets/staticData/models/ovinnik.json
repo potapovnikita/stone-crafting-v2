@@ -1,6 +1,10 @@
 {
     "id": "ovinnik",
     "name": "Овинник",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
     "img": "img/stone-art/fairytales/ovinnik/preview/1.jpg",
     "shortDesc": "В традиционных верованиях восточных славян Овинник - дух места, живущий в овине (на гумне), охраняющий его и хлеб от всякой напасти, беды и нечисти.",
     "shortDescEng": "A spirit of the threshing barn in Slavic folklore.",

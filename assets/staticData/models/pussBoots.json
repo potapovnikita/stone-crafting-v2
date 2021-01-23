@@ -1,6 +1,10 @@
 {
     "id": "pussBoots",
     "name": "Кот в сапогах",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
     "img": "img/stone-art/fairytales/kotvsapogah/preview/1.jpg",
     "shortDesc": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля. А также, мимоходом пообедавший великаном, который так опрометчиво превратился в мышь.",
     "shortDescEng": "The personage of a fairy tale in European literature.",

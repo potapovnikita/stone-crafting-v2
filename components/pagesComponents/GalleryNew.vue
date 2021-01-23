@@ -55,6 +55,13 @@ import PussBoots from '~/assets/staticData/models/pussBoots.json'
 import Ovinnik from '~/assets/staticData/models/ovinnik.json'
 import Bannik from '~/assets/staticData/models/bannik.json'
 import Lesovichek from '~/assets/staticData/models/lesovichek.json'
+import Rusalka from '~/assets/staticData/models/rusalka.json'
+import Snowqueen from '~/assets/staticData/models/snowqueen.json'
+import Lebed from '~/assets/staticData/models/lebed.json'
+import Suvorov from '~/assets/staticData/models/suvorov.json'
+import Scarlet from '~/assets/staticData/models/scarlet.json'
+import Babayaga from '~/assets/staticData/models/babayaga.json'
+import Kikimora from '~/assets/staticData/models/kikimora.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -81,6 +88,13 @@ export default {
                 ovinnik: Ovinnik,
                 bannik: Bannik,
                 lesovichek: Lesovichek,
+                rusalka: Rusalka,
+                snowqueen: Snowqueen,
+                lebed: Lebed,
+                suvorov: Suvorov,
+                scarlet: Scarlet,
+                babayaga: Babayaga,
+                kikimora: Kikimora,
             },
         }
     },

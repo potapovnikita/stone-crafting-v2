@@ -1,0 +1,106 @@
+{
+    "id": "babayaga",
+    "name": "Баба Яга",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
+    "img": "img/stone-art/fairytales/babayaga/preview/9.jpg",
+    "shortDesc": "В славянской мифологии и фольклоре - старая лесная ведьма, живущая в глухом лесу в «избушке на курьих ножках», летающая в ступе, погоняя её пестом и заметая следы метлой.",
+    "shortDescEng": "A forest witch in Slavic folk tales. She is the guardian of the boundaries between the world of the living and the world of the dead.",
+    "description": "В славянской мифологии и фольклоре - старая лесная ведьма, живущая в глухом лесу в «избушке на курьих ножках», летающая в ступе, погоняя её пестом и заметая следы метлой. <br>Она хранительница границы между миром живых и миром мёртвых. Главная обязанность её - следить, чтобы эти миры не смешивались. <br>Героев встречает она сурово, но смелым указывает верный путь.",
+    "about": "<b>Высота:</b> 400&nbsp;мм. <br><b>Диаметр подставки:</b> 330x220&nbsp;мм. <br><br><b>Камни:</b> кремний, рубин, халцедон, яшма, кварцит, шайтанский переливт, нефрит, окаменелое дерево, лабрадорит, сердолик, родонит, долерит, кахолонг, бивень моржа, хрусталь, кораллы.  <br><br><b>Металл:</b> серебро, бронза. <br><br><b>Год создания:</b> 2016.",
+    "nameEng": "Baba-Yaga",
+    "descriptionEng": "A forest witch in Slavic folk tales. She is the guardian of the boundaries between the world of the living and the world of the dead.",
+    "aboutEng": "<b>Height:</b> 400&nbsp;mm. <br><b>Diameter of the base:</b> 330 to 220&nbsp;mm. <br><br><b>Stones:</b> silicon, ruby, chalcedony, jasper, quartzite, agate, nephrite, agate, labradorite, carnelian, rhodonite, dolerite, cacholong, walrus tusk, crystal, coral. <br><br><b>Metals:</b> silver, bronze.<br><br><b>Year of creation:</b> 2016",
+    "video": "video/gallery/baba_yaga.mp4",
+    "background": "img/stone-art/fairytales/babayaga/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/babayaga/1.png",
+        "img/stone-art/fairytales/babayaga/2.png",
+        "img/stone-art/fairytales/babayaga/3.png",
+        "img/stone-art/fairytales/babayaga/4.png",
+        "img/stone-art/fairytales/babayaga/5.png",
+        "img/stone-art/fairytales/babayaga/6.png",
+        "img/stone-art/fairytales/babayaga/7.png",
+        "img/stone-art/fairytales/babayaga/8.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/babayaga/preview/1.png",
+        "img/stone-art/fairytales/babayaga/preview/2.png",
+        "img/stone-art/fairytales/babayaga/preview/3.png",
+        "img/stone-art/fairytales/babayaga/preview/4.png",
+        "img/stone-art/fairytales/babayaga/preview/5.png",
+        "img/stone-art/fairytales/babayaga/preview/6.png",
+        "img/stone-art/fairytales/babayaga/preview/7.png",
+        "img/stone-art/fairytales/babayaga/preview/8.png"
+    ],
+    "modelMap": {
+        "modelClassName": "babayaga",
+        "img": "img/collections/babayaga/0.png",
+        "stonesLeft": [
+            {
+                "id": "agate",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "chalcedony",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "silicon",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "fluorite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "aragonite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "nephrite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "bronze",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "carnelian",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "silver",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "sapphire",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}

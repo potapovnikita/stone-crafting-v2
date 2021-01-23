@@ -1,6 +1,10 @@
 {
     "id": "dvorovoy",
     "name": "Дворовой",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
     "img": "img/stone-art/fairytales/dvorovoy/preview/1.jpg",
     "shortDesc": "Домашний дух древних славян,обитавший во дворе. Он являлся покровителем домашнего скота и помогал по хозяйству. Чтобы обзавестись Дворовым из чащи приносили еловую или сосновую ветку и подвешивали под крышей.",
     "shortDescEng": "The Slavic spirit, keeper and owner of the bathhouse.",

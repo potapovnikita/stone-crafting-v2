@@ -1,6 +1,10 @@
 {
     "id": "goldfish",
     "name": "Золотая рыбка",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
     "img": "img/stone-art/fairytales/goldfish/preview/7.jpg",
     "shortDesc": "Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина.",
     "shortDescEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.",

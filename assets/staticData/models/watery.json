@@ -1,6 +1,10 @@
 {
     "id": "watery",
     "name": "Водяной",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
     "img": "img/stone-art/fairytales/vodyanoy/preview/1.jpg",
     "shortDesc": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой.",
     "shortDescEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",

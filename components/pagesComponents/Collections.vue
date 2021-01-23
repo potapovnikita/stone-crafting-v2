@@ -13,6 +13,7 @@
             :imgUrl="item.img"
             :imgBgUrl="item.background"
             :isReverse="index % 2 == 0"
+            @collectionitembtnclick="setCurrentScroll"
         )
         Footer
 
@@ -53,10 +54,10 @@
             ]),
         },
         mounted() {
-            this.isInit = true;
+            this.isInit = true
             const scroll = new Cookies().get('scroll')
             if (scroll)  {
-                window.scrollTo(0, scroll);
+                window.scrollTo(0, scroll)
             }
         },
     }

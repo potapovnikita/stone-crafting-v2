@@ -1,0 +1,114 @@
+{
+    "id": "kikimora",
+    "name": "Кикимора",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
+    "img": "img/stone-art/fairytales/kikimora/preview/1.jpg",
+    "shortDesc": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить. Появлялась в образе мелкой старушки на куриных лапах.",
+    "shortDescEng": "The house spirit in Slavic mythology causing harm and troubles.",
+    "description": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить. Появлялась в образе мелкой старушки на куриных лапах. Защититься от проделок Кикиморы помогал камень с отверстием, подвешенный в доме или хозяйственных постройках.",
+    "about": "<b>Высота:</b> 440&nbsp;мм. <br><b>Диаметр подставки:</b> 270&nbsp;мм. <br><br> <b>Камни:</b> : кремний, окаменелое дерево, лазурит, родонит, яшма, опал, сердолик, халцедон, кварцит, малахит, нефрит, лабрадорит, хрусталь, флюорит. <br><br><b>Металл:</b> золото, серебро, бронза. <br><br><b>Год создания:</b> 2018.",
+    "nameEng": "Kikimora",
+    "descriptionEng": "The house spirit in Slavic mythology causing harm and troubles.",
+    "aboutEng": "<b>Height:</b> 440&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b> flint, petrified tree, lazurite, rhodonite, jasper, opal, carnelian, chalcedony, quartzite, malachite, nephrite, labradorite, crystal, fluorite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+    "video": "video/gallery/kikimora.mp4",
+    "background": "img/stone-art/fairytales/kikimora/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/kikimora/1.png",
+        "img/stone-art/fairytales/kikimora/2.png",
+        "img/stone-art/fairytales/kikimora/3.png",
+        "img/stone-art/fairytales/kikimora/4.png",
+        "img/stone-art/fairytales/kikimora/5.png",
+        "img/stone-art/fairytales/kikimora/6.png",
+        "img/stone-art/fairytales/kikimora/7.png",
+        "img/stone-art/fairytales/kikimora/8.png",
+        "img/stone-art/fairytales/kikimora/9.png",
+        "img/stone-art/fairytales/kikimora/10.png",
+        "img/stone-art/fairytales/kikimora/11.png",
+        "img/stone-art/fairytales/kikimora/12.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/kikimora/preview/1.png",
+        "img/stone-art/fairytales/kikimora/preview/2.png",
+        "img/stone-art/fairytales/kikimora/preview/3.png",
+        "img/stone-art/fairytales/kikimora/preview/4.png",
+        "img/stone-art/fairytales/kikimora/preview/5.png",
+        "img/stone-art/fairytales/kikimora/preview/6.png",
+        "img/stone-art/fairytales/kikimora/preview/7.png",
+        "img/stone-art/fairytales/kikimora/preview/8.png",
+        "img/stone-art/fairytales/kikimora/preview/9.png",
+        "img/stone-art/fairytales/kikimora/preview/10.png",
+        "img/stone-art/fairytales/kikimora/preview/11.png",
+        "img/stone-art/fairytales/kikimora/preview/12.png"
+    ],
+    "modelMap": {
+        "modelClassName": "kikimora",
+        "img": "img/collections/kikimora/0.png",
+        "stonesLeft": [
+            {
+                "id": "agate",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "chalcedony",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "silicon",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "fluorite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "aragonite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "nephrite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "bronze",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "carnelian",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "silver",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "sapphire",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "id": "scarlet",
+    "name": "Аленький цветочек",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
+    "img": "img/stone-art/fairytales/alenkiy/preview/1.png",
+    "shortDesc": "Сюжетная композиция по одноименной сказке русского писателя С.Т. Аксакова, записанной им &laquo;со слов ключницы Пелагеи&raquo;.",
+    "shortDescEng": "A Russian folk tale written by Sergey Aksakov.",
+    "description": "Сюжетная композиция по одноименной сказке русского писателя С.Т. Аксакова, записанной им &laquo;со слов ключницы Пелагеи&raquo;. О волшебном цветке и великой силе любви, родившейся в диковинном саду и оживившей чудовищное сердце, о счастливой награде за верность данному слову.",
+    "about": "<b>Высота:</b> 450&nbsp;мм. <br><b>Диаметр подставки:</b> 330&nbsp;мм. <br><br><br><b>Камни:</b> ирнимит, яшма, нефрит, лазурит, кварцит, чароит, мрамор, родонит, агат, сердолик, хрусталь, кахолонг, долерит. <br><br><b>Металл:</b> золото, серебро, бронза, эмали. <br><br><br><b>Год создания:</b> 2016.",
+    "nameEng": "The Scarlet Flower",
+    "descriptionEng": "A Russian folk tale written by Sergey Aksakov. It is an adaptation of the traditional fairy tale «Beauty and the Beast».",
+    "aboutEng": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 330&nbsp;mm. <br><br><b>Stones:</b> irmenite, jasper, nephrite, lazurite, quartzite, charoite, marble, rhodonite, agate, carnelian, crystal, cacholong, dolerite. <br><br><b>Metals:</b> gold, silver, bronze, enamels. <br><br><b>Year of creation:</b> 2016.",
+    "video": "video/gallery/alenkiy.mp4",
+    "background": "img/stone-art/fairytales/alenkiy/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/alenkiy/1.png",
+        "img/stone-art/fairytales/alenkiy/2.png",
+        "img/stone-art/fairytales/alenkiy/3.png",
+        "img/stone-art/fairytales/alenkiy/4.png",
+        "img/stone-art/fairytales/alenkiy/5.png",
+        "img/stone-art/fairytales/alenkiy/6.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/alenkiy/preview/1.png",
+        "img/stone-art/fairytales/alenkiy/preview/2.png",
+        "img/stone-art/fairytales/alenkiy/preview/3.png",
+        "img/stone-art/fairytales/alenkiy/preview/4.png",
+        "img/stone-art/fairytales/alenkiy/preview/5.png",
+        "img/stone-art/fairytales/alenkiy/preview/6.png"
+    ],
+    "modelMap": {
+        "modelClassName": "scarlet",
+        "img": "img/collections/scarlet/0.png",
+        "stonesLeft": [
+            {
+                "id": "agate",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "chalcedony",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "silicon",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "fluorite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "aragonite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "nephrite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "bronze",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "carnelian",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "silver",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "sapphire",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}

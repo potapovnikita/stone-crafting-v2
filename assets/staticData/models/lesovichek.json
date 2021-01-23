@@ -1,6 +1,10 @@
 {
     "id": "lesovichek",
     "name": "Лесовичок",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
     "img": "img/stone-art/fairytales/lesovichek/preview/1.jpg",
     "shortDesc": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность. <br>С добром относился Лесовик к заблудившимся грибникам и путникам. Он являлся в образе маленького седобородого старичка и помогал найти путь, если сказать заветные слова: «Дед Лесовик, ты к лесу, а я к дому привык!»",
     "shortDescEng": "The spirit of the forest in Slavic folklore. Owner of the forest.",

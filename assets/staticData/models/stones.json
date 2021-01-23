@@ -298,5 +298,41 @@
         "name": "везувиан",
         "nameEng": "vesuvian",
         "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "labradorite",
+        "name": "лабрадорит",
+        "nameEng": "labradorite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "lepidolite",
+        "name": "лепидолит",
+        "nameEng": "lepidolite",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "diamond",
+        "name": "бриллиант",
+        "nameEng": "diamond",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "onyx",
+        "name": "оникс",
+        "nameEng": "onyx",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "shaitanianOverlap",
+        "name": "шайтанский переливт",
+        "nameEng": "shaitanian overlap",
+        "photo": "img/collections/stones/stone1.png"
+    },
+    {
+        "id": "sapphirine",
+        "name": "сапфирин",
+        "nameEng": "sapphirine",
+        "photo": "img/collections/stones/stone1.png"
     }
 ]
