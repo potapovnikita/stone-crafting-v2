@@ -53,8 +53,4 @@ button
         height 20px
         stroke darkRed
 
-@keyframes spin
-    100% { transform:rotate(360deg); }
-
-
 </style>

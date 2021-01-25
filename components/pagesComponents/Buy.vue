@@ -1,6 +1,6 @@
 <template lang="pug">
     .common-container.reverse
-        .shop_wrapper(v-if="!isAuth")
+        .shop_wrapper(v-if="!isAuth && !authenticating")
             .auth-container
                 h2.reverse {{ lang === 'ru' ? 'Введите пароль для доступа к предложениям' : 'Enter password for show offers' }}
                 input.password(:type="inputType"
@@ -11,7 +11,10 @@
                 button(@click="checkPass()") Войти
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
-        .shop_wrapper(v-if="isAuth")
+        .shop_wrapper(v-if="isAuth && isGoodsLoading || authenticating")
+            .good-loader
+                LoaderIcon
+        .shop_wrapper(v-if="isAuth && !isGoodsLoading")
             .shop_filter
                 h3.reverse {{ lang === 'ru' ? 'Категории' : 'Categories' }}
 
@@ -74,11 +77,25 @@
                             .material(v-if="good.material" v-html="lang === 'ru' ? '<b>Материал: </b>' + good.material : '<b>Material: </b>' + good.materialEng")
                             .size(v-if="good.size" v-html="lang === 'ru' ? '<b>Размер: </b>' + good.size : '<b>Size: </b>' + good.sizeEng")
                             .year(v-if="good.year" v-html="lang === 'ru' ? '<b>Год: </b>' + good.year : '<b>Year: </b>' + good.year")
-                            .price(
-                                v-if="good.pricetoView && good.pricetoView.from"
-                                v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
-                            )
-                            .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
+                            div(v-if="isPartners")
+                                .price(
+                                    v-if="good.pricetoView && good.pricetoView.from"
+                                    v-html="lang === 'ru' ? '<b>Рекомендованная цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                                )
+                                .price(
+                                    v-if="good.pricetoViewClient && good.pricetoViewClient.from"
+                                    v-html="lang === 'ru' ? '<b>Минимальная цена: </b>' + good.pricetoViewClient.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoViewClient.string, currency).string + ' $'"
+                                )
+                                .price(
+                                    v-if="!(good.pricetoViewClient && good.pricetoViewClient.from) && !(good.pricetoView && good.pricetoView.from)"
+                                    v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'"
+                                    )
+                            div(v-else)
+                                .price(
+                                    v-if="good.pricetoView && good.pricetoView.from"
+                                    v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
+                                )
+                                .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
                             .stock(v-if="good.inStock" v-html="lang === 'ru' ? '<b>Наличие: </b>' + good.inStock.name : '<b>Existence: </b>' + good.inStock.nameEng")
                             .cities(v-if="good.cities.length")
                                 b
@@ -108,7 +125,7 @@
     import { urlToPromise } from "@/plugins/getUrl";
     import axios from "axios";
     import JSZip from "jszip";
-    import { ChevronsDownIcon, ChevronsUpIcon } from 'vue-feather-icons'
+    import { ChevronsDownIcon, ChevronsUpIcon, LoaderIcon } from 'vue-feather-icons'
 
     import Input from "@/components/Input";
     import Select from "@/components/Select";
@@ -123,10 +140,19 @@
             Button,
             ChevronsDownIcon,
             ChevronsUpIcon,
+            LoaderIcon,
+        },
+        props: {
+            isPartners: {
+                type: Boolean,
+                default: false,
+            }
         },
         data() {
             return {
-                isShowMedia: true,
+                isGoodsLoading: false,
+                authenticating: true,
+                isShowMedia: true, // при разработке лучше не грузить медиа с сервера
                 visibleGoods: 5,
                 queryParams: null,
                 activeMenu: null,
@@ -249,33 +275,46 @@
                 }
             },
             async initApp() {
+                const visibilityType = this.isPartners ? 'partners' : 'clients';
+                this.isGoodsLoading = true;
                 await fb.categoriesCollection.get().then(data => {
                     data.forEach(doc => {
                         let category = doc.data()
                         category.id = doc.id
 
-                        this.categoriesArray.push(category)
+                        // хардкод скрываемой категории в клиентах
+                        if (!(category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
+                            this.categoriesArray.push(category)
+                        }
+
                     })
                 })
+
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
                         let good = doc.data()
-                        if (good.visibility && good.visibility.find(v => v.code === 'partners')) {
-                            good.id = doc.id
-                            good.activeImgId = this.activeIndex
-                            good.files = [
-                                ...good.photos.map(photo => ({
-                                    ...photo,
-                                    type: 'photo',
-                                })),
-                                ...good.videos.map(video => ({
-                                    ...video,
-                                    type: 'video',
-                                })),
-                            ]
-                            good.pricetoView = this.parsePrice(good.price);
+                        // хардкод скрываемой категории в клиентах
+                        if (!(good.category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
 
-                            this.goodsArray.push(good)
+                            if (good.visibility && good.visibility.find(v => v.code === visibilityType)) {
+                                good.id = doc.id
+                                good.activeImgId = this.activeIndex
+                                good.files = [
+                                    ...good.photos.map(photo => ({
+                                        ...photo,
+                                        type: 'photo',
+                                    })),
+                                    ...good.videos.map(video => ({
+                                        ...video,
+                                        type: 'video',
+                                    })),
+                                ]
+
+                                good.pricetoView = this.parsePrice(good.price);
+                                good.pricetoViewClient = this.parsePrice(good.priceClient);
+
+                                this.goodsArray.push(good)
+                            }
                         }
 
                     })
@@ -289,6 +328,9 @@
                 this.setActive(hashItem || 'All')
 
                 if (this.queryParams.get('id')) this.filterState.search = this.queryParams.get('id');
+
+                // конец инициализации
+                this.isGoodsLoading = false;
             }
         },
         computed: {
@@ -369,6 +411,8 @@
         async mounted() {
             this.queryParams = (new URL(window.document.location)).searchParams;
             this.isAuth = new Cookies().get('token') || this.curPass === this.queryParams.get('p');
+            this.authenticating = false;
+
             document.getElementsByTagName('body')[0].style.backgroundColor = '#faf3ed'
             window.scrollTo(0, 0);
             const header = document.getElementById('container')
@@ -397,6 +441,15 @@
         display flex
         flex-direction row
         width 100%
+
+        .good-loader
+            margin 0 auto;
+            animation: spin 4s linear infinite;
+
+            svg
+                width 30px
+                height 30px
+                stroke darkRed
 
         .auth-container
             display flex

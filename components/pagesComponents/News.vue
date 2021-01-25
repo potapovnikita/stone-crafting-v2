@@ -27,136 +27,122 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import jsonp from 'jsonp'
+    import { mapState } from 'vuex'
+    import jsonp from 'jsonp'
 
-import Company from '~/assets/staticData/company.json'
+    import Company from '~/assets/staticData/company.json'
 
-export default {
-    data() {
-        return {
-            company: Company,
-            news: [],
-        }
-    },
-    components: {
-    },
-    methods: {
-        visible: (el) => {
-            const targetPosition = {
-                top: window.pageYOffset + el.getBoundingClientRect().top,
-                left: window.pageXOffset + el.getBoundingClientRect().left,
-                right: window.pageXOffset + el.getBoundingClientRect().right,
-                bottom: window.pageYOffset + el.getBoundingClientRect().bottom,
-            }
-
-            const windowPosition = {
-                top: window.pageYOffset,
-                left: window.pageXOffset,
-                right: window.pageXOffset + document.documentElement.clientWidth,
-                bottom: window.pageYOffset + document.documentElement.clientHeight,
-            };
-
-            if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
-                targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
-                targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
-                targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
-                el.style.top = '0'
-                el.style.opacity = '1'
+    export default {
+        data() {
+            return {
+                company: Company,
+                news: [],
             }
         },
-        getDescription(text, lang) {
-            if (lang === 'ru') {
-                return text
-            } else {
-                return text
-            }
+        components: {
         },
-        async getNews(USER_ID, TOKEN, req) {
-
-            const request = req || `https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`
-
-            await jsonp(request, null, (err, res) => {
-                if (err) {
-                    console.error("Возникла ошибка", err.message);
-                } else {
-                    console.log(res)
-                    // оставляем только посты с тэгом "stonecraftinghousebyantonov"
-                    res.data && res.data.forEach(item => {
-                        if (item.caption && item.caption.toLowerCase().match(/#stonecraftinghousebyantonov/gi)) this.news.push(item)
-                    })
-                    if (res.paging && res.paging.next) this.getNews(USER_ID, TOKEN, res.paging.next)
+        methods: {
+            visible: (el) => {
+                const targetPosition = {
+                    top: window.pageYOffset + el.getBoundingClientRect().top,
+                    left: window.pageXOffset + el.getBoundingClientRect().left,
+                    right: window.pageXOffset + el.getBoundingClientRect().right,
+                    bottom: window.pageYOffset + el.getBoundingClientRect().bottom,
                 }
-            });
-        }
-    },
-    computed: {
-        ...mapState('localization', [
-            'lang',
-        ]),
-    },
-    async mounted() {
 
+                const windowPosition = {
+                    top: window.pageYOffset,
+                    left: window.pageXOffset,
+                    right: window.pageXOffset + document.documentElement.clientWidth,
+                    bottom: window.pageYOffset + document.documentElement.clientHeight,
+                };
 
-        // IGQVJXQU52bUJJQlFNcXM4V0s3VVloWks1X2lIUzJmZAGVhWG54eGNhMXM3Rk1ISktab2FSMWt4N1RlbjYxb0pOOVI0NjRRS0ZAsZAWZASbGlLWVRURjNFNFE0TnVvbmpWa21XenA5N283S090TFM3ZAEpzegZDZD
+                if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+                    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+                    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+                    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+                    el.style.top = '0'
+                    el.style.opacity = '1'
+                }
+            },
+            getDescription(text, lang) {
+                if (lang === 'ru') {
+                    return text
+                } else {
+                    return text
+                }
+            },
+            async getNews(USER_ID, TOKEN, req) {
 
-        //https://www.instagram.com/oauth/authorize/?client_id=3a74836a83d8482f864d327f82079cb8&redirect_uri=https://stone-crafting.com/&response_type=token
-        // токен для доступа к api, при смене пароля менять токен тут https://www.instagram.com/developer/clients/manage/
-
-        // такой ответ после редиректа, нужно взять код и применить его в следующем запросе
-        // https://stone-crafting.com/?code=AQCWh9xV4gp8AdizxM7Pn7179sQdSZoPhYbwut2_D4cs15RKpg-vdjiX0XZ_tHtLfNBAReaSSdbc02Ji3R-jKMUbQkbRSG1nnL5pqJLDhnQ2eU6a1TpRHDBcfwz1eMnOqnGfQFKCU0g9La1dby9ubRZ7ACEJ_0DKETB-HnubJWrrZCwjiGtlqW4QIxeiKyyXHx8jKZ_fkZ9A-0xUmANuA1ZlMFR1hWHmnyF5LdJcLwjzWA#_
-
-        // запрос для краткосрочного маркера
-        /*
-        * curl -X POST https://api.instagram.com/oauth/access_token -F client_id=983242938773357 -F client_secret=ac3d40b0da4fc62cd5244ed75e068166 -F grant_type=authorization_code -F redirect_uri=https://stone-crafting.com/ -F code=AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
-        * */
-        // code AQCqrtoY2nyhjzOqT3dCQ6xGWawg5CRFcJV4_ITagGZd5SrmLvWB1PT8Or-jaYI7hukSJUevwINNVGFdpBqJ0qT8Owe86vQmX9bwm4l-p5r4dZK6cFlDTyOX5MsyqLSg3-LN1Ch8OIi99Rrq0a_aIBvm0uOUfsCImxePpJhSjdtLW65-f5dRyUzPOPes_CCmwflNJMdazIwuvjf2ILw58qL44gGiT0dNKexZHSZQ8nFqEQ#_
-        // {"access_token": "IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz", "user_id": 17841401452273098}%
-        // {"id":"17841401452273098","username":"stone.crafting.house"}%
-        // IGQVJWRk5JTnBCN19Fc1hsSXVCTXNnMjdEcDh1aWVDNmtvQ1RzMnY4akRWcV81NGY4dTJPRlZAIanI1WTJ2cE1nMkNGd3UxdVpQRThueUtfZA1hMUWVTbTZA0a2xzRnlITWFXdjVuNnRPNTVMWDNMV09tUWcyOG5XS1VkQnJR
-        /*
-        далее нужно получить токен с большим временем действия (2 мес)
-        запрос для получения длинного аксесс токена (2 мес):
-        curl -X GET 'https://graph.instagram.com/access_token?grant_type=ig_exchange_token&&client_secret=ac3d40b0da4fc62cd5244ed75e068166&access_token=IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz'
-        ответ:
-        копируем токен в TOKEN
-        {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
-        */
-        const TOKEN = 'IGQVJVdE9BZAHhtQUdHeW4xUEhRei16TUpjeXdTU0FPeGc1djdZAdVRzZA0NuOGtOMkNOMmhmbGxYZAVVCNnJNV2E0YW1fd0E0dmVZAVjlOdThVTlcxTnNUYXBPM3JJdHBtRUdlWG9zSDVR'
-        const USER_ID = '17841401452273098' // id пользователя
-
-        // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
-        // old https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}
-
-        this.getNews(USER_ID, TOKEN);
-    },
-    watch: {},
-    updated() {
-        if (this.news.length > 0 && window.document) {
-            const elems = [...document.querySelectorAll('.description')]
-            elems.forEach((item) => {
-                this.visible(item);
-
-                // Запускаем функцию при прокрутке страницы
-                window && window.addEventListener('scroll', () => {
-                    this.visible(item);
+                const request = req || `https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}&fields=caption,media_type,permalink,media_url`
+                await jsonp(request, null, (err, res) => {
+                    if (err) {
+                        console.error("Возникла ошибка", err.message);
+                    } else {
+                        // оставляем только посты с тэгом "stonecraftinghousebyantonov"
+                        res.data && res.data.forEach(item => {
+                            if (item.caption && item.caption.toLowerCase().match(/#stonecraftinghousebyantonov/gi)) this.news.push(item)
+                        })
+                        if (res.paging && res.paging.next) this.getNews(USER_ID, TOKEN, res.paging.next)
+                    }
                 });
-            })
-        }
-    },
-}
+            }
+        },
+        computed: {
+            ...mapState('localization', [
+                'lang',
+            ]),
+        },
+        async mounted() {
+            //https://www.instagram.com/oauth/authorize/?client_id=3a74836a83d8482f864d327f82079cb8&redirect_uri=https://stone-crafting.com/&response_type=token
+            // токен для доступа к api, при смене пароля менять токен тут https://www.instagram.com/developer/clients/manage/
+
+            // такой ответ после редиректа, нужно взять код и применить его в следующем запросе
+            // https://stone-crafting.com/?code=AQCWh9xV4gp8AdizxM7Pn7179sQdSZoPhYbwut2_D4cs15RKpg-vdjiX0XZ_tHtLfNBAReaSSdbc02Ji3R-jKMUbQkbRSG1nnL5pqJLDhnQ2eU6a1TpRHDBcfwz1eMnOqnGfQFKCU0g9La1dby9ubRZ7ACEJ_0DKETB-HnubJWrrZCwjiGtlqW4QIxeiKyyXHx8jKZ_fkZ9A-0xUmANuA1ZlMFR1hWHmnyF5LdJcLwjzWA#_
+
+            // запрос для краткосрочноко маркера
+            /*
+            * curl -X POST https://api.instagram.com/oauth/access_token -F client_id=983242938773357 -F client_secret=ac3d40b0da4fc62cd5244ed75e068166 -F grant_type=authorization_code -F redirect_uri=https://stone-crafting.com/ -F code=AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
+            * */
+            // code AQAaEY4alHLHzLCJbjl7reE-PXJa5a-gnSaQCb1movTaG6E_IEOUOWq3LohF1xtdqIeqRv-8fUgAtRWTSQH92UK6wF1Q1_btFXxMlGavHZj_ZlcXjuk_ZL6n-B4aQcfkxkAiiZSaKwevuQkE4GWDkuou7dYR1h04mxU0Osd6EzfhJuWGvqUCLL4xeeLXqlafAMUfU7nEaTs2usYuKBJjfg2U62WKWd1RW4aRAURELW6W5w
+            // {"access_token": "IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz", "user_id": 17841401452273098}%
+            // {"id":"17841401452273098","username":"stone.crafting.house"}%
+
+            /*
+            далее нужно получить токен с большим временем действия (2 мес)
+            запрос для получения длинного аксесс токена (2 мес):
+            curl -X GET 'https://graph.instagram.com/access_token?grant_type=ig_exchange_token&&client_secret=ac3d40b0da4fc62cd5244ed75e068166&access_token=IGQVJYNWxrbkpMbm9XcDBYdnNJNURoZAThWWXRvT0huakNpbVg0Yl85dHlDNkw5V1V3MG4yQ1A3NE1fcjNkbWJhY1JCTUg4ak9YakhWd0lKN050VGJZAakZAIby1SODRUOUNrWDdTRzM3S1VoSEhUZA0J0bzViVzUzNXhoWGdz'
+            ответ:
+            копируем токен в токен
+            {"access_token":"IGQVJWRzNrZAEJKT2hZAeExkUDRkRnVwUUhjV2FOR0FaUU9Od3ZAhV2w0YUI5NmtDLWtsWGVfZA2U5UFZAuZAEtCNHVtTXhiREszeFRXamwyX2FUSkJPRUVQRnZAnOXZAFSHlmcmdPdmdmd1p3","token_type":"bearer","expires_in":5184000}%
+            */
+            const TOKEN = 'IGQVJYVHJ1amhWeGxGN01WNTRjOFdmbVZAuQUkzVmpLXzFKOFZADcWNBb09GRXRGamtUclFaUmhMZAERqdmZA3WWRyQ3FuN252MFRqNk82NGhJRXExNEJ3b0IycUFIRkRHQmJrM0ZALeEJ4UDg4clNObWg4UgZDZD'
+            const USER_ID = '17841401452273098' // id пользователя
+
+            // new https://graph.instagram.com/${USER_ID}/media?access_token=${TOKEN}
+            // old https://api.instagram.com/v1/users/${USER_ID}/media/recent/?access_token=${TOKEN}
+
+            this.getNews(USER_ID, TOKEN);
+        },
+        watch: {},
+        updated() {
+            if (this.news.length > 0 && window.document) {
+                const elems = [...document.querySelectorAll('.description')]
+                elems.forEach((item) => {
+                    this.visible(item);
+
+                    // Запускаем функцию при прокрутке страницы
+                    window && window.addEventListener('scroll', () => {
+                        this.visible(item);
+                    });
+                })
+            }
+        },
+    }
 </script>
 
 <style lang="stylus">
     .news-container
-        justify-content inherit;
-        min-height 90vh;
-        padding 30px 60px;
-        padding-top: 140px;
-
-        h1
-            margin-bottom 20px
-
         .lds-dual-ring
             top 20px
             margin 0 auto
@@ -237,7 +223,6 @@ export default {
                     flex-direction column-reverse
                     &:nth-child(odd)
                         flex-direction column-reverse
-                    .photo,
-                    .description
-                        width: 100%;
+                    .photo, .description
+                        width 100%
 </style>
