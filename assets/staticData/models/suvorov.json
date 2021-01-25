@@ -1,0 +1,116 @@
+{
+    "id": "suvorov",
+    "name": "Суворов",
+    "nameEng": "Suvorov",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
+    "shortDesc": "Великий русский полководец, генералиссимус. Основоположник отечественной военной теории.",
+    "shortDescEng": "Great Russian commander, generalissimo. <br>National hero of Russia.",
+    "img": "img/stone-art/historical/suvorov/preview/1.png",
+    "description": "&laquo;Кто удивил, тот победил!&raquo; <br><br>Великий русский полководец, генералиссимус. Основоположник отечественной военной теории. Национальный герой России, участвовавший в 7 крупных войнах. Выиграл 60 сражений и ни одного не проиграл.",
+    "descriptionEng": "Great Russian commander, generalissimo. <br>National hero of Russia.",
+    "about": "<b>Высота:</b> 370&nbsp;мм. <br><b>Диаметр подставки:</b> 220&nbsp;мм. <br><br> <b>Камни:</b> халцедон, мрамор, кахолонг, соколиный глаз, яшма, нефрит, лазурит, сердолик, кварцит, лунный камень, тигровый глаз, долерит, хрусталь, льдистый кварц, сапфир. <br><br><b>Металл:</b> золото, серебро, бронза, эмали. <br><br><b>Год создания:</b> 2018.",
+    "aboutEng": "<b>Height:</b> 370&nbsp;mm. <br><b>Diameter of the base:</b> 220&nbsp;mm. <br><br><b>Stones:</b> chalcedony, marble, cacholong, hawkeye stone, jasper, jade, lazurite, carnelian, quartzite, moonstone, tiger's eye, dolerite, crystal, ice quartz, sapphire. <br><br><b>Metals:</b> gold, silver, bronze, enamels. <br><br><b>Year of creation:</b> 2018",
+    "video": "",
+    "background": "img/stone-art/historical/suvorov/background/1.png",
+    "imagesFull": [
+        "img/stone-art/historical/suvorov/1.png",
+        "img/stone-art/historical/suvorov/2.png",
+        "img/stone-art/historical/suvorov/3.png",
+        "img/stone-art/historical/suvorov/4.png",
+        "img/stone-art/historical/suvorov/5.png",
+        "img/stone-art/historical/suvorov/6.png",
+        "img/stone-art/historical/suvorov/7.png"
+
+    ],
+    "imagesPreview": [
+        "img/stone-art/historical/suvorov/preview/1.png",
+        "img/stone-art/historical/suvorov/preview/2.png",
+        "img/stone-art/historical/suvorov/preview/3.png",
+        "img/stone-art/historical/suvorov/preview/4.png",
+        "img/stone-art/historical/suvorov/preview/5.png",
+        "img/stone-art/historical/suvorov/preview/6.png",
+        "img/stone-art/historical/suvorov/preview/7.png"
+
+    ],
+    "modelMap": {
+        "modelClassName": "suvorov",
+        "img": "img/collections/suvorov/0.png",
+        "stonesLeft": [
+            {
+                "id": "dolerite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "aventurine",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "hematite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "pyrite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "chalcedony",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "tigersEye",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "silver",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "bronze",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "emerald",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "ruby",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "sapphire",
+                "label": 14,
+                "stoneClassName": "stone14"
+            }
+        ]
+    }
+}

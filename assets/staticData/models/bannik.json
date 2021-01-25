@@ -1,0 +1,127 @@
+{
+    "id": "bannik",
+    "name": "Банник",
+    "creation": {
+        "title": "Год создания: 2017",
+        "titleEng": "Year of creation: 2017"
+    },
+    "img": "img/stone-art/fairytales/bannik/preview/1.jpg",
+    "shortDesc": "В поверьях восточных славян &laquo;Банник&raquo; - дух, живущий в бане, её хозяин и хранитель.",
+    "shortDescEng": "The Slavic spirit, keeper and owner of the bathhouse.",
+    "description": "В поверьях восточных славян &laquo;Банник&raquo; - дух, живущий в бане, её хозяин и хранитель. Заходя в баню, просили разрешения попариться, а после банных процедур благодарили Банника и оставляли гостинцы: кусок мыла, веник и чистой воды. Ведь если банный дух доволен, то банька жаркая, а пар легкий!</i>",
+    "about": "<b>Высота:</b> 430&nbsp;мм. <br><b>Диаметр подставки:</b> 260&nbsp;мм. <br><br> <b>Камни:</b> сердолик, агат, кварцит, халцедон, нефрит, амазонит, хрусталь, окаменелое дерево, гранат, яшма, родусит, сапфирин, хрусталь, арагонит, ирнимит, габбро, рубин. <br><br><b>Металл:</b> серебро, бронза, серебрение. <br><br><b>Год создания:</b> 2017.",
+    "nameEng": "Bannik",
+    "descriptionEng": "The Slavic spirit, keeper and owner of the bathhouse.</i>",
+    "aboutEng": "<b>Height:</b> 440&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b> flint, petrified tree, lazurite, rhodonite, jasper, opal, carnelian, chalcedony, quartzite, malachite, nephrite, labradorite, crystal, fluorite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+    "video": "",
+    "background": "img/stone-art/fairytales/bannik/1.jpg",
+    "imagesFull": [
+        "img/stone-art/fairytales/bannik/1.jpg",
+        "img/stone-art/fairytales/bannik/2.jpg",
+        "img/stone-art/fairytales/bannik/3.jpg",
+        "img/stone-art/fairytales/bannik/4.jpg",
+        "img/stone-art/fairytales/bannik/5.jpg",
+        "img/stone-art/fairytales/bannik/6.jpg",
+        "img/stone-art/fairytales/bannik/7.jpg",
+        "img/stone-art/fairytales/bannik/8.jpg",
+        "img/stone-art/fairytales/bannik/9.jpg",
+        "img/stone-art/fairytales/bannik/10.jpg",
+        "img/stone-art/fairytales/bannik/11.jpg"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/bannik/preview/1.jpg",
+        "img/stone-art/fairytales/bannik/preview/2.jpg",
+        "img/stone-art/fairytales/bannik/preview/3.jpg",
+        "img/stone-art/fairytales/bannik/preview/4.jpg",
+        "img/stone-art/fairytales/bannik/preview/5.jpg",
+        "img/stone-art/fairytales/bannik/preview/6.jpg",
+        "img/stone-art/fairytales/bannik/preview/7.jpg",
+        "img/stone-art/fairytales/bannik/preview/8.jpg",
+        "img/stone-art/fairytales/bannik/preview/9.jpg",
+        "img/stone-art/fairytales/bannik/preview/10.jpg",
+        "img/stone-art/fairytales/bannik/preview/11.jpg"
+    ],
+    "modelMap": {
+        "modelClassName": "bannik",
+        "img": "img/collections/bannik/0.png",
+        "stonesLeft": [
+            {
+                "id": "quartzite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "chalcedony",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "nephrite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "amazanite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "carnelian",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "rhodusite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "agate",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "quartz",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "irmenite",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "gabbro",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "aragonite",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "bronze",
+                "label": 15,
+                "stoneClassName": "stone15"
+            },
+            {
+                "id": "silver",
+                "label": 16,
+                "stoneClassName": "stone16"
+            }
+        ]
+    }
+}

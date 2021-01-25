@@ -1,0 +1,134 @@
+{
+    "id": "tamerlan",
+    "name": "Тамерлан",
+    "nameEng": "Tamerlane",
+    "creation": {
+        "title": "Год создания: 2015",
+        "titleEng": "Year of creation: 2015"
+    },
+    "shortDesc": "Среднеазиатский тюркский полководец и завоеватель, сыгравший существенную роль в истории Средней, Южной и Западной Азии, а также Кавказа, Поволжья и Руси.",
+    "shortDescEng": "The Middle Asian Turkic commander and conqueror.",
+    "img": "img/stone-art/historical/tamerlan/preview/1.png",
+    "description": "&laquo;Судьба у меня в руках и счастье всегда со мной&raquo;. <br><br>Среднеазиатский тюркский полководец и завоеватель, сыгравший существенную роль в истории Средней, Южной и Западной Азии, а также Кавказа, Поволжья и Руси.",
+    "descriptionEng": "The Middle Asian Turkic commander and conqueror.",
+    "about": "<b>Высота:</b> 750&nbsp;мм. <br><b>Диаметр подставки:</b> 500&nbsp;мм. <br><br><b>Камни:</b> яшма, пирит, халцедон, сердолик, лазурит, кварцит, родонит, кахолонг, бирюза, кошачий глаз, опал, пегматит, окаменелое дерево, авантюрин, агат, нефрит, ирнимит, габбро. <br><br><b>Металл:</b> серебро, бронза. <br><br><b>Год создания:</b> 2015.",
+    "aboutEng": "<b>Height:</b> 750&nbsp;mm.  <br><b>Diameter of the base:</b> 500&nbsp;mm. <br><br><b>Stones:</b> jasper, pyrite, chalcedony, carnelian, lazurite, quartzite, rhodonite, cacholong, turquoise, cat's eye, opal, pegmatite, petrified tree, aventurine, agate, nephrite, irmenite, gabbro. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2015.",
+    "video": "video/gallery/tamerlan.mp4",
+    "background": "img/stone-art/historical/tamerlan/background/1.png",
+    "imagesFull": [
+        "img/stone-art/historical/tamerlan/1.png",
+        "img/stone-art/historical/tamerlan/2.png",
+        "img/stone-art/historical/tamerlan/3.png",
+        "img/stone-art/historical/tamerlan/4.png",
+        "img/stone-art/historical/tamerlan/5.png",
+        "img/stone-art/historical/tamerlan/6.png",
+        "img/stone-art/historical/tamerlan/7.png",
+        "img/stone-art/historical/tamerlan/8.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/historical/tamerlan/preview/1.png",
+        "img/stone-art/historical/tamerlan/preview/2.png",
+        "img/stone-art/historical/tamerlan/preview/3.png",
+        "img/stone-art/historical/tamerlan/preview/4.png",
+        "img/stone-art/historical/tamerlan/preview/5.png",
+        "img/stone-art/historical/tamerlan/preview/6.png",
+        "img/stone-art/historical/tamerlan/preview/7.png",
+        "img/stone-art/historical/tamerlan/preview/8.png"
+    ],
+    "modelMap": {
+        "modelClassName": "tamerlan",
+        "img": "img/collections/tamerlan/0.png",
+        "stonesLeft": [
+            {
+                "id": "irmenite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "gabbro",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "nephrite",
+                "label": 3
+            },
+            {
+                "id": "aventurine",
+                "label": 4,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "agate",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "chalcedony",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "pyrite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "lazurite",
+                "label": 9,
+                "stoneClassName": "stone9"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "quartzite",
+                "label": 10
+            },
+            {
+                "id": "opal",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "cacholong",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "rhodonite",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "turquoise",
+                "label": 14,
+                "stoneClassName": "stone14"
+            },
+            {
+                "id": "carnelian",
+                "label": 15,
+                "stoneClassName": "stone15"
+            },
+            {
+                "id": "falconEye",
+                "label": 16,
+                "stoneClassName": "stone16"
+            },
+            {
+                "id": "bronze",
+                "label": 17,
+                "stoneClassName": "stone17"
+            },
+            {
+                "id": "silver",
+                "label": 18,
+                "stoneClassName": "stone18"
+            }
+        ]
+    }
+}

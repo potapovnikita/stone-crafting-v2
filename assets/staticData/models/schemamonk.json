@@ -1,0 +1,77 @@
+{
+    "id": "schemamonk",
+    "name": "Схимник",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
+    "img": "img/stone-art/historical/monah/preview/1.png",
+    "shortDesc": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило-Столобенская пустынь».",
+    "shortDescEng": "Neil Stolobensky – a saint of the Russian Orthodox Church.",
+    "description": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило-Столобенская пустынь». Жил в отшельничестве на острове Столобный, на озере Селигер. В скульптурных изображениях Нил изображается сидящим со склоненной на грудь головой и опирающимся на деревянные костыли. <br>Причислен к лику святых как преподобный.</i>",
+    "about": "<b>Высота:</b>: 330&nbsp;мм. <br><b>Диаметр подставки:</b> 220х150&nbsp;мм. <br><br><b>Камни:</b> нефрит, яшма, долерит, халцедон, кахолонг, мрамор, окаменелое дерево. <br><br><b>Металл:</b> серебро. <br><br><b>Год создания:</b> 2018.",
+    "nameEng": "Schemamonk",
+    "descriptionEng": "Neil Stolobensky – a saint of the Russian Orthodox Church. <br><br>The founder of the Nilo-Stolobensky Monastery, which is located on the lake Seliger.</i>",
+    "aboutEng": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 220х150&nbsp;mm. <br><br><b>Stones:</b> jade, jasper, dolerite, chalcedony, cacholong, marble, petrified tree. <br><br><b>Metals:</b> silver. <br><br><b>Year of creation:</b> 2018.",
+    "video": "",
+    "background": "img/stone-art/historical/monah/background/1.png",
+    "imagesFull": [
+        "img/stone-art/historical/monah/1.png",
+        "img/stone-art/historical/monah/2.png",
+        "img/stone-art/historical/monah/3.png",
+        "img/stone-art/historical/monah/4.png",
+        "img/stone-art/historical/monah/5.png",
+        "img/stone-art/historical/monah/6.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/historical/monah/preview/1.png",
+        "img/stone-art/historical/monah/preview/2.png",
+        "img/stone-art/historical/monah/preview/3.png",
+        "img/stone-art/historical/monah/preview/4.png",
+        "img/stone-art/historical/monah/preview/5.png",
+        "img/stone-art/historical/monah/preview/6.png"
+    ],
+    "modelMap": {
+        "modelClassName": "schemamonk",
+        "img": "img/collections/schemamonk/0.png",
+        "stonesLeft": [
+            {
+                "id": "nephrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "jasper",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "dolerite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "quartzite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "marble",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "silver",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ]
+    }
+}

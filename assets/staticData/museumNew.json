@@ -2,22 +2,270 @@
     {
         "id": "torero",
         "title": "Тореадор",
+        "titleEng": "Torero",
         "text": "Это самая большая в мире скульптура, выполненная из драгоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.",
-        "img": "img/collections/torero/0.png",
-        "background": "img/collections/torero/1.png"
+        "textEng": "Text on eng",
+        "img": "img/collections/torero/0.png"
     },
     {
         "id": "jokerNew",
         "title": "Джокер",
+        "titleEng": "The Golden Joker",
         "text": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
+        "textEng": "A playing card with image of a court jester.",
         "img": "img/collections/joker/0.png",
         "background": "img/collections/joker/1.png"
     },
     {
         "id": "makedon",
         "title": "Александр Македонский",
+        "titleEng": "Alexander the Great",
         "text": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
+        "textEng": "Conqueror and king of Macedonia",
         "img": "img/collections/makedon/0.png",
         "background": "img/collections/makedon/1.png"
+    },
+    {
+        "id": "genghiskhan",
+        "title": "Чингисхан",
+        "titleEng": "Genghis Khan",
+        "text": "Первый великий хан Монгольской империи, объединивший разрозненные монгольские и тюркские племена.",
+        "textEng": "The founder and first great khan of the Mongolian empire.",
+        "img": "img/collections/genghiskhan/0.png",
+        "background": "img/collections/genghiskhan/1.png"
+    },
+    {
+        "id": "tamerlan",
+        "title": "Тамерлан",
+        "titleEng": "Tamerlane",
+        "text": "Среднеазиатский тюркский полководец и завоеватель, сыгравший существенную роль в истории Средней, Южной и Западной Азии, а также Кавказа, Поволжья и Руси.",
+        "textEng": "The Middle Asian Turkic commander and conqueror.",
+        "img": "img/collections/tamerlan/0.png",
+        "background": "img/collections/tamerlan/1.png"
+    },
+    {
+        "id": "suvorov",
+        "title": "Суворов",
+        "titleEng": "Suvorov",
+        "text": "Великий русский полководец, генералиссимус. Основоположник отечественной военной теории.",
+        "textEng": "Great Russian commander, generalissimo. <br>National hero of Russia.",
+        "img": "img/collections/suvorov/0.png",
+        "background": "img/collections/suvorov/1.png"
+    },
+    {
+        "id": "peter",
+        "title": "Петр I",
+        "titleEng": "Peter I",
+        "text": "Последний царь всея Руси и первый Император Всероссийский. Государь-реформатор, радикально изменивший структуру управления и общественный уклад России, создавший флот и регулярную армию, преобразовавший экономику, сделавший науку и образование политической необходимостью.",
+        "textEng": "Text on eng",
+        "img": "img/collections/peter/0.png",
+        "background": "img/collections/peter/1.png"
+    },
+    {
+        "id": "catherine",
+        "title": "Екатерина II",
+        "titleEng": "Catherine II",
+        "text": "Российская императрица, царствование которой стало одним из самых значительных периодов русской истории.",
+        "textEng": "Text on eng",
+        "img": "img/collections/catherine/0.png",
+        "background": "img/collections/catherine/1.png"
+    },
+    {
+        "id": "schemamonk",
+        "title": "Схимник",
+        "titleEng": "Schemamonk",
+        "text": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило&#8209;Столобенская пустынь».",
+        "textEng": "Neil Stolobensky – a saint of the Russian Orthodox Church.",
+        "img": "img/collections/schemamonk/0.png",
+        "background": "img/collections/schemamonk/1.png"
+    },
+    {
+        "id": "scarlet",
+        "title": "Аленький цветочек",
+        "titleEng": "The Scarlet Flower",
+        "text": "Сюжетная композиция по одноименной сказке русского писателя С.Т. Аксакова, записанной им &laquo;со слов ключницы Пелагеи&raquo;.",
+        "textEng": "A Russian folk tale written by Sergey Aksakov.",
+        "img": "img/collections/scarlet/0.png",
+        "background": "img/collections/scarlet/1.png"
+    },
+    {
+        "id": "babayaga",
+        "title": "Баба Яга",
+        "titleEng": "The Scarlet Flower",
+        "text": "В славянской мифологии и фольклоре - старая лесная ведьма, живущая в глухом лесу в «избушке на курьих ножках», летающая в ступе, погоняя её пестом и заметая следы метлой.",
+        "textEng": "A forest witch in Slavic folk tales. She is the guardian of the boundaries between the world of the living and the world of the dead.",
+        "img": "img/collections/babayaga/0.png",
+        "background": "img/collections/babayaga/1.png"
+    },
+    {
+        "id": "groznyy",
+        "title": "Иван Грозный",
+        "titleEng": "Ivan Groznyy",
+        "text": "Великий князь московский, первый царь Руси. (1530 - 1584)",
+        "textEng": "Text on eng",
+        "img": "img/collections/groznyy/0.png",
+        "background": "img/collections/groznyy/1.png"
+    },
+    {
+        "id": "watery",
+        "title": "Водяной",
+        "titleEng": "Watery",
+        "text": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой.",
+        "textEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+        "img": "img/collections/watery/0.png",
+        "background": "img/collections/watery/1.png"
+    },
+    {
+        "id": "dvorovoy",
+        "title": "Дворовой",
+        "titleEng": "Dvorovoy",
+        "text": "Домашний дух древних славян,обитавший во дворе. Он являлся покровителем домашнего скота и помогал по хозяйству.",
+        "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
+        "img": "img/collections/dvorovoy/0.png",
+        "background": "img/collections/dvorovoy/1.png"
+    },
+    {
+        "id": "goldfish",
+        "title": "Золотая рыбка",
+        "titleEng": "Goldfish",
+        "text": "Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина.",
+        "textEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.",
+        "img": "img/collections/goldfish/0.png",
+        "background": "img/collections/goldfish/1.png"
+    },
+    {
+        "id": "kikimora",
+        "title": "Кикимора",
+        "titleEng": "Kikimora",
+        "text": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить.",
+        "textEng": "The house spirit in Slavic mythology causing harm and troubles.",
+        "img": "img/collections/kikimora/0.png",
+        "background": "img/collections/kikimora/1.png"
+    },
+    {
+        "id": "koschei",
+        "title": "Кощей Бессмертный",
+        "titleEng": "Koschei the Deathless",
+        "text": "Персонаж восточнославянской мифологии и фольклора. Злой чародей, смерть которого хранится на острие иглы, что спрятана в нескольких волшебных животных и предметах. Обожатель прекрасных дев и скупой хранитель сокровищ подземного мира.",
+        "textEng": "The evil wizard of the East Slavic mythology and folklore.",
+        "img": "img/collections/koschei/0.png",
+        "background": "img/collections/koschei/1.png"
+    },
+    {
+        "id": "pussBoots",
+        "title": "Кот в сапогах",
+        "titleEng": "Puss in Boots",
+        "text": "Одна из наиболее известных сказок французского писателя Шарля Перро. Центральный персонаж – ловкий, хитрый и находчивый деревенский кот, сделавший карьеру при дворе короля.",
+        "textEng": "The personage of a fairy tale in European literature.",
+        "img": "img/collections/pussBoots/0.png",
+        "background": "img/collections/pussBoots/1.png"
+    },
+    {
+        "id": "ovinnik",
+        "title": "Овинник",
+        "titleEng": "Ovinnik",
+        "text": "В традиционных верованиях восточных славян Овинник - дух места, живущий в овине (на гумне), охраняющий его и хлеб от всякой напасти, беды и нечисти.",
+        "textEng": "A spirit of the threshing barn in Slavic folklore.",
+        "img": "img/collections/ovinnik/0.png",
+        "background": "img/collections/ovinnik/1.png"
+    },
+    {
+        "id": "bannik",
+        "title": "Банник",
+        "titleEng": "Bannik",
+        "text": "В поверьях восточных славян «Банник» - дух, живущий в бане, её хозяин и хранитель.",
+        "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
+        "img": "img/collections/bannik/0.png",
+        "background": "img/collections/bannik/1.png"
+    },
+    {
+        "id": "viking",
+        "title": "Викинг",
+        "titleEng": "Viking",
+        "text": "Викинги - бесстрашные скандинавские мореходы, совершавшие набеги в раннее средневековье от Винланда до Биармии и Северной Африки.",
+        "textEng": "Text on eng.",
+        "img": "img/collections/viking/0.png",
+        "background": "img/collections/viking/1.png"
+    },
+    {
+        "id": "lesovichek",
+        "title": "Лесовичок",
+        "titleEng": "Silvan",
+        "text": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность.",
+        "textEng": "The spirit of the forest in Slavic folklore. Owner of the forest.",
+        "img": "img/collections/lesovichek/0.png",
+        "background": "img/collections/lesovichek/1.png"
+    },
+    {
+        "id": "rusalka",
+        "title": "Русалка",
+        "titleEng": "Mermaid",
+        "text": "Об этих удивительных созданиях сохранились упоминания в мифологии и фольклоре разных народов. Своим волшебным пением они заманивали моряков на верную гибель.",
+        "textEng": "In folklore, a mermaid is an aquatic creature with the head and upper body of a female human and the tail of a fish.",
+        "img": "img/collections/rusalka/0.png",
+        "background": "img/collections/rusalka/1.png"
+    },
+    {
+        "id": "snowqueen",
+        "title": "Снежная Королева",
+        "titleEng": "The Snow Queen",
+        "text": "Персонаж одноименной сказки Ганса Христиана Андерсена. Прекрасная и жестокая повелительница холодных ветров и снежных гор, восседающая на ледяном троне в сиянии кристаллов, способная заморозить любое сердце.",
+        "textEng": "Is an original fairy tale written by Hans Christian Andersen. The story centres on the struggle between good and evil.",
+        "img": "img/collections/snowqueen/0.png",
+        "background": "img/collections/snowqueen/1.png"
+    },
+    {
+        "id": "lebed",
+        "title": "Царевна-Лебедь",
+        "titleEng": "The Swan Princess",
+        "text": "Персонаж &laquo;Сказки о царе Салтане&raquo; А.С. Пушкина. Прекрасная царевна - волшебница, превратившаяся из птицы в женщину, подарившая князю Гвидону свою любовь и множество чудес в благодарность за спасение.",
+        "textEng": "The magical personage of a fairy tale «The Tale of Tsar Saltan» by Alexander Sergeyevich Pushkin.",
+        "img": "img/collections/lebed/0.png",
+        "background": "img/collections/lebed/1.png"
+    },
+    {
+        "id": "popovich",
+        "title": "Алёша Попович и Тугарин Змей",
+        "titleEng": "Title on eng",
+        "text": "Русский воин-путник, богатырь Алёша Попович прославился своими подвигами на благо отечества и князя.",
+        "textEng": "Text on eng",
+        "img": "img/collections/popovich/0.png",
+        "background": "img/collections/popovich/1.png"
+    },
+    {
+        "id": "muromets",
+        "title": "Илья Муромец и Соловей-разбойник",
+        "titleEng": "Ilya Muromets",
+        "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+        "textEng": "Text on eng",
+        "img": "img/collections/muromets/0.png",
+        "background": "img/collections/muromets/1.png"
+    },
+    {
+        "id": "svyatogor",
+        "title": "Святогор и Микула",
+        "titleEng": "Title on eng",
+        "text": "Святогор, древнейший русский богатырь и житель гор, предстает величавым воином, внушающий восхищение своей силой. Святогор превосходит по своей мощи все мыслимые пределы человеческих возможностей.",
+        "textEng": "Text on eng",
+        "img": "img/collections/svyatogor/0.png",
+        "background": "img/collections/svyatogor/1.png"
+    },
+    {
+        "id": "dobrynya",
+        "title": "Добрыня Никитич и Змей Горыныч",
+        "titleEng": "Title on eng",
+        "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+        "textEng": "Text on eng",
+        "img": "img/collections/dobrynya/0.png",
+        "background": "img/collections/dobrynya/1.png"
+    },
+    {
+        "id": "tsarevich",
+        "title": "Иван-царевич и серый волк",
+        "titleEng": "Title on eng",
+        "text": "По сюжету картины В. Васнецова «Иван-царевич на сером волке». Сказочное произведение русского изобразительного искусства, в основе которого сюжет народной сказки: Царевич с Еленой Прекрасной убегают от погони на верном сером волке.",
+        "textEng": "Text on eng",
+        "img": "img/collections/tsarevich/0.png",
+        "background": "img/collections/tsarevich/1.png"
     }
 ]

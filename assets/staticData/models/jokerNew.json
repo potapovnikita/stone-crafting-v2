@@ -1,13 +1,17 @@
 {
     "id": "jokerNew",
     "name": "Джокер 2020",
+    "creation": {
+        "title": "Год создания: 2020",
+        "titleEng": "Year of creation: 2020"
+    },
     "img": "img/stone-art/historical/jokerNew/preview/1.jpg",
     "shortDesc": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
     "shortDescEng": "A playing card with image of a court jester.",
-    "description": "<i>Вся наша жизнь – игра! <br>Есть особая карта в колоде, на которой изображен придворный шут – «Джокер». Шутник-весельчак, он – хозяин игры. <br>Он может одним своим присутствием сыграть со всеми злую шутку, а может обеспечить счастливчику головокружительный успех! Ведь «Джокер» символизирует непокорность судьбе.</i>",
+    "description": "Вся наша жизнь – игра! <br>Есть особая карта в колоде, на которой изображен придворный шут – «Джокер». Шутник-весельчак, он – хозяин игры. <br>Он может одним своим присутствием сыграть со всеми злую шутку, а может обеспечить счастливчику головокружительный успех! Ведь «Джокер» символизирует непокорность судьбе.</i>",
     "about": "<b>Камни:</b> яшма, малахит, долерит, родонит, лазурит, чароит, флюорит, амазанит, лепидолит, апатит, кахолонг, хрусталь. <br><br> <b>Металл:</b> серебро, бронза, серебрение, золочение. <br><br> <b>Год создания:</b> 2020.",
     "nameEng": "Joker 2020",
-    "descriptionEng": "<i>A playing card with image of a court jester. <br>It is an additional trump card in the deck.</i>",
+    "descriptionEng": "A playing card with image of a court jester. <br>It is an additional trump card in the deck.</i>",
     "aboutEng": "<b>Stones:</b> jasper, malachite, dolerite, rhodonite, lapis lazuli, charoite, fluorite, amazanite, lepidolite, apatite, cacholong, crystal. <br><br> <b>Metals:</b> silver, bronze, silvering, gilding. <br><br> <b>Year of creation:</b> 2020.",
     "video": "video/gallery/joker.mp4",
     "background": "img/stone-art/historical/jokerNew/1.png",
@@ -36,5 +40,71 @@
         "img/stone-art/historical/jokerNew/preview/9.png",
         "img/stone-art/historical/jokerNew/preview/10.png",
         "img/stone-art/historical/jokerNew/preview/11.png"
-    ]
+    ],
+    "modelMap": {
+        "modelClassName": "joker",
+        "img": "img/collections/joker/0.png",
+        "stonesLeft": [
+            {
+                "id": "malachite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "charoite",
+                "label": 2
+            },
+            {
+                "id": "dolerite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "jasper",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "cacholong",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "lazurite",
+                "label": 6
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "rhodonite",
+                "label": 7,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "amazanite",
+                "label": 8,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "fluorite",
+                "label": 9,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "lepidolite",
+                "label": 10,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "gold",
+                "label": 11,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "silver",
+                "label": 12,
+                "stoneClassName": "stone9"
+            }
+        ]
+    }
 }

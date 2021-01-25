@@ -1,0 +1,105 @@
+{
+    "id": "watery",
+    "name": "Водяной",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
+    "img": "img/stone-art/fairytales/vodyanoy/preview/1.jpg",
+    "shortDesc": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой.",
+    "shortDescEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+    "description": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой. Водяной пас на дне рек и озёр стада рыб и, если его задобрить, посылал рыбакам богатый улов. Поэтому для удачи всегда отпускали первую пойманную рыбу.</i>",
+    "about": "<b>Высота:</b> 550 мм. <br><b>Диаметр подставки:</b> 380 мм. <br><br><b>Камни:</b> нефрит, жадеит, халцедон, кварцит, льдистый кварц, яшма, кахолонг. <br><br><b>Металл:</b> серебро, бронза. <br><br><b>Год создания:</b> 2018.",
+    "nameEng": "Watery",
+    "descriptionEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.</i>",
+    "aboutEng": "<b>Height:</b> 550&nbsp;mm.  <br><b>Diameter of the base:</b> 380&nbsp;mm.  <br><br><b>Stones:</b> nephrite, jadeite, chalcedony, quartzite, quartz, jasper, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+    "video": "video/gallery/vodyanoy.mp4",
+    "background": "img/stone-art/fairytales/vodyanoy/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/vodyanoy/1.png",
+        "img/stone-art/fairytales/vodyanoy/2.png",
+        "img/stone-art/fairytales/vodyanoy/3.png",
+        "img/stone-art/fairytales/vodyanoy/4.png",
+        "img/stone-art/fairytales/vodyanoy/5.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/vodyanoy/preview/1.png",
+        "img/stone-art/fairytales/vodyanoy/preview/2.png",
+        "img/stone-art/fairytales/vodyanoy/preview/3.png",
+        "img/stone-art/fairytales/vodyanoy/preview/4.png",
+        "img/stone-art/fairytales/vodyanoy/preview/5.png"
+    ],
+    "modelMap": {
+        "modelClassName": "watery",
+        "img": "img/collections/watery/0.png",
+        "stonesLeft": [
+            {
+                "id": "jasper",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "moonstone",
+                "label": 2,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "iceQuartz",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "calcite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "nephrite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jadeite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "chalcedony",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "quartzite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "tigersEye",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "bronze",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "cacholong",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "coral",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "silver",
+                "label": 13,
+                "stoneClassName": "stone13"
+            }
+        ]
+    }
+}

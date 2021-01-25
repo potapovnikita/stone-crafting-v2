@@ -1,0 +1,114 @@
+{
+    "id": "lebed",
+    "name": "Царевна-Лебедь",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
+    "img": "img/stone-art/fairytales/lebed/preview/7.jpg",
+    "shortDesc": "Персонаж &laquo;Сказки о царе Салтане&raquo; А.С. Пушкина. Прекрасная царевна - волшебница, превратившаяся из птицы в женщину, подарившая князю Гвидону свою любовь и множество чудес в благодарность за спасение.",
+    "shortDescEng": "The magical personage of a fairy tale «The Tale of Tsar Saltan» by Alexander Sergeyevich Pushkin.",
+    "description": "Персонаж &laquo;Сказки о царе Салтане&raquo; А.С. Пушкина. Прекрасная царевна - волшебница, превратившаяся из птицы в женщину, подарившая князю Гвидону свою любовь и множество чудес в благодарность за спасение. У царевны этой «месяц под косой блестит, а во лбу звезда горит».</i>",
+    "about": "<b>Высота:</b> 550&nbsp;мм. <br><b>Диаметр подставки:</b> 300&nbsp;мм. <br><br> <b>Камни:</b> кварцит, шайтанский переливт, лазурит, кахолонг, мрамор, кварц, оникс, арагонит, нефрит, топазы, бриллианты, флюорит, сапфирин, уваровит, хрусталь, коралл. <br><br><b>Металл:</b> золото, серебро, бронза, золочение. <br><br><b>Год создания:</b> 2016.",
+    "nameEng": "The Swan Princess",
+    "descriptionEng": "The magical personage of a fairy tale «The Tale of Tsar Saltan» by Alexander Sergeyevich Pushkin.</i>",
+    "aboutEng": "<b>Height:</b> 550&nbsp;mm.  <br><b>Diameter of the base:</b> 300&nbsp;mm. <br><br><b>Stones:</b> quartzite, agate, diamonds, lazurite, cacholong, marble, quartz, onyx, aragonite, nephrite, topaz, sapphirine, uvarovite, crystal, coral. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2016.",
+    "video": "video/gallery/lebed.mp4",
+    "background": "img/stone-art/fairytales/lebed/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/lebed/1.png",
+        "img/stone-art/fairytales/lebed/2.png",
+        "img/stone-art/fairytales/lebed/3.png",
+        "img/stone-art/fairytales/lebed/4.png",
+        "img/stone-art/fairytales/lebed/5.png",
+        "img/stone-art/fairytales/lebed/6.png",
+        "img/stone-art/fairytales/lebed/7.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/lebed/preview/1.png",
+        "img/stone-art/fairytales/lebed/preview/2.png",
+        "img/stone-art/fairytales/lebed/preview/3.png",
+        "img/stone-art/fairytales/lebed/preview/4.png",
+        "img/stone-art/fairytales/lebed/preview/5.png",
+        "img/stone-art/fairytales/lebed/preview/6.png",
+        "img/stone-art/fairytales/lebed/preview/7.png"
+    ],
+    "modelMap": {
+        "modelClassName": "lebed",
+        "img": "img/collections/lebed/0.png",
+        "stonesLeft": [
+            {
+                "id": "nephrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "onyx",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "aragonite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "rauchtopaz",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "marble",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "lepidolite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "cacholong",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "shaitanianOverlap",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "quartzite",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "lazurite",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "topaz",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "silver",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "gold",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "sapphirine",
+                "label": 14,
+                "stoneClassName": "stone14"
+            }
+        ]
+    }
+}

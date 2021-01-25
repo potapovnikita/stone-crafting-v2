@@ -1,0 +1,113 @@
+{
+    "id": "lesovichek",
+    "name": "Лесовичок",
+    "creation": {
+        "title": "Год создания: 2018",
+        "titleEng": "Year of creation: 2018"
+    },
+    "img": "img/stone-art/fairytales/lesovichek/preview/1.jpg",
+    "shortDesc": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность. <br>С добром относился Лесовик к заблудившимся грибникам и путникам. Он являлся в образе маленького седобородого старичка и помогал найти путь, если сказать заветные слова: «Дед Лесовик, ты к лесу, а я к дому привык!»",
+    "shortDescEng": "The spirit of the forest in Slavic folklore. Owner of the forest.",
+    "description": "В славянском фольклоре «Дед Лесовик» - хранитель леса, оберегающий растительность и живность. <br>С добром относился Лесовик к заблудившимся грибникам и путникам. Он являлся в образе маленького седобородого старичка и помогал найти путь, если сказать заветные слова: «Дед Лесовик, ты к лесу, а я к дому привык!»</i>",
+    "about": "<b>Высота:</b> 375&nbsp;мм. <br><b>Диаметр подставки:</b> 240&nbsp;мм. <br><br><b>Камни:</b> агат, сердолик, нефрит, кремний, окаменелое дерево, яшма, кварцит, тигровый глаз, кахолонг, апатит, магнезит, уваровит, долерит, хрусталь, смальта. <br><br><b>Металл:</b> золото, серебро, бронза. <br><br><b>Год создания:</b> 2018.",
+    "nameEng": "Silvan",
+    "descriptionEng": "The spirit of the forest in Slavic folklore. Owner of the forest.</i>",
+    "aboutEng": "<b>Height:</b> 375&nbsp;mm.  <br><b>Diameter of the base:</b> 240&nbsp;mm.  <br><br><b>Stones:</b> agate, carnelian, nephrite, flint,  petrified tree, jasper, quartzite, tiger's eye, cacholong, apatite, magnesite, uvarovite, dolerite, crystal, smalt. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
+    "video": "",
+    "background": "img/stone-art/fairytales/lesovichek/1.jpg",
+    "imagesFull": [
+        "img/stone-art/fairytales/lesovichek/1.jpg",
+        "img/stone-art/fairytales/lesovichek/2.jpg",
+        "img/stone-art/fairytales/lesovichek/3.jpg",
+        "img/stone-art/fairytales/lesovichek/4.jpg",
+        "img/stone-art/fairytales/lesovichek/5.jpg",
+        "img/stone-art/fairytales/lesovichek/6.jpg",
+        "img/stone-art/fairytales/lesovichek/7.jpg",
+        "img/stone-art/fairytales/lesovichek/8.jpg",
+        "img/stone-art/fairytales/lesovichek/9.jpg"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/lesovichek/preview/1.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/2.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/3.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/4.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/5.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/6.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/7.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/8.jpg",
+        "img/stone-art/fairytales/lesovichek/preview/9.jpg"
+    ],
+    "modelMap": {
+        "modelClassName": "lesovichek",
+        "img": "img/collections/lesovichek/0.png",
+        "stonesLeft": [
+            {
+                "id": "uvarovite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "nephrite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "rhodonite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "vesuvian",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "agate",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "carnelian",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "chalcedony",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "magnesite",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "quartzite",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "gold",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "silver",
+                "label": 13,
+                "stoneClassName": "stone13"
+            }
+        ]
+    }
+}

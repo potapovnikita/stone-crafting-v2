@@ -1,0 +1,106 @@
+{
+    "id": "goldfish",
+    "name": "Золотая рыбка",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
+    "img": "img/stone-art/fairytales/goldfish/preview/7.jpg",
+    "shortDesc": "Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина.",
+    "shortDescEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.",
+    "description": "&laquo;Приплыла к нему рыбка, спросила: &laquo;Чего тебе надобно, старче?&raquo; <br>Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина, повествующая о том, как много даров может принести человеку милосердие, и как непомерная жадность может лишить его всего, что имел, словно штормовая волна, смывающая призрачные дворцы.</i>",
+    "about": "<b>Высота:</b> 500&nbsp;мм. <br><b>Диаметр подставки:</b> 300&nbsp;мм. <br><br> <b>Камни:</b> мрамор, халцедон, яшма, родусит, хрусталь, арагонит, сердолик, окаменелое дерево, агат, топазы. <br><br><b>Металл:</b> серебро, бронза, золочение. <br><br> <b>Год создания:</b> 2016.",
+    "nameEng": "Goldfish",
+    "descriptionEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.</i>",
+    "aboutEng": "<b>Height:</b> 500&nbsp;mm.  <br><b>Diameter of the base:</b> 300&nbsp;mm.  <br><br><b>Stones:</b> marble, chalcedony, jasper, rhodusite, crystal, aragonite, carnelian, petrified tree, agate, topaz. <br><br><b>Metals:</b> silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2016.",
+    "video": "video/gallery/gold_fish.mp4",
+    "background": "img/stone-art/fairytales/goldfish/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/goldfish/1.png",
+        "img/stone-art/fairytales/goldfish/2.png",
+        "img/stone-art/fairytales/goldfish/3.png",
+        "img/stone-art/fairytales/goldfish/4.png",
+        "img/stone-art/fairytales/goldfish/5.png",
+        "img/stone-art/fairytales/goldfish/6.png",
+        "img/stone-art/fairytales/goldfish/7.png",
+        "img/stone-art/fairytales/goldfish/8.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/goldfish/preview/1.png",
+        "img/stone-art/fairytales/goldfish/preview/2.png",
+        "img/stone-art/fairytales/goldfish/preview/3.png",
+        "img/stone-art/fairytales/goldfish/preview/4.png",
+        "img/stone-art/fairytales/goldfish/preview/5.png",
+        "img/stone-art/fairytales/goldfish/preview/6.png",
+        "img/stone-art/fairytales/goldfish/preview/7.png",
+        "img/stone-art/fairytales/goldfish/preview/8.png"
+    ],
+    "modelMap": {
+        "modelClassName": "goldfish",
+        "img": "img/collections/goldfish/0.png",
+        "stonesLeft": [
+            {
+                "id": "carnelian",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "aragonite",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "rauchtopaz",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "marble",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "rhodusite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "jasper",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "chalcedony",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "quartzite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "topaz",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "bronze",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "gold",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}

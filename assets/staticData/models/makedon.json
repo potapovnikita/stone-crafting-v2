@@ -1,13 +1,17 @@
 {
     "id": "makedon",
     "name": "Александр Македонский",
+    "creation": {
+        "title": "Год создания: 2019",
+        "titleEng": "Year of creation: 2019"
+    },
     "img": "img/stone-art/historical/makedon/preview/1.jpg",
     "shortDesc": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
     "shortDescEng": "Conqueror and king of Macedonia",
-    "description": "<i>Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.</i>",
+    "description": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
     "about": "<b>Камни:</b> пирит, флюорит, амазонит, халцедон, кварцит, родонит, яшма, тигровый глаз, долерит, радусит, кахолонг, мрамор. <br><br> <b>Металл:</b> золото, серебро, бронза. <br><br> <b>Год создания:</b> 2019.",
     "nameEng": "Alexander the Great",
-    "descriptionEng": "<i>Conqueror and king of Macedonia</i>",
+    "descriptionEng": "Conqueror and king of Macedonia",
     "aboutEng": "<b>Stones:</b> pyrite, fluorite, amazonite, chalcedony, quartzite, rhodonite, jasper, tiger’s eye, dolerite, radusite, cacholong, marble. <br><br> <b>Metals:</b> gold, silver, bronze. <br><br> <b>Year of creation:</b> 2019.",
     "video": "video/gallery/makedonski.mp4",
     "background": "img/stone-art/historical/makedon/1.png",
@@ -38,5 +42,76 @@
         "img/stone-art/historical/makedon/preview/10.png",
         "img/stone-art/historical/makedon/preview/11.png",
         "img/stone-art/historical/makedon/preview/12.png"
-    ]
+    ],
+    "modelMap": {
+        "modelClassName": "makedon",
+        "img": "img/collections/makedon/0.png",
+        "stonesLeft": [
+            {
+                "id": "marble",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "dolerite",
+                "label": 2
+            },
+            {
+                "id": "chalcedony",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "jasper",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "fluorite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "carnelian",
+                "label": 6
+            },
+            {
+                "id": "cacholong",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "radusite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "pyrite",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "bronze",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "gold",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "silver",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "porphyrite",
+                "label": 13,
+                "stoneClassName": "stone13"
+            }
+        ]
+    }
 }

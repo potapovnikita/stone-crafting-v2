@@ -1,5 +1,6 @@
 <template lang="pug">
     .common-container.gallery-container
+        .bg-bottom
         .header-container
             .header-container__title-container
                 .header-container__circle
@@ -28,29 +29,46 @@
 
             UnitNews(:mediaList="currentProduct.media")
 
-        ToreroShow(:showData="currentProduct.showBlock")
+        ModelShow(:showData="currentProduct.showBlock")
 
         Footer
 
 </template>
 <script>
 import { mapState } from 'vuex'
-import ButtonArrow from '@/components/ui/ButtonArrow'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import UnitNews from '@/components/blocksComponents/UnitNews'
 import ModelMap from '@/components/blocksComponents/ModelMap'
-import ToreroShow from '@/components/blocksComponents/ToreroShow'
+import ModelShow from '@/components/blocksComponents/ModelShow'
 import Footer from '~/components/FooterNew.vue'
 import Torero from '~/assets/staticData/models/torero.json'
 import JokerNew from '~/assets/staticData/models/jokerNew.json'
 import Makedon from '~/assets/staticData/models/makedon.json'
+import Genghiskhan from '~/assets/staticData/models/genghiskhan.json'
+import Tamerlan from '~/assets/staticData/models/tamerlan.json'
+import Schemamonk from '~/assets/staticData/models/schemamonk.json'
+import Watery from '~/assets/staticData/models/watery.json'
+import Dvorovoy from '~/assets/staticData/models/dvorovoy.json'
+import Goldfish from '~/assets/staticData/models/goldfish.json'
+import Koschei from '~/assets/staticData/models/koschei.json'
+import PussBoots from '~/assets/staticData/models/pussBoots.json'
+import Ovinnik from '~/assets/staticData/models/ovinnik.json'
+import Bannik from '~/assets/staticData/models/bannik.json'
+import Lesovichek from '~/assets/staticData/models/lesovichek.json'
+import Rusalka from '~/assets/staticData/models/rusalka.json'
+import Snowqueen from '~/assets/staticData/models/snowqueen.json'
+import Lebed from '~/assets/staticData/models/lebed.json'
+import Suvorov from '~/assets/staticData/models/suvorov.json'
+import Scarlet from '~/assets/staticData/models/scarlet.json'
+import Babayaga from '~/assets/staticData/models/babayaga.json'
+import Kikimora from '~/assets/staticData/models/kikimora.json'
 export default {
     name: 'GalleryNew',
     components: {
         GalleryPhotosSlider,
         ModelMap,
         UnitNews,
-        ToreroShow,
+        ModelShow,
         Footer,
     },
     data() {
@@ -58,7 +76,25 @@ export default {
             models: {
                 torero: Torero,
                 jokerNew: JokerNew,
-                makedon: Makedon,                
+                makedon: Makedon,
+                genghiskhan: Genghiskhan,
+                tamerlan: Tamerlan,
+                schemamonk: Schemamonk,
+                watery: Watery,
+                dvorovoy: Dvorovoy,
+                goldfish: Goldfish,
+                koschei: Koschei,
+                pussBoots: PussBoots,
+                ovinnik: Ovinnik,
+                bannik: Bannik,
+                lesovichek: Lesovichek,
+                rusalka: Rusalka,
+                snowqueen: Snowqueen,
+                lebed: Lebed,
+                suvorov: Suvorov,
+                scarlet: Scarlet,
+                babayaga: Babayaga,
+                kikimora: Kikimora,
             },
         }
     },
@@ -75,6 +111,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .gallery-container
+    position relative
+
+    .bg-bottom
+        display none
+
     .header-container
         height 683px
         background url('~assets/img/news/header-main.png') top center no-repeat
@@ -309,6 +350,17 @@ export default {
 
             &__double-line
                 width 50px
+
+        .bg-bottom
+            display block
+            position absolute
+            left 0
+            right 0
+            bottom 0
+            width 100%
+            height 563px
+            background url('~assets/img/collections/bg-m.png') no-repeat
+            background-size cover
 
     @media only screen and (max-width 490px)
         .galleryAbout-block

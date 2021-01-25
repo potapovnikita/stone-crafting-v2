@@ -1,0 +1,102 @@
+{
+    "id": "rusalka",
+    "name": "Русалка",
+    "creation": {
+        "title": "Год создания: 2017",
+        "titleEng": "Year of creation: 2017"
+    },
+    "img": "img/stone-art/fairytales/rusalka/preview/4.jpg",
+    "shortDesc": "Об этих удивительных созданиях сохранились упоминания в мифологии и фольклоре разных народов. Своим волшебным пением они заманивали моряков на верную гибель.",
+    "shortDescEng": "In folklore, a mermaid is an aquatic creature with the head and upper body of a female human and the tail of a fish.",
+    "description": "Об этих удивительных созданиях сохранились упоминания в мифологии и фольклоре разных народов. Своим волшебным пением они заманивали моряков на верную гибель. Но, если русалке доводилось полюбить человека, она щедро одаривала его богатствами, скрытыми на морском дне, хранила ему верность и даже, приняв крещение, покидала водную стихию.</i>",
+    "about": "<b>Высота:</b> 450&nbsp;мм. <br><b>Диаметр подставки:</b> 270&nbsp;мм. <br><br><b>Камни:</b> агат, халцедон, нефрит, сердолик, яшма, арагонит, флюорит, кремний, кахолонг, хрусталь, окаменелое дерево, изумруды, рубины, сапфиры, бриллианты, ирнимит, опал. <br><br><b>Металл:</b> золото, серебро, бронза, золочение. <br><br><b>Год создания:</b> 2017.",
+    "nameEng": "Mermaid",
+    "descriptionEng": "In folklore, a mermaid is an aquatic creature with the head and upper body of a female human and the tail of a fish.</i>",
+    "aboutEng": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b>  agate, chalcedony, nephrite, carnelian, jasper, aragonite, fluorite, silicon, cacholong, crystal, petrified tree, emeralds, rubies, sapphires, diamonds, irnimite, opal. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2017.",
+    "video": "video/gallery/rusalka.mp4",
+    "background": "img/stone-art/fairytales/rusalka/background/1.png",
+    "imagesFull": [
+        "img/stone-art/fairytales/rusalka/1.png",
+        "img/stone-art/fairytales/rusalka/2.png",
+        "img/stone-art/fairytales/rusalka/3.png",
+        "img/stone-art/fairytales/rusalka/4.png",
+        "img/stone-art/fairytales/rusalka/5.png",
+        "img/stone-art/fairytales/rusalka/6.png"
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/rusalka/preview/1.png",
+        "img/stone-art/fairytales/rusalka/preview/2.png",
+        "img/stone-art/fairytales/rusalka/preview/3.png",
+        "img/stone-art/fairytales/rusalka/preview/4.png",
+        "img/stone-art/fairytales/rusalka/preview/5.png",
+        "img/stone-art/fairytales/rusalka/preview/6.png"
+    ],
+    "modelMap": {
+        "modelClassName": "rusalka",
+        "img": "img/collections/rusalka/0.png",
+        "stonesLeft": [
+            {
+                "id": "agate",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "chalcedony",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "silicon",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "fluorite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "aragonite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "nephrite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "petrifiedTree",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "bronze",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "carnelian",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "silver",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "sapphire",
+                "label": 12,
+                "stoneClassName": "stone12"
+            }
+        ]
+    }
+}
