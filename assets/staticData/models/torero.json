@@ -142,6 +142,7 @@
     ],
     "modelMap": {
         "modelClassName": "torero",
+        "hasBackground": true,
         "img": "img/collections/torero/0.png",
         "stonesLeft": [
             {

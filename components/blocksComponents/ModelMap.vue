@@ -1,23 +1,23 @@
 <template lang="pug">
     .model-container
-        div(:class="['model-container__wrapper-content', `${toreroMap.modelClassName}`]")
-            div(:class="`${toreroMap.modelClassName}__bg-pic`")
-            ul.model-container__stones.mobile-hide(v-if="toreroMap")
+        div(:class="['model-container__wrapper-content', `${modelMap.modelClassName}`]")
+            div(v-if="modelMap.hasBackground" :class="`${modelMap.modelClassName}__bg-pic`")
+            ul.model-container__stones.mobile-hide(v-if="modelMap")
                 li(v-for="stone in stonesListLeft")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                         p.model-container__stone-title {{getStoneTitle(stone)}}
 
-            div(:class="`${toreroMap.modelClassName}__pic`")
-                img.model-container__photo(:src="getImg(toreroMap.img)")
+            div(:class="['model-container__wrapper-img',`${modelMap.modelClassName}__pic`]")
+                img.model-container__photo(:src="getImg(modelMap.img)")
                 .model-container__point(
                     v-for="(stone, index) in stonesList"
                     v-if="stone.stoneClassName"
                     :key="stone.id"
-                    :class="[`${toreroMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
+                    :class="[`${modelMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
 
-            ul.model-container__stones.mobile-hide(v-if="toreroMap")
+            ul.model-container__stones.mobile-hide(v-if="modelMap")
                 li(v-for="stone in stonesListRight")
                     .model-container__wrapper-stone
                         .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
@@ -25,14 +25,14 @@
                         p.model-container__stone-title {{getStoneTitle(stone)}}
 
             .model-container__stones-mobile-container
-                ul.model-container__stones(v-if="toreroMap")
+                ul.model-container__stones(v-if="modelMap")
                     li(v-for="stone in stonesListLeft")
                         .model-container__wrapper-stone
                             .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
                                 .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                             p.model-container__stone-title {{getStoneTitle(stone)}}
 
-                ul.model-container__stones(v-if="toreroMap")
+                ul.model-container__stones(v-if="modelMap")
                     li(v-for="stone in stonesListRight")
                         .model-container__wrapper-stone
                             .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
@@ -47,7 +47,7 @@ import Stones from '~/assets/staticData/models/stones.json'
 export default {
     name: 'ModelMap',
     props: {
-        toreroMap: Object,
+        modelMap: Object,
     },
     data() {
         return {
@@ -100,8 +100,8 @@ export default {
         ]),
     },
     mounted() {
-        this.stonesListLeft = this.mappedStones(this.toreroMap.stonesLeft)
-        this.stonesListRight = this.mappedStones(this.toreroMap.stonesRight)
+        this.stonesListLeft = this.mappedStones(this.modelMap.stonesLeft)
+        this.stonesListRight = this.mappedStones(this.modelMap.stonesRight)
         this.stonesList = [].concat(this.stonesListLeft, this.stonesListRight)
     }
 }
@@ -113,6 +113,11 @@ export default {
         display flex
         justify-content space-between
         position relative
+        max-width 1320px
+
+    &__wrapper-img
+        max-width 700px
+        max-height 1100px
 
     &__photo
         width 100%
@@ -125,7 +130,7 @@ export default {
 
         & li + li
             padding-top 57px
-
+            
     &__wrapper-stone
         display flex
         align-items center
@@ -180,13 +185,45 @@ export default {
 
     &__stones-mobile-container
         display none
+
+    @media only screen and (max-width 1440px)
+        &__wrapper-content
+            max-width 1120px
+
+        &__wrapper-img
+            max-width 550px
+            max-height 800px
+
+        &__photo
+            width auto
+            height 100%
     
     @media only screen and (max-width 1280px)
+        &__wrapper-content
+            max-width 970px
+
+        &__wrapper-img
+            max-width 420px
+            max-height 670px
+
+        &__photo
+            width 100%
+            height auto
+
         &__point
             width 22px
             height 22px
 
     @media only screen and (max-width 1000px)
+
+        &__wrapper-content
+            max-width unset
+            padding 0 10px
+
+        &__wrapper-img
+            max-width 400px
+            max-height 660px
+
         &__stone-slot
             width 34px
             height 34px
@@ -200,9 +237,16 @@ export default {
             font-size 12px
 
     @media only screen and (max-width 767px)
+        &__wrapper-content
+            display block
+            padding 0
+
         &__stones
             & li + li
                 padding-top 2px
+
+            &.mobile-hide
+                display none
 
         &__stones-mobile-container
             display flex
@@ -212,10 +256,16 @@ export default {
             & > ul + ul
                 margin-left 10px
 
+    @media only screen and (max-width 400px)
+         &__wrapper-img
+            max-width unset
+            max-height unset
+            width 360px
+
 .torero
-    max-width 1320px
 
     .model-container__stones
+        display block
         margin-top 170px
         padding-left 20px
 
@@ -265,7 +315,6 @@ export default {
         left 126px
 
     @media only screen and (max-width 1440px)
-        max-width 1120px
 
         .model-container__stones
             margin-top 120px
@@ -311,7 +360,6 @@ export default {
             left 99px
 
     @media only screen and (max-width 1280px)
-        max-width 974px
 
         .model-container__stones
             margin-top 30px
@@ -411,8 +459,6 @@ export default {
             background-position 0 108%
 
     @media only screen and (max-width 767px)
-        display block
-        padding 0
 
         .model-container__stones
             margin-top 0
@@ -439,5 +485,22 @@ export default {
     @media only screen and (max-width 490px)
         &__bg-pic
             background-position -220px 108%
+
+.joker,
+.schemamonk,
+.suvorov,
+.kikimora,
+.pussBoots,
+.lebed
+    @media only screen and (max-width 1280px)
+        &__pic
+            img
+                width auto
+                height 100%
+
+    @media only screen and (max-width 767px)
+        &__pic
+            img
+                height 660px
 
 </style>

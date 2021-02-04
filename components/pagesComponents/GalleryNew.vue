@@ -19,7 +19,7 @@
 
         GalleryPhotosSlider(v-if="currentProduct.imagesPreview" :imgSrcList="currentProduct.imagesPreview")
 
-        ModelMap(v-if="currentProduct.modelMap" :toreroMap="currentProduct.modelMap")
+        ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
 
         .gallerySmi-block(v-if="currentProduct.media")
             h2.gallerySmi-block__title
