@@ -13,16 +13,27 @@
                             ul.order_container__items(v-if="option.links")
                                 li(v-for="(item, index) in option.links" :key="`item_${index}`")
                                     p.order_container__item-name(v-html="lang === 'ru' ? item.name : item.nameEng")
+        
+        OrderModel(:orderModels="sculptures.models")
+        OrderWork(:workSteps="sculptures.steps")
     
 </template>
 <script>
 import { mapState } from 'vuex'
 import Order from '~/assets/staticData/order.json'
+import OrderModel from '@/components/blocksComponents/OrderModel'
+import OrderWork from '@/components/blocksComponents/OrderWork'
+import Sculptures from '~/assets/staticData/orders/sculptures.json'
 export default {
     name: 'Order',
+    components: {
+        OrderModel,
+        OrderWork,
+    },
     data() {
         return {
             orderOptions: Order.options,
+            sculptures: Sculptures,
         }
     },
     computed: {
