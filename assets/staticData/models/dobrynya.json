@@ -1,0 +1,55 @@
+{
+    "id": "dobrynya",
+    "name": "Добрыня Никитич и Змей Горыныч",
+    "nameEng": "Title on eng",
+    "description": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "dobrynya",
+        "img": "img/collections/dobrynya/0.png",
+        "stonesLeft": [
+            {
+                "id": "quartzite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "cacholong",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "jasper",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "pyrite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "marble",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "chalcedony",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "silver",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "tigersEye",
+                "label": 8,
+                "stoneClassName": "stone8"
+            }
+        ]
+    }
+}

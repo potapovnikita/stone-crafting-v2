@@ -1,0 +1,95 @@
+{
+    "id": "muromets",
+    "name": "Илья Муромец и Соловей-разбойник",
+    "nameEng": "Ilya Muromets",
+    "description": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "muromets",
+        "img": "img/collections/muromets/0.png",
+        "stonesLeft": [
+            {
+                "id": "pyrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "hematite",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "quartzite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "jasper",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "chalcedony",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "marble",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "lazurite",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "agate",
+                "label": 8,
+                "stoneClassName": "stone8"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "nephrite",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "carnelian",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "dolerite",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "pegmatite",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "bronze",
+                "label": 14,
+                "stoneClassName": "stone14"
+            },
+            {
+                "id": "emali",
+                "label": 15,
+                "stoneClassName": "stone15"
+            },
+            {
+                "id": "silver",
+                "label": 16,
+                "stoneClassName": "stone16"
+            }
+        ]
+    }
+}

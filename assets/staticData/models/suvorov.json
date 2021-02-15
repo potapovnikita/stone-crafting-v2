@@ -40,76 +40,66 @@
         "img": "img/collections/suvorov/0.png",
         "stonesLeft": [
             {
-                "id": "dolerite",
+                "id": "chalcedony",
                 "label": 1,
                 "stoneClassName": "stone1"
             },
             {
-                "id": "aventurine",
+                "id": "marble",
                 "label": 2,
                 "stoneClassName": "stone2"
             },
             {
-                "id": "hematite",
+                "id": "nephrite",
                 "label": 3,
                 "stoneClassName": "stone3"
             },
             {
-                "id": "pyrite",
+                "id": "jasper",
                 "label": 4,
                 "stoneClassName": "stone4"
             },
             {
-                "id": "chalcedony",
+                "id": "lazurite",
                 "label": 5,
                 "stoneClassName": "stone5"
             },
             {
-                "id": "jasper",
+                "id": "cacholong",
                 "label": 6,
                 "stoneClassName": "stone6"
             },
             {
-                "id": "petrifiedTree",
+                "id": "moonstone",
                 "label": 7,
                 "stoneClassName": "stone7"
             }
         ],
         "stonesRight": [
             {
-                "id": "tigersEye",
+                "id": "dolerite",
                 "label": 8,
                 "stoneClassName": "stone8"
             },
             {
-                "id": "gold",
+                "id": "quartz",
                 "label": 9,
                 "stoneClassName": "stone9"
             },
             {
-                "id": "silver",
+                "id": "iceQuartz",
                 "label": 10,
                 "stoneClassName": "stone10"
             },
             {
-                "id": "bronze",
+                "id": "silver",
                 "label": 11,
                 "stoneClassName": "stone11"
             },
             {
-                "id": "emerald",
+                "id": "gold",
                 "label": 12,
                 "stoneClassName": "stone12"
-            },
-            {
-                "id": "ruby",
-                "label": 13,
-                "stoneClassName": "stone13"
-            },
-            {
-                "id": "sapphire",
-                "label": 14,
-                "stoneClassName": "stone14"
             }
         ]
     }

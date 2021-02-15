@@ -1,0 +1,85 @@
+{
+    "id": "svyatogor",
+    "name": "Святогор и Микула",
+    "nameEng": "Title on eng",
+    "description": "Святогор, древнейший русский богатырь и житель гор, предстает величавым воином, внушающий восхищение своей силой. Святогор превосходит по своей мощи все мыслимые пределы человеческих возможностей.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "svyatogor",
+        "img": "img/collections/svyatogor/0.png",
+        "stonesLeft": [
+            {
+                "id": "pyrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "shaitanianOverlap",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "quartzite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "crystal",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "jasper",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "lazurite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "tigersEye",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "carnelian",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "chalcedony",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "nephrite",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "dolerite",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "marble",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "bronze",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "silver",
+                "label": 14,
+                "stoneClassName": "stone14"
+            }
+        ]
+    }
+}
