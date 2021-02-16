@@ -1,0 +1,85 @@
+{
+    "id": "tsarevich",
+    "name": "Иван-царевич и серый волк",
+    "nameEng": "Title on eng",
+    "description": "По сюжету картины В. Васнецова «Иван-царевич на сером волке». Сказочное произведение русского изобразительного искусства, в основе которого сюжет народной сказки: Царевич с Еленой Прекрасной убегают от погони на верном сером волке.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "tsarevich",
+        "img": "img/collections/tsarevich/0.png",
+        "stonesLeft": [
+            {
+                "id": "chalcedony",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "jasper",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "lazurite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "marble",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "quartzite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "nephrite",
+                "label": 7,
+                "stoneClassName": "stone7"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "labradorite",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "iceQuartz",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "cacholong",
+                "label": 10,
+                "stoneClassName": "stone10"
+            },
+            {
+                "id": "tigersEye",
+                "label": 11,
+                "stoneClassName": "stone11"
+            },
+            {
+                "id": "rhodonite",
+                "label": 12,
+                "stoneClassName": "stone12"
+            },
+            {
+                "id": "bronze",
+                "label": 13,
+                "stoneClassName": "stone13"
+            },
+            {
+                "id": "emali",
+                "label": 14,
+                "stoneClassName": "stone14"
+            }
+        ]
+    }
+}

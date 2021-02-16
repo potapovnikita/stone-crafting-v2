@@ -62,6 +62,14 @@ import Suvorov from '~/assets/staticData/models/suvorov.json'
 import Scarlet from '~/assets/staticData/models/scarlet.json'
 import Babayaga from '~/assets/staticData/models/babayaga.json'
 import Kikimora from '~/assets/staticData/models/kikimora.json'
+import Peter from '~/assets/staticData/models/peter.json'
+import Catherine from '~/assets/staticData/models/catherine.json'
+import Groznyy from '~/assets/staticData/models/groznyy.json'
+import Popovich from '~/assets/staticData/models/popovich.json'
+import Muromets from '~/assets/staticData/models/muromets.json'
+import Svyatogor from '~/assets/staticData/models/svyatogor.json'
+import Dobrynya from '~/assets/staticData/models/dobrynya.json'
+import Tsarevich from '~/assets/staticData/models/tsarevich.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -95,6 +103,14 @@ export default {
                 scarlet: Scarlet,
                 babayaga: Babayaga,
                 kikimora: Kikimora,
+                peter: Peter,
+                catherine: Catherine,
+                groznyy: Groznyy,
+                popovich: Popovich,
+                muromets: Muromets,
+                svyatogor: Svyatogor,
+                dobrynya: Dobrynya,
+                tsarevich: Tsarevich,
             },
         }
     },

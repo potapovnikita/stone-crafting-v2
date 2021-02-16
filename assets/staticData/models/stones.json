@@ -3,336 +3,372 @@
         "id": "jasper",
         "name": "яшма",
         "nameEng": "jasper",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/jasper.jpg"
     },
     {
         "id": "rhodonite",
         "name": "родонит",
         "nameEng": "rhodonite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/rhodonite.jpg"
     },
     {
         "id": "rhodusite",
         "name": "родусит",
         "nameEng": "rhodusite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/rhodusite.jpg"
     },
     {
         "id": "dolerite",
         "name": "долерит",
         "nameEng": "dolerite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/dolerite.jpg"
     },
     {
         "id": "silicon",
         "name": "кремний",
         "nameEng": "silicon",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/silicon.jpg"
     },
     {
         "id": "cacholong",
         "name": "кахолонг",
         "nameEng": "cacholong",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/cacholong.jpg"
     },
     {
         "id": "falconEye",
         "name": "соколиный глаз",
         "nameEng": "falcon eye",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/falconEye.png"
     },
     {
         "id": "garnet",
         "name": "гранат",
         "nameEng": "garnet",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/garnet.jpg"
     },
     {
         "id": "gold",
         "name": "золото",
         "nameEng": "gold",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/gold.jpg"
     },
     {
         "id": "silver",
         "name": "серебро",
         "nameEng": "silver",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/silver.jpg"
     },
     {
         "id": "malachite",
         "name": "малахит",
         "nameEng": "malachite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/malachite.jpg"
     },
     {
         "id": "charoite",
         "name": "чароит",
         "nameEng": "charoite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/charoite.jpg"
     },
     {
         "id": "lazurite",
         "name": "лазурит",
         "nameEng": "lazurite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/lazurite.jpg"
     },
     {
         "id": "amazanite",
         "name": "амазанит",
         "nameEng": "amazanite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/amazanite.png"
     },
     {
         "id": "fluorite",
         "name": "флюорит",
         "nameEng": "fluorite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/fluorite.png"
     },
     {
         "id": "lepidolite",
         "name": "лепидолит",
         "nameEng": "lepidolite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/lepidolite.jpg"
     },
     {
         "id": "marble",
         "name": "мрамор",
         "nameEng": "marble",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/marble.jpg"
     },
     {
         "id": "chalcedony",
         "name": "халцедон",
         "nameEng": "chalcedony",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/chalcedony.jpg"
     },
     {
         "id": "carnelian",
         "name": "сердолик",
         "nameEng": "carnelian",
-        "photo": "img/collections/stones/stone1.png"
-    },
-    {
-        "id": "radusite",
-        "name": "радусит",
-        "nameEng": "radusite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/carnelian.png"
     },
     {
         "id": "pyrite",
         "name": "пирит",
         "nameEng": "pyrite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/pyrite.jpg"
     },
     {
         "id": "bronze",
         "name": "бронза",
         "nameEng": "bronze",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/bronze.jpg"
     },
     {
         "id": "porphyrite",
         "name": "порфирит",
         "nameEng": "porphyrite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/porphyrite.jpg"
     },
     {
         "id": "uvarovite",
         "name": "уваровит",
         "nameEng": "uvarovite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/uvarovite.jpg"
     },
     {
         "id": "nephrite",
         "name": "нефрит",
         "nameEng": "nephrite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/nephrite.jpg"
     },
     {
         "id": "aventurine",
         "name": "авантюрин",
         "nameEng": "aventurine",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/aventurine.jpg"
     },
     {
         "id": "aventurineSlate",
         "name": "авантюриновый сланец",
         "nameEng": "aventurine slate",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/aventurineSlate.png"
     },
     {
         "id": "tigersEye",
         "name": "тигровый глаз",
         "nameEng": "tiger's eye",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/tigersEye.jpg"
     },
     {
         "id": "agate",
         "name": "агат",
         "nameEng": "agate",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/agate.jpg"
     },
     {
         "id": "quartzite",
         "name": "кварцит",
         "nameEng": "quartzite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/quartzite.jpg"
     },
     {
         "id": "irmenite",
         "name": "ирнимит",
         "nameEng": "irmenite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/irmenite.png"
     },
     {
         "id": "gabbro",
         "name": "габбро",
         "nameEng": "gabbro",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/gabbro.jpg"
     },
     {
         "id": "opal",
         "name": "опал",
         "nameEng": "opal",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/opal.jpg"
     },
     {
         "id": "turquoise",
         "name": "бирюза",
         "nameEng": "turquoise",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/turquoise.jpg"
     },
     {
         "id": "petrifiedTree",
         "name": "окаменелое дерево",
         "nameEng": "petrified tree",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/petrifiedTree.jpg"
     },
     {
         "id": "moonstone",
         "name": "лунный камень",
         "nameEng": "moonstone",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/moonstone.png"
     },
     {
         "id": "quartz",
         "name": "кварц",
         "nameEng": "quartz",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/quartz.jpg"
     },
     {
         "id": "iceQuartz",
         "name": "льдистый кварц",
         "nameEng": "ice quartz",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/iceQuartz.png"
     },
     {
         "id": "calcite",
         "name": "кальцит",
         "nameEng": "calcite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/calcite.jpg"
     },
     {
         "id": "jadeite",
         "name": "жадеит",
         "nameEng": "jadeite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/jadeite.jpg"
     },
     {
         "id": "coral",
         "name": "коралл",
         "nameEng": "coral",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/coral.jpg"
     },
     {
         "id": "magnesite",
         "name": "магнезит",
         "nameEng": "magnesite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/magnesite.jpg"
     },
     {
         "id": "aragonite",
         "name": "арагонит",
         "nameEng": "aragonite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/aragonite.jpg"
     },
     {
         "id": "rauchtopaz",
         "name": "раухтопаз",
         "nameEng": "rauchtopaz",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/rauchtopaz.jpg"
     },
     {
         "id": "topaz",
         "name": "топаз",
         "nameEng": "topaz",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/topaz.jpg"
     },
     {
         "id": "hematite",
         "name": "гематит",
         "nameEng": "hematite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/hematite.jpg"
     },
     {
         "id": "emerald",
         "name": "изумруд",
         "nameEng": "emerald",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/emerald.png"
     },
     {
         "id": "ruby",
         "name": "рубин",
         "nameEng": "ruby",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/ruby.png"
     },
     {
         "id": "sapphire",
         "name": "сапфир",
         "nameEng": "sapphire",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/sapphire.jpg"
     },
     {
         "id": "vesuvian",
         "name": "везувиан",
         "nameEng": "vesuvian",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/vesuvian.jpg"
     },
     {
         "id": "labradorite",
         "name": "лабрадорит",
         "nameEng": "labradorite",
-        "photo": "img/collections/stones/stone1.png"
-    },
-    {
-        "id": "lepidolite",
-        "name": "лепидолит",
-        "nameEng": "lepidolite",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/labradorite.jpg"
     },
     {
         "id": "diamond",
         "name": "бриллиант",
         "nameEng": "diamond",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/diamond.jpg"
     },
     {
         "id": "onyx",
         "name": "оникс",
         "nameEng": "onyx",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/onyx.png"
     },
     {
         "id": "shaitanianOverlap",
         "name": "шайтанский переливт",
         "nameEng": "shaitanian overlap",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/shaitanianOverlap.jpg"
     },
     {
         "id": "sapphirine",
         "name": "сапфирин",
         "nameEng": "sapphirine",
-        "photo": "img/collections/stones/stone1.png"
+        "photo": "img/collections/stones/sapphirine.jpg"
+    },
+    {
+        "id": "rockCrystal",
+        "name": "горный хрусталь",
+        "nameEng": "rock crystal",
+        "photo": "img/collections/stones/rockCrystal.png"
+    },
+    {
+        "id": "mokhovoyAgat",
+        "name": "моховой агат",
+        "nameEng": "mokhovoy agat",
+        "photo": "img/collections/stones/mokhovoyAgat.jpg"
+    },
+    {
+        "id": "bychiyGlaz",
+        "name": "бычий глаз",
+        "nameEng": "bychiy glaz",
+        "photo": "img/collections/stones/bychiyGlaz.png"
+    },
+    {
+        "id": "crystal",
+        "name": "хрусталь",
+        "nameEng": "crystal",
+        "photo": "img/collections/stones/crystal.png"
+    },
+    {
+        "id": "emali",
+        "name": "эмали",
+        "nameEng": "emali",
+        "photo": "img/collections/stones/emali.jpg"
+    },
+    {
+        "id": "eudialyte",
+        "name": "эвдиалит",
+        "nameEng": "eudialyte",
+        "photo": "img/collections/stones/eudialyte.jpg"
+    },
+    {
+        "id": "granite",
+        "name": "гранит",
+        "nameEng": "granite",
+        "photo": "img/collections/stones/granite.jpg"
+    },
+    {
+        "id": "pegmatite",
+        "name": "пегматит",
+        "nameEng": "pegmatite",
+        "photo": "img/collections/stones/pegmatite.jpg"
     }
 ]

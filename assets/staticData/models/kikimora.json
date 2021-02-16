@@ -48,64 +48,64 @@
         "img": "img/collections/kikimora/0.png",
         "stonesLeft": [
             {
-                "id": "agate",
+                "id": "petrifiedTree",
                 "label": 1,
                 "stoneClassName": "stone1"
             },
             {
-                "id": "chalcedony",
+                "id": "silicon",
                 "label": 2,
                 "stoneClassName": "stone2"
             },
             {
-                "id": "silicon",
+                "id": "lazurite",
                 "label": 3,
                 "stoneClassName": "stone3"
             },
             {
-                "id": "fluorite",
+                "id": "jasper",
                 "label": 4,
                 "stoneClassName": "stone4"
             },
             {
-                "id": "aragonite",
+                "id": "opal",
                 "label": 5,
                 "stoneClassName": "stone5"
             },
             {
-                "id": "nephrite",
+                "id": "chalcedony",
                 "label": 6,
                 "stoneClassName": "stone6"
             }
         ],
         "stonesRight": [
             {
-                "id": "petrifiedTree",
+                "id": "malachite",
                 "label": 7,
                 "stoneClassName": "stone7"
             },
             {
-                "id": "bronze",
+                "id": "labradorite",
                 "label": 8,
                 "stoneClassName": "stone8"
             },
             {
-                "id": "gold",
+                "id": "quartzite",
                 "label": 9,
                 "stoneClassName": "stone9"
             },
             {
-                "id": "carnelian",
+                "id": "nephrite",
                 "label": 10,
                 "stoneClassName": "stone10"
             },
             {
-                "id": "silver",
+                "id": "bronze",
                 "label": 11,
                 "stoneClassName": "stone11"
             },
             {
-                "id": "sapphire",
+                "id": "silver",
                 "label": 12,
                 "stoneClassName": "stone12"
             }

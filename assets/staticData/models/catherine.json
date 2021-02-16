@@ -1,0 +1,65 @@
+{
+    "id": "catherine",
+    "name": "Екатерина II",
+    "nameEng": "Catherine II",
+    "description": "Российская императрица, царствование которой стало одним из самых значительных периодов русской истории.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "catherine",
+        "img": "img/collections/catherine/0.png",
+        "stonesLeft": [
+            {
+                "id": "chalcedony",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "quartzite",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "lepidolite",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "tigersEye",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "lazurite",
+                "label": 5,
+                "stoneClassName": "stone5"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "marble",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "jasper",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "silver",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            },
+            {
+                "id": "diamond",
+                "label": 10,
+                "stoneClassName": "stone10"
+            }
+        ]
+    }
+}

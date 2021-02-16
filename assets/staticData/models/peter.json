@@ -1,0 +1,60 @@
+{
+    "id": "peter",
+    "name": "Петр I",
+    "nameEng": "Peter I",
+    "description": "Последний царь всея Руси и первый Император Всероссийский. Государь-реформатор, радикально изменивший структуру управления и общественный уклад России, создавший флот и регулярную армию, преобразовавший экономику, сделавший науку и образование политической необходимостью.",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "peter",
+        "img": "img/collections/peter/0.png",
+        "stonesLeft": [
+            {
+                "id": "nephrite",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "cacholong",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "jasper",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "dolerite",
+                "label": 4,
+                "stoneClassName": "stone4"
+            },
+            {
+                "id": "marble",
+                "label": 5,
+                "stoneClassName": "stone5"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "granite",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "jasper",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "silver",
+                "label": 8,
+                "stoneClassName": "stone8"
+            },
+            {
+                "id": "gold",
+                "label": 9,
+                "stoneClassName": "stone9"
+            }
+        ]
+    }
+}

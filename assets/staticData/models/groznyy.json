@@ -1,0 +1,55 @@
+{
+    "id": "groznyy",
+    "name": "Иван Грозный",
+    "nameEng": "Ivan Groznyy",
+    "description": "Великий князь московский, первый царь Руси. (1530 - 1584)",
+    "descriptionEng": "Text on eng",
+    "modelMap": {
+        "modelClassName": "groznyy",
+        "img": "img/collections/groznyy/0.png",
+        "stonesLeft": [
+            {
+                "id": "jasper",
+                "label": 1,
+                "stoneClassName": "stone1"
+            },
+            {
+                "id": "quartzite",
+                "label": 2,
+                "stoneClassName": "stone2"
+            },
+            {
+                "id": "chalcedony",
+                "label": 3,
+                "stoneClassName": "stone3"
+            },
+            {
+                "id": "eudialyte",
+                "label": 4,
+                "stoneClassName": "stone4"
+            }
+        ],
+        "stonesRight": [
+            {
+                "id": "tigersEye",
+                "label": 5,
+                "stoneClassName": "stone5"
+            },
+            {
+                "id": "cacholong",
+                "label": 6,
+                "stoneClassName": "stone6"
+            },
+            {
+                "id": "gold",
+                "label": 7,
+                "stoneClassName": "stone7"
+            },
+            {
+                "id": "silver",
+                "label": 8,
+                "stoneClassName": "stone8"
+            }
+        ]
+    }
+}
