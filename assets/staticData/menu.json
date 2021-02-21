@@ -25,6 +25,12 @@
         "link": "/virtual-museum"
     },
     {
+        "name": "Проект</br>\"Столица Каменная\"",
+        "nameEng": "Stone</br>Capital",
+        "link": "https://iraantonova96.wixsite.com/stone-crafting",
+        "isExternal": true
+    },
+    {
         "name": "Контакты",
         "nameEng": "Contacts",
         "link": "/contacts"

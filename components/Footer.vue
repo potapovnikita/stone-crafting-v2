@@ -2,7 +2,9 @@
     .footer_container(:class="{reverse: reverse}")
         .footer_menu
             .item(v-for="item in menu")
-                nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{reverse: reverse}")
+                a(v-if="item.isExternal" :href="item.link" target="_blank" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+                nuxt-link(v-else :to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+
         .footer_line(:class="{reverse: reverse}")
         .footer_block
             .column

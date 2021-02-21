@@ -17,12 +17,20 @@
                 span.hamburger_menu(:class="{'reverse': reverse}")
                     span.hamburger(:class="{'reverse': reverse}")
                 .hamburger_menu-items_container()
-                    nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
-                        span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}" @click="clickMenu(item.link)")
+                    .menu_item(v-for="item in menu")
+                        a(v-if="item.isExternal" :href="item.link" target="_blank")
+                            span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}" @click="clickMenu(item.link)")
+
+                        nuxt-link(v-else :to="item.link")
+                            span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}" @click="clickMenu(item.link)")
+
+
+
             .menu#menu(:class="{'reverse': reverse}")
                 .menu_row
                     .menu_item(v-for="item in menu")
-                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+                        a(v-if="item.isExternal" :href="item.link" target="_blank" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
+                        nuxt-link(v-else :to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
 
         .header_placeholder(v-if="placeholder")
 
@@ -58,8 +66,6 @@
                 changeLocal: 'localization/changeLocal'
             }),
             clickMenu(url) {
-                console.log(url)
-                console.log('window.location.pathname', window.location.pathname)
                 if (url === window.location.pathname) {
                     document.getElementById('inputMenu').click()
                 }
@@ -257,7 +263,7 @@
             line-height 1.4
 
             @media only screen and (max-width 820px)
-                padding 10px 8px
+                padding 10px 5px
 
             &:hover
                 opacity 1
@@ -386,7 +392,7 @@
     @media only screen and (max-width 1200px)
         .menu
             .menu_row
-                font-size $FontSizeMenuTablet
+                font-size 10px
                 justify-content center
 
     @media only screen and (max-width 767px)
