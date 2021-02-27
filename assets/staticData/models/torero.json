@@ -144,56 +144,61 @@
         "modelClassName": "torero",
         "hasBackground": true,
         "img": "img/collections/torero/0.png",
+        "modelBig": "torero",
+        "modelMiddle": "toreroMid",
+        "modelSmall":"toreroSmall",
         "stonesLeft": [
             {
                 "id": "jasper",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "rhodonite",
-                "label": 2
+                "label": 2,
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "rhodusite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "rhodusite"
             },
             {
                 "id": "dolerite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "silicon",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "silicon"
             }
         ],
         "stonesRight": [
             {
                 "id": "cacholong",
-                "label": 6
+                "label": 6,
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "falconEye",
                 "label": 7,
-                "stoneClassName": "stone6"
+                "stoneClassName": "falconEye"
             },
             {
                 "id": "garnet",
                 "label": 8,
-                "stoneClassName": "stone7"
+                "stoneClassName": "garnet"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "stoneClassName": "stone8"
+                "stoneClassName": "gold"
             },
             {
                 "id": "silver",
                 "label": 10,
-                "stoneClassName": "stone9"
+                "stoneClassName": "silver"
             }
         ]
     },

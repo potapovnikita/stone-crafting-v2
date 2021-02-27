@@ -44,6 +44,9 @@
     "modelMap": {
         "modelClassName": "joker",
         "img": "img/collections/joker/0.png",
+        "modelBig": "joker",
+        "modelMiddle": "jokerMid",
+        "modelSmall":"jokerSmall",
         "stonesLeft": [
             {
                 "id": "malachite",

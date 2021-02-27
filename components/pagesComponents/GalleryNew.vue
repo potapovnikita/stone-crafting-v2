@@ -70,6 +70,7 @@ import Muromets from '~/assets/staticData/models/muromets.json'
 import Svyatogor from '~/assets/staticData/models/svyatogor.json'
 import Dobrynya from '~/assets/staticData/models/dobrynya.json'
 import Tsarevich from '~/assets/staticData/models/tsarevich.json'
+import Viking from '~/assets/staticData/models/viking.json'
 export default {
     name: 'GalleryNew',
     components: {
@@ -111,6 +112,7 @@ export default {
                 svyatogor: Svyatogor,
                 dobrynya: Dobrynya,
                 tsarevich: Tsarevich,
+                viking: Viking,
             },
         }
     },

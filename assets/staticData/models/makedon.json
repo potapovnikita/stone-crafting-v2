@@ -46,6 +46,9 @@
     "modelMap": {
         "modelClassName": "makedon",
         "img": "img/collections/makedon/0.png",
+        "modelBig": "makedon",
+        "modelMiddle": "makedonMid",
+        "modelSmall":"makedonSmall",
         "stonesLeft": [
             {
                 "id": "marble",

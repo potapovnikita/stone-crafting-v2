@@ -1,6 +1,6 @@
 <template lang="pug">
     .common-container.main-container
-        .header-container
+        .header-container(v-if="showPhoto")
             .header-container__title-container
                 .header-container__circle
                 h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Stone-crafting House by Alexey Antonov' }}
@@ -9,6 +9,10 @@
                 .header-container__year-wrapper
                     .header-container__double-line
                     p.text_sverdlovsk {{ lang === 'ru' ? 'с 1968 года' : 'since 1968' }}
+
+        .header__video-section(v-if="showVideo")
+            video#video(playsinline autoplay="true" loop="true" muted="muted")
+                source(src="~/assets/video/main.mp4" type="video/mp4")
 
         BrandHistory
         LinksPanel
@@ -35,6 +39,8 @@
         data() {
             return {
                 company: Company,
+                showPhoto: false,
+                showVideo: true,
             }
         },
         components: {
@@ -211,6 +217,13 @@
             background url('~assets/img/main/header-main-mb.png') no-repeat
             background-position center
             background-size cover
+
+    .header__video-section
+        display block
+
+        video
+            display block
+            width 100%
 
     .wrapper-page
         position relative
