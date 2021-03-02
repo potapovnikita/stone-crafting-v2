@@ -44,6 +44,16 @@ import { mapState } from 'vuex'
 import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
 import Stones from '~/assets/staticData/models/stones.json'
 import ModelFactory from '@/components/modelComponents/ModelFactory'
+
+const activateStones = (stoneClassName) => {
+    const elem = document.querySelectorAll(`.${stoneClassName}`)
+    if (elem && elem.length) {
+        Array.from(elem).forEach(activElem => {
+            activElem.classList.add('active')
+        });
+    }
+};
+
 export default {
     name: 'ModelMap',
     components: {
@@ -78,25 +88,25 @@ export default {
             }
         },
         onStoneClick(stone) {
-            console.log(stone)
-            this.activeStone = stone.id
-            console.log(stone.stoneClassName)
+            if (this.activeStone === '') {
+                this.activeStone = stone.id
+                activateStones(stone.stoneClassName)
+                return
+            }
+
             const activElements = document.querySelectorAll(`.active`)
             if (activElements) {
-                console.log('activElements')
-                console.log(activElements)
                 Array.from(activElements).forEach(activElem => {
                     activElem.classList.remove('active')
                 });
             }
-            const elem = document.querySelectorAll(`.${stone.stoneClassName}`)
-            console.log(elem)
-            if (elem && elem.length) {
-                Array.from(elem).forEach(activElem => {
-                    activElem.classList.add('active')
-                });
-                //elem[0].classList.add('active');
+            
+            if (this.activeStone !== stone.id) {
+                this.activeStone = stone.id
+                activateStones(stone.stoneClassName)
+                return
             }
+            this.activeStone = ''
         },
         mappedStones(list) {
             const mapped = []
@@ -233,6 +243,40 @@ export default {
 
             path
                 fill blackBackground
+
+    ellipse
+        &.gold,
+        &.cacholong,
+        &.jasper,
+        &.charoite,
+        &.dolerite,
+        &.amazanite,
+        &.rhodonite,
+        &.malachite,
+        &.silver,
+        &.lazurite,
+        &.lepidolite,
+        &.fluorite
+            &.active
+                fill goldNew
+                fill-opacity 1
+
+    path
+        &.gold,
+        &.cacholong,
+        &.jasper,
+        &.charoite,
+        &.dolerite,
+        &.amazanite,
+        &.rhodonite,
+        &.malachite,
+        &.silver,
+        &.lazurite,
+        &.lepidolite,
+        &.fluorite
+            &.active
+                fill blackBackground
+
 
     @media only screen and (max-width 1440px)
         &__wrapper-content
