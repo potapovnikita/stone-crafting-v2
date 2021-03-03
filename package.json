@@ -29,7 +29,7 @@
     "jszip": "^3.5.0",
     "jszip-utils": "^0.1.0",
     "nuxt": "^2.0.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "scroll": "^2.0.3",
     "stylus": "^0.54.5",
