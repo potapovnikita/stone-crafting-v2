@@ -12,7 +12,7 @@
 
         .header__video-section(v-if="showVideo")
             video#video(playsinline autoplay="true" loop="true" muted="muted")
-                source(src="~/assets/video/main.mp4" type="video/mp4")
+                source(src="~/assets/video/main-new.mp4" type="video/mp4")
 
         BrandHistory
         LinksPanel
@@ -162,7 +162,7 @@
                 height 580px
                 margin-top 110px
                 padding-top 180px
-            
+
             &__title
                 font-size 52px
 
@@ -176,7 +176,7 @@
         @media only screen and (max-width 1024px)
             height 703px
             background url('~assets/img/main/header-main-ip.png') top center no-repeat
-        
+
         @media only screen and (max-width 767px)
             height 100vh
 
@@ -209,7 +209,7 @@
             &__year-wrapper
                 padding-top 33px
                 margin 0
-            
+
             &__double-line
                 display none
 
@@ -254,7 +254,7 @@
             width 100%
             height 897px
             background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/tradition/bg-bottom.png') bottom right no-repeat
-    
+
     .footer-add
         margin-top: -150px !important
 
@@ -294,7 +294,7 @@
     @media only screen and (max-width 1280px)
         .wrapper-page
             min-height 1210px
-            
+
             .pic-top-left
                 background-size 80%
                 background-position -100px -50px
