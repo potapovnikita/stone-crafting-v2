@@ -7,58 +7,61 @@
     "modelMap": {
         "modelClassName": "catherine",
         "img": "img/collections/catherine/0.png",
+        "modelBig": "catherine",
+        "modelMiddle": "catherine1",
+        "modelSmall": "catherine2",
         "stonesLeft": [
             {
                 "id": "chalcedony",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "quartzite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "lepidolite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "lepidolite"
             },
             {
                 "id": "tigersEye",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "lazurite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "lazurite"
             }
         ],
         "stonesRight": [
             {
                 "id": "marble",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "marble"
             },
             {
                 "id": "jasper",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "silver",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "silver"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "gold"
             },
             {
                 "id": "diamond",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "diamond"
             }
         ]
     }

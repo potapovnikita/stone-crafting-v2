@@ -38,96 +38,101 @@
     "modelMap": {
         "modelClassName": "tamerlan",
         "img": "img/collections/tamerlan/0.png",
+        "modelBig": "tamerlan",
+        "modelMiddle": "tamerlan1",
+        "modelSmall": "tamerlan2",
         "stonesLeft": [
             {
                 "id": "irmenite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "irmenite"
             },
             {
                 "id": "gabbro",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "gabbro"
             },
             {
                 "id": "nephrite",
-                "label": 3
+                "label": 3,
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "aventurine",
                 "label": 4,
-                "stoneClassName": "stone3"
+                "stoneClassName": "aventurine"
             },
             {
                 "id": "agate",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "agate"
             },
             {
                 "id": "jasper",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "chalcedony",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "pyrite",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "pyrite"
             },
             {
                 "id": "lazurite",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "lazurite"
             }
         ],
         "stonesRight": [
             {
                 "id": "quartzite",
-                "label": 10
+                "label": 10,
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "opal",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "opal"
             },
             {
                 "id": "cacholong",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "rhodonite",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "turquoise",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "turquoise"
             },
             {
                 "id": "carnelian",
                 "label": 15,
-                "stoneClassName": "stone15"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "falconEye",
                 "label": 16,
-                "stoneClassName": "stone16"
+                "stoneClassName": "falconEye"
             },
             {
                 "id": "bronze",
                 "label": 17,
-                "stoneClassName": "stone17"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "silver",
                 "label": 18,
-                "stoneClassName": "stone18"
+                "stoneClassName": "silver"
             }
         ]
     }

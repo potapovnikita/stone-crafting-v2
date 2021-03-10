@@ -237,6 +237,10 @@ export default {
     .gold,
     .silver
         &.active
+            circle
+                fill goldNew
+                fill-opacity 1
+                
             ellipse
                 fill goldNew
                 fill-opacity 1
@@ -256,7 +260,32 @@ export default {
         &.silver,
         &.lazurite,
         &.lepidolite,
-        &.fluorite
+        &.fluorite,
+        &.marble,
+        &.carnelian,
+        &.pyrite,
+        &.bronze,
+        &.porphyrite,
+        &.chalcedony,
+        &.rhodusite,
+        &.nephrite,
+        &.uvarovite,
+        &.aventurineSlate,
+        &.quartzite,
+        &.aventurine,
+        &.agate,
+        &.tigersEye,
+        &.falconEye,
+        &.turquoise,
+        &.opal,
+        &.irmenite,
+        &.gabbro,
+        &.iceQuartz,
+        &.moonstone,
+        &.quartz,
+        &.granite,
+        &.diamond,
+        &.petrifiedTree
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -273,7 +302,32 @@ export default {
         &.silver,
         &.lazurite,
         &.lepidolite,
-        &.fluorite
+        &.fluorite,
+        &.marble,
+        &.carnelian,
+        &.pyrite,
+        &.bronze,
+        &.porphyrite,
+        &.chalcedony,
+        &.rhodusite,
+        &.nephrite,
+        &.uvarovite,
+        &.aventurineSlate,
+        &.quartzite,
+        &.aventurine,
+        &.agate,
+        &.tigersEye,
+        &.falconEye,
+        &.turquoise,
+        &.opal,
+        &.irmenite,
+        &.gabbro,
+        &.iceQuartz,
+        &.moonstone,
+        &.quartz,
+        &.granite,
+        &.diamond,
+        &.petrifiedTree
             &.active
                 fill blackBackground
 

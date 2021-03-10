@@ -4,7 +4,7 @@
   "description": "stone-crafting site",
   "author": "Potapov Nikita <nikitapotapov93@gmail.com>",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node --max-old-space-size=2048 node_modules/nuxt/bin/nuxt.js",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
