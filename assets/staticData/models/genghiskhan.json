@@ -44,91 +44,96 @@
     "modelMap": {
         "modelClassName": "genghiskhan",
         "img": "img/collections/genghiskhan/0.png",
+        "modelBig": "genghiskhan",
+        "modelMiddle": "genghiskhanMid",
+        "modelSmall":"genghiskhanSmall",
         "stonesLeft": [
             {
                 "id": "marble",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "marble"
             },
             {
                 "id": "jasper",
                 "label": 2,
-                "stoneClassName": "stone4"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "dolerite",
-                "label": 3
+                "label": 3,
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "uvarovite",
                 "label": 4,
-                "stoneClassName": "stone3"
+                "stoneClassName": "uvarovite"
             },
             {
                 "id": "nephrite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "aventurine",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "aventurine"
             },
             {
                 "id": "aventurineSlate",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "aventurineSlate"
             },
             {
                 "id": "tigersEye",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "fluorite",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "fluorite"
             }
         ],
         "stonesRight": [
             {
                 "id": "rhodusite",
-                "label": 10
+                "label": 10,
+                "stoneClassName": "rhodusite"
             },
             {
                 "id": "chalcedony",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "pyrite",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "pyrite"
             },
             {
                 "id": "agate",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "agate"
             },
             {
                 "id": "carnelian",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "quartzite",
                 "label": 15,
-                "stoneClassName": "stone15"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "silver",
                 "label": 16,
-                "stoneClassName": "stone16"
+                "stoneClassName": "silver"
             },
             {
                 "id": "gold",
                 "label": 17,
-                "stoneClassName": "stone17"
+                "stoneClassName": "gold"
             }
         ]
     }

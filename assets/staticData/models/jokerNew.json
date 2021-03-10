@@ -44,66 +44,71 @@
     "modelMap": {
         "modelClassName": "joker",
         "img": "img/collections/joker/0.png",
+        "modelBig": "joker",
+        "modelMiddle": "jokerMid",
+        "modelSmall":"jokerSmall",
         "stonesLeft": [
             {
                 "id": "malachite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "malachite"
             },
             {
                 "id": "charoite",
-                "label": 2
+                "label": 2,
+                "stoneClassName": "charoite"
             },
             {
                 "id": "dolerite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "jasper",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "cacholong",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "lazurite",
-                "label": 6
+                "label": 6,
+                "stoneClassName": "lazurite"
             }
         ],
         "stonesRight": [
             {
                 "id": "rhodonite",
                 "label": 7,
-                "stoneClassName": "stone6"
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "amazanite",
                 "label": 8,
-                "stoneClassName": "stone7"
+                "stoneClassName": "amazanite"
             },
             {
                 "id": "fluorite",
                 "label": 9,
-                "stoneClassName": "stone8"
+                "stoneClassName": "fluorite"
             },
             {
                 "id": "lepidolite",
                 "label": 10,
-                "stoneClassName": "stone9"
+                "stoneClassName": "lepidolite"
             },
             {
                 "id": "gold",
                 "label": 11,
-                "stoneClassName": "stone8"
+                "stoneClassName": "gold"
             },
             {
                 "id": "silver",
                 "label": 12,
-                "stoneClassName": "stone9"
+                "stoneClassName": "silver"
             }
         ]
     }

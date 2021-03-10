@@ -7,53 +7,56 @@
     "modelMap": {
         "modelClassName": "peter",
         "img": "img/collections/peter/0.png",
+        "modelBig": "peter",
+        "modelMiddle": "peter1",
+        "modelSmall": "peter2",
         "stonesLeft": [
             {
                 "id": "nephrite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "cacholong",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "jasper",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "dolerite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "marble",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "marble"
             }
         ],
         "stonesRight": [
             {
                 "id": "granite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "granite"
             },
             {
                 "id": "jasper",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "silver",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "silver"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "gold"
             }
         ]
     }

@@ -34,43 +34,46 @@
     "modelMap": {
         "modelClassName": "schemamonk",
         "img": "img/collections/schemamonk/0.png",
+        "modelBig": "schemamonk",
+        "modelMiddle": "schemamonk1",
+        "modelSmall": "schemamonk2",
         "stonesLeft": [
             {
                 "id": "nephrite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "jasper",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "petrifiedTree",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "dolerite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "dolerite"
             }
         ],
         "stonesRight": [
             {
                 "id": "quartzite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "marble",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "marble"
             },
             {
                 "id": "silver",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "silver"
             }
         ]
     }

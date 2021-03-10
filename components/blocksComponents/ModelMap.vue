@@ -5,22 +5,21 @@
             ul.model-container__stones.mobile-hide(v-if="modelMap")
                 li(v-for="stone in stonesListLeft")
                     .model-container__wrapper-stone
-                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                         p.model-container__stone-title {{getStoneTitle(stone)}}
 
-            div(:class="['model-container__wrapper-img',`${modelMap.modelClassName}__pic`]")
-                img.model-container__photo(:src="getImg(modelMap.img)")
-                .model-container__point(
-                    v-for="(stone, index) in stonesList"
-                    v-if="stone.stoneClassName"
-                    :key="stone.id"
-                    :class="[`${modelMap.modelClassName}--${stone.stoneClassName}`, {'active': stone.id === activeStone}]") {{stone.label}}
+            .model-container__wrapper-img
+                client-only
+                    ModelFactory(v-if="modelMap.modelMobile && winWidth <= 375" :modelName="modelMap.modelMobile")
+                    ModelFactory(v-if="!modelMap.modelMobile && winWidth <= 1280" :modelName="modelMap.modelSmall")
+                    ModelFactory(v-if="winWidth > 1280 && winWidth <= 1440" :modelName="modelMap.modelMiddle")
+                    ModelFactory(v-if="winWidth > 1440" :modelName="modelMap.modelBig")
 
             ul.model-container__stones.mobile-hide(v-if="modelMap")
                 li(v-for="stone in stonesListRight")
                     .model-container__wrapper-stone
-                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                        .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone)")
                             .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                         p.model-container__stone-title {{getStoneTitle(stone)}}
 
@@ -28,24 +27,38 @@
                 ul.model-container__stones(v-if="modelMap")
                     li(v-for="stone in stonesListLeft")
                         .model-container__wrapper-stone
-                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone)")
                                 .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                             p.model-container__stone-title {{getStoneTitle(stone)}}
 
                 ul.model-container__stones(v-if="modelMap")
                     li(v-for="stone in stonesListRight")
                         .model-container__wrapper-stone
-                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone.id)")
+                            .model-container__stone-slot(:class="{'active': stone.id === activeStone}" @click="() => onStoneClick(stone)")
                                 .model-container__stone-pic(:style="{backgroundImage: getBgImg(stone.background)}")
                             p.model-container__stone-title {{getStoneTitle(stone)}}
-    
+        
 </template>
 <script>
 import { mapState } from 'vuex'
 import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
 import Stones from '~/assets/staticData/models/stones.json'
+import ModelFactory from '@/components/modelComponents/ModelFactory'
+
+const activateStones = (stoneClassName) => {
+    const elem = document.querySelectorAll(`.${stoneClassName}`)
+    if (elem && elem.length) {
+        Array.from(elem).forEach(activElem => {
+            activElem.classList.add('active')
+        });
+    }
+};
+
 export default {
     name: 'ModelMap',
+    components: {
+        ModelFactory,
+    },
     props: {
         modelMap: Object,
     },
@@ -56,6 +69,8 @@ export default {
            stonesListRight: [],
            activeStone: '',
            stones: Stones,
+           winWidth: 0,
+           winHeight: 0,
         }
     },
     methods: {
@@ -72,8 +87,26 @@ export default {
                 return stone.titleEng
             }
         },
-        onStoneClick(value) {
-            this.activeStone = value;
+        onStoneClick(stone) {
+            if (this.activeStone === '') {
+                this.activeStone = stone.id
+                activateStones(stone.stoneClassName)
+                return
+            }
+
+            const activElements = document.querySelectorAll(`.active`)
+            if (activElements) {
+                Array.from(activElements).forEach(activElem => {
+                    activElem.classList.remove('active')
+                });
+            }
+            
+            if (this.activeStone !== stone.id) {
+                this.activeStone = stone.id
+                activateStones(stone.stoneClassName)
+                return
+            }
+            this.activeStone = ''
         },
         mappedStones(list) {
             const mapped = []
@@ -92,6 +125,10 @@ export default {
                 }
             })
             return mapped;
+        },
+        handleResize() {
+            this.winWidth = window.innerWidth;
+            this.winHeight = window.innerHeight;
         }
     },
     computed: {
@@ -103,7 +140,13 @@ export default {
         this.stonesListLeft = this.mappedStones(this.modelMap.stonesLeft)
         this.stonesListRight = this.mappedStones(this.modelMap.stonesRight)
         this.stonesList = [].concat(this.stonesListLeft, this.stonesListRight)
-    }
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
 }
 </script>
 <style lang="stylus">
@@ -116,12 +159,9 @@ export default {
         max-width 1320px
 
     &__wrapper-img
+        position relative
         max-width 700px
         max-height 1100px
-
-    &__photo
-        width 100%
-        height auto
 
     &__stones
         position relative
@@ -186,6 +226,112 @@ export default {
     &__stones-mobile-container
         display none
 
+    .jasper,
+    .rhodonite,
+    .rhodusite,
+    .dolerite,
+    .silicon,
+    .cacholong,
+    .falconEye,
+    .garnet,
+    .gold,
+    .silver
+        &.active
+            circle
+                fill goldNew
+                fill-opacity 1
+                
+            ellipse
+                fill goldNew
+                fill-opacity 1
+
+            path
+                fill blackBackground
+
+    ellipse
+        &.gold,
+        &.cacholong,
+        &.jasper,
+        &.charoite,
+        &.dolerite,
+        &.amazanite,
+        &.rhodonite,
+        &.malachite,
+        &.silver,
+        &.lazurite,
+        &.lepidolite,
+        &.fluorite,
+        &.marble,
+        &.carnelian,
+        &.pyrite,
+        &.bronze,
+        &.porphyrite,
+        &.chalcedony,
+        &.rhodusite,
+        &.nephrite,
+        &.uvarovite,
+        &.aventurineSlate,
+        &.quartzite,
+        &.aventurine,
+        &.agate,
+        &.tigersEye,
+        &.falconEye,
+        &.turquoise,
+        &.opal,
+        &.irmenite,
+        &.gabbro,
+        &.iceQuartz,
+        &.moonstone,
+        &.quartz,
+        &.granite,
+        &.diamond,
+        &.petrifiedTree
+            &.active
+                fill goldNew
+                fill-opacity 1
+
+    path
+        &.gold,
+        &.cacholong,
+        &.jasper,
+        &.charoite,
+        &.dolerite,
+        &.amazanite,
+        &.rhodonite,
+        &.malachite,
+        &.silver,
+        &.lazurite,
+        &.lepidolite,
+        &.fluorite,
+        &.marble,
+        &.carnelian,
+        &.pyrite,
+        &.bronze,
+        &.porphyrite,
+        &.chalcedony,
+        &.rhodusite,
+        &.nephrite,
+        &.uvarovite,
+        &.aventurineSlate,
+        &.quartzite,
+        &.aventurine,
+        &.agate,
+        &.tigersEye,
+        &.falconEye,
+        &.turquoise,
+        &.opal,
+        &.irmenite,
+        &.gabbro,
+        &.iceQuartz,
+        &.moonstone,
+        &.quartz,
+        &.granite,
+        &.diamond,
+        &.petrifiedTree
+            &.active
+                fill blackBackground
+
+
     @media only screen and (max-width 1440px)
         &__wrapper-content
             max-width 1120px
@@ -193,10 +339,6 @@ export default {
         &__wrapper-img
             max-width 550px
             max-height 800px
-
-        &__photo
-            width auto
-            height 100%
     
     @media only screen and (max-width 1280px)
         &__wrapper-content
@@ -205,10 +347,6 @@ export default {
         &__wrapper-img
             max-width 420px
             max-height 670px
-
-        &__photo
-            width 100%
-            height auto
 
         &__point
             width 22px
