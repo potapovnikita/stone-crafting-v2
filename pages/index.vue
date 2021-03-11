@@ -10,7 +10,7 @@
 import MainPage from '~/components/pagesComponents/Main.vue'
 import PageContainer from '~/components/PageContainer.vue'
 import PagePreload from '~/components/PagePreload.vue'
-import Header from '~/components/HeaderNew.vue'
+import Header from '~/components/Header.vue'
 
 export default {
     components: {

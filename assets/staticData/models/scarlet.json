@@ -34,73 +34,76 @@
     "modelMap": {
         "modelClassName": "scarlet",
         "img": "img/collections/scarlet/0.png",
+        "modelBig": "scarlet",
+        "modelMiddle": "scarlet1",
+        "modelSmall": "scarlet2",
         "stonesLeft": [
             {
                 "id": "irmenite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "irmenite"
             },
             {
                 "id": "dolerite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "quartzite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "lazurite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "lazurite"
             },
             {
                 "id": "charoite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "charoite"
             },
             {
                 "id": "nephrite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "nephrite"
             }
         ],
         "stonesRight": [
             {
                 "id": "carnelian",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "crystal",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "crystal"
             },
             {
                 "id": "chalcedony",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "rhodonite",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "marble",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "marble"
             },
             {
                 "id": "bronze",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "emali",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "emali"
             }
         ]
     }

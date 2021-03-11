@@ -1,27 +1,32 @@
 <template lang="pug">
-    .footer_container(:class="{reverse: reverse}")
-        .footer_menu
-            .item(v-for="item in menu")
-                nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{reverse: reverse}")
-        .footer_line(:class="{reverse: reverse}")
+    .footer_container        
         .footer_block
             .column
-                a.item(:href="'tel:' + contacts.phoneMain" :class="{reverse: reverse}") {{contacts.phoneMain}}
-                .item {{contacts.email}}
-                .item.icons
-                    a.icon.youtube(:href="contacts.youtube" target="_blank" :class="{reverse: reverse}")
-                    a.icon.instagram(:href="contacts.inst" target="_blank" :class="{reverse: reverse}")
+                a.item.contacts(:href="'tel:' + contacts.phoneMain" :class="{reverse: reverse}") {{contacts.phoneMain}}
+                .item.contacts {{contacts.email}}
+
+            .column(v-for="address in contacts.footerAdresses")
+                .item.contacts.title {{ lang === 'ru' ? address.addressNameRu : address.addressNameEng }}
+                .item.street(v-html="lang === 'ru' ? address.addressRu : address.addressEng")
+
+        .footer_line
+        .footer_block
+            .column
+                .item.copyright © Stone-crafting House by Alexey Antonov
+
+            .column
                 .item.policy
-                    nuxt-link(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'" :class="{reverse: reverse}")
+                    nuxt-link(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'")
 
+            .column
+                .item.links
+                    .wrapper-links
+                        a.link(:href="contacts.inst" target="_blank")
+                            | Instagram
+                        a.link(:href="contacts.youtube" target="_blank")
+                            | Youtube
 
-
-            .column.address_column
-                .addresses
-                    .item(v-for="(address, index) in contacts.adresses" v-if="index === 0" v-html="lang === 'ru' ? address.addressRu : address.addressEng")
-
-        .copyright © Stone-crafting House by Alexey Antonov
-
+                        nuxt-link.link(to="/news" v-html="lang === 'ru' ? 'Новости' : 'News'")
 
 </template>
 
@@ -55,135 +60,118 @@
 
 <style lang="stylus">
     .footer_container
+        position relative
         color whiteMain
         display flex
         flex-direction column
-        padding 30px 40px
+        padding 0 40px
         align-items center
-        &.reverse
-            color darkRed
-
-        .footer_menu
-            display flex
-            flex-direction row
-            align-items center
-            justify-content center
-            padding 10px 20px
-            margin-bottom 30px
-
-            .item
-                font-family $IntroRegularCaps
-                font-size $FontSizeMenu
-                text-transform uppercase
-                text-align center
-                cursor pointer
-                padding 10px 15px
-                opacity 0.8
-                line-height 1.4
-
-
-                @media only screen and (max-width 1200px)
-                    font-size 11px
-                @media only screen and (max-width 820px)
-                    padding 10px 8px
-                &:hover
-                    opacity 1
+        background rgba(0, 0, 0, 0.64)
 
         .footer_line
             height 1px
-            width 20%
+            width 100%
             background-color silverMain
-            margin-bottom 20px
-            &.reverse
-                background-color darkRed
 
         .footer_block
             width 100%
             display flex
-            justify-content space-around
-            padding 10px 20px
-            font-family $IntroRegular
-            font-size $FontSizeMenu+2
-
+            justify-content space-between
+            padding 25px 0
+            font-family $TenorSans-Regular
+            letter-spacing 0.03em
+            text-align left
 
             .column
-                display flex
-                flex-direction column
+                width 300px
+
                 .item
-                    margin-bottom 10px
+                    font-size 14px
+                    line-height 21px
+
+                    &.contacts
+                        font-size 20px
+                        line-height 30px
+
+                        &.title
+                            margin-bottom 7px
+
+                    &.street
+                        font-size 16px
+                        line-height 21px
+                        color #8F8F8F
+
+                    &.copyright
+                        white-space nowrap
+                        color #8F8F8F
 
                     &.policy
-                        margin-top 10px
-
                         &:hover
                             text-decoration underline
 
-                    &.icons
-                        margin-top 10px
-                        display flex
-                        align-items center
-                    .icon
-                        opacity 0.6
-                        display block
-                        margin-right 10px
+                    &.links
+                        position relative
+                        text-align right
 
-                        &:hover
-                            cursor pointer
-                            opacity 1
+                        .wrapper-links
+                            & a + a
+                                margin-left 42px
 
-                        &.youtube
-                            width 21px
-                            height 15px
-                            background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31 22' fill='%23fff'%3E%3Cpath class='st0' d='M30.69 4.8s-.3-2.14-1.23-3.08C28.28.49 26.96.48 26.35.41 22.01.1 15.51.1 15.51.1h-.01S8.99.1 4.65.41c-.61.07-1.93.08-3.11 1.31C.61 2.67.31 4.8.31 4.8S0 7.31 0 9.82v2.35c0 2.51.31 5.02.31 5.02s.3 2.14 1.23 3.08c1.18 1.23 2.73 1.2 3.42 1.33 2.48.23 10.54.3 10.54.3s6.51-.01 10.85-.32c.61-.07 1.93-.08 3.11-1.31.93-.94 1.23-3.08 1.23-3.08s.31-2.51.31-5.02V9.82c0-2.51-.31-5.02-.31-5.02zM11.94 15.08V6.23l8.71 4.44-8.71 4.41z'/%3E%3C/svg%3E") no-repeat
-                            &.reverse
-                                background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31 22' fill='%23660f28'%3E%3Cpath class='st0' d='M30.69 4.8s-.3-2.14-1.23-3.08C28.28.49 26.96.48 26.35.41 22.01.1 15.51.1 15.51.1h-.01S8.99.1 4.65.41c-.61.07-1.93.08-3.11 1.31C.61 2.67.31 4.8.31 4.8S0 7.31 0 9.82v2.35c0 2.51.31 5.02.31 5.02s.3 2.14 1.23 3.08c1.18 1.23 2.73 1.2 3.42 1.33 2.48.23 10.54.3 10.54.3s6.51-.01 10.85-.32c.61-.07 1.93-.08 3.11-1.31.93-.94 1.23-3.08 1.23-3.08s.31-2.51.31-5.02V9.82c0-2.51-.31-5.02-.31-5.02zM11.94 15.08V6.23l8.71 4.44-8.71 4.41z'/%3E%3C/svg%3E") no-repeat
+                        .link
+                            color goldNew
 
-                        &.instagram
-                            width 22px
-                            height 22px
-                            background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22' fill='%23fff'%3E%3Cpath d='M11 1.982c2.937 0 3.285.011 4.445.064 1.072.049 1.655.228 2.043.379.513.2.88.438 1.265.823.385.385.623.751.823 1.265.151.388.33.97.379 2.043.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445c-.049 1.072-.228 1.655-.379 2.043-.2.513-.438.88-.823 1.265a3.41 3.41 0 0 1-1.265.823c-.388.151-.97.33-2.043.379-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064c-1.072-.049-1.655-.228-2.043-.379-.513-.2-.88-.438-1.265-.823a3.41 3.41 0 0 1-.823-1.265c-.151-.388-.33-.97-.379-2.043-.052-1.161-.063-1.509-.063-4.446s.011-3.285.064-4.445c.049-1.072.228-1.655.379-2.042.2-.513.438-.88.823-1.265a3.41 3.41 0 0 1 1.265-.823c.388-.151.97-.33 2.043-.379 1.159-.053 1.507-.064 4.444-.064M11 0C8.013 0 7.638.013 6.465.066c-1.171.053-1.97.239-2.67.511a5.412 5.412 0 0 0-1.949 1.269A5.412 5.412 0 0 0 .577 3.795c-.272.7-.458 1.499-.511 2.67C.013 7.638 0 8.013 0 11s.013 3.362.066 4.535c.053 1.171.239 1.97.511 2.67a5.382 5.382 0 0 0 1.269 1.948 5.39 5.39 0 0 0 1.948 1.269c.7.272 1.499.458 2.67.511C7.638 21.987 8.013 22 11 22s3.362-.013 4.535-.066c1.171-.053 1.97-.239 2.67-.511a5.382 5.382 0 0 0 1.948-1.269 5.39 5.39 0 0 0 1.269-1.948c.272-.7.458-1.499.511-2.67.054-1.174.067-1.549.067-4.536s-.013-3.362-.066-4.535c-.053-1.171-.239-1.97-.511-2.67a5.382 5.382 0 0 0-1.269-1.948A5.39 5.39 0 0 0 18.206.578c-.7-.272-1.499-.458-2.67-.511C14.362.013 13.987 0 11 0z'/%3E%3Cpath d='M11 5.351a5.649 5.649 0 1 0 0 11.298A5.649 5.649 0 0 0 11 5.35zm0 9.316a3.667 3.667 0 1 1 0-7.335 3.667 3.667 0 0 1 0 7.335z'/%3E%3Ccircle cx='16.872' cy='5.128' r='1.32'/%3E%3C/svg%3E") no-repeat
-                            &.reverse
-                                background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22' fill='%23660f28'%3E%3Cpath d='M11 1.982c2.937 0 3.285.011 4.445.064 1.072.049 1.655.228 2.043.379.513.2.88.438 1.265.823.385.385.623.751.823 1.265.151.388.33.97.379 2.043.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445c-.049 1.072-.228 1.655-.379 2.043-.2.513-.438.88-.823 1.265a3.41 3.41 0 0 1-1.265.823c-.388.151-.97.33-2.043.379-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064c-1.072-.049-1.655-.228-2.043-.379-.513-.2-.88-.438-1.265-.823a3.41 3.41 0 0 1-.823-1.265c-.151-.388-.33-.97-.379-2.043-.052-1.161-.063-1.509-.063-4.446s.011-3.285.064-4.445c.049-1.072.228-1.655.379-2.042.2-.513.438-.88.823-1.265a3.41 3.41 0 0 1 1.265-.823c.388-.151.97-.33 2.043-.379 1.159-.053 1.507-.064 4.444-.064M11 0C8.013 0 7.638.013 6.465.066c-1.171.053-1.97.239-2.67.511a5.412 5.412 0 0 0-1.949 1.269A5.412 5.412 0 0 0 .577 3.795c-.272.7-.458 1.499-.511 2.67C.013 7.638 0 8.013 0 11s.013 3.362.066 4.535c.053 1.171.239 1.97.511 2.67a5.382 5.382 0 0 0 1.269 1.948 5.39 5.39 0 0 0 1.948 1.269c.7.272 1.499.458 2.67.511C7.638 21.987 8.013 22 11 22s3.362-.013 4.535-.066c1.171-.053 1.97-.239 2.67-.511a5.382 5.382 0 0 0 1.948-1.269 5.39 5.39 0 0 0 1.269-1.948c.272-.7.458-1.499.511-2.67.054-1.174.067-1.549.067-4.536s-.013-3.362-.066-4.535c-.053-1.171-.239-1.97-.511-2.67a5.382 5.382 0 0 0-1.269-1.948A5.39 5.39 0 0 0 18.206.578c-.7-.272-1.499-.458-2.67-.511C14.362.013 13.987 0 11 0z'/%3E%3Cpath d='M11 5.351a5.649 5.649 0 1 0 0 11.298A5.649 5.649 0 0 0 11 5.35zm0 9.316a3.667 3.667 0 1 1 0-7.335 3.667 3.667 0 0 1 0 7.335z'/%3E%3Ccircle cx='16.872' cy='5.128' r='1.32'/%3E%3C/svg%3E") no-repeat
-                        &.facebook
-                            width 12px
-                            height 23px
-                            background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 23' fill='%23fff'%3E%3Cpath class='st1' d='M11.925 3.906H9.887c-1.596 0-1.895.766-1.895 1.869v2.252h4.003l-.806 3.942H7.993v9.95H4.021v-9.95H.312V8.027h3.709V5.298c0-3.283 2.012-5.074 4.945-5.074 1.401 0 2.609.104 2.959.156v3.526z'/%3E%3C/svg%3E") no-repeat
-                            &.reverse
-                                background url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 23' fill='%23660f28'%3E%3Cpath class='st1' d='M11.925 3.906H9.887c-1.596 0-1.895.766-1.895 1.869v2.252h4.003l-.806 3.942H7.993v9.95H4.021v-9.95H.312V8.027h3.709V5.298c0-3.283 2.012-5.074 4.945-5.074 1.401 0 2.609.104 2.959.156v3.526z'/%3E%3C/svg%3E") no-repeat
+    @media only screen and (max-width 1280px)
+        .footer_container
+            padding 0 25px
 
-            .address_column
-                flex-direction row
+            .footer_block
+                .column
+                    width 265px 
 
-                .title
-                    padding-right 10px
+                    .item
+                        font-size 14px
+                        line-height 21px
 
-        .copyright
-            margin-top 20px
-            text-align center
-            font-family $IntroRegular
-            font-size $FontSizeMenu
+                        &.contacts
+                            font-size 18px
+                            line-height 27px
 
+                            &.title
+                                margin-bottom 7px
 
+                        &.street
+                            font-size 14px
+                            line-height 18px
+
+                        &.copyright
+                            letter-spacing normal
+
+                        &.links
+                            .wrapper-links
+                                position absolute
+                                right 0
 
     @media only screen and (max-width 767px)
         .footer_container
-            padding 10px 20px
+            padding 0px 10px
 
-            .footer_menu
-                flex-direction column
             .footer_block
-                flex-direction column
-                .column,
-                .address_column
-                    flex-direction column
-                    justify-content center
-                    text-align center
-                    margin-bottom 10px
-                    .title
-                        margin-bottom 10px
-                    .item
-                        text-align center
-                        justify-content center
+                flex-direction column-reverse
+                align-items center
 
+                .column
+                    text-align center
+                    margin-bottom 26px
+
+                    &:last-child
+                        text-align center
+
+                    .item
+                        &.contacts
+                            font-size 16px
+                            line-height 24px
+
+                            &.title
+                                margin-bottom 14px
 
 </style>

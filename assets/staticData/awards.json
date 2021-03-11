@@ -2,36 +2,43 @@
     {
         "name": "Член Союза художников России.",
         "nameEng": "Member of the Union of Artists of Russia.",
-        "img": "img/awardsNew/1.png"
+        "img": "img/awards/1.png",
+        "className": "award_1"
     },
     {
         "name": "В 1991 награждён золотой медалью ВДНХ.",
         "nameEng": "In 1991 Antonov was awarded the VDNH gold medal.",
-        "img": "img/awardsNew/2.png"
+        "img": "img/awards/2.png",
+        "className": "award_2"
     },
     {
         "name": "В 2008 г. награждён орденом A. Денисов-Уральский, присвоено звание «Заслуженный деятель камнерезного искусства».",
         "nameEng": "In 2008 Antonov was awarded the Order of A. Denisov-Uralsky, and was awarded the title “Honored artist of Stone-Cutting Art”.",
-        "img": "img/awardsNew/3.png"
+        "img": "img/awards/3.png",
+        "className": "award_3"
     },
     {
         "name": "В 2010 г. награжден почетным знаком Мемориального фонда Карла Фаберже за вклад в развитие российского ювелирного искусства.",
         "nameEng": "In 2010, he was awarded the honorary badge of the Carl Faberge Memorial Fund for his contribution to the development of Russian jewelry.",
-        "img": "img/awardsNew/4.png"
+        "img": "img/awards/4.png",
+        "className": "award_4"
     },
     {
         "name": "В 2012 г. удостоен звания «Главный Мастер» за развитие искусства и продолжение традиций К. Фаберже.",
         "nameEng": "In 2012, he was awarded the title “Chief Master” for the development of art and the continuation of the traditions of Faberge.",
-        "img": "img/awardsNew/5.png"
+        "img": "img/awards/5.png",
+        "className": "award_5"
     },
     {
         "name": "В 2013 г. награжден Орденом Карла Фаберже за вклад в развитие камнерезного и ювелирного искусства, присвоено звание «Заслуженный Ювелир».",
         "nameEng": "In 2013 he was awarded the Carl Faberge Order for his contribution to the development of stone-cutting and jewelry art, and was awarded the title “Honored Jeweler”.",
-        "img": "img/awardsNew/6.png"
+        "img": "img/awards/6.png",
+        "className": "award_6"
     },
     {
         "name": "В 2018 г. награждён орденом высшей степени - Бриллиантовым орденом Карла Фаберже.",
         "nameEng": "In 2018, he was awarded the Order of the highest degree - the Diamond Order of Carl Faberge.",
-        "img": "img/awardsNew/7.png"
+        "img": "img/awards/7.png",
+        "className": "award_7"
     }
 ]

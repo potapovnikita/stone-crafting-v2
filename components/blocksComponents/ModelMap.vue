@@ -285,7 +285,9 @@ export default {
         &.quartz,
         &.granite,
         &.diamond,
-        &.petrifiedTree
+        &.petrifiedTree,
+        &.crystal,
+        &.emali
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -327,7 +329,9 @@ export default {
         &.quartz,
         &.granite,
         &.diamond,
-        &.petrifiedTree
+        &.petrifiedTree,
+        &.crystal,
+        &.emali
             &.active
                 fill blackBackground
 

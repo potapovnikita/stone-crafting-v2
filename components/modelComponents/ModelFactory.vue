@@ -50,6 +50,10 @@ const models = {
     schemamonk: () => import('@/components/modelComponents/schemamonkModels/SchemamonkBig'),
     schemamonk1: () => import('@/components/modelComponents/schemamonkModels/SchemamonkMiddle'),
     schemamonk2: () => import('@/components/modelComponents/schemamonkModels/SchemamonkSmall'),
+
+    scarlet: () => import('@/components/modelComponents/scarletModels/ScarletBig'),
+    scarlet1: () => import('@/components/modelComponents/scarletModels/ScarletMiddle'),
+    scarlet2: () => import('@/components/modelComponents/scarletModels/ScarletSmall'),
 }
 export default {
     name: 'ModelFactory',

@@ -1,38 +1,30 @@
 <template lang="pug">
     div
-        #header(:class="{'menu_container-reverse': reverse, 'menu_container': !reverse}")
-            .logo_row(:class="{'reverse': reverse}")
-                nuxt-link(to="/" :class="{'reverse': reverse}")
-                    .logo(:class="{'reverse': reverse}")
-                        MainLogoRed(v-if="reverse")
-                        MainLogoWhite(v-else)
+        #header.menu_container
+            .logo_row
+                nuxt-link(to="/")
+                    img.logo(src="~/assets/img/logo_antonov_white.png" alt="Logo")
 
                 .local
                     span(@click="changeLocal('ru')" :class="{'active': lang === 'ru'}") RU
-                    span(@click="changeLocal('eng')" :class="{'active': lang === 'eng'}") ENG
+                    span(@click="changeLocal('eng')" :class="{'active': lang === 'eng'}") EN
 
             label
                 input#inputMenu(type="checkbox")
 
-                span.hamburger_menu(:class="{'reverse': reverse}")
-                    span.hamburger(:class="{'reverse': reverse}")
+                span.hamburger_menu
+                    span.hamburger_menu__label {{ lang === 'ru' ? 'меню' : 'menu' }}
+                    span.hamburger
                 .hamburger_menu-items_container()
-                    nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
-                        span(v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}" @click="clickMenu(item.link)")
-            .menu#menu(:class="{'reverse': reverse}")
-                .menu_row
-                    .menu_item(v-for="item in menu")
-                        nuxt-link(:to="item.link" v-html="lang === 'ru' ? item.name : item.nameEng" :class="{'reverse': reverse}")
-
-        .header_placeholder(v-if="placeholder")
+                    .wrapper_items
+                        nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
+                            span(v-html="lang === 'ru' ? item.name : item.nameEng" @click="clickMenu(item.link)")
 
 </template>
 
 <script>
     import { mapMutations, mapState } from 'vuex'
     import Menu from '~/assets/staticData/menu.json'
-    import MainLogoRed from '~/assets/img/logo_antonov_red_new.svg'
-    import MainLogoWhite from '~/assets/img/logo_antonov_white_new.svg'
     import axios from "axios";
     import { getLang } from "../store/localization";
 
@@ -40,18 +32,13 @@
         data() {
             return {
                 menu: Menu,
-                curScroll: 0,
             }
         },
-        props: ['placeholder', 'reverse'],
+        props: ['placeholder'],
         computed: {
             ...mapState('localization', [
                 'lang',
             ]),
-        },
-        components: {
-            MainLogoWhite,
-            MainLogoRed,
         },
         methods: {
             ...mapMutations({
@@ -63,12 +50,6 @@
                 if (url === window.location.pathname) {
                     document.getElementById('inputMenu').click()
                 }
-            },
-            isScrolled(el) {
-                return el.scrollTop > 0;
-            },
-            getScroll(el) {
-                return el.scrollTop;
             },
             async getLangSrv() {
                 if (getLang()) return getLang()
@@ -96,65 +77,12 @@
 
                 this.changeLocal(lang)
             }
-
-            document.addEventListener('scroll', () => {
-                if (this.isScrolled(page) || this.isScrolled(pageSafari)) header.classList.add('header_scrolled')
-                else header.classList.remove('header_scrolled')
-
-                const newScroll = page
-                    ? this.getScroll(page)
-                    : this.getScroll(pageSafari)
-
-                if (newScroll < this.curScroll) {
-                    header.classList.contains('header_scrolled') && header.classList.remove('header_scrolled')
-                }
-
-                this.curScroll = newScroll
-            })
         }
     }
 
 </script>
 
 <style lang="stylus">
-    .header_placeholder
-        min-height 150px
-
-    .menu_container-reverse
-        color blackRed
-        position fixed
-        top 0
-        left 0
-        right 0
-        z-index 1000
-
-        &:before
-        &:after
-            position absolute
-            top 0
-            bottom -15px
-            right: 0
-            left 0
-            z-index 2
-            content ''
-
-        &:before
-            /*background-image backgroundReverse*/
-            background-image linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 243, 237, 0.9) 50%)
-
-        &:after
-            opacity 0
-            /*background-image backgroundReverse*/
-            background-image linear-gradient(to top, rgba(255, 255, 255, 0), backgroundReverse 100%)
-
-        &.header_scrolled
-            .menu
-                transform translateY(-40px)
-                opacity 0
-            &:hover
-                .menu
-                    transform translateY(0px)
-                    opacity 1
 
     .menu_container
         color whiteMain
@@ -164,55 +92,26 @@
         right 0
         z-index 1000
 
-        &:before
-        &:after
-            position absolute
-            top 0
-            bottom -15px
-            right 0
-            left 0
-            z-index 2
-            content ''
-
-        &:before
-            background-image linear-gradient(to top, rgba(18, 0, 0, 0), rgba(18, 0, 0, 0.9) 50%)
-
-        &:after
-            opacity 0
-            background-image linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.01) 1%, rgba(255, 255, 255, 0.9) 80%)
-
-        &.header_scrolled
-            .menu
-                transform translateY(-40px)
-                opacity 0
-            &:hover
-                .menu
-                    transform translateY(0px)
-                    opacity 1
-
-
     .logo_row
         position relative
         display flex
         justify-content center
-        padding-top 20px
-        font-family $IntroRegularCaps
+        padding-top 30px
+        font-family $TenorSans-Regular
         font-size $FontSizeMenu
+        line-height 140%
         text-transform uppercase
         color whiteMain
         height 50px
         z-index 3
         transition all .6s
-
-        &.reverse
-            color darkRed
+        
         .logo
-            svg
-                height 60px
-                width 200px
+            font-size 0
 
         .local
-            right 30px
+            top 40px
+            left 40px
             position absolute
             cursor pointer
             text-transform uppercase
@@ -228,91 +127,43 @@
 
             .active
                 opacity 1
-    .menu
-        display flex
-        width 100%
-        justify-content center
-        margin-top 45px
-        padding 0 118px
-        font-family $IntroRegularCaps
-        font-size $FontSizeMenu
-        text-transform uppercase
-        color whiteMain
-        font-weight bold
-        letter-spacing 0.3px
-        height 50px
-        transition all .6s
-        z-index 3
-        position relative
-
-        &.reverse
-            color darkRed
-
-        &_item
-            padding 10px 15px
-            white-space nowrap
-            position relative
-            text-align center
-            opacity 0.8
-            line-height 1.4
-
-            @media only screen and (max-width 820px)
-                padding 10px 8px
-
-            &:hover
-                opacity 1
-                cursor pointer
-
-        .menu_row
-            width 40%
-            display flex
-            align-items center
-            justify-content center
-
 
     // hamburger menu
-    label
-        display none
+
+    label .hamburger_menu__label
+        position absolute
+        top 143px
+        left -30px
+        font-family $TenorSans-Regular
+        font-size $FontSizeMenu
+        line-height 140%
+        text-transform uppercase
+        transition .5s ease-in-out
 
     label .hamburger_menu
         position absolute
-        left -100px
         top -100px
+        right -100px
         z-index 100
         width 200px
         height 200px
         border-radius 50% 50% 50% 50%
         transition .5s ease-in-out
-        box-shadow 0 0 0 0 #000, 0 0 0 0 #000
+        box-shadow 0 0 0 0 #000
         cursor pointer
-
-    label .hamburger_menu.reverse
-        box-shadow 0 0 0 0 darkRed, 0 0 0 0 darkRed
 
     label .hamburger
         position absolute
-        top 135px
-        right 50px
-        width 35px
+        top 145px
+        right 140px
+        width 26px
         height 2px
         background whiteMain
         display block
         transform-origin center
         transition .5s ease-in-out
 
-    label .hamburger.reverse
-        background darkRed
-
-    label .hamburger.reverse:after, label .hamburger.reverse:before
-        transition .5s ease-in-out
-        content ""
-        position absolute
-        display block
-        width 100%
-        height 100%
-        background darkRed
-
-    label .hamburger:after, label .hamburger:before
+    label .hamburger:after
         transition .5s ease-in-out
         content ""
         position absolute
@@ -320,9 +171,6 @@
         width 100%
         height 100%
         background whiteMain
-
-    label .hamburger:before
-        top -10px
 
     label .hamburger:after
         bottom -10px
@@ -331,14 +179,9 @@
         display none
 
     label input:checked + .hamburger_menu
-        box-shadow 0 0 0 100vw #000, 0 0 0 100vh #000
+        box-shadow 0 0 0 100vw rgba(0, 0, 0, 0.86)
         border-radius 0
-        background #000
-
-    label input:checked + .hamburger_menu.reverse
-        box-shadow 0 0 0 100vw darkRed, 0 0 0 100vh darkRed
-        border-radius 0
-        background darkRed
+        background rgba(0, 0, 0, 0.86)
 
     label input:checked + .hamburger_menu .hamburger
         transform rotate(45deg)
@@ -354,34 +197,46 @@
         top: 0
         background whiteMain
 
+    label input:checked + .hamburger_menu .hamburger_menu__label
+        opacity 0
 
     label input:checked + .hamburger_menu + .hamburger_menu-items_container
         opacity 1
         visibility visible
         transition visibility .1s ease-in, opacity .2s
         transition-delay .2s
+        z-index 101
 
     .hamburger_menu-items_container
+        display flex
+        justify-content center
+        align-items center
         position absolute
+        top 0
         opacity 0
         width 100%
-        top 200px
-        font-family $IntroRegularCaps
-        font-size $FontSizeMenuMobile
+        height 100vh
+        font-family $TenorSans-Regular
+        font-size 30px
+        line-height 42px
         color whiteMain
-        font-weight bold
-        letter-spacing 0.3px
         visibility hidden
+
+        .wrapper_items
+            & > a + a
+                margin-top 30px 
 
         .menu_item
             display flex
             flex-direction column
             text-align center
-            color whiteMain !important
             z-index 101
             span
             a
-                color whiteMain !important
+                color whiteMain 
+
+                &:hover
+                    color goldNew
 
     @media only screen and (max-width 1200px)
         .menu
@@ -389,15 +244,38 @@
                 font-size $FontSizeMenuTablet
                 justify-content center
 
-    @media only screen and (max-width 767px)
-        label
-            display block
+    @media only screen and (max-width 768px)
+        .logo_row
+            padding-top 10px
 
-        .menu
-            display none
-            justify-content space-around
+            .logo
+                height 40px
 
-        .header_placeholder
+            .local
+                top 17px
+                left 11px
+
+        .hamburger_menu__label
             display none
+
+        label .hamburger_menu
+            top -80px
+            right -80px
+            width 160px
+            height 160px
+
+        label .hamburger
+            top 101px
+            right 91px
+
+        label input:checked + .hamburger_menu
+            box-shadow 0 0 0 100vh rgba(0, 0, 0, 0.86)
+
+        .hamburger_menu-items_container
+            font-size 16px
+
+            .wrapper_items
+                & > a + a
+                    margin-top 10px
 
 </style>

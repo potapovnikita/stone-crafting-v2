@@ -28,17 +28,15 @@
 <script>
     import { mapState } from 'vuex'
 
-    import Company from '~/assets/staticData/company.json'
     import Button from "@/components/ui/Button";
     import BrandHistory from "@/components/blocksComponents/BrandHistory";
     import LinksPanel from "@/components/blocksComponents/LinksPanel";
     import Tradition from "@/components/blocksComponents/Tradition";
-    import Footer from '~/components/FooterNew.vue'
+    import Footer from '~/components/Footer.vue'
 
     export default {
         data() {
             return {
-                company: Company,
                 showPhoto: false,
                 showVideo: true,
             }
@@ -83,8 +81,6 @@
                 this.computedStyleFooter();
             })
             this.computedStyleFooter();
-            // const vid = document.getElementById('video')
-            // vid.play();
         },
         destroyed() {
             window.removeEventListener('resize', () => {
@@ -254,42 +250,6 @@
             width 100%
             height 897px
             background linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('~assets/img/tradition/bg-bottom.png') bottom right no-repeat
-
-    .footer-add
-        margin-top: -150px !important
-
-        @media only screen and (max-width 767px)
-            margin-top: 70px !important
-
-    .main-container
-        zoom 1
-        &.main-container
-            padding 0
-            .video-section
-                position relative
-                height 100vh
-                .video-wrapper
-                    position absolute
-                    overflow hidden
-                    height 100vh
-                    top -150px
-                    left 0
-                    width 100vw
-                    @media only screen and (max-width 767px)
-                        top 70px
-
-                    .image
-                        width: 100%;
-                        height: 100%;
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-
-                    video
-                        display block
-                        position absolute
-                        width 100%
-                        z-index 1
 
     @media only screen and (max-width 1280px)
         .wrapper-page

@@ -5,7 +5,7 @@
             img.awards__award-img(
                 v-for="(item, index) in data"
                 :key="`$award_${index}`"
-                :class="{ 'is-active': item.isActive }"
+                :class="[`${item.className}`, { 'is-active': item.isActive }]"
                 :src="getImgLocal(item.img)" alt="award"
                 @click="onFocus(item)"
             )
@@ -76,6 +76,27 @@ export default {
         &.is-active
             opacity 1
 
+        &.award_1
+            width 64px
+
+        &.award_2
+            width 62px
+
+        &.award_3
+            width 54px
+
+        &.award_4
+            width 43px
+
+        &.award_5
+            width 56px
+
+        &.award_6
+            width 48px
+
+        &.award_7
+            width 56px
+
     &__details
         position relative
         min-height 96px
@@ -103,7 +124,7 @@ export default {
             line-height 33px
 
          &__list
-            justify-content center
+            justify-content flex-start
             margin-left -34px
             margin-bottom 0
 
