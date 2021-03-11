@@ -1,42 +1,33 @@
 <template lang='pug'>
     .btn__arrow__wrapper
-        Button(
-            :classNames="['btn__arrow', {'btn__arrow--right': arrowRight}]"
-            :type ="'button'"
-            :disabled="disabled"
-            @parentbtnclick="onClick && onClick()"
-        )
-            div
-                .desktop-hide
-                    Arrow
-                
-                .mobile-hide
-                    ArrowMb
+        button(
+            :class="['btn__arrow', {'btn__arrow--right': arrowRight}]" 
+            @click="onClick && onClick()"
+            )
+                div
+                    .desktop-hide
+                        Arrow
+                    
+                    .mobile-hide
+                        ArrowMb
 
 </template>
-
 <script>
-
-import Button from "@/components/ui/Button";
 import Arrow from '~/assets/img/arrow.svg'
 import ArrowMb from '~/assets/img/arrowMb.svg'
 
 export default {
     name: "ButtonArrow",
     components: {
-        Button,
         Arrow,
         ArrowMb,
     },
     props: {
         onClick: Function,
-        disabled: Boolean,
         arrowRight: Boolean,
     },
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
 .btn__arrow__wrapper
     display flex
@@ -54,8 +45,11 @@ export default {
     padding 0
     font-size 0
     line-height 0
-    min-width unset
     transform rotate(-45deg)
+    outline none
+    cursor pointer
+    background-color transparent
+    border 1px solid goldNew
 
     .mobile-hide
         display none
@@ -65,6 +59,7 @@ export default {
 
     &:hover,
     &:active
+        background goldNew
         svg
             fill #222222
 
