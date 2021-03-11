@@ -6,7 +6,7 @@
                 v-for="(item, index) in data"
                 :key="`$award_${index}`"
                 :class="[`${item.className}`, { 'is-active': item.isActive }]"
-                :src="getImgLocal(item.img)" alt="award"
+                :src="getImgExternal(item.img)" alt="award"
                 @click="onFocus(item)"
             )
         .awards__details
@@ -20,7 +20,7 @@
 <script>
 import { mapState } from 'vuex'
 import Awards from '~/assets/staticData/awards.json'
-import { getImgLocal } from '~/plugins/getUrl'
+import { getImgExternal } from '~/plugins/getUrl'
 export default {
     name: 'Avards',
     data() {
@@ -29,8 +29,8 @@ export default {
         }
     },
     methods: {
-        getImgLocal(url) {
-            return getImgLocal(url)
+        getImgExternal(url) {
+            return getImgExternal(url)
         },
         onFocus(focused) {
             const temp = [ ...this.data]
