@@ -1,5 +1,5 @@
 <template lang="pug">
-    .container#container(:class="{reverse: reverse}")
+    .container#container
         slot
 
 </template>
@@ -11,7 +11,6 @@
 
             }
         },
-        props: ['reverse'],
         methods: {},
         components: {},
         mounted() {},
@@ -25,6 +24,4 @@
         position relative
         min-height 100vh
         overflow hidden
-        &.reverse
-            background-color backgroundReverse
 </style>

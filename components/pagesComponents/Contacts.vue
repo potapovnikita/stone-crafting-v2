@@ -87,7 +87,7 @@ import Button from "@/components/ui/Button"
 import MuseumIcon from '~/assets/img/contacts/museum.svg'
 import MuseumMbIcon from '~/assets/img/contacts/museumMb.svg'
 import MuseumMbSmallIcon from '~/assets/img/contacts/museumMb-small.svg'
-import Footer from '~/components/FooterNew.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
     data() {

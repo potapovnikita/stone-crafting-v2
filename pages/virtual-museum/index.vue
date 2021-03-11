@@ -7,7 +7,7 @@
 <script>
     import VirtualMuseum from '~/components/pagesComponents/VirtualMuseum.vue'
     import PageContainer from '~/components/PageContainer.vue'
-    import Header from '~/components/HeaderNew.vue'
+    import Header from '~/components/Header.vue'
 
     export default {
         components: {

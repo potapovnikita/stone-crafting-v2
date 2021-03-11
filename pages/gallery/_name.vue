@@ -5,8 +5,8 @@
 </template>
 
 <script>
-    import Gallery from '~/components/pagesComponents/GalleryNew.vue'
-    import Header from '~/components//HeaderNew.vue'
+    import Gallery from '~/components/pagesComponents/Gallery.vue'
+    import Header from '~/components//Header.vue'
     import PageContainer from '~/components/PageContainer.vue'
 
     export default {

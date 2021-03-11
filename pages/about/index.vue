@@ -7,7 +7,7 @@
 <script>
     import About from '~/components/pagesComponents/About.vue'
     import PageContainer from '~/components/PageContainer.vue'
-    import Header from '~/components/HeaderNew.vue'
+    import Header from '~/components/Header.vue'
 
     export default {
         components: {

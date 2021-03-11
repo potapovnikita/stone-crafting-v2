@@ -57,7 +57,7 @@
     import { mapState } from 'vuex'
     import Virtual from '~/assets/staticData/virtual.json'
     import zenscroll from 'zenscroll'
-    import Footer from '~/components/FooterNew.vue'
+    import Footer from '~/components/Footer.vue'
 
     export default {
         data() {

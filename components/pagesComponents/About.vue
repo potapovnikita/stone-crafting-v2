@@ -100,7 +100,7 @@
     import ExpertsAbout from '@/components/blocksComponents/ExpertsAbout'
     import Mission from "@/components/blocksComponents/Mission"
     import TabsAbout from '@/components/blocksComponents/TabsAbout'
-    import Footer from '~/components/FooterNew.vue'
+    import Footer from '~/components/Footer.vue'
 
     export default {
         data() {

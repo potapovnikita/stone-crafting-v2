@@ -26,7 +26,7 @@
     import Cookies from 'universal-cookie';
     import CollectionItem from "@/components/pagesComponents/CollectionItem";
     import MuseumNew from '~/assets/staticData/museumNew.json';
-    import Footer from '~/components/FooterNew.vue'
+    import Footer from '~/components/Footer.vue'
 
     export default {
         data() {
