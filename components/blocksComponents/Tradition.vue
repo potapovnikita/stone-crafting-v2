@@ -10,7 +10,18 @@
                         ButtonArrow(:onClick="prewSlide")
                     .buttons-desktop.btn-right
                             ButtonArrow(:onClick="nextSlide" arrowRight)
-                    carousel(:paginationEnabled="false" :loop="true" :perPage="1" ref="traditionCarousel")
+                    .mobile-century-panel
+                        .slide-item__century-panel(v-if="centuryList")
+                            .slide-item__centry-item(v-for="century in centuryList")
+                                span(:class="{'active': century.name === slides[currentSlide].century}") {{century.name}}
+                                .slide-item__centry-circle(:class="{'active': century.name === slides[currentSlide].century}")
+
+                            .slide-item__line-panel
+                                .slide-item__line-start
+                                .slide-item__line-middle
+                                .slide-item__line-end
+
+                    carousel(:paginationEnabled="false" :loop="true" :perPage="1" @pageChange="handlePageChange" ref="traditionCarousel")
                         slide(v-for="item in slides" :key="item.id")
                             .slide-item
                                 .slide-item__container-img
@@ -19,15 +30,16 @@
                                     img.slide-item__photo(v-if="item.img" :src="getImgLocal(item.img)" alt="img")
 
                                 .slide-item__container-text(:class="item.textBlockClass ? `${item.textBlockClass}-${item.id}` : ''")
-                                    .slide-item__century-panel(v-if="centuryList")
-                                        .slide-item__centry-item(v-for="century in centuryList")
-                                            span(:class="{'active': century.name === item.century}") {{century.name}}
-                                            .slide-item__centry-circle(:class="{'active': century.name === item.century}")
+                                    .slide-item__descktop-century-panel
+                                        .slide-item__century-panel(v-if="centuryList")
+                                            .slide-item__centry-item(v-for="century in centuryList")
+                                                span(:class="{'active': century.name === item.century}") {{century.name}}
+                                                .slide-item__centry-circle(:class="{'active': century.name === item.century}")
 
-                                        .slide-item__line-panel
-                                            .slide-item__line-start
-                                            .slide-item__line-middle
-                                            .slide-item__line-end
+                                            .slide-item__line-panel
+                                                .slide-item__line-start
+                                                .slide-item__line-middle
+                                                .slide-item__line-end
 
                                     p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
 
@@ -108,7 +120,10 @@
             navigateTo(index) {
                 this.currentSlide = index
                 this.$refs.traditionCarousel.goToPage(index)
-            }
+            },
+            handlePageChange(num) {
+                this.currentSlide = num
+            },
         },
         computed: {
             ...mapState('localization', [
@@ -182,6 +197,9 @@
 
                 &.btn-right
                     right 0
+
+            .mobile-century-panel
+                display none
 
             .slide-item
                 display flex
@@ -408,6 +426,13 @@
                 .buttons-desktop
                     display none
 
+                .mobile-century-panel
+                    display block
+                    position absolute
+                    top 243px
+                    left 0
+                    right 0
+
                 .slide-item
                     display block
                     max-width unset
@@ -425,6 +450,9 @@
                     &__text
                         font-size 16px
                         line-height 24px
+
+                    &__descktop-century-panel
+                        visibility hidden
 
                     &__century-panel
                         width 295px
