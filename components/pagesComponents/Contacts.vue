@@ -38,7 +38,7 @@
 
                                 a.phone(v-if="item.phone" :href="'https://api.whatsapp.com/send?phone=' + item.phone + '&text=%20' + ' '" target="_blank")
                                     Whatsapp
-            
+
             .info {{ lang === 'ru' ? 'Партнеры' : 'Partners' }}
 
             .partner-list(v-if="contacts.partners")
@@ -46,7 +46,7 @@
                     img.photo(:src="getImg(item.img)" alt="partner")
                     p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
                     a.link(:href="item.href.link" target="_blank") {{item.href.name}}
-            
+
             h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
             h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
             .videoVirtual
@@ -176,7 +176,7 @@ export default {
             width 100%
             height 1px
             background goldNew
-    
+
     .phones
         margin-bottom 12px
         a + a
@@ -405,7 +405,7 @@ export default {
 
                 .icon
                     width 57px
-                    height 57px  
+                    height 57px
                     margin-right 30px
 
                     &.desktop
@@ -524,7 +524,7 @@ export default {
 
                 .icon
                     width 37px
-                    height 34px 
+                    height 34px
                     margin-right 35px
 
                     &.mobile

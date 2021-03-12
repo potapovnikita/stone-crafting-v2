@@ -21,7 +21,6 @@ const db = firebase.firestore()
 // const auth = firebase.auth()
 
 // collection references
-const usersCollection = db.collection('users')
 const categoriesCollection = db.collection('categories')
 const goodsCollection = db.collection('goods')
 
@@ -29,7 +28,6 @@ const goodsCollection = db.collection('goods')
 export {
     db,
     // auth,
-    usersCollection,
     categoriesCollection,
     goodsCollection,
 }

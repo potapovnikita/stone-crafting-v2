@@ -8,7 +8,7 @@
             .header-container__title-container.header-container__title-container--position-absolute
                 HeaderMain
             video#video(playsinline autoplay="true" loop="true" muted="muted")
-                source(src="~/assets/video/main.mp4" type="video/mp4")
+                source(src="~/assets/video/main-new.mp4" type="video/mp4")
 
         BrandHistory
         LinksPanel
@@ -114,7 +114,7 @@
         @media only screen and (max-width 1024px)
             height 703px
             background url('~assets/img/main/header-main-ip.png') top center no-repeat
-        
+
         @media only screen and (max-width 767px)
             height 100vh
 
@@ -169,7 +169,7 @@
     @media only screen and (max-width 1280px)
         .wrapper-page
             min-height 1210px
-            
+
             .pic-top-left
                 background-size 80%
                 background-position -100px -50px
