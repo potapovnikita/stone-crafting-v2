@@ -2,15 +2,11 @@
     .common-container.main-container
         .header-container(v-if="showPhoto")
             .header-container__title-container
-                .header-container__circle
-                h1.header-container__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Stone-crafting House by Alexey Antonov' }}
-                p.header-container__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Title on eng' }}
-                .header-container__line
-                .header-container__year-wrapper
-                    .header-container__double-line
-                    p.text_sverdlovsk {{ lang === 'ru' ? 'с 1968 года' : 'since 1968' }}
+                HeaderMain
 
         .header__video-section(v-if="showVideo")
+            .header-container__title-container.header-container__title-container--position-absolute
+                HeaderMain
             video#video(playsinline autoplay="true" loop="true" muted="muted")
                 source(src="~/assets/video/main.mp4" type="video/mp4")
 
@@ -33,6 +29,7 @@
     import LinksPanel from "@/components/blocksComponents/LinksPanel";
     import Tradition from "@/components/blocksComponents/Tradition";
     import Footer from '~/components/Footer.vue'
+    import HeaderMain from "@/components/blocksComponents/HeaderMain";
 
     export default {
         data() {
@@ -47,6 +44,7 @@
             LinksPanel,
             Tradition,
             Footer,
+            HeaderMain,
         },
         computed: {
             ...mapState('localization', [
@@ -96,78 +94,22 @@
         background url('~assets/img/main/header-main.png') top center no-repeat
         background-size cover
 
-        &__circle
-            position absolute
-            top 0
-            left 0
-            right 0
-            margin 0 auto
-            width 722px
-            height 100%
-            border 1px solid rgba(255, 255, 255, 0.07)
-            border-radius 50%
-
         &__title-container
-            position relative
-            height 722px
             margin-top 148px
-            padding-top 195px
 
-        &__title
-            font-size 68px
-            margin-bottom 14px
-
-        &__sub-title
-            margin-bottom 35px
-            font-size 19px
-            line-height 140%
-            letter-spacing 0.3em
-            text-transform uppercase
-            color goldNew
-
-        &__line
-            position absolute
-            left 0
-            right 0
-            width 53px
-            height 1px
-            margin 0 auto
-            background goldNew
-
-        &__year-wrapper
-            position relative
-            padding-top 30px
-            margin-top 102px
-
-        &__double-line
-            position absolute
-            top 0
-            left 0
-            right 0
-            width 163px
-            height 4px
-            margin 0 auto
-            border 1px solid #6A6A6A
-            border-left none
-            border-right none
+            &--position-absolute
+                position absolute
+                left 0
+                right 0
+                margin-top 65px
 
         @media only screen and (max-width 1280px)
 
             &__title-container
-                position relative
-                height 580px
                 margin-top 110px
-                padding-top 180px
-            
-            &__title
-                font-size 52px
 
-            &__circle
-                width 580px
-
-            &__year-wrapper
-                padding-top 25px
-                margin-top 83px
+                &--position-absolute
+                    margin-top 30px
 
         @media only screen and (max-width 1024px)
             height 703px
@@ -176,46 +118,19 @@
         @media only screen and (max-width 767px)
             height 100vh
 
-            &__circle
-                width 409px
-                height 409px
-                margin 0
-
             &__title-container
-                height 409px
                 margin-top 109px
-                padding-top 108px
 
-            &__title
-                font-size 32px
-                line-height 34px
-                margin-bottom 33px
+                &--position-absolute
+                    margin-top 10px
 
-            &__sub-title
-                margin-bottom 52px
-                font-size 13px
-                line-height 19px
-                letter-spacing 0.3em
-                text-transform uppercase
-                color goldNew
-
-            &__line
-                width 39px
-
-            &__year-wrapper
-                padding-top 33px
-                margin 0
-            
-            &__double-line
-                display none
-
-        @media only screen and (max-width 767px)
             background url('~assets/img/main/header-main-mb.png') no-repeat
             background-position center
             background-size cover
 
     .header__video-section
         display block
+        position relative
 
         video
             display block
