@@ -107,9 +107,17 @@ export default {
         &__slider-contaier
             flex-basis 540px
 
-    @media only screen and (max-width 1030px)
+    @media only screen and (max-width 910px)
         &__buttons
             visibility hidden
+
+        &__info
+            display flex
+            justify-content: space-around
+            align-items: center
+
+        &__buttons-mobile
+            display block
 
     @media only screen and (max-width 850px)
         &__wrapper-slider
@@ -119,15 +127,6 @@ export default {
 
         &__slider-contaier
             flex-basis 470px
-
-    @media only screen and (max-width 767px)
-        &__info
-            display flex
-            justify-content: space-around
-            align-items: center
-
-        &__buttons-mobile
-            display block
 
     @media only screen and (max-width 650px)
         &__wrapper-slider
