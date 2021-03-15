@@ -548,8 +548,6 @@ export default {
             left 82px
 
     @media only screen and (max-width 1000px)
-        max-width unset
-        padding 0 10px
 
         .model-container__stones
             margin-top 50px

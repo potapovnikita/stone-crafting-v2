@@ -244,6 +244,38 @@
                 font-size $FontSizeMenuTablet
                 justify-content center
 
+    @media only screen and (max-width 900px) and (max-height 500px)
+        .logo_row
+            padding-top 10px
+
+            .logo
+                height 40px
+
+            .local
+                top 17px
+                left 11px
+
+        .hamburger_menu__label
+            display none
+
+        label .hamburger_menu
+            top -80px
+            right -80px
+            width 160px
+            height 160px
+
+        label .hamburger
+            top 101px
+            right 91px
+
+        .hamburger_menu-items_container
+            font-size 16px
+            line-height 35px
+
+            .wrapper_items
+                & > a + a
+                    margin-top 5px
+
     @media only screen and (max-width 768px)
         .logo_row
             padding-top 10px
@@ -277,5 +309,18 @@
             .wrapper_items
                 & > a + a
                     margin-top 10px
+
+    @media only screen and (max-width 767px) and (max-height 500px)
+        label input:checked + .hamburger_menu
+            box-shadow 0 0 0 100vw rgba(0, 0, 0, 0.86)
+
+    @media only screen and (max-width 767px) and (max-height 350px)
+
+        .hamburger_menu-items_container
+            font-size 16px
+
+            .wrapper_items
+                & > a + a
+                    margin-top 3px
 
 </style>

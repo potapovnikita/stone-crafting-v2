@@ -7,7 +7,7 @@
         .header__video-section(v-if="showVideo")
             .header-container__title-container.header-container__title-container--position-absolute
                 HeaderMain
-            video#video(playsinline autoplay="true" loop="true" muted="muted")
+            video#video(playsinline autoplay loop="true" muted="muted")
                 source(src="~/assets/video/main-new.mp4" type="video/mp4")
 
         BrandHistory
@@ -34,8 +34,8 @@
     export default {
         data() {
             return {
-                showPhoto: false,
-                showVideo: true,
+                showPhoto: true,
+                showVideo: false,
             }
         },
         components: {
@@ -56,17 +56,20 @@
         },
         methods: {
           computedStyleFooter() {
+              if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
+                  this.showPhoto = true
+                  this.showVideo = false
+                  return
+              }
+              this.showPhoto = false
+              this.showVideo = true
               var count = 0;
               var int = setInterval(() => {
                   if (!this.load) {
                       var videoHeight = document.getElementsByTagName('video')[0].clientHeight;
-                      var wrapper = document.getElementsByClassName('video-wrapper')[0];
-                      var section = document.getElementsByClassName('video-section')[0];
-                      var footer = document.getElementsByClassName('footer_container')[0];
-                      if (videoHeight && footer && section && wrapper) {
-                          wrapper.style.height = videoHeight + 'px';
+                      var section = document.getElementsByClassName('header__video-section')[0];
+                      if (videoHeight && section) {
                           section.style.height = videoHeight + 'px';
-                          footer.classList.add('footer-add');
                           count++;
                           if (count > 5) clearInterval(int);
                       }
@@ -115,6 +118,13 @@
             height 703px
             background url('~assets/img/main/header-main-ip.png') top center no-repeat
 
+        @media only screen and (max-width 900px) and (max-height 500px)
+            height 100vh
+            background-size cover
+
+            &__title-container
+                margin-top 80px
+
         @media only screen and (max-width 767px)
             height 100vh
 
@@ -127,6 +137,17 @@
             background url('~assets/img/main/header-main-mb.png') no-repeat
             background-position center
             background-size cover
+
+        @media only screen and (max-width 767px) and (max-height 500px)
+            background url('~assets/img/main/header-main-ip.png') top center no-repeat
+            background-size cover
+
+            &__title-container
+                margin-top 80px
+
+        @media only screen and (max-width 767px) and (max-height 350px)
+            &__title-container
+                margin-top 60px
 
     .header__video-section
         display block

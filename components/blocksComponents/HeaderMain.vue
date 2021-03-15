@@ -34,7 +34,7 @@ export default {
         margin 0 auto
         width 722px
         height 100%
-        border 1px solid rgba(255, 255, 255, 1)
+        border 1px solid rgba(255, 255, 255, 0.07)
         border-radius 50%
 
     &__title
@@ -88,7 +88,38 @@ export default {
         &__year-wrapper
             padding-top 25px
             margin-top 83px
-    
+
+    @media only screen and (max-width 900px) and (max-height 500px)
+        padding-top 40px
+        height 100vh
+
+        &__circle
+            width 280px
+            height 280px            
+
+        &__title
+            font-size 32px
+            line-height 34px
+            margin-bottom 15px
+
+        &__sub-title
+            margin-bottom 30px
+            font-size 13px
+            line-height 19px
+            letter-spacing 0.3em
+            text-transform uppercase
+            color goldNew
+
+        &__line
+            width 39px
+
+        &__year-wrapper
+            padding-top 15px
+            margin 0
+        
+        &__double-line
+            display none
+
     @media only screen and (max-width 767px)
         height 100vh
         padding-top 108px
@@ -121,5 +152,54 @@ export default {
         
         &__double-line
             display none
+
+    @media only screen and (max-width 767px) and (max-height 500px)
+        padding-top 30px
+
+        &__circle
+            width 300px
+            height 300px            
+
+        &__title
+            margin-bottom 15px
+
+        &__sub-title
+            margin-bottom 35px
+
+        &__year-wrapper
+            padding-top 25px
+            margin 0
+
+    @media only screen and (max-width 767px) and (max-height 380px)
+        padding-top 25px
+
+        &__circle
+            width 250px
+            height 250px            
+
+        &__title
+            margin-bottom 15px
+
+        &__sub-title
+            margin-bottom 35px
+
+        &__year-wrapper
+            padding-top 25px
+
+    @media only screen and (max-width 767px) and (max-height 350px)
+        padding-top 20px
+
+        &__circle
+            width 230px
+            height 230px            
+
+        &__title
+            margin-bottom 10px
+
+        &__sub-title
+            margin-bottom 30px
+
+        &__year-wrapper
+            padding-top 20px
 
 </style>
