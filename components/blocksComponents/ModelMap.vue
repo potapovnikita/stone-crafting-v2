@@ -287,7 +287,14 @@ export default {
         &.diamond,
         &.petrifiedTree,
         &.crystal,
-        &.emali
+        &.emali,
+        &.silicon,
+        &.eudialyte,
+        &.shaitanianOverlap,
+        &.labradorite,
+        &.calcite,
+        &.jadeite,
+        &.coral
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -331,7 +338,14 @@ export default {
         &.diamond,
         &.petrifiedTree,
         &.crystal,
-        &.emali
+        &.emali,
+        &.silicon,
+        &.eudialyte,
+        &.shaitanianOverlap,
+        &.labradorite,
+        &.calcite,
+        &.jadeite,
+        &.coral
             &.active
                 fill blackBackground
 

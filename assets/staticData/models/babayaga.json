@@ -38,63 +38,66 @@
     "modelMap": {
         "modelClassName": "babayaga",
         "img": "img/collections/babayaga/0.png",
+        "modelBig": "babayaga",
+        "modelMiddle": "babayaga1",
+        "modelSmall": "babayaga2",
         "stonesLeft": [
             {
                 "id": "silicon",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "silicon"
             },
             {
                 "id": "dolerite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "chalcedony",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "eudialyte",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "eudialyte"
             },
             {
                 "id": "nephrite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "shaitanianOverlap",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "shaitanianOverlap"
             }
         ],
         "stonesRight": [
             {
                 "id": "jasper",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "petrifiedTree",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "quartzite",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "labradorite",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "labradorite"
             },
             {
                 "id": "bronze",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "bronze"
             }
         ]
     }

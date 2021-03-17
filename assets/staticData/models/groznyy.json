@@ -7,48 +7,51 @@
     "modelMap": {
         "modelClassName": "groznyy",
         "img": "img/collections/groznyy/0.png",
+        "modelBig": "groznyy",
+        "modelMiddle": "groznyy1",
+        "modelSmall": "groznyy2",
         "stonesLeft": [
             {
                 "id": "jasper",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "quartzite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "chalcedony",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "eudialyte",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "eudialyte"
             }
         ],
         "stonesRight": [
             {
                 "id": "tigersEye",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "cacholong",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "gold",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "gold"
             },
             {
                 "id": "silver",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "silver"
             }
         ]
     }

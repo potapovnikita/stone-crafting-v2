@@ -32,73 +32,76 @@
     "modelMap": {
         "modelClassName": "watery",
         "img": "img/collections/watery/0.png",
+        "modelBig": "watery",
+        "modelMiddle": "watery1",
+        "modelSmall": "watery2",
         "stonesLeft": [
             {
                 "id": "jasper",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "moonstone",
                 "label": 2,
-                "stoneClassName": "stone1"
+                "stoneClassName": "moonstone"
             },
             {
                 "id": "iceQuartz",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "iceQuartz"
             },
             {
                 "id": "calcite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "calcite"
             },
             {
                 "id": "nephrite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "jadeite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "jadeite"
             },
             {
                 "id": "chalcedony",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "chalcedony"
             }
         ],
         "stonesRight": [
             {
                 "id": "quartzite",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "tigersEye",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "bronze",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "cacholong",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "coral",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "coral"
             },
             {
                 "id": "silver",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "silver"
             }
         ]
     }

@@ -54,6 +54,18 @@ const models = {
     scarlet: () => import('@/components/modelComponents/scarletModels/ScarletBig'),
     scarlet1: () => import('@/components/modelComponents/scarletModels/ScarletMiddle'),
     scarlet2: () => import('@/components/modelComponents/scarletModels/ScarletSmall'),
+
+    babayaga: () => import('@/components/modelComponents/babayagaModels/BabayagaBig'),
+    babayaga1: () => import('@/components/modelComponents/babayagaModels/BabayagaMiddle'),
+    babayaga2: () => import('@/components/modelComponents/babayagaModels/BabayagaSmall'),
+
+    groznyy: () => import('@/components/modelComponents/groznyyModels/GroznyyBig'),
+    groznyy1: () => import('@/components/modelComponents/groznyyModels/GroznyyMiddle'),
+    groznyy2: () => import('@/components/modelComponents/groznyyModels/GroznyySmall'),
+
+    watery: () => import('@/components/modelComponents/wateryModels/WateryBig'),
+    watery1: () => import('@/components/modelComponents/wateryModels/WateryMiddle'),
+    watery2: () => import('@/components/modelComponents/wateryModels/WaterySmall'),
 }
 export default {
     name: 'ModelFactory',
