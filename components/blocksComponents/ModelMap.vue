@@ -294,7 +294,12 @@ export default {
         &.labradorite,
         &.calcite,
         &.jadeite,
-        &.coral
+        &.coral,
+        &.topaz,
+        &.hematite,
+        &.emerald,
+        &.ruby,
+        &.sapphire
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -345,7 +350,12 @@ export default {
         &.labradorite,
         &.calcite,
         &.jadeite,
-        &.coral
+        &.coral,
+        &.topaz,
+        &.hematite,
+        &.emerald,
+        &.ruby,
+        &.sapphire
             &.active
                 fill blackBackground
 

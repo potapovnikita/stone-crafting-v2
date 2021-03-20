@@ -52,83 +52,86 @@
     "modelMap": {
         "modelClassName": "pussBoots",
         "img": "img/collections/pussBoots/0.png",
+        "modelBig": "pussBoots",
+        "modelMiddle": "pussBoots1",
+        "modelSmall": "pussBoots2",
         "stonesLeft": [
             {
                 "id": "nephrite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "quartzite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "jasper",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "fluorite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "fluorite"
             },
             {
                 "id": "chalcedony",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "marble",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "marble"
             },
             {
                 "id": "petrifiedTree",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "aventurine",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "aventurine"
             }
         ],
         "stonesRight": [
             {
                 "id": "gabbro",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "gabbro"
             },
             {
                 "id": "quartz",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "quartz"
             },
             {
                 "id": "rhodonite",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "carnelian",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "silver",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "silver"
             },
             {
                 "id": "topaz",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "topaz"
             },
             {
                 "id": "bronze",
                 "label": 15,
-                "stoneClassName": "stone15"
+                "stoneClassName": "bronze"
             }
         ]
     }

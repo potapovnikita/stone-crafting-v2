@@ -66,6 +66,26 @@ const models = {
     watery: () => import('@/components/modelComponents/wateryModels/WateryBig'),
     watery1: () => import('@/components/modelComponents/wateryModels/WateryMiddle'),
     watery2: () => import('@/components/modelComponents/wateryModels/WaterySmall'),
+
+    dvorovoy: () => import('@/components/modelComponents/dvorovoyModels/DvorovoyBig'),
+    dvorovoy1: () => import('@/components/modelComponents/dvorovoyModels/DvorovoyMiddle'),
+    dvorovoy2: () => import('@/components/modelComponents/dvorovoyModels/DvorovoySmall'),
+
+    goldfish: () => import('@/components/modelComponents/goldfishModels/GoldfishBig'),
+    goldfish1: () => import('@/components/modelComponents/goldfishModels/GoldfishMiddle'),
+    goldfish2: () => import('@/components/modelComponents/goldfishModels/GoldfishSmall'),
+
+    kikimora: () => import('@/components/modelComponents/kikimoraModels/KikimoraBig'),
+    kikimora1: () => import('@/components/modelComponents/kikimoraModels/KikimoraMiddle'),
+    kikimora2: () => import('@/components/modelComponents/kikimoraModels/KikimoraSmall'),
+
+    koschei: () => import('@/components/modelComponents/koscheiModels/KoscheiBig'),
+    koschei1: () => import('@/components/modelComponents/koscheiModels/KoscheiMiddle'),
+    koschei2: () => import('@/components/modelComponents/koscheiModels/KoscheiSmall'),
+
+    pussBoots: () => import('@/components/modelComponents/pussBootsModels/PussBootsBig'),
+    pussBoots1: () => import('@/components/modelComponents/pussBootsModels/PussBootsMiddle'),
+    pussBoots2: () => import('@/components/modelComponents/pussBootsModels/PussBootsSmall'),
 }
 export default {
     name: 'ModelFactory',

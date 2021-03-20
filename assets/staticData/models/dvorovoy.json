@@ -30,6 +30,9 @@
     "modelMap": {
         "modelClassName": "dvorovoy",
         "img": "img/collections/dvorovoy/0.png",
+        "modelBig": "dvorovoy",
+        "modelMiddle": "dvorovoy1",
+        "modelSmall": "dvorovoy2",
         "stonesLeft": [
             {
                 "id": "agate",

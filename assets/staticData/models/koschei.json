@@ -40,78 +40,81 @@
     "modelMap": {
         "modelClassName": "koschei",
         "img": "img/collections/koschei/0.png",
+        "modelBig": "koschei",
+        "modelMiddle": "koschei1",
+        "modelSmall": "koschei2",
         "stonesLeft": [
             {
                 "id": "dolerite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "aventurine",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "aventurine"
             },
             {
                 "id": "hematite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "hematite"
             },
             {
                 "id": "pyrite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "pyrite"
             },
             {
                 "id": "chalcedony",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "jasper",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "petrifiedTree",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "petrifiedTree"
             }
         ],
         "stonesRight": [
             {
                 "id": "tigersEye",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "gold"
             },
             {
                 "id": "silver",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "silver"
             },
             {
                 "id": "bronze",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "emerald",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "emerald"
             },
             {
                 "id": "ruby",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "ruby"
             },
             {
                 "id": "sapphire",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "sapphire"
             }
         ]
     }

@@ -38,6 +38,9 @@
     "modelMap": {
         "modelClassName": "goldfish",
         "img": "img/collections/goldfish/0.png",
+        "modelBig": "goldfish",
+        "modelMiddle": "goldfish1",
+        "modelSmall": "goldfish2",
         "stonesLeft": [
             {
                 "id": "carnelian",
