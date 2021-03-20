@@ -7,6 +7,10 @@
     "modelMap": {
         "modelClassName": "muromets",
         "img": "img/collections/muromets/0.png",
+        "modelBig": "muromets",
+        "modelMiddle": "muromets1",
+        "modelSmall": "muromets2",
+        "modelMbWidth": "murometsMbWidth",
         "stonesLeft": [
             {
                 "id": "pyrite",

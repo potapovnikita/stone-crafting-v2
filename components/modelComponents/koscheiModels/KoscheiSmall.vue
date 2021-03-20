@@ -73,6 +73,7 @@ export default {
 <style lang="stylus" scoped>
 .koschei
     font-size 0
+    width 360px
     background url('~assets/img/collections/koschei/0.png') no-repeat
     background-size contain
 

@@ -7,6 +7,11 @@
     "modelMap": {
         "modelClassName": "popovich",
         "img": "img/collections/popovich/0.png",
+        "modelBig": "popovich",
+        "modelMiddle": "popovich1",
+        "modelSmall": "popovich2",
+        "modelMbWidth": "popovichMbWidth",
+        "modelMbSmall": "popovichMbSmall",
         "stonesLeft": [
             {
                 "id": "quartzite",

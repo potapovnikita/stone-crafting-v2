@@ -40,6 +40,9 @@
     "modelMap": {
         "modelClassName": "snowqueen",
         "img": "img/collections/snowqueen/0.png",
+        "modelBig": "snowqueen",
+        "modelMiddle": "snowqueen1",
+        "modelSmall": "snowqueen2",
         "stonesLeft": [
             {
                 "id": "labradorite",

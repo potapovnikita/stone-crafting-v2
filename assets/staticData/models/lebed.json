@@ -36,6 +36,9 @@
     "modelMap": {
         "modelClassName": "lebed",
         "img": "img/collections/lebed/0.png",
+        "modelBig": "lebed",
+        "modelMiddle": "lebed1",
+        "modelSmall": "lebed2",
         "stonesLeft": [
             {
                 "id": "nephrite",

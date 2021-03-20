@@ -40,6 +40,9 @@
     "modelMap": {
         "modelClassName": "lesovichek",
         "img": "img/collections/lesovichek/0.png",
+        "modelBig": "lesovichek",
+        "modelMiddle": "lesovichek1",
+        "modelSmall": "lesovichek2",
         "stonesLeft": [
             {
                 "id": "uvarovite",

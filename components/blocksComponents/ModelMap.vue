@@ -11,8 +11,10 @@
 
             .model-container__wrapper-img
                 client-only
-                    ModelFactory(v-if="modelMap.modelMobile && winWidth <= 375" :modelName="modelMap.modelMobile")
-                    ModelFactory(v-if="!modelMap.modelMobile && winWidth <= 1280" :modelName="modelMap.modelSmall")
+                    ModelFactory(v-if="winWidth <= 375 && modelMap.modelMbSmall" :modelName="modelMap.modelMbSmall")
+                    ModelFactory(v-if="winWidth > 375 && winWidth <= 1000 && modelMap.modelMbWidth" :modelName="modelMap.modelMbWidth")
+                    ModelFactory(v-if="winWidth <= 1000 && !modelMap.modelMbWidth && !modelMap.modelMbSmall" :modelName="modelMap.modelSmall")
+                    ModelFactory(v-if="winWidth > 1000 && winWidth <= 1280" :modelName="modelMap.modelSmall")
                     ModelFactory(v-if="winWidth > 1280 && winWidth <= 1440" :modelName="modelMap.modelMiddle")
                     ModelFactory(v-if="winWidth > 1440" :modelName="modelMap.modelBig")
 

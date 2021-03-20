@@ -50,6 +50,9 @@
     "modelMap": {
         "modelClassName": "ovinnik",
         "img": "img/collections/ovinnik/0.png",
+        "modelBig": "ovinnik",
+        "modelMiddle": "ovinnik1",
+        "modelSmall": "ovinnik2",
         "stonesLeft": [
             {
                 "id": "jadeite",

@@ -34,6 +34,9 @@
     "modelMap": {
         "modelClassName": "rusalka",
         "img": "img/collections/rusalka/0.png",
+        "modelBig": "rusalka",
+        "modelMiddle": "rusalka1",
+        "modelSmall": "rusalka2",
         "stonesLeft": [
             {
                 "id": "agate",

@@ -86,6 +86,45 @@ const models = {
     pussBoots: () => import('@/components/modelComponents/pussBootsModels/PussBootsBig'),
     pussBoots1: () => import('@/components/modelComponents/pussBootsModels/PussBootsMiddle'),
     pussBoots2: () => import('@/components/modelComponents/pussBootsModels/PussBootsSmall'),
+
+    ovinnik: () => import('@/components/modelComponents/ovinnikModels/OvinnikBig'),
+    ovinnik1: () => import('@/components/modelComponents/ovinnikModels/OvinnikMiddle'),
+    ovinnik2: () => import('@/components/modelComponents/ovinnikModels/OvinnikSmall'),
+
+    bannik: () => import('@/components/modelComponents/bannikModels/BannikBig'),
+    bannik1: () => import('@/components/modelComponents/bannikModels/BannikMiddle'),
+    bannik2: () => import('@/components/modelComponents/bannikModels/BannikSmall'),
+
+    viking: () => import('@/components/modelComponents/vikingModels/VikingBig'),
+    viking1: () => import('@/components/modelComponents/vikingModels/VikingMiddle'),
+    viking2: () => import('@/components/modelComponents/vikingModels/VikingSmall'),
+
+    lesovichek: () => import('@/components/modelComponents/lesovichekModels/LesovichekBig'),
+    lesovichek1: () => import('@/components/modelComponents/lesovichekModels/LesovichekMiddle'),
+    lesovichek2: () => import('@/components/modelComponents/lesovichekModels/LesovichekSmall'),
+
+    rusalka: () => import('@/components/modelComponents/rusalkaModels/RusalkaBig'),
+    rusalka1: () => import('@/components/modelComponents/rusalkaModels/RusalkaMiddle'),
+    rusalka2: () => import('@/components/modelComponents/rusalkaModels/RusalkaSmall'),
+
+    snowqueen: () => import('@/components/modelComponents/snowqueenModels/SnowqueenBig'),
+    snowqueen1: () => import('@/components/modelComponents/snowqueenModels/SnowqueenMiddle'),
+    snowqueen2: () => import('@/components/modelComponents/snowqueenModels/SnowqueenSmall'),
+
+    lebed: () => import('@/components/modelComponents/lebedModels/LebedBig'),
+    lebed1: () => import('@/components/modelComponents/lebedModels/LebedMiddle'),
+    lebed2: () => import('@/components/modelComponents/lebedModels/LebedSmall'),
+
+    popovich: () => import('@/components/modelComponents/popovichModels/PopovichBig'),
+    popovich1: () => import('@/components/modelComponents/popovichModels/PopovichMiddle'),
+    popovich2: () => import('@/components/modelComponents/popovichModels/PopovichSmall'),
+    popovichMbWidth: () => import('@/components/modelComponents/popovichModels/PopovichMbWidth'),
+    popovichMbSmall: () => import('@/components/modelComponents/popovichModels/PopovichMbSmall'),
+
+    muromets: () => import('@/components/modelComponents/murometsModels/MurometsBig'),
+    muromets1: () => import('@/components/modelComponents/murometsModels/MurometsMiddle'),
+    muromets2: () => import('@/components/modelComponents/murometsModels/MurometsSmall'),
+    murometsMbWidth: () => import('@/components/modelComponents/murometsModels/MurometsMbWidth'),
 }
 export default {
     name: 'ModelFactory',

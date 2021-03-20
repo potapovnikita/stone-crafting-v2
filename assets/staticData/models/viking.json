@@ -7,6 +7,9 @@
     "modelMap": {
         "modelClassName": "viking",
         "img": "img/collections/viking/0.png",
+        "modelBig": "viking",
+        "modelMiddle": "viking1",
+        "modelSmall": "viking2",
         "stonesLeft": [
             {
                 "id": "quartzite",

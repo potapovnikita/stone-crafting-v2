@@ -44,6 +44,9 @@
     "modelMap": {
         "modelClassName": "bannik",
         "img": "img/collections/bannik/0.png",
+        "modelBig": "bannik",
+        "modelMiddle": "bannik1",
+        "modelSmall": "bannik2",
         "stonesLeft": [
             {
                 "id": "quartzite",

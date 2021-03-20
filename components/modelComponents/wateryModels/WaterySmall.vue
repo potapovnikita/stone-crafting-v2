@@ -52,6 +52,7 @@ export default {
 <style lang="stylus" scoped>
 .watery
     font-size 0
+    width 380px
     background url('~assets/img/collections/watery/0.png') no-repeat
     background-size contain
 
