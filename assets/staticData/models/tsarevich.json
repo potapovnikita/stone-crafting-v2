@@ -7,6 +7,11 @@
     "modelMap": {
         "modelClassName": "tsarevich",
         "img": "img/collections/tsarevich/0.png",
+        "modelBig": "tsarevich",
+        "modelMiddle": "tsarevich1",
+        "modelSmall": "tsarevich2",
+        "modelMbWidth": "tsarevichMbWidth",
+        "modelMbSmall": "tsarevichMbSmall",
         "stonesLeft": [
             {
                 "id": "chalcedony",

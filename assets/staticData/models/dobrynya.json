@@ -7,6 +7,11 @@
     "modelMap": {
         "modelClassName": "dobrynya",
         "img": "img/collections/dobrynya/0.png",
+        "modelBig": "dobrynya",
+        "modelMiddle": "dobrynya1",
+        "modelSmall": "dobrynya2",
+        "modelMbWidth": "dobrynyaMbWidth",
+        "modelMbSmall": "dobrynyaMbSmall",
         "stonesLeft": [
             {
                 "id": "quartzite",

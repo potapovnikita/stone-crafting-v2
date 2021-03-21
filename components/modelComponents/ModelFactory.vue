@@ -125,6 +125,24 @@ const models = {
     muromets1: () => import('@/components/modelComponents/murometsModels/MurometsMiddle'),
     muromets2: () => import('@/components/modelComponents/murometsModels/MurometsSmall'),
     murometsMbWidth: () => import('@/components/modelComponents/murometsModels/MurometsMbWidth'),
+
+    svyatogor: () => import('@/components/modelComponents/svyatogorModels/SvyatogorBig'),
+    svyatogor1: () => import('@/components/modelComponents/svyatogorModels/SvyatogorMiddle'),
+    svyatogor2: () => import('@/components/modelComponents/svyatogorModels/SvyatogorSmall'),
+    svyatogorMbWidth: () => import('@/components/modelComponents/svyatogorModels/SvyatogorMbWidth'),
+    svyatogorMbSmall: () => import('@/components/modelComponents/svyatogorModels/SvyatogorMbSmall'),
+
+    dobrynya: () => import('@/components/modelComponents/dobrynyaModels/DobrynyaBig'),
+    dobrynya1: () => import('@/components/modelComponents/dobrynyaModels/DobrynyaBig'),
+    dobrynya2: () => import('@/components/modelComponents/dobrynyaModels/DobrynyaMiddle'),
+    dobrynyaMbWidth: () => import('@/components/modelComponents/dobrynyaModels/DobrynyaMiddle'),
+    dobrynyaMbSmall: () => import('@/components/modelComponents/dobrynyaModels/DobrynyaMbSmall'),
+
+    tsarevich: () => import('@/components/modelComponents/tsarevichModels/TsarevichBig'),
+    tsarevich1: () => import('@/components/modelComponents/tsarevichModels/TsarevichMiddle'),
+    tsarevich2: () => import('@/components/modelComponents/tsarevichModels/TsarevichSmall'),
+    tsarevichMbWidth: () => import('@/components/modelComponents/tsarevichModels/TsarevichMbWidth'),
+    tsarevichMbSmall: () => import('@/components/modelComponents/tsarevichModels/TsarevichMbSmall'),
 }
 export default {
     name: 'ModelFactory',

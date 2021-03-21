@@ -7,6 +7,11 @@
     "modelMap": {
         "modelClassName": "svyatogor",
         "img": "img/collections/svyatogor/0.png",
+        "modelBig": "svyatogor",
+        "modelMiddle": "svyatogor1",
+        "modelSmall": "svyatogor2",
+        "modelMbWidth": "svyatogorMbWidth",
+        "modelMbSmall": "svyatogorMbSmall",
         "stonesLeft": [
             {
                 "id": "pyrite",
