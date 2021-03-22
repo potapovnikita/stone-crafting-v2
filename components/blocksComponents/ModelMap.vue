@@ -301,7 +301,13 @@ export default {
         &.hematite,
         &.emerald,
         &.ruby,
-        &.sapphire
+        &.sapphire,
+        &.onyx,
+        &.aragonite,
+        &.rauchtopaz,
+        &.sapphirine,
+        &.magnesite,
+        &.vesuvian
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -357,7 +363,13 @@ export default {
         &.hematite,
         &.emerald,
         &.ruby,
-        &.sapphire
+        &.sapphire,
+        &.onyx,
+        &.aragonite,
+        &.rauchtopaz,
+        &.sapphirine,
+        &.magnesite,
+        &.vesuvian
             &.active
                 fill blackBackground
 

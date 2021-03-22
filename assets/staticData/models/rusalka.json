@@ -41,64 +41,64 @@
             {
                 "id": "agate",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "agate"
             },
             {
                 "id": "chalcedony",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "silicon",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "silicon"
             },
             {
                 "id": "fluorite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "fluorite"
             },
             {
                 "id": "aragonite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "aragonite"
             },
             {
                 "id": "nephrite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "nephrite"
             }
         ],
         "stonesRight": [
             {
                 "id": "petrifiedTree",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "bronze",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "gold",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "gold"
             },
             {
                 "id": "carnelian",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "silver",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "silver"
             },
             {
                 "id": "sapphire",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "sapphire"
             }
         ]
     }
