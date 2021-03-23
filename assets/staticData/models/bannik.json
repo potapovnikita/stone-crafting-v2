@@ -51,79 +51,79 @@
             {
                 "id": "quartzite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "petrifiedTree",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "chalcedony",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "nephrite",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "amazanite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "amazanite"
             },
             {
                 "id": "jasper",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "carnelian",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "rhodusite",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "rhodusite"
             }
         ],
         "stonesRight": [
             {
                 "id": "agate",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "agate"
             },
             {
                 "id": "quartz",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "quartz"
             },
             {
                 "id": "irmenite",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "irmenite"
             },
             {
                 "id": "gabbro",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "gabbro"
             },
             {
                 "id": "aragonite",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "aragonite"
             },
             {
                 "id": "bronze",
-                "label": 15,
-                "stoneClassName": "stone15"
+                "label": 14,
+                "stoneClassName": "bronze"
             },
             {
                 "id": "silver",
-                "label": 16,
-                "stoneClassName": "stone16"
+                "label": 15,
+                "stoneClassName": "silver"
             }
         ]
     }
