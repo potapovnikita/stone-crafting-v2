@@ -16,74 +16,74 @@
             {
                 "id": "chalcedony",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "jasper",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "lazurite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "lazurite"
             },
             {
                 "id": "marble",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "marble"
             },
             {
                 "id": "quartzite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "petrifiedTree",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "nephrite",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "nephrite"
             }
         ],
         "stonesRight": [
             {
                 "id": "labradorite",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "labradorite"
             },
             {
                 "id": "iceQuartz",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "iceQuartz"
             },
             {
                 "id": "cacholong",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "cacholong"
             },
             {
                 "id": "tigersEye",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "tigersEye"
             },
             {
                 "id": "rhodonite",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "rhodonite"
             },
             {
                 "id": "bronze",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "emali",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "emali"
             }
         ]
     }
