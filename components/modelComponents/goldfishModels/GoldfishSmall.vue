@@ -42,7 +42,8 @@ export default {
 <style lang="stylus" scoped>
 .goldfish
     font-size 0
+    width 360px
     background url('~assets/img/collections/goldfish/0.png') no-repeat
-    background-size contain
+    background-size 364px 571px
 
 </style>

@@ -48,6 +48,7 @@ export default {
 <style lang="stylus" scoped>
 .scarlet
     font-size 0
+    width 410px
     background url('~assets/img/collections/scarlet/0.png') no-repeat
     background-size contain
 

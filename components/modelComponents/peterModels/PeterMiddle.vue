@@ -52,6 +52,6 @@ export default {
 .peter
     font-size 0
     background url('~assets/img/collections/peter/0.png') no-repeat
-    background-size contain
+    background-size 440px 655px
 
 </style>

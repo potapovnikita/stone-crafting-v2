@@ -33,6 +33,7 @@ export default {
 <style lang="stylus" scoped>
 .schemamonk
     font-size 0
+    width 310px
     background url('~assets/img/collections/schemamonk/0.png') no-repeat
     background-size contain
 

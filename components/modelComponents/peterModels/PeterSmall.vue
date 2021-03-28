@@ -51,6 +51,7 @@ export default {
 <style lang="stylus" scoped>
 .peter
     font-size 0
+    width 380px
     background url('~assets/img/collections/peter/0.png') no-repeat
     background-size contain
 

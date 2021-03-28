@@ -45,6 +45,7 @@ export default {
 <style lang="stylus" scoped>
 .kikimora
     font-size 0
+    width 340px
     background url('~assets/img/collections/kikimora/0.png') no-repeat
     background-size contain
 

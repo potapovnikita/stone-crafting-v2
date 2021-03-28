@@ -45,6 +45,6 @@ export default {
     width 450px
     background-position 8px 0
     background url('~assets/img/collections/goldfish/0.png') no-repeat
-    background-size contain
+    background-size 450px 691px
 
 </style>

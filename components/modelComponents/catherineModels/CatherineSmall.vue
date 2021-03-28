@@ -43,6 +43,7 @@ export default {
 <style lang="stylus" scoped>
 .catherine
     font-size 0
+    width 245px
     background url('~assets/img/collections/catherine/0.png') no-repeat
     background-size contain
 
