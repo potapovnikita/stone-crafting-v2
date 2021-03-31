@@ -11,88 +11,89 @@
         "modelMiddle": "muromets1",
         "modelSmall": "muromets2",
         "modelMbWidth": "murometsMbWidth",
+        "modelMbSmall": "murometsMbSmall",
         "stonesLeft": [
             {
                 "id": "pyrite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "pyrite"
             },
             {
                 "id": "hematite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "hematite"
             },
             {
                 "id": "quartzite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "jasper",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "chalcedony",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "marble",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "marble"
             },
             {
                 "id": "lazurite",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "lazurite"
             },
             {
                 "id": "agate",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "agate"
             }
         ],
         "stonesRight": [
             {
                 "id": "nephrite",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "carnelian",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "petrifiedTree",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "dolerite",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "pegmatite",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "pegmatite"
             },
             {
                 "id": "bronze",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "emali",
                 "label": 15,
-                "stoneClassName": "stone15"
+                "stoneClassName": "emali"
             },
             {
                 "id": "silver",
                 "label": 16,
-                "stoneClassName": "stone16"
+                "stoneClassName": "silver"
             }
         ]
     }

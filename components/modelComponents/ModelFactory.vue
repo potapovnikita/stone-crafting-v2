@@ -125,6 +125,7 @@ const models = {
     muromets1: () => import('@/components/modelComponents/murometsModels/MurometsMiddle'),
     muromets2: () => import('@/components/modelComponents/murometsModels/MurometsSmall'),
     murometsMbWidth: () => import('@/components/modelComponents/murometsModels/MurometsMbWidth'),
+    murometsMbSmall: () => import('@/components/modelComponents/murometsModels/MurometsMbSmall'),
 
     svyatogor: () => import('@/components/modelComponents/svyatogorModels/SvyatogorBig'),
     svyatogor1: () => import('@/components/modelComponents/svyatogorModels/SvyatogorMiddle'),

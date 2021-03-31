@@ -16,74 +16,74 @@
             {
                 "id": "pyrite",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "pyrite"
             },
             {
                 "id": "shaitanianOverlap",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "shaitanianOverlap"
             },
             {
                 "id": "quartzite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "crystal",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "crystal"
             },
             {
                 "id": "jasper",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "jasper"
             },
             {
                 "id": "lazurite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "lazurite"
             },
             {
                 "id": "tigersEye",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "tigersEye"
             }
         ],
         "stonesRight": [
             {
                 "id": "carnelian",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "chalcedony",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "nephrite",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "nephrite"
             },
             {
                 "id": "dolerite",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "dolerite"
             },
             {
                 "id": "marble",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "marble"
             },
             {
                 "id": "bronze",
                 "label": 13,
-                "stoneClassName": "stone13"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "silver",
                 "label": 14,
-                "stoneClassName": "stone14"
+                "stoneClassName": "silver"
             }
         ]
     }
