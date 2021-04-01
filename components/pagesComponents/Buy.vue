@@ -320,7 +320,7 @@
                     })
                 })
 
-                await axios.get('https://api.exchangeratesapi.io/latest?base=RUB').then(({ data }) => {
+                await axios.get('https://api.exchangeratesapi.io/latest?access_key=76110f4ec760f72cde07b1e9cc46c643&base=RUB').then(({ data }) => {
                     if (data.rates.USD) this.currency = data.rates.USD;
                 })
 
