@@ -79,6 +79,6 @@ export default {
 .genghiskhan
     font-size 0
     background url('~assets/img/collections/genghiskhan/0.png') no-repeat
-    background-size contain
+    background-size 500px 729px
 
 </style>

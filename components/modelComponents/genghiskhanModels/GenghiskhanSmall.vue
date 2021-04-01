@@ -78,6 +78,7 @@ export default {
 <style lang="stylus" scoped>
 .genghiskhan
     font-size 0
+    width 380px
     background url('~assets/img/collections/genghiskhan/0.png') no-repeat
     background-size contain
 

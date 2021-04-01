@@ -3,29 +3,17 @@
 </template>
 <script>
 const models = {
-    // torero: () => import('@/components/modelComponents/toreroModels/ToreroBig'),
-    // toreroMid: () => import('@/components/modelComponents/toreroModels/ToreroMid'),
-    // toreroSmall: () => import('@/components/modelComponents/toreroModels/ToreroSmall'),
+    torero: () => import('@/components/modelComponents/toreroModels/ToreroBig'),
+    toreroMid: () => import('@/components/modelComponents/toreroModels/ToreroMid'),
+    toreroSmall: () => import('@/components/modelComponents/toreroModels/ToreroSmall'),
 
-    torero: () => import('@/components/modelComponents/toreroModels/ToreroBigN'),
-    toreroMid: () => import('@/components/modelComponents/toreroModels/ToreroMidN'),
-    toreroSmall: () => import('@/components/modelComponents/toreroModels/ToreroSmallN'),
+    joker: () => import('@/components/modelComponents/jokerModels/JokerBig'),
+    jokerMid: () => import('@/components/modelComponents/jokerModels/JokerMiddle'),
+    jokerSmall: () => import('@/components/modelComponents/jokerModels/JokerSmall'),
 
-    // joker: () => import('@/components/modelComponents/jokerModels/JokerBig'),
-    // jokerMid: () => import('@/components/modelComponents/jokerModels/JokerMiddle'),
-    // jokerSmall: () => import('@/components/modelComponents/jokerModels/JokerSmall'),
-
-    joker: () => import('@/components/modelComponents/jokerModels/JokerBigN'),
-    jokerMid: () => import('@/components/modelComponents/jokerModels/JokerMiddleN'),
-    jokerSmall: () => import('@/components/modelComponents/jokerModels/JokerSmallN'),
-
-    // makedon: () => import('@/components/modelComponents/makedonModels/MakedonBig'),
-    // makedonMid: () => import('@/components/modelComponents/makedonModels/MakedonMiddle'),
-    // makedonSmall: () => import('@/components/modelComponents/makedonModels/MakedonSmall'),
-
-    makedon: () => import('@/components/modelComponents/makedonModels/MakedonBigN'),
-    makedonMid: () => import('@/components/modelComponents/makedonModels/MakedonMiddleN'),
-    makedonSmall: () => import('@/components/modelComponents/makedonModels/MakedonSmallN'),
+    makedon: () => import('@/components/modelComponents/makedonModels/MakedonBig'),
+    makedonMid: () => import('@/components/modelComponents/makedonModels/MakedonMiddle'),
+    makedonSmall: () => import('@/components/modelComponents/makedonModels/MakedonSmall'),
 
     genghiskhan: () => import('@/components/modelComponents/genghiskhanModels/GenghiskhanBig'),
     genghiskhanMid: () => import('@/components/modelComponents/genghiskhanModels/GenghiskhanMiddle'),
