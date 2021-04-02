@@ -47,7 +47,8 @@ export default {
 <style lang="stylus" scoped>
 .suvorov
     font-size 0
-    background url('~assets/img/collections/suvorov/0.png') no-repeat
-    background-size contain
+    background url('~assets/img/collections/suvorov/map.png') no-repeat
+    background-size 360px 672px
+    background-position 7px 5px
 
 </style>

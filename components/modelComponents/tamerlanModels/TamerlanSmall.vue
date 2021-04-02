@@ -86,6 +86,7 @@ export default {
 <style lang="stylus" scoped>
 .tamerlan
     font-size 0
+    width 380px
     background url('~assets/img/collections/tamerlan/0.png') no-repeat
     background-size contain
 
