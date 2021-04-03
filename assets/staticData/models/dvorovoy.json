@@ -37,44 +37,44 @@
             {
                 "id": "agate",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "agate"
             },
             {
                 "id": "petrifiedTree",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "magnesite",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "magnesite"
             },
             {
                 "id": "jasper",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "jasper"
             }
         ],
         "stonesRight": [
             {
                 "id": "carnelian",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "chalcedony",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "bronze",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "silver",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "silver"
             }
         ]
     }

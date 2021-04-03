@@ -45,64 +45,64 @@
             {
                 "id": "carnelian",
                 "label": 1,
-                "stoneClassName": "stone1"
+                "stoneClassName": "carnelian"
             },
             {
                 "id": "aragonite",
                 "label": 2,
-                "stoneClassName": "stone2"
+                "stoneClassName": "aragonite"
             },
             {
                 "id": "rauchtopaz",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "rauchtopaz"
             },
             {
                 "id": "marble",
                 "label": 4,
-                "stoneClassName": "stone4"
+                "stoneClassName": "marble"
             },
             {
                 "id": "rhodusite",
                 "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "rhodusite"
             },
             {
                 "id": "jasper",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "jasper"
             }
         ],
         "stonesRight": [
             {
                 "id": "chalcedony",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "chalcedony"
             },
             {
                 "id": "quartzite",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "topaz",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "topaz"
             },
             {
                 "id": "petrifiedTree",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "bronze",
                 "label": 11,
-                "stoneClassName": "stone11"
+                "stoneClassName": "bronze"
             },
             {
                 "id": "gold",
                 "label": 12,
-                "stoneClassName": "stone12"
+                "stoneClassName": "gold"
             }
         ]
     }
