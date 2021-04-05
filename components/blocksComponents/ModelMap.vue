@@ -307,7 +307,11 @@ export default {
         &.rauchtopaz,
         &.sapphirine,
         &.magnesite,
-        &.vesuvian
+        &.vesuvian,
+        &.pegmatite,
+        &.chalcedonyBrush,
+        &.rockCrystal,
+        &.mokhovoyAgat
             &.active
                 fill goldNew
                 fill-opacity 1
@@ -369,7 +373,11 @@ export default {
         &.rauchtopaz,
         &.sapphirine,
         &.magnesite,
-        &.vesuvian
+        &.vesuvian,
+        &.pegmatite,
+        &.chalcedonyBrush,
+        &.rockCrystal,
+        &.mokhovoyAgat
             &.active
                 fill blackBackground
 

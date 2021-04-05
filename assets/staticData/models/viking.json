@@ -12,61 +12,66 @@
         "modelSmall": "viking2",
         "stonesLeft": [
             {
-                "id": "quartzite",
-                "label": 1,
-                "stoneClassName": "stone1"
-            },
-            {
-                "id": "rhodonite",
-                "label": 2,
-                "stoneClassName": "stone2"
-            },
-            {
                 "id": "jasper",
+                "label": 1,
+                "stoneClassName": "jasper"
+            },
+            {
+                "id": "rockCrystal",
+                "label": 2,
+                "stoneClassName": "rockCrystal"
+            },
+            {
+                "id": "chalcedonyBrush",
                 "label": 3,
-                "stoneClassName": "stone3"
+                "stoneClassName": "chalcedonyBrush"
             },
             {
-                "id": "petrifiedTree",
+                "id": "quartzite",
                 "label": 4,
-                "stoneClassName": "stone4"
-            },
-            {
-                "id": "uvarovite",
-                "label": 5,
-                "stoneClassName": "stone5"
+                "stoneClassName": "quartzite"
             },
             {
                 "id": "chalcedony",
+                "label": 5,
+                "stoneClassName": "chalcedony"
+            },
+            {
+                "id": "pyrite",
                 "label": 6,
-                "stoneClassName": "stone6"
+                "stoneClassName": "pyrite"
             }
         ],
         "stonesRight": [
             {
-                "id": "lazurite",
+                "id": "tigersEye",
                 "label": 7,
-                "stoneClassName": "stone7"
+                "stoneClassName": "tigersEye"
             },
             {
-                "id": "dolerite",
+                "id": "marble",
                 "label": 8,
-                "stoneClassName": "stone8"
+                "stoneClassName": "marble"
             },
             {
-                "id": "labradorite",
+                "id": "rhodusite",
                 "label": 9,
-                "stoneClassName": "stone9"
+                "stoneClassName": "rhodusite"
             },
             {
-                "id": "gold",
+                "id": "mokhovoyAgat",
                 "label": 10,
-                "stoneClassName": "stone10"
+                "stoneClassName": "mokhovoyAgat"
+            },
+            {
+                "id": "petrifiedTree",
+                "label": 11,
+                "stoneClassName": "petrifiedTree"
             },
             {
                 "id": "silver",
-                "label": 11,
-                "stoneClassName": "stone11"
+                "label": 12,
+                "stoneClassName": "silver"
             }
         ]
     }

@@ -108,6 +108,12 @@
         "photo": "img/collections/stones/chalcedony.jpg"
     },
     {
+        "id": "chalcedonyBrush",
+        "name": "халцедоновая щетка",
+        "nameEng": "chalcedony brush",
+        "photo": "img/collections/stones/chalcedony.jpg"
+    },
+    {
         "id": "carnelian",
         "name": "сердолик",
         "nameEng": "carnelian",
