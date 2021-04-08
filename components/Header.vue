@@ -45,8 +45,6 @@
                 changeLocal: 'localization/changeLocal'
             }),
             clickMenu(url) {
-                console.log(url)
-                console.log('window.location.pathname', window.location.pathname)
                 if (url === window.location.pathname) {
                     document.getElementById('inputMenu').click()
                 }
@@ -105,7 +103,7 @@
         height 50px
         z-index 3
         transition all .6s
-        
+
         .logo
             font-size 0
 
@@ -224,7 +222,7 @@
 
         .wrapper_items
             & > a + a
-                margin-top 30px 
+                margin-top 30px
 
         .menu_item
             display flex
@@ -233,7 +231,7 @@
             z-index 101
             span
             a
-                color whiteMain 
+                color whiteMain
 
                 &:hover
                     color goldNew

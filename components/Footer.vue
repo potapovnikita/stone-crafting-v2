@@ -1,5 +1,5 @@
 <template lang="pug">
-    .footer_container        
+    .footer_container
         .footer_block
             .column
                 a.item.contacts(:href="'tel:' + contacts.phoneMain" :class="{reverse: reverse}") {{contacts.phoneMain}}
@@ -126,7 +126,7 @@
 
             .footer_block
                 .column
-                    width 265px 
+                    width 265px
 
                     .item
                         font-size 14px

@@ -320,8 +320,12 @@
                     })
                 })
 
-                await axios.get('https://api.exchangeratesapi.io/latest?base=RUB').then(({ data }) => {
-                    if (data.rates.USD) this.currency = data.rates.USD;
+                // await axios.get('https://api.exchangeratesapi.io/latest?access_key=76110f4ec760f72cde07b1e9cc46c643&base=RUB').then(({ data }) => {
+                //     if (data.rates.USD) this.currency = data.rates.USD;
+                // })
+
+                await axios.get('https://free.currconv.com/api/v7/convert?q=RUB_USD&compact=ultra&apiKey=3680959f524addb8b5be').then(({ data }) => {
+                    if (data.RUB_USD) this.currency = data.RUB_USD;
                 })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
