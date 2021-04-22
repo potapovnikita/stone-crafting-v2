@@ -1,12 +1,23 @@
 <template lang="pug">
     .common-container.gallery-container
         .bg-bottom
-        .header-container
-            .header-container__title-container
-                .header-container__circle
-                h1.header-container__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                .header-container__line
-                p.header-container__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
+        .video-container(v-if="currentProduct.video")
+            .video-container__wrapper-video
+                video#video(playsinline loop="true" autoplay="true" muted="muted")
+                    source(:src="getImg(currentProduct.video)" type="video/mp4")
+
+            .title-block
+                .title-block__circle
+                h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
+                .title-block__line
+                p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
+
+        .header-container(v-if="!currentProduct.video")
+            .title-block
+                .title-block__circle
+                h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
+                .title-block__line
+                p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 
         .galleryAbout-block
             .galleryAbout-block__media
@@ -36,6 +47,7 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import { getImgExternal } from '~/plugins/getUrl'
 import GalleryPhotosSlider from '@/components/blocksComponents/GalleryPhotosSlider'
 import UnitNews from '@/components/blocksComponents/UnitNews'
 import ModelMap from '@/components/blocksComponents/ModelMap'
@@ -125,6 +137,11 @@ export default {
             return this.models[this.$route.path.split('/').pop()]
         },
     },
+    methods: {
+        getImg(url) {
+            return getImgExternal(url)
+        },
+    },
 }
 </script>
 <style lang="stylus" scoped>
@@ -134,16 +151,28 @@ export default {
     .bg-bottom
         display none
 
-    .header-container
-        height 683px
-        background url('~assets/img/news/header-main.png') top center no-repeat
-        background-size cover
+    .video-container
+        position relative
+        height 100vh
+        overflow hidden
 
-        &__title-container
-            position relative
-            height 446px
-            margin-top 136px
-            padding-top 101px
+        &__wrapper-video
+            position absolute
+            width 100%
+            height 100%
+
+            video
+                display block
+                position absolute
+                left 50%
+                top 0
+                transform translate(-50%, 0)
+
+    .title-block
+        position relative
+        height 446px
+        margin-top 136px
+        padding-top 101px
 
         &__circle
             position absolute
@@ -174,6 +203,11 @@ export default {
             letter-spacing 0.3em
             text-transform uppercase
             color goldNew
+
+    .header-container
+        height 683px
+        background url('~assets/img/news/header-main.png') top center no-repeat
+        background-size cover
 
     .galleryAbout-block
         display flex
@@ -241,11 +275,9 @@ export default {
         .header-container
             height 583px
 
-            &__title-container
-                position relative
-                height 446px
-                margin-top 97px
-                padding-top 131px
+        .title-block
+            margin-top 97px
+            padding-top 131px
 
             &__title
                 font-size 48px
@@ -309,11 +341,10 @@ export default {
         .header-container
             height 476px
 
-            &__title-container
-                position relative
-                height 311px
-                margin-top 104px
-                padding-top 94px
+        .title-block
+            height 311px
+            margin-top 104px
+            padding-top 94px
 
             &__circle
                 width 311px
