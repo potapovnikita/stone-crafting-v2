@@ -3,7 +3,7 @@
         div(:class="`${id}-model__bg`")
         div(:class="['model__wrapper-content', `${id}-model__wrapper-content`, {'model__content-reverse': isReverse }]")
             div(:class="`${id}-model__wrapper-media`")
-                img.model__photo(:src="getImg(imgUrl)")
+                ImageItem(:classNames="['model__photo']" :source="getImg(imgUrl)")
             .model__content
                 h2.model__title(v-html="lang === 'ru' ? title : titleEng")
 
@@ -17,10 +17,12 @@
     import { mapState } from 'vuex'
     import ButtonArrow from "@/components/ui/ButtonArrow"
     import { getImgLocal, getBgImgLocal } from '~/plugins/getUrl'
+    import ImageItem from '@/components/blocksComponents/ImageItem'
     export default {
         name: 'CollectionItem',
         components: {
             ButtonArrow,
+            ImageItem,
         },
         props: {
             id: String,
@@ -148,7 +150,7 @@
 
     &__wrapper-media
         max-width 513px
-        max-height 813px
+        min-height 813px
 
     @media only screen and (max-width 1280px)
         margin-top 71px
@@ -169,7 +171,7 @@
 
         &__wrapper-media
             max-width 410px
-            max-height 650px
+            min-height 650px
 
     @media only screen and (max-width 840px)
         margin-top 22px
@@ -189,7 +191,7 @@
 
         &__wrapper-media
             max-width 271px
-            max-height 432px
+            min-height 432px
             margin-bottom 23px
 
     @media only screen and (max-width 390px)
@@ -218,7 +220,7 @@
 
     &__wrapper-media
         max-width 426px
-        max-height 886px
+        min-height 886px
 
     @media only screen and (max-width 1280px)
         margin-top 42px
@@ -236,7 +238,7 @@
 
         &__wrapper-media
             max-width 312px
-            max-height 648px
+            min-height 648px
 
         .model__content
             margin-top -83px
@@ -259,7 +261,7 @@
 
         &__wrapper-media
             max-width 204px
-            max-height 425px
+            min-height 425px
             margin-bottom 16px
 
         .model__content
@@ -290,7 +292,7 @@
 
     &__wrapper-media
         max-width 553px
-        max-height 806px
+        min-height 806px
 
     @media only screen and (max-width 1619px)
          &__bg
@@ -313,7 +315,7 @@
 
         &__wrapper-media
             max-width 439px
-            max-height 640px
+            min-height 640px
 
     @media only screen and (max-width 840px)
         margin-top 16px
@@ -332,7 +334,7 @@
 
         &__wrapper-media
             max-width 302px
-            max-height 440px
+            min-height 440px
             margin-bottom 28px
 
     @media only screen and (max-width 470px)
@@ -360,7 +362,7 @@
 
     &__wrapper-media
         max-width 549px
-        max-height 820px
+        min-height 820px
 
     @media only screen and (max-width 1280px)
         margin-top 107px
@@ -380,7 +382,7 @@
 
         &__wrapper-media
             max-width 433px
-            max-height 647px
+            min-height 647px
 
     @media only screen and (max-width 840px)
         margin-top 13px
@@ -400,7 +402,7 @@
 
         &__wrapper-media
             max-width 301px
-            max-height 449px
+            min-height 449px
             margin-bottom 39px
 
 .tamerlan-model
@@ -424,7 +426,7 @@
 
     &__wrapper-media
         max-width 546px
-        max-height 770px
+        min-height 770px
 
     @media only screen and (max-width 1280px)
         margin-top 184px
@@ -445,7 +447,7 @@
 
         &__wrapper-media
             max-width 384px
-            max-height 542px
+            min-height 542px
 
     @media only screen and (max-width 840px)
         margin-top 34px
@@ -467,7 +469,7 @@
 
         &__wrapper-media
             max-width 281px
-            max-height 395px
+            min-height 395px
             margin-bottom 44px
 
 .suvorov-model
@@ -490,7 +492,7 @@
 
     &__wrapper-media
         max-width 401px
-        max-height 749px
+        min-height 749px
 
     @media only screen and (max-width 1280px)
         margin-top 92px
@@ -506,7 +508,7 @@
 
         &__wrapper-media
             max-width 316px
-            max-height 578px
+            min-height 578px
 
     @media only screen and (max-width 840px)
         margin-top 74px
@@ -526,7 +528,7 @@
 
         &__wrapper-media
             max-width 235px
-            max-height 438px
+            min-height 438px
             margin-bottom 21px
 
 .peter-model
@@ -549,7 +551,7 @@
 
     &__wrapper-media
         max-width 486px
-        max-height 734px
+        min-height 734px
 
     @media only screen and (max-width 1280px)
         margin-top 144px
@@ -569,7 +571,7 @@
 
         &__wrapper-media
             max-width 380px
-            max-height 574px
+            min-height 574px
 
     @media only screen and (max-width 880px)
 
@@ -596,7 +598,7 @@
 
         &__wrapper-media
             max-width 300px
-            max-height 453px
+            min-height 453px
             margin-bottom 19px
 
 .catherine-model
@@ -619,7 +621,7 @@
 
     &__wrapper-media
         max-width 318px
-        max-height 731px
+        min-height 731px
 
     @media only screen and (max-width 1280px)
         margin-top 211px
@@ -636,7 +638,7 @@
 
         &__wrapper-media
             max-width 230px
-            max-height 529px
+            min-height 529px
 
     @media only screen and (max-width 840px)
         margin-top 39px
@@ -658,7 +660,7 @@
 
         &__wrapper-media
             max-width 194px
-            max-height 446px
+            min-height 446px
             margin-bottom 35px
 
 .schemamonk-model
@@ -680,7 +682,7 @@
 
     &__wrapper-media
         max-width 395px
-        max-height 728px
+        min-height 728px
 
     @media only screen and (max-width 1280px)
         margin-top 184px
@@ -698,7 +700,7 @@
 
         &__wrapper-media
             max-width 295px
-            max-height 544px            
+            min-height 544px            
 
     @media only screen and (max-width 840px)
         margin-top 10px
@@ -719,7 +721,7 @@
 
         &__wrapper-media
             max-width 249px
-            max-height 458px
+            min-height 458px
             margin-bottom 54px
 
 .scarlet-model
@@ -742,7 +744,7 @@
 
     &__wrapper-media
         max-width 508px
-        max-height 818px
+        min-height 818px
 
     @media only screen and (max-width 1280px)
         margin-top 117px
@@ -761,7 +763,7 @@
 
         &__wrapper-media
             max-width 358px
-            max-height 576px
+            min-height 576px
 
     @media only screen and (max-width 840px)
         margin-top 43px
@@ -783,7 +785,7 @@
 
         &__wrapper-media
             max-width 259px
-            max-height 444px
+            min-height 444px
             margin-bottom 61px
 
 .babayaga-model
@@ -805,7 +807,7 @@
 
     &__wrapper-media
         max-width 508px
-        max-height 767px
+        min-height 767px
 
     @media only screen and (max-width 1280px)
         margin-top 211px
@@ -822,7 +824,7 @@
 
         &__wrapper-media
             max-width 372px
-            max-height 562px
+            min-height 562px
 
     @media only screen and (max-width 840px)
         margin-top 70px
@@ -844,7 +846,7 @@
 
         &__wrapper-media
             max-width 264px
-            max-height 400px
+            min-height 400px
             margin-bottom 30px
 
 .groznyy-model
@@ -867,7 +869,7 @@
 
     &__wrapper-media
         max-width 565px
-        max-height 844px
+        min-height 844px
 
     @media only screen and (max-width 1387px)
         &__bg
@@ -890,7 +892,7 @@
 
         &__wrapper-media
             max-width 357px
-            max-height 534px
+            min-height 534px
 
     @media only screen and (max-width 1023px)
         &__bg
@@ -916,7 +918,7 @@
 
         &__wrapper-media
             max-width 278px
-            max-height 415px
+            min-height 415px
             margin-bottom 35px
 
 .watery-model
@@ -939,7 +941,7 @@
 
     &__wrapper-media
         max-width 540px
-        max-height 785px
+        min-height 785px
 
     @media only screen and (max-width 1429px)
         &__bg
@@ -963,7 +965,7 @@
 
         &__wrapper-media
             max-width 418px
-            max-height 608px
+            min-height 608px
 
     @media only screen and (max-width 870px)
         &__bg
@@ -990,7 +992,7 @@
 
         &__wrapper-media
             max-width 290px
-            max-height 422px
+            min-height 422px
             margin-bottom 23px
 
 .dvorovoy-model
@@ -1013,7 +1015,7 @@
 
     &__wrapper-media
         max-width 528px
-        max-height 654px
+        min-height 654px
 
     @media only screen and (max-width 1280px)
         margin-top 215px
@@ -1030,7 +1032,7 @@
 
         &__wrapper-media
             max-width 380px
-            max-height 470px
+            min-height 470px
 
     @media only screen and (max-width 895px)
          &__bg
@@ -1057,7 +1059,7 @@
 
         &__wrapper-media
             max-width 316px
-            max-height 392px
+            min-height 392px
             margin-bottom 17px
 
 .goldfish-model
@@ -1079,7 +1081,7 @@
 
     &__wrapper-media
         max-width 493px
-        max-height 792px
+        min-height 792px
 
     @media only screen and (max-width 1280px)
         margin-top 107px
@@ -1094,7 +1096,7 @@
 
         &__wrapper-media
             max-width 344px
-            max-height 552px
+            min-height 552px
 
     @media only screen and (max-width 900px)
          &__bg
@@ -1120,7 +1122,7 @@
 
         &__wrapper-media
             max-width 270px
-            max-height 433px
+            min-height 433px
             margin-bottom 80px
 
 .kikimora-model
@@ -1143,7 +1145,7 @@
 
     &__wrapper-media
         max-width 472px
-        max-height 785px
+        min-height 785px
 
     @media only screen and (max-width 1280px)
         margin-top 143px
@@ -1158,7 +1160,7 @@
 
         &__wrapper-media
             max-width 337px
-            max-height 560px
+            min-height 560px
             margin-top 20px
             margin-bottom 20px
 
@@ -1186,7 +1188,7 @@
 
         &__wrapper-media
             max-width 276px
-            max-height 459px
+            min-height 459px
             margin-top 56px
             margin-bottom 11px
 
@@ -1210,7 +1212,7 @@
 
     &__wrapper-media
         max-width 660px
-        max-height 853px
+        min-height 853px
 
     @media only screen and (max-width 1280px)
         margin-top 86px
@@ -1227,7 +1229,7 @@
 
         &__wrapper-media
             max-width 427px
-            max-height 552px
+            min-height 552px
             margin-top 43px
             margin-bottom 20px
 
@@ -1257,7 +1259,7 @@
 
         &__wrapper-media
             max-width 306px
-            max-height 394px
+            min-height 394px
             margin-top 0
             margin-bottom 22px
 
@@ -1281,7 +1283,7 @@
 
     &__wrapper-media
         max-width 445px
-        max-height 805px
+        min-height 805px
 
     @media only screen and (max-width 1280px)
         margin-top 80px
@@ -1295,7 +1297,7 @@
 
         &__wrapper-media
             max-width 355px
-            max-height 641px
+            min-height 641px
 
     @media only screen and (max-width 840px)
         margin-top 16px
@@ -1315,7 +1317,7 @@
 
         &__wrapper-media
             max-width 299px
-            max-height 540px
+            min-height 540px
             margin-bottom 6px
 
 .ovinnik-model
@@ -1338,7 +1340,7 @@
 
     &__wrapper-media
         max-width 479px
-        max-height 792px
+        min-height 792px
 
     @media only screen and (max-width 1280px)
         margin-top 82px
@@ -1355,7 +1357,7 @@
 
         &__wrapper-media
             max-width 352px
-            max-height 581px
+            min-height 581px
 
     @media only screen and (max-width 933px)
         &__bg
@@ -1381,7 +1383,7 @@
 
         &__wrapper-media
             max-width 295px
-            max-height 488px
+            min-height 488px
             margin-bottom 23px
 
 .bannik-model
@@ -1404,7 +1406,7 @@
 
     &__wrapper-media
         max-width 523px
-        max-height 782px
+        min-height 782px
 
     @media only screen and (max-width 1280px)
         margin-top 95px
@@ -1419,7 +1421,7 @@
 
         &__wrapper-media
             max-width 386px
-            max-height 577px
+            min-height 577px
             margin-top 45px
 
     @media only screen and (max-width 840px)
@@ -1438,7 +1440,7 @@
 
         &__wrapper-media
             max-width 320px
-            max-height 478px
+            min-height 478px
             margin-top 0
             margin-bottom 15px
 
@@ -1462,7 +1464,7 @@
 
     &__wrapper-media
         max-width 540px
-        max-height 830px
+        min-height 830px
 
     @media only screen and (max-width 1328px)
         &__bg
@@ -1486,7 +1488,7 @@
 
         &__wrapper-media
             max-width 409px
-            max-height 629px
+            min-height 629px
 
         .model__content
             margin-top 200px
@@ -1518,7 +1520,7 @@
 
         &__wrapper-media
             max-width 334px
-            max-height 513px
+            min-height 513px
             margin-bottom 35px
 
          .model__content
@@ -1544,7 +1546,7 @@
 
     &__wrapper-media
         max-width 514px
-        max-height 784px
+        min-height 784px
 
     @media only screen and (max-width 1280px)
         margin-top 84px
@@ -1559,7 +1561,7 @@
 
         &__wrapper-media
             max-width 396px
-            max-height 605px
+            min-height 605px
             margin-top 43px
             margin-bottom 82px
 
@@ -1587,7 +1589,7 @@
 
         &__wrapper-media
             max-width 307px
-            max-height 469px
+            min-height 469px
             margin-top 0
             margin-bottom 16px
 
@@ -1611,7 +1613,7 @@
 
     &__wrapper-media
         max-width 556px
-        max-height 882px
+        min-height 882px
 
     @media only screen and (max-width 1607px)
         &__bg
@@ -1633,7 +1635,7 @@
 
         &__wrapper-media
             max-width 382px
-            max-height 606px
+            min-height 606px
             margin-bottom 37px
 
     @media only screen and (max-width 920px)
@@ -1663,7 +1665,7 @@
 
         &__wrapper-media
             max-width 308px
-            max-height 489px
+            min-height 489px
             margin-bottom 34px
 
 .snowqueen-model
@@ -1686,7 +1688,7 @@
 
     &__wrapper-media
         max-width 530px
-        max-height 835px
+        min-height 835px
 
     @media only screen and (max-width 1399px)
         &__bg
@@ -1709,7 +1711,7 @@
 
         &__wrapper-media
             max-width 361px
-            max-height 568px
+            min-height 568px
             margin-bottom 9px
 
     @media only screen and (max-width 919px)
@@ -1738,7 +1740,7 @@
 
         &__wrapper-media
             max-width 280px
-            max-height 442px
+            min-height 442px
             margin-top 0
             margin-bottom 62px
 
@@ -1762,7 +1764,7 @@
 
     &__wrapper-media
         max-width 427px
-        max-height 783px
+        min-height 783px
 
     @media only screen and (max-width 1280px)
         margin-top 188px
@@ -1778,7 +1780,7 @@
 
         &__wrapper-media
             max-width 300px
-            max-height 550px
+            min-height 550px
             margin-top 12px
 
     @media only screen and (max-width 840px)
@@ -1799,7 +1801,7 @@
 
         &__wrapper-media
             max-width 226px
-            max-height 414px
+            min-height 414px
             margin-top 0
             margin-bottom 51px
 
@@ -1823,7 +1825,7 @@
 
     &__wrapper-media
         max-width 765px
-        max-height 495px
+        min-height 495px
 
     .model__content
         max-width 489px
@@ -1846,7 +1848,7 @@
 
         &__wrapper-media
             max-width 420px
-            max-height 272px
+            min-height 272px
             margin-top 164px
             margin-bottom 87px
 
@@ -1871,7 +1873,7 @@
 
         &__wrapper-media
             max-width 358px
-            max-height 231px
+            min-height 231px
             margin-top 26px
             margin-bottom 59px
 
@@ -1899,7 +1901,7 @@
 
     &__wrapper-media
         max-width 672px
-        max-height 603px
+        min-height 603px
 
     .model__content
         max-width 479px
@@ -1929,7 +1931,7 @@
 
         &__wrapper-media
             max-width 454px
-            max-height 407px
+            min-height 407px
 
         .model__content
             max-width 409px
@@ -1962,7 +1964,7 @@
 
         &__wrapper-media
             max-width 362px
-            max-height 325px
+            min-height 325px
             margin-bottom 52px
 
         .model__content
@@ -1988,7 +1990,7 @@
 
     &__wrapper-media
         max-width 698px
-        max-height 658px
+        min-height 658px
 
     .model__content
         max-width 489px
@@ -2019,7 +2021,7 @@
 
         &__wrapper-media
             max-width 408px
-            max-height 384px
+            min-height 384px
 
         .model__content
             max-width 480px
@@ -2051,7 +2053,7 @@
 
         &__wrapper-media
             max-width 348px
-            max-height 328px
+            min-height 328px
             margin-bottom 48px
 
         .model__content
@@ -2078,7 +2080,7 @@
 
     &__wrapper-media
         max-width 541px
-        max-height 612px
+        min-height 612px
 
     .model__content
         max-width 502px
@@ -2109,7 +2111,7 @@
 
         &__wrapper-media
             max-width 377px
-            max-height 426px
+            min-height 426px
 
         .model__content
             max-width 440px
@@ -2144,7 +2146,7 @@
 
         &__wrapper-media
             max-width 325px
-            max-height 368px
+            min-height 368px
             margin-bottom 93px
 
         .model__content
@@ -2175,7 +2177,7 @@
 
     &__wrapper-media
         max-width 738px
-        max-height 639px
+        min-height 639px
 
     .model__content
         max-width 489px
@@ -2208,7 +2210,7 @@
 
         &__wrapper-media
             max-width 404px
-            max-height 350px
+            min-height 350px
             margin-top 61px
 
         .model__content
@@ -2244,7 +2246,7 @@
 
         &__wrapper-media
             max-width 356px
-            max-height 308px
+            min-height 308px
             margin-top 0
             margin-bottom 69px
 
