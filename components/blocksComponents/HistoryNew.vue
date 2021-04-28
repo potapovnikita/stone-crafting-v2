@@ -44,7 +44,7 @@
 <script>
 import { mapState } from 'vuex'
 import History from '~/assets/staticData/historyNew.json'
-import { getImgLocal } from '~/plugins/getUrl'
+import { getImgExternal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
 import HistoryMobileSlider from '@/components/blocksComponents/HistoryMobileSlider'
 
@@ -63,7 +63,7 @@ export default {
     },
     methods: {
         getImg(url) {
-            return getImgLocal(url)
+             return getImgExternal(url)
         },
         prewSlide() {
             this.currentSlide = this.$refs.historyCarousel.getPreviousPage()

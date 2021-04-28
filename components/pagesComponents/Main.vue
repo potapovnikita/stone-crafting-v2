@@ -8,7 +8,7 @@
             .header-container__title-container.header-container__title-container--position-absolute
                 HeaderMain
             video#video(playsinline autoplay loop="true" muted="muted")
-                source(src="~/assets/video/main-new.mp4" type="video/mp4")
+                source(:src="getImg('video/main-new.mp4')" type="video/mp4")
 
         BrandHistory
         LinksPanel
@@ -30,6 +30,7 @@
     import Tradition from "@/components/blocksComponents/Tradition";
     import Footer from '~/components/Footer.vue'
     import HeaderMain from "@/components/blocksComponents/HeaderMain";
+    import { getImgExternal } from '~/plugins/getUrl'
 
     export default {
         data() {
@@ -55,6 +56,9 @@
             ]),
         },
         methods: {
+            getImg(url) {
+                return getImgExternal(url)
+            },
           computedStyleFooter() {
               if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
                   this.showPhoto = true
