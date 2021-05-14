@@ -32,7 +32,7 @@
                     .role(v-if="lang === 'ru'") Партнер и эксклюзивный дистрибьютор Камнерезного Дома "ANTONOV" на федеральном уровне. Чтобы оформить заказ в Екатеринбурге, обратитесь к специалистам Дома Антонова. Оформить заказ из другого региона помогут представители CHAMOVSKIKH.
                     .role(v-else) The partner and exclusive distributor of the Stone-crafting House by "ANTONOV" at the federal level.
                     a.phone(href="tel:88002349922") 8 (800) 234-99-22
-                    a.email(href="www.chamovskikh.com" target="_blank") www.chamovskikh.com
+                    a.email(href="https://chamovskikh.com/" target="_blank") www.chamovskikh.com
 
 
         .addresses
