@@ -37,7 +37,7 @@ export default {
                         observer.unobserve(this.$el)
                     }
                 })
-            }, { threshold: 0 })
+            }, { threshold: 0, rootMargin: '100% 0% 100% 0%'})
             observer.observe(this.$el);
         }
 
