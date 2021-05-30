@@ -1,5 +1,6 @@
 <template lang="pug">
     .common-container.order_container
+        Popup(:isOpenPopup="isOpenPopup", @close="closePopup")
         h1.order_container__title(v-html="lang === 'ru' ? 'Индивидуальный заказ' : 'Individual order'")
 
         .order_container__wrapper-options(v-if="orderOptions")
@@ -26,7 +27,7 @@
         .order_container__buttons
             Button(
                 :classNames="['order_container__btn']"
-                :onClick="() => alert('Ololo!')"
+                :onClick="openPopup"
                 disabledPadding
                 large
                 )
@@ -38,7 +39,6 @@
         OrderGallary(:gallaryItems="gallary.items")
         .order_container__bg-bottom
         Footer
-    
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -56,6 +56,7 @@ import Button from "@/components/ui/Button";
 import IndividIcon from '~/assets/img/tradition/individ.svg'
 import MbIndividIcon from '~/assets/img/tradition/individ-mb.svg'
 import Footer from '~/components/Footer.vue'
+import Popup from '@/components/ui/Popup'
 export default {
     name: 'Order',
     components: {
@@ -67,6 +68,7 @@ export default {
         IndividIcon,
         MbIndividIcon,
         Footer,
+        Popup,
     },
     data() {
         return {
@@ -80,8 +82,19 @@ export default {
                 SmallForms,
                 Sculpture,
             ],
+            isOpenPopup: false
         }
     },
+    methods: {
+            openPopup() {
+                console.log('openPopup()')
+                this.isOpenPopup = true
+            },
+            closePopup() {
+                console.log('closePopup()')
+                this.isOpenPopup = false
+            },
+        },
     computed: {
         ...mapState('localization', [
             'lang',

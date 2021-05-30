@@ -43,7 +43,6 @@ span
         visibility hidden
 
 input
-    display none
     &:checked ~ span
         svg
             visibility visible
