@@ -87,11 +87,9 @@ export default {
     },
     methods: {
             openPopup() {
-                console.log('openPopup()')
                 this.isOpenPopup = true
             },
             closePopup() {
-                console.log('closePopup()')
                 this.isOpenPopup = false
             },
         },

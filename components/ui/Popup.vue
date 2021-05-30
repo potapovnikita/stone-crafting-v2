@@ -5,7 +5,7 @@
                     CloseLogo
         .popup_container(:class="{'popup-close': !isOpenPopup}" v-click-outside="onClickOutside")
             .popup_inner-container
-                FeedbackNew
+                Feedback
 
 </template>
 
@@ -14,7 +14,7 @@
     import vClickOutside from 'v-click-outside'
 
     import CloseLogo from '~/assets/img/close.svg'
-    import FeedbackNew from '@/components/FeedbackNew'
+    import Feedback from '@/components/Feedback'
 
     export default {
         name: 'Popup',
@@ -34,12 +34,10 @@
         },
         components: {
             CloseLogo,
-            FeedbackNew,
+            Feedback,
         },
         methods: {
             onClickOutside (event) {
-                console.log('WTF!!!!')
-                console.log('isOpenPopup', this.isOpenPopup)
                 // if(this.isOpenPopup) this.$emit('close')
             }
         },
@@ -72,7 +70,7 @@
         bottom 0
         left 0
         right 0
-        background-color blackBackground
+        background rgba(0, 0, 0, 0.86)
         opacity 1
         transition opacity .3s linear
 
@@ -107,30 +105,45 @@
         .popup_inner-container
             position relative
             background rgba(0, 0, 0, 0.6)
-            height 100%
             padding 60px 30px 50px
         
         h2.title-popup
             color whiteMain
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 1280px)
         .popup_container
-            top 0
-            left 0
-            width 100%
-            height 100%
+            top 55px
+            left calc(50% - 344px)
+            width 688px
+
+            .popup_inner-container
+                padding 34px 30px 47px
+
+    @media only screen and (max-width 850px)
+        .popup_container
+            top 153px
+            left calc(50% - 177px)
+            width 354px
+
+            .popup_inner-container
+                padding 40px 15px 37px
+
+    @media only screen and (max-width 850px) and (max-height 760px)
+        .popup_container
+            height calc(100% - 153px)
             overflow scroll
 
-            .close_btn svg
-                transform scale(0.9)
-
-    @media only screen and (max-width 400px)
+    @media only screen and (max-width 850px) and (max-height 450px)
         .popup_container
-            .popup_inner-container
-                padding 20px 10px
+            top 30px
+            height calc(100% - 30px)
 
-    @media only screen and (max-height 500px)
-        .popup_container
-            .popup_inner-container
-                height 500px
+    @media only screen and (max-width 420px)
+
+        .popup_overlay
+            .close_btn
+                svg
+                    right 15px
+                    top 28px
+
 </style>
