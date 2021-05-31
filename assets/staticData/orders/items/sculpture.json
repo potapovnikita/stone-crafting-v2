@@ -51,13 +51,13 @@
             "img": "img/order/sample.png",
             "price": "10-90 тыс",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 50,
+                "end": 90
             },
             "creationTime": "10-60 дней",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -89,13 +89,13 @@
             "img": "img/order/sample.png",
             "price": "10-90 тыс",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 40,
+                "end": 60
             },
             "creationTime": "10-60 дней",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 0,
+                "end": 20
             }
         }
     ]

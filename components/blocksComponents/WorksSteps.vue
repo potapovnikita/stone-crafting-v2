@@ -30,14 +30,18 @@
                             .worksSteps__spending-content
                                 p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания работы' : 'Job creation time'")
                                 .worksSteps__spending-progressBar-descktop
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.price : stage.titleEng")
+                                    .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
+                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.titleEng")
                             .worksSteps__spending-progressBar-mobile
+                                .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
                         div
                             .worksSteps__spending-content
                                 p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Ценовая политика' : 'Price policy'")
                                 .worksSteps__spending-progressBar-descktop
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.titleEng")
+                                    .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
+                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.price : stage.titleEng")
                             .worksSteps__spending-progressBar-mobile
+                                .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
 
 </template>
 <script>
@@ -190,10 +194,35 @@ export default {
     &__spending-progressBar-descktop
         position relative
         width 513px
-        border 1px solid #C4C4C4
-        border-left none
-        border-right none
-        opacity 0.2
+        height 16px
+
+        &:after
+            content ' '
+            position absolute
+            top 50%
+            left 0
+            right 0
+            height 1px
+            background-color #C4C4C4
+            opacity 0.2
+
+    &__progress
+        position absolute
+        top 0
+        left 0
+        height 16px
+        border 2px solid goldNew
+        border-top none
+        border-bottom none
+
+        &:after
+            content ' '
+            position absolute
+            top 50%
+            left 0
+            right 0
+            height 1px
+            background-color goldNew 
 
     &__spending-progressBar-mobile
         display none
@@ -223,12 +252,16 @@ export default {
             flex-basis 555px
 
     @media only screen and (max-width 1024px)
-        padding 0 27px
+        padding 0
+
+        &__title
+            padding 0 27px
 
         &__double-line
             margin-bottom 28px
 
         &__pagination
+            padding 0 27px
             margin-bottom 32px
 
         &__sliderItem
@@ -238,6 +271,7 @@ export default {
 
         &__content
             flex-basis 434px
+            padding 0 27px
 
         &__content-title
             max-width 414px
@@ -246,7 +280,7 @@ export default {
 
         &__spending
             align-items flex-start
-            padding 50px 0
+            padding 50px 27px
 
         &__wrapper-bar
             background url('~assets/img/order/steps-line-ipad.png') center no-repeat
@@ -267,9 +301,6 @@ export default {
         &__photo
             max-height 226px
 
-        &__content
-            padding-left 0
-
         &__content-title
             max-width unset
             margin-bottom 14px
@@ -280,7 +311,7 @@ export default {
 
         &__spending
             display block
-            padding 30px 0
+            padding 30px 27px
 
             & > div + div
                 margin-top 35px
@@ -302,10 +333,17 @@ export default {
         &__spending-progressBar-mobile
             display block
             position relative
-            border 1px solid #C4C4C4
-            border-left none
-            border-right none
-            opacity 0.2
+            height 16px
+        
+            &:after
+                content ' '
+                position absolute
+                top 50%
+                left 0
+                right 0
+                height 1px
+                background-color #C4C4C4
+                opacity 0.2
 
         &__spendingText
             width auto
@@ -314,9 +352,13 @@ export default {
             line-height 27px
 
     @media only screen and (max-width 767px)
-        padding 0 12px
+        padding 0
+
+        &__step-container
+            padding 0 12px
 
         &__title
+            padding 0 12px
             margin-bottom 21px
 
         &__double-line
@@ -325,6 +367,7 @@ export default {
         &__pagination
             position relative
             max-width unset
+            padding 0 12px
             margin-bottom 21px
 
         &__sliderPagination
@@ -334,5 +377,8 @@ export default {
 
             &--label
                 margin-bottom 10px
+
+        &__spending
+            padding 30px 12px
         
 </style>
