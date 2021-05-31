@@ -51,7 +51,14 @@ export default {
         ...mapState('localization', [
             'lang',
         ]),
-    },    
+    },
+    mounted() {
+        this.$nextTick(() => {
+            // чтобы можно было видеть слайды соседние
+            const wrapper = this.$refs.orderGallaryCarousel.$refs['VueCarousel-wrapper']
+            wrapper.style.overflow = 'visible'
+        })
+    }    
 }
 </script>
 <style lang="stylus" scoped>
@@ -163,7 +170,7 @@ export default {
             margin-bottom 50px
 
         &__container
-            max-width unset
+            max-width 282px
             padding 0
 
         &__item
