@@ -378,6 +378,9 @@ export default {
             &--label
                 margin-bottom 10px
 
+        &__content
+            padding 0
+
         &__spending
             padding 30px 12px
         
