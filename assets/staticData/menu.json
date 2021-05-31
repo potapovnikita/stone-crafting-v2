@@ -15,19 +15,14 @@
         "link": "/about"
     },
     {
-        "name": "Новости дома",
-        "nameEng": "House news",
-        "link": "/news"
-    },
-    {
         "name": "Виртуальный музей",
         "nameEng": "Virtual Museum",
         "link": "/virtual-museum"
     },
     {
-        "name": "Предложения для партнеров",
-        "nameEng": "Offers for partners",
-        "link": "/offers"
+        "name": "Индивидуальный заказ",
+        "nameEng": "Individual order",
+        "link": "/order"
     },
     {
         "name": "Контакты",

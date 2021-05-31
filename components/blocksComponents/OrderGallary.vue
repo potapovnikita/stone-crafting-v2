@@ -9,12 +9,13 @@
             .orderGallary__buttons-desktop.btn-right
                 ButtonArrow(:onClick="nextSlide" arrowRight)
             client-only
-                carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="orderGallaryCarousel")
+                carousel(:paginationEnabled="false" :perPage="slidesOnPage" :loop="true" ref="orderGallaryCarousel")
                     slide(v-for="item in gallaryItems" :key="item.id")
                         .orderGallary__item
                             .orderGallary__wrapper-media
                                 img.orderGallary__photo(:src="getImg(item.img)" alt="pic")
-                            p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
+                            a(href="/")
+                                p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
     
 </template>
 <script>
@@ -32,6 +33,7 @@ export default {
     data() {
         return {
             currentSlide: 0,
+            slidesOnPage: 1.
         }
     },
      methods: {
@@ -46,6 +48,25 @@ export default {
             this.currentSlide = this.$refs.orderGallaryCarousel.getNextPage()
             this.$refs.orderGallaryCarousel.goToPage(this.$refs.orderGallaryCarousel.getNextPage());
         },
+        handleResize() {
+            const wrapper = this.$refs.orderGallaryCarousel.$refs['VueCarousel-wrapper']
+            switch (true) {
+                case window.innerWidth < 768:
+                    // чтобы можно было видеть слайды соседние
+                    wrapper.style.overflow = 'visible'
+                    break;
+                case window.innerWidth >= 768 && window.innerWidth < 1024:
+                    wrapper.style.overflow = 'hidden'
+                    this.slidesOnPage = 2
+                    break;
+                case window.innerWidth >= 1024 && window.innerWidth < 1500:
+                    wrapper.style.overflow = 'hidden'
+                    this.slidesOnPage = 4
+                    break;
+                default:
+                    this.slidesOnPage = 5
+            }
+        }
     },
     computed: {
         ...mapState('localization', [
@@ -54,11 +75,13 @@ export default {
     },
     mounted() {
         this.$nextTick(() => {
-            // чтобы можно было видеть слайды соседние
-            const wrapper = this.$refs.orderGallaryCarousel.$refs['VueCarousel-wrapper']
-            wrapper.style.overflow = 'visible'
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
         })
-    }    
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },   
 }
 </script>
 <style lang="stylus" scoped>
@@ -150,13 +173,11 @@ export default {
         &__photo-title
             font-size 16px
 
-
-    @media only screen and (max-width 768px)
-        &__buttons-desktop
-            display none
-
     @media only screen and (max-width 767px)
         padding 35px 0 28px 0
+
+        &__buttons-desktop
+            display none
 
         &__line
             left 12px
