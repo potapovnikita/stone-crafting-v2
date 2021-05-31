@@ -1,6 +1,5 @@
 <template lang="pug">
     .common-container.order_container
-        Popup(:isOpenPopup="isOpenPopup", @close="closePopup")
         h1.order_container__title(v-html="lang === 'ru' ? 'Индивидуальный заказ' : 'Individual order'")
 
         .order_container__wrapper-options(v-if="orderOptions")
@@ -35,9 +34,9 @@
                     IndividIcon.icon
                     MbIndividIcon.icon.mb
                     span.text(v-html="lang === 'ru' ? orderButton.name : orderButton.nameEng")
+        Popup(:isOpenPopup="isOpenPopup", @close="closePopup")
 
         OrderGallary(:gallaryItems="gallary.items")
-        .order_container__bg-bottom
         Footer
 </template>
 <script>
