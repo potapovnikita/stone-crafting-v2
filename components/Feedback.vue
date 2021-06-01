@@ -1,21 +1,24 @@
 <template lang="pug">
     .feedback_container#form
         h2.title.title-feedback
-            | {{ statusSuccess ? lang === 'ru' ? 'Спасибо!' : 'Thank you!' : lang === 'ru' ? 'Оставить заявку' : 'Submit you request'}}
-        h3.title(v-html="statusSuccess && emailStatus ? lang === 'ru' ? emailStatus : emailStatusEng : lang === 'ru' ? formDesc : formDescEng")
+            | {{ statusSuccess ? lang === 'ru' ? 'Спасибо!' : 'Thank you!' : lang === 'ru' ? 'Сделать заказ' : 'Submit you request'}}
         form(v-if="!statusSuccess" v-on:submit.prevent="submitForm()")
             .input
-                input(type="text" :class="{error: !name && errorName}" v-model="name" :placeholder="lang === 'ru' ? 'Имя' : 'Name'")
+                Input(type="text" name="phone" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
 
             .input
-                input(type="text" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
+                Input(type="text" :class="{error: !name && errorName}" v-model="name" :placeholder="lang === 'ru' ? 'Имя' : 'Name'")
 
             .input
-                textarea(v-model="comment" :placeholder="lang === 'ru' ? 'Комментарий' : 'Comment'")
+                Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
+
+            Button(:classNames="['feedback-button']" :onClick="submitForm()" large) {{ lang === 'ru' ? 'Отправить' : 'Submit' }}
 
             .error_text(v-if="(!name && errorName) || (phone.length < 16 && errorPhone)") {{lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields' }}
-                div
-            .button(@click="submitForm()") {{ lang === 'ru' ? 'Оставить заявку' : 'Submit you request' }}
+
+            .agreement-wrapper
+                Checkbox
+                p.agreement-wrapper__text {{lang === 'ru' ? 'Я согласен с условиями обработки персональных данных' : 'text on eng'}}
             .lds-dual-ring(v-if="preload")
             .message(v-if="emailStatus") {{ emailStatus }}
             .message.err(v-if="emailStatusErr") {{ emailStatusErr }}
@@ -25,26 +28,27 @@
 </template>
 
 <script>
-    import * as emailjs from 'emailjs-com/dist/email'
+    // import * as emailjs from 'emailjs-com/dist/email'
     import Contacts from '~/assets/staticData/contacts.json'
     import { mapState } from 'vuex'
-
-
+    import Input from '@/components/ui/Input'
+    import Button from '@/components/ui/Button'
+    import Checkbox from '@/components/ui/Checkbox'
 
     export default {
+        name: 'Feedback',
         data() {
             return {
                 name: '',
                 phone: '',
-                comment: '',
+                email: '',
                 errorName: false,
                 errorPhone: false,
+                errorEmail: false,
                 emailStatus: '',
                 emailStatusEng: '',
                 emailStatusErr: '',
                 emailStatusErrEng: '',
-                formDesc: 'Оставьте заявку и мы скоро с Вами свяжемся',
-                formDescEng: 'Leave a request and we will contact you shortly',
                 phoneNumber: Contacts.phoneMain,
                 preload: false,
                 statusSuccess: false,
@@ -52,6 +56,9 @@
         },
         props: ['type'],
         components: {
+            Input,
+            Button,
+            Checkbox,
         },
         methods: {
             submitForm() {
@@ -68,7 +75,7 @@
                     template_params: {
                         'name': this.name,
                         'phone': this.phone,
-                        'comment': this.comment,
+                        'email': this.email,
                         'type': this.type
                     }
                 };
@@ -85,21 +92,23 @@
                     this.errorName = false
                     this.errorPhone = false
 
-                    this.preload = true
-                    emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
-                        .then((res) => {
-                            this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
-                            this.emailStatusEng = 'Application sent, we will contact you shortly'
-                            this.name = ''
-                            this.phone = ''
-                            this.preload = false
-                            this.statusSuccess = true
-                        }, (error) => {
-                            this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${this.phoneNumber}`
-                            this.emailStatusErrEng = `Oops, try again later or contact us by phone ${this.phoneNumber}`
-                            this.preload = false
-                            this.statusSuccess = false
-                        });
+                    console.log('Submit data', data)
+
+                    //this.preload = true
+                    // emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
+                    //     .then((res) => {
+                    //         this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
+                    //         this.emailStatusEng = 'Application sent, we will contact you shortly'
+                    //         this.name = ''
+                    //         this.phone = ''
+                    //         this.preload = false
+                    //         this.statusSuccess = true
+                    //     }, (error) => {
+                    //         this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${this.phoneNumber}`
+                    //         this.emailStatusErrEng = `Oops, try again later or contact us by phone ${this.phoneNumber}`
+                    //         this.preload = false
+                    //         this.statusSuccess = false
+                    //     });
                 }
             }
         },
@@ -126,13 +135,9 @@
         text-align center
 
         h2.title-feedback
-            color white
-            margin-bottom 20px
-
-        h3.title
-            color white
-            margin-bottom 20px
-
+            line-height 150%
+            margin-bottom 60px
+            color whiteMain
 
         form
             display flex
@@ -140,44 +145,14 @@
             flex-direction column
             position relative
 
-            .button
-                margin-bottom 20px
-                width 200px
-                text-align center
-                cursor pointer
-                border 1px solid
-                padding 5px 10px
-                color darkRed
-                background-color backgroundReverse
-                &:hover
-                    color backgroundReverse
-                    background-color darkRed
-
             .error_text
                 position absolute
-                bottom 55px
+                bottom 70px
                 color #e62117
-
-            input, textarea
-                color #000
-                border 1px solid #c0c0c0
-                outline none
-                font-size 18px
-                width 65%
-                max-width 500px
-                padding 10px 20px 11px
-                cursor pointer
-                &.error
-                    border-color #e62117
-                    color #e62117
-                    &::placeholder
-                        color #e62117
-                &:focus
-                &:hover
-                    border 1px solid orangeMain
 
             .input
                 width 100%
+                max-width 494px
                 margin-bottom 20px
 
                 &:nth-child(3)
@@ -187,6 +162,26 @@
                 color green
                 &.err
                     color red
+
+            .feedback-button
+                    min-width 494px
+                    margin-bottom 120px
+
+    .agreement-wrapper
+        display flex
+        justify-content center
+        align-items center
+        width 100%
+
+        label
+            font-size 0
+            margin-top -1px
+            margin-right 18px
+
+        &__text
+            font-size 14px
+            line-height 150%
+            color #8F8F8F
 
     .lds-dual-ring {
         display: inline-block;
@@ -207,6 +202,7 @@
         border-color: darkRed transparent darkRed transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
+
     @keyframes lds-dual-ring {
         0% {
             transform: rotate(0deg);
@@ -216,15 +212,55 @@
         }
     }
 
-    @media only screen and (max-width 767px)
+    @media only screen and (max-width 1280px)
         .feedback_container
-            padding $PaddingContainersMobile
 
-    @media only screen and (max-width 500px)
-        .feedback_container
-            padding $PaddingContainersMobile
+            h2.title-feedback
+                font-size 36px
+                margin-bottom 34px
+
             form
-                input,
-                textarea
-                    width 100%
+                .error_text
+                    bottom 35px
+
+                .input
+                    margin-bottom 20px
+
+                button
+                    margin-bottom 43px
+
+                .feedback-button
+                    margin-bottom 43px
+                    padding 20px 20px 22px
+
+
+    @media only screen and (max-width 850px)
+        .feedback_container
+
+            h2.title-feedback
+                font-size 26px
+                margin-bottom 40px
+
+            form
+
+                .error_text
+                    bottom 60px
+
+                .input
+                    max-width 322px
+
+                    &:nth-child(3)
+                        margin-bottom 20px
+
+                 .feedback-button
+                    width 322px
+                    min-width 322px
+                    padding 17px 17px 19px
+                    margin-bottom 52px
+
+        .agreement-wrapper
+            align-items flex-start
+
+            &__text
+                text-align left
 </style>

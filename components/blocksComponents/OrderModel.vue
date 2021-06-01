@@ -1,26 +1,40 @@
 <template lang="pug">
     .orderModel
-        .orderModel__container(v-if="orderModels")
+        .orderModel__container
             .orderModel__block-text.orderModel__block-text--left.mobile-hide
                 h3.orderModel__title {{ lang === 'ru' ? 'Особенности' : 'Title on eng' }}
-                p.orderModel__text(v-html="lang === 'ru' ? orderModels[currentSlide].features.text : orderModels[currentSlide].features.textEng")
+                p.orderModel__text(v-html="lang === 'ru' ? orderItem.features.text : orderItem.features.textEng")
             .orderModel__block-media
                 .orderModel__wrapper-circle
-                    .orderModel__slider-buttons-desktop.btn-left
+                    .orderModel__slider-buttons-desktop.btn-left(v-if="orderItem.photos.length > 1")
                         ButtonArrow(:onClick="prewSlide")
-                    .orderModel__slider-buttons-desktop.btn-right
+                    .orderModel__slider-buttons-desktop.btn-right(v-if="orderItem.photos.length > 1")
                         ButtonArrow(:onClick="nextSlide" arrowRight)
                     
                     client-only
-                        carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="orderModelCarousel")
-                            slide(v-for="model in orderModels" :key="model.id")
+                        carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="orderModelCarousel")
+                            slide(v-for="(photo, index) in orderItem.photos" :key="`img_${index}`")
                                 .orderModel__media-container
-                                    img(:src="getImg(model.img)" alt="modelImg")
+                                    img.orderModel__photo(:src="getImg(photo)" alt="modelImg")
 
                     .orderModel__circle
+            .orderModel__control-mobile(v-if="orderItem.photos.length > 1")
+                    ButtonArrow(:onClick="prewSlide")
+                    .orderModel__slider-dots
+                        ul.orderModel__list
+                            li(v-for="(photo, index) in orderItem.photos" :key="`dot_${index}`")
+                                .orderModel__slider-dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
+                    ButtonArrow(:onClick="nextSlide" arrowRight)
             .orderModel__block-text.orderModel__block-text--right.mobile-hide
                 h3.orderModel__title {{ lang === 'ru' ? 'История' : 'History' }}
-                p.orderModel__text(v-html="lang === 'ru' ? orderModels[currentSlide].history.text : orderModels[currentSlide].history.textEng")
+                p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
+            .orderModel__block-text-mobile
+                .orderModel__text-mobile
+                    h3.orderModel__title {{ lang === 'ru' ? 'Особенности' : 'Title on eng' }}
+                    p.orderModel__text(v-html="lang === 'ru' ? orderItem.features.text : orderItem.features.textEng")
+                .orderModel__text-mobile
+                    h3.orderModel__title {{ lang === 'ru' ? 'История' : 'History' }}
+                    p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
 
 </template>
 <script>
@@ -33,7 +47,10 @@ export default {
         ButtonArrow,
     },
     props: {
-        orderModels: Array,
+        orderItem: {
+            type: Object,
+            required: true,
+        }
     },
     data() {
         return {
@@ -53,6 +70,13 @@ export default {
                 this.currentSlide = this.$refs.orderModelCarousel.getNextPage()
                 this.$refs.orderModelCarousel.goToPage(this.$refs.orderModelCarousel.getNextPage());
             },
+            navigateTo(index) {
+                this.currentSlide = index
+                this.$refs.orderModelCarousel.goToPage(index)
+            },
+            handlePageChange(num) {
+                this.currentSlide = num
+            },
         },
     computed: {
         ...mapState('localization', [
@@ -68,9 +92,8 @@ export default {
     &__container
         display flex
         justify-content space-between
-        max-width 1600px
-        padding-top 122px
-        padding-bottom 103px
+        max-width 1680px
+        padding 90px 40px 145px
 
     &__block-text
         display block
@@ -89,7 +112,12 @@ export default {
 
     &__media-container
         display block
-        margin-top -46px
+        height 718px
+
+    &__photo
+        width auto
+        max-width 500px
+        height 100%
 
     &__title
         margin-bottom 29px
@@ -103,8 +131,6 @@ export default {
     &__wrapper-circle
         display block
         position relative
-        width 664px
-        height 664px
 
     &__slider-buttons-desktop
         position absolute
@@ -123,11 +149,157 @@ export default {
 
     &__circle
         position absolute
-        top 0
-        width 100%
-        height 100%
-        border 1px solid rgba(255, 255, 255, 0.8)
+        top 32px
+        width 664px
+        height 664px
+        border 1px solid rgba(255, 255, 255, 0.07)
         border-radius 50%
         z-index 0
+
+    &__control-mobile
+        display none
+
+    &__block-text-mobile
+        display none
+
+    @media only screen and (max-width 1590px)
+        &__block-text
+            flex-basis 280px
+
+    @media only screen and (max-width 1440px)
+        &__container
+            display block
+
+        &__block-text
+            &--left,
+            &--right
+                &.mobile-hide
+                    display none
+
+        &__block-text-mobile
+            display flex
+            justify-content space-between
+            position relative
+            bottom 180px
+
+        &__text-mobile
+            flex-basis 340px
+            flex-shrink 2
+
+    @media only screen and (max-width 1380px)
+
+        &__block-text-mobile
+            bottom 90px
+
+        &__text-mobile
+            flex-basis 297px
+
+        &__title
+            margin-bottom 15px
+            font-size 22px
+            line-height 150%
+            text-align left
+
+
+    @media only screen and (max-width 1024px)
+
+        &__container
+            display block
+            padding 63px 27px 0 27px
+
+        &__media-container
+            height 661px
+
+        &__slider-buttons-desktop
+            top 52px
+
+        &__circle
+            top 52px
+
+        &__photo
+            max-width 500px
+            height 100%
+
+    @media only screen and (max-width 990px)
+
+        &__block-text-mobile
+            margin-top 25px
+            bottom 0
+
+        &__text-mobile
+            flex-basis 380px
+
+    @media only screen and (max-width 890px)
+
+        &__text-mobile
+            flex-basis 300px
+
+    @media only screen and (max-width 767px)
+
+        &__container
+            padding 35px 11px 45px
+
+        &__block-text-mobile
+            display block
+            position static
+
+            & > div + div
+                margin-top 45px
+
+        &__title
+            margin-bottom 20px
+
+        &__block-media
+            max-width unset
+            height 430px
+            margin-bottom 18px
+
+        &__wrapper-circle
+            width 352px
+            height 352px
+
+        &__circle
+            top 25px
+            width 352px
+            height 352px
+
+        &__slider-buttons-desktop
+            display none
+
+        &__media-container
+            height 430px
+
+        &__photo
+            max-width 350px
+            height 100%
+
+        &__control-mobile
+            display flex
+            align-items center
+            justify-content center
+
+        &__list
+            display flex
+            flex-wrap wrap
+            align-items center
+            padding 0
+            margin 0 25px
+            list-style-type none
+
+            & > li + li
+                margin-left 15px
+            
+
+        &__slider-dot
+            flex-shrink 0
+            width 8px
+            height 8px
+            border 1px solid rgba(143, 143, 143, 0.3)
+            border-radius 50%
+            cursor pointer
+
+            &.active
+                width 12px
+                height 12px
 
 </style>

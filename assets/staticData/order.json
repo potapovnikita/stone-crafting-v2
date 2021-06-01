@@ -6,10 +6,12 @@
                 "nameEng": "Name on eng",
                 "links": [
                     {
+                        "id": "largeForms",
                         "name": "Большие формы",
                         "nameEng": "Name on eng"
                     },
                     {
+                        "id": "smallForms",
                         "name": "Малые форма",
                         "nameEng": "Name on eng"
                     }
@@ -21,14 +23,17 @@
                 "nameEng": "Name on eng",
                 "links": [
                     {
+                        "id": "sculpture",
                         "name": "Инновационные скульптуры",
                         "nameEng": "Name on eng"
                     },
                     {
+                        "id": "stoneMosaic",
                         "name": "Объемная каменная мозаика",
                         "nameEng": "Name on eng"
                     },
                     {
+                        "id": "florentineMosaic",
                         "name": "Флорентийская мозаика",
                         "nameEng": "Name on eng"
                     }
@@ -40,19 +45,27 @@
                 "nameEng": "Interior",
                 "links": [
                     {
+                        "id": "stone",
                         "name": "Камень в интерьере",
                         "nameEng": "Name on eng"
                     },
                     {
+                        "id": "piece",
                         "name": "Преметы интерьера",
                         "nameEng": "Name on eng"
                     },
                     {
+                        "id": "artObjects",
                         "name": "Арт-объекты",
                         "nameEng": "Name on eng"
                     }
                 ]
                
             }
-        ]
+        ],
+
+    "button": {
+        "name": "Сделать\n индивидуальный заказ",
+        "nameEng": "Name on eng"
+    }
 }
