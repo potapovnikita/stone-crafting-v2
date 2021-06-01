@@ -4,10 +4,10 @@
             .auth-container
                 h2.reverse {{ lang === 'ru' ? 'Введите пароль для доступа к предложениям' : 'Enter password for show offers' }}
                 input.password(:type="inputType"
-                        v-model="password"
-                        :placeholder="lang === 'ru' ? 'Пароль' : 'Password'"
-                        autocomplete="off"
-                        )
+                    v-model="password"
+                    :placeholder="lang === 'ru' ? 'Пароль' : 'Password'"
+                    autocomplete="off"
+                )
                 button(@click="checkPass()") Войти
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
@@ -24,7 +24,7 @@
                         @click="setActive('All')") {{ lang === 'ru' ? 'Все категории' : 'All categories' }}
                 .item(v-for="item in categoriesArray")
                     .section_name(:class="{active: activeMenu && activeMenu.query === item.query}"
-                                    @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
+                        @click="setActive(item)") {{ lang === 'ru' ? item.name : item.nameEng }}
 
             .shop_items
                 .item(v-if="!goodsArrayFiltered.length" v-html="lang === 'ru' ? 'Товаров нет' : 'Goods is not set'")
@@ -58,10 +58,10 @@
                             :style="{backgroundImage: getBgImg(good.files[good.activeImgId])}"
                             @click="setActiveImg(good, good.activeImgId + 1, index)")
                         .photo(v-show="good.files[good.activeImgId].type === 'video'"
-                                @click="setActiveImg(good, good.activeImgId + 1, index)")
+                            @click="setActiveImg(good, good.activeImgId + 1, index)")
                             video(:src="good.files[good.activeImgId].url"
                                 controls
-                                )
+                            )
 
                         .slides
                             .img(v-for="(img, idx) in good.files")
@@ -89,7 +89,7 @@
                                 .price(
                                     v-if="!(good.pricetoViewClient && good.pricetoViewClient.from) && !(good.pricetoView && good.pricetoView.from)"
                                     v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'"
-                                    )
+                                )
                             div(v-else)
                                 .price(
                                     v-if="good.pricetoView && good.pricetoView.from"
@@ -111,14 +111,13 @@
                             v-html="lang === 'ru' ? load ? 'Идет скачивание...' : 'Скачать материалы' : load ? 'Downloading...' : 'Download info'"
                             @click="download(good)"
                             :class="{'disabled': load}"
-                            )
+                        )
 
 </template>
 
 <script>
     import { mapState } from 'vuex'
     import { saveAs } from 'file-saver';
-
     import Cookies from 'universal-cookie';
     import zenscroll from "zenscroll";
     import * as fb from "@/plugins/firebase";
@@ -126,11 +125,9 @@
     import axios from "axios";
     import JSZip from "jszip";
     import { ChevronsDownIcon, ChevronsUpIcon, LoaderIcon } from 'vue-feather-icons'
-
     import Input from "@/components/Input";
     import Select from "@/components/Select";
     import Button from "@/components/Button";
-
     import {themes, cities, stockStatuses, DEFAULT_PASS} from "@/plugins/constants"
 
     export default {
@@ -320,8 +317,12 @@
                     })
                 })
 
-                await axios.get('https://api.exchangeratesapi.io/latest?base=RUB').then(({ data }) => {
-                    if (data.rates.USD) this.currency = data.rates.USD;
+                // await axios.get('https://api.exchangeratesapi.io/latest?access_key=76110f4ec760f72cde07b1e9cc46c643&base=RUB').then(({ data }) => {
+                //     if (data.rates.USD) this.currency = data.rates.USD;
+                // })
+
+                await axios.get('https://free.currconv.com/api/v7/convert?q=RUB_USD&compact=ultra&apiKey=3680959f524addb8b5be').then(({ data }) => {
+                    if (data.RUB_USD) this.currency = data.RUB_USD;
                 })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
@@ -435,7 +436,7 @@
     $sizeMin = 80px
 
     h4
-     color darkRed
+        color darkRed
 
     .shop_wrapper
         display flex
