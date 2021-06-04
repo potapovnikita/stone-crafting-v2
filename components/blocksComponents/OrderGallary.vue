@@ -13,9 +13,9 @@
                     slide(v-for="item in gallaryItems" :key="item.id")
                         .orderGallary__item
                             .orderGallary__wrapper-media
-                                img.orderGallary__photo(:src="getImg(item.img)" alt="pic")
-                            a(href="/")
-                                p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
+                                a.orderGallary__link(:href="item.link")
+                                    img.orderGallary__photo(:src="getImg(item.img)" alt="pic")
+                                    p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
     
 </template>
 <script>
@@ -133,13 +133,15 @@ export default {
 
     &__wrapper-media
         width 242px
-        height 154px
         margin-bottom 10px
 
     &__photo
         width 100%
         height auto
         max-height 154px
+
+    &__link
+        display block
 
     @media only screen and (max-width 1024px)
         padding 40px 25px 45px
@@ -162,7 +164,6 @@ export default {
 
         &__wrapper-media
             width 194px
-            height 136px
             margin-bottom 10px
 
         &__photo
@@ -199,7 +200,6 @@ export default {
 
         &__wrapper-media
             width 242px
-            height 154px
             margin-bottom 10px
 
         &__photo

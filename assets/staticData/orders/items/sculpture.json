@@ -11,15 +11,9 @@
         "textEng": "Text on eng"
     },
     "photos": [
-        "img/collections/torero/0.png",
-        "img/collections/babayaga/0.png",
-        "img/collections/bannik/0.png",
-        "img/collections/catherine/0.png",
-        "img/collections/dobrynya/0.png",
-        "img/collections/dvorovoy/0.png",
-        "img/collections/goldfish/0.png",
-        "img/collections/joker/0.png",
-        "img/collections/muromets/0.png"
+        "img/order/items/sculpture/0.png",
+        "img/order/items/sculpture/1.png",
+        "img/order/items/sculpture/2.png"
     ],
     "steps": [
         {

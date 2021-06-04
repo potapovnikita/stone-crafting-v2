@@ -17,7 +17,7 @@
 
                             ul.order_container__items(v-if="option.links")
                                 li(v-for="(item, index) in option.links" :key="`item_${index}`" @click="() => activeOrderId=item.id")
-                                    p.order_container__item-name(v-html="lang === 'ru' ? item.name : item.nameEng")
+                                    p.order_container__item-name(:class="{active: activeOrderId===item.id}" v-html="lang === 'ru' ? item.name : item.nameEng")
         
         div(v-for="(orderItem, index) in orderItems" v-if="orderItem.id === activeOrderId" :key="activeOrderId")
             OrderModel(:orderItem="orderItem")
@@ -45,11 +45,15 @@ import Order from '~/assets/staticData/order.json'
 import LargeForms from '~/assets/staticData/orders/items/largeForms.json'
 import SmallForms from '~/assets/staticData/orders/items/smallForms.json'
 import Sculpture from '~/assets/staticData/orders/items/sculpture.json'
+import StoneMosaic from '~/assets/staticData/orders/items/stoneMosaic.json'
+import FlorentineMosaic from '~/assets/staticData/orders/items/florentineMosaic.json'
+import ArtObjects from '~/assets/staticData/orders/items/artObjects.json'
+import Piece from '~/assets/staticData/orders/items/piece.json'
+import Stone from '~/assets/staticData/orders/items/stone.json'
 import OrderModel from '@/components/blocksComponents/OrderModel'
 import OrderWork from '@/components/blocksComponents/OrderWork'
 import WorksSteps from '@/components/blocksComponents/WorksSteps'
 import OrderGallary from '@/components/blocksComponents/OrderGallary'
-import Sculptures from '~/assets/staticData/orders/sculptures.json'
 import Gallary from '~/assets/staticData/orders/gallary.json'
 import Button from "@/components/ui/Button";
 import IndividIcon from '~/assets/img/tradition/individ.svg'
@@ -73,13 +77,17 @@ export default {
         return {
             orderOptions: Order.options,
             orderButton: Order.button,
-            sculptures: Sculptures,
             gallary: Gallary,
             activeOrderId: 'sculpture',
             orderItems: [
                 LargeForms,
                 SmallForms,
                 Sculpture,
+                StoneMosaic,
+                FlorentineMosaic,
+                ArtObjects,
+                Piece,
+                Stone,
             ],
             isOpenPopup: false
         }
@@ -165,6 +173,9 @@ export default {
 
             &:hover
                 cursor pointer
+                color goldNew
+
+            &.active
                 color goldNew
 
         &__buttons

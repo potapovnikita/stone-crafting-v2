@@ -5,37 +5,44 @@
                 "id": "bronze",
                 "img": "img/order/gallary/0.png",
                 "title": "Бронза",
-                "titleEng": "Bronze"
+                "titleEng": "Bronze",
+                "link": "/"
             },
             {
                 "id": "stoneFlowers",
                 "img": "img/order/gallary/1.png",
                 "title": "Каменные цветы",
-                "titleEng": "Stone flowers"
+                "titleEng": "Stone flowers",
+                "link": "/"
             },
             {
                 "id": "fancyCut",
                 "img": "img/order/gallary/2.png",
                 "title": "Фантазийная огранка",
-                "titleEng": "Fancy cut"
+                "titleEng": "Fancy cut",
+                "link": "/"
             },
             {
                 "id": "animalistics",
                 "img": "img/order/gallary/3.png",
                 "title": "Анималистика",
-                "titleEng": "Animalistics"
+                "titleEng": "Animalistics",
+                "link": "/"
+
             },
             {
                 "id": "minerals",
                 "img": "img/order/gallary/4.png",
                 "title": "Минералы",
-                "titleEng": "Minerals"
+                "titleEng": "Minerals",
+                "link": "/"
             },
             {
                 "id": "man",
                 "img": "img/order/gallary/5.png",
                 "title": "Мужик",
-                "titleEng": "Ololo!"
+                "titleEng": "Ololo!",
+                "link": "/"
             }
         ]
 }

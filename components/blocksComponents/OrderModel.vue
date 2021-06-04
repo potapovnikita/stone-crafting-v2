@@ -116,7 +116,7 @@ export default {
 
     &__photo
         width auto
-        max-width 500px
+        max-width 586px
         height 100%
 
     &__title

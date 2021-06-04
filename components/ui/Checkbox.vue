@@ -1,6 +1,6 @@
 <template lang='pug'>
     label
-        input(type="checkbox" id="" @change="$emit('input', $event.target.checked)")
+        input(type="checkbox" @change="$emit('input', $event.target.checked)")
         span
             CheckIcon
         slot
@@ -15,10 +15,6 @@ export default {
     name: 'Checkbox',
     components: {
         CheckIcon,
-    },
-    props: {
-        name: String,
-        onClick: Function,
     },
     created() {
     }
