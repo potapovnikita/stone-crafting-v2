@@ -52,10 +52,9 @@ export default {
         background goldNew
         color #222222
     &:disabled
-        background-color light_grey
         cursor default
         pointer-events none
-        border 1px solid light_grey
+        opacity .3
 
     &--large
         min-width 494px

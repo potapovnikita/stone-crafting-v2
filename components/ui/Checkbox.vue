@@ -1,8 +1,9 @@
 <template lang='pug'>
     label
-        input(type="checkbox" @change="$emit('input', $event.target.checked)")
+        input(type="checkbox" id="" @change="$emit('input', $event.target.checked)")
         span
             CheckIcon
+        slot
 
 </template>
 
@@ -29,13 +30,14 @@ export default {
 label
     position relative
 
-span
+span:first-of-type
     display inline-flex
     justify-content center
     align-items center
     flex-shrink 0
     width 18px
     height 18px
+    margin-right 18px
     background #111111
     border 1px solid #505050
 

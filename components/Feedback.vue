@@ -12,13 +12,15 @@
             .input
                 Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
 
-            Button(:classNames="['feedback-button']" :onClick="submitForm()" large) {{ lang === 'ru' ? 'Отправить' : 'Submit' }}
+            Button(:classNames="['feedback-button']" :onClick="submitForm" large :disabled="preload") {{ lang === 'ru' ? 'Отправить' : 'Submit' }}
 
-            .error_text(v-if="(!name && errorName) || (phone.length < 16 && errorPhone)") {{lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields' }}
+            .error_text(v-if="errorText") {{ errorText }}
 
             .agreement-wrapper
-                Checkbox
-                p.agreement-wrapper__text {{lang === 'ru' ? 'Я согласен с условиями обработки персональных данных' : 'text on eng'}}
+                Checkbox(v-model="isAgreement")
+                    span.agreement-label {{lang === 'ru' ? 'Я согласен с условиями обработки' : 'text on eng'}}
+                    span.agreement-label {{'\u2002'}}
+                a.agreement-label.agreement-label--link(href="/") {{lang === 'ru' ? 'персональных данных' : 'text on eng'}}
             .lds-dual-ring(v-if="preload")
             .message(v-if="emailStatus") {{ emailStatus }}
             .message.err(v-if="emailStatusErr") {{ emailStatusErr }}
@@ -42,6 +44,7 @@
                 name: '',
                 phone: '',
                 email: '',
+                isAgreement: false,
                 errorName: false,
                 errorPhone: false,
                 errorEmail: false,
@@ -52,6 +55,7 @@
                 phoneNumber: Contacts.phoneMain,
                 preload: false,
                 statusSuccess: false,
+                errorText: '',
             }
         },
         props: ['type'],
@@ -62,11 +66,15 @@
         },
         methods: {
             submitForm() {
+                console.log('submitForm()')
                 this.emailStatus = ''
                 this.emailStatusErr = ''
                 this.emailStatusEng = ''
                 this.emailStatusErrEng = ''
-
+                this.errorText = ''
+                this.errorName = false
+                this.errorPhone = false
+                this.errorEmail = false
 
                 const data = {
                     service_id: '',
@@ -80,6 +88,11 @@
                     }
                 };
 
+                if (this.email && !/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/.test(this.email)) {
+                    this.errorEmail = true
+                    this.errorText = this.lang === 'ru' ? 'Поле Email заполнено с ошибкой' : 'Wrong email'
+                }
+
                 if (!this.name) {
                     this.errorName = true
                 }
@@ -88,13 +101,27 @@
                     this.errorPhone = true
                 }
 
-                if (this.phone.length >= 16 && this.name) {
-                    this.errorName = false
-                    this.errorPhone = false
+                if (!this.isAgreement) {
+                    this.errorText = this.lang === 'ru' ? 'Требуется соглашение' : 'Fill in required fields'
+                }
 
-                    console.log('Submit data', data)
+                if (this.errorName || this.errorPhone) {
+                    this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
+                }
 
-                    //this.preload = true
+                if (this.isAgreement &&
+                     this.phone.length >= 16 &&
+                     this.name &&
+                     (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
+
+                    this.preload = true
+                    const timerId = setTimeout(() => {
+                        this.preload = false
+                        this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
+                        this.statusSuccess = true
+                        clearTimeout(timerId)
+                        console.log('Submit data', data)
+                    }, 10000)
                     // emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
                     //     .then((res) => {
                     //         this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
@@ -158,38 +185,36 @@
                 &:nth-child(3)
                     margin-bottom 50px
             .message
-                margin-bottom 20px
+                position absolute
+                bottom 50px
                 color green
                 &.err
                     color red
 
             .feedback-button
-                    min-width 494px
-                    margin-bottom 120px
+                min-width 494px
+                margin-bottom 120px
 
     .agreement-wrapper
-        display flex
-        justify-content center
-        align-items center
         width 100%
 
-        label
-            font-size 0
-            margin-top -1px
-            margin-right 18px
+    .agreement-label
+        font-family $TenorSans-Regular
+        font-size 14px
+        line-height 150%
+        letter-spacing 0.03em
+        color #8F8F8F
 
-        &__text
-            font-size 14px
-            line-height 150%
-            color #8F8F8F
+        &--link
+            color goldNew !important
 
     .lds-dual-ring {
         display: inline-block;
+        position absolute
+        top unset
+        bottom 50px
         width: 25px;
         height: 25px;
-        position relative
-        top 10px
-        margin-bottom: 30px;
     }
     .lds-dual-ring:after {
         content: " ";
@@ -233,6 +258,14 @@
                     margin-bottom 43px
                     padding 20px 20px 22px
 
+                .message
+                    &.err
+                        position relative
+                        bottom: -10px
+                        max-width: 497px
+        
+        .lds-dual-ring
+            bottom 30px
 
     @media only screen and (max-width 850px)
         .feedback_container
@@ -258,9 +291,7 @@
                     padding 17px 17px 19px
                     margin-bottom 52px
 
-        .agreement-wrapper
-            align-items flex-start
+        .lds-dual-ring
+            bottom 50px
 
-            &__text
-                text-align left
 </style>
