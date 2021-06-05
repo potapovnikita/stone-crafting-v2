@@ -58,7 +58,7 @@
     }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
     .footer_container
         position relative
         color whiteMain

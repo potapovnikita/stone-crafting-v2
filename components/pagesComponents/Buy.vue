@@ -432,8 +432,11 @@
     }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
     $sizeMin = 80px
+
+    .common-container
+        padding 30px 60px
 
     h4
         color darkRed
@@ -458,6 +461,12 @@
             align-items center
             justify-content center
             margin 0 auto
+
+            h2
+                font-family Lazurski-Regular,Arial,Helvetica,sans-serif
+                font-size 30px
+                text-align center
+                line-height 1.11
 
             .password
                 max-width 280px
@@ -679,6 +688,9 @@
                         background-color darkRed
 
     @media only screen and (max-width 767px)
+        .common-container 
+            padding 80px 20px 30px
+
         .shop_wrapper
             margin-top 40px
             flex-direction column

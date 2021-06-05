@@ -15,6 +15,11 @@
         "link": "/about"
     },
     {
+        "name": "Предложения</br>для партнеров",
+        "nameEng": "Offers</br>for partners",
+        "link": "/offers"
+    },
+    {
         "name": "Виртуальный музей",
         "nameEng": "Virtual Museum",
         "link": "/virtual-museum"

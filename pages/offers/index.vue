@@ -1,18 +1,18 @@
 <template lang="pug">
     page-container(reverse="true")
-        Header(placeholder="true", reverse="true")
+        HeaderOffer(placeholder="true", reverse="true")
         //Buy_old
         Buy
         SplitLine(reverse="true")
-        Footer(reverse="true")
+        FooterOffer(reverse="true")
 </template>
 
 <script>
     import Buy_old from '~/components/pagesComponents/Buy_old.vue'
     import Buy from '~/components/pagesComponents/Buy.vue'
     import PageContainer from '~/components/PageContainer.vue'
-    import Header from '~/components/Header.vue'
-    import Footer from '~/components/Footer.vue'
+    import HeaderOffer from '~/components/HeaderOffer.vue'
+    import FooterOffer from '~/components/FooterOffer.vue'
     import SplitLine from '~/components/SplitLine.vue'
 
 
@@ -21,8 +21,8 @@
             PageContainer,
             Buy_old,
             Buy,
-            Header,
-            Footer,
+            HeaderOffer,
+            FooterOffer,
             SplitLine,
         },
     }
