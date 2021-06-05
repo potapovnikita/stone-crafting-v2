@@ -26,6 +26,9 @@ export default {
 label
     position relative
 
+    input
+        display none !important
+
 span:first-of-type
     display inline-flex
     justify-content center
