@@ -70,7 +70,7 @@
         bottom 0
         left 0
         right 0
-        background rgba(0, 0, 0, 0.86)
+        background-color blackBackground
         opacity 1
         transition opacity .3s linear
 
