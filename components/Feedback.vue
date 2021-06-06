@@ -192,6 +192,12 @@
                 min-width 494px
                 margin-bottom 120px
 
+            input:-webkit-autofill
+                -webkit-box-shadow 0 0 0 50px blackBackground inset !important
+            
+            input:-webkit-autofill
+                -webkit-text-fill-color whiteMain !important
+
     .agreement-wrapper
         width 100%
 

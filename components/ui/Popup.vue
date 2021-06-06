@@ -104,7 +104,7 @@
             visibility hidden
         .popup_inner-container
             position relative
-            background rgba(0, 0, 0, 0.6)
+            background blackBackground
             padding 60px 30px 50px
         
         h2.title-popup
