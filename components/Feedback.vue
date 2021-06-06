@@ -30,12 +30,15 @@
 </template>
 
 <script>
-    // import * as emailjs from 'emailjs-com/dist/email'
+    import * as emailjs from 'emailjs-com/dist/email'
+    import{ init } from 'emailjs-com';
     import Contacts from '~/assets/staticData/contacts.json'
     import { mapState } from 'vuex'
     import Input from '@/components/ui/Input'
     import Button from '@/components/ui/Button'
     import Checkbox from '@/components/ui/Checkbox'
+
+    const USER_ID = 'user_0qIsrdRv9hVhOoGLjqibi'
 
     export default {
         name: 'Feedback',
@@ -66,7 +69,6 @@
         },
         methods: {
             submitForm() {
-                console.log('submitForm()')
                 this.emailStatus = ''
                 this.emailStatusErr = ''
                 this.emailStatusEng = ''
@@ -79,7 +81,7 @@
                 const data = {
                     service_id: '',
                     template_id: '',
-                    user_id: '',
+                    user_id: USER_ID,
                     template_params: {
                         'name': this.name,
                         'phone': this.phone,
@@ -115,27 +117,21 @@
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
 
                     this.preload = true
-                    const timerId = setTimeout(() => {
-                        this.preload = false
-                        this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
-                        this.statusSuccess = true
-                        clearTimeout(timerId)
-                        console.log('Submit data', data)
-                    }, 10000)
-                    // emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
-                    //     .then((res) => {
-                    //         this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
-                    //         this.emailStatusEng = 'Application sent, we will contact you shortly'
-                    //         this.name = ''
-                    //         this.phone = ''
-                    //         this.preload = false
-                    //         this.statusSuccess = true
-                    //     }, (error) => {
-                    //         this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${this.phoneNumber}`
-                    //         this.emailStatusErrEng = `Oops, try again later or contact us by phone ${this.phoneNumber}`
-                    //         this.preload = false
-                    //         this.statusSuccess = false
-                    //     });
+                    
+                    emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
+                        .then((res) => {
+                            this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
+                            this.emailStatusEng = 'Application sent, we will contact you shortly'
+                            this.name = ''
+                            this.phone = ''
+                            this.preload = false
+                            this.statusSuccess = true
+                        }, (error) => {
+                            this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${this.phoneNumber}`
+                            this.emailStatusErrEng = `Oops, try again later or contact us by phone ${this.phoneNumber}`
+                            this.preload = false
+                            this.statusSuccess = false
+                        });
                 }
             }
         },
@@ -149,6 +145,7 @@
         },
         mounted() {
             this.statusSuccess = false;
+            init(USER_ID);
         },
         destroyed() {
             this.statusSuccess = false
