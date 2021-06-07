@@ -31,13 +31,14 @@
 
 <script>
     import * as emailjs from 'emailjs-com/dist/email'
-    import{ init } from 'emailjs-com';
     import Contacts from '~/assets/staticData/contacts.json'
     import { mapState } from 'vuex'
     import Input from '@/components/ui/Input'
     import Button from '@/components/ui/Button'
     import Checkbox from '@/components/ui/Checkbox'
 
+    const SERVICE_ID = 'mail_ru';
+    const TEMPLATE_ID = 'stone-crafting';
     const USER_ID = 'user_0qIsrdRv9hVhOoGLjqibi'
 
     export default {
@@ -79,9 +80,8 @@
                 this.errorEmail = false
 
                 const data = {
-                    service_id: '',
-                    template_id: '',
-                    user_id: USER_ID,
+                    service_id: SERVICE_ID,
+                    template_id: TEMPLATE_ID,
                     template_params: {
                         'name': this.name,
                         'phone': this.phone,
@@ -145,7 +145,6 @@
         },
         mounted() {
             this.statusSuccess = false;
-            init(USER_ID);
         },
         destroyed() {
             this.statusSuccess = false

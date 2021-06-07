@@ -3775,10 +3775,10 @@ elliptic@^6.0.0, elliptic@^6.5.2:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-emailjs-com@^2.3.2:
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/emailjs-com/-/emailjs-com-2.4.1.tgz#a785b2c13a232714a0376938ecc13a1bfaad6e62"
-  integrity sha512-JOnOm+dRv1Rc+yy+Y0QXKxYYdpbRl7C9xlOwKyTmpbCqAM6rcXRAc/D1igiPHqn1eTvCKzpeursTqfX6e7bdBw==
+emailjs-com@^2.6.4:
+  version "2.6.4"
+  resolved "https://spr.sd.itmh.ru/artifactory/api/npm/npm/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  integrity sha1-w7rI9+5Y1TarNJI+cwE6058pn0Y=
 
 emoji-regex@^7.0.1:
   version "7.0.3"
