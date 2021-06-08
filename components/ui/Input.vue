@@ -8,7 +8,6 @@
       v-on:input="$emit('input', $event.target.value)"
       :class="{'error': error}"
       :style="{'width': width || '100%'}"
-      v-mask="mask"
     )
     .errorText(v-if="error") {{error}}
 
@@ -25,7 +24,6 @@
       value: String,
       error: String,
       width: String,
-      mask: String,
     },
     methods: {
 
@@ -41,6 +39,7 @@
 <style lang="stylus" scoped>
   input
     padding 25px 0px
+    font-family $IntroRegular
     font-size 20px
     line-height 26px
     letter-spacing 0.03em

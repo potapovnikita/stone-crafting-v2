@@ -12,6 +12,9 @@
             .input
                 Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
 
+            .input
+                Textarea(:placeholder="lang === 'ru' ? 'Комментарий' : 'Comment'" v-model="comment")
+
             Button(:classNames="['feedback-button']" :onClick="submitForm" large :disabled="preload") {{ lang === 'ru' ? 'Отправить' : 'Submit' }}
 
             .error_text(v-if="errorText") {{ errorText }}
@@ -36,6 +39,7 @@
     import Input from '@/components/ui/Input'
     import Button from '@/components/ui/Button'
     import Checkbox from '@/components/ui/Checkbox'
+    import Textarea from '@/components/ui/Textarea'
 
     const SERVICE_ID = 'mail_ru';
     const TEMPLATE_ID = 'stone-crafting';
@@ -48,6 +52,7 @@
                 name: '',
                 phone: '',
                 email: '',
+                comment: '',
                 isAgreement: false,
                 errorName: false,
                 errorPhone: false,
@@ -67,6 +72,7 @@
             Input,
             Button,
             Checkbox,
+            Textarea
         },
         methods: {
             submitForm() {
@@ -82,10 +88,12 @@
                 const data = {
                     service_id: SERVICE_ID,
                     template_id: TEMPLATE_ID,
+                    user_id: USER_ID,
                     template_params: {
                         'name': this.name,
                         'phone': this.phone,
                         'email': this.email,
+                        'comment': this.comment,
                         'type': this.type
                     }
                 };
@@ -117,7 +125,7 @@
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
 
                     this.preload = true
-                    
+
                     emailjs.send(data.service_id, data.template_id, data.template_params, data.user_id)
                         .then((res) => {
                             this.emailStatus = 'Заявка отправлена, мы скоро с Вами свяжемся'
