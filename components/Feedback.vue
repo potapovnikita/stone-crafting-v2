@@ -186,7 +186,7 @@
                 max-width 494px
                 margin-bottom 20px
 
-                &:nth-child(3)
+                &:nth-child(4)
                     margin-bottom 50px
             .message
                 position absolute
