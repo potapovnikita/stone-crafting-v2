@@ -64,17 +64,22 @@
             const pageSafari = document.body
             const header = document.getElementById('header')
 
-
             if (!this.lang) {
-                const navigator = window.navigator
-                let lang= '';
-                if (navigator && navigator.language) {
-                    if (navigator.language.slice(0, 2) === 'ru') lang = 'ru'
-                    else lang = 'eng'
-                } else lang = await this.getLangSrv()
+                if(getLang()) this.changeLocal(getLang())
+                else {
+                    const navigator = window.navigator
+                    let lang= '';
+                    if (navigator && navigator.language) {
+                        console.log('navigator.language', navigator.language)
+                        if (navigator.language.slice(0, 2) === 'ru') lang = 'ru'
+                        else lang = 'eng'
+                    } else lang = await this.getLangSrv()
 
-                this.changeLocal(lang)
+                    this.changeLocal(lang)
+                }
+
             }
+
         }
     }
 

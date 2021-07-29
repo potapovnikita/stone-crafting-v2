@@ -1,35 +1,48 @@
 {
     "id": "piece",
-    "name": "Преметы интерьера",
-    "nameEng": "Name on eng",
+    "name": "Искусство в интерьере",
+    "nameEng": "Art in the interior",
     "history": {
-        "text": "Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "",
+        "titleEng": "",
+        "text": "",
+        "textEng": ""
     },
     "features": {
-        "text":"Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "",
+        "titleEng": "",
+        "text":"",
+        "textEng": ""
+    },
+    "simpleText": {
+        "text":"",
+        "textEng": ""
     },
     "photos": [
         "img/order/items/piece/0.png",
         "img/order/items/piece/1.png",
         "img/order/items/piece/2.png"
     ],
+    "worksStepsTitle": "Проекты",
+    "worksStepsTitleEng": "Projects",
     "steps": [
         {
             "id": "stepI",
             "label": "I",
-            "title": "Заголовок шага I",
-            "titleEng": "Step I",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Грандиозное интерьеры XVIII - XIX веков на сегодняшний день ещё никто не сумел воссоздать или создать нечто похожее. На протяжении 30 лет, совершенствуя различные техники работы с камнем, мы сумели объединить знания ушедших эпох с современными подходами.\nПредложенный проект дворца из твёрдых благородных пород (яшмы, малахита, лазурита, кахолонга, родонита, а также бронзы, позолоты, эмалей и д.р.) это грандиозный замах на то, чтобы создать интерьер, который останется в истории.",
+            "textEng": "The grandiose interiors of the 18th - 19th centuries have not yet been recreated to this day. For 30 years improving various techniques for working with stone we have managed to combine the knowledge of bygone eras with modern approaches.\nThe proposed project of the palace from hard noble rocks (jasper, malachite, lapis lazuli, cacholong, rhodonite, as well as bronze, gilding, enamels, etc.) is a grandiose swing to create an interior that will remain in history.",
+            "img": "img/order/history1InPiece.png",
+            "imgEng": "img/order/history1InPiece.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -38,17 +51,20 @@
         {
             "id": "stepII",
             "label": "II",
-            "title": "Заголовок шага II",
-            "titleEng": "Step II",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "В 2017 году был создан проект специально для кафе Café Pushkin в Париже в стиле XVIII века. В современном мире практически невозможно сделать проект, в точности воспроизводящий интерьер другого века, так как в разные века существуют особые технологии, недоступные сегодня. Наша команда изучала историю стилистики XVIII века, изобретала новые техники, применяла разные методы работы с камнем и бронзой. Камины создавались по особой технологии, использовалась редкая яшма, которую не добывают уже 100 лет.",
+            "textEng": "In 2017, a project was created specifically for the Café Pushkin in Paris in the style of the 18th century. In the modern world it is almost impossible to make a project that exactly reproduces the interior of another century because in different centuries there are special technologies that are not available today. Our team studied the history of the 18th century stylistics, invented new techniques, applied different methods of working with stone and bronze. The fireplaces were created using a special technology, were used rare jasper which has not been mined for 100 years.",
+            "img": "img/order/history2InPiece.png",
+            "imgEng": "img/order/history2InPiece.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 50,
                 "end": 90
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 70,
                 "end": 100
@@ -57,40 +73,26 @@
         {
             "id": "stepIII",
             "label": "III",
-            "title": "Заголовок шага III",
-            "titleEng": "Step III",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
+            "title": "",
+            "titleEng": "",
+            "text": "Скачать презентацию «Искусство в интерьере»",
+            "textEng": "Download presentation \"Art in the interior\"",
             "img": "img/order/sample.png",
+            "imgEng": "img/order/sample.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
-            }
-        },
-        {
-            "id": "stepIV",
-            "label": "IV",
-            "title": "Заголовок шага IV",
-            "titleEng": "Step IV",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
-            "price": "10-90 тыс",
-            "priceLine": {
-                "start": 40,
-                "end": 60
             },
-            "creationTime": "10-60 дней",
-            "timeLine": {
-                "start": 0,
-                "end": 20
-            }
+            "link": "img/order/presentation.pdf",
+            "linkEng": "img/order/EnglishPresentation.pdf"
         }
     ]
 }

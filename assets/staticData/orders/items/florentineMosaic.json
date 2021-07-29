@@ -1,33 +1,46 @@
 {
     "id": "florentineMosaic",
     "name": "Флорентийская мозаика",
-    "nameEng": "Name on eng",
+    "nameEng": "Florentine mosaic",
     "history": {
-        "text": "Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "История",
+        "titleEng": "History",
+        "text": "С XV века итальянские мастера владели техникой флорентийской мозаики и были ее первооткрывателями. Через века традиции потерпели свое исчезновение. В течение многих лет наши мастера воссоздавали утерянную технику, собирая историческую информацию, отрабатывая навыки и мастерство. Сегодня мы продвинулись еще дальше и начали создавать каменные картины, которые максимально соответствуют реалистичности. Это настоящая «живопись в камне».",
+        "textEng": "Since the 15th century, Italian masters have mastered the technique of Florentine mosaic and were its pioneers. Over the centuries traditions have disappeared. For many years, our masters have recreated the lost technique, collecting historical information, practicing skills and craftsmanship. Today we have gone even further and started to create stone paintings that are as close to realism as possible. This is a real \"painting in stone\"."
     },
     "features": {
-        "text":"Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "Особенности",
+        "titleEng": "Features",
+        "text":"Флорентийская мозаика - особая техника создания каменных картин. Мозаика собрана из разных пород благородных камней в единую композицию. Ее художественный эффект основан на тщательном подборе оттенков камней с учетом их естественного рисунка. Флорентийская мозаика – это одна из самых сложных техник в области камнерезного искусства. Высокий уровень мастерства позволяет нам создавать реалистичные каменные полотна, которые часто относят к рангу произведений искусства.",
+        "textEng": "Florentine mosaic is a special technique for creating stone paintings. The mosaic is assembled from different types of noble stones into a single composition. Its artistic effect is based on the careful selection of the shades of the stones, taking into account their natural pattern. Florentine mosaic is one of the most sophisticated techniques in the art of stone carving. The high level of craftsmanship allows us to create realistic stone canvases, which are often classified as works of art."
+    },
+    "simpleText": {
+        "text":"",
+        "textEng": ""
     },
     "photos": [
         "img/order/items/florentineMosaic/0.png"
     ],
+    "worksStepsTitle": "Этапы создания работ",
+    "worksStepsTitleEng": "Stages of work creation",
     "steps": [
         {
             "id": "stepI",
             "label": "I",
-            "title": "Заголовок шага I",
-            "titleEng": "Step I",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "Эскиз",
+            "titleEng": "Sketch",
+            "text": "На первом этапе художник создает эскиз и разделяет его на цветовые фрагменты. Техника флорентийской мозаики позволяет нам изобразить в камне любой образ или историю. Это может быть портрет, натюрморты, пейзажи или религиозные сюжеты. Чаще всего для проекта используются: пейзажная яшма различных оттенков, нефрит, кварц, агаты, жадеит и другие.",
+            "textEng": "At the first stage the artist creates a sketch and divides it into color fragments. The Florentine mosaic technique allows us to depict any image or history in stone. This can be a portrait, still lifes, landscapes or religious subjects. Most often used for the project: landscape jasper of various shades, jade, quartz, agate, jade and others.",
+            "img": "img/order/history1InFlorentineMosaic.png",
+            "imgEng": "img/order/history1InFlorentineMosaic.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -36,17 +49,20 @@
         {
             "id": "stepII",
             "label": "II",
-            "title": "Заголовок шага II",
-            "titleEng": "Step II",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "Подбор камня",
+            "titleEng": "Stone selection",
+            "text": "Выбранный эскиз начинают адаптировать под особенности камня и его фактуры. Учитываются все характеристики минерала – его твёрдость, прозрачность, пористость и другое. В итоге все фрагменты должны обладать похожими характеристиками, яркостью, насыщенностью оттенка.",
+            "textEng": "The selected sketch begins to adapt to the characteristics of the stone and its texture. All characteristics of the mineral are taken into account - its hardness, transparency, porosity, and more. As a result all fragments should have similar characteristics, brightness, and hue saturation.",
+            "img": "img/order/history2InFlorentineMosaic.png",
+            "imgEng": "img/order/history2InFlorentineMosaic.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 50,
                 "end": 90
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 70,
                 "end": 100
@@ -55,17 +71,20 @@
         {
             "id": "stepIII",
             "label": "III",
-            "title": "Заголовок шага III",
-            "titleEng": "Step III",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "Работа с камнем",
+            "titleEng": "Working with stone",
+            "text": "Отобрав подходящие для работы породы камня, мастер создает необходимый размер каждого из них, обрабатывает и шлифует.",
+            "textEng": "Having selected right stones for work the master creates the required size for each of them, processes and polishes.",
+            "img": "img/order/history3InFlorentineMosaic.png",
+            "imgEng": "img/order/history3InFlorentineMosaic.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -74,17 +93,20 @@
         {
             "id": "stepIV",
             "label": "IV",
-            "title": "Заголовок шага IV",
-            "titleEng": "Step IV",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "Соединение элементов композиции",
+            "titleEng": "Connecting composition elements",
+            "text": "Произведение завершается соединением каждых элементов в единую композицию. Основой для набора мозаики может быть монолитный твердый камень. На данном этапе появляется целостный рисунок. Финальная часть работы – завещающая шлифовка и полировка.",
+            "textEng": "The work ends with the combination of each element into a single composition. The basis for the mosaic set can be a solid stone. At this stage a complete picture appears. The final part of the work is the bequest grinding and polishing.",
+            "img": "img/order/history4InFlorentineMosaic.png",
+            "imgEng": "img/order/history4InFlorentineMosaic.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 40,
                 "end": 60
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 0,
                 "end": 20

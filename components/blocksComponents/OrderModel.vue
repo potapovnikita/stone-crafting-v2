@@ -2,15 +2,16 @@
     .orderModel
         .orderModel__container
             .orderModel__block-text.orderModel__block-text--left.mobile-hide
-                h3.orderModel__title {{ lang === 'ru' ? 'Особенности' : 'Title on eng' }}
+                h3.orderModel__title {{ lang === 'ru' ? orderItem.features.title : orderItem.features.titleEng }}
                 p.orderModel__text(v-html="lang === 'ru' ? orderItem.features.text : orderItem.features.textEng")
+                p.orderModel__text(v-html="lang === 'ru' ? orderItem : orderItem.features.textEng")
             .orderModel__block-media
                 .orderModel__wrapper-circle
                     .orderModel__slider-buttons-desktop.btn-left(v-if="orderItem.photos.length > 1")
                         ButtonArrow(:onClick="prewSlide")
                     .orderModel__slider-buttons-desktop.btn-right(v-if="orderItem.photos.length > 1")
                         ButtonArrow(:onClick="nextSlide" arrowRight)
-                    
+
                     client-only
                         carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="orderModelCarousel")
                             slide(v-for="(photo, index) in orderItem.photos" :key="`img_${index}`")
@@ -26,15 +27,18 @@
                                 .orderModel__slider-dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
                     ButtonArrow(:onClick="nextSlide" arrowRight)
             .orderModel__block-text.orderModel__block-text--right.mobile-hide
-                h3.orderModel__title {{ lang === 'ru' ? 'История' : 'History' }}
+                h3.orderModel__title {{ lang === 'ru' ? orderItem.history.title : orderItem.history.titleEng }}
                 p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
             .orderModel__block-text-mobile
                 .orderModel__text-mobile
-                    h3.orderModel__title {{ lang === 'ru' ? 'Особенности' : 'Title on eng' }}
+                    h3.orderModel__title {{ lang === 'ru' ? orderItem.features.title : orderItem.features.titleEng }}
                     p.orderModel__text(v-html="lang === 'ru' ? orderItem.features.text : orderItem.features.textEng")
                 .orderModel__text-mobile
-                    h3.orderModel__title {{ lang === 'ru' ? 'История' : 'History' }}
+                    h3.orderModel__title {{ lang === 'ru' ? orderItem.history.title : orderItem.history.titleEng }}
                     p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
+
+            .orderModel__block-text-govno.orderModel__block-text--center.mobile-hide(v-if="orderItem.simpleText.text")
+                p.orderModel__text(v-html="lang === 'ru' ? orderItem.simpleText.text : orderItem.simpleText.textEng")
 
 </template>
 <script>
@@ -93,18 +97,25 @@ export default {
         display flex
         justify-content space-between
         max-width 1680px
-        padding 90px 40px 145px
+        padding 90px 40px 10px
 
     &__block-text
         display block
         min-width 280px
-        margin-top 209px
+        margin-top 109px
 
         &--left
             max-width 339px
 
         &--right
             max-width 346px
+
+        &--center
+            padding-bottom 45px
+
+    &__block-text-govno
+        margin-top 5px
+        text-align center
 
     &__block-media
         display block
@@ -288,7 +299,7 @@ export default {
 
             & > li + li
                 margin-left 15px
-            
+
 
         &__slider-dot
             flex-shrink 0

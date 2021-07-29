@@ -156,10 +156,10 @@
         &__wrapper-title
             position relative
             padding-bottom 40px
-        
+
         &__title
             max-width 770px
-        
+
         &__double-line
             position absolute
             left 0
@@ -251,20 +251,20 @@
 
                 &__line-start
                     width 16px
-                    height 1px 
-                    margin-right 28px 
+                    height 1px
+                    margin-right 28px
                     background url('~assets/img/tradition/slides/lineStart.png') no-repeat
 
                 &__line-middle
                     width 89px
-                    height 1px 
-                    margin-right 28px 
+                    height 1px
+                    margin-right 28px
                     background url('~assets/img/tradition/slides/lineMiddle.png') no-repeat
- 
+
                 &__line-end
                     width 89px
                     height 1px
-                    background url('~assets/img/tradition/slides/lineEnd.png') no-repeat 
+                    background url('~assets/img/tradition/slides/lineEnd.png') no-repeat
 
                 &__photo
                     width 100%
@@ -316,7 +316,7 @@
         &__buttons-panel
             display flex
             justify-content space-around
-            margin-bottom 93px 
+            margin-bottom 93px
 
         &__btn-container
             display flex
@@ -371,7 +371,7 @@
                         width 295px
                         margin-bottom 63px
 
-                    &__centry-item                
+                    &__centry-item
                         span
                             margin-bottom 8px
                             font-size 22px
@@ -440,8 +440,8 @@
 
                     &__container-img
                         flex-basis unset
-                        max-width 351px 
-                        margin-bottom 19px 
+                        max-width 351px
+                        margin-bottom 19px
 
                     &__container-text
                         max-width 349px
@@ -458,7 +458,7 @@
                         width 295px
                         margin 0 auto 42px
 
-                    &__centry-item                
+                    &__centry-item
                         span
                             margin-bottom 8px
                             font-size 20px
@@ -474,7 +474,7 @@
 
             &__buttons-panel
                 display block
-                margin-bottom 50px 
+                margin-bottom 50px
 
                 button
                     margin-bottom 20px
@@ -496,7 +496,7 @@
                         flex-shrink 0
                         width 35px
                         height 43px
-                        margin-right 25px 
+                        margin-right 25px
 
                 .text
                     font-size 16px

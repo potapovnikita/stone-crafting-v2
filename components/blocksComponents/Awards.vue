@@ -1,6 +1,6 @@
 <template lang="pug">
     .awards
-        h3.awards__title {{ lang === 'ru' ? 'Награды и звания' : 'Awards' }}
+        h3.awards__title {{ lang === 'ru' ? 'Награды и звания' : 'Awards and titles' }}
         .awards__list
             img.awards__award-img(
                 v-for="(item, index) in data"
@@ -8,6 +8,7 @@
                 :class="[`${item.className}`, { 'is-active': item.isActive }]"
                 :src="getImgExternal(item.img)" alt="award"
                 @click="onFocus(item)"
+                @mouseover="onFocus(item)"
             )
         .awards__details
             p.awards__description(
@@ -15,7 +16,7 @@
                 :key="`$award_desc_${index}`"
                 :class="{ 'is-active': item.isActive }"
             ) {{lang === 'ru' ? item.name : item.nameEng}}
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -64,7 +65,7 @@ export default {
         align-items center
         flex-wrap wrap
         margin-bottom 40px
-    
+
     &__award-img
         flex-shrink 0
         opacity .7
@@ -108,7 +109,7 @@ export default {
         max-width 482px
         font-size 16px
         line-height 24px
-        text-align left 
+        text-align left
         color #9F9F9F
 
         &.is-active
@@ -131,5 +132,5 @@ export default {
             img
                 margin-left 34px
                 margin-bottom 31px
-                 
+
 </style>

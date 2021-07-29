@@ -1,6 +1,6 @@
 <template lang="pug">
     .worksSteps
-        h2.worksSteps__title {{ lang === 'ru' ? 'Этапы создания работ' : 'Stages of work creation' }}
+        h2.worksSteps__title {{ lang === 'ru' ? orderItem.worksStepsTitle : orderItem.worksStepsTitleEng }}
         .worksSteps__double-line
 
         .worksSteps__pagination
@@ -8,7 +8,7 @@
                 li(v-for="(item, index) in stages" :key="`label_${item.id}`")
                     .worksSteps__sliderItem.worksSteps__sliderItem--label
                         p(v-html="item.label")
-            
+
             .worksSteps__wrapper-bar
                 ul.worksSteps__sliderPagination(v-if="stages.length > 0")
                     li(v-for="(item, index) in stages" :key="`dot_${item.id}`")
@@ -20,10 +20,13 @@
                 slide(v-for="(stage, index) in stages" :key="`stage_${stage.id}`")
                     .worksSteps__step-container
                         .worksSteps__media
-                            img.worksSteps__photo(:src="getImg(stage.img)" :alt="`pic_${stage.id}`")
+                            img.worksSteps__photo(v-if="stage.img" :src="getImg(lang === 'ru' ? stage.img : stage.imgEng)" :alt="`pic_${stage.id}`")
+                            video#video.worksSteps__photo(playsinline autoplay loop="true" muted="muted")
+                                source(:src="getImgExternal(stage.video)" type="video/mp4")
                         .worksSteps__content
                             h3.worksSteps__content-title(v-html="lang === 'ru' ? stage.title : stage.titleEng")
-                            p.worksSteps__content-text(v-html="lang === 'ru' ? stage.text : stage.textEng")                     
+                            p.worksSteps__content-text(v-html="lang === 'ru' ? 'Скачать презентацию «Искусство в интерьере»' : 'Download presentation \"Art in the interior\"'" @click="download(stage.link)")
+                                | {{ lang === 'ru' ? stage.text : stage.textEng}}
 
                     .worksSteps__spending
                         div
@@ -31,7 +34,7 @@
                                 p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания работы' : 'Job creation time'")
                                 .worksSteps__spending-progressBar-descktop
                                     .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.titleEng")
+                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.creationTimeEng")
                             .worksSteps__spending-progressBar-mobile
                                 .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
                         div
@@ -39,7 +42,7 @@
                                 p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Ценовая политика' : 'Price policy'")
                                 .worksSteps__spending-progressBar-descktop
                                     .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.price : stage.titleEng")
+                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.price : stage.priceEng")
                             .worksSteps__spending-progressBar-mobile
                                 .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
 
@@ -48,6 +51,10 @@
 import { mapState } from 'vuex'
 import { getImgLocal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
+import {getImgExternal} from "../../plugins/getUrl";
+import { urlToPromise } from "@/plugins/getUrl";
+import downloadImagesAsZip from "files-download-zip";
+import JSZip from "jszip";
 export default {
     name: 'WorksSteps',
     components: {
@@ -56,6 +63,10 @@ export default {
     props: {
         stages: {
             type: Array,
+            required: true,
+        },
+        orderItem: {
+            type: Object,
             required: true,
         }
     },
@@ -66,25 +77,39 @@ export default {
         }
     },
     methods: {
-            getImg(url) {
-                return getImgLocal(url)
-            },
-            prewSlide() {
-                this.currentSlide = this.$refs.worksSteps.getPreviousPage()
-                this.$refs.worksSteps.goToPage(this.$refs.worksSteps.getPreviousPage());
-            },
-            nextSlide() {
-                this.currentSlide = this.$refs.worksSteps.getNextPage()
-                this.$refs.worksSteps.goToPage(this.$refs.worksSteps.getNextPage());
-            },
-            navigateTo(index) {
-                this.currentSlide = index
-                this.$refs.worksSteps.goToPage(index)
-            },
-            handlePageChange(num) {
-                this.currentSlide = num
-            },
+        async download(link) {
+            this.load = true;
+            const zip = new JSZip();
+            const data = urlToPromise(link);
+            // const name = link.name.split('____')[0];
+            zip.file('name', data, { binary: true });
+
+            const content = await zip.generateAsync({type:"blob"});
+            this.load = false;
+            saveAs(content, "stone-crafting.zip");
         },
+        getImg(url) {
+            return getImgLocal(url)
+        },
+        getImgExternal(url) {
+            return getImgExternal(url)
+        },
+        prewSlide() {
+            this.currentSlide = this.$refs.worksSteps.getPreviousPage()
+            this.$refs.worksSteps.goToPage(this.$refs.worksSteps.getPreviousPage());
+        },
+        nextSlide() {
+            this.currentSlide = this.$refs.worksSteps.getNextPage()
+            this.$refs.worksSteps.goToPage(this.$refs.worksSteps.getNextPage());
+        },
+        navigateTo(index) {
+            this.currentSlide = index
+            this.$refs.worksSteps.goToPage(index)
+        },
+        handlePageChange(num) {
+            this.currentSlide = num
+        },
+    },
     computed: {
         ...mapState('localization', [
             'lang',
@@ -222,7 +247,7 @@ export default {
             left 0
             right 0
             height 1px
-            background-color goldNew 
+            background-color goldNew
 
     &__spending-progressBar-mobile
         display none
@@ -244,7 +269,7 @@ export default {
             flex-basis 498px
             height 340px
             padding 8px
-            
+
         &__photo
             max-height 340px
 
@@ -328,13 +353,13 @@ export default {
             line-height 27px
 
         &__spending-progressBar-descktop
-            display none                
+            display none
 
         &__spending-progressBar-mobile
             display block
             position relative
             height 16px
-        
+
             &:after
                 content ' '
                 position absolute
@@ -383,5 +408,5 @@ export default {
 
         &__spending
             padding 30px 12px
-        
+
 </style>

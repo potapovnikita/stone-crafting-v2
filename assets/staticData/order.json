@@ -1,71 +1,66 @@
 {
     "options":
-        [            
+        [
             {
                 "name": "Бронза",
-                "nameEng": "Name on eng",
+                "nameEng": "Bronze",
                 "links": [
                     {
                         "id": "largeForms",
                         "name": "Большие формы",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Large forms"
                     },
                     {
                         "id": "smallForms",
                         "name": "Малые форма",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Small forms"
                     }
                 ]
-               
+
             },
             {
                 "name": "Камнерезное и ювелирное искусство",
-                "nameEng": "Name on eng",
+                "nameEng": "Stone carving and jewelry art",
                 "links": [
                     {
                         "id": "sculpture",
                         "name": "Инновационные скульптуры",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Innovative sculptures"
                     },
                     {
                         "id": "stoneMosaic",
                         "name": "Объемная каменная мозаика",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Three-dimensional stone mosaic"
                     },
                     {
                         "id": "florentineMosaic",
                         "name": "Флорентийская мозаика",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Florentine mosaic"
                     }
                 ]
-               
+
             },
             {
                 "name": "Интерьер",
                 "nameEng": "Interior",
                 "links": [
                     {
-                        "id": "stone",
-                        "name": "Камень в интерьере",
-                        "nameEng": "Name on eng"
-                    },
-                    {
                         "id": "piece",
-                        "name": "Преметы интерьера",
-                        "nameEng": "Name on eng"
+                        "name": "Искусство в интерьере",
+                        "nameEng": "Art in the interior"
                     },
                     {
                         "id": "artObjects",
                         "name": "Арт-объекты",
-                        "nameEng": "Name on eng"
+                        "nameEng": "Art-objects"
                     }
                 ]
-               
+
             }
         ],
 
     "button": {
-        "name": "Сделать\n индивидуальный заказ",
-        "nameEng": "Name on eng"
+        "name": "Сделать индивидуальный заказ",
+        "nameEng": "Make an individual order"
     }
 }
