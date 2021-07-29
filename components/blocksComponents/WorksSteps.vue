@@ -25,7 +25,7 @@
                                 source(:src="getImgExternal(stage.video)" type="video/mp4")
                         .worksSteps__content
                             h3.worksSteps__content-title(v-html="lang === 'ru' ? stage.title : stage.titleEng")
-                            p.worksSteps__content-text(v-html="lang === 'ru' ? 'Скачать презентацию «Искусство в интерьере»' : 'Download presentation \"Art in the interior\"'" @click="download(stage.link)")
+                            p.worksSteps__content-text(v-html="stage.text === 'Скачать презентацию «Искусство в интерьере»'" @click="download(stage.link)")
                                 | {{ lang === 'ru' ? stage.text : stage.textEng}}
 
                     .worksSteps__spending
