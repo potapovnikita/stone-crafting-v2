@@ -177,6 +177,7 @@ export default {
     &__media
         flex-basis 593px
         padding 10px
+        height 400px
         border 1px solid rgba(150, 120, 95, 0.3)
 
     &__photo

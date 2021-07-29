@@ -217,8 +217,8 @@
 
         &__description-pic
             position relative
-            width 730px
-            height 515px
+            width 526px
+            height 371px
             margin-bottom 39px
             background url('~assets/img/about/bg-aleksei.png') no-repeat
             background-size cover
@@ -635,7 +635,7 @@
                 margin-bottom 27px
 
             &__description-img
-                width 151px
+                width 181px
 
             &__description-content
                 flex-shrink 1
