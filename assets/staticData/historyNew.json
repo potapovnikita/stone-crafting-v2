@@ -26,8 +26,8 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Алексей Антонов начинает работать на&nbsp;старейшем заводе &laquo;Русские Самоцветы&raquo;, история которого\nначалась ещё в&nbsp;18&nbsp;веке с&nbsp;первой гранильной фабрики, созданной по&nbsp;распоряжению Екатерины II\nдля отделки и&nbsp;убранства Государственного Эрмитажа. С&nbsp;появлением этих фабрик началось\nразвитие камнерезного дела на&nbsp;Урале и&nbsp;в&nbsp;Санкт-Петербурге.",
-        "textEng": "Alexey Antonov begins to&nbsp;work at&nbsp;the oldest factory &laquo;Russian Gems&raquo; whose history began in&nbsp;the 18th\ncentury with the first cutting factory created by&nbsp;order of&nbsp;Catherine II&nbsp;for the decoration of&nbsp;the State\nHermitage. With the appearance of&nbsp;these factories the development of&nbsp;stone-cutting business began in\nthe Urals and St. Petersburg.",
+        "text": "Алексей Антонов начинает работать на&nbsp;старейшем заводе &laquo;Русские Самоцветы&raquo;, история которого\nначалась ещё в&nbsp;18&nbsp;веке с&nbsp;первой гранильной фабрики, созданной по&nbsp;распоряжению императорского двора.\n С&nbsp;появлением этих фабрик началось\nразвитие камнерезного дела на&nbsp;Урале и&nbsp;в&nbsp;Санкт-Петербурге.",
+        "textEng": "Alexey Antonov begins to&nbsp;work at&nbsp;the oldest factory &laquo;Russian Gems&raquo; whose history began in&nbsp;the 18th\ncentury with the first cutting factory created by&nbsp;order of&nbsp; the imperial court.\n With the appearance of&nbsp;these factories the development of&nbsp;stone-cutting business began in\nthe Urals and St. Petersburg.",
         "year": "1991",
         "img": "img/history/1991.png",
         "pagination": {
@@ -41,7 +41,7 @@
         "text": "На&nbsp;заводе &laquo;Русские Самоцветы&raquo; Алексей Антонов начинает развивать новые направления в\nкамне: русскую, флорентийскую и&nbsp;объёмную мозаику. Благодаря этому завод начинает создавать\nуникальные работы, дополняя массовое производство, а&nbsp;город Екатеринбург возвращает\nутерянную славу камнерезного центра России. Параллельно Алексей Антонов занимается\nтворчеством и&nbsp;создаёт первые работы в&nbsp;частные коллекции.",
         "textEng": "At&nbsp;the &laquo;Russian Gems&raquo; factory Alexey Antonov begins to&nbsp;develop new directions in&nbsp;stone: Russian,\nFlorentine and volumetric mosaics. This contributes to&nbsp;the fact that the factory begins to&nbsp;create unique\nworks complementing mass production and the city of&nbsp;Yekaterinburg returns the lost glory of&nbsp;the stone-\ncutting center of&nbsp;Russia. At&nbsp;the same time, Alexey Antonov is&nbsp;engaged in&nbsp;creativity and creates the first\nworks for private collections.",
         "year": "1992",
-        "img": "img/history/1992.png",
+        "img": "img/history/1992(1).png",
         "pagination": {
             "class": "dot-1992",
             "showLabel": true
@@ -74,7 +74,7 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Мастерами команды Алексея Антонова становиться не&nbsp;только камнерезы и&nbsp;ювелиры, но&nbsp;и\nхудожники, скульпторы, литейщики, дизайнеры. В&nbsp;одной композиции применяются несколько\nтехник: художественная резьба по&nbsp;камню, литье и&nbsp;ювелирное оформление.",
+        "text": "Мастерами команды Алексея Антонова становятся не&nbsp;только камнерезы и&nbsp;ювелиры, но&nbsp;и\nхудожники, скульпторы, литейщики, дизайнеры. В&nbsp;одной композиции применяются несколько\nтехник: художественная резьба по&nbsp;камню, литье и&nbsp;ювелирное оформление.",
         "textEng": "Not only stone cutters and jewelers but also artists, sculptors, foundry workers and designers become\nmasters of&nbsp;Alexey Antonov&#39;s team. Several techniques are used in&nbsp;one composition: artistic stone\ncarving, casting and jewelry design.",
         "year": "2006",
         "img": "img/history/2006.png",
@@ -98,8 +98,8 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Создание фирменного логотипа бренда. Он&nbsp;символизирует соединение трёх поколений через\nзаглавные буквы &laquo;А&raquo;.",
-        "textEng": "Creation of&nbsp;a&nbsp;corporate brand logo. It&nbsp;symbolizes the connection of&nbsp;three generations through capital\nletters &laquo;A&raquo;.",
+        "text": "Создание фирменного логотипа бренда. Заглавные буквы «А», включенные в одну большую «А» в виде треугольника, символизируют миссию через соединение времен: <i>возрождая традиции, мы создаем историю в настоящем и формируем наследие будущего</i>. Круг символизирует целостность и единство времени, а значит – вечность. В середине, находящаяся буква «Н - Николай», указывает на инициалы основателя бренда – Алексея Николаевича Антонова, подчеркивая преемственность поколений.",
+        "textEng": "Creation of a corporate brand logo. Capital letters \"A\" included in one big \"A\" in the form of a triangle symbolize the mission through the connection of times: <i>by reviving traditions we create history in the present and form the legacy of the future</i>. The circle symbolizes the integrity and unity of time which means eternity. In the middle, the letter \"N - Nikolay\" indicates the initials of the brand's founder - Alexey Nikolaevich Antonov emphasizing the continuity of generations.",
         "year": "2007",
         "img": "img/history/2007-2.png",
         "pagination": {
@@ -140,28 +140,29 @@
         "pagination": {
             "class": "dot-2017",
             "showLabel": true
-        }
-    },
+        }},
     {
         "name": "",
         "nameEng": "",
-        "text": "Новый виток в&nbsp;развитии камнерезного дела стал возможен при использовании новой\nинновационной технологии Камнерезного Дома. Данная технология, изобретенная командой\nмастеров, позволила создавать работы любой высоты, сохраняя ювелирное качество при\nсложности композиции. Ранее этого добиться было невозможно из-за небольших размеров\nредкого камня и&nbsp;тяжести конструкции, а&nbsp;сама фигура достигала чаще всего высоты не&nbsp;более 30\nсантиметров. Одной из&nbsp;первых больших работ компании стала скульптура &laquo;Золотой Джокер&raquo;\nвысотой 1&nbsp;метр. Произведение охарактеризовалось как прорыв в&nbsp;камнерезном и&nbsp;ювелирном\nделе. Были раздвинуты рамки для безграничного творчества со&nbsp;столь сложным материалом как\nтвёрдый камень.",
-        "textEng": "A&nbsp;new round in&nbsp;the development of&nbsp;stone carving became possible with the use of&nbsp;the new innovative\ntechnology. This technology was invented by&nbsp;the team of&nbsp;craftsmen of&nbsp;&laquo;Stone crafting House by\nAntonov&raquo;. This made possible to&nbsp;create works of&nbsp;any height while maintaining quality for any complexity\nof&nbsp;the composition. Previously, this was impossible to&nbsp;achieve due to&nbsp;the small size of&nbsp;the rare stone and\nthe heaviness of&nbsp;the structure and the figure itself usually reached a&nbsp;height of&nbsp;no&nbsp;more than 30\ncentimeters (11,81&nbsp;inch). One of&nbsp;the first large works of&nbsp;the company was the sculpture &laquo;Golden Joker&raquo;\nwith 1&nbsp;meter high (1,09&nbsp;yard). The work was described as&nbsp;a&nbsp;breakthrough in&nbsp;stone carving and jewelry\nart. The framework for unlimited creativity with such a&nbsp;complex material as&nbsp;hardstone has been\nexpanded.",
+        "text": "Новый виток в&nbsp;развитии камнерезного дела стал возможен при использовании новой\nинновационной технологии Камнерезного Дома, которая позволила создавать работы рекордного размера.\n Одной из первых больших работ компании стала скульптура «Золотой Джокер» высотой 1 метр. Произведение охарактеризовалось как прорыв в камнерезном и ювелирном деле. Были раздвинуты рамки для безграничного творчества со столь сложным материалом как твёрдый камень.",
+        "textEng": "A new round in the development of stone cutting became possible with the use of the innovative technology of the Stone Crafting House which made it possible to create works of record size. One of the first large works of the company was the sculpture “Golden Joker” (1 meter high). The piece was described as a breakthrough in stone cutting and jewelry industry. The framework has been expanded for unlimited creativity with such a complex material as hard stone.",
         "year": "2017",
-        "img": "img/history/2017-2.png",
+        "img": "img/history/2017(1).png",
         "afterText": "На фото: Потомок императора Александра III, Павел Куликовский-Романов, с&nbsp;супругой Людмилой\nАнтоновой.",
         "afterTextEng": "On photo: A&nbsp;descendant of&nbsp;Emperor Alexander III, Pavel Kulikovsky-Romanov, with his wife Lyudmila Antonova.",
         "pagination": {
             "class": "dot-2017_2"
-        }
+        },
+        "textUnderPhoto": "(Праправнук императора Александра III Павел Куликовский-Романов с супругой Людмилой Антоновой.)",
+        "textUnderPhotoEng": "(Great-grandson of Emperor Alexander III Pavel Kulikovsky-Romanov with his wife Lyudmila Antonova.)"
     },
     {
         "name": "",
         "nameEng": "",
-        "text": "Инновационная технология создания работ крупных форм позволяет компании развить новое\nнаправление и&nbsp;создавать арт-объекты любой сложности и&nbsp;размера. Реализуется проект &laquo;Лого\nТранснефть&raquo; для небоскрёба &laquo;Башня Эволюция&raquo; с&nbsp;применением техники объемной каменной\nмозаики. Данный арт-объект становится самой высокой в&nbsp;мире скульптурой, сделанной из\nприродного твердого камня.",
+        "text": "Инновационная технология создания работ крупных форм позволяет компании развить новое\n направление и&nbsp;создавать арт-объекты любой сложности и&nbsp;размера. Реализуется проект &laquo;Лого\nТранснефть&raquo; для небоскрёба &laquo;Башня Эволюция&raquo; с&nbsp;применением техники объемной каменной\nмозаики. Данный арт-объект становится самой высокой в&nbsp;мире скульптурой, сделанной из\nприродного твердого камня.",
         "textEng": "The innovative technology for creating works of&nbsp;large forms allows the company to&nbsp;develop a&nbsp;new\ndirection and create art objects of&nbsp;any complexity and size. The &laquo;Transneft Logo project&raquo; for the\nEvolution skyscraper is&nbsp;being implemented using the three-dimensional stone mosaic technique. This art\nobject becomes the tallest sculpture in&nbsp;the world made of&nbsp;natural hardstones.",
         "year": "2018",
-        "img": "img/history/2018.png",
+        "video": "img/history/2018.mp4",
         "pagination": {
             "class": "dot-2018",
             "showLabel": true
@@ -193,10 +194,10 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Планируется завершение самого крупного проекта &laquo;Коррида&raquo;, создание которого заняло 6&nbsp;лет.\nПроект состоит из&nbsp;трех больших и&nbsp;уникальных ювелирно камнерезных скульптур: Тореадор,\nФламенко, Лазуритовый бык. При создании проекта применялись две новые технологии работы с\nкамнем и&nbsp;металлом, разработанные командой Камнерезного Дома.",
-        "textEng": "It&nbsp;is&nbsp;planned to&nbsp;complete the largest project &laquo;Bullfighting&raquo; the creation of&nbsp;which took 6&nbsp;years. The\nproject consists of&nbsp;three large and unique stone carving and jewelry sculptures: Toreador, Flamenco,\nLazurite bull. Two new technologies for working with stone and metal were used in&nbsp;the creation of\nworks and were developed by&nbsp;the team of&nbsp;the &laquo;Stone crafting House&raquo;.",
+        "text": "Завершение грандиозного проекта &laquo;Коррида&raquo;, создававшегося на протяжении семи лет.В проект вошли инновационные скульптуры бренда: <a href=\"/collections\"><u>Тореадор, Фламенко, Лазурный Бык.</u></a> В каждой работе скрыта особая технология и новые техники работы с камнем, достигнуты мировые рекорды в области камнерезного и ювелирного искусства.",
+        "textEng": "Completion of the grandiose project \"Bullfighting\" which was created over seven years. The project includes innovative sculptures of the brand: <a href=\"/collections\"><u>Toreador, Flamenco, Azure Bull.</u></a> Each work contains a special technology and new techniques for working with stones. The project has been achieved world records in the field of stone-cutting and jewelry art.",
         "year": "2020",
-        "video": "img/history/2020-2.mp4",
+        "video": "img/history/2020.mp4",
         "pagination": {
             "class": "dot-2020",
             "showLabel": true

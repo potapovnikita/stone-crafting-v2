@@ -18,10 +18,10 @@
                             ul.order_container__items(v-if="option.links")
                                 li(v-for="(item, index) in option.links" :key="`item_${index}`" @click="() => activeOrderId=item.id")
                                     p.order_container__item-name(:class="{active: activeOrderId===item.id}" v-html="lang === 'ru' ? item.name : item.nameEng")
-        
+
         div(v-for="(orderItem, index) in orderItems" v-if="orderItem.id === activeOrderId" :key="activeOrderId")
             OrderModel(:orderItem="orderItem")
-            WorksSteps(:stages="orderItem.steps")
+            WorksSteps(:stages="orderItem.steps" :orderItem="orderItem")
 
         .order_container__buttons
             Button(
@@ -49,7 +49,7 @@ import StoneMosaic from '~/assets/staticData/orders/items/stoneMosaic.json'
 import FlorentineMosaic from '~/assets/staticData/orders/items/florentineMosaic.json'
 import ArtObjects from '~/assets/staticData/orders/items/artObjects.json'
 import Piece from '~/assets/staticData/orders/items/piece.json'
-import Stone from '~/assets/staticData/orders/items/stone.json'
+//import Stone from '~/assets/staticData/orders/items/stone.json'
 import OrderModel from '@/components/blocksComponents/OrderModel'
 import OrderWork from '@/components/blocksComponents/OrderWork'
 import WorksSteps from '@/components/blocksComponents/WorksSteps'
@@ -87,7 +87,7 @@ export default {
                 FlorentineMosaic,
                 ArtObjects,
                 Piece,
-                Stone,
+                //Stone,
             ],
             isOpenPopup: false
         }
@@ -321,7 +321,7 @@ export default {
                 top 30px
                 left 5px
                 width 2px
-                
+
                 &--line-0
                     height 122px
                     background url('~assets/img/order/optionsLinesMb/0.png') no-repeat
@@ -345,7 +345,7 @@ export default {
 
             &__buttons
                 margin-bottom 58px
-            
+
             &__btn-container
                 width 100%
                 max-width 350px
@@ -360,7 +360,7 @@ export default {
                         flex-shrink 0
                         width 35px
                         height 43px
-                        margin-right 25px 
+                        margin-right 25px
 
                 .text
                     font-size 16px

@@ -1,33 +1,45 @@
 {
     "id": "artObjects",
     "name": "Арт-объекты",
-    "nameEng": "Name on eng",
+    "nameEng": "Art-objects",
     "history": {
-        "text": "Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "",
+        "titleEng": "",
+        "text": "",
+        "textEng": ""
     },
     "features": {
-        "text":"Уникальная техника для скульптур, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-        "textEng": "Text on eng"
+        "title": "",
+        "titleEng": "",
+        "text":"",
+        "textEng": ""
+    },
+    "simpleText": {
+        "text":"Резьба по твердому камню — это общий термин в истории искусства для художественной резьбы преимущественно полудрагоценных и поделочных камней (малахит, нефрит, горный хрусталь, агат, оникс, яшма, родонит, сердолик и многие другие). \nИспользование твердого камня в интерьере применялось еще в имперские времена XVIII-XIX века. Сегодня мы, возрождая утерянные традиции камнеобработки, можем создавать современные интерьеры с использованием вечного камня в уникальной технике – каменной мозаики.",
+        "textEng": "Hard stone carving is a general term in the history of art for artistic carving of predominantly semi-precious and ornamental stones (malachite, jade, rock crystal, agate, onyx, jasper, rhodonite, carnelian and many others).\nThe use of hard stone in the interior was used even in the imperial times of the 18th-19th centuries. Reviving the lost traditions of stone processing today we can create modern interiors using an eternal stone in a unique technique - stone mosaic."
     },
     "photos": [
         "img/order/items/artObjects/0.png"
     ],
+    "worksStepsTitle": "История создания",
+    "worksStepsTitleEng": "History of creation",
     "steps": [
         {
             "id": "stepI",
             "label": "I",
-            "title": "Заголовок шага I",
-            "titleEng": "Step I",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Собственная инновационная «технология крупных форм» позволяет компании развить новое направление – арт-объекты. В 2018 году появляется арт-объект рекордной высоты более двух метров. А именно, реализуется проект «Лого Транснефть» для небоскрёба «Башня Эволюция» с применением новой техники «Русская мозаика объемных форм» (раньше техника «русская мозаика» или «флорентийская мозаика» применялась только для плоских или точенных поверхностей).",
+            "textEng": "Own innovative \"technology of large forms\" allows the company to develop a new direction - art objects. In 2018, an art object with a record height of more than two meters appears. Namely, the Transneft Logo project for the Evolution Tower skyscraper is being implemented using the new technique “Russian mosaic of volumetric forms” (earlier the technique of “Russian mosaic” or “Florentine mosaic” was used only for flat or chiseled surfaces).",
+            "video": "img/history/2018.mp4",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -36,17 +48,19 @@
         {
             "id": "stepII",
             "label": "II",
-            "title": "Заголовок шага II",
-            "titleEng": "Step II",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Данный арт-объект характеризуется как самый высокий в мире, сделанный из природных камней в объеме. В скульптуре применяются: кахолонг, яшма, лазурит, драгоценные металлы.  В проекте также впервые создается максимально однотонный оттенок каждого элемента лого, благодаря мозаичному подбору разных пород природного камня. Основание скульптуры повторяет форму небоскреба и выполнено из редкого итальянского мрамора.",
+            "textEng": "This art object is characterized as the tallest in the world made of natural stones in volume. Used in sculpture: cacholong, jasper, lapis lazuli, precious metals. The project also creates for the first time the most uniform shade of each element of the logo, thanks to the mosaic selection of different types of natural stone. The base of the sculpture follows the shape of a skyscraper and is made of rare Italian marble.",
+            "img": "img/order/history2InIndividual.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 50,
                 "end": 90
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 70,
                 "end": 100
@@ -55,39 +69,22 @@
         {
             "id": "stepIII",
             "label": "III",
-            "title": "Заголовок шага III",
-            "titleEng": "Step III",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Настенный логотип, выполненный в технике объемной флорентийской мозаики, в форме логотипа компании - еще одно из направлений применения искусства в интерьере.",
+            "textEng": "The wall logo made in the technique of volumetric Florentine mosaic in the form of a company logo is another way of using art in the interior.",
+            "img": "img/order/history3InIndividual.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
-            }
-        },
-        {
-            "id": "stepIV",
-            "label": "IV",
-            "title": "Заголовок шага IV",
-            "titleEng": "Step IV",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
-            "price": "10-90 тыс",
-            "priceLine": {
-                "start": 40,
-                "end": 60
-            },
-            "creationTime": "10-60 дней",
-            "timeLine": {
-                "start": 0,
-                "end": 20
             }
         }
     ]

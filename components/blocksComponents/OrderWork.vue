@@ -22,7 +22,7 @@
                         .orderWork__content
                             p.orderWork__content-title(v-html="lang === 'ru' ? step.title : step.titleEng")
                             p.orderWork__content-text(v-html="lang === 'ru' ? step.text : step.textEng")
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -41,7 +41,7 @@ export default {
         ...mapState('localization', [
             'lang',
         ]),
-    },    
+    },
 }
 </script>
 <style lang="stylus" scoped>
@@ -67,7 +67,7 @@ export default {
     &__steps
         display block
         padding-bottom 52px
-    
+
     &__list
         display flex
         justify-content space-around
@@ -76,7 +76,7 @@ export default {
 
     &__cell
         width 35px
-        
+
     &__label
         font-size 26px
         line-height 150%

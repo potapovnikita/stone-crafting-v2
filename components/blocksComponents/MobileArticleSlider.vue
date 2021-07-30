@@ -9,7 +9,7 @@
 
                         p.articleSliderMb__text
                             | {{ lang === 'ru' ? article.name : article.nameEng }}
-                        
+
                         .articleSliderMb__line
 
                         a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
@@ -21,7 +21,7 @@
                         .box
                             .dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
                 ButtonArrow(:onClick="nextSlide" arrowRight)
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             articles: Company.company.articles,
+            articlesEng: Company.company.articlesEng,
             currentSlide: 0,
             pageCount: 0,
         }
@@ -90,7 +91,7 @@ export default {
         padding 4px
         margin-bottom 30px
         border 1px solid rgba(150, 120, 95, 0.3)
-        
+
     &__pic
         width 340px
         height 261px

@@ -5,9 +5,9 @@
         .histoyAbout__slides-panel(v-if="history")
             client-only
                 .slider
-                    .buttons-desktop.btn-left
+                    //.buttons-desktop.btn-left
                         ButtonArrow(:onClick="prewSlide")
-                    .buttons-desktop.btn-right
+                    //.buttons-desktop.btn-right
                         ButtonArrow(:onClick="nextSlide" arrowRight)
 
                     carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="historyCarousel")
@@ -22,7 +22,9 @@
                                     video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
                                         source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
 
-                    .buttons-mobile
+                                    .histoyAbout__text-photo(v-if="item.textUnderPhoto")
+                                        | {{ lang === 'ru' ? item.textUnderPhoto : item.textUnderPhotoEng }}
+                    //.buttons-mobile
                         ButtonArrow(:onClick="prewSlide")
                         ButtonArrow(:onClick="nextSlide" arrowRight)
 
@@ -156,7 +158,7 @@ export default {
             &.dot-1991
                 width 91px
                 background url('~assets/img/history/desktopLines/line-1991.png') 21px center no-repeat
-            
+
             &.dot-1992
                 width 90px
                 background url('~assets/img/history/desktopLines/line-1992.png') 18px center no-repeat
@@ -208,7 +210,7 @@ export default {
             &.dot-2019
                 width 91px
                 background url('~assets/img/history/desktopLines/line-2019.png') 23px center no-repeat
-            
+
             &.dot-2020
                 width 70px
                 background url('~assets/img/history/desktopLines/line-2020.png') 23px center no-repeat
@@ -275,7 +277,15 @@ export default {
         flex-shrink 2
         max-width 533px
         text-align left
-    
+
+    &__text-photo
+        flex-shrink 2
+        max-width 533px
+        width: 385px;
+        text-align left
+        padding-top 20px
+        font-style italic
+
     &__sub-title
         margin-bottom 21px
         font-size 40px
@@ -293,6 +303,7 @@ export default {
         position relative
         width 430px
         height 430px
+        flex-direction column
 
     &__circle
         position absolute
@@ -358,7 +369,7 @@ export default {
                     &.dot-1991
                         width 66px
                         background url('~assets/img/history/ipadLines/line-1991.png') 15px center no-repeat
-                    
+
                     &.dot-1992
                         width 65px
                         background url('~assets/img/history/ipadLines/line-1992.png') 13px center no-repeat
@@ -410,7 +421,7 @@ export default {
                     &.dot-2019
                         width 66px
                         background url('~assets/img/history/ipadLines/line-2019.png') 17px center no-repeat
-                    
+
                     &.dot-2020
                         width 52px
                         background url('~assets/img/history/ipadLines/line-2020.png') 17px center no-repeat
@@ -428,7 +439,7 @@ export default {
 
         &__content
             max-width 468px
-        
+
         &__sub-title
             font-size 34px
             line-height 51px
@@ -458,7 +469,7 @@ export default {
 
                 .buttons-mobile
                     display none
-            
+
             .slider-pagination-width1000
                 display none
 

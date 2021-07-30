@@ -12,7 +12,7 @@
             .about-container__description
                 .about-container__wrapper-man
                     .about-container__description-pic
-                        img.about-container__description-img(src="~/assets/img/about/aleksei.png" alt="Antonov")
+                        img.about-container__description-img(src="~/assets/img/about/aleksei2.png" alt="Antonov")
                     .about-container__awards-desktop
                         Awards
 
@@ -23,7 +23,7 @@
 
         .about-container__awards-mobile
             Awards
-        
+
         HistoryNew
 
         Mission
@@ -39,21 +39,21 @@
             .text
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu3 : company.aboutTitleEng3")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu3 : company.aboutEng3")
-                .descriptionAbout__btn-desktop
-                    Button(:onClick="() => $nuxt.$router.push({path:'/'})") {{lang === 'ru' ? 'Подробнее' : 'More'}}
-                .descriptionAbout__btn-mobile
+                .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
+                    a(:href="lang === 'ru' ? company.link3 : company.linkEng3" target="_blank") {{lang === 'ru' ? 'Подробнее' : 'More'}}
+                .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
                     .descriptionAbout__line
-                    nuxt-link.descriptionAbout__link(to="/" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
-        
+                    a.descriptionAbout__link(:href="lang === 'ru' ? company.link3 : company.linkEng3" target="_blank" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
+
         .descriptionAbout.reverse
             .text.left
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu4 : company.aboutTitleEng4")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
-                .descriptionAbout__btn-desktop
-                    Button(:onClick="() => $nuxt.$router.push({path:'/'})") {{lang === 'ru' ? 'Подробнее' : 'More'}}
-                .descriptionAbout__btn-mobile
+                .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
+                    a(:href="lang === 'ru' ? company.link4 : company.linkEng4" target="_blank") {{lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'}}
+                .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
                     .descriptionAbout__line
-                    nuxt-link.descriptionAbout__link(to="/" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
+                    a.descriptionAbout__link(:href="lang === 'ru' ? company.link4 : company.linkEng4" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'")
             img.photo(src="~/assets/img/about/show.png" alt="Exhibition")
 
         ExpertsAbout
@@ -63,7 +63,7 @@
             .about-us__double-line
 
         TabsAbout
-        
+
         .projectsAbout(v-if="projects.length")
             h2.projectsAbout__title {{ lang === 'ru' ? 'Проекты совместного участия' : 'Projects' }}
             .projectsAbout__double-line
@@ -217,8 +217,8 @@
 
         &__description-pic
             position relative
-            width 608px
-            height 429px
+            width 526px
+            height 371px
             margin-bottom 39px
             background url('~assets/img/about/bg-aleksei.png') no-repeat
             background-size cover
@@ -282,6 +282,45 @@
             margin-top 51px
             text-align left
 
+            a
+                position relative
+                min-width 280px
+                padding 20px 20px 24px
+                font-family $TenorSans-Regular
+                font-size 20px
+                line-height 26px
+                background-color transparent
+                color whiteMain
+                outline none
+                cursor pointer
+                overflow hidden
+                border 1px solid goldNew
+                &:hover,
+                &:active
+                    background goldNew
+                    color #222222
+                &:disabled
+                    cursor default
+                    pointer-events none
+                    opacity .3
+
+                &--large
+                    min-width 494px
+                    padding 29px 20px 36px
+
+                @media only screen and (max-width 1280px)
+                    &--large
+                        min-width 400px
+
+                @media only screen and (max-width 767px)
+                    min-width 206px
+                    padding 17px 20px 22px
+                    font-size 16px
+                    line-height 21px
+
+                &--noPadding
+                    padding 0
+
         &__btn-mobile
             display none
 
@@ -311,7 +350,7 @@
             &__text
                 max-width 457px
                 font-size 16px
-            
+
             &__btn-desktop
                 display none
 
@@ -340,7 +379,7 @@
                 max-width 482px
                 padding 8px
 
-        
+
         @media only screen and (max-width 1000px)
             flex-direction column
             align-items center
@@ -517,7 +556,7 @@
                 margin-bottom 45px
 
             &__description-img
-                max-width 210px
+                max-width 250px
 
             &__description-content
                 max-width 474px
@@ -596,7 +635,7 @@
                 margin-bottom 27px
 
             &__description-img
-                width 151px
+                width 181px
 
             &__description-content
                 flex-shrink 1
@@ -625,7 +664,7 @@
                 display block
                 position relative
                 margin 0 20px
-            
+
     @media only screen and (max-width 767px)
         .about-container
             &__page-bg

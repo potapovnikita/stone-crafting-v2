@@ -1,33 +1,46 @@
 {
     "id": "largeForms",
     "name": "Большие формы",
-    "nameEng": "Name on eng",
+    "nameEng": "Large forms",
     "history": {
+        "title": "История",
+        "titleEng": "History",
         "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
         "textEng": "Text on eng"
     },
     "features": {
+        "title": "Особенности",
+        "titleEng": "Features",
         "text":"Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
         "textEng": "Text on eng"
+    },
+    "simpleText": {
+        "text":"",
+        "textEng": ""
     },
     "photos": [
         "img/order/items/largeForms/0.png"
     ],
+    "worksStepsTitle": "Этапы создания работ",
+    "worksStepsTitleEng": "Stages of work creation",
     "steps": [
         {
             "id": "stepI",
             "label": "I",
-            "title": "Заголовок шага I",
-            "titleEng": "Step I",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Эскиз и построение малой модели в пластилине или с помощью 3D моделирования.",
+            "textEng": "Sketch and build a small model in plasticine or using 3D modeling.",
+            "img": "img/order/history1InlargeForms.png",
+            "imgEng": "img/order/history1InlargeForms.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -36,17 +49,20 @@
         {
             "id": "stepII",
             "label": "II",
-            "title": "Заголовок шага II",
-            "titleEng": "Step II",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Увеличение модели в глине или с помощью 3D печати. Снятие слепков для получение восковых форм.",
+            "textEng": "Enlarging the model in clay or using 3D printing. Taking casts to obtain wax molds.",
+            "img": "img/order/history2InlargeForms.png",
+            "imgEng": "img/order/history2InlargeForms.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -55,17 +71,20 @@
         {
             "id": "stepIII",
             "label": "III",
-            "title": "Заголовок шага III",
-            "titleEng": "Step III",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Формование деталей из воска и их отливка.",
+            "textEng": "Wax molding and casting.",
+            "img": "img/order/history3InlargeForms.png",
+            "imgEng": "img/order/history3InlargeForms.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40
@@ -74,17 +93,20 @@
         {
             "id": "stepIV",
             "label": "IV",
-            "title": "Заголовок шага IV",
-            "titleEng": "Step IV",
-            "text": "Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в высоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли. Завершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась брендом ANTONOV более 2-х лет.",
-            "textEng": "Text on eng",
-            "img": "img/order/sample.png",
+            "title": "",
+            "titleEng": "",
+            "text": "Сборка при помощи сварки или пайки в общую композицию. Обработка металла, шлифовка, полировка, покрытие патиной.",
+            "textEng": "Assembly by welding or soldering into a general composition. Metal processing, grinding, polishing, patina coating.",
+            "img": "img/order/history4InlargeForms.png",
+            "imgEng": "img/order/history4InlargeForms.png",
             "price": "10-90 тыс",
+            "priceEng": "10-90K",
             "priceLine": {
                 "start": 0,
                 "end": 20
             },
             "creationTime": "10-60 дней",
+            "creationTimeEng": "10-60 days",
             "timeLine": {
                 "start": 10,
                 "end": 40

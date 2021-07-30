@@ -5,14 +5,14 @@
         "link": "/"
     },
     {
+        "name": "О Камнерезном Доме",
+        "nameEng": "About stone-crafting House",
+        "link": "/about"
+    },
+    {
         "name": "Сокровища музеев",
         "nameEng": "Museum treasures",
         "link": "/collections"
-    },
-    {
-        "name": "О камнерезном Доме",
-        "nameEng": "About stone-crafting House",
-        "link": "/about"
     },
     {
         "name": "Предложения</br>для партнеров",

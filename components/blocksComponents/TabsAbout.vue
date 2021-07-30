@@ -20,28 +20,38 @@
                                     )
                             .iconArrow(@click="onNextFilm()")
                                 ChevronRightIcon(size="3x")
-                
+
             Tab(tabName="articles" :name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
                 .caption_section
-                    .articles.mobile-hide
+                    .articles.mobile-hide(v-if="lang === 'ru'")
                         a.article(v-for="article in articles" :href="article.link" target="_blank")
                             .item(:style="{backgroundImage: getBgImg(article.background)}")
                             p.text
-                                | {{ lang === 'ru' ? article.name : article.nameEng }}
-                            
+                                | {{article.name}}
+
+                            .article-line
+
+                            a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
+
+                    .articles.mobile-hide(v-if="lang === 'eng'")
+                        a.article(v-for="article in articlesEng" :href="article.link" target="_blank")
+                            .item(:style="{backgroundImage: getBgImg(article.background)}")
+                            p.text
+                                | {{ lang === 'eng' ? article.name : article.name}}
+
                             .article-line
 
                             a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
 
                     .articles.desktop-hide
                         MobileArticleSlider
-                                
+
             Tab(tabName="catalogs" :name="lang === 'ru' ? 'Каталоги' : 'Catalogs'" :classNames="['about-us__tab']")
                 template(v-slot:default="slotProps")
                     .caption_section
                         .catalogs.mobile-hide
-                            a.catalog(v-for="catalog in catalogs" :href="catalog.link" target="_blank")
-                                .item(:style="{backgroundImage: getBgImg(catalog.background)}")
+                            a.catalog(v-for="catalog in catalogs" :href="lang === 'ru' ? catalog.link : catalog.linkEng" target="_blank")
+                                .item(:style="{backgroundImage: getBgImg(lang === 'ru' ? catalog.background : catalog.backgroundEng)}")
                                 .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
                         .catalogs.desktop-hide
@@ -64,6 +74,7 @@ export default {
     data() {
         return {
             articles: Company.company.articles,
+            articlesEng: Company.company.articlesEng,
             catalogs: Company.company.catalogs,
             films: Company.company.films,
             activeFilm: 0,
