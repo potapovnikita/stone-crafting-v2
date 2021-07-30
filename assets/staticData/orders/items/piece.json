@@ -92,8 +92,8 @@
                 "start": 10,
                 "end": 40
             },
-            "link": "img/order/presentation.pdf",
-            "linkEng": "img/order/EnglishPresentation.pdf"
+            "link": "/articles/presentation.pdf",
+            "linkEng": "/articles/EnglishPresentation.pdf"
         }
     ]
 }

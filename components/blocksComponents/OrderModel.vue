@@ -4,7 +4,6 @@
             .orderModel__block-text.orderModel__block-text--left.mobile-hide
                 h3.orderModel__title {{ lang === 'ru' ? orderItem.features.title : orderItem.features.titleEng }}
                 p.orderModel__text(v-html="lang === 'ru' ? orderItem.features.text : orderItem.features.textEng")
-                p.orderModel__text(v-html="lang === 'ru' ? orderItem : orderItem.features.textEng")
             .orderModel__block-media
                 .orderModel__wrapper-circle
                     .orderModel__slider-buttons-desktop.btn-left(v-if="orderItem.photos.length > 1")
@@ -37,8 +36,8 @@
                     h3.orderModel__title {{ lang === 'ru' ? orderItem.history.title : orderItem.history.titleEng }}
                     p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
 
-            .orderModel__block-text-govno.orderModel__block-text--center.mobile-hide(v-if="orderItem.simpleText.text")
-                p.orderModel__text(v-html="lang === 'ru' ? orderItem.simpleText.text : orderItem.simpleText.textEng")
+        .orderModel__container
+            p.orderModel__text(v-if="orderItem.simpleText.text" v-html="lang === 'ru' ? orderItem.simpleText.text : orderItem.simpleText.textEng")
 
 </template>
 <script>
@@ -112,10 +111,6 @@ export default {
 
         &--center
             padding-bottom 45px
-
-    &__block-text-govno
-        margin-top 5px
-        text-align center
 
     &__block-media
         display block

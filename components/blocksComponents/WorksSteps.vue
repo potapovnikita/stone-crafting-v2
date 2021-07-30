@@ -25,8 +25,10 @@
                                 source(:src="getImgExternal(stage.video)" type="video/mp4")
                         .worksSteps__content
                             h3.worksSteps__content-title(v-html="lang === 'ru' ? stage.title : stage.titleEng")
-                            p.worksSteps__content-text(v-html="stage.text === 'Скачать презентацию «Искусство в интерьере»'" @click="download(stage.link)")
-                                | {{ lang === 'ru' ? stage.text : stage.textEng}}
+                            p.worksSteps__content-text
+                              span(v-if="stage.link")
+                                a(:href="lang === 'ru' ? stage.link : stage.linkEng" target="_blank") {{ lang === 'ru' ? stage.text : stage.textEng}}
+                              span(v-else) {{ lang === 'ru' ? stage.text : stage.textEng}}
 
                     .worksSteps__spending
                         div
@@ -188,6 +190,15 @@ export default {
         flex-shrink 2
         padding-left 20px
         text-align left
+        &-text
+          a
+            border-bottom 1px solid white
+            &:hover
+              color #fce086
+              border-bottom 1px solid #fce086
+
+
+
 
     &__content-title
         max-width 587px
