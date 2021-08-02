@@ -40,20 +40,20 @@
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu3 : company.aboutTitleEng3")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu3 : company.aboutEng3")
                 .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
-                    a(:href="lang === 'ru' ? company.link3 : company.linkEng3" target="_blank") {{lang === 'ru' ? 'Подробнее' : 'More'}}
+                    a(:href="lang === 'ru' ? getImgExternal(company.link3) : getImgExternal(company.linkEng3)" target="_blank") {{lang === 'ru' ? 'Подробнее' : 'More'}}
                 .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
                     .descriptionAbout__line
-                    a.descriptionAbout__link(:href="lang === 'ru' ? company.link3 : company.linkEng3" target="_blank" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
+                    a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link3) : getImgExternal(company.linkEng3)" target="_blank" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
 
         .descriptionAbout.reverse
             .text.left
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu4 : company.aboutTitleEng4")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
                 .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
-                    a(:href="lang === 'ru' ? company.link4 : company.linkEng4" target="_blank") {{lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'}}
+                    a(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank") {{lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'}}
                 .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
                     .descriptionAbout__line
-                    a.descriptionAbout__link(:href="lang === 'ru' ? company.link4 : company.linkEng4" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'")
+                    a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'")
             img.photo(src="~/assets/img/about/show.png" alt="Exhibition")
 
         ExpertsAbout
@@ -101,6 +101,7 @@
     import Mission from "@/components/blocksComponents/Mission"
     import TabsAbout from '@/components/blocksComponents/TabsAbout'
     import Footer from '~/components/Footer.vue'
+    import {getImgExternal} from "@/plugins/getUrl";
 
     export default {
         data() {
@@ -134,6 +135,9 @@
             getImg(url) {
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `${imageUrl}` : ''
+            },
+            getImgExternal(url) {
+                return getImgExternal(url)
             },
         },
         computed: {

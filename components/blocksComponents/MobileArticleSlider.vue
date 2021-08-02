@@ -12,7 +12,7 @@
 
                         .articleSliderMb__line
 
-                        a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
+                        a(:href="getImgExternal(article.link)" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
 
             .control-panel
                 ButtonArrow(:onClick="prewSlide")
@@ -27,6 +27,7 @@
 import { mapState } from 'vuex'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import Company from '~/assets/staticData/company.json'
+import {getImgExternal} from "@/plugins/getUrl";
 export default {
     name: 'MobileArticleSlider',
     data() {
@@ -56,6 +57,9 @@ export default {
         navigateTo(index) {
             this.currentSlide = index
             this.$refs.articlesAbout.goToPage(index)
+        },
+        getImgExternal(url) {
+            return getImgExternal(url)
         },
     },
     computed: {

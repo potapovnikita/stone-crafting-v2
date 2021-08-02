@@ -11,6 +11,9 @@ export const getBgImgLocal = (url) => {
 };
 
 export const getImgExternal = (url) => {
+    if(url.includes('http')) {
+        return url;
+    }
     const imageUrl = 'https://stone-crafting.com/sharedFiles/assets/' + `${url}`
     return url ? `${imageUrl}` : ''
 };

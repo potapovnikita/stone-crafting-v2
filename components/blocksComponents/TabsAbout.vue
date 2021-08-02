@@ -24,24 +24,24 @@
             Tab(tabName="articles" :name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
                 .caption_section
                     .articles.mobile-hide(v-if="lang === 'ru'")
-                        a.article(v-for="article in articles" :href="article.link" target="_blank")
+                        a.article(v-for="article in articles" :href="getImgExternal(article.link)" target="_blank")
                             .item(:style="{backgroundImage: getBgImg(article.background)}")
                             p.text
                                 | {{article.name}}
 
                             .article-line
 
-                            a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
+                            a(:href="getImgExternal(article.link)" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
 
                     .articles.mobile-hide(v-if="lang === 'eng'")
-                        a.article(v-for="article in articlesEng" :href="article.link" target="_blank")
+                        a.article(v-for="article in articlesEng" :href="getImgExternal(article.link)" target="_blank")
                             .item(:style="{backgroundImage: getBgImg(article.background)}")
                             p.text
                                 | {{ lang === 'eng' ? article.name : article.name}}
 
                             .article-line
 
-                            a(:href="article.link" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
+                            a(:href="getImgExternal(article.link)" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
 
                     .articles.desktop-hide
                         MobileArticleSlider
@@ -50,7 +50,7 @@
                 template(v-slot:default="slotProps")
                     .caption_section
                         .catalogs.mobile-hide
-                            a.catalog(v-for="catalog in catalogs" :href="lang === 'ru' ? catalog.link : catalog.linkEng" target="_blank")
+                            a.catalog(v-for="catalog in catalogs" :href="lang === 'ru' ? getImgExternal(catalog.link) : getImgExternal(catalog.linkEng)" target="_blank")
                                 .item(:style="{backgroundImage: getBgImg(lang === 'ru' ? catalog.background : catalog.backgroundEng)}")
                                 .text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
@@ -68,6 +68,7 @@ import Tab from '@/components/pagesComponents/Tab'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import MobileArticleSlider from '@/components/blocksComponents/MobileArticleSlider'
 import MobileCatalogSlider from '@/components/blocksComponents/MobileCatalogSlider'
+import {getImgExternal} from "@/plugins/getUrl";
 
 export default {
     name: 'TabsAbout',
@@ -101,6 +102,9 @@ export default {
         onPreviousFilm() {
             if (this.activeFilm === 0) this.activeFilm = this.films.length - 1
             else this.activeFilm = this.activeFilm - 1
+        },
+        getImgExternal(url) {
+            return getImgExternal(url)
         },
     },
     computed: {

@@ -7,7 +7,7 @@
                         .catalogSliderMb__wrapper-pic
                             .catalogSliderMb__pic(:style="{backgroundImage: getBgImg(catalog.background)}")
 
-                        a(:href="catalog.link" target="_blank")
+                        a(:href="getImgExternal(catalog.link)" target="_blank")
                             p.catalogSliderMb__text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
             .control-panel
@@ -17,12 +17,13 @@
                         .box
                             .dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
                 ButtonArrow(:onClick="nextSlide" arrowRight)
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
 import ButtonArrow from '@/components/ui/ButtonArrow'
 import Company from '~/assets/staticData/company.json'
+import {getImgExternal} from "@/plugins/getUrl";
 export default {
     name: 'MobileCatalogSlider',
     data() {
@@ -51,6 +52,9 @@ export default {
         navigateTo(index) {
             this.currentSlide = index
             this.$refs.catalogsAbout.goToPage(index)
+        },
+        getImgExternal(url) {
+            return getImgExternal(url)
         },
     },
     computed: {
@@ -86,7 +90,7 @@ export default {
         padding 4px
         margin-bottom 30px
         border 1px solid rgba(150, 120, 95, 0.3)
-        
+
     &__pic
         width 340px
         height 261px
