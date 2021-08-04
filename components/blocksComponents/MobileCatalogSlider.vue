@@ -5,9 +5,9 @@
                 slide(v-for="(catalog, index) in catalogs" :key="`cat_${index}`")
                     .catalogSliderMb__catalog
                         .catalogSliderMb__wrapper-pic
-                            .catalogSliderMb__pic(:style="{backgroundImage: getBgImg(catalog.background)}")
+                            .catalogSliderMb__pic(:style="{backgroundImage: getBgImg(lang === 'ru' ? catalog.background : catalog.backgroundEng)}")
 
-                        a(:href="getImgExternal(catalog.link)" target="_blank")
+                        a(:href="lang === 'ru' ? getImgExternal(catalog.link) : getImgExternal(catalog.linkEng)" target="_blank")
                             p.catalogSliderMb__text {{ lang === 'ru' ? catalog.name : catalog.nameEng }}
 
             .control-panel

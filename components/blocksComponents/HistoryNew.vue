@@ -284,7 +284,9 @@ export default {
         width: 385px;
         text-align left
         padding-top 20px
+        padding-bottom 25px
         font-style italic
+
 
     &__sub-title
         margin-bottom 21px
