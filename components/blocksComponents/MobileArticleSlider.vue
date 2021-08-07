@@ -2,13 +2,13 @@
     client-only
         .articleSliderMb
             carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="articlesAbout")
-                slide(v-for="(article, index) in articles" :key="`arc_${index}`")
+                slide(v-for="(article, index) in currentArticles" :key="`arc_${index}`")
                     .articleSliderMb__article
                         .articleSliderMb__wrapper-pic
                             .articleSliderMb__pic(:style="{backgroundImage: getBgImg(article.background)}")
 
                         p.articleSliderMb__text
-                            | {{ lang === 'ru' ? article.name : article.nameEng }}
+                            | {{article.name}}
 
                         .articleSliderMb__line
 
@@ -32,6 +32,7 @@ export default {
     name: 'MobileArticleSlider',
     data() {
         return {
+            currentArticles: [],
             articles: Company.company.articles,
             articlesEng: Company.company.articlesEng,
             currentSlide: 0,
@@ -68,6 +69,7 @@ export default {
         ]),
     },
     mounted() {
+        this.currentArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
         this.$nextTick(()=>{
             const prew = this.$refs.articlesAbout.getPreviousPage()
             const next = this.$refs.articlesAbout.getNextPage()
