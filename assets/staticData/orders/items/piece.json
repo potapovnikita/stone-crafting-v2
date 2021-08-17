@@ -36,17 +36,17 @@
             "textEng": "The grandiose interiors of the 18th - 19th centuries have not yet been recreated to this day. For 30 years improving various techniques for working with stone we have managed to combine the knowledge of bygone eras with modern approaches.\nThe proposed project of the palace from hard noble rocks (jasper, malachite, lapis lazuli, cacholong, rhodonite, as well as bronze, gilding, enamels, etc.) is a grandiose swing to create an interior that will remain in history.",
             "img": "img/order/history1InPiece.png",
             "imgEng": "img/order/history1InPiece.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 50,
+                "end": 80
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 50,
+                "end": 80
             }
         },
         {
@@ -58,17 +58,17 @@
             "textEng": "In 2017, a project was created specifically for the Café Pushkin in Paris in the style of the 18th century. In the modern world it is almost impossible to make a project that exactly reproduces the interior of another century because in different centuries there are special technologies that are not available today. Our team studied the history of the 18th century stylistics, invented new techniques, applied different methods of working with stone and bronze. The fireplaces were created using a special technology, were used rare jasper which has not been mined for 100 years.",
             "img": "img/order/history2InPiece.png",
             "imgEng": "img/order/history2InPiece.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
                 "start": 50,
-                "end": 90
+                "end": 80
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             }
         },
         {
@@ -80,17 +80,17 @@
             "textEng": "Download presentation \"Art in the interior\"",
             "img": "img/order/sample.png",
             "imgEng": "img/order/sample.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 50,
+                "end": 80
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 50,
+                "end": 80
             },
             "link": "/articles/presentation.pdf",
             "linkEng": "/articles/EnglishPresentation.pdf"

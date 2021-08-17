@@ -33,17 +33,17 @@
             "textEng": "At the first stage the artist creates a sketch and divides it into color fragments. The Florentine mosaic technique allows us to depict any image or history in stone. This can be a portrait, still lifes, landscapes or religious subjects. Most often used for the project: landscape jasper of various shades, jade, quartz, agate, jade and others.",
             "img": "img/order/history1InFlorentineMosaic.png",
             "imgEng": "img/order/history1InFlorentineMosaic.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 35,
+                "end": 65
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "2-9 мес",
+            "creationTimeEng": "2-9 months",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 15,
+                "end": 45
             }
         },
         {
@@ -55,17 +55,17 @@
             "textEng": "The selected sketch begins to adapt to the characteristics of the stone and its texture. All characteristics of the mineral are taken into account - its hardness, transparency, porosity, and more. As a result all fragments should have similar characteristics, brightness, and hue saturation.",
             "img": "img/order/history2InFlorentineMosaic.png",
             "imgEng": "img/order/history2InFlorentineMosaic.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 50,
-                "end": 90
+                "start": 35,
+                "end": 65
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "2-9 мес",
+            "creationTimeEng": "2-9 months",
             "timeLine": {
-                "start": 70,
-                "end": 100
+                "start": 15,
+                "end": 45
             }
         },
         {
@@ -77,17 +77,17 @@
             "textEng": "Having selected right stones for work the master creates the required size for each of them, processes and polishes.",
             "img": "img/order/history3InFlorentineMosaic.png",
             "imgEng": "img/order/history3InFlorentineMosaic.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 35,
+                "end": 65
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "2-9 мес",
+            "creationTimeEng": "2-9 months",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 15,
+                "end": 45
             }
         },
         {
@@ -99,17 +99,17 @@
             "textEng": "The work ends with the combination of each element into a single composition. The basis for the mosaic set can be a solid stone. At this stage a complete picture appears. The final part of the work is the bequest grinding and polishing.",
             "img": "img/order/history4InFlorentineMosaic.png",
             "imgEng": "img/order/history4InFlorentineMosaic.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 40,
-                "end": 60
+                "start": 35,
+                "end": 65
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "2-9 мес",
+            "creationTimeEng": "2-9 months",
             "timeLine": {
-                "start": 0,
-                "end": 20
+                "start": 15,
+                "end": 45
             }
         }
     ]

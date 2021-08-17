@@ -21,7 +21,10 @@
     "photos": [
         "img/order/items/sculpture/0.png",
         "img/order/items/sculpture/1.png",
-        "img/order/items/sculpture/2.png"
+        "img/order/items/sculpture/2.png",
+        "img/collections/joker/0.png",
+        "img/order/items/sculpture/3.png",
+        "img/order/items/sculpture/4.png"
     ],
     "worksStepsTitle": "Инновации Камнерезного Дома Антонова",
     "worksStepsTitleEng": "Innovations",
@@ -35,17 +38,17 @@
             "textEng": "One of the first large works of the company was the sculpture “Golden Joker” 1 meter high (2017). The piece was described as a breakthrough in stone cutting and jewelry industry. The framework for unlimited creativity with such a complex material as hard stone has been expanded.",
             "img": "img/order/history1InSculpture.png",
             "imgEng": "img/order/history1InSculpture.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -56,15 +59,15 @@
             "text": "В 2020 году Камнерезный Дом Антонова завершает грандиозный проект \"Коррида\", создававшийся на протяжении семи лет. В проект вошли инновационные скульптуры бренда: Тореадор, Фламенко, Лазурный Бык. В каждой работе скрыта особая технология, изобретенная командой мастеров, а также новые техники работы с камнем. \nНа сегодняшний день это самые высокие камнерезно-ювелирные скульптуры в мире.\n",
             "textEng": "In 2020 the Stone-Crafting House by Antonov is completing the grandiose \"Bullfighting\" project which has been created over the course of seven years. The project includes innovative sculptures of the brand: Toreador, Flamenco, Azure Bull. Each work contains a special technology invented by a team of craftsmen as well as new techniques for working with stone.\nToday these are the tallest stone-cutting jewelry sculptures in the world.\n",
             "img": "img/order/history2InSculpture.png",
-            "imgEng": "img/order/history2InSculptureEng.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "imgEng": "img/order/history2InSculpture.png",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 50,
-                "end": 90
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
                 "start": 70,
                 "end": 100
@@ -79,17 +82,17 @@
             "textEng": "The Azure Bull is the first work created using this technique. This is a stone-cut sculpture with the effect of golden craquelure and a mosaic set of homogeneous stone combined with metal. This technology goes beyond the standard techniques of stone carving art. This principle can be considered a new direction in working with stone.",
             "img": "img/order/history3InSculpture.png",
             "imgEng": "img/order/history3InSculpture.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         }
     ]

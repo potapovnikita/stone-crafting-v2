@@ -33,17 +33,17 @@
             "textEng": "Sketching and creating a model in plasticine or using 3D modeling.",
             "img": "img/order/history1InSmallForms.png",
             "imgEng": "img/order/history1InSmallForms.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -55,17 +55,17 @@
             "textEng": "Removing the molds for receiving waxes.",
             "img": "img/order/history2InSmallForms.png",
             "imgEng": "img/order/history2InSmallForms.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -77,17 +77,17 @@
             "textEng": "Wax molding and casting.",
             "img": "img/order/history3InSmallForms.png",
             "imgEng": "img/order/history3InSmallForms.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -99,17 +99,17 @@
             "textEng": "Assembly by welding or soldering into a general composition. Metal processing, grinding, polishing, patina, silvering, gilding.",
             "img": "img/order/history4InSmallForms.png",
             "imgEng": "img/order/history4InSmallForms.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         }
     ]

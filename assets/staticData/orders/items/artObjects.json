@@ -32,17 +32,17 @@
             "text": "Собственная инновационная «технология крупных форм» позволяет компании развить новое направление – арт-объекты. В 2018 году появляется арт-объект рекордной высоты более двух метров. А именно, реализуется проект «Лого Транснефть» для небоскрёба «Башня Эволюция» с применением новой техники «Русская мозаика объемных форм» (раньше техника «русская мозаика» или «флорентийская мозаика» применялась только для плоских или точенных поверхностей).",
             "textEng": "Own innovative \"technology of large forms\" allows the company to develop a new direction - art objects. In 2018, an art object with a record height of more than two meters appears. Namely, the Transneft Logo project for the Evolution Tower skyscraper is being implemented using the new technique “Russian mosaic of volumetric forms” (earlier the technique of “Russian mosaic” or “Florentine mosaic” was used only for flat or chiseled surfaces).",
             "video": "img/history/2018.mp4",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         },
         {
@@ -54,14 +54,14 @@
             "textEng": "This art object is characterized as the tallest in the world made of natural stones in volume. Used in sculpture: cacholong, jasper, lapis lazuli, precious metals. The project also creates for the first time the most uniform shade of each element of the logo, thanks to the mosaic selection of different types of natural stone. The base of the sculpture follows the shape of a skyscraper and is made of rare Italian marble.",
             "img": "img/order/history2InIndividual.png",
             "imgEng": "img/order/history2InIndividual.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 50,
-                "end": 90
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
                 "start": 70,
                 "end": 100
@@ -76,17 +76,17 @@
             "textEng": "The wall logo made in the technique of volumetric Florentine mosaic in the form of a company logo is another way of using art in the interior.",
             "img": "img/order/history3InIndividual.png",
             "imgEng": "img/order/history3InIndividual.png",
-            "price": "10-90 тыс",
-            "priceEng": "10-90K",
+            "price": "Высокая",
+            "priceEng": "High",
             "priceLine": {
-                "start": 0,
-                "end": 20
+                "start": 70,
+                "end": 100
             },
-            "creationTime": "10-60 дней",
-            "creationTimeEng": "10-60 days",
+            "creationTime": "1-2 года",
+            "creationTimeEng": "1-2 years",
             "timeLine": {
-                "start": 10,
-                "end": 40
+                "start": 70,
+                "end": 100
             }
         }
     ]

@@ -33,7 +33,7 @@
                     .worksSteps__spending
                         div
                             .worksSteps__spending-content
-                                p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания работы' : 'Job creation time'")
+                                p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания' : 'Work creation time'")
                                 .worksSteps__spending-progressBar-descktop
                                     .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
                                 p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.creationTimeEng")

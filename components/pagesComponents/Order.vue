@@ -78,7 +78,7 @@ export default {
             orderOptions: Order.options,
             orderButton: Order.button,
             gallary: Gallary,
-            activeOrderId: 'sculpture',
+            activeOrderId: 'stoneMosaic',
             orderItems: [
                 LargeForms,
                 SmallForms,

@@ -36,8 +36,8 @@
                     h3.orderModel__title {{ lang === 'ru' ? orderItem.history.title : orderItem.history.titleEng }}
                     p.orderModel__text(v-html="lang === 'ru' ? orderItem.history.text : orderItem.history.textEng")
 
-        .orderModel__container
-            p.orderModel__text(v-if="orderItem.simpleText.text" v-html="lang === 'ru' ? orderItem.simpleText.text : orderItem.simpleText.textEng")
+        .orderModel__container-simple-text
+            p.orderModel__text-simple-text(v-if="orderItem.simpleText.text" v-html="lang === 'ru' ? orderItem.simpleText.text : orderItem.simpleText.textEng")
 
 </template>
 <script>
@@ -96,7 +96,14 @@ export default {
         display flex
         justify-content space-between
         max-width 1680px
-        padding 90px 40px 10px
+        padding 10px 40px 10px
+
+    &__container-simple-text
+        display flex
+        justify-content space-between
+        max-width 1680px
+        padding 10px 40px 50px
+        text-align center
 
     &__block-text
         display block
@@ -133,6 +140,9 @@ export default {
 
     &__text
         text-align left
+
+    &__text-simple-text
+        text-align center
 
     &__wrapper-circle
         display block
@@ -176,6 +186,9 @@ export default {
         &__container
             display block
 
+        &__container-simple-text
+            display block
+
         &__block-text
             &--left,
             &--right
@@ -212,6 +225,10 @@ export default {
         &__container
             display block
             padding 63px 27px 0 27px
+
+        &__container-simple-text
+            display block
+            padding 13px 27px 50px 27px
 
         &__media-container
             height 661px
