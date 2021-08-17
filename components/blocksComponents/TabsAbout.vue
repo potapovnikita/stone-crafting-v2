@@ -23,21 +23,11 @@
 
             Tab(tabName="articles" :name="lang === 'ru' ? 'Статьи' : 'Articles'" :selected="true" :classNames="['about-us__tab']")
                 .caption_section
-                    .articles.mobile-hide(v-if="lang === 'ru'")
-                        a.article(v-for="article in articles" :href="getImgExternal(article.link)" target="_blank")
+                    .articles.mobile-hide
+                        a.article(v-for="article in currentArticles" :href="getImgExternal(article.link)" target="_blank")
                             .item(:style="{backgroundImage: getBgImg(article.background)}")
                             p.text
                                 | {{article.name}}
-
-                            .article-line
-
-                            a(:href="getImgExternal(article.link)" target="_blank") {{ lang === 'ru' ? 'Подробнее' : 'More' }}
-
-                    .articles.mobile-hide(v-if="lang === 'eng'")
-                        a.article(v-for="article in articlesEng" :href="getImgExternal(article.link)" target="_blank")
-                            .item(:style="{backgroundImage: getBgImg(article.background)}")
-                            p.text
-                                | {{ lang === 'eng' ? article.name : article.name}}
 
                             .article-line
 
@@ -76,6 +66,7 @@ export default {
         return {
             articles: Company.company.articles,
             articlesEng: Company.company.articlesEng,
+            currentArticles: [],
             catalogs: Company.company.catalogs,
             films: Company.company.films,
             activeFilm: 0,
@@ -112,7 +103,32 @@ export default {
             'lang',
         ]),
     },
+    watch: {
+        lang(newVal) {
+            // обзервер для смены языка (потому что разное кол-во статей)
+            this.currentArticles = newVal === 'ru' ? this.articles : this.articlesEng;
+            this.$nextTick(()=>{
+                const articles = document.querySelectorAll('.article');
+                // для статей
+                const showArticle = new IntersectionObserver((entries) => {
+                    if (entries[0].intersectionRatio > 0) {
+                        entries.forEach(i => {
+                            i.target.style.transform = 'translateY(0)';
+                            i.target.style.opacity = 1;
+                            showArticle.unobserve(i.target);
+                        })
+                    }
+                });
+                articles.forEach(article => {
+                    showArticle.observe(article);
+                })
+            });
+
+        },
+    },
     mounted() {
+        this.allArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
+
         this.$nextTick(()=>{
             const descriptionsAbout = document.querySelectorAll('.descriptionAbout');
             const articles = document.querySelectorAll('.article');

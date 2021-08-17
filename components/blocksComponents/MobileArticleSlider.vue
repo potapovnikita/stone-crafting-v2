@@ -62,27 +62,35 @@ export default {
         getImgExternal(url) {
             return getImgExternal(url)
         },
+        initPage() {
+            this.currentArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
+            this.$nextTick(()=>{
+                const prew = this.$refs.articlesAbout.getPreviousPage()
+                const next = this.$refs.articlesAbout.getNextPage()
+                this.pageCount = this.$refs.articlesAbout.pageCount
+                if (next === 0 || next > prew) {
+                    this.currentSlide = prew + 1
+                    return
+                }
+                if (next < prew) {
+                    this.currentSlide = next - 1
+                    return
+                }
+            })
+        },
     },
     computed: {
         ...mapState('localization', [
             'lang',
         ]),
     },
+    watch: {
+        lang(newVal) {
+            this.initPage();
+        },
+    },
     mounted() {
-        this.currentArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
-        this.$nextTick(()=>{
-            const prew = this.$refs.articlesAbout.getPreviousPage()
-            const next = this.$refs.articlesAbout.getNextPage()
-            this.pageCount = this.$refs.articlesAbout.pageCount
-            if (next === 0 || next > prew) {
-                this.currentSlide = prew + 1
-                return
-            }
-            if (next < prew) {
-                this.currentSlide = next - 1
-                return
-            }
-        })
+        this.initPage();
     },
 }
 </script>

@@ -27,7 +27,7 @@
                             h3.worksSteps__content-title(v-html="lang === 'ru' ? stage.title : stage.titleEng")
                             p.worksSteps__content-text
                               span(v-if="stage.link")
-                                a(:href="lang === 'ru' ? stage.link : stage.linkEng" target="_blank") {{ lang === 'ru' ? stage.text : stage.textEng}}
+                                a(:href="lang === 'ru' ? getImgExternal(stage.link) : getImgExternal(stage.linkEng)" target="_blank") {{ lang === 'ru' ? stage.text : stage.textEng}}
                               span(v-else) {{ lang === 'ru' ? stage.text : stage.textEng}}
 
                     .worksSteps__spending
