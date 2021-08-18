@@ -21,7 +21,7 @@
 
         div(v-for="(orderItem, index) in orderItems" v-if="orderItem.id === activeOrderId" :key="activeOrderId")
             OrderModel(:orderItem="orderItem")
-            WorksSteps(:stages="orderItem.steps" :orderItem="orderItem")
+            WorksSteps(v-if="!orderItem.isHiddenWorkSteps" :stages="orderItem.steps" :orderItem="orderItem")
 
         .order_container__buttons
             Button(

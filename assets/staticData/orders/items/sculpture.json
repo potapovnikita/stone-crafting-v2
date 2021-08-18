@@ -28,6 +28,8 @@
     ],
     "worksStepsTitle": "Инновации Камнерезного Дома Антонова",
     "worksStepsTitleEng": "Innovations",
+    "isHiddenTimeLine": false,
+    "isHiddenWorkSteps": false,
     "steps": [
         {
             "id": "stepI",

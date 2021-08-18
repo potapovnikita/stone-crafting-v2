@@ -23,6 +23,8 @@
     ],
     "worksStepsTitle": "История создания",
     "worksStepsTitleEng": "History of creation",
+    "isHiddenTimeLine": false,
+    "isHiddenWorkSteps": false,
     "steps": [
         {
             "id": "stepI",
@@ -35,14 +37,14 @@
             "price": "Высокая",
             "priceEng": "High",
             "priceLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             },
-            "creationTime": "1-2 года",
-            "creationTimeEng": "1-2 years",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             }
         },
         {
@@ -57,14 +59,14 @@
             "price": "Высокая",
             "priceEng": "High",
             "priceLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             },
-            "creationTime": "1-2 года",
-            "creationTimeEng": "1-2 years",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             }
         },
         {
@@ -79,14 +81,14 @@
             "price": "Высокая",
             "priceEng": "High",
             "priceLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             },
-            "creationTime": "1-2 года",
-            "creationTimeEng": "1-2 years",
+            "creationTime": "6-9 мес",
+            "creationTimeEng": "6-9 month",
             "timeLine": {
-                "start": 70,
-                "end": 100
+                "start": 50,
+                "end": 80
             }
         }
     ]

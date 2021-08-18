@@ -139,7 +139,8 @@ export default {
         text-align left
 
     &__text
-        text-align left
+        text-align center
+        padding-bottom: 30px
 
     &__text-simple-text
         text-align center
@@ -196,7 +197,7 @@ export default {
                     display none
 
         &__block-text-mobile
-            display flex
+            display contents
             justify-content space-between
             position relative
             bottom 180px

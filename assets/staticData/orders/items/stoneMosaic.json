@@ -27,6 +27,8 @@
     ],
     "worksStepsTitle": "Этапы создания работ",
     "worksStepsTitleEng": "Stages of work creation",
+    "isHiddenTimeLine": false,
+    "isHiddenWorkSteps": false,
     "steps": [
         {
             "id": "stepI",

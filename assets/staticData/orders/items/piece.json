@@ -26,6 +26,8 @@
     ],
     "worksStepsTitle": "Проекты",
     "worksStepsTitleEng": "Projects",
+    "isHiddenTimeLine": true,
+    "isHiddenWorkSteps": false,
     "steps": [
         {
             "id": "stepI",
@@ -78,8 +80,8 @@
             "titleEng": "",
             "text": "Скачать презентацию «Искусство в интерьере»",
             "textEng": "Download presentation \"Art in the interior\"",
-            "img": "img/order/sample.png",
-            "imgEng": "img/order/sample.png",
+            "img": "img/catalogs/cat4.png",
+            "imgEng": "img/catalogs/cat4Eng.png",
             "price": "Высокая",
             "priceEng": "High",
             "priceLine": {

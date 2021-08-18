@@ -1,8 +1,8 @@
 <template lang="pug">
     .orderGallary
         .orderGallary__line
-        h1.orderGallary__title {{ lang === 'ru' ? 'Салон ANTONOV ONLINE' : 'Place ANTONOV ONLINE' }}
-        h2.orderGallary__title-second {{ lang === 'ru' ? 'Посмотреть в наличии' : 'Show' }}
+        h1.orderGallary__title {{ lang === 'ru' ? 'Салон ANTONOV ONLINE' : 'Place ANTONOV online store' }}
+        h2.orderGallary__title-second {{ lang === 'ru' ? 'Посмотреть предложение' : 'View the offer' }}
         .orderGallary__container
             .orderGallary__buttons-desktop.btn-left
                 ButtonArrow(:onClick="prewSlide")
@@ -16,7 +16,7 @@
                                 a.orderGallary__link(:href="item.link")
                                     img.orderGallary__photo(:src="getImg(item.img)" alt="pic")
                                     p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -81,7 +81,7 @@ export default {
     },
     destroyed() {
         window.removeEventListener('resize', this.handleResize);
-    },   
+    },
 }
 </script>
 <style lang="stylus" scoped>

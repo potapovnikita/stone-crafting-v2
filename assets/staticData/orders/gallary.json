@@ -1,5 +1,5 @@
 {
-    "items": 
+    "items":
         [
             {
                 "id": "bronze",
@@ -11,7 +11,7 @@
             {
                 "id": "stoneFlowers",
                 "img": "img/order/gallary/1.png",
-                "title": "Каменные цветы",
+                "title": "Флористика",
                 "titleEng": "Stone flowers",
                 "link": "/"
             },
@@ -38,10 +38,31 @@
                 "link": "/"
             },
             {
-                "id": "man",
-                "img": "img/order/gallary/5.png",
-                "title": "Мужик",
-                "titleEng": "Ololo!",
+                "id": "Interior",
+                "img": "img/order/gallary/6.png",
+                "title": "Интерьер",
+                "titleEng": "Interior",
+                "link": "/"
+            },
+            {
+                "id": "Art objects",
+                "img": "img/order/gallary/7.png",
+                "title": "Арт-объекты",
+                "titleEng": "Art objects",
+                "link": "/"
+            },
+            {
+                "id": "Stone-carving art",
+                "img": "img/order/gallary/8.png",
+                "title": "Камнерезное искусство",
+                "titleEng": "Stone-carving art",
+                "link": "/"
+            },
+            {
+                "id": "Florentine mosaic",
+                "img": "img/order/gallary/9.png",
+                "title": "Флорентийская мозаика",
+                "titleEng": "Florentine mosaic",
                 "link": "/"
             }
         ]

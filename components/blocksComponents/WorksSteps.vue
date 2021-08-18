@@ -30,7 +30,7 @@
                                 a(:href="lang === 'ru' ? getImgExternal(stage.link) : getImgExternal(stage.linkEng)" target="_blank") {{ lang === 'ru' ? stage.text : stage.textEng}}
                               span(v-else) {{ lang === 'ru' ? stage.text : stage.textEng}}
 
-                    .worksSteps__spending
+                    .worksSteps__spending(v-if="!orderItem.isHiddenTimeLine")
                         div
                             .worksSteps__spending-content
                                 p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания' : 'Work creation time'")
@@ -215,7 +215,7 @@ export default {
         display flex
         flex-direction column
         align-items center
-        padding 54px 0
+        padding 54px 0 14px
 
     &__spending-content
         display flex
@@ -421,4 +421,7 @@ export default {
         &__spending
             padding 30px 12px
 
+.VueCarousel-slide {
+    padding-bottom: 40px;
+}
 </style>
