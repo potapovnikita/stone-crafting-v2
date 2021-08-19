@@ -1,7 +1,7 @@
 <template lang="pug">
     .feedback_container#form
         h2.title.title-feedback
-            | {{ statusSuccess ? lang === 'ru' ? 'Спасибо!' : 'Thank you!' : lang === 'ru' ? 'Сделать заказ' : 'Submit you request'}}
+            | {{ statusSuccess ? lang === 'ru' ? 'Спасибо!' : 'Thank you!' : lang === 'ru' ? 'Сделать заказ' : 'Submit your request'}}
         form(v-if="!statusSuccess" v-on:submit.prevent="submitForm()")
             .input
                 Input(type="text" name="phone" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
@@ -201,7 +201,7 @@
 
             input:-webkit-autofill
                 -webkit-box-shadow 0 0 0 50px blackBackground inset !important
-            
+
             input:-webkit-autofill
                 -webkit-text-fill-color whiteMain !important
 
@@ -273,7 +273,7 @@
                         position relative
                         bottom: -10px
                         max-width: 497px
-        
+
         .lds-dual-ring
             bottom 30px
 
