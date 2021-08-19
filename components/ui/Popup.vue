@@ -3,9 +3,9 @@
         .popup_overlay(:class="{'popup-close': !isOpenPopup}")
             .close_btn(@click="$emit('close')")
                     CloseLogo
-        .popup_container(:class="{'popup-close': !isOpenPopup}" v-click-outside="onClickOutside")
-            .popup_inner-container
-                Feedback
+            .popup_container(:class="{'popup-close': !isOpenPopup}" v-click-outside="onClickOutside")
+                .popup_inner-container
+                    Feedback
 
 </template>
 
@@ -73,6 +73,8 @@
         background-color blackBackground
         opacity 1
         transition opacity .3s linear
+        overflow-y scroll
+        height 100%
 
         .close_btn
             svg
@@ -86,64 +88,56 @@
                 &:hover
                     opacity 1
 
-    .popup_container
-        text-align center
-        z-index 1000
-        position fixed
-        top 136px
-        left calc(50% - 403px)
-        width 806px
-        opacity 1
-        transition all .5s ease-in-out
-        border 1px solid rgba(255, 255, 255, 0.31)
-        box-sizing border-box
-
-        &.popup-close
-            opacity 0
-            transform translateY(55%) scale(.9)
-            visibility hidden
-        .popup_inner-container
-            position relative
-            background blackBackground
-            padding 60px 30px 50px
-        
-        h2.title-popup
-            color whiteMain
-
-    @media only screen and (max-width 1280px)
         .popup_container
-            top 55px
-            left calc(50% - 344px)
-            width 688px
+            margin 130px auto
+            text-align center
+            width 806px
+            opacity 1
+            transition all .5s ease-in-out
+            border 1px solid rgba(255, 255, 255, 0.31)
+            box-sizing border-box
 
+            &.popup-close
+                opacity 0
+                transform translateY(55%) scale(.9)
+                visibility hidden
             .popup_inner-container
-                padding 34px 30px 47px
+                position relative
+                background blackBackground
+                padding 60px 30px 50px
 
-    @media only screen and (max-width 850px)
-        .popup_container
-            top 153px
-            left calc(50% - 177px)
-            width 354px
+            h2.title-popup
+                color whiteMain
 
-            .popup_inner-container
-                padding 40px 15px 37px
+        @media only screen and (max-width 1280px)
+            .popup_container
+                margin 55px auto
+                width 688px
 
-    @media only screen and (max-width 850px) and (max-height 760px)
-        .popup_container
-            height calc(100% - 153px)
-            overflow scroll
+                .popup_inner-container
+                    padding 34px 30px 47px
 
-    @media only screen and (max-width 850px) and (max-height 450px)
-        .popup_container
-            top 30px
-            height calc(100% - 30px)
+        @media only screen and (max-width 850px)
+            .popup_container
+                margin 150px auto
+                width 354px
 
-    @media only screen and (max-width 420px)
+                .popup_inner-container
+                    padding 40px 15px 37px
 
-        .popup_overlay
-            .close_btn
-                svg
-                    right 15px
-                    top 28px
+        @media only screen and (max-width 850px) and (max-height 760px)
+            .popup_container
+                overflow scroll
+
+        @media only screen and (max-width 850px) and (max-height 450px)
+            .popup_container
+                margin 30px auto
+
+        @media only screen and (max-width 420px)
+            .popup_overlay
+                .close_btn
+                    svg
+                        right 15px
+                        top 28px
 
 </style>
