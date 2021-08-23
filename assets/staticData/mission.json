@@ -1,23 +1,23 @@
 {
     "titleRu": "Миссия",
-    "titleEng": "Title on eng",
+    "titleEng": "Mission",
     "textRu": "Возрождая традиции мы создаем историю в настоящем и формируем наследие будущего",
-    "textEng": "Text on eng",
+    "textEng": "By reviving traditions, we create history in the present and form the heritage of the future",
     "features": {
         "titleRu": "Особенности и ценности",
-        "titleEng": "Title on eng",
+        "titleEng": "Features and values",
         "items": [
             {
                 "textRu": "Каждое произведение уникально и несет художественную и историческую ценность",
-                "textEng": "Text on eng"
+                "textEng": "Each work is unique and carries artistic and historical value"
             },
             {
                 "textRu": "Работы Дома относятся к рангу инвестиционного искусства",
-                "textEng": "Text on eng"
+                "textEng": "The works of the House belong to the rank of investment art"
             },
             {
                 "textRu": "Мы стремимся к формированию семейного и исторического наследия, создавая проекты, аналогов в мире которых нет",
-                "textEng": "Text on eng"
+                "textEng": "We strive to form a family and historical heritage creating projects that have no analogues in the world"
             }
         ]
     }

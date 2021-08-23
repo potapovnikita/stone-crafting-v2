@@ -105,6 +105,17 @@ export default {
             'lang',
         ]),
     },
+    watch: {
+        activeOrderId(newVal) {
+            window.location.hash = newVal;
+        }
+    },
+    mounted() {
+        if(window.location.hash) this.activeOrderId = window.location.hash.replace('#', '');
+        if(this.activeOrderId) window.location.hash = this.activeOrderId;
+        console.log('window.location.hash', window.location.hash)
+        console.log('this.activeOrderId', this.activeOrderId)
+    },
 }
 </script>
 <style lang="stylus">
