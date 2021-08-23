@@ -281,7 +281,7 @@ export default {
     &__text-photo
         flex-shrink 2
         max-width 533px
-        width: 385px;
+        width: 385px
         text-align left
         padding-top 20px
         padding-bottom 25px
@@ -319,7 +319,7 @@ export default {
     &__video,
     &__carouselPhoto
         position relative
-        width 385px
+        width 400px
         min-height 286px
 
     @media only screen and (max-width 1280px)

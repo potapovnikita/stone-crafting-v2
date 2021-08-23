@@ -3,7 +3,7 @@
         "name": "Мастер в первом поколении",
         "nameEng": "First generation master",
         "text": "Отец Алексея Антонова, Николай Антонов, становится ведущим специалистом на&nbsp;Сибирском\nгранитном карьере. На&nbsp;протяжении десятилетий с&nbsp;его участием создается множество\nмонументальных памятников Урала: стелы памяти декабристов, постамент Жукову, монумент\nЕвропа-Азия и&nbsp;другие знаменитые достопримечательности города Екатеринбурга.",
-        "textEng": "Alexey Antonov&#39;s father, Nikolay Antonov, becomes a&nbsp;leading specialist in&nbsp;the Siberian granite quarry.\nOver the decades with his participation many monuments of&nbsp;the Urals have been created: steles in\nmemory of&nbsp;the Decembrists, a&nbsp;pedestal to&nbsp;Zhukov, a&nbsp;monument to&nbsp;Europe-Asia and other famous sights\nof&nbsp;the city of&nbsp;Yekaterinburg.",
+        "textEng": "Alexey Antonov&#39;s father Nikolay Antonov (stonemason) becomes a&nbsp;leading specialist in&nbsp;the Siberian granite quarry.\nOver the decades with his participation many monuments of&nbsp;the Urals have been created: steles in\nmemory of&nbsp;the Decembrists, a&nbsp;pedestal to&nbsp;Zhukov, a&nbsp;monument to&nbsp;Europe-Asia and other famous sights\nof&nbsp;the city of&nbsp;Yekaterinburg.",
         "year": "1968",
         "img": "img/history/1968.png",
         "pagination": {
@@ -14,20 +14,22 @@
     {
         "name": "Алексей Антонов. Начало творческого пути",
         "nameEng": "Alexey Antonov. The beginning of the path of creativity",
-        "text": "Алексей Антонов, по&nbsp;примеру отца, приобщается к&nbsp;камню и&nbsp;поступает в&nbsp;художественное\nпрофессионально техническое училище &#8470;&nbsp;42&nbsp;на специальность камнерез. Он&nbsp;заканчивает его с\nзолотой медалью от&nbsp;ВДНХ и&nbsp;высшим разрядом резчика по&nbsp;художественной обработке камня.",
-        "textEng": "Following the example of&nbsp;his father Alexey Antonov is&nbsp;fond of&nbsp;stone and enters the art vocational school\n&#8470;&nbsp;42&nbsp;for the specialty&nbsp;&mdash; stone cutter. He&nbsp;finishes it&nbsp;with a&nbsp;gold medal from VDNKh and the highest\ncategory of&nbsp;a&nbsp;carver in&nbsp;artistic stone processing.",
+        "text": "Алексей Антонов, по&nbsp;примеру отца, приобщается к&nbsp;камню и&nbsp;поступает в&nbsp;художественное\nпрофессионально техническое училище &#8470;&nbsp;42. Он&nbsp;заканчивает его с\nзолотой медалью от&nbsp;ВДНХ и&nbsp;высшим разрядом резчика по&nbsp;художественной обработке камня.",
+        "textEng": "Following the example of&nbsp;his father Alexey Antonov is&nbsp;fond of&nbsp;stone and enters the art vocational school\n&#8470;&nbsp;42&nbsp;for the specialty&nbsp;&mdash; stone cutter. He&nbsp;finishes it&nbsp;with a&nbsp;gold medal of VDNH and the highest\ncategory of&nbsp;a&nbsp;carver in&nbsp;artistic stone processing.",
         "year": "1988",
         "img": "img/history/1988.png",
         "pagination": {
             "class": "dot-1988",
             "showLabel": true
-        }
+        },
+        "textUnderPhoto": "\"Урал кует победу\". Собрание Музея училища №42",
+        "textUnderPhotoEng": "\"Ural forges victory\". Collection of the School Museum №42"
     },
     {
         "name": "",
         "nameEng": "",
         "text": "Алексей Антонов начинает работать на&nbsp;старейшем заводе &laquo;Русские Самоцветы&raquo;, история которого\nначалась ещё в&nbsp;18&nbsp;веке с&nbsp;первой гранильной фабрики, созданной по&nbsp;распоряжению императорского двора.\n С&nbsp;появлением этих фабрик началось\nразвитие камнерезного дела на&nbsp;Урале и&nbsp;в&nbsp;Санкт-Петербурге.",
-        "textEng": "Alexey Antonov begins to&nbsp;work at&nbsp;the oldest factory &laquo;Russian Gems&raquo; whose history began in&nbsp;the 18th\ncentury with the first cutting factory created by&nbsp;order of&nbsp; the imperial court.\n With the appearance of&nbsp;these factories the development of&nbsp;stone-cutting business began in\nthe Urals and St. Petersburg.",
+        "textEng": "Alexey Antonov begins to&nbsp;work at&nbsp;the oldest factory &laquo;Russian Gems&raquo; whose history began in&nbsp;the 18th\ncentury with the first cutting factory created by&nbsp;order of the Imperial Court.\n With the appearance of&nbsp;these factories the development of&nbsp;stone-cutting business began in\nthe Urals and St. Petersburg.",
         "year": "1991",
         "img": "img/history/1991.png",
         "pagination": {
@@ -39,7 +41,7 @@
         "name": "Развитие новых направлений в камнерезном деле",
         "nameEng": "Development of new directions in stone cutting",
         "text": "На&nbsp;заводе &laquo;Русские Самоцветы&raquo; Алексей Антонов начинает развивать новые направления в\nкамне: русскую, флорентийскую и&nbsp;объёмную мозаику. Благодаря этому завод начинает создавать\nуникальные работы, дополняя массовое производство, а&nbsp;город Екатеринбург возвращает\nутерянную славу камнерезного центра России. Параллельно Алексей Антонов занимается\nтворчеством и&nbsp;создаёт первые работы в&nbsp;частные коллекции.",
-        "textEng": "At&nbsp;the &laquo;Russian Gems&raquo; factory Alexey Antonov begins to&nbsp;develop new directions in&nbsp;stone: Russian,\nFlorentine and volumetric mosaics. This contributes to&nbsp;the fact that the factory begins to&nbsp;create unique\nworks complementing mass production and the city of&nbsp;Yekaterinburg returns the lost glory of&nbsp;the stone-\ncutting center of&nbsp;Russia. At&nbsp;the same time, Alexey Antonov is&nbsp;engaged in&nbsp;creativity and creates the first\nworks for private collections.",
+        "textEng": "At&nbsp;the &laquo;Russian Gems&raquo; factory Alexey Antonov begins to&nbsp;develop new directions in&nbsp;stone: Russian,\nFlorentine and volumetric mosaics. This contributes to&nbsp;the fact that the factory begins to&nbsp;create unique\nworks complementing mass production and the city of&nbsp;Yekaterinburg returns the lost glory of&nbsp;the stone-cutting center of&nbsp;Russia. At&nbsp;the same time, Alexey Antonov is&nbsp;engaged in&nbsp;creativity and creates the first\nworks for private collections.",
         "year": "1992",
         "img": "img/history/1992(1).png",
         "pagination": {
@@ -62,8 +64,8 @@
     {
         "name": "Создание бренда «Камнерезный Дом»",
         "nameEng": "Creation of the brand “Stone crafting House by Antonov”",
-        "text": "Алексей Антонов собирает лучших мастеров Урала в&nbsp;свою команду. Вместе они начинают\nреализовывать проекты и&nbsp;разрабатывать новые техники обработки камня. Создаются целые\nкомпозиции и&nbsp;сюжеты, состоящие из&nbsp;множества фигур и&nbsp;строений. Сама работа усложняется не\nтолько количеством фигурок, но&nbsp;и&nbsp;их&nbsp;связями, смыслами и&nbsp;динамичными образами.",
-        "textEng": "Alexey Antonov gathers the best masters of&nbsp;the Urals into his team. Together they begin to&nbsp;implement\nprojects and develop new stone processing techniques. Whole compositions and plots are created\nconsisting of&nbsp;many figures and buildings. The work itself is&nbsp;complicated not only by&nbsp;the number of\nfigures but also by&nbsp;their connections, meanings and dynamic images.",
+        "text": "Алексей Антонов собирает лучших мастеров Урала в&nbsp;свою команду. Вместе они начинают\nреализовывать проекты и&nbsp;разрабатывать новые техники обработки камня. Создаются целые\nкомпозиции и&nbsp;сюжеты, состоящие из&nbsp;множества фигур и&nbsp;элементов. Сама работа усложняется не\nтолько количеством фигурок, но&nbsp;и&nbsp;их&nbsp;связями, смыслами и&nbsp;динамичными образами.",
+        "textEng": "Alexey Antonov gathers the best masters of&nbsp;the Urals into his team. Together they begin to&nbsp;implement\nprojects and develop new stone processing techniques. Whole compositions and plots are created\nconsisting of&nbsp;many figures and elements. The work itself is&nbsp;complicated not only by&nbsp;the number of\nfigures but also by&nbsp;their connections, meanings and dynamic images.",
         "year": "2000",
         "img": "img/history/2000.png",
         "pagination": {
@@ -98,10 +100,10 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Создание фирменного логотипа бренда. Заглавные буквы «А», включенные в одну большую «А» в виде треугольника, символизируют миссию через соединение времен: <i>возрождая традиции, мы создаем историю в настоящем и формируем наследие будущего</i>. Круг символизирует целостность и единство времени, а значит – вечность. В середине, находящаяся буква «Н - Николай», указывает на инициалы основателя бренда – Алексея Николаевича Антонова, подчеркивая преемственность поколений.",
-        "textEng": "Creation of a corporate brand logo. Capital letters \"A\" included in one big \"A\" in the form of a triangle symbolize the mission through the connection of times: <i>by reviving traditions we create history in the present and form the legacy of the future</i>. The circle symbolizes the integrity and unity of time which means eternity. In the middle, the letter \"N - Nikolay\" indicates the initials of the brand's founder - Alexey Nikolaevich Antonov emphasizing the continuity of generations.",
+        "text": "Логотип ANTONOV символизирует связь времён и преемственность поколений – ANTique & NOVation. В центре инициалы основателя, Алексея Николаевича Антонова, в форме пирамиды, указывающей на путь от простой формы к совершенной. Круг объединяет логотип, символизирует целостность, единство времени, а значит – вечность, в которой определена природа камня.",
+        "textEng": "The ANTONOV logo symbolizes the connection of times and the continuity of generations – ANTique & NOVation. In the center there is the initials of the founder, Alexey Nikolaevich Antonov, in the form of a pyramid, indicating the path from a simple form to a perfect one. The circle unites the logo, symbolizes the integrity, unity of time, and therefore - eternity, in which the nature of the stone is determined.",
         "year": "2007",
-        "img": "img/history/2007-2.png",
+        "img": "img/history/2007.gif",
         "pagination": {
             "class": "dot-2007_2"
         }
@@ -134,7 +136,7 @@
         "name": "Инновации в камнерезном и ювелирном искусстве",
         "nameEng": "Innovations in stone carving and jewelry art",
         "text": "Камнерезного Дома Антонова учувствует в&nbsp;уникальном проекте для флагманского ресторана Caf&eacute;\nPushkin в&nbsp;Париже. Интерьер воссоздается в&nbsp;точной стилистике конца XVIII&nbsp;&mdash; начала XIX&nbsp;веков, что\nстановится непростой задачей для воплощения. Мастерам приходится изобретать заново\n\nтехнологии того времени, так как они были утеряны. В&nbsp;каминах используются редкие породы\nяшмы, месторождение которых закончилось более 100 лет назад, что создает еще большее\nсоответствие с&nbsp;той эпохой.",
-        "textEng": "&laquo;Stone crafting House by&nbsp;Antonov&raquo; participates in&nbsp;a&nbsp;unique project for the flagship restaurant Caf&eacute;\nPushkin in&nbsp;Paris. The interior is&nbsp;being recreated in&nbsp;the exact style of&nbsp;the late 18th&nbsp;&mdash; early 19th centuries\nwhich becomes a&nbsp;difficult task to&nbsp;implement. Craftsmen have to&nbsp;reinvent the technologies of&nbsp;that time\nas&nbsp;they were lost. The fireplaces use rare jasper the deposit of&nbsp;which ended more than 100 years ago. It\ncreates an&nbsp;even greater correspondence with that era.",
+        "textEng": "&laquo;Stone crafting House by&nbsp;Antonov&raquo; participates in&nbsp;a&nbsp;unique project for the flagship restaurant Caf&eacute;\nPushkin in&nbsp;Paris. The interior is&nbsp;being recreated in&nbsp;the exact style of&nbsp;the late 18th&nbsp;&mdash; early 19th centuries\nwhich becomes a&nbsp;difficult task to&nbsp;implement. Craftsmen have to&nbsp;reinvent the technologies of&nbsp;that time\nas&nbsp;its were lost. The fireplaces use rare jasper the deposit of&nbsp;which ended more than 100 years ago. It\ncreates an&nbsp;even greater correspondence with that era.",
         "year": "2017",
         "img": "img/history/2017.png",
         "pagination": {
@@ -145,7 +147,7 @@
         "name": "",
         "nameEng": "",
         "text": "Новый виток в&nbsp;развитии камнерезного дела стал возможен при использовании новой\nинновационной технологии Камнерезного Дома, которая позволила создавать работы рекордного размера.\n Одной из первых больших работ компании стала скульптура «Золотой Джокер» высотой 1 метр. Произведение охарактеризовалось как прорыв в камнерезном и ювелирном деле. Были раздвинуты рамки для безграничного творчества со столь сложным материалом как твёрдый камень.",
-        "textEng": "A new round in the development of stone cutting became possible with the use of the innovative technology of the Stone Crafting House which made it possible to create works of record size. One of the first large works of the company was the sculpture “Golden Joker” (1 meter high). The piece was described as a breakthrough in stone cutting and jewelry industry. The framework has been expanded for unlimited creativity with such a complex material as hard stone.",
+        "textEng": "A new round in the development of stone cutting industry became possible with the use of the innovative technology of the Stone Crafting House which made it possible to create works of a record size. One of the first large works of the company was the sculpture “Golden Joker” (1 meter high). The piece was described as a breakthrough in stone cutting and jewelry industry. The framework has been expanded for unlimited creativity with such a complex material as hardstones.",
         "year": "2017",
         "img": "img/history/2017(1).png",
         "afterText": "На фото: Потомок императора Александра III, Павел Куликовский-Романов, с&nbsp;супругой Людмилой\nАнтоновой.",
@@ -153,8 +155,8 @@
         "pagination": {
             "class": "dot-2017_2"
         },
-        "textUnderPhoto": "(Праправнук императора Александра III Павел Куликовский-Романов с супругой Людмилой Антоновой.)",
-        "textUnderPhotoEng": "(Great-grandson of Emperor Alexander III Pavel Kulikovsky-Romanov with his wife Lyudmila Antonova.)"
+        "textUnderPhoto": "(Праправнук императора Александра III Павел Куликовский-Романов с супругой Людмилой Антоновой)",
+        "textUnderPhotoEng": "(Great-grandson of Emperor Alexander III Pavel Kulikovsky-Romanov with his wife Lyudmila Antonova)"
     },
     {
         "name": "",
@@ -182,7 +184,7 @@
     {
         "name": "Международные проекты",
         "nameEng": "International projects",
-        "text": "Камнерезный Дом реализует международный проект &laquo;Коррида&raquo;, с&nbsp;целью содружества стран\nЕвропы и&nbsp;России. Первой работой становится камнерезная и&nbsp;ювелирная скульптура &laquo;Тореадор&raquo;,\nсоздававшаяся на&nbsp;протяжении 2-х лет и&nbsp;достигающая высоты 1,5&nbsp;метра. Передача культурных\nнациональных ценностей и&nbsp;традиций в&nbsp;камне открывает новый этап в&nbsp;развитии современного\nискусства. Работа была приурочена к&nbsp;презентации в&nbsp;Лувре в&nbsp;2019 году и&nbsp;стала одним из&nbsp;самых\nизвестных экспонатов Камнерезного Дома.",
+        "text": "Камнерезный Дом реализует международный проект &laquo;Коррида&raquo; с&nbsp;целью содружества стран\nЕвропы и&nbsp;России. Первой работой становится камнерезная и&nbsp;ювелирная скульптура &laquo;Тореадор&raquo;,\nсоздававшаяся на&nbsp;протяжении 2-х лет и&nbsp;достигающая высоты 1,5&nbsp;метра. Передача культурных\nнациональных ценностей и&nbsp;традиций в&nbsp;камне открывает новый этап в&nbsp;развитии современного\nискусства. Работа была приурочена к&nbsp;презентации в&nbsp;Лувре в&nbsp;2019 году и&nbsp;стала одним из&nbsp;самых\nизвестных экспонатов Камнерезного Дома.",
         "textEng": "The &laquo;Stone crafting House&raquo; implements the international project &laquo;Bullfighting&raquo; with the aim of&nbsp;the\ncommonwealth of&nbsp;the countries of&nbsp;Europe and Russia. The first work is&nbsp;the stone carving and jewelry\nsculpture &laquo;Toreador&raquo; which was created over 2&nbsp;years and reaching a&nbsp;height of&nbsp;1.5&nbsp;meters. The passing\ncultural national values and traditions in&nbsp;stone opens a&nbsp;new stage in&nbsp;the development of&nbsp;contemporary\nart. The work was timed to&nbsp;coincide with the presentation at&nbsp;the Louvre in&nbsp;2019 and became one of&nbsp;the\nmost famous exhibits of&nbsp;the &laquo;Stone crafting House&raquo;.",
         "year": "2019",
         "img": "img/history/2019.png",
@@ -194,7 +196,7 @@
     {
         "name": "",
         "nameEng": "",
-        "text": "Завершение грандиозного проекта &laquo;Коррида&raquo;, создававшегося на протяжении семи лет.В проект вошли инновационные скульптуры бренда: <a href=\"/collections\"><u>Тореадор, Фламенко, Лазурный Бык.</u></a> В каждой работе скрыта особая технология и новые техники работы с камнем, достигнуты мировые рекорды в области камнерезного и ювелирного искусства.",
+        "text": "Завершение грандиозного проекта &laquo;Коррида&raquo;, создававшегося на протяжении семи лет. В проект вошли инновационные скульптуры бренда: <a href=\"/collections\"><u>Тореадор, Фламенко, Лазурный Бык.</u></a> В каждой работе скрыта особая технология и новые техники работы с камнем, достигнуты мировые рекорды в области камнерезного и ювелирного искусства.",
         "textEng": "Completion of the grandiose project \"Bullfighting\" which was created over seven years. The project includes innovative sculptures of the brand: <a href=\"/collections\"><u>Toreador, Flamenco, Azure Bull.</u></a> Each work contains a special technology and new techniques for working with stones. The project has been achieved world records in the field of stone-cutting and jewelry art.",
         "year": "2020",
         "video": "img/history/2020.mp4",

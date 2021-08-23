@@ -17,7 +17,7 @@
                         Awards
 
                 .about-container__description-content
-                    h2.about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
+                    about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                     .about-container__description-double-line
                     p.about-container__description-text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 
@@ -39,11 +39,11 @@
             .text
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu3 : company.aboutTitleEng3")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu3 : company.aboutEng3")
-                .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
-                    a(:href="lang === 'ru' ? getImgExternal(company.link3) : getImgExternal(company.linkEng3)" target="_blank") {{lang === 'ru' ? 'Подробнее' : 'More'}}
-                .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link3 || lang === 'eng' && company.linkEng3")
+                .descriptionAbout__btn-desktop(v-if="company.link3")
+                    a(:href="company.link3") {{lang === 'ru' ? 'Подробнее' : 'More'}}
+                .descriptionAbout__btn-mobile(v-if="company.link3")
                     .descriptionAbout__line
-                    a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link3) : getImgExternal(company.linkEng3)" target="_blank" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
+                    a.descriptionAbout__link(:href="company.link3" v-html="lang === 'ru' ? 'Подробнее' : 'More'")
 
         .descriptionAbout.reverse
             .text.left
@@ -215,7 +215,7 @@
         &__description
             display flex
             justify-content space-between
-            max-width 1420px
+            max-width 1400px
             padding-left 70px
             margin-bottom 50px
 
@@ -240,9 +240,14 @@
             max-width 652px
             padding-left 60px
             text-align left
+            font-family: TenorSans-Regular, Arial, Helvetica, sans-serif;
+            color: #fce086
+            font-weight: 400
+            letter-spacing: 0.03em
+            font-size 21px
 
         &__description-title
-            max-width 405px
+            max-width 705px
             margin-bottom 40px
             line-height 52px
             text-align left
@@ -254,6 +259,7 @@
             border 1px solid goldNew
             border-left none
             border-right none
+            margin-top 30px
 
         &__description-text
             text-align left
@@ -548,8 +554,7 @@
                 background-position center right
 
             &__description
-                justify-content space-between
-                max-width unset
+                justify-content space-evenly
                 padding 0
                 margin 0
                 margin-bottom 40px
