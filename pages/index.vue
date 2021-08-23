@@ -1,6 +1,5 @@
 <template lang="pug">
     page-container
-        //page-preload
         Header(placeholder="true")
         main-page
 
@@ -9,14 +8,12 @@
 <script>
 import MainPage from '~/components/pagesComponents/Main.vue'
 import PageContainer from '~/components/PageContainer.vue'
-import PagePreload from '~/components/PagePreload.vue'
 import Header from '~/components/Header.vue'
 
 export default {
     components: {
         MainPage,
         PageContainer,
-        PagePreload,
         Header,
     },
     head() {
