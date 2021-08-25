@@ -21,7 +21,9 @@
 
         .galleryAbout-block
             .galleryAbout-block__media
-                img.galleryAbout-block__photo(src="~/assets/img/news/torero-prev.png" alt="img")
+                img.galleryAbout-block__photo(v-if="currentProduct.ImgUderVideo && !currentProduct.VideoUderVideo" :src="getImg(currentProduct.ImgUderVideo)")
+                video.galleryAbout-block__photo(v-if="currentProduct.VideoUderVideo && !currentProduct.ImgUderVideo" playsinline autoplay loop="true" muted="muted")
+                    source(:src="getImgExternal(currentProduct.VideoUderVideo)" type="video/mp4")
             .galleryAbout-block__info
                 .galleryAbout-block__content
                     h2.galleryAbout-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
@@ -33,8 +35,7 @@
         ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
 
         .gallerySmi-block(v-if="currentProduct.media")
-            h2.gallerySmi-block__title
-                | СМИ о тореадоре
+            h2.gallerySmi-block__title {{ lang === 'ru' ? currentProduct.titleNews : currentProduct.titleNewsEng }}
 
             .gallerySmi-block__double-line
 
@@ -141,6 +142,9 @@ export default {
         getImg(url) {
             return getImgExternal(url)
         },
+        getImgExternal(url) {
+            return getImgExternal(url)
+        },
     },
 }
 </script>
@@ -221,7 +225,7 @@ export default {
             width 100%
 
         &__info
-            flex-basis 718px
+            flex-basis 800px
             flex-shrink 2
             text-align left
 
@@ -262,7 +266,7 @@ export default {
             border-left none
             border-right none
 
-    
+
     @media only screen and (max-width 1680px)
         .galleryAbout-block
             justify-content space-between
@@ -282,6 +286,9 @@ export default {
             &__title
                 font-size 48px
                 margin-bottom 16px
+
+        .video-container
+            height auto
 
         .galleryAbout-block
             justify-content center
@@ -318,7 +325,6 @@ export default {
             padding 40px 0
 
             &__media
-                flex-basis 350px
 
             &__info
                 flex-basis 380px

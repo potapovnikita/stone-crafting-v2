@@ -1,18 +1,18 @@
 [
     {
         "id": "torero",
-        "title": "Тореадор",
-        "titleEng": "Torero",
-        "text": "Это самая большая в мире скульптура, выполненная из драгоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.",
-        "textEng": "Text on eng",
-        "img": "img/collections/torero/0.png"
+        "title": "Коллекция «Коррида»",
+        "titleEng": "The \"Bullfighting\" collection",
+        "text": "Грандиозный международный проект \"Коррида\", создававшийся на протяжении семи лет.\n\nВ проект вошли инновационные скульптуры бренда: Тореадор, Фламенко, Лазурный Бык.",
+        "textEng": "The grandiose international project \"Bullfighting\" was created for seven years.\n\nThe project includes innovative sculptures of the brand: Bullfighter, Flamenco, Azure Bull.",
+        "img": "img/collections/torero/torero1.png"
     },
     {
         "id": "jokerNew",
         "title": "Джокер",
         "titleEng": "The Golden Joker",
-        "text": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
-        "textEng": "A playing card with image of a court jester.",
+        "text": "Одна из первых инновационных скульптур Дома. <br><br>Вся жизнь – игра и есть особая карта удачи, на которой изображен хозяин игры – «Джокер».\n",
+        "textEng": "One of the first innovative sculptures by the ANTONOV House. <br><br>Life is a game and there is a special luck card which depicts the owner of the game - \"Joker\".\n",
         "img": "img/collections/joker/0.png",
         "background": "img/collections/joker/1.png"
     },

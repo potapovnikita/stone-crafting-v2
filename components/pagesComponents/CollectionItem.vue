@@ -71,7 +71,7 @@
         display flex
         justify-content space-between
         align-items center
-    
+
     &__content
         text-align left
 
@@ -150,7 +150,7 @@
 
     &__wrapper-media
         max-width 513px
-        min-height 813px
+        min-height 513px
 
     @media only screen and (max-width 1280px)
         margin-top 71px
@@ -170,8 +170,8 @@
             max-width 812px
 
         &__wrapper-media
-            max-width 410px
-            min-height 650px
+            max-width 480px
+            min-height 400px
 
     @media only screen and (max-width 840px)
         margin-top 22px
@@ -191,7 +191,7 @@
 
         &__wrapper-media
             max-width 271px
-            min-height 432px
+            min-height 280px
             margin-bottom 23px
 
     @media only screen and (max-width 390px)
@@ -700,7 +700,7 @@
 
         &__wrapper-media
             max-width 295px
-            min-height 544px            
+            min-height 544px
 
     @media only screen and (max-width 840px)
         margin-top 10px
@@ -1909,7 +1909,7 @@
     .model__text
         width 100%
         max-width unset
-    
+
     @media only screen and (max-width 1471px)
         &__bg
             left -10%
@@ -1999,7 +1999,7 @@
     .model__text
         width 100%
         max-width unset
-    
+
     @media only screen and (max-width 1373px)
         &__bg
             left -10%

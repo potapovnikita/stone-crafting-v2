@@ -1,7 +1,7 @@
 {
     "id": "torero",
-    "name": "Тореадор",
-    "nameEng": "Torero",
+    "name": "Инновационная коллекция «Коррида»",
+    "nameEng": "Innovative collection \"Bullfighting\"",
     "creation": {
         "title": "Год создания: 2019",
         "titleEng": "Year of creation: 2019"
@@ -9,12 +9,15 @@
     "img": "img/stone-art/historical/torero/preview/1.jpg",
     "shortDesc": "Камнерезная и ювелирная скульптура. <br><br> Это самая большая в мире скульптура, выполненная из\nдрагоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.",
     "shortDescEng": "Stone carving and jewelry sculpture.<br><br>This is the largest stone carving figure in the world.",
-    "description": "Камнерезная и ювелирная скульптура.<br><br>Это самая большая в мире скульптура, выполненная из\nдрагоценных, полудрагоценных камней и металлов, в технике объемной каменной мозаики.<br><br>Уникальная техника, изобретенная нашей командой, позволила создавать работы более метра в\nвысоту. Детализация и реалистичность скульптуры такой высоты - настоящий прорыв в отрасли.\nЗавершение работы было приурочено к презентации в Лувре в 2019 году. Работа создавалась\nбрендом ANTONOV более 2-х лет.",
+    "description": "В 2020 году Камнерезный Дом Антонова завершает международный проект «Коррида», создававшийся на протяжении семи лет. В проект вошли инновационные скульптуры бренда: Тореадор, Фламенко, Лазурный Бык. <br><br>Коллекция «Коррида» носит особую дипломатическую миссию – «Искусство объединяет». \nЕё целью является объединение культур наций мира.\n",
     "about": "<b>Камни:</b> кахолонг, яшма, гранат, долерит, родонит, кристалл, кремний, родонит, соколиный глаз. <br><br> <b>Металл:</b> бронза, серебро, золото, серебрение, золочение. <br><br> <b>Год создания:</b> 2019.",
-    "descriptionEng": "Stone carving and jewelry sculpture.<br><br>This is the largest stone carving figure in the world. <br><br>The unique technique invented by our company made it possible to create works over a meter in height.\nThe Toreador was created for an exhibition at the Louvre in 2019. The detail and realism in the sculpture\nof this height is a real breakthrough in the industry.<br><br>The work was created for more than 2 years by the ANTONOV brand.",
+    "descriptionEng": "In 2020 the Stone-Crafting House by Antonov is completing the international \"Bullfighting\" project which has been created over the course of seven years. The project includes innovative sculptures of the brand: Toreador, Flamenco, Azure Bull. <br><br>The \"Bullfighting\" collection carries a special diplomatic mission – \"Art unites\".\n\nIts goal is to unite the cultures of the nations of the world.",
     "aboutEng": "<b>Stones:</b>  cacholong, jasper, garnet, dolerite, rhodonite, crystal, silicon, rhodonite, falcon eye. <br><br> <b>Metals:</b> bronze, silver, gold, silvering, gilding. <br><br> <b>Year of creation:</b> 2019.",
     "video": "video/gallery/toreo.mp4",
+    "VideoUderVideo": "img/museum/torero.mp4",
     "background": "img/stone-art/historical/torero/1.png",
+    "titleNews": "О коллекции",
+    "titleNewsEng": "About collection",
     "imagesFull": [
         "img/stone-art/historical/torero/1.png",
         "img/stone-art/historical/torero/2.png",
@@ -95,49 +98,72 @@
     ],
     "media": [
         {
-            "img": "img/GalleryNew/torero-unit.png",
+            "img": "img/GalleryNew/torero-unit1.png",
             "mediaBlockClass": "",
-            "title": "Новостной заголовок",
-            "titleEng": "Title Eng",
-            "text": "В давние времена традиции камнерезов передавались среди «своих», а секреты создания художественных работ не разглашались. Только спустя десятилетия Алексей Антонов и его команда достигли высочайшего мастерства камнеобработки и являются одними из немногих хранителями этих знаний и традиций.",
-            "textEng": "Text eng"
-        },
-        {
-            "video": "video/gallery/toreo.mp4",
-            "mediaBlockClass": "",
-            "title": "Новостной заголовок",
-            "titleEng": "Title Eng",
-            "text": "В давние времена традиции камнерезов передавались среди «своих», а секреты создания художественных работ не разглашались. Только спустя десятилетия Алексей Антонов и его команда достигли высочайшего мастерства камнеобработки и являются одними из немногих хранителями этих знаний и традиций.",
-            "textEng": "Text eng"
-        },
-        {
-            "videoLink": "https://www.youtube.com/embed/Ou2HLSY7Ie4?rel=0&showinfo=0",
-            "mediaBlockClass": "",
-            "title": "Новостной заголовок",
-            "titleEng": "Title Eng",
-            "text": "В давние времена традиции камнерезов передавались среди «своих», а секреты создания художественных работ не разглашались. Только спустя десятилетия Алексей Антонов и его команда достигли высочайшего мастерства камнеобработки и являются одними из немногих хранителями этих знаний и традиций.",
-            "textEng": "Text eng"
-        },
-        {
-            "videoLink": "https://www.youtube.com/embed/Ou2HLSY7Ie4?rel=0&showinfo=0",
-            "mediaBlockClass": "",
-            "title": "Новостной заголовок",
-            "titleEng": "Title Eng",
-            "text": "Смотрите новый выпуск телеканала Пятница @fridaytv @orelireshka_official и погружайтесь в МИР КАМНЯ. Камнерезный Дом Алексея Антонова открывает двери @klavacoca, чтобы удивить красотой уральских произведений искусства.",
-            "textEng": "Text eng",
-            "wideBlock": true
+            "title": "",
+            "titleEng": "",
+            "text": "Тореадор – самая большая в мире скульптура (1 метр 35 см), выполненная из драгоценных, полудрагоценных камней и металлов в технике объемной каменной мозаики. <br><br>Произведение создавалась брендом ANTONOV более 2-х лет, а его завершение было приурочено к презентации в Лувре в 2019 году.",
+            "textEng": "The bullfighter is the world's largest sculpture (1 meter 35 cm) made of precious, semi-precious stones and metals in the technique of three-dimensional stone mosaic. <br><br>The work was created by the ANTONOV brand for more than 2 years and its completion was timed to coincide with the presentation at the Louvre in 2019."
         },
         {
             "img": "img/GalleryNew/torero-unit2.png",
             "mediaBlockClass": "",
-            "title": "Новостной заголовок",
-            "titleEng": "Title Eng",
-            "text": "Камнерезный Дом Алексея Антонова. В Лихтенштейне открылась выставка «Герои. История в шедеврах уральских камнерезов» ЭКСПОЗИЦИЯ ПРЕДСТАВЛЕНА В НАЦИОНАЛЬНОМ МУЗЕЕ ЛИХТЕНШТЕЙНА В среду, 23 марта 2016, в Национальном музее Лихтенштейна собрались галеристы, коллекционеры, журналисты и критики, чтобы познакомиться с экспозицией уральского камнерезного искусства «Герои. История в шедеврах уральских камнерезов».",
-            "textEng": "Text eng",
+            "title": "",
+            "titleEng": "",
+            "text": "В каждой скульптуре коллекции скрыта особая технология, позволяющая достичь больших размеров композиции, применяются редкие минералы, которые уже не встречаются в природе. Для проекта были разработаны 4 инновационные техники работы с камнем: русская и флорентийская мозаика объемных форм, объемная мозаика крупных форм и кракелюровая мозаика. <br><br>Первый, представленный публике, стал «Тореадор», а уже в 2020 году коллекцию дополнили скульптуры «Фламенко» и «Лазурный бык».",
+            "textEng": "Each sculpture in the collection contains a special technology that allows to achieve large composition sizes, using rare minerals that are no longer found in nature. For the project, 4 innovative techniques for working with stone were created: Russian and Florentine three-dimensional mosaics, large three-dimensional mosaic and craquelure mosaic. <br><br>The first presented to the public was \"Toreador\" and already in 2020 the collection was supplemented by sculptures \"Flamenco\" and \"Azure Bull\"."
+        },
+        {
+            "img": "img/GalleryNew/torero-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Синюю ткань костюма маэстро воссоздает необычного цвета камень родусит, единственное месторождение которого уже иссякло, а имитацию объемной̆ вышивки украшают 420 подвесов, сплетенных вручную из более чем 11 000 жемчужин. Ярким элементом композиции становится родонит исключительно малинового цвета, добыча которого не ведется уже более ста лет. <br><br>Полотно струящейся мулеты собрано из тысяч кусочков яшмы идеально подобранного оттенка в единую форму, кажущуюся монолитной, а на ее фоне виднеется тень быка.",
+            "textEng": "The blue fabric of the maestro's costume is recreated by the unusual color of the rhodusite stone the only deposit of which has already dried up. The imitation of volumetric embroidery is decorated with 420 hand-woven pendants from more than 11,000 pearls. A striking element of the composition is exclusively crimson rhodonite which has not been mined for more than a hundred years. <br><br>The canvas of flowing muleta is assembled from thousands of pieces of jasper of a perfectly matched shade into a single form that seems monolithic and against its background we can see the shadow of the bull."
+        },
+        {
+            "img": "img/GalleryNew/torero-unit4.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Эмоциональный и сосредоточенный Тореадор застыл на мгновение, чтобы совершить свое победоносное действие в сопротивлении с быком. Его кожа выполнена из крайне редкого цельного кремния, что является феноменом, так как обычно таких больших размеров однотонного минерала не встречается в природе.",
+            "textEng": "The emotional and focused Toreador froze for a moment to perform his victorious action against the bull. His skin is made of extremely rare solid silicon which is a phenomenon because such a large-sized monophonic mineral is extremely rare in nature."
+        },
+        {
+            "img": "img/GalleryNew/torero-unit5.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Камнерезно-ювелирная скульптура «Фламенко» соединилась с «Тореадором» в ансамбле двух невероятно сложных и трудоемких произведений. В скульптуре-девушке применяется особая техника – флорентийская мозаика в объёме. Так, мы видим, что ее юбка создана из разного набора каменной мозаики в струящейся объемной форме.  <br><br>Камни: лепидолит, флюорит, родонит, кварц, топаз, яшма, долерит, окаменелое дерево, мрамор. Металл: серебро, бронза, золочение.",
+            "textEng": "The stone-carving and jewelry sculpture \"Flamenco\" was combined with \"Toreador\" in an ensemble of two incredibly complex and time-consuming works. In the girl sculpture a special technique is used – Florentine mosaic in volume. So, we see that her skirt is created from a different set of stone mosaics in a flowing three-dimensional form.  <br><br>Stones: lepidolite, fluorite, rhodonite, quartz, topaz, jasper, dolerite, petrified wood, marble. <br><br>Metal: silver, bronze, gilding.\n",
             "more": {
                 "text": "Камнерезный Дом Алексея Антонова. В Лихтенштейне открылась выставка «Герои. История в шедеврах уральских камнерезов» ЭКСПОЗИЦИЯ ПРЕДСТАВЛЕНА В НАЦИОНАЛЬНОМ МУЗЕЕ ЛИХТЕНШТЕЙНА В среду, 23 марта 2016, в Национальном музее Лихтенштейна собрались галеристы, коллекционеры, журналисты и критики, чтобы познакомиться с экспозицией уральского камнерезного искусства «Герои. История в шедеврах уральских камнерезов». История в шедеврах уральских камнерезов». С приветственными словами выступили куратор проекта Александр Шмотьев, директор Национального музея Лихтенштейна Райнер Фолькоммер, Почетный консул Российской Федерации в Лихтенштейне Клаус Чючер, Чрезвычайный и Полномочный Посол Российской Федерации в Швейцарской Конфедерации Александр Головин. После завершения торжественной части состоялась экскурсия по экспозиции для всех желающих. Первые посетители выставки уже увидели объёмные мозаики, посвященные Александру Македонскому, Чингисхану, Тамерлану, Александру Суворову, Петру I и многим другим выдающимся историческим деятелям. Все произведения выполнены из натуральных камней уральскими мастерами в последние несколько лет. Таким образом, серия представляет все самое актуальное, что есть в одном из самых традиционных искусств России.",
                 "textEng": "Text eng"
             }
+        },
+        {
+            "img": "img/GalleryNew/torero-unit6.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Изобретение техники «Кракелюровая мозаика» <br><br> Лазурный Бык – первая работа, созданная в данной технике. Это камнерезная скульптура с эффектом золотого кракелюра и мозаичного набора однородного камня в сочетании с металлом. Эта технология выходит за рамки стандартных техник камнерезного искусства. Данный принцип может считаться новым направлением работы с камнем. <br><br>Создаётся впечатление, что от напора эмоций быка трескается его лазуритовая кожа и проявляется изнутри золото, которое заполняет все трещины. Здесь скрыта философская мысль: «То, что наполняет нас изнутри, то движет нами снаружи».",
+            "textEng": "Invention of the Craquelure Mosaic technique <br><br>The Azure Bull is the first work created using this technique. This is a stone-cut sculpture with the effect of golden craquelure and a mosaic set of homogeneous stone combined with metal. This technology goes beyond the standard techniques of stone-cutting art. This principle can be considered as a new direction in working with stone. <br><br>It seems that from the pressure of the bull's emotions its lapis lazuli skin is cracking and gold appears from within which fills all the cracks. A philosophical thought is hidden here: \"What fills us from the inside moves us from the outside.\""
+        },
+        {
+            "img": "img/GalleryNew/torero-unit7.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Само действие корриды берет свои истоки из мифологии: борьба людей с богами, высшими силами. В сравнение этому приводится противостояние «Тореадора» и «Синего быка», мифического персонажа. Противостояние происходит и в двух противоположностях мужского и женского начала, «Тореадоре» и «Фламенко», которые в соединении уравновешивают друг друга.",
+            "textEng": "The action of bullfighting takes its origins from mythology: the struggle of people with Gods, higher powers. This is compared to the confrontation between \"Toreador\" and \"Blue Bull\", a mythical character. The opposition also takes place in two opposites of masculine and feminine principles, \"Toreador\" and \"Flamenco\" which in conjunction balance each other."
+        },
+        {
+            "img": "img/GalleryNew/torero-unit8.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Финальным штрихом всей композиции выступает общее взаимодействие. <br><br>Тень виртуозного движения рук «Фламенко» отражается в образе быка на мулете самого «Тореадора». Так, все три скульптуры создают единство действия. <br><br>В этом проявляется основная мысль проекта: «В объединении есть сила намного больше, чем в действии одного».",
+            "textEng": "The final touch of the whole composition is the overall interaction. <br><br>The shadow of Flamenco's virtuoso hand movement is reflected in the image of a bull on the Toreador’s red muleta. So, all three sculptures are a unity of action. <br><br>This is the main idea of the project: \"There is much more power in the union than in the action of one.\""
         }
     ],
     "modelMap": {
