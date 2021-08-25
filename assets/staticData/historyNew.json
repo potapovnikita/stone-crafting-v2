@@ -5,7 +5,16 @@
         "text": "Отец Алексея Антонова, Николай Антонов, становится ведущим специалистом на&nbsp;Сибирском\nгранитном карьере. На&nbsp;протяжении десятилетий с&nbsp;его участием создается множество\nмонументальных памятников Урала: стелы памяти декабристов, постамент Жукову, монумент\nЕвропа-Азия и&nbsp;другие знаменитые достопримечательности города Екатеринбурга.",
         "textEng": "Alexey Antonov&#39;s father Nikolay Antonov (stonemason) becomes a&nbsp;leading specialist in&nbsp;the Siberian granite quarry.\nOver the decades with his participation many monuments of&nbsp;the Urals have been created: steles in\nmemory of&nbsp;the Decembrists, a&nbsp;pedestal to&nbsp;Zhukov, a&nbsp;monument to&nbsp;Europe-Asia and other famous sights\nof&nbsp;the city of&nbsp;Yekaterinburg.",
         "year": "1968",
-        "img": "img/history/1968.png",
+        "slides" : [
+            {
+                "id": "fist_1968",
+                "img": "img/history/1968/0.png"
+            },
+            {
+                "id": "second_1968",
+                "img": "img/history/1968/1.jpg"
+            }
+        ],
         "pagination": {
             "class": "dot-1968",
             "showLabel": true

@@ -18,6 +18,15 @@
                                     p.histoyAbout__text(v-html="lang === 'ru' ? item.text : item.textEng")
                                 .histoyAbout__media
                                     .histoyAbout__circle
+                                    .histoyAbout__images(v-if="item.slides")
+                                        ImagesSwitcher(:images="item.slides")
+                                            template(v-slot:default="slotProps")
+                                                .histoyAbout__images-controls
+                                                    .histoyAbout__images-dot(
+                                                        v-for="(item, index) in item.slides"
+                                                        :key="item.id"
+                                                        :class="{'active': index === slotProps.activeImg}"
+                                                        @click="() => slotProps.switchTo(index)")
                                     img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
                                     video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
                                         source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
@@ -46,15 +55,17 @@
 <script>
 import { mapState } from 'vuex'
 import History from '~/assets/staticData/historyNew.json'
-import { getImgExternal } from '~/plugins/getUrl'
+import { getImgExternal, getImgLocal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
 import HistoryMobileSlider from '@/components/blocksComponents/HistoryMobileSlider'
+import ImagesSwitcher from '@/components/blocksComponents/ImagesSwitcher'
 
 export default {
     name: 'HistoryNew',
     components: {
         ButtonArrow,
         HistoryMobileSlider,
+        ImagesSwitcher,
     },
     data() {
         return {
@@ -64,6 +75,9 @@ export default {
         }
     },
     methods: {
+        getLocal(url) {
+            return getImgLocal(url)
+        },
         getImg(url) {
              return getImgExternal(url)
         },
@@ -322,6 +336,31 @@ export default {
         width 400px
         min-height 286px
 
+    &__images
+        display block
+        width 400px
+        min-height 286px
+
+    &__images-controls
+        position absolute
+        top calc(50% - 6px)
+        left -60px
+        display flex
+        justify-content center
+
+        & > div + div
+            margin-left 12px
+
+    &__images-dot
+        width 12px
+        height 12px
+        border 1px solid #616D76
+        border-radius 50%
+        cursor pointer
+
+        &.active
+            background goldNew
+
     @media only screen and (max-width 1280px)
         &__title
             margin-bottom 28px
@@ -463,6 +502,12 @@ export default {
                 display block
                 width 701px
                 overflow hidden
+
+        &__images-controls
+            width 100%
+            top unset
+            left 0
+            bottom -40px
 
     @media only screen and (max-width 767px)
         &__slides-panel
