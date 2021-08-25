@@ -29,8 +29,18 @@
                     h2.galleryAbout-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
                     .galleryAbout-block__double-line
                     p.galleryAbout-block__text(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
+        .bullfightingSwitcher(v-if="currentProduct.id === 'torero'")
+            .corridaButtons-container
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'torero'}" @click="setCorridaSwitcher('torero')")
+                    | {{lang === 'ru' ? 'Тореадор' : 'Bullfighter'}}
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'flamenco'}" @click="setCorridaSwitcher('flamenco')")
+                    | {{lang === 'ru' ? 'Фламенко' : 'Flamenco'}}
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'bull'}" @click="setCorridaSwitcher('bull')")
+                    | {{lang === 'ru' ? 'Лазурный Бык' : 'Azure Bull'}}
 
-        GalleryPhotosSlider(v-if="currentProduct.imagesPreview" :imgSrcList="currentProduct.imagesPreview")
+            GalleryPhotosSlider(:imgSrcList="getImgSrcListForCorrida(currentProduct)")
+
+        GalleryPhotosSlider(v-if="currentProduct.imagesPreview && currentProduct.id !== 'torero'" :imgSrcList="currentProduct.imagesPreview")
 
         ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
 
@@ -95,6 +105,7 @@ export default {
     },
     data() {
         return {
+            forCorridaSwitcher: 'torero',
             models: {
                 torero: Torero,
                 jokerNew: JokerNew,
@@ -145,6 +156,18 @@ export default {
         getImgExternal(url) {
             return getImgExternal(url)
         },
+        getImgSrcListForCorrida(product) {
+            switch (this.forCorridaSwitcher) {
+                case "torero": return product.imagesPreviewTorero;
+                case "flamenco": return product.imagesPreviewFlamenco;
+                case "bull": return product.imagesPreviewBull;
+                default: return product.imagesPreviewTorero;
+            }
+        },
+        setCorridaSwitcher(type) {
+            this.forCorridaSwitcher = type;
+            console.log('type', type)
+        }
     },
 }
 </script>
@@ -266,6 +289,25 @@ export default {
             border-left none
             border-right none
 
+    .corridaButtons-container
+        display flex
+        flex-direction row
+        justify-content center
+        margin 0 auto
+
+        &_btn
+            font-size 29px
+            line-height 150%
+            white-space nowrap
+            margin 0 10px
+            width: 140px
+
+            &:hover
+                cursor pointer
+                color goldNew
+
+            &.active
+                color goldNew
 
     @media only screen and (max-width 1680px)
         .galleryAbout-block
@@ -274,6 +316,8 @@ export default {
 
             &__content
                 padding-left 42px
+
+
 
     @media only screen and (max-width 1280px)
         .header-container
@@ -319,6 +363,9 @@ export default {
 
             &__title
                 margin-bottom 38px
+
+        .corridaButtons-container_btn
+            font-size 26px
 
     @media only screen and (max-width 1023px)
         .galleryAbout-block
@@ -416,6 +463,9 @@ export default {
             height 563px
             background url('~assets/img/collections/bg-m.png') no-repeat
             background-size cover
+
+        .corridaButtons-container_btn
+            font-size 18px
 
     @media only screen and (max-width 490px)
         .galleryAbout-block

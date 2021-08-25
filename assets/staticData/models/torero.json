@@ -57,7 +57,7 @@
         "img/stone-art/historical/torero/36.png",
         "img/stone-art/historical/torero/37.png"
     ],
-    "imagesPreview": [
+    "imagesPreviewTorero": [
         "img/stone-art/historical/torero/preview/1.png",
         "img/stone-art/historical/torero/preview/2.png",
         "img/stone-art/historical/torero/preview/3.png",
@@ -94,7 +94,48 @@
         "img/stone-art/historical/torero/preview/34.png",
         "img/stone-art/historical/torero/preview/35.png",
         "img/stone-art/historical/torero/preview/36.png",
-        "img/stone-art/historical/torero/preview/37.png"
+        "img/stone-art/historical/torero/preview/37.png",
+        "img/stone-art/historical/torero/preview/38.png"
+    ],
+    "imagesPreviewFlamenco": [
+        "img/stone-art/historical/flamenco/preview/1.png",
+        "img/stone-art/historical/flamenco/preview/2.png",
+        "img/stone-art/historical/flamenco/preview/3.png",
+        "img/stone-art/historical/flamenco/preview/4.png",
+        "img/stone-art/historical/flamenco/preview/5.png",
+        "img/stone-art/historical/flamenco/preview/6.png",
+        "img/stone-art/historical/flamenco/preview/7.png",
+        "img/stone-art/historical/flamenco/preview/8.png",
+        "img/stone-art/historical/flamenco/preview/9.png",
+        "img/stone-art/historical/flamenco/preview/10.png",
+        "img/stone-art/historical/flamenco/preview/11.png",
+        "img/stone-art/historical/flamenco/preview/12.png",
+        "img/stone-art/historical/flamenco/preview/13.png",
+        "img/stone-art/historical/flamenco/preview/14.png",
+        "img/stone-art/historical/flamenco/preview/15.png",
+        "img/stone-art/historical/flamenco/preview/16.png",
+        "img/stone-art/historical/flamenco/preview/17.png",
+        "img/stone-art/historical/flamenco/preview/18.png",
+        "img/stone-art/historical/flamenco/preview/19.png",
+        "img/stone-art/historical/flamenco/preview/20.png",
+        "img/stone-art/historical/flamenco/preview/21.png",
+        "img/stone-art/historical/flamenco/preview/22.png"
+    ],
+    "imagesPreviewBull": [
+        "img/stone-art/historical/bull/preview/1.png",
+        "img/stone-art/historical/bull/preview/2.png",
+        "img/stone-art/historical/bull/preview/3.png",
+        "img/stone-art/historical/bull/preview/4.png",
+        "img/stone-art/historical/bull/preview/5.png",
+        "img/stone-art/historical/bull/preview/6.png",
+        "img/stone-art/historical/bull/preview/7.png",
+        "img/stone-art/historical/bull/preview/8.png",
+        "img/stone-art/historical/bull/preview/9.png",
+        "img/stone-art/historical/bull/preview/10.png",
+        "img/stone-art/historical/bull/preview/11.png",
+        "img/stone-art/historical/bull/preview/12.png",
+        "img/stone-art/historical/bull/preview/13.png",
+        "img/stone-art/historical/bull/preview/14.png"
     ],
     "media": [
         {
