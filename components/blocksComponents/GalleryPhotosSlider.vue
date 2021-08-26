@@ -11,7 +11,7 @@
                             img.galleryPhotos__photo(:src="getImg(imgSrc)" alt="img")
 
         ButtonArrow.galleryPhotos__buttons.right(:onClick="nextSlide" arrowRight)
-    
+
     .galleryPhotos__info
         .galleryPhotos__buttons-mobile
             ButtonArrow(:onClick="prewSlide")
@@ -51,7 +51,7 @@ export default {
         handlePageChange(num) {
             this.currentSlide = num + 1
         },
-    },  
+    },
 }
 </script>
 <style lang="stylus" scoped>

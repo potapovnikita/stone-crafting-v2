@@ -8,13 +8,16 @@
     "img": "img/stone-art/historical/makedon/preview/1.jpg",
     "shortDesc": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
     "shortDescEng": "Conqueror and king of Macedonia",
-    "description": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э.",
+    "description": "Царь Македонии, основатель мировой эллинистической державы. 356-323 до н.э. <br><br>Великий полководец античности вошел в историю как непревзойдённый завоеватель. Выбор стратегии Македонского и сила войск, готовых идти за ним, оказали особое влияние в его победах.",
     "about": "<b>Камни:</b> пирит, флюорит, амазонит, халцедон, кварцит, родонит, яшма, тигровый глаз, долерит, радусит, кахолонг, мрамор. <br><br> <b>Металл:</b> золото, серебро, бронза. <br><br> <b>Год создания:</b> 2019.",
     "nameEng": "Alexander the Great",
-    "descriptionEng": "Conqueror and king of Macedonia",
+    "descriptionEng": "The conqueror and king of Macedonia. <br><br>The great commander of antiquity went down in history as an unsurpassed conqueror. The choice of the right strategy and the strength of army ready to follow him had a particular influence in the victories.",
     "aboutEng": "<b>Stones:</b> pyrite, fluorite, amazonite, chalcedony, quartzite, rhodonite, jasper, tiger’s eye, dolerite, radusite, cacholong, marble. <br><br> <b>Metals:</b> gold, silver, bronze. <br><br> <b>Year of creation:</b> 2019.",
     "video": "video/gallery/makedonski.mp4",
+    "ImgUderVideo": "img/museum/makedon.png",
     "background": "img/stone-art/historical/makedon/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/historical/makedon/1.png",
         "img/stone-art/historical/makedon/2.png",
@@ -42,6 +45,48 @@
         "img/stone-art/historical/makedon/preview/10.png",
         "img/stone-art/historical/makedon/preview/11.png",
         "img/stone-art/historical/makedon/preview/12.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/makedon-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "<i>Он вел за собой, вдохновляя верою в победу. <br>Его острый ум и смелость преклоняли города. <br>За великими идут толпою, <br>Сила духа освещает их сердца.</i>",
+            "textEng": "<i>He led by inspiring faith in victory. <br>His sharp mind and courage conquered cities. <br>Many follow the Great Ones, <br>The power of the spirit illuminates their hearts.</i>"
+        },
+        {
+            "img": "img/GalleryNew/makedon-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Его величавое войско сплотилось для создания опоры из щитов, а бравый конь в золотой броне поднялся на дыбы, знаменуя начало совершений.",
+            "textEng": "His majestic army rallied to create a support of shields and a brave horse in golden armor reared up marking the beginning of the conquests."
+        },
+        {
+            "img": "img/GalleryNew/makedon-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Накрывает его спину, словно защита, массивный плащ из пиритовой яшмы. <br><br>Оголив свой меч, с несокрушимой армией Македонский устремился в бой.",
+            "textEng": "A massive cloak of pyrite jasper covers his back like a protection. Having bared his sword with an invincible army Macedonian rushed into the battle."
+        },
+        {
+            "img": "img/GalleryNew/makedon-unit4.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Взлетевший Грифон – символ несокрушимой силы, исполнен в тончайшей ювелирной чеканке по бронзе.",
+            "textEng": "The flying Griffin is a symbol of indestructible power, executed in the finest hand-engraved on bronze."
+        },
+        {
+            "img": "img/GalleryNew/makedon-unit5.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "В основании скульптуры — полусфера, подобно половине земного шара, указывает на величие его завоеваний. Золотистый мраморный подиум украшают серебряные шлемы его войск. <br><br>Произведение создавалось командой Дома на протяжении 2-х лет, высота скульптуры достигает 75 см.",
+            "textEng": "The base of the sculpture is a hemisphere like half of the globe indicates the greatness of his conquests. The golden marble podium is adorned with the silver helmets of his armies. <br><br>The work was created by the team of the ANTONOV House for 2 years, the height of the sculpture reaches 75 cm."
+        }
     ],
     "modelMap": {
         "modelClassName": "makedon",

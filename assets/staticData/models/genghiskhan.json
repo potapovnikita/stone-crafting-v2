@@ -10,11 +10,14 @@
     "shortDescEng": "The founder and first great khan of the Mongolian empire.",
     "img": "img/stone-art/historical/chingiskhan/preview/9.png",
     "description": "&laquo;Лучше быть последним среди волков, чем первым среди шакалов&raquo;. <br><br>Первый великий хан Монгольской империи, объединивший разрозненные монгольские и тюркские племена. Полководец, организовавший завоевательные походы монголов в Китай, Среднюю Азию, на Кавказ и Восточную Европу. Основатель самой крупной в истории человечества континентальной империи.",
-    "descriptionEng": "The founder and first great khan of the Mongolian empire.",
+    "descriptionEng": "The founder and first khan of the Mongolian empire, the great commander and conqueror.",
     "about": "<b>Высота:</b> 1000&nbsp;мм. <br><b>Диаметр подставки:</b> 600&nbsp;мм. <br><br><b>Камни:</b> кремний, нефрит, яшма, родусит, сердолик, агат, кварцит, уваровит, халцедон, авантюрин, пирит, кахолонг, мрамор, хрусталь, флюорит, тигровый глаз, долерит, окаменелое дерево. <br><br><b>Металл:</b> серебро, бронза, медь, серебрение, золочение. <br><br><b>Год создания:</b> 2017.",
     "aboutEng": "<b>Height:</b> 1000&nbsp;mm.  <br><b>Diameter of the base:</b> 600&nbsp;mm. <br><br><b>Stones:</b> flint, nephrite, jasper, rhodusite, carnelian, agate, quartzite, uvarovite, chalcedony, aventurine, pyrite, cacholong, marble, crystal, fluorite, tiger's eye, dolerite, petrified tree. <br><br><b>Metals:</b> silver, bronze, copper, silvering and gilding. <br><br><b>Year of creation:</b> 2017.",
     "video": "video/gallery/chingishan.mp4",
+    "ImgUderVideo": "img/museum/genghis.png",
     "background": "img/stone-art/historical/chingiskhan/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/historical/chingiskhan/1.png",
         "img/stone-art/historical/chingiskhan/2.png",
@@ -40,6 +43,48 @@
         "img/stone-art/historical/chingiskhan/preview/9.png",
         "img/stone-art/historical/chingiskhan/preview/10.png",
         "img/stone-art/historical/chingiskhan/preview/11.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/genghis-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Единственный полководец, которому удалось перейти китайскую стену и завоевать многие города Китая. Переняв их культуру, ученных, строителей, он способствовал развитию своей страны. <br><br>Чингисхан разрубает мечом стену, что символизирует не только победу над территориями, но и снятие границ между монгольской и китайской культурой.",
+            "textEng": "The only commander who managed to cross The Great Wall of China and conquer many cities. Having adopted their culture, scientists, builders he contributed to the development of his country. <br><br>Genghis Khan cuts the wall with his sword which symbolizes not only the victory over the territories but also the removal of the boundaries between Mongolian and Chinese culture."
+        },
+        {
+            "img": "img/GalleryNew/genghis-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Рука Чингисхана в виде тени крыла кречета, показывает путь и стремление к завоеваниям.",
+            "textEng": "Genghis Khan's hand in the form of the shadow of a gyrfalcon's wing shows the path and striving for conquest."
+        },
+        {
+            "img": "img/GalleryNew/genghis-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Врата подиума – символ таинства, проходя через которые открывается дорога к победным совершениям.",
+            "textEng": "The gate of the podium is a symbol of the mystery through which the road to victorious accomplishments opens."
+        },
+        {
+            "img": "img/GalleryNew/genghis-unit4.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Уникальность композиции заключается в том, что вся работа держится только на одном контакте, на одной точке опоры. Несмотря на тяжесть камня, скульптура кажется невесомой, парящей в воздухе. Высота скульптуры составляет 86 см.",
+            "textEng": "The uniqueness of the composition lies in the fact that all the work is kept on only one contact, on one point of support. Despite the weight of the stone the sculpture seems weightless like floating in the air. The height of the sculpture is 86 cm."
+        },
+        {
+            "img": "img/GalleryNew/genghis-unit5.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Образ Чингисхана и Тамерлана создан на основе последних данных, указывающих на тот факт, что великие завоеватели имели европеоидную внешность. Каждое произведение создавалось на протяжении двух лет и было основано на исторических и этнических исследованиях. <br><br>Произведения относятся к категории «президентских подарков» и первые воплощения в камне образов Тамерлана и Чингисхана были исполнены в дар правителям стран Востока.",
+            "textEng": "The image of Genghis Khan and Tamerlane was created on the basis of the latest data indicating the fact that the great conquerors had a Caucasian appearance. Each piece was created over two years and was based on historical and ethnic research. <br><br>The works belong to the category of \"presidential gifts\" and the first stone sculptures of Tamerlane and Genghis Khan were performed as a gift to the rulers of the countries of the East."
+        }
     ],
     "modelMap": {
         "modelClassName": "genghiskhan",

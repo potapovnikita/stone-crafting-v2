@@ -8,13 +8,16 @@
     "img": "img/stone-art/historical/jokerNew/preview/1.jpg",
     "shortDesc": "Есть особая карта в колоде, на которой изображен придворный шут – «Джокер».",
     "shortDescEng": "A playing card with image of a court jester.",
-    "description": "Вся наша жизнь – игра! <br>Есть особая карта в колоде, на которой изображен придворный шут – «Джокер». Шутник-весельчак, он – хозяин игры. <br>Он может одним своим присутствием сыграть со всеми злую шутку, а может обеспечить счастливчику головокружительный успех! Ведь «Джокер» символизирует непокорность судьбе.</i>",
+    "description": "<i>Вся жизнь – игра и есть особая карта удачи, на которой изображен хозяин игры – «Джокер». <br><br>Он может одним своим присутствием сыграть со всеми злую шутку, а может обеспечить счастливчику головокружительный успех! Ведь «Джокер» символизирует непокорность судьбе.</i>",
     "about": "<b>Камни:</b> яшма, малахит, долерит, родонит, лазурит, чароит, флюорит, амазанит, лепидолит, апатит, кахолонг, хрусталь. <br><br> <b>Металл:</b> серебро, бронза, серебрение, золочение. <br><br> <b>Год создания:</b> 2020.",
     "nameEng": "Joker 2020",
-    "descriptionEng": "A playing card with image of a court jester. <br>It is an additional trump card in the deck.</i>",
+    "descriptionEng": "Our whole life is a game! <br><br>There is a special card in the deck which depicts a court jester – the \"Joker\". He is the owner of this game. He can play a cruel joke with everyone or he can ensure a dizzying success for the lucky one! \"Joker\" symbolizes disobedience to fate.",
     "aboutEng": "<b>Stones:</b> jasper, malachite, dolerite, rhodonite, lapis lazuli, charoite, fluorite, amazanite, lepidolite, apatite, cacholong, crystal. <br><br> <b>Metals:</b> silver, bronze, silvering, gilding. <br><br> <b>Year of creation:</b> 2020.",
     "video": "video/gallery/joker.mp4",
+    "ImgUderVideo": "img/museum/joker.png",
     "background": "img/stone-art/historical/jokerNew/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/historical/jokerNew/1.png",
         "img/stone-art/historical/jokerNew/2.png",
@@ -40,6 +43,32 @@
         "img/stone-art/historical/jokerNew/preview/9.png",
         "img/stone-art/historical/jokerNew/preview/10.png",
         "img/stone-art/historical/jokerNew/preview/11.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/joker-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "В 2017 году новый виток в развитии камнерезного искусства стал возможен при использовании новой инновационной технологии Камнерезного Дома Антонова. Данная технология, изобретенная командой мастеров, позволила создавать шедевры рекордной высоты, сохраняя при этом ювелирное качество. Ранее этого добиться было невозможно из-за небольших размеров редкого камня и тяжести конструкции, а сама фигура достигала чаще всего размера не более 30 сантиметров.",
+            "textEng": "In 2017 a new round in the development of stone-carving art became possible with the use of the new innovative technology of the Antonov Stone-Crafting House. This technology invented by a team of craftsmen has made it possible to create masterpieces of record height. Previously this was impossible to achieve due to the small size of the rare stone and the severity of the structure and the figure itself usually reached a size of no more than 30 centimeters."
+        },
+        {
+            "img": "img/GalleryNew/joker-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Одной из первых больших работ компании стала скульптура «Золотой Джокер» (2017 г.), достигающая 1 метр высотой. Произведение охарактеризовалось как прорыв в камнерезном и ювелирном деле. Были раздвинуты рамки для безграничного творчества со столь сложным материалом как твердый камень. А уже в 2020 году Алексей Антонов и его команда создают новый шедевр с применением данной технологии – Джокер 2020.",
+            "textEng": "One of the first large works of the company was the sculpture \"Golden Joker\" (2017) which reaches 1 meter in height. The piece was described as a breakthrough in stone cutting and jewelry art. The framework for unlimited creativity with such a complex material as hard stone has been expanded. Already in 2020 Alexey Antonov and his team create a new masterpiece using this technology - Joker 2020."
+        },
+        {
+            "video": "img/museum/joker-unit3.mp4",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Образ «Символа удачи» за несколько лет становится одним из самых узнаваемых среди посетителей выставок. Многие рядом с Джокером загадывали желание, дотрагиваясь до бронзовых шишек, а у тех, у кого уже сбылось, приходили не по разу и загадывали снова.",
+            "textEng": "The image of the \"Symbol of Luck\" for several years has become one of the most recognizable among the visitors of exhibitions. Many people made a wish next to the Joker touching the bronze cones and those whose wishes have already come true came more than once and made a wish again."
+        }
     ],
     "modelMap": {
         "modelClassName": "joker",

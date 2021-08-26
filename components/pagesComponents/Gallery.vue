@@ -21,20 +21,31 @@
 
         .galleryAbout-block
             .galleryAbout-block__media
-                img.galleryAbout-block__photo(src="~/assets/img/news/torero-prev.png" alt="img")
+                img.galleryAbout-block__photo(v-if="currentProduct.ImgUderVideo && !currentProduct.VideoUderVideo" :src="getImg(currentProduct.ImgUderVideo)")
+                video.galleryAbout-block__photo(v-if="currentProduct.VideoUderVideo && !currentProduct.ImgUderVideo" playsinline autoplay loop="true" muted="muted")
+                    source(:src="getImgExternal(currentProduct.VideoUderVideo)" type="video/mp4")
             .galleryAbout-block__info
                 .galleryAbout-block__content
                     h2.galleryAbout-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
                     .galleryAbout-block__double-line
                     p.galleryAbout-block__text(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
+        .bullfightingSwitcher(v-if="currentProduct.id === 'torero'")
+            .corridaButtons-container
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'torero'}" @click="setCorridaSwitcher('torero')")
+                    | {{lang === 'ru' ? 'Тореадор' : 'Bullfighter'}}
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'flamenco'}" @click="setCorridaSwitcher('flamenco')")
+                    | {{lang === 'ru' ? 'Фламенко' : 'Flamenco'}}
+                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'bull'}" @click="setCorridaSwitcher('bull')")
+                    | {{lang === 'ru' ? 'Лазурный Бык' : 'Azure Bull'}}
 
-        GalleryPhotosSlider(v-if="currentProduct.imagesPreview" :imgSrcList="currentProduct.imagesPreview")
+            GalleryPhotosSlider(:imgSrcList="getImgSrcListForCorrida(currentProduct)")
+
+        GalleryPhotosSlider(v-if="currentProduct.imagesPreview && currentProduct.id !== 'torero'" :imgSrcList="currentProduct.imagesPreview")
 
         ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
 
         .gallerySmi-block(v-if="currentProduct.media")
-            h2.gallerySmi-block__title
-                | СМИ о тореадоре
+            h2.gallerySmi-block__title {{ lang === 'ru' ? currentProduct.titleNews : currentProduct.titleNewsEng }}
 
             .gallerySmi-block__double-line
 
@@ -94,6 +105,7 @@ export default {
     },
     data() {
         return {
+            forCorridaSwitcher: 'torero',
             models: {
                 torero: Torero,
                 jokerNew: JokerNew,
@@ -141,6 +153,21 @@ export default {
         getImg(url) {
             return getImgExternal(url)
         },
+        getImgExternal(url) {
+            return getImgExternal(url)
+        },
+        getImgSrcListForCorrida(product) {
+            switch (this.forCorridaSwitcher) {
+                case "torero": return product.imagesPreviewTorero;
+                case "flamenco": return product.imagesPreviewFlamenco;
+                case "bull": return product.imagesPreviewBull;
+                default: return product.imagesPreviewTorero;
+            }
+        },
+        setCorridaSwitcher(type) {
+            this.forCorridaSwitcher = type;
+            console.log('type', type)
+        }
     },
 }
 </script>
@@ -221,7 +248,7 @@ export default {
             width 100%
 
         &__info
-            flex-basis 718px
+            flex-basis 800px
             flex-shrink 2
             text-align left
 
@@ -262,7 +289,26 @@ export default {
             border-left none
             border-right none
 
-    
+    .corridaButtons-container
+        display flex
+        flex-direction row
+        justify-content center
+        margin 0 auto
+
+        &_btn
+            font-size 29px
+            line-height 150%
+            white-space nowrap
+            margin 0 10px
+            width: 140px
+
+            &:hover
+                cursor pointer
+                color goldNew
+
+            &.active
+                color goldNew
+
     @media only screen and (max-width 1680px)
         .galleryAbout-block
             justify-content space-between
@@ -270,6 +316,8 @@ export default {
 
             &__content
                 padding-left 42px
+
+
 
     @media only screen and (max-width 1280px)
         .header-container
@@ -282,6 +330,9 @@ export default {
             &__title
                 font-size 48px
                 margin-bottom 16px
+
+        .video-container
+            height auto
 
         .galleryAbout-block
             justify-content center
@@ -313,12 +364,14 @@ export default {
             &__title
                 margin-bottom 38px
 
+        .corridaButtons-container_btn
+            font-size 26px
+
     @media only screen and (max-width 1023px)
         .galleryAbout-block
             padding 40px 0
 
             &__media
-                flex-basis 350px
 
             &__info
                 flex-basis 380px
@@ -410,6 +463,9 @@ export default {
             height 563px
             background url('~assets/img/collections/bg-m.png') no-repeat
             background-size cover
+
+        .corridaButtons-container_btn
+            font-size 18px
 
     @media only screen and (max-width 490px)
         .galleryAbout-block
