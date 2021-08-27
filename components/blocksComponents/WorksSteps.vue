@@ -20,7 +20,7 @@
                 slide(v-for="(stage, index) in stages" :key="`stage_${stage.id}`")
                     .worksSteps__step-container
                         .worksSteps__media
-                            img.worksSteps__photo(v-if="stage.img" :src="getImg(lang === 'ru' ? stage.img : stage.imgEng)" :alt="`pic_${stage.id}`")
+                            img.worksSteps__photo(v-if="stage.img" :src="getImgExternal(lang === 'ru' ? stage.img : stage.imgEng)" :alt="`pic_${stage.id}`")
                             video#video.worksSteps__photo(playsinline autoplay loop="true" muted="muted")
                                 source(:src="getImgExternal(stage.video)" type="video/mp4")
                         .worksSteps__content

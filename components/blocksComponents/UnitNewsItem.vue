@@ -1,9 +1,9 @@
 <template lang="pug">
     .unitNewsItem(:class="[{'unitNewsItem--full-text': !isShortText}, {'unitNewsItem--wide': isShortText && wideBlock}]")
         .unitNewsItem__media(:class="{'unitNewsItem__media--wide': isShortText && wideBlock }")
-            img.unitNewsItem__photo(v-if="img" :src="getImgLocal(img)" alt="pic")
+            img.unitNewsItem__photo(v-if="img" :src="getImgExternal(img)" alt="pic")
             video.unitNewsItem__photo(v-if="video" playsinline loop="true" autoplay="true" muted="muted")
-                source(:src="getImg(video)" type="video/mp4")
+                source(:src="getImgExternal(video)" type="video/mp4")
             iframe(
                 v-if="videoLink"
                 height="100%"
@@ -53,7 +53,7 @@ export default {
         getImgLocal(url) {
             return getImgLocal(url)
         },
-        getImg(url) {
+        getImgExternal(url) {
             return getImgExternal(url)
         },
         showMore() {
@@ -104,7 +104,7 @@ export default {
             max-width 1027px
             padding 0
             text-align center
-            
+
             .unitNewsItem__title
                 margin-bottom 15px
                 text-align center
