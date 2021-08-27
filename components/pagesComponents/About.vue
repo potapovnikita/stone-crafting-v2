@@ -426,6 +426,9 @@
                 max-width 482px
                 padding 8px
 
+            &__images
+                width 482px
+                height 330px
 
         @media only screen and (max-width 1000px)
             flex-direction column
@@ -435,6 +438,7 @@
 
             .photo
             .video
+            &__images
                 margin-bottom 27px
 
             &__title
@@ -459,6 +463,27 @@
             .text
                 text-align left
                 max-width 700px
+
+        @media only screen and (max-width 520px)
+            &__images
+                width 100%
+                height 276px
+
+        @media only screen and (max-width 414px)
+            &__images
+                height 257px
+
+        @media only screen and (max-width 375px)
+            &__images
+                height 231px
+
+        @media only screen and (max-width 320px)
+            &__images
+                height 196px
+
+            &__images-controls
+                & > div + div
+                    margin-left 8px
 
         .video
         .photo

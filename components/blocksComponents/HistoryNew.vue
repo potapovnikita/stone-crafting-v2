@@ -547,7 +547,28 @@ export default {
             width 350px
             height auto
 
+        &__text-photo
+            width 100%
+            text-align center
+            padding-top 10px
+            padding-bottom 15px
+
+        &__images
+            width 350px
+            min-height 260px
+
+        &__images-controls
+            bottom 12px
+
+    @media only screen and (max-width 450px)
+        &__container
+            max-width 374px
+
     @media only screen and (max-width 380px)
+
+        &__container
+            max-width 335px
+
         &__content
             max-width unset
 
@@ -555,5 +576,8 @@ export default {
         &__video
             width 100%
             height auto
+
+        &__images
+            width 100%
 
 </style>

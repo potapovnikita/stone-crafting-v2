@@ -74,6 +74,6 @@ export default {
 
     &__photo
         width 100%
-        min-height 286px
+        height 100%
 
 </style>
