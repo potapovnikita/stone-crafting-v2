@@ -2,8 +2,36 @@
     "id": "catherine",
     "name": "Екатерина II",
     "nameEng": "Catherine II",
-    "description": "Российская императрица, царствование которой стало одним из самых значительных периодов русской истории.",
-    "descriptionEng": "Text on eng",
+    "creation": {
+        "title": "Год создания: 2015",
+        "titleEng": "Year of creation: 2015"
+    },
+    "description": "Российская императрица, царствование которой стало одним из самых значительных периодов русской истории. <br><br> Размер камнерезной и ювелирной скульптуры: 40×16,5 см.",
+    "descriptionEng": "The Russian Empress whose reign became one of the most significant periods of Russian history. <br><br>The size of the stone carving and jewelry sculpture: 40×16,5 cm.",
+    "ImgUderVideo": "img/museum/Ekaterina.png",
+    "titleNews": "Роль в истории камнерезного искусства",
+    "titleNewsEng": "The role in the history of stone-carving art",
+    "headerBackground": "img/news/ekaterina-main.png",
+    "imagesPreview": [
+        "img/stone-art/historical/ekaterina/preview/1.png",
+        "img/stone-art/historical/ekaterina/preview/2.png",
+        "img/stone-art/historical/ekaterina/preview/3.png",
+        "img/stone-art/historical/ekaterina/preview/4.png",
+        "img/stone-art/historical/ekaterina/preview/5.png",
+        "img/stone-art/historical/ekaterina/preview/6.png",
+        "img/stone-art/historical/ekaterina/preview/7.png",
+        "img/stone-art/historical/ekaterina/preview/8.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/ekaterina-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "При императрице происходит рассвет искусства, переворот в мыслях людей. Изучаются и вводятся ценности, повышается культура, образование, значимость предметов коллекционирования. В эпоху при Екатерине II появляется мода на ювелирные изделия и камни. В это время не только развивается добыча камня и мастерство, но и общество может высоко оценить искусство и предметы роскоши.",
+            "textEng": "During the reign of the Empress there was a dawn in art, a revolution in people's thoughts. Сulture, education and the importance of collectibles were increased. There was a trend for jewelry and stones. At that time, not only stone mining and craftsmanship were develop but also the society could appreciate art and masterpieces."
+        }
+    ],
     "modelMap": {
         "modelClassName": "catherine",
         "img": "img/collections/catherine/0.png",

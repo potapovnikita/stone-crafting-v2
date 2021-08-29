@@ -2,8 +2,44 @@
     "id": "peter",
     "name": "Петр I",
     "nameEng": "Peter I",
-    "description": "Последний царь всея Руси и первый Император Всероссийский. Государь-реформатор, радикально изменивший структуру управления и общественный уклад России, создавший флот и регулярную армию, преобразовавший экономику, сделавший науку и образование политической необходимостью.",
-    "descriptionEng": "Text on eng",
+    "creation": {
+        "title": "Год создания: 2016",
+        "titleEng": "Year of creation: 2016"
+    },
+    "description": "Последний царь всея Руси и первый Император Всероссийский. Государь-реформатор, радикально изменивший структуру управления и общественный уклад России, создавший флот и регулярную армию, преобразовавший экономику, сделавший науку и образование политической необходимостью. <br><br> Размер камнерезной и ювелирной скульптуры: 43×16,5 см.",
+    "descriptionEng": "The last tsar and the first Emperor of Russia. The sovereign is a reformer who radically changed the management structure and social structure of Russia, created a navy and a regular army, transformed the economy, made science and education a political necessity. <br><br>The size of the stone carving and jewelry sculpture: 43×16.5 cm.",
+    "ImgUderVideo": "img/museum/petr.png",
+    "headerBackground": "img/news/petr-main.png",
+    "titleNews": "Роль в истории камнерезного искусства",
+    "titleNewsEng": "The role in the history of stone-carving art",
+    "imagesPreview": [
+        "img/stone-art/historical/petr/preview/1.png",
+        "img/stone-art/historical/petr/preview/2.png",
+        "img/stone-art/historical/petr/preview/3.png",
+        "img/stone-art/historical/petr/preview/4.png",
+        "img/stone-art/historical/petr/preview/5.png",
+        "img/stone-art/historical/petr/preview/6.png",
+        "img/stone-art/historical/petr/preview/7.png",
+        "img/stone-art/historical/petr/preview/8.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/petr-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "В XVIII веке Петр I начал развитие каменного дела в Российской империи. По его указу создаются гранильные фабрики, перенимается опыт иностранных мастеров, создается Императорская Академия художеств.",
+            "textEng": "In the XVIII century Peter I began the development of stone-crafting art in the Russian Empire. According to his decree lapidary factories are being created, the experience of foreign masters was being adopted, the Imperial Academy of Arts was created."
+        },
+        {
+            "img": "img/GalleryNew/petr-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Также в этом деле большую роль играют Василий Татищев, который создал первые заводы и гранильные фабрики, а также граф Александр Строганов, который создает камнерезное направление в Академии художеств и открывает множество месторождений природных камней, преимущественно на Урале.",
+            "textEng": "Also, in this case Vasily Tatishchev created the first factories and lapidary factories and Alexander Stroganov created a stone-cutting direction at the Academy of Arts and discovered many deposits of natural stones, mainly in the Urals. They played an important role in the development of stone cutting in Russia."
+        }
+    ],
     "modelMap": {
         "modelClassName": "peter",
         "img": "img/collections/peter/0.png",

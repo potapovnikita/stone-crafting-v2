@@ -10,6 +10,8 @@
             :titleEng="item.titleEng"
             :text="item.text"
             :textEng="item.textEng"
+            :additionalText="item.additionalText"
+            :additionalTextEng="item.additionalTextEng"
             :imgUrl="item.img"
             :imgBgUrl="item.background"
             :isReverse="index % 2 == 0"

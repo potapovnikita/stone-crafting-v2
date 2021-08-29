@@ -12,7 +12,7 @@
                 .title-block__line
                 p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 
-        .header-container(v-if="!currentProduct.video")
+        .header-container(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.headerBackground)}")
             .title-block
                 .title-block__circle
                 h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
@@ -167,7 +167,12 @@ export default {
         setCorridaSwitcher(type) {
             this.forCorridaSwitcher = type;
             console.log('type', type)
-        }
+        },
+        getBgImg(url) {
+            const imageUrl = require('~/assets/' + `${url}`)
+            return url ? `url(${imageUrl})` : ''
+            // return url ? `url(${this.getImgExternal(imageUrl)})` : ''
+        },
     },
 }
 </script>
@@ -233,8 +238,10 @@ export default {
 
     .header-container
         height 683px
-        background url('~assets/img/news/header-main.png') top center no-repeat
+        //background-image url('~assets/img/news/header-main.png')
         background-size cover
+        background-repeat no-repeat
+        background-position top center
 
     .galleryAbout-block
         display flex
