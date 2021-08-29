@@ -8,13 +8,17 @@
     "img": "img/stone-art/historical/monah/preview/1.png",
     "shortDesc": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило-Столобенская пустынь».",
     "shortDescEng": "Neil Stolobensky – a saint of the Russian Orthodox Church.",
-    "description": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило-Столобенская пустынь». Жил в отшельничестве на острове Столобный, на озере Селигер. В скульптурных изображениях Нил изображается сидящим со склоненной на грудь головой и опирающимся на деревянные костыли. <br>Причислен к лику святых как преподобный.</i>",
+    "description": "Схимник Нил Столобенский – святой Русской православной церкви, основатель монастыря «Нило-Столобенская пустынь». Жил в отшельничестве на острове Столобный, на озере Селигер. В скульптурных изображениях Нил изображается сидящим со склоненной на грудь головой и опирающимся на деревянные костыли. <br>Причислен к лику святых как преподобный. <br><br> Размер камнерезной и ювелирной скульптуры: 33×22 см",
     "about": "<b>Высота:</b>: 330&nbsp;мм. <br><b>Диаметр подставки:</b> 220х150&nbsp;мм. <br><br><b>Камни:</b> нефрит, яшма, долерит, халцедон, кахолонг, мрамор, окаменелое дерево. <br><br><b>Металл:</b> серебро. <br><br><b>Год создания:</b> 2018.",
     "nameEng": "Schemamonk",
-    "descriptionEng": "Neil Stolobensky – a saint of the Russian Orthodox Church. <br><br>The founder of the Nilo-Stolobensky Monastery, which is located on the lake Seliger.</i>",
+    "descriptionEng": "Neil Stolobensky – a saint of the Russian Orthodox Church. <br><br>The founder of the Nilo-Stolobensky Monastery, which is located on the lake Seliger. <br><br>The size of the stone carving and jewelry sculpture: 33×22 cm",
     "aboutEng": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 220х150&nbsp;mm. <br><br><b>Stones:</b> jade, jasper, dolerite, chalcedony, cacholong, marble, petrified tree. <br><br><b>Metals:</b> silver. <br><br><b>Year of creation:</b> 2018.",
     "video": "",
+    "ImgUderVideo": "img/museum/monk.png",
     "background": "img/stone-art/historical/monah/background/1.png",
+    "headerBackground": "img/news/monk-main.png",
+    "titleNews": "О коллекции",
+    "titleNewsEng": "About the collection",
     "imagesFull": [
         "img/stone-art/historical/monah/1.png",
         "img/stone-art/historical/monah/2.png",
@@ -30,6 +34,80 @@
         "img/stone-art/historical/monah/preview/4.png",
         "img/stone-art/historical/monah/preview/5.png",
         "img/stone-art/historical/monah/preview/6.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/monk-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Раскрытие силы духа в спокойном и неподвижном образе Нила Столобенского сопровождается невероятной одухотворенностью произведения. <br><br>«Схимник» стал первой работой коллекции «Святых». Перед художниками-мастерами предстала невероятно сложная задача: воплощение истины в камне, той, что сопровождала Святых на их пути.",
+            "textEng": "The disclosure of the strength of mind in the calm and motionless image of Nil Stolobensky is accompanied by the incredible spirituality of the work. <br><br>\"Monk\" became the first work of the Saints collection. An incredibly difficult task appeared for artists and craftsmen: the embodiment of the truth in stone, the one that accompanied the Saints on their path."
+        },
+        {
+            "img": "img/GalleryNew/monk-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Каждая работа коллекции создавалась с благословления священнослужителей и представляла собой таинство, где сам автор и природный камень, и Высшее проявление соединились в творческом единстве.",
+            "textEng": "Each work of the collection was created with the blessing of the clergy and was a sacrament where the author himself and the natural stone and the Highest Manifestation were united in a creative unity."
+        },
+        {
+            "img": "img/GalleryNew/monk-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Многими служителями церкви было замечено, что от произведения исходит особое притяжение. Они описывали чувства подобные тому, что получают рядом с иконой.",
+            "textEng": "It was noticed by many ministers of the church that a special attraction emanates from the work. They described feelings similar to what one gets next to the icon."
+        },
+        {
+            "img": "img/GalleryNew/monk-unit4.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Образ, запечатленный в объеме, воспринимался очень проникновенно. Особое внимание уделялось прочтению произведения: спокойствие и благость, полные жизни глаза, положение рук, его будто застывшая поза и движимая сила внутри.",
+            "textEng": "The image captured in volume was perceived very deeply. Particular attention was paid to the perception of the work: calmness and goodness, eyes full of life, the position of the hands, his seemingly frozen posture and moving force inside."
+        },
+        {
+            "img": "img/GalleryNew/monk-unit5.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Святые»",
+            "titleEng": "From the collection \"Saints\"",
+            "text": "",
+            "textEng": ""
+        },
+        {
+            "img": "img/GalleryNew/monk-unit6.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Святые»",
+            "titleEng": "From the collection \"Saints\"",
+            "text": "",
+            "textEng": ""
+        },
+        {
+            "img": "img/GalleryNew/monk-unit7.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Святые»",
+            "titleEng": "From the collection \"Saints\"",
+            "text": "",
+            "textEng": ""
+        },
+        {
+            "img": "img/GalleryNew/monk-unit8.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Святые»",
+            "titleEng": "From the collection \"Saints\"",
+            "text": "",
+            "textEng": ""
+        },
+        {
+            "img": "img/GalleryNew/monk-unit9.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Святые»",
+            "titleEng": "From the collection \"Saints\"",
+            "text": "",
+            "textEng": ""
+        }
     ],
     "modelMap": {
         "modelClassName": "schemamonk",

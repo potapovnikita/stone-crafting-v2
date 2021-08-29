@@ -9,6 +9,7 @@
 
                 .model__double-line
                 p.model__text(v-html="lang === 'ru' ? text : textEng")
+                p.additional__text(v-if="additionalText" v-html="lang === 'ru' ? additionalText : additionalTextEng")
 
                 ButtonArrow(:onClick="clickHandler" arrowRight)
 
@@ -33,6 +34,8 @@
             imgUrl: String,
             imgBgUrl: String,
             isReverse: Boolean,
+            additionalText: String,
+            additionalTextEng: String,
         },
         methods: {
             getImg(url) {
@@ -62,6 +65,11 @@
         .model__text
             max-width 524px
 
+        .additional__text
+            color #fce086
+            text-align left
+            margin-bottom: 52px
+
     &__photo
         width 100%
         height auto
@@ -74,6 +82,11 @@
 
     &__content
         text-align left
+
+        .additional__text
+            color #fce086
+            text-align left
+            margin-bottom: 52px
 
     &__title
         margin-bottom 52px
@@ -89,8 +102,8 @@
         border-right none
 
     &__text
-        max-width 382px
-        margin-bottom 52px
+        max-width 395px
+        margin-bottom 12px
         line-height 150%
         text-align left
 
