@@ -1,8 +1,8 @@
 <template lang="pug">
-.imagesSwitcher
+.imagesSwitcher(@click="next")
     ul.imagesSwitcher__list
-        li.imagesSwitcher__listItem(v-for="(item, index) in images" :key="item.id" :class="{'active': index === activeImg}")
-            img.imagesSwitcher__photo(:src="getLocal(item.img)" :alt="item.year")
+        li.imagesSwitcher__listItem(v-for="(imagePath, index) in images" :key="`img_${index}`" :class="{'active': index === activeImg}")
+            img.imagesSwitcher__photo(:src="getLocal(imagePath)" :alt="`pic_${index}`")
     slot(:activeImg="activeImg" :switchTo="switchTo")
 
 </template>
@@ -19,6 +19,7 @@ export default {
     data() {
         return {
             activeImg: 0,
+            interval: null,
         }
     },
     methods: {
@@ -26,10 +27,27 @@ export default {
             return getImgLocal(url)
         },
 
-        switchTo(index) {
+        startInterval() {
+            if (this.interval) clearInterval(this.interval)
+            this.interval = setInterval(this.next, 5000)
+        },
+
+        switchTo(index, event) {
+            if (event) event.stopPropagation()
+            if (this.interval) this.startInterval()
             this.activeImg = index
         },
+        next() {
+            const hasNext = this.activeImg < this.images.length - 1
+            this.activeImg = hasNext ? this.activeImg += 1: 0;
+        }
     },
+    mounted() {
+        this.startInterval()
+    },
+    destroyed() {
+        clearInterval(this.interval)
+    }
 }
 </script>
 <style scoped lang="stylus">
@@ -37,6 +55,7 @@ export default {
     position relative
     display block
     height 100%
+    cursor pointer
 
     &__list
         padding 0
@@ -55,5 +74,6 @@ export default {
 
     &__photo
         width 100%
+        height 100%
 
 </style>

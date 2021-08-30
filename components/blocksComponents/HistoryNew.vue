@@ -23,10 +23,10 @@
                                             template(v-slot:default="slotProps")
                                                 .histoyAbout__images-controls
                                                     .histoyAbout__images-dot(
-                                                        v-for="(item, index) in item.slides"
-                                                        :key="item.id"
+                                                        v-for="(imgPath, index) in item.slides"
+                                                        :key="imgPath"
                                                         :class="{'active': index === slotProps.activeImg}"
-                                                        @click="() => slotProps.switchTo(index)")
+                                                        @click="(event) => slotProps.switchTo(index, event)")
                                     img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
                                     video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
                                         source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
@@ -343,8 +343,8 @@ export default {
 
     &__images-controls
         position absolute
-        top calc(50% - 6px)
-        left -60px
+        width 100%
+        bottom 6px
         display flex
         justify-content center
 
@@ -357,9 +357,10 @@ export default {
         border 1px solid #616D76
         border-radius 50%
         cursor pointer
+        background #1848db
 
         &.active
-            background goldNew
+            background #3f91d9
 
     @media only screen and (max-width 1280px)
         &__title
@@ -503,12 +504,6 @@ export default {
                 width 701px
                 overflow hidden
 
-        &__images-controls
-            width 100%
-            top unset
-            left 0
-            bottom -40px
-
     @media only screen and (max-width 767px)
         &__slides-panel
             .slider
@@ -552,7 +547,28 @@ export default {
             width 350px
             height auto
 
+        &__text-photo
+            width 100%
+            text-align center
+            padding-top 10px
+            padding-bottom 15px
+
+        &__images
+            width 350px
+            min-height 260px
+
+        &__images-controls
+            bottom 12px
+
+    @media only screen and (max-width 450px)
+        &__container
+            max-width 374px
+
     @media only screen and (max-width 380px)
+
+        &__container
+            max-width 335px
+
         &__content
             max-width unset
 
@@ -560,5 +576,8 @@ export default {
         &__video
             width 100%
             height auto
+
+        &__images
+            width 100%
 
 </style>

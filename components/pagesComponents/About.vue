@@ -54,7 +54,15 @@
                 .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
                     .descriptionAbout__line
                     a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'")
-            img.photo(src="~/assets/img/about/show.png" alt="Exhibition")
+            .descriptionAbout__images(v-if="company.aboutSlides4")
+                ImagesSwitcher(:images="company.aboutSlides4")
+                    template(v-slot:default="slotProps")
+                        .descriptionAbout__images-controls
+                            .descriptionAbout__images-dot(
+                                v-for="(item, index) in company.aboutSlides4"
+                                :key="`imgDot_${index}`"
+                                :class="{'active': index === slotProps.activeImg}"
+                                @click="(event) => slotProps.switchTo(index, event)")
 
         ExpertsAbout
 
@@ -101,7 +109,8 @@
     import Mission from "@/components/blocksComponents/Mission"
     import TabsAbout from '@/components/blocksComponents/TabsAbout'
     import Footer from '~/components/Footer.vue'
-    import {getImgExternal} from "@/plugins/getUrl";
+    import {getImgExternal} from "@/plugins/getUrl"
+    import ImagesSwitcher from '@/components/blocksComponents/ImagesSwitcher'
 
     export default {
         data() {
@@ -126,6 +135,7 @@
             Mission,
             TabsAbout,
             Footer,
+            ImagesSwitcher,
         },
         methods: {
             getBgImg(url) {
@@ -341,6 +351,33 @@
             padding 10px
             border 1px solid rgba(150, 120, 95, 0.3)
 
+        &__images
+            width 594px
+            height 407px
+            padding 10px
+            border 1px solid rgba(150, 120, 95, 0.3)
+
+        &__images-controls
+            position absolute
+            width 100%
+            bottom 6px
+            display flex
+            justify-content center
+
+            & > div + div
+                margin-left 12px
+
+        &__images-dot
+            width 12px
+            height 12px
+            border 1px solid #616D76
+            border-radius 50%
+            cursor pointer
+            background #1848db
+
+            &.active
+                background #3f91d9
+
         &.reverse
             @media only screen and (max-width 1000px)
                 flex-direction column-reverse
@@ -389,6 +426,9 @@
                 max-width 482px
                 padding 8px
 
+            &__images
+                width 482px
+                height 330px
 
         @media only screen and (max-width 1000px)
             flex-direction column
@@ -398,6 +438,7 @@
 
             .photo
             .video
+            &__images
                 margin-bottom 27px
 
             &__title
@@ -422,6 +463,27 @@
             .text
                 text-align left
                 max-width 700px
+
+        @media only screen and (max-width 520px)
+            &__images
+                width 100%
+                height 276px
+
+        @media only screen and (max-width 414px)
+            &__images
+                height 257px
+
+        @media only screen and (max-width 375px)
+            &__images
+                height 231px
+
+        @media only screen and (max-width 320px)
+            &__images
+                height 196px
+
+            &__images-controls
+                & > div + div
+                    margin-left 8px
 
         .video
         .photo
