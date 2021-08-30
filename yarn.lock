@@ -3777,7 +3777,7 @@ elliptic@^6.0.0, elliptic@^6.5.2:
 
 emailjs-com@^2.6.4:
   version "2.6.4"
-  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  resolved "https://registry.npmjs.org/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
   integrity sha512-4G8rxq+1mbL4rGntMa9tqNJ4N9BhuCl8lFJASDHxZVXeC82ivwL6qw+Zu48cAWHpNK2/F3vScaAZk8zoTAfiAA==
 
 emoji-regex@^7.0.1:
