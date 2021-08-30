@@ -1,6 +1,6 @@
 {
     "id": "babayaga",
-    "name": "Баба Яга",
+    "name": "Баба-Яга",
     "creation": {
         "title": "Год создания: 2016",
         "titleEng": "Year of creation: 2016"
@@ -14,7 +14,10 @@
     "descriptionEng": "A forest witch in Slavic folk tales. She is the guardian of the boundaries between the world of the living and the world of the dead.",
     "aboutEng": "<b>Height:</b> 400&nbsp;mm. <br><b>Diameter of the base:</b> 330 to 220&nbsp;mm. <br><br><b>Stones:</b> silicon, ruby, chalcedony, jasper, quartzite, agate, nephrite, agate, labradorite, carnelian, rhodonite, dolerite, cacholong, walrus tusk, crystal, coral. <br><br><b>Metals:</b> silver, bronze.<br><br><b>Year of creation:</b> 2016",
     "video": "video/gallery/baba_yaga.mp4",
+    "ImgUderVideo": "img/museum/babayaga.png",
     "background": "img/stone-art/fairytales/babayaga/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/babayaga/1.png",
         "img/stone-art/fairytales/babayaga/2.png",
@@ -34,6 +37,32 @@
         "img/stone-art/fairytales/babayaga/preview/6.png",
         "img/stone-art/fairytales/babayaga/preview/7.png",
         "img/stone-art/fairytales/babayaga/preview/8.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/babayaga-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Тонкая проработка фактуры кожи ее кремневого тела становится достоинством в украшении ярких тонов одежды. Струится по ветру ее нефритовая юбка, на голове платок из эвдиалита рубинового цвета, а на плечах бело-красная накидка и массивное ожерелье на шее.",
+            "textEng": "The subtle elaboration of the texture of the skin of her flint body becomes virtue in decorating bright colors of clothing. Her jade skirt is streaming in the wind, a ruby-colored eudialyte scarf on the head, a white and red cape on her shoulders and a massive necklace around the neck."
+        },
+        {
+            "img": "img/GalleryNew/babayaga-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Одна из первых работ коллекции в сочетании камня и бронзового подиума. Применение разных техник и усложнившаяся композиция определили новый уровень: не просто статичная фигурка, а целый динамичный образ с раскрывшейся историей в одном проекте.",
+            "textEng": "One of the first works of the collection in combination of stone with a bronze podium. The use of different techniques and the complicated composition determined a new level: not just a static figure but a whole dynamic image with a revealed story in one project."
+        },
+        {
+            "img": "img/GalleryNew/babayaga-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Вспоминая актера Григория Милляра на ум сразу приходит образ «Бабы-Яги» и «Кощея Бессмертного». Именно с его портретным сходством исполнены два наших персонажа «Сказочной коллекции».",
+            "textEng": "Remembering the actor Grigory Millyar the image of \"Baba Yaga\" and \"Koshchei the Immortal\" immediately comes to mind. With his portrait similarity our two characters of the \"Fairy Collection\" are executed."
+        }
     ],
     "modelMap": {
         "modelClassName": "babayaga",
