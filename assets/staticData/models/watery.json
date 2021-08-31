@@ -11,10 +11,14 @@
     "description": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой. Водяной пас на дне рек и озёр стада рыб и, если его задобрить, посылал рыбакам богатый улов. Поэтому для удачи всегда отпускали первую пойманную рыбу.</i>",
     "about": "<b>Высота:</b> 550 мм. <br><b>Диаметр подставки:</b> 380 мм. <br><br><b>Камни:</b> нефрит, жадеит, халцедон, кварцит, льдистый кварц, яшма, кахолонг. <br><br><b>Металл:</b> серебро, бронза. <br><br><b>Год создания:</b> 2018.",
     "nameEng": "Watery",
-    "descriptionEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.</i>",
+    "descriptionEng": "In Slavic mythology this is a spirit that lives in reservoirs, the master of the waters, a pot-bellied old man with green skin and a long beard. The Watery pasture at the bottom of rivers and lakes of herds of fish and if someone cajole him he sent a rich catch to the fishermen. Therefore, for good luck they always released the first fish caught.",
     "aboutEng": "<b>Height:</b> 550&nbsp;mm.  <br><b>Diameter of the base:</b> 380&nbsp;mm.  <br><br><b>Stones:</b> nephrite, jadeite, chalcedony, quartzite, quartz, jasper, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
     "video": "video/gallery/vodyanoy.mp4",
+    "ImgUderVideo": "img/museum/watery.png",
+    "headerBackground": "img/news/grozny-main.png",
     "background": "img/stone-art/fairytales/vodyanoy/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/vodyanoy/1.png",
         "img/stone-art/fairytales/vodyanoy/2.png",
@@ -28,6 +32,40 @@
         "img/stone-art/fairytales/vodyanoy/preview/3.png",
         "img/stone-art/fairytales/vodyanoy/preview/4.png",
         "img/stone-art/fairytales/vodyanoy/preview/5.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/watery-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "<i>ПОн как царь верхом на Соме разрывает сети рыбаков <br>И отпускает рыбу в море для учения простаков: <br>«Первой рыбке дай свободу, добрым делом докажи, <br>Что отпускаешь их на волю по велению сердца, от души.  <br>Те, кто во власть твою попали, не бойся, отпусти. <br>Приобретёшь ты вдвое-втрое того, что сможешь унести».</i>",
+            "textEng": "<i>He rides the sheatfish like a king tearing the nets of fishermen <br>And he releases the fish into the sea and teaches them a lesson: <br>\"Give a freedom to the first fish, prove this with a good deed <br>That you release it at will, at the behest of your heart and soul. <br>Those who have fallen into your power do not be afraid, let them go. <br>You will get two or three times more and carry it all\".</i>"
+        },
+        {
+            "img": "img/GalleryNew/watery-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Уникальный технический прием – это сочетание нефрита с инкрустацией жадеита в виде бородавочек на теле старичка. <br><br>Такое соединение видится единым, целым и совершенно незаметным. Но именно такая кажущаяся простота невероятно сложной работы определена особым таинством мастерства и красотой камня.",
+            "textEng": "A unique technique is a combination of jade with jadeite inlaid in the form of warts on the old man's body. <br><br>Such a connection is seen as a single, whole and completely invisible. But precisely this apparent simplicity of an incredibly complex work is determined by the special mystery of craftsmanship and the beauty of the stone."
+        },
+        {
+            "img": "img/GalleryNew/watery-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "На его плечи накинута сеть, сплетенная из серебра. Сама удочка сделана из бронзы и серебренной лесы. Водяной умело дирижирует ей и управляет водным царством.",
+            "textEng": "A net woven of silver is draped over his shoulders. The rod itself is made of bronze and silver fishing line. The Watery skillfully conducts it and rules the water kingdom."
+        },
+        {
+            "img": "img/GalleryNew/watery-unit4.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Волшебство Водянова – это завораживающий живой взгляд, одухотворение самого образа. Происходит настоящий диалог со зрителем и создается та невидимая связь, та сеть, в которую завлекает нас мудрый собеседник.",
+            "textEng": "The magic of Watery is a bewitching live look, the spiritualization of the image itself. A real dialogue with a viewer takes place and that invisible connection is created, that network into which we are carried away by a wise interlocutor."
+        }
     ],
     "modelMap": {
         "modelClassName": "watery",

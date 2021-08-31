@@ -104,9 +104,9 @@
     {
         "id": "groznyy",
         "title": "Иван Грозный",
-        "titleEng": "Ivan Groznyy",
+        "titleEng": "Ivan the Terrible",
         "text": "Великий князь московский, первый царь Руси. (1530 - 1584)",
-        "textEng": "Text on eng",
+        "textEng": "Grand Duke of Moscow, the first tsar of Russia. (1530 - 1584)",
         "img": "img/collections/groznyy/0.png",
         "background": "img/collections/groznyy/1.png"
     },
@@ -114,8 +114,8 @@
         "id": "watery",
         "title": "Водяной",
         "titleEng": "Watery",
-        "text": "В славянской мифологии это дух, обитающий в водоемах, хозяин вод, пузатый старик с зелёной кожей и длинной бородой.",
-        "textEng": "A spirit of ponds and rivers in Slavic mythology, fish shepherd and owner of water.",
+        "text": "В славянской мифологии – особый дух, хозяин водного царства.",
+        "textEng": "In Slavic mythology this is a special spirit, the ruler of the water kingdom.",
         "img": "img/collections/watery/0.png",
         "background": "img/collections/watery/1.png"
     },
