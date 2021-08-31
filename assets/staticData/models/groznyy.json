@@ -1,9 +1,59 @@
 {
     "id": "groznyy",
     "name": "Иван Грозный",
-    "nameEng": "Ivan Groznyy",
-    "description": "Великий князь московский, первый царь Руси. (1530 - 1584)",
-    "descriptionEng": "Text on eng",
+    "nameEng": "Ivan the Terrible",
+    "description": "Государь, Великий князь московский всея Руси, первый венчаный царь всея Руси. <br><br>В годы его правления проводились реформы военной службы, судебной системы, государственного управления, были покорены Казанское, Астраханское и Сибирское ханства, присоединена Башкирия, часть земель Ногайской Орды. При Иване IV прирост территории Русского государства произошел почти вдвое. К завершению его царствования Россия стала размером больше всей остальной Европы.",
+    "descriptionEng": "Sovereign, The Grand Duke of Moscow, the first crowned Tsar of Russia. <br><br>During his reign reforms were carried out in the military service, the judicial system, and public administration; the Kazan, Astrakhan and Siberian khanates were conquered; Bashkiria and part of the lands of the Nogai Horde were annexed. During the reign of Ivan IV the growth of the territory of the Russian state almost doubled. By the end of his reign Russia had grown larger than the rest of Europe.",
+    "ImgUderVideo": "img/museum/grozny.png",
+    "headerBackground": "img/news/grozny-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
+    "imagesPreview": [
+        "img/stone-art/historical/grozny/preview/1.png",
+        "img/stone-art/historical/grozny/preview/2.png",
+        "img/stone-art/historical/grozny/preview/3.png",
+        "img/stone-art/historical/grozny/preview/4.png",
+        "img/stone-art/historical/grozny/preview/5.png",
+        "img/stone-art/historical/grozny/preview/6.png",
+        "img/stone-art/historical/grozny/preview/7.png",
+        "img/stone-art/historical/grozny/preview/8.png",
+        "img/stone-art/historical/grozny/preview/9.png",
+        "img/stone-art/historical/grozny/preview/10.png",
+        "img/stone-art/historical/grozny/preview/11.png",
+        "img/stone-art/historical/grozny/preview/12.png",
+        "img/stone-art/historical/grozny/preview/13.png",
+        "img/stone-art/historical/grozny/preview/14.png",
+        "img/stone-art/historical/grozny/preview/15.png",
+        "img/stone-art/historical/grozny/preview/16.png",
+        "img/stone-art/historical/grozny/preview/17.png",
+        "img/stone-art/historical/grozny/preview/18.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/grozny-unit1.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "<i>Привстав, он смотрит вдаль неравнодушно, суров и предан правде той, <br>Что не влечет за собой сомнения, что велит его судьбой. <br>Под его ногами свёрток, прошение: «Отдайте земли польскому королю». <br>Подняв свой посох гневно, сказал: «Руси они! Подвластные Царю!».</i>",
+            "textEng": "<i>Rising he looks without indifference, stern and devoted to that truth <br>That does not entail doubts and commands his fate. <br>The bundle under his feet is a petition: \"Give the lands to the Polish king\", <br>Raising his staff angrily, he said: \"They belong to Russia and under the rule of the Tsar!\"</i>"
+        },
+        {
+            "img": "img/GalleryNew/grozny-unit2.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Он сидит на царском троне в украшении золота и драгоценных камней. На нем одета меховая шубка из эвдиалита яркого рубинового цвета с темными и сероватыми переходами, а на голове его Шапка Мономаха – символ самодержавия Руси.",
+            "textEng": "He sits on the royal throne adorned with gold and precious stones. He is wearing a fur coat made of eudialyte of a bright ruby color with dark and grayish transitions, on his head is the Monomakh Hat – a symbol of the autocracy of Russia."
+        },
+        {
+            "img": "img/GalleryNew/grozny-unit3.png",
+            "mediaBlockClass": "",
+            "title": "",
+            "titleEng": "",
+            "text": "Создание трона сопровождается аналогией с мраморным троном Ивана Грозного в Государственной Третьяковской галерее. Вот только воссоздается он из твердого белоснежного камня кахолонга. На троне применена тончайшая резьба, напоминающая орнамент, на котором показаны значимые моменты истории Руси.",
+            "textEng": "The creation of the throne is accompanied by an analogy with the marble throne of Ivan the Terrible in the State Tretyakov Gallery. But this throne is recreated from the solid snow-white stone –cacholong. The finest carving is applied on it similar to an ornament and shows significant moments in the history of Russia."
+        }
+    ],
     "modelMap": {
         "modelClassName": "groznyy",
         "img": "img/collections/groznyy/0.png",
