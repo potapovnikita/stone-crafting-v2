@@ -207,10 +207,15 @@
             min-height 280px
             margin-bottom 23px
 
-    @media only screen and (max-width 390px)
+    @media only screen and (max-width 500px)
         &__bg
-            left -30%
-            right -30%
+            top 80px
+            left unset
+            right unset
+            width 100%
+            height 390px
+            background-position center
+            background-size cover
 
 .jokerNew-model
     position relative
@@ -280,10 +285,11 @@
         .model__content
             margin-top 0
 
-    @media only screen and (max-width 431px)
+    @media only screen and (max-width 500px)
         &__bg
-            left -20%
-            right -20%
+            width 100%
+            background-size cover
+            background-position center
 
 .makedon-model
     position relative
@@ -350,11 +356,14 @@
             min-height 440px
             margin-bottom 28px
 
-    @media only screen and (max-width 470px)
+    @media only screen and (max-width 500px)
         &__bg
-            left -50%
-            right -50%
-
+            left unset
+            right unset
+            width 100%
+            background-position center
+            background-size cover
+            
 .genghiskhan-model
     position relative
     margin-top 200px
@@ -417,6 +426,12 @@
             max-width 301px
             min-height 449px
             margin-bottom 39px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            width 100%
+            background-size cover
+            background-position bottom
 
 .tamerlan-model
     position relative
@@ -484,6 +499,14 @@
             max-width 281px
             min-height 395px
             margin-bottom 44px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-position center
+            background-size cover
 
 .suvorov-model
     position relative
@@ -801,6 +824,14 @@
             min-height 444px
             margin-bottom 61px
 
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-size cover
+            background-position center
+
 .babayaga-model
     position relative
     margin-top 170px
@@ -861,6 +892,13 @@
             max-width 264px
             min-height 400px
             margin-bottom 30px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-position center
 
 .groznyy-model
     position relative
@@ -1074,6 +1112,14 @@
             max-width 316px
             min-height 392px
             margin-bottom 17px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right:unset
+            background-position center
+            background-size cover
+            width 100%
 
 .goldfish-model
     position relative
@@ -1332,6 +1378,14 @@
             max-width 299px
             min-height 540px
             margin-bottom 6px
+    
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-position 70% center
+            background-size cover
 
 .ovinnik-model
     position relative
@@ -1818,6 +1872,13 @@
             margin-top 0
             margin-bottom 51px
 
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-size cover
+
 .popovich-model
     position relative
     margin-top 381px
@@ -1893,6 +1954,12 @@
         .model__content
             max-width unset
             margin-top 0
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
 
 .muromets-model
     position relative
@@ -1982,6 +2049,14 @@
 
         .model__content
             max-width unset
+
+    @media only screen and (max-width 500px)
+        &__bg
+            left unset
+            right unset
+            width 100%
+            background-size cover
+            background-position center
 
 .svyatogor-model
     position relative
