@@ -11,10 +11,13 @@
     "description": "&laquo;Приплыла к нему рыбка, спросила: &laquo;Чего тебе надобно, старче?&raquo; <br>Сюжетная композиция по «Сказке о рыбаке и рыбке» А.С. Пушкина, повествующая о том, как много даров может принести человеку милосердие, и как непомерная жадность может лишить его всего, что имел, словно штормовая волна, смывающая призрачные дворцы.</i>",
     "about": "<b>Высота:</b> 500&nbsp;мм. <br><b>Диаметр подставки:</b> 300&nbsp;мм. <br><br> <b>Камни:</b> мрамор, халцедон, яшма, родусит, хрусталь, арагонит, сердолик, окаменелое дерево, агат, топазы. <br><br><b>Металл:</b> серебро, бронза, золочение. <br><br> <b>Год создания:</b> 2016.",
     "nameEng": "Goldfish",
-    "descriptionEng": "A fairy magical personage that fulfills wishes in gratitude for freedom.</i>",
+    "descriptionEng": "<i>A fish swam to him and asked: \"What do you want?\"</i> <br><br>The composition based on \"The Tale of the Fisherman and the Fish\" by A.S. Pushkin which tells how many gifts mercy can bring to a person and how excessive greed can deprive him of everything that he had like a storm wave washing away ghostly palaces.",
     "aboutEng": "<b>Height:</b> 500&nbsp;mm.  <br><b>Diameter of the base:</b> 300&nbsp;mm.  <br><br><b>Stones:</b> marble, chalcedony, jasper, rhodusite, crystal, aragonite, carnelian, petrified tree, agate, topaz. <br><br><b>Metals:</b> silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2016.",
     "video": "video/gallery/gold_fish.mp4",
+    "ImgUderVideo": "img/museum/goldfish.png",
     "background": "img/stone-art/fairytales/goldfish/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/goldfish/1.png",
         "img/stone-art/fairytales/goldfish/2.png",
@@ -33,7 +36,25 @@
         "img/stone-art/fairytales/goldfish/preview/5.png",
         "img/stone-art/fairytales/goldfish/preview/6.png",
         "img/stone-art/fairytales/goldfish/preview/7.png",
-        "img/stone-art/fairytales/goldfish/preview/8.png"
+        "img/stone-art/fairytales/goldfish/preview/8.png",
+        "img/stone-art/fairytales/goldfish/preview/9.png",
+        "img/stone-art/fairytales/goldfish/preview/10.png",
+        "img/stone-art/fairytales/goldfish/preview/11.png",
+        "img/stone-art/fairytales/goldfish/preview/12.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/goldfish-unit1.png",
+            "mediaBlockClass": "",
+            "text": "<i>И сюжет весь этот в композиции одной <br>Умело сочетает «сказку в камне» с истиной простой: <br>«От разбитого корыта до царства вечного земного <br>Старик с протянутой рукой просит быть тому, что не велит его душой. <br>Но все что было, есть и будет в мгновение может стать иным <br>И также то, что от сердца скрыто может отказаться под волной».</i>",
+            "textEng": "All this plot is in the one composition <br>Skillfully combines the \"fairy tale in stone\" with the simple truth: <br>\"From the broken trough to the eternal kingdom <br>The old man asks to be real what is against his soul’s wishes. <br>But everything that was or will be in an instant can be under the threat <br>And also what is hidden from the heart can be covered with a wave”.</i>"
+        },
+        {
+            "img": "img/GalleryNew/goldfish-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Владычица морская предстала в виде божественного образа, властвуя над всем на поднявшейся волне. Ее золото блестит как солнце, а чешуя сияет 300 топазами. Не каждому дается это таинство общения, что снисходит до людей. Восполнен ли просящий чистотой, что открывает взору видеть или ведом он чужим, впустую тратя дар?",
+            "textEng": "The queen of the sea appeared in the form of a divine image dominating everything on the rising wave. Its gold shines like the sun and its scales shine with 300 topazes. Not everyone is given this sacrament of communication that comes down to people. Is the asking one filled with purity which opens the eye to see or is he led by strangers wasting his gift?"
+        }
     ],
     "modelMap": {
         "modelClassName": "goldfish",

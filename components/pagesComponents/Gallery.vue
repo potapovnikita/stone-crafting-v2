@@ -8,7 +8,8 @@
 
             .title-block
                 .title-block__circle
-                h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
+                h1.title-block__title(v-if="currentProduct.customName" v-html="lang === 'ru' ? currentProduct.customName : currentProduct.customNameEng")
+                h1.title-block__title(v-else v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
                 .title-block__line
                 p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 

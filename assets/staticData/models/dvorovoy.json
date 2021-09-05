@@ -1,6 +1,7 @@
 {
     "id": "dvorovoy",
     "name": "Дворовой",
+    "nameEng": "The Courtyard hero",
     "creation": {
         "title": "Год создания: 2018",
         "titleEng": "Year of creation: 2018"
@@ -14,7 +15,11 @@
     "descriptionEng": "A home spirit in the East Slavic mythology, owner of the court.</i> ",
     "aboutEng": "<b>Height:</b> 260&nbsp;mm.  <br><b>Diameter of the base:</b> 230x220&nbsp;mm.  <br><br><b>Stones:</b> chalcedony, jasper, petrified tree, uvarovite, agate, cacholong, labradorite. <br><br><b>Metals:</b> silver, bronze <br><br><b>Year of creation:</b> 2018.",
     "video": "",
+    "ImgUderVideo": "img/museum/watery.png",
+    "headerBackground": "img/news/grozny-main.png",
     "background": "img/stone-art/fairytales/dvorovoy/1.jpg",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/dvorovoy/1.jpg",
         "img/stone-art/fairytales/dvorovoy/2.jpg",
@@ -26,6 +31,88 @@
         "img/stone-art/fairytales/dvorovoy/preview/2.jpg",
         "img/stone-art/fairytales/dvorovoy/preview/3.jpg",
         "img/stone-art/fairytales/dvorovoy/preview/4.jpg"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/dvorovoy-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Вся концентрация мгновения выражается в действии одного маленького персонажа, обладающего большой силой, и называют его Духом. С непомерным трудом, увлеченный, он рубит дрова серебряным топором, чтобы заготовить их на предстоящую зиму.",
+            "textEng": "The entire concentration of the moment is expressed in the action of one small hero with great power inside and he is called The Spirit. He enthusiastically chops firewood with a silver ax to prepare it for the coming winter."
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Герой застыл в самый интересный момент своего последнего действия, как будто показывая важность его завершения, преобладающего над началом. Там, где есть результат, там и подготовленные запасы на зиму и теплый дом.",
+            "textEng": "The hero froze at the most interesting moment of his last action as if showing the importance of its completion prevailing over the beginning. Where there is a result, there are prepared supplies for the winter and a warm house."
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Удивительный камень «окаменелое дерево», воссоздающий дрова, еще больше подводит нас к мысли, что труд Дворового ведом силой его духа. Он рубит не просто дерево, а нечто твердое и несокрушимое, на формирование которого ушли тысячелетия.",
+            "textEng": "The unusual stone \"petrified wood\" which recreates firewood brings us even more to the idea that the work of The Courtyard hero is led by the strength of his spirit. He cuts not just wood but something solid and indestructible which took millennia to form it."
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit4.png",
+            "mediaBlockClass": "",
+            "text": "В простоте спокойного цвета многообразных оттенков яшмы разглядывается красота самой природы. Так, на первый взгляд Дворовой кажется весьма обычным героем, но в его простоте есть необъятное величие его духа, присмотревшись, он сияет всеми красками жизни.",
+            "textEng": "In the simplicity of the calm color of the various shades of jasper the beauty of nature itself is discerned. At first glance, The Courtyard hero seems to be a very ordinary but in his simplicity there is the immense greatness of his spirit, looking closely he shines with all the colors of life."
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit5.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Домовой",
+            "textEng": "The House Keeper"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit6.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Домовой",
+            "textEng": "The House Keeper"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit7.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Домовой",
+            "textEng": "The House Keeper"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit8.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Гномик на изумрудных копях",
+            "textEng": "Dwarf at the Emerald Mines"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit9.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Гномик на изумрудных копях",
+            "textEng": "Dwarf at the Emerald Mines"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit10.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Леший",
+            "textEng": "The Spirit of the Forest"
+        },
+        {
+            "img": "img/GalleryNew/dvorovoy-unit11.png",
+            "mediaBlockClass": "",
+            "title": "Из коллекции «Славянские Духи»",
+            "titleEng": "From the collection \"Slavic Spirits\"",
+            "text": "Леший",
+            "textEng": "The Spirit of the Forest"
+        }
     ],
     "modelMap": {
         "modelClassName": "dvorovoy",

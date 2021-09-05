@@ -14,7 +14,7 @@
                 :hl="lang === 'ru' ? 'ru' : 'en'"
             )
         .unitNewsItem__info(:class="{'unitNewsItem__info--wide': isShortText && wideBlock }")
-            h2.unitNewsItem__title(v-html="lang === 'ru' ? title : titleEng")
+            h2.unitNewsItem__title(v-if="title" v-html="lang === 'ru' ? title : titleEng")
             .unitNewsItem__line(v-if="!wideBlock")
             p.unitNewsItem__text(v-if="isShortText" v-html="lang === 'ru' ? text : textEng")
             p.unitNewsItem__text(v-if="!isShortText && more" v-html="lang === 'ru' ? fullText : fullTextEng")
@@ -123,6 +123,7 @@ export default {
         height 1px
         margin-bottom 48px
         border 1px solid goldNew
+        display none
 
     &__text
         margin-bottom 25px
@@ -216,5 +217,8 @@ export default {
         &__text
             margin-bottom 18px
             font-size 14px
+
+        &__line
+            display block
 
 </style>
