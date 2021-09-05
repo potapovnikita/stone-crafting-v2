@@ -121,10 +121,10 @@
     },
     {
         "id": "dvorovoy",
-        "title": "Дворовой",
-        "titleEng": "Dvorovoy",
-        "text": "Домашний дух древних славян,обитавший во дворе. Он являлся покровителем домашнего скота и помогал по хозяйству.",
-        "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
+        "title": "Дворовой и коллекция «Славянские Духи»",
+        "titleEng": "The Courtyard hero and collection \"Slavic Spirits\"",
+        "text": "Домашний дух древних славян, обитающий во дворе, следил за его порядком и хозяйством.",
+        "textEng": "The home spirit of the ancient Slavs living in the courtyard kept order and household.",
         "img": "img/collections/dvorovoy/0.png",
         "background": "img/collections/dvorovoy/1.png"
     },
