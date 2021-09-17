@@ -7,6 +7,7 @@
             iframe(
                 v-if="videoLink"
                 height="100%"
+                width="100%"
                 :src="videoLink"
                 frameborder="0"
                 allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -89,6 +90,10 @@ export default {
         &--wide
             max-width 1027px
             margin-bottom 46px
+
+        iframe
+            max-height 330px
+            min-height 300px
 
     &__photo
         width 100%

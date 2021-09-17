@@ -2,8 +2,66 @@
     "id": "viking",
     "name": "Викинг",
     "nameEng": "Viking",
+    "creation": {
+        "title": "Год создания: 2019",
+        "titleEng": "Year of creation: 2019"
+    },
     "description": "Викинги - бесстрашные скандинавские мореходы, совершавшие набеги в раннее средневековье от Винланда до Биармии и Северной Африки.",
-    "descriptionEng": "Text on eng",
+    "descriptionEng": "Vikings are fearless Scandinavian sailors who raided in the early Middle Ages from Vinland to Biarmia and North Africa.",
+    "ImgUderVideo": "img/museum/viking.png",
+    "headerBackground": "img/news/viking-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
+    "imagesPreview": [
+        "img/stone-art/fairytales/viking/preview/1.png",
+        "img/stone-art/fairytales/viking/preview/2.png",
+        "img/stone-art/fairytales/viking/preview/3.png",
+        "img/stone-art/fairytales/viking/preview/4.png",
+        "img/stone-art/fairytales/viking/preview/5.png",
+        "img/stone-art/fairytales/viking/preview/6.png",
+        "img/stone-art/fairytales/viking/preview/7.png",
+        "img/stone-art/fairytales/viking/preview/8.png",
+        "img/stone-art/fairytales/viking/preview/9.png",
+        "img/stone-art/fairytales/viking/preview/10.png",
+        "img/stone-art/fairytales/viking/preview/11.png",
+        "img/stone-art/fairytales/viking/preview/12.png",
+        "img/stone-art/fairytales/viking/preview/13.png",
+        "img/stone-art/fairytales/viking/preview/14.png",
+        "img/stone-art/fairytales/viking/preview/15.png",
+        "img/stone-art/fairytales/viking/preview/16.png",
+        "img/stone-art/fairytales/viking/preview/17.png",
+        "img/stone-art/fairytales/viking/preview/18.png",
+        "img/stone-art/fairytales/viking/preview/19.png",
+        "img/stone-art/fairytales/viking/preview/20.png",
+        "img/stone-art/fairytales/viking/preview/21.png",
+        "img/stone-art/fairytales/viking/preview/22.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/viking-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Отважный Викинг – проявление духа, его силы в действии. Он нацелен на великие совершения во имя своей несокрушимой правды. Движимый волей, он устремился покорять новые земли, подчинять себе стихии и открывать неизведанные дороги своего Пути.",
+            "textEng": "The brave Viking is a manifestation of the spirit, its strength in action. He is focused on great achievements and is guided by his indestructible truth. Driven by his will he aspired to conquer new lands, subdue the natural elements and discover unknown roads of his Path."
+        },
+        {
+            "img": "img/GalleryNew/viking-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Экспрессия, ожившая в камне, эмоциональность выражения лица создают тесный контакт со зрителем. Взгляд Викинга такой же живой, как и человека, смотрящего на него. Нет ничего, что бы нарушило их связь. Образ открыт к сопереживанию и вовлекает за собой в совершения чего-то значимого, ведомого правдой.",
+            "textEng": "The expression that has come to life in the stone, the emotionality of the facial expression create a close contact with the viewer. The Viking's gaze is as lively as the gaze of the person looking at him. There is nothing that would break their connection. The image is open to empathy and involves in doing something meaningful, guided by the truth."
+        },
+        {
+            "img": "img/GalleryNew/viking-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Воинственность образа раскрывается в его доспехах. Серебренный боевой топор, щит (окаменелое дерево, лазурит, серебро), меч и шлем становятся его неотъемлемыми элементами.",
+            "textEng": "The belligerence of the image is revealed in his armor. A silver battle axe, a shield (petrified wood, lapis lazuli, silver), a sword and a helmet become its integral elements."
+        },
+        {
+            "img": "img/GalleryNew/viking-unit4.png",
+            "mediaBlockClass": "",
+            "text": "Тяжелая кольчуга воссоздается из пирита с тонкой проработкой каждой детали. Волчья шкура сделана из опала уникального природного оттенка, повторяющего шерсть зверя. Внутренняя часть шкуры, имитирующая кожу, создана из меди и покрыта серебром.",
+            "textEng": "Heavy chainmail is created from pyrite with fine elaboration of every detail. The wolf skin is made of opal of a unique natural shade repeating the fur of the beast. The inner part of the skin imitating the skin is made of copper and covered with silver."
+        }
+    ],
     "modelMap": {
         "modelClassName": "viking",
         "img": "img/collections/viking/0.png",

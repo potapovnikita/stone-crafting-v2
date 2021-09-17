@@ -1,9 +1,29 @@
 {
     "id": "dobrynya",
     "name": "Добрыня Никитич и Змей Горыныч",
-    "nameEng": "Title on eng",
-    "description": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
-    "descriptionEng": "Text on eng",
+    "nameEng": "Dobrynya and the Snake",
+    "description": "Герои славянского былинного эпоса. <br><br>«Пришло время для славного богатыря Добрыни Никитича вновь послужить для Князя Киевского. Нужно спасти княжескую племянницу Забаву из когтистых лап похитившего её Змея Горыныча».",
+    "descriptionEng": "Heroes of the Slavic epic. <br><br>\"The time has come for the glorious hero Dobrynya Nikitich to serve again for the Prince of Kiev. It is necessary to save the princely niece Zabava from the clawed paws of the Snake Gorynych who kidnapped her.\"",
+    "ImgUderVideo": "img/museum/dobrynya.png",
+    "headerBackground": "img/news/dobrynya-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
+    "imagesPreview": [
+        "img/stone-art/fairytales/dobrynya/preview/1.png",
+        "img/stone-art/fairytales/dobrynya/preview/2.png",
+        "img/stone-art/fairytales/dobrynya/preview/3.png",
+        "img/stone-art/fairytales/dobrynya/preview/4.png",
+        "img/stone-art/fairytales/dobrynya/preview/5.png",
+        "img/stone-art/fairytales/dobrynya/preview/6.png"
+    ],
+    "media": [
+        {
+            "videoLink": "https://www.youtube.com/embed/25TATJD4_0M",
+            "mediaBlockClass": "",
+            "text": "",
+            "textEng": ""
+        }
+    ],
     "modelMap": {
         "modelClassName": "dobrynya",
         "img": "img/collections/dobrynya/0.png",

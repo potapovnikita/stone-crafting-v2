@@ -11,10 +11,13 @@
     "description": "В славянских поверьях дух, приносящий мелкие неприятности нерадивым хозяевам из-за своего подвижного характера и привычки шалить. Появлялась в образе мелкой старушки на куриных лапах. Защититься от проделок Кикиморы помогал камень с отверстием, подвешенный в доме или хозяйственных постройках.",
     "about": "<b>Высота:</b> 440&nbsp;мм. <br><b>Диаметр подставки:</b> 270&nbsp;мм. <br><br> <b>Камни:</b> : кремний, окаменелое дерево, лазурит, родонит, яшма, опал, сердолик, халцедон, кварцит, малахит, нефрит, лабрадорит, хрусталь, флюорит. <br><br><b>Металл:</b> золото, серебро, бронза. <br><br><b>Год создания:</b> 2018.",
     "nameEng": "Kikimora",
-    "descriptionEng": "The house spirit in Slavic mythology causing harm and troubles.",
+    "descriptionEng": "In Slavic beliefs this is a house spirit that brings minor troubles to negligent owners because of her changeable character and the habit of being naughty. She appeared in the form of a small old woman with chicken legs. To protect themselves from the tricks of the Kikimora they used a stone suspended in the house.",
     "aboutEng": "<b>Height:</b> 440&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b> flint, petrified tree, lazurite, rhodonite, jasper, opal, carnelian, chalcedony, quartzite, malachite, nephrite, labradorite, crystal, fluorite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
     "video": "video/gallery/kikimora.mp4",
+    "ImgUderVideo": "img/museum/kikimora.png",
     "background": "img/stone-art/fairytales/kikimora/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/kikimora/1.png",
         "img/stone-art/fairytales/kikimora/2.png",
@@ -42,6 +45,26 @@
         "img/stone-art/fairytales/kikimora/preview/10.png",
         "img/stone-art/fairytales/kikimora/preview/11.png",
         "img/stone-art/fairytales/kikimora/preview/12.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/kikimora-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Кикимора, по мифологии крадущая кур, представляется в образе доброй хулиганистой старушки с куриными ногами, как будто, отвечая за свои шалости, она сама становится тем, что представляют ее дела.",
+            "textEng": "According to mythology Kikimora steals chickens and appears in the form of a kind old woman with chicken legs. It seems she becomes the one what represents her deeds."
+        },
+        {
+            "img": "img/GalleryNew/kikimora-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Кикимора – одна из героев сказочной коллекции, объединением которых становится бронзовый подиум, плавно переходящий в «сказку в камне». <br><br>Природный серый оттенок кремния удивительно воплощает фигуру персонажа. Ее пестрый сарафан сделан из яркого лазурита и яшмы переходящего оттенка от болотно-зеленого до нежно-розового.",
+            "textEng": "Kikimora is one of the heroes of the fairy-tale collection the union of which is a bronze podium smoothly turning into a \"fairy tale in stone\". <br><br>The natural gray shade of stone silicon surprisingly embodies the figure of the character. Her colorful sundress is made of bright lapis lazuli and jasper of a transitional shade from marsh-green to pale pink."
+        },
+        {
+            "img": "img/GalleryNew/kikimora-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Сумочка, закинутая за плечо, открывает нам совсем другую сторону ее характера. <br><br>Спицы и разноцветные клубочки рукодельницы-старушки, деревянная поварёшка и три белоснежных цветочка веют добротой и заботой о ком-то очень важном. <br><br>Так, за каменной стеной ее вредности и шалости находится заботливое и любящее сердце.",
+            "textEng": "The bag slung over her shoulder reveals a completely different side of her character. <br><br>Knitting needles and colorful balls, a wooden spoon and three snow-white flowers show kindness and care for someone very important. <br><br>So, behind the stone wall of her harmfulness and pranks is a caring and loving heart."
+        }
     ],
     "modelMap": {
         "modelClassName": "kikimora",

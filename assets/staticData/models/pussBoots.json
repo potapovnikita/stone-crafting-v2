@@ -14,7 +14,11 @@
     "descriptionEng": "The personage of a fairy tale in European literature.</i>",
     "aboutEng": "<b>Height:</b> 450&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jade, jasper, quartzite, chalcedony, aventurine, marble, rhodonite, carnelian, fluorite, tiger's eye, petrified tree, crystal. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2016.",
     "video": "",
+    "headerBackground": "img/news/kotvsapogah-main.png",
+    "ImgUderVideo": "img/museum/kotvsapogah.png",
     "background": "img/stone-art/fairytales/kotvsapogah/1.jpg",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/kotvsapogah/1.jpg",
         "img/stone-art/fairytales/kotvsapogah/2.jpg",
@@ -48,6 +52,26 @@
         "img/stone-art/fairytales/kotvsapogah/preview/13.jpg",
         "img/stone-art/fairytales/kotvsapogah/preview/14.jpg",
         "img/stone-art/fairytales/kotvsapogah/preview/15.jpg"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/kotvsapogah-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Хитрый и умный Кот управляет тщеславием Людоеда, который по своему желанию превращается в мышонка. Получив власть над ним, Кот завладевает его замком. <br><br>Крутящийся подиум словно указывает на того, кто управляет и «крутит этим сказочным мирком».",
+            "textEng": "The cunning and intelligent Cat controls the vanity of an Ogre who turns into a mouse at his will. Having gained power over him the Cat takes possession of his castle. <br><br>The spinning podium seems to indicate the one who controls and \"turns this fairytale world\"."
+        },
+        {
+            "img": "img/GalleryNew/kotvsapogah-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Внутри замка находится тайничок, несущий в себе много таинств и символизма. Тот, кто способен открыть эту дверь, обретает возможность завладеть всем «Царством» и управлять им.",
+            "textEng": "Inside the castle there is a secret place that carries a lot of mysteries and symbolism. The one who is able to open this door acquires the opportunity to take possession of the entire \"Kingdom\" and control it."
+        },
+        {
+            "img": "img/GalleryNew/kotvsapogah-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Воплощение Кота – уникальное сочетание цветового перехода нефрита, монолитного камня серо-белого оттенка. Детали композиции создают неповторимость образа в соединении с яркими породами яшмы, флюорита, кварцита. Более спокойные тона образуют фактуры замка, созданные из камня «окаменелое дерево» в сочетании с бронзой.",
+            "textEng": "The embodiment of the Cat is a unique combination of the color transition of jade, a monolithic stone of a gray-white hue. The details of the composition create a unique image in combination with bright rocks of jasper, fluorite, quartzite. Calmer tones form the textures of the castle, created from the stone \"petrified wood\" in combination with bronze."
+        }
     ],
     "modelMap": {
         "modelClassName": "pussBoots",

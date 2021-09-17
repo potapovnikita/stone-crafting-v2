@@ -3,7 +3,26 @@
     "name": "Илья Муромец и Соловей-разбойник",
     "nameEng": "Ilya Muromets",
     "description": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
-    "descriptionEng": "Text on eng",
+    "descriptionEng": "Ilya Muromets became the embodiment of people's aspirations about a brave warrior and a hero. The meeting with the Robber Nightingale was his first test and feat.",
+    "ImgUderVideo": "img/museum/muromets.png",
+    "headerBackground": "img/news/muromets-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
+    "media": [
+        {
+            "videoLink": "https://www.youtube.com/embed/6kr8aJdG0eI",
+            "mediaBlockClass": "",
+            "text": "",
+            "textEng": ""
+        }
+    ],
+    "imagesPreview": [
+        "img/stone-art/fairytales/muromets/preview/1.png",
+        "img/stone-art/fairytales/muromets/preview/2.png",
+        "img/stone-art/fairytales/muromets/preview/3.png",
+        "img/stone-art/fairytales/muromets/preview/4.png",
+        "img/stone-art/fairytales/muromets/preview/5.png"
+    ],
     "modelMap": {
         "modelClassName": "muromets",
         "img": "img/collections/muromets/0.png",
