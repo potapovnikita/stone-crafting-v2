@@ -176,7 +176,7 @@
     {
         "id": "bannik",
         "title": "Банник",
-        "titleEng": "Bannik",
+        "titleEng": "Hero of the bathhouse",
         "text": "В поверьях восточных славян «Банник» - дух, живущий в бане, её хозяин и хранитель.",
         "textEng": "The Slavic spirit, keeper and owner of the bathhouse.",
         "img": "img/collections/bannik/0.png",
@@ -187,7 +187,7 @@
         "title": "Викинг",
         "titleEng": "Viking",
         "text": "Викинги - бесстрашные скандинавские мореходы, совершавшие набеги в раннее средневековье от Винланда до Биармии и Северной Африки.",
-        "textEng": "Text on eng.",
+        "textEng": "Vikings are fearless Scandinavian sailors who raided in the early Middle Ages from Vinland to Biarmia and North Africa.",
         "img": "img/collections/viking/0.png",
         "background": "img/collections/viking/1.png"
     },
@@ -230,9 +230,9 @@
     {
         "id": "popovich",
         "title": "Алёша Попович и Тугарин Змей",
-        "titleEng": "Title on eng",
+        "titleEng": "Alesha Popovich and Tugarin the Serpent",
         "text": "Русский воин-путник, богатырь Алёша Попович прославился своими подвигами на благо отечества и князя.",
-        "textEng": "Text on eng",
+        "textEng": "Russian warrior, hero Alyosha Popovich became famous for his exploits for the benefit of the country and the ruler.",
         "img": "img/collections/popovich/0.png",
         "background": "img/collections/popovich/1.png"
     },
@@ -241,34 +241,34 @@
         "title": "Илья Муромец и Соловей-разбойник",
         "titleEng": "Ilya Muromets",
         "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
-        "textEng": "Text on eng",
+        "textEng": "Ilya Muromets became the embodiment of people's aspirations about a brave warrior and a hero. The meeting with the Robber Nightingale was his first test and feat.",
         "img": "img/collections/muromets/0.png",
         "background": "img/collections/muromets/1.png"
     },
     {
         "id": "svyatogor",
         "title": "Святогор и Микула",
-        "titleEng": "Title on eng",
+        "titleEng": "Svyatogor and Mikula",
         "text": "Святогор, древнейший русский богатырь и житель гор, предстает величавым воином, внушающий восхищение своей силой. Святогор превосходит по своей мощи все мыслимые пределы человеческих возможностей.",
-        "textEng": "Text on eng",
+        "textEng": "Svyatogor is the Russian hero and a resident of the mountains, appears as a majestic warrior inspiring admiration for his strength. Svyatogor surpasses all imaginable limits of human capabilities.",
         "img": "img/collections/svyatogor/0.png",
         "background": "img/collections/svyatogor/1.png"
     },
     {
         "id": "dobrynya",
         "title": "Добрыня Никитич и Змей Горыныч",
-        "titleEng": "Title on eng",
-        "text": "Илья Муромец стал воплощением народных чаяний о храбром воине и богатыре. Встреча с Соловьём-разбойником стала его первым испытанием и подвигом.",
-        "textEng": "Text on eng",
+        "titleEng": "Dobrynya and the Snake",
+        "text": "Герои славянского былинного эпоса. <br><br>«Пришло время для славного богатыря Добрыни Никитича вновь послужить для Князя Киевского. Нужно спасти княжескую племянницу Забаву из когтистых лап похитившего её Змея Горыныча».",
+        "textEng": "Heroes of the Slavic epic. <br><br>\"The time has come for the glorious hero Dobrynya Nikitich to serve again for the Prince of Kiev. It is necessary to save the princely niece Zabava from the clawed paws of the Snake Gorynych who kidnapped her.\"",
         "img": "img/collections/dobrynya/0.png",
         "background": "img/collections/dobrynya/1.png"
     },
     {
         "id": "tsarevich",
         "title": "Иван-царевич и серый волк",
-        "titleEng": "Title on eng",
+        "titleEng": "Prince Ivan and the Gray Wolf",
         "text": "По сюжету картины В. Васнецова «Иван-царевич на сером волке». Сказочное произведение русского изобразительного искусства, в основе которого сюжет народной сказки: Царевич с Еленой Прекрасной убегают от погони на верном сером волке.",
-        "textEng": "Text on eng",
+        "textEng": "According to the plot of the painting by V. Vasnetsov \"Ivan Tsarevich on the gray Wolf\". A fabulous work of Russian fine art based on the plot of a folk tale: the Tsarevich and Elena the Beautiful run away from the chase on a faithful gray wolf.",
         "img": "img/collections/tsarevich/0.png",
         "background": "img/collections/tsarevich/1.png"
     }

@@ -1,9 +1,19 @@
 {
     "id": "svyatogor",
     "name": "Святогор и Микула",
-    "nameEng": "Title on eng",
+    "nameEng": "Svyatogor and Mikula",
     "description": "Святогор, древнейший русский богатырь и житель гор, предстает величавым воином, внушающий восхищение своей силой. Святогор превосходит по своей мощи все мыслимые пределы человеческих возможностей.",
-    "descriptionEng": "Text on eng",
+    "descriptionEng": "Svyatogor is the Russian hero and a resident of the mountains, appears as a majestic warrior inspiring admiration for his strength. Svyatogor surpasses all imaginable limits of human capabilities.",
+    "ImgUderVideo": "img/museum/svyatogor.png",
+    "headerBackground": "img/news/svyatogor-main.png",
+    "imagesPreview": [
+        "img/stone-art/fairytales/svyatogor/preview/1.png",
+        "img/stone-art/fairytales/svyatogor/preview/2.png",
+        "img/stone-art/fairytales/svyatogor/preview/3.png",
+        "img/stone-art/fairytales/svyatogor/preview/4.png",
+        "img/stone-art/fairytales/svyatogor/preview/5.png",
+        "img/stone-art/fairytales/svyatogor/preview/6.png"
+    ],
     "modelMap": {
         "modelClassName": "svyatogor",
         "img": "img/collections/svyatogor/0.png",

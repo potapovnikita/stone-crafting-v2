@@ -14,7 +14,10 @@
     "descriptionEng": "The evil wizard of the East Slavic mythology and folklore.</i>",
     "aboutEng": "<b>Height:</b> 330&nbsp;mm.  <br><b>Diameter of the base:</b> 250&nbsp;mm.  <br><br><b>Stones:</b> jasper, dolerite, tiger's eye, pyrite, hematite, chalcedony, petrified tree, aventurine, emerald, ruby, sapphire, diamond, crystal, irnimite, cacholong. <br><br><b>Metals:</b> gold, silver, bronze, gilded gold. <br><br><b>Year of creation:</b> 2015.",
     "video": "video/gallery/koschei.mp4",
+    "ImgUderVideo": "img/museum/koschei.png",
     "background": "img/stone-art/fairytales/koshey/background/1.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/koshey/1.png",
         "img/stone-art/fairytales/koshey/2.png",
@@ -36,6 +39,26 @@
         "img/stone-art/fairytales/koshey/preview/7.png",
         "img/stone-art/fairytales/koshey/preview/8.png",
         "img/stone-art/fairytales/koshey/preview/9.png"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/koshey-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Образ всемогущего Царя, обладающего всем богатством мира, но испугавшегося писка маленькой мышки. <br><br>В его сундуке золотые монеты с валютами 30 стран мира, драгоценные камни: бриллианты, изумруды, рубины, сапфиры, топазы. А также украшения и антиквариат, тонущий в богатстве всего остального.",
+            "textEng": "The image of a powerful King who has all the wealth of the world but was afraid of the squeak of a small mouse. <br><br>In his chest there are gold coins with the currencies of 30 countries, precious stones: diamonds, emeralds, rubies, sapphires, topaz. As well as jewelry and antiques drowning in the wealth of everything else."
+        },
+        {
+            "img": "img/GalleryNew/koshey-unit2.png",
+            "mediaBlockClass": "",
+            "text": "«Чахнет он над богатствами земными, но не видит богатство сердца своего» <br><br>В то время как он бессмертен телом, душа его мертва. <br><br>Все вокруг него ожило: пиритовые паучки на его броне и череп на поясе, играючи показывающий язык.",
+            "textEng": "\"He strives for the treasure of the Earth but does not see the riches of his heart\" <br><br>While he is immortal in body his soul is dead. Everything around him came to life: pyrite spiders on his armor and a skull on his belt playfully showing his tongue."
+        },
+        {
+            "img": "img/GalleryNew/koshey-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Его испуг и настороженный взгляд стали реакцией на писк маленькой мышки, пробегавшей мимо. Хватающийся за свои богатства, он становится привязан к ним. Его страшит мысль о том, что его драгоценности кто-то может украсть. Но то, что украсть невозможно, он не обретает… <br><br>За красотой его вечного спектакля из золотых монет предстает образ нагого и истощенного существа.",
+            "textEng": "His fright and wary look were a reaction to the squeak of a small mouse running past. Grasping at his treasure he becomes attached to it. He is afraid of the idea that someone can steal it. But what cannot be stolen he does not acquire… <br><br>Behind the beauty of his eternal spectacle of gold coins the image of a naked and emaciated creature appears."
+        }
     ],
     "modelMap": {
         "modelClassName": "koschei",

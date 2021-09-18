@@ -1,9 +1,19 @@
 {
     "id": "tsarevich",
     "name": "Иван-царевич и серый волк",
-    "nameEng": "Title on eng",
+    "nameEng": "Prince Ivan and the Gray Wolf",
     "description": "По сюжету картины В. Васнецова «Иван-царевич на сером волке». Сказочное произведение русского изобразительного искусства, в основе которого сюжет народной сказки: Царевич с Еленой Прекрасной убегают от погони на верном сером волке.",
-    "descriptionEng": "Text on eng",
+    "descriptionEng": "According to the plot of the painting by V. Vasnetsov \"Ivan Tsarevich on the gray Wolf\". A fabulous work of Russian fine art based on the plot of a folk tale: the Tsarevich and Elena the Beautiful run away from the chase on a faithful gray wolf.",
+    "ImgUderVideo": "img/museum/tsarevich.png",
+    "headerBackground": "img/news/tsarevich-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
+    "imagesPreview": [
+        "img/stone-art/fairytales/tsarevich/preview/1.png",
+        "img/stone-art/fairytales/tsarevich/preview/2.png",
+        "img/stone-art/fairytales/tsarevich/preview/3.png",
+        "img/stone-art/fairytales/tsarevich/preview/4.png"
+    ],
     "modelMap": {
         "modelClassName": "tsarevich",
         "img": "img/collections/tsarevich/0.png",

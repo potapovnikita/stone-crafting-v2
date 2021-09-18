@@ -1,9 +1,24 @@
 {
     "id": "popovich",
     "name": "Алёша Попович и Тугарин Змей",
-    "nameEng": "Title on eng",
+    "nameEng": "Alesha Popovich and Tugarin the Serpent",
     "description": "Русский воин-путник, богатырь Алёша Попович прославился своими подвигами на благо отечества и князя.",
-    "descriptionEng": "Text on eng",
+    "descriptionEng": "Russian warrior, hero Alyosha Popovich became famous for his exploits for the benefit of the country and the ruler.",
+    "ImgUderVideo": "img/museum/popovich.png",
+    "headerBackground": "img/news/popovich-main.png",
+    "imagesPreview": [
+        "img/stone-art/fairytales/popovich/preview/11.png",
+        "img/stone-art/fairytales/popovich/preview/10.png",
+        "img/stone-art/fairytales/popovich/preview/9.png",
+        "img/stone-art/fairytales/popovich/preview/8.png",
+        "img/stone-art/fairytales/popovich/preview/7.png",
+        "img/stone-art/fairytales/popovich/preview/6.png",
+        "img/stone-art/fairytales/popovich/preview/5.png",
+        "img/stone-art/fairytales/popovich/preview/4.png",
+        "img/stone-art/fairytales/popovich/preview/3.png",
+        "img/stone-art/fairytales/popovich/preview/2.png",
+        "img/stone-art/fairytales/popovich/preview/1.png"
+    ],
     "modelMap": {
         "modelClassName": "popovich",
         "img": "img/collections/popovich/0.png",

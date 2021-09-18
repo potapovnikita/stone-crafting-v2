@@ -13,7 +13,7 @@
                 .title-block__line
                 p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 
-        .header-container(v-if="!currentProduct.video" :style="{backgroundImage: getBgImg(currentProduct.headerBackground)}")
+        .header-container(v-if="!currentProduct.video" :style="{backgroundImage: `url(${getImgExternal(currentProduct.headerBackground)})`}")
             .title-block
                 .title-block__circle
                 h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}

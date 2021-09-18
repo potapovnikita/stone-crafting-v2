@@ -1,6 +1,7 @@
 {
     "id": "bannik",
     "name": "Банник",
+    "nameEng": "Hero of the bathhouse",
     "creation": {
         "title": "Год создания: 2017",
         "titleEng": "Year of creation: 2017"
@@ -10,11 +11,14 @@
     "shortDescEng": "The Slavic spirit, keeper and owner of the bathhouse.",
     "description": "В поверьях восточных славян &laquo;Банник&raquo; - дух, живущий в бане, её хозяин и хранитель. Заходя в баню, просили разрешения попариться, а после банных процедур благодарили Банника и оставляли гостинцы: кусок мыла, веник и чистой воды. Ведь если банный дух доволен, то банька жаркая, а пар легкий!</i>",
     "about": "<b>Высота:</b> 430&nbsp;мм. <br><b>Диаметр подставки:</b> 260&nbsp;мм. <br><br> <b>Камни:</b> сердолик, агат, кварцит, халцедон, нефрит, амазонит, хрусталь, окаменелое дерево, гранат, яшма, родусит, сапфирин, хрусталь, арагонит, ирнимит, габбро, рубин. <br><br><b>Металл:</b> серебро, бронза, серебрение. <br><br><b>Год создания:</b> 2017.",
-    "nameEng": "Bannik",
     "descriptionEng": "The Slavic spirit, keeper and owner of the bathhouse.</i>",
     "aboutEng": "<b>Height:</b> 440&nbsp;mm.  <br><b>Diameter of the base:</b> 270&nbsp;mm. <br><br><b>Stones:</b> flint, petrified tree, lazurite, rhodonite, jasper, opal, carnelian, chalcedony, quartzite, malachite, nephrite, labradorite, crystal, fluorite. <br><br><b>Metals:</b> gold, silver, bronze. <br><br><b>Year of creation:</b> 2018.",
     "video": "",
+    "ImgUderVideo": "img/museum/bannik.png",
     "background": "img/stone-art/fairytales/bannik/1.jpg",
+    "headerBackground": "img/news/bannik-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/bannik/1.jpg",
         "img/stone-art/fairytales/bannik/2.jpg",
@@ -40,6 +44,26 @@
         "img/stone-art/fairytales/bannik/preview/9.jpg",
         "img/stone-art/fairytales/bannik/preview/10.jpg",
         "img/stone-art/fairytales/bannik/preview/11.jpg"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/bannik-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Его синоним: в здоровом теле — здоровый дух! Через контрастность жара и холода он держит баланс между ними, находясь на подвижной лавочке. Это подобно той истине, что всегда по середине, которая и есть тот баланс, нарушив который теряется равновесие.",
+            "textEng": "Its synonym: in a healthy body — a healthy mind! Through the contrast of heat and cold he keeps a balance between them being on a mobile bench. This is like the truth that is always in the middle which is this balance and if it is disturbed the order can be lost."
+        },
+        {
+            "img": "img/GalleryNew/bannik-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Только в соединении здравого равновесия создается польза, крепнет одно и усиливается другое, находясь в прочной непрерывной связи между друг другом.",
+            "textEng": "Only in the combination of a reasonable balance is a benefit created, one thing becomes stronger and the other is strengthened being in continuous connection between each other."
+        },
+        {
+            "img": "img/GalleryNew/bannik-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Спокойствие Банника и его активность действия также находятся в уравновешивании двух противоположностей. Нефритовый веник и листочки, падающие на кварцитовое тело, включены в процесс, все вовлечено в ансамбль его многофункциональных действий. И даже природные стихии оказалось под чутким контролем, при этом в его сохраненном безмятежном спокойствии.",
+            "textEng": "The calmness of the Hero of the bathhouse and his activity of action are also in balancing the two opposites. The jade broom and the leaves falling on the quartzite body are included in the process, everything is involved in the ensemble of its multifunctional actions. And even the natural elements were under control while at the same time in his preserved serene calm."
+        }
     ],
     "modelMap": {
         "modelClassName": "bannik",

@@ -14,7 +14,11 @@
     "descriptionEng": "A spirit of the threshing barn in Slavic folklore.</i>",
     "aboutEng": "<b>Height:</b> 400&nbsp;mm.  <br><b>Diameter of the base:</b> 260&nbsp;mm.  <br><br><b>Stones:</b> jasper, chalcedony, amazonite, rhodusite, petrified tree, agate, flint, calcite, uvarovite, chalcedony, citrine, irnimite, rhodonite, cat’s eye, crystal, cacholong. <br><br><b>Metals:</b> silver, bronze. <br><br><b>Year of creation:</b> 2018.",
     "video": "",
+    "ImgUderVideo": "img/museum/ovinnik.png",
     "background": "img/stone-art/fairytales/ovinnik/1.jpg",
+    "headerBackground": "img/news/ovinnik-main.png",
+    "titleNews": "О произведении",
+    "titleNewsEng": "About the work of art",
     "imagesFull": [
         "img/stone-art/fairytales/ovinnik/1.jpg",
         "img/stone-art/fairytales/ovinnik/2.jpg",
@@ -46,6 +50,26 @@
         "img/stone-art/fairytales/ovinnik/preview/12.jpg",
         "img/stone-art/fairytales/ovinnik/preview/13.jpg",
         "img/stone-art/fairytales/ovinnik/preview/14.jpg"
+    ],
+    "media": [
+        {
+            "img": "img/GalleryNew/ovinnik-unit1.png",
+            "mediaBlockClass": "",
+            "text": "Он оберегает овин, заботиться о благополучии дома и подготавливается к предстоящему зимнему периоду. Увлеченный своим делом, Овинник создает запасы с излишком и делится ими со всеми остальными.",
+            "textEng": "He protects the farm, takes care of the well-being of the house and prepares for the upcoming winter period. Passionate about his work Ovinnik creates stocks with excess and shares with everyone else."
+        },
+        {
+            "img": "img/GalleryNew/ovinnik-unit2.png",
+            "mediaBlockClass": "",
+            "text": "Птичка, присевшая на его раскрывшуюся ладонь, также вестница благополучия, доброты и счастья. Еще один персонаж – кот, который всегда там, где хорошо и уютно.",
+            "textEng": "The bird perched on his open palm also symbolizes well-being, kindness and happiness. Another character is a cat who is always where it is good and cozy."
+        },
+        {
+            "img": "img/GalleryNew/ovinnik-unit3.png",
+            "mediaBlockClass": "",
+            "text": "Добро порождает добро и объединяет всех героев в едином действии и взаимной отдачи во благо другого.",
+            "textEng": "Good begets good and unites all the heroes in a single action and mutual bestowal of each for the benefit of the other."
+        }
     ],
     "modelMap": {
         "modelClassName": "ovinnik",
