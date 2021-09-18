@@ -26,7 +26,7 @@
         .order_container__buttons
             Button(
                 :classNames="['order_container__btn']"
-                :onClick="openPopup"
+                :onClick="onOpen"
                 disabledPadding
                 large
                 )
@@ -34,13 +34,11 @@
                     IndividIcon.icon
                     MbIndividIcon.icon.mb
                     span.text(v-html="lang === 'ru' ? orderButton.name : orderButton.nameEng")
-        Popup(:isOpenPopup="isOpenPopup", @close="closePopup")
-
         OrderGallary(:gallaryItems="gallary.items")
         Footer
 </template>
 <script>
-import { mapState } from 'vuex'
+import {mapMutations, mapState} from 'vuex'
 import Order from '~/assets/staticData/order.json'
 import LargeForms from '~/assets/staticData/orders/items/largeForms.json'
 import SmallForms from '~/assets/staticData/orders/items/smallForms.json'
@@ -49,7 +47,6 @@ import StoneMosaic from '~/assets/staticData/orders/items/stoneMosaic.json'
 import FlorentineMosaic from '~/assets/staticData/orders/items/florentineMosaic.json'
 import ArtObjects from '~/assets/staticData/orders/items/artObjects.json'
 import Piece from '~/assets/staticData/orders/items/piece.json'
-//import Stone from '~/assets/staticData/orders/items/stone.json'
 import OrderModel from '@/components/blocksComponents/OrderModel'
 import OrderWork from '@/components/blocksComponents/OrderWork'
 import WorksSteps from '@/components/blocksComponents/WorksSteps'
@@ -59,7 +56,7 @@ import Button from "@/components/ui/Button";
 import IndividIcon from '~/assets/img/tradition/individ.svg'
 import MbIndividIcon from '~/assets/img/tradition/individ-mb.svg'
 import Footer from '~/components/Footer.vue'
-import Popup from '@/components/ui/Popup'
+
 export default {
     name: 'Order',
     components: {
@@ -71,7 +68,6 @@ export default {
         IndividIcon,
         MbIndividIcon,
         Footer,
-        Popup,
     },
     data() {
         return {
@@ -87,19 +83,14 @@ export default {
                 FlorentineMosaic,
                 ArtObjects,
                 Piece,
-                //Stone,
             ],
-            isOpenPopup: false
         }
     },
     methods: {
-            openPopup() {
-                this.isOpenPopup = true
-            },
-            closePopup() {
-                this.isOpenPopup = false
-            },
-        },
+        ...mapMutations({
+            onOpen: 'orderPopup/onOpen'
+        }),
+    },
     computed: {
         ...mapState('localization', [
             'lang',

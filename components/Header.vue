@@ -1,5 +1,6 @@
 <template lang="pug">
-    div
+    .header_wrapper
+        OrderPopup
         #header.menu_container
             .logo_row
                 nuxt-link(to="/")
@@ -27,12 +28,16 @@
     import Menu from '~/assets/staticData/menu.json'
     import axios from "axios";
     import { getLang } from "../store/localization";
+    import OrderPopup from '@/components/ui/OrderPopup'
 
     export default {
         data() {
             return {
                 menu: Menu,
             }
+        },
+        components: {
+            OrderPopup,
         },
         props: ['placeholder'],
         computed: {
@@ -86,6 +91,8 @@
 </script>
 
 <style lang="stylus" scoped>
+    .header_wrapper
+        position relative
 
     .menu_container
         color whiteMain

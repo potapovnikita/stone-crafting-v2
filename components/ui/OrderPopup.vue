@@ -1,16 +1,16 @@
 <template lang="pug">
     .popup-wrapper
-        .popup_overlay(:class="{'popup-close': !isOpenPopup}")
-            .close_btn(@click="$emit('close')")
+        .popup_overlay(:class="{'popup-close': !isOpened}")
+            .close_btn(@click="onClose")
                     CloseLogo
-            .popup_container(:class="{'popup-close': !isOpenPopup}" v-click-outside="onClickOutside")
+            .popup_container(:class="{'popup-close': !isOpened}" v-click-outside="onClickOutside")
                 .popup_inner-container
                     Feedback
 
 </template>
 
 <script>
-    import { mapState } from 'vuex'
+    import { mapMutations, mapState } from 'vuex'
     import vClickOutside from 'v-click-outside'
 
     import CloseLogo from '~/assets/img/close.svg'
@@ -23,12 +23,6 @@
 
             }
         },
-        props: {
-            isOpenPopup: {
-                type: Boolean,
-                required: true,
-            },
-        },
         directives: {
             clickOutside: vClickOutside.directive
         },
@@ -36,7 +30,11 @@
             CloseLogo,
             Feedback,
         },
+
         methods: {
+            ...mapMutations({
+                onClose: 'orderPopup/onClose'
+            }),
             onClickOutside (event) {
                 // if(this.isOpenPopup) this.$emit('close')
             }
@@ -45,12 +43,15 @@
             ...mapState('localization', [
                 'lang',
             ]),
+            ...mapState('orderPopup', [
+                'isOpened',
+            ]),
         },
-        async created() {
-
-        },
-        mounted() {
-        },
+        watch: {
+            isOpened(val) {
+                console.log('val', val)
+            }
+        }
     }
 
 </script>
@@ -64,7 +65,7 @@
                 opacity 0
 
     .popup_overlay
-        z-index 1000
+        z-index 1001
         position fixed
         top 0
         bottom 0
