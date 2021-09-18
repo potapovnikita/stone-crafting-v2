@@ -7,8 +7,8 @@
             client-only
                 carousel(:paginationEnabled="false" :perPage="1" :loop="true" @pageChange="handlePageChange" ref="photoCarousel")
                     slide(v-for="(imgSrc, index) in imgSrcList" :key="`slide_${index}`")
-                        .galleryPhotos__slide
-                            img.galleryPhotos__photo(:src="getImg(imgSrc)" alt="img")
+                        .galleryPhotos__slide(v-if="isShowImage(index + 1)")
+                            img.galleryPhotos__photo(:src="getImg(imgSrc)" alt="img" rel="preload")
 
         ButtonArrow.galleryPhotos__buttons.right(:onClick="nextSlide" arrowRight)
 
@@ -37,6 +37,12 @@ export default {
         }
     },
     methods: {
+        isShowImage(slide) {
+            return slide === this.currentSlide
+                || slide + 1 === this.currentSlide
+                || slide - 1 === this.currentSlide
+                || (slide - 1 === 0 && this.imgSrcList.length === this.currentSlide)
+        },
         getImg(url) {
             return getImgExternal(url)
         },

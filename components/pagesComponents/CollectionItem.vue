@@ -363,7 +363,7 @@
             width 100%
             background-position center
             background-size cover
-            
+
 .genghiskhan-model
     position relative
     margin-top 200px
@@ -1378,7 +1378,7 @@
             max-width 299px
             min-height 540px
             margin-bottom 6px
-    
+
     @media only screen and (max-width 500px)
         &__bg
             left unset
@@ -2286,7 +2286,7 @@
 
     @media only screen and (max-width 1280px)
         margin-top 249px
-        padding-bottom 67px
+        padding-bottom 180px
 
         &__bg
             top -103px
@@ -2317,7 +2317,6 @@
 
     @media only screen and (max-width 840px)
         margin-top 91px
-        padding-bottom 61px
 
         &__bg
             top -66px
