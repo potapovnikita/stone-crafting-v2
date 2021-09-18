@@ -25,7 +25,4 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-    body
-        background-color blackRed
-</style>
+<style lang="stylus"></style>

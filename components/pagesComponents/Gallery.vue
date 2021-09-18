@@ -195,6 +195,7 @@ export default {
             height 100%
 
             video
+                height: 100%;
                 display block
                 position absolute
                 left 50%

@@ -3,10 +3,7 @@
         .popup_overlay(:class="{'popup-close': !isOpenPopup}")
         .popup_container(:class="{'popup-close': !isOpenPopup}" v-click-outside="onClickOutside")
             .popup_inner-container
-                div(v-if="component === 'prices'")
-                    Prices
-                div(v-if="component === 'feedback'")
-                    Feedback
+                slot
 
                 .popup_border-top
                 .close_btn(@click="$emit('close')")
@@ -20,9 +17,6 @@
     import vClickOutside from 'v-click-outside'
 
     import CloseLogo from '~/assets/img/close.svg'
-    import Feedback from '~/components/Feedback.vue'
-    import Prices from '~/components/Prices.vue'
-
 
     export default {
         data() {
@@ -36,8 +30,6 @@
         },
         components: {
             CloseLogo,
-            Feedback,
-            Prices
         },
         methods: {
             onClickOutside (event) {
