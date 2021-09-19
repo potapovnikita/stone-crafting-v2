@@ -2,7 +2,7 @@
 .imagesSwitcher(@click="next")
     ul.imagesSwitcher__list
         li.imagesSwitcher__listItem(v-for="(imagePath, index) in images" :key="`img_${index}`" :class="{'active': index === activeImg}")
-            img.imagesSwitcher__photo(:src="getLocal(imagePath)" :alt="`pic_${index}`")
+            img.imagesSwitcher__photo(:src="getImgExternal(imagePath)" :alt="`pic_${index}`")
     slot(:activeImg="activeImg" :switchTo="switchTo")
 
 </template>
@@ -40,7 +40,10 @@ export default {
         next() {
             const hasNext = this.activeImg < this.images.length - 1
             this.activeImg = hasNext ? this.activeImg += 1: 0;
-        }
+        },
+        getImgExternal(url) {
+            return getImgExternal(url)
+        },
     },
     mounted() {
         this.startInterval()
