@@ -1,33 +1,30 @@
 [
     {
-        "name": "Главная страница",
-        "nameEng": "Main",
-        "link": "/"
-    },
-    {
         "name": "О Камнерезном Доме",
         "nameEng": "About Stone-Crafting House",
         "link": "/about"
     },
     {
         "name": "Сокровища музеев",
+        "secondName": "коллекция шедевров",
         "nameEng": "Museum treasures",
+        "secondNameEng": "treasure of museums",
         "link": "/collections"
     },
     {
-        "name": "Предложения</br>для партнеров",
-        "nameEng": "Offers</br>for partners",
+        "name": "Индивидуальный заказ",
+        "nameEng": "Individual order",
+        "link": "/order"
+    },
+    {
+        "name": "Салон ANTONOV Online",
+        "nameEng": "ANTONOV Online store",
         "link": "/offers"
     },
     {
         "name": "Виртуальный музей",
         "nameEng": "Virtual Museum",
         "link": "/virtual-museum"
-    },
-    {
-        "name": "Индивидуальный заказ",
-        "nameEng": "Individual order",
-        "link": "/order"
     },
     {
         "name": "Контакты",

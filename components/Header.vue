@@ -19,7 +19,8 @@
                 .hamburger_menu-items_container()
                     .wrapper_items
                         nuxt-link.menu_item(v-for="item in menu" :to="item.link" :key="item.link")
-                            span(v-html="lang === 'ru' ? item.name : item.nameEng" @click="clickMenu(item.link)")
+                            div(v-html="lang === 'ru' ? item.name : item.nameEng" @click="clickMenu(item.link)")
+                            div.second-name(v-if="item.secondName" v-html="lang === 'ru' ? item.secondName : item.secondNameEng" @click="clickMenu(item.link)")
 
 </template>
 
@@ -247,6 +248,8 @@
 
                 &:hover
                     color goldNew
+            .second-name
+                font-size 21px
 
     @media only screen and (max-width 1200px)
         .menu
