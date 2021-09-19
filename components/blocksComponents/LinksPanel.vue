@@ -166,7 +166,7 @@
         display block
 
         &__item
-            width 375px
+            width 100%
             height 315px
             min-width unset
             min-height unset

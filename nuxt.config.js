@@ -23,6 +23,8 @@ module.exports = {
         //         accurateTrackBounce:true,
         //     }
         // ],
+        // With options
+        ['cookie-universal-nuxt', { alias: 'cookiz' }],
     ],
     css: [
         '~assets/styles/font-awesome.styl',
@@ -81,6 +83,9 @@ module.exports = {
                     })
                 });
         }
-    }
+    },
+    router: {
+        middleware: 'routing'
+    },
 }
 

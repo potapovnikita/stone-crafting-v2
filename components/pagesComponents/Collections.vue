@@ -23,7 +23,7 @@
 
 <script>
     import { mapState } from 'vuex'
-    import { getImgExternal, getImgLocal } from '~/plugins/getUrl'
+    import { getImgExternal } from '~/plugins/getUrl'
     import Museum from '~/assets/staticData/museum.json'
     import Cookies from 'universal-cookie';
     import CollectionItem from "@/components/pagesComponents/CollectionItem";

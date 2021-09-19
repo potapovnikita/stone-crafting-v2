@@ -9,8 +9,9 @@
                     .buttons-desktop.btn-left
                         ButtonArrow(:onClick="prewSlide")
                     .buttons-desktop.btn-right
-                            ButtonArrow(:onClick="nextSlide" arrowRight)
-                    .mobile-century-panel
+                        ButtonArrow(:onClick="nextSlide" arrowRight)
+
+                    .mobile-century-panel 111
                         .slide-item__century-panel(v-if="centuryList")
                             .slide-item__centry-item(v-for="century in centuryList")
                                 span(:class="{'active': century.name === slides[currentSlide].century}") {{century.name}}
