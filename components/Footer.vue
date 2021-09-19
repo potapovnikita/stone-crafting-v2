@@ -16,7 +16,7 @@
 
             .column
                 .item.policy
-                    nuxt-link(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'")
+                    nuxt-link.policy-style(to="/privacy" v-html="lang === 'ru' ? 'Правовая политика' : 'Legal policy'")
 
             .column
                 .item.links
@@ -109,6 +109,8 @@
                     &.policy
                         &:hover
                             text-decoration underline
+                        .policy-style
+                            color #9F9F9F
 
                     &.links
                         position relative
