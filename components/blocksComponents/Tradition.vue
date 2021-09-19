@@ -1,7 +1,7 @@
 <template lang="pug">
     .tradition-container
         .tradition-container__wrapper-title
-            h2.tradition-container__title {{lang === 'ru' ? 'Вековые традиции объемной каменной мозаики' : 'Tile on eng' }}
+            h2.tradition-container__title {{lang === 'ru' ? 'Вековые традиции объемной каменной мозаики' : 'Traditions of three-dimensional stone mosaic' }}
             .tradition-container__double-line
         .tradition-container__slides-panel(v-if="slides")
             client-only
@@ -53,7 +53,7 @@
             Button(
                 v-if="buttons.length && buttons[0]"
                 :classNames="['tradition-container__btn']"
-                :onClick="() => $nuxt.$router.push({path: `${buttons[0].link}`})"
+                :onClick="onOpen"
                 disabledPadding
                 large
                 )
@@ -76,7 +76,7 @@
 
 </template>
 <script>
-    import { mapState } from 'vuex'
+import {mapMutations, mapState} from 'vuex'
     import { getImgLocal } from '~/plugins/getUrl'
     import Tradition from '~/assets/staticData/tradition.json'
     import Button from '@/components/ui/Button'
@@ -106,6 +106,9 @@
             }
         },
         methods: {
+            ...mapMutations({
+                onOpen: 'orderPopup/onOpen'
+            }),
             getImgLocal(url) {
                 return getImgLocal(url)
             },
@@ -416,6 +419,7 @@
 
             &__title
                 max-width 252px
+                font-size: 18px
 
             &__slides-panel
                 margin 38px 0

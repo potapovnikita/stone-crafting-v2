@@ -172,8 +172,14 @@
         {
             "img": "img/GalleryNew/torero-unit6.png",
             "mediaBlockClass": "",
-            "text": "Изобретение техники «Кракелюровая мозаика» <br><br> Лазурный Бык – первая работа, созданная в данной технике. Это камнерезная скульптура с эффектом золотого кракелюра и мозаичного набора однородного камня в сочетании с металлом. Эта технология выходит за рамки стандартных техник камнерезного искусства. Данный принцип может считаться новым направлением работы с камнем. <br><br>Создаётся впечатление, что от напора эмоций быка трескается его лазуритовая кожа и проявляется изнутри золото, которое заполняет все трещины. Здесь скрыта философская мысль: «То, что наполняет нас изнутри, то движет нами снаружи».",
-            "textEng": "Invention of the Craquelure Mosaic technique <br><br>The Azure Bull is the first work created using this technique. This is a stone-cut sculpture with the effect of golden craquelure and a mosaic set of homogeneous stone combined with metal. This technology goes beyond the standard techniques of stone-cutting art. This principle can be considered as a new direction in working with stone. <br><br>It seems that from the pressure of the bull's emotions its lapis lazuli skin is cracking and gold appears from within which fills all the cracks. A philosophical thought is hidden here: \"What fills us from the inside moves us from the outside.\""
+            "text": "Изобретение техники «Кракелюровая мозаика» <br><br> Лазурный Бык – первая работа, созданная в данной технике. Это камнерезная скульптура с эффектом золотого кракелюра и мозаичного набора однородного камня в сочетании с металлом. Эта технология выходит за рамки стандартных техник камнерезного искусства. Данный принцип может считаться новым направлением работы с камнем.",
+            "textEng": "Invention of the Craquelure Mosaic technique <br><br>The Azure Bull is the first work created using this technique. This is a stone-cut sculpture with the effect of golden craquelure and a mosaic set of homogeneous stone combined with metal. This technology goes beyond the standard techniques of stone-cutting art. This principle can be considered as a new direction in working with stone."
+        },
+        {
+            "img": "img/GalleryNew/torero-unit9.png",
+            "mediaBlockClass": "",
+            "text": "Создаётся впечатление, что от напора эмоций быка трескается его лазуритовая кожа и проявляется изнутри золото, которое заполняет все трещины. Здесь скрыта философская мысль: «То, что наполняет нас изнутри, то движет нами снаружи».",
+            "textEng": "It seems that from the pressure of the bull's emotions its lapis lazuli skin is cracking and gold appears from within which fills all the cracks. A philosophical thought is hidden here: \"What fills us from the inside moves us from the outside.\""
         },
         {
             "img": "img/GalleryNew/torero-unit7.png",
@@ -279,7 +285,7 @@
                 "btn" : {
                     "textRu": "Посещения музея",
                     "textEng": "Title on Rng",
-                    "href": "/"
+                    "href": "/virtual-museum"
                 }
             },
             {
@@ -289,30 +295,30 @@
                 "titleEng": "Title on eng",
                 "options": [
                     {
-                        "textRu": "Государственный Эрмитаж",
-                        "textEng": "Text on Eng",
+                        "textRu": "Презентация Государственный Эрмитаж",
+                        "textEng": "Presentation The State Hermitage Museum",
                         "isTextGrey": false
                     },
                     {
-                        "textRu": "Лувр",
-                        "textEng": "Text on Eng",
+                        "textRu": "Презентация musée du Louvre",
+                        "textEng": "Presentation of the musée du Louvre",
                         "isTextGrey": false
                     },
                     {
-                        "textRu": "Музей Прадо",
-                        "textEng": "Text on Eng",
+                        "textRu": "Частная галерея (Москва)",
+                        "textEng": "Private Gallery (Moscow",
                         "isTextGrey": false
                     },
                     {
-                        "textRu": "Государственная Третьяковская галерея",
-                        "textEng": "Text on Eng",
+                        "textRu": "Международный центр и искусств (Екатеринбург)",
+                        "textEng": "International Center for the Arts (Yekaterinburg)",
                         "isTextGrey": false
                     }
                 ],
                 "btn" : {
                     "textRu": "Узнать о возможности покупки",
                     "textEng": "Title on Rng",
-                    "href": "/"
+                    "href": ""
                 }
             }
         ]

@@ -15,7 +15,7 @@
                             p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
                     .model-show-container__btn-mb
-                        Button(v-if="item.btn") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                        Button(v-if="item.btn" :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
         .model-show-container__info
             h2.model-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
@@ -35,16 +35,16 @@
                                     p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
                 .model-show-container__btn-descktop
-                    Button(v-if="item.btn" large) {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                    Button(v-if="item.btn" large :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
                 .model-show-container__btn-mb
-                    Button(v-if="item.btn") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
-        
+                    Button(v-if="item.btn" :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+
         .model-show-container__pic.mobile-hide(:style="{backgroundImage: getBgImg(showData.background)}")
 
 </template>
 <script>
-import { mapState } from 'vuex'
+import {mapMutations, mapState} from 'vuex'
 import { getBgImgLocal, getImgLocal } from '~/plugins/getUrl'
 import Button from "@/components/ui/Button";
 export default {
@@ -56,6 +56,9 @@ export default {
         Button,
     },
     methods: {
+        ...mapMutations({
+            onOpen: 'orderPopup/onOpen'
+        }),
         getBgImg(url) {
             return getBgImgLocal(url)
         },
@@ -174,7 +177,7 @@ export default {
             font-size 26px
             margin-bottom 20px
             text-align left
-        
+
         &__icon
             width 60px
 

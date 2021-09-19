@@ -23,7 +23,13 @@
     "aboutTitleRu2": "Дорога к мастерству – это дорога длиною в жизнь",
     "aboutTitleEng2": "The road to mastery is a life-long road",
     "aboutRu2": "В&nbsp;давние времена традиции камнерезов передавались среди &laquo;своих&raquo;, а&nbsp;секреты  создания художественных работ не разглашались. Только спустя десятилетия Алексей Антонов и&nbsp;его команда достигли высочайшего мастерства камнеобработки и&nbsp;являются одними из&nbsp;немногих хранителями этих знаний и&nbsp;традиций.",
-    "aboutEng2": "In ancient times, the traditions of stone cutters were passed only among selected people and the secrets of creating artistic works were not disclosed. Only decades later, Alexey Antonov and his team achieved the highest skill in stone processing and they are almost the only ones who keep this secret knowledge and tradition in the 21st century.",
+    "aboutEng2": "In ancient times the traditions of stone cutters were passed only among selected people and the secrets of creating artistic works were not disclosed. Only decades later Alexey Antonov and his team achieved the highest skill in stone processing and they are almost the only ones who keep this secret knowledge and tradition in the 21st century.",
+    "aboutSlides2": [
+        "img/about/show/road.png",
+        "img/about/show/road1.png",
+        "img/about/show/road2.png",
+        "img/about/show/road3.png"
+    ],
 
     "aboutTitleRu3": "Инновации Камнерезного Дома Антонова",
     "aboutTitleEng3": "Innovations of the Antonov Stone-Crafting House",
@@ -33,8 +39,8 @@
 
     "aboutTitleRu4": "Выставочная деятельность",
     "aboutTitleEng4": "Exhibition activities",
-    "aboutRu4": "Частная коллекция Камнерезного Дома Антонова, создававшаяся более 13 лет, служит цели популяризации искусства и возрождению традиций объемной каменной мозаики. Каждое произведение имеет свою выставочную историю и представляет собой культурную ценность. Подробнее в разделе «Коллекция Дома».",
-    "aboutEng4": "The private collection of the Antonov Stone-Crafting House was created for more than 13 years. It serves the purpose of popularizing art and reviving the traditions of three-dimensional stone mosaics. Each work has its own exhibition history and cultural value. For more information, see the section \"The collection of the House\".",
+    "aboutRu4": "Частная коллекция Камнерезного Дома Антонова, создававшаяся более 13 лет, служит цели популяризации искусства и возрождению традиций объемной каменной мозаики. Каждое произведение имеет свою выставочную историю и представляет собой культурную ценность. Подробнее в разделе <a href=\"/collections\"><u>«Сокровища Музеев».</u></a>",
+    "aboutEng4": "The private collection of the Antonov Stone-Crafting House was created for more than 13 years. It serves the purpose of popularizing art and reviving the traditions of three-dimensional stone mosaics. Each work has its own exhibition history and cultural value. For more information, see the section <a href=\"/collections\"><u>\"Мasterpieces of the House\".</u></a>",
     "link4": "/img/about/exhibitionActivities.png",
     "linkEng4": "/img/about/exhibitionActivitiesEng.png",
     "aboutSlides4": [
@@ -86,12 +92,12 @@
         },
         {
             "name": "В 2010 г. награжден почетным знаком Мемориального фонда Карла Фаберже за вклад в развитие российского ювелирного искусства.",
-            "nameEng": "In 2010, he was awarded the honorary badge of the Carl Faberge Memorial Fund for his contribution to the development of Russian jewelry.",
+            "nameEng": "In 2010 he was awarded the honorary badge of the Carl Faberge Memorial Fund for his contribution to the development of Russian jewelry.",
             "img": "img/awards/4.png"
         },
         {
             "name": "В 2012 г. удостоен звания «Главный Мастер» за развитие искусства и продолжение традиций К. Фаберже.",
-            "nameEng": "In 2012, he was awarded the title “Chief Master” for the development of art and the continuation of the traditions of Faberge.",
+            "nameEng": "In 2012 he was awarded the title “Chief Master” for the development of art and the continuation of the traditions of Faberge.",
             "img": "img/awards/5.png"
         },
         {
@@ -101,7 +107,7 @@
         },
         {
             "name": "В 2018 г. награждён орденом высшей степени - Бриллиантовым орденом Карла Фаберже.",
-            "nameEng": "In 2018, he was awarded the Order of the highest degree - the Diamond Order of Carl Faberge.",
+            "nameEng": "In 2018 he was awarded the Order of the highest degree - the Diamond Order of Carl Faberge.",
             "img": "img/awards/7.png"
         }
     ],
@@ -154,8 +160,8 @@
       },
       {
         "link": "https://ru.rbth.com/watch/429-urals-stone-cutters",
-        "name": "$1 млн за фигуру: как работают современные камнерезы (ФОТО)",
-        "nameEng": "$ 1 million per figure: how modern stone cutters work (PHOTO)",
+        "name": "$1 млн за фигуру: как работают современные камнерезы",
+        "nameEng": "$ 1 million per figure: how modern stone cutters work",
         "background": "img/articles/1mln.png"
       },
       {
@@ -178,19 +184,19 @@
       },
       {
         "link": "https://cloud.mail.ru/public/M2KX/iQmrryuDL",
-        "name": "ИСКУССТВО, МЕНЯЮЩЕЕ ХОД ИСТОРИИ СТРАНЫ. ТУРКМЕНИСТАН",
+        "name": "Искусство, меняющее ход истории страны. Туркменистан",
         "nameEng": "",
         "background": "img/articles/art.png"
       },
       {
         "link": "https://cloud.mail.ru/public/4uP9/MvwEwLeMG",
-        "name": "АЛЕКСЕЙ АНТОНОВ – ПРОДОЛЖАТЕЛЬ ДЕЛА ФАБЕРЖЕ И ДЕНИСОВА – УРАЛЬСКОГО",
+        "name": "Алексей Антонов – продолжатель дела Фаберже и Денисова – Уральского",
         "nameEng": "",
         "background": "img/articles/article.png"
       },
       {
         "link": "https://cloud.mail.ru/public/hmKC/DFg4PGfZd",
-        "name": "ТАТЬЯНА ФАБЕРЖЕ О КОЛЛЕКЦИИ ФИГУРОК 1812 ГОДА АЛЕКСЕЯ АНТОНОВА",
+        "name": "Татьяна Фаберже о коллекции фигурок 1812 года Алексея Антонова",
         "nameEng": "",
         "background": "img/articles/article2.png"
       },
@@ -203,7 +209,7 @@
     "articlesEng": [
       {
           "link": "https://ru.rbth.com/watch/429-urals-stone-cutters",
-          "name": "$ 1 million per figure: how modern stone cutters work (PHOTO)",
+          "name": "$ 1 million per figure: how modern stone cutters work",
           "background": "img/articles/1mln.png"
       },
       {
@@ -228,17 +234,17 @@
       },
       {
           "link": "https://cloud.mail.ru/public/gxsQ/pw1LMjk8k",
-          "name": "THE ART THAT CHANGES THE COURSE OF THE COUNTRY. TURKMENISTAN.",
+          "name": "The art that changes the course of the country. Turkmenistan.",
           "background": "img/articles/TURKMENISTAN.png"
       },
       {
           "link": "https://cloud.mail.ru/public/Hdsb/QfCF8AuoD",
-          "name": "ALEXEY ANTONOV IS THE SUCCESSOR OF THE FABERGE AND DENISOV – URALSKY CASE.",
+          "name": "Aleksey Antonov is the successor of the faberge and Denisov – Uralsky case.",
           "background": "img/articles/faberge.png"
       },
       {
           "link": "https://cloud.mail.ru/public/YFgt/NDaS8mRaw",
-          "name": "TATIANA FABERGE ABOUT THE COLLECTION OF FIGURINES BY ALEXEY ANTONOV.",
+          "name": "Tatiana Faberge about the collection of figurines by Aleksey Antonov.",
           "background": "img/articles/TATIANA.png"
       },
       {

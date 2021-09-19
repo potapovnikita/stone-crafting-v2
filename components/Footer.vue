@@ -84,6 +84,7 @@
 
             .column
                 width 300px
+                padding 0 5px
 
                 .item
                     font-size 14px

@@ -18,15 +18,21 @@
     ],
     "footerAdresses": [
         {
+            "addressNameRu": "Частная галерея",
+            "addressNameEng": "Private gallery",
+            "addressRu": "г. Москва",
+            "addressEng": "Moscow city"
+        },
+        {
             "addressNameRu": "Салон ANTONOV",
             "addressNameEng": "ANTONOV Boutique",
-            "addressRu": "Международный центр искусств \"Главный Проспект.\" пр. Ленина, 8",
+            "addressRu": "Международный центр искусств \"Главный Проспект.\" Екатеринбург",
             "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
         },
         {
             "addressNameRu": "Mузей Камнерезного Дома",
             "addressNameEng": "The Museum of the Stone crafting House",
-            "addressRu": "Международный центр искусств \"Главный Проспект.\" пр. Ленина, 8",
+            "addressRu": "Международный центр искусств \"Главный Проспект.\" Екатеринбург",
             "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
         }
     ],

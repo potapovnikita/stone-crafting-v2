@@ -32,7 +32,16 @@
             .text.left
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu2 : company.aboutTitleEng2")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu2 : company.aboutEng2")
-            img.photo(src="~/assets/img/about/road.png" alt="Antonov")
+            //img.photo(src="~/assets/img/about/road.png" alt="Antonov")
+            .descriptionAbout__images(v-if="company.aboutSlides2")
+                ImagesSwitcher(:images="company.aboutSlides2")
+                    template(v-slot:default="slotProps")
+                        .descriptionAbout__images-controls
+                            .descriptionAbout__images-dot(
+                                v-for="(item, index) in company.aboutSlides2"
+                                :key="`imgDot_${index}`"
+                                :class="{'active': index === slotProps.activeImg}"
+                                @click="(event) => slotProps.switchTo(index, event)")
 
         .descriptionAbout
             img.photo(src="~/assets/img/about/joker.png" alt="joker")
@@ -50,10 +59,10 @@
                 h3.descriptionAbout__title(v-html="lang === 'ru' ? company.aboutTitleRu4 : company.aboutTitleEng4")
                 p.descriptionAbout__text(v-html="lang === 'ru' ? company.aboutRu4 : company.aboutEng4")
                 .descriptionAbout__btn-desktop(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
-                    a(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank") {{lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'}}
+                    a(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank") {{lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Collections of famous people'}}
                 .descriptionAbout__btn-mobile(v-if="lang === 'ru' && company.link4 || lang === 'eng' && company.linkEng4")
                     .descriptionAbout__line
-                    a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Exhibitions map'")
+                    a.descriptionAbout__link(:href="lang === 'ru' ? getImgExternal(company.link4) : getImgExternal(company.linkEng4)" target="_blank" v-html="lang === 'ru' ? 'Карта выставок. Коллекции известных персон.' : 'Collections of famous people'")
             .descriptionAbout__images(v-if="company.aboutSlides4")
                 ImagesSwitcher(:images="company.aboutSlides4")
                     template(v-slot:default="slotProps")
@@ -370,13 +379,14 @@
         &__images-dot
             width 12px
             height 12px
-            border 1px solid #616D76
+            border 1px solid rgba(143, 143, 143, 0.3)
             border-radius 50%
             cursor pointer
-            background #1848db
+            background rgb(5 17 25)
 
             &.active
-                background #3f91d9
+                border 1px solid #96785F
+                background #96785F
 
         &.reverse
             @media only screen and (max-width 1000px)

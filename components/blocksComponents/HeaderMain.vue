@@ -2,12 +2,12 @@
 .headerMain
     .headerMain__circle
     h1.headerMain__title {{ lang === 'ru' ? 'Камнерезный Дом Антонова' : 'Stone-crafting House by Alexey Antonov' }}
-    p.headerMain__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Title on eng' }}
+    p.headerMain__sub-title {{ lang === 'ru' ? 'Камнерезное и ювелирное искусство' : 'Stone-crafting and jewelry art' }}
     .headerMain__line
     .headerMain__year-wrapper
         .headerMain__double-line
         p.text_sverdlovsk {{ lang === 'ru' ? 'с 1968 года' : 'since 1968' }}
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -78,7 +78,7 @@ export default {
     @media only screen and (max-width 1280px)
         height 580px
         padding-top 180px
-        
+
         &__title
             font-size 52px
 
@@ -95,7 +95,7 @@ export default {
 
         &__circle
             width 280px
-            height 280px            
+            height 280px
 
         &__title
             font-size 32px
@@ -116,7 +116,7 @@ export default {
         &__year-wrapper
             padding-top 15px
             margin 0
-        
+
         &__double-line
             display none
 
@@ -128,7 +128,7 @@ export default {
             left -15%
             right -15%
             width 409px
-            height 409px            
+            height 409px
 
         &__title
             font-size 32px
@@ -149,7 +149,7 @@ export default {
         &__year-wrapper
             padding-top 33px
             margin 0
-        
+
         &__double-line
             display none
 
@@ -158,7 +158,7 @@ export default {
 
         &__circle
             width 300px
-            height 300px            
+            height 300px
 
         &__title
             margin-bottom 15px
@@ -175,7 +175,7 @@ export default {
 
         &__circle
             width 250px
-            height 250px            
+            height 250px
 
         &__title
             margin-bottom 15px
@@ -191,7 +191,7 @@ export default {
 
         &__circle
             width 230px
-            height 230px            
+            height 230px
 
         &__title
             margin-bottom 10px

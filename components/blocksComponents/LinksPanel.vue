@@ -11,11 +11,12 @@
                     .links-panel-container__wrapper-icon
                         .links-panel-container__icon(:style="{backgroundImage: getBgImg(item.icon)}")
                     .links-panel-container__wrapper-link
-                        span.links-panel-container__link(v-html="lang === 'ru' ? item.name : item.nameEng")
+                        div.links-panel-container__link(v-html="lang === 'ru' ? item.name : item.nameEng")
+                        div.links-panel-container__under-name(v-html="lang === 'ru' ? item.underName : item.underNameEng")
 
         // for mobile version
         .links-panel-container__item.mobile.links-panel-container__item--bg(
-            v-for="item in dataList" 
+            v-for="item in dataList"
             :style="{backgroundImage: getBgImg(item.background)}"
         )
             .links-panel-container__wrapper-content
@@ -93,7 +94,7 @@
         padding-top 42px
         min-width 408px
         min-height 216px
-    
+
     &__circle
         position absolute
         top 0
@@ -114,7 +115,7 @@
         height 100%
         background-repeat no-repeat
         background-position center
-    
+
     &__wrapper-link
         position relative
         z-index 2
@@ -122,6 +123,15 @@
     &__link
         font-family $TenorSans-Regular
         font-size 30px
+        color whiteMain
+        text-align center
+        font-weight 400
+        line-height 140%
+        letter-spacing 0.03em
+
+    &__under-name
+        font-family $TenorSans-Regular
+        font-size 17px
         color whiteMain
         text-align center
         font-weight 400

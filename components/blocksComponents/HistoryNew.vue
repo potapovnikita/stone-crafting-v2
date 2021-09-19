@@ -300,7 +300,7 @@ export default {
         padding-top 20px
         padding-bottom 25px
         font-style italic
-
+        font-size 15px
 
     &__sub-title
         margin-bottom 21px
@@ -333,7 +333,7 @@ export default {
     &__video,
     &__carouselPhoto
         position relative
-        width 400px
+        width 460px
         min-height 286px
 
     &__images
@@ -354,13 +354,14 @@ export default {
     &__images-dot
         width 12px
         height 12px
-        border 1px solid #616D76
+        border 1px solid rgba(143, 143, 143, 0.3)
         border-radius 50%
         cursor pointer
-        background #1848db
+        background rgb(5 17 25)
 
         &.active
-            background #3f91d9
+            border 1px solid #96785F
+            background #96785F
 
     @media only screen and (max-width 1280px)
         &__title
@@ -504,7 +505,13 @@ export default {
                 width 701px
                 overflow hidden
 
-    @media only screen and (max-width 767px)
+        &__photo,
+        &__video,
+        &__carouselPhoto
+            width 420px
+
+
+@media only screen and (max-width 767px)
         &__slides-panel
             .slider
                 display block

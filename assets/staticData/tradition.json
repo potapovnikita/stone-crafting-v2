@@ -16,51 +16,51 @@
             "id": "fist",
             "century": "XIX",
             "textBlockClass": "wrapper-text",
-            "text": "С XIX века в Российской империи появляется особое направление - объемная каменная мозаика, у истоков которого были Карл Фаберже и Алексей Денисов-Уральский. В это время художественные каменные фигурки становятся излюбленным предметом коллекционирования царской семьи и дарятся в качестве подарка правителям разных стран.",
-            "textEng": "Text on eng",
+            "text": "С XIX века в Российской империи появляется особое направление – объемная каменная мозаика, у истоков которой были Карл Фаберже и Алексей Денисов-Уральский. В это время художественные каменные фигурки становятся излюбленными предметами коллекционирования царской семьи Романовых.",
+            "textEng": "Since the XIX century a special direction has appeared in the Russian Empire – three-dimensional stone mosaic. At that time artistic stone figurines became the favorite collectibles of the Romanov royal family.",
             "imgBlock": {
                 "className": "wrapper-img",
-                "img": "img/tradition/slides/1/1.png"                
+                "img": "img/tradition/slides/1/1.png"
             }
         },
         {
             "id": "art",
             "century": "XX",
-            "text": "Такой интерес к редкой технике работы с камнем положил началу формирования камнерезного искусства. Из-за своего высокого мастерства и уникальной художественной резки эти изделия в XX веке становятся предметом инвестирования и появляются в аукционных домах Christie's, Sothbey's, MacDougall's.",
-            "textEng": "Text on eng",
+            "text": "Интерес к редкой технике работы с камнем положил начало формирования камнерезного искусства. Из-за своего высокого мастерства и уникальной художественной резки эти изделия в XX веке становятся предметом инвестирования и появляются в аукционных домах Christie's и Sotheby's.",
+            "textEng": "Interest in the rare technique of working with stones marked the beginning of the formation of stone-carving art. Due to high skill and unique artistic carving in the XX century these works became the subject of investment and appeared in Christie's and Sotheby's auction houses.",
             "img": "img/tradition/slides/2/1.png"
         },
         {
             "id": "master",
             "century": "XX",
-            "text": "Возрождение традиций объемной каменной мозаики приходится на конец XX века. Тогда на Урале, богатым минералогическими и горными породами, появляются мастера-самородки, которые дают новую жизнь камнерезному делу, а город Екатеринбург приобретает статус «Столицы каменной».",
-            "textEng": "Text on eng",
+            "text": "После революции 1917г происходит возрождение утерянных традиций объемной каменной мозаики. В конце XX на Урале, богатым минералогическими и горными породами, появляются мастера-самородки, которые дают новую жизнь камнерезному искусству.",
+            "textEng": "After the revolution of 1917 the lost traditions of three-dimensional stone mosaic were revived. At the end of the XX century masters appeared in the mineral-rich Urals and gave new life to the stone-carving art.",
             "img": "img/tradition/slides/3/1.png"
         },
         {
             "id": "team",
             "century": "XXI",
-            "text": "На рубеже XX–XXI веков Алексей Антонов становится самым известным уральским мастером, чьи работы появляются в частных коллекциях и именуются «Президентскими подарками». Сегодня он и его команда создают новое слово в камнерезном и ювелирном искусстве. Инновационные проекты Дома выставляются в музеях по всему миру, популяризируя искусство и сохраняя при этом традиции старых мастеров-основателей.",
-            "textEng": "Text on eng",
+            "text": "На рубеже XX-XXI веков Алексей Антонов становится самым известным уральским мастером, чьи работы появляются в музеях, частных коллекциях и именуются «Президентскими подарками». Сегодня он и его команда создают новое слово в камнерезном и ювелирном искусстве.",
+            "textEng": "At the turn of the XX-XXI centuries Alexey Antonov became the most famous Ural masters whose works appeared in museums, private collections and were called \"Presidential gifts\". Today, he and his team are creating innovations in the stone-carving and jewelry art.",
             "imgBlockClassName": "wrapper-img",
             "img": "img/tradition/slides/4/1.png",
             "link": {
                 "name": "История бренда",
-                "nameEng": "Name on eng",
-                "href": "/history"
+                "nameEng": "Brand history",
+                "href": "/about"
             }
         }
     ],
 
     "buttons": [
         {
-            "name": "Сделать\n индивидуальный заказ",
-            "nameEng": "Name on eng",
+            "name": "Индивидуальный заказ",
+            "nameEng": "Individual order",
             "link": "/"
         },
         {
-            "name": "Салон Antonov Online\n магазин уникальных вещей",
-            "nameEng": "Name on eng",
+            "name": "Салон ANTONOV Online",
+            "nameEng": "ANTONOV Online store",
             "link": "/"
         }
     ]
