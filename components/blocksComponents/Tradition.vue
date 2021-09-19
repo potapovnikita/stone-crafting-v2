@@ -66,7 +66,7 @@
             Button(
                 v-if="buttons.length && buttons[1]"
                 :classNames="['tradition-container__btn']"
-                :onClick="() => $nuxt.$router.push({path:`${buttons[1].link}`})"
+                :onClick="() => $nuxt.$router.push({path:'/offers'})"
                 disabledPadding
                 large
                 )
