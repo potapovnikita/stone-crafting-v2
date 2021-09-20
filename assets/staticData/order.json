@@ -7,13 +7,13 @@
                 "links": [
                     {
                         "id": "largeForms",
-                        "name": "Большие формы",
-                        "nameEng": "Large forms"
+                        "name": "Монументальное литье",
+                        "nameEng": "Monumental casting"
                     },
                     {
                         "id": "smallForms",
-                        "name": "Малые форма",
-                        "nameEng": "Small forms"
+                        "name": "Ювелирное литье",
+                        "nameEng": "Jewelry casting"
                     }
                 ]
 

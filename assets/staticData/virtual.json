@@ -2,7 +2,7 @@
     "name": "Международный центр искусств «Главный проспект». Екатеринбург, пр. Ленина 8.",
     "nameEng": "International center for the arts \"Main avenue\". Yekaterinburg, st. Lenina 8.",
     "virtuals":
-        [            
+        [
             {
                 "id": "hall#1",
                 "name": "Музей камня. Зал №1",
@@ -54,28 +54,22 @@
             }
         ],
 
-    "scheme": [            
+    "scheme": [
         {
             "id": "floorOne",
             "floor": -1,
             "places": [
                 {
                     "name": "Музей камня. Зал №1",
-                    "nameEng": "The Stone Museum. Hall #1",
+                    "nameEng": "The Stone Museum. Hall No. 1",
                     "floor": -1,
                     "mapId": "hall#1"
                 },
                 {
                     "name": "Музей камня. Зал №2",
-                    "nameEng": "The Stone Museum. Hall #2",
+                    "nameEng": "The Stone Museum. Hall No. 2",
                     "floor": -1,
                     "mapId": "hall#2"
-                },
-                {
-                    "name": "Зал Сказок",
-                    "nameEng": "Hall of fairy tales",
-                    "floor": -1,
-                    "mapId": "fairy-tales"
                 }
             ]
         },
@@ -85,21 +79,21 @@
             "places": [
                 {
                     "name": "Золотая комната",
-                    "nameEng": "The Golden room",
+                    "nameEng": "The Golden Room",
                     "floor": -1,
                     "mapId": "golden-room"
                 },
                 {
-                    "name": "Салон ANTONOV",
-                    "nameEng": "Boutique ANTONOV",
-                    "floor": 0,
-                    "mapId": "boutique"
-                },
-                {
                     "name": "Императорский зал",
-                    "nameEng": "The imperial hall",
+                    "nameEng": "Imperial Hall",
                     "floor": 1,
                     "mapId": "imperial"
+                },
+                {
+                    "name": "Зал Сказок",
+                    "nameEng": "Fairy Tales Hall",
+                    "floor": -1,
+                    "mapId": "fairy-tales"
                 }
             ]
         },
@@ -108,12 +102,18 @@
             "floor": 1,
             "places": [
                 {
-                    "name": "Залы меняющихся экспозиций",
-                    "nameEng": "Title on eng",
+                    "name": "Галерея",
+                    "nameEng": "Gallery",
                     "floor": 1,
                     "mapId": "exposition"
+                },
+                {
+                    "name": "Салон ANTONOV",
+                    "nameEng": "ANTONOV store",
+                    "floor": 0,
+                    "mapId": "boutique"
                 }
             ]
-        } 
+        }
     ]
 }

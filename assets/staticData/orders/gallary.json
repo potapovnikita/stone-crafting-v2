@@ -6,28 +6,28 @@
                 "img": "img/order/gallary/0.png",
                 "title": "Бронза",
                 "titleEng": "Bronze",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "stoneFlowers",
                 "img": "img/order/gallary/1.png",
                 "title": "Флористика",
                 "titleEng": "Stone flowers",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "fancyCut",
                 "img": "img/order/gallary/2.png",
                 "title": "Фантазийная огранка",
                 "titleEng": "Fancy cut",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "animalistics",
                 "img": "img/order/gallary/3.png",
                 "title": "Анималистика",
                 "titleEng": "Animalistics",
-                "link": "/"
+                "link": "/offers"
 
             },
             {
@@ -35,35 +35,35 @@
                 "img": "img/order/gallary/4.png",
                 "title": "Минералы",
                 "titleEng": "Minerals",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "Interior",
                 "img": "img/order/gallary/6.png",
                 "title": "Интерьер",
                 "titleEng": "Interior",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "Art objects",
                 "img": "img/order/gallary/7.png",
-                "title": "Арт-объекты",
-                "titleEng": "Art objects",
-                "link": "/"
+                "title": "Корпоративные",
+                "titleEng": "Corporate",
+                "link": "/offers"
             },
             {
                 "id": "Stone-carving art",
                 "img": "img/order/gallary/8.png",
                 "title": "Камнерезное искусство",
                 "titleEng": "Stone-carving art",
-                "link": "/"
+                "link": "/offers"
             },
             {
                 "id": "Florentine mosaic",
                 "img": "img/order/gallary/9.png",
                 "title": "Флорентийская мозаика",
                 "titleEng": "Florentine mosaic",
-                "link": "/"
+                "link": "/offers"
             }
         ]
 }

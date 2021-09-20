@@ -5,14 +5,14 @@
     "history": {
         "title": "История",
         "titleEng": "History",
-        "text": "С XV века итальянские мастера владели техникой флорентийской мозаики и были ее первооткрывателями. Через века традиции потерпели свое исчезновение. В течение многих лет наши мастера воссоздавали утерянную технику, собирая историческую информацию, отрабатывая навыки и мастерство. Сегодня мы продвинулись еще дальше и начали создавать каменные картины, которые максимально соответствуют реалистичности. Это настоящая «живопись в камне».",
-        "textEng": "Since the 15th century, Italian masters have mastered the technique of Florentine mosaic and were its pioneers. Over the centuries traditions have disappeared. For many years, our masters have recreated the lost technique, collecting historical information, practicing skills and craftsmanship. Today we have gone even further and started to create stone paintings that are as close to realism as possible. This is a real \"painting in stone\"."
+        "text": "С XV века итальянские мастера владели техникой флорентийской мозаики и были ее первооткрывателями. Через века традиции потерпели свое исчезновение. \nВ течение многих лет воссоздавалась утерянная техника, собиралась историческая информация, отрабатывались навыки, совершенствовалось мастерство. Сегодня мастера продвинулись еще дальше и начали создавать реалистичные каменные полотна, настоящую «живопись в камне».",
+        "textEng": "Since the XV century Italian masters had used the technique of Florentine mosaic and were its founders. Through the centuries the traditions have disappeared.\nAfter many years the lost techniques were recreated. Today the masters have moved even further and have begun to create realistic stone canvases, a real \"painting in stone\"."
     },
     "features": {
         "title": "Особенности",
         "titleEng": "Features",
-        "text":"Флорентийская мозаика - особая техника создания каменных картин. Мозаика собрана из разных пород благородных камней в единую композицию. Ее художественный эффект основан на тщательном подборе оттенков камней с учетом их естественного рисунка. Флорентийская мозаика – это одна из самых сложных техник в области камнерезного искусства. Высокий уровень мастерства позволяет нам создавать реалистичные каменные полотна, которые часто относят к рангу произведений искусства.",
-        "textEng": "Florentine mosaic is a special technique for creating stone paintings. The mosaic is assembled from different types of noble stones into a single composition. Its artistic effect is based on the careful selection of the shades of the stones, taking into account their natural pattern. Florentine mosaic is one of the most sophisticated techniques in the art of stone carving. The high level of craftsmanship allows us to create realistic stone canvases, which are often classified as works of art."
+        "text":"Флорентийская мозаика – особая техника создания каменных картин. Мозаика собрана из разных пород благородных камней в единую композицию. Ее художественный эффект основан на тщательном подборе оттенков камней с учетом их естественного рисунка.",
+        "textEng": "Florentine mosaic is a special technique for creating stone paintings. The mosaic is assembled from different types of stones into a single composition. Its artistic effect is based on a careful selection of shades of stones taking into account their natural pattern."
     },
     "simpleText": {
         "text":"",
@@ -32,7 +32,7 @@
             "title": "Эскиз",
             "titleEng": "Sketch",
             "text": "На первом этапе художник создает эскиз и разделяет его на цветовые фрагменты. Техника флорентийской мозаики позволяет нам изобразить в камне любой образ или историю. Это может быть портрет, натюрморты, пейзажи или религиозные сюжеты. Чаще всего для проекта используются: пейзажная яшма различных оттенков, нефрит, кварц, агаты, жадеит и другие.",
-            "textEng": "At the first stage the artist creates a sketch and divides it into color fragments. The Florentine mosaic technique allows us to depict any image or history in stone. This can be a portrait, still lifes, landscapes or religious subjects. Most often used for the project: landscape jasper of various shades, jade, quartz, agate, jade and others.",
+            "textEng": "At the first stage the artist creates a sketch and divides it into color fragments. The Florentine mosaic technique allows us to depict any image or history in stone. This can be a portrait, still lifes, landscapes or religious subjects. Most often used for the project: jasper of various shades, quartz, agate, jade and others.",
             "img": "img/order/history1InFlorentineMosaic.png",
             "imgEng": "img/order/history1InFlorentineMosaic.png",
             "price": "Высокая",
@@ -54,7 +54,7 @@
             "title": "Подбор камня",
             "titleEng": "Stone selection",
             "text": "Выбранный эскиз начинают адаптировать под особенности камня и его фактуры. Учитываются все характеристики минерала – его твёрдость, прозрачность, пористость и другое. В итоге все фрагменты должны обладать похожими характеристиками, яркостью, насыщенностью оттенка.",
-            "textEng": "The selected sketch begins to adapt to the characteristics of the stone and its texture. All characteristics of the mineral are taken into account - its hardness, transparency, porosity, and more. As a result all fragments should have similar characteristics, brightness, and hue saturation.",
+            "textEng": "The selected sketch begins to adapt to the characteristics of the stone and its texture. All characteristics of the mineral are taken into account - its hardness, transparency, porosity, and more. As a result all fragments should have similar features, brightness and hue saturation.",
             "img": "img/order/history2InFlorentineMosaic.png",
             "imgEng": "img/order/history2InFlorentineMosaic.png",
             "price": "Высокая",

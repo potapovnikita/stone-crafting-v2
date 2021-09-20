@@ -1,7 +1,7 @@
 <template lang="pug">
     .orderGallary
         .orderGallary__line
-        h1.orderGallary__title {{ lang === 'ru' ? 'Салон ANTONOV ONLINE' : 'Place ANTONOV online store' }}
+        h1.orderGallary__title {{ lang === 'ru' ? 'Салон ANTONOV ONLINE' : 'ANTONOV online store' }}
         h2.orderGallary__title-second {{ lang === 'ru' ? 'Посмотреть предложение' : 'View the offer' }}
         .orderGallary__container
             .orderGallary__buttons-desktop.btn-left
@@ -14,14 +14,15 @@
                         .orderGallary__item
                             .orderGallary__wrapper-media
                                 a.orderGallary__link(:href="item.link")
-                                    img.orderGallary__photo(:src="getImg(item.img)" alt="pic")
+                                    img.orderGallary__photo(:src="getImgExternal(item.img)" alt="pic")
                                     p.orderGallary__photo-title(v-html="lang === 'ru' ? item.title : item.titleEng")
 
 </template>
 <script>
 import { mapState } from 'vuex'
-import { getImgLocal } from '~/plugins/getUrl'
 import ButtonArrow from "@/components/ui/ButtonArrow"
+import {getImgExternal} from '~/plugins/getUrl'
+
 export default {
     name: 'OrderGallary',
     components: {
@@ -37,6 +38,9 @@ export default {
         }
     },
      methods: {
+         getImgExternal(url) {
+             return getImgExternal(url)
+         },
         getImg(url) {
             return getImgLocal(url)
         },
@@ -106,7 +110,7 @@ export default {
         margin-bottom 17px
 
     &__title-second
-        font-size 30px
+        font-size 20px
         line-height 45px
         margin-bottom 66px
 
@@ -155,7 +159,7 @@ export default {
             margin-bottom 4px
 
         &__title-second
-            font-size 22px
+            font-size 16px
             line-height 33px
             margin-bottom 30px
 
