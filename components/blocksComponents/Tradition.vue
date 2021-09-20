@@ -11,7 +11,7 @@
                     .buttons-desktop.btn-right
                         ButtonArrow(:onClick="nextSlide" arrowRight)
 
-                    .mobile-century-panel 111
+                    .mobile-century-panel
                         .slide-item__century-panel(v-if="centuryList")
                             .slide-item__centry-item(v-for="century in centuryList")
                                 span(:class="{'active': century.name === slides[currentSlide].century}") {{century.name}}
@@ -22,6 +22,19 @@
                                 .slide-item__line-middle
                                 .slide-item__line-end
 
+                    .desktop-century-panel
+                        .desktop-century-panel__empty
+                        .desktop-century-panel__content
+                            .slide-item__century-panel(v-if="centuryList")
+                                .slide-item__centry-item(v-for="century in centuryList")
+                                    span(:class="{'active': century.name === slides[currentSlide].century}") {{century.name}}
+                                    .slide-item__centry-circle(:class="{'active': century.name === slides[currentSlide].century}")
+
+                                .slide-item__line-panel
+                                    .slide-item__line-start
+                                    .slide-item__line-middle
+                                    .slide-item__line-end
+
                     carousel(:paginationEnabled="false" :loop="true" :perPage="1" @pageChange="handlePageChange" ref="traditionCarousel")
                         slide(v-for="item in slides" :key="item.id")
                             .slide-item
@@ -31,17 +44,6 @@
                                     img.slide-item__photo(v-if="item.img" :src="getImgLocal(item.img)" alt="img")
 
                                 .slide-item__container-text(:class="item.textBlockClass ? `${item.textBlockClass}-${item.id}` : ''")
-                                    .slide-item__descktop-century-panel
-                                        .slide-item__century-panel(v-if="centuryList")
-                                            .slide-item__centry-item(v-for="century in centuryList")
-                                                span(:class="{'active': century.name === item.century}") {{century.name}}
-                                                .slide-item__centry-circle(:class="{'active': century.name === item.century}")
-
-                                            .slide-item__line-panel
-                                                .slide-item__line-start
-                                                .slide-item__line-middle
-                                                .slide-item__line-end
-
                                     p.slide-item__text(v-if="item.text && item.textEng" v-html="lang === 'ru' ? item.text : item.textEng")
 
                                     nuxt-link.slide-item__link(v-if="item.link" :to="item.link.href" v-html="lang === 'ru' ? item.link.name : item.link.nameEng")
@@ -187,6 +189,8 @@ import {mapMutations, mapState} from 'vuex'
             .slider
                 position relative
                 padding 0 90px
+                margin-top -97px
+                z-index 0
 
             .buttons-desktop
                 position absolute
@@ -204,6 +208,27 @@ import {mapMutations, mapState} from 'vuex'
 
             .mobile-century-panel
                 display none
+
+            .desktop-century-panel
+                display flex
+                justify-content space-between
+                position relative
+                width 100%
+                max-width 1220px
+                margin 0 auto
+                top 97px
+                z-index 1
+
+                &__empty
+                    flex-basis 572px
+
+                &__content
+                    flex-shrink 2
+                    max-width 545px
+                    width 100%
+                    text-align left
+                    margin-left 30px
+
 
             .slide-item
                 display flex
@@ -274,7 +299,7 @@ import {mapMutations, mapState} from 'vuex'
                     width 100%
 
                 &__text
-                    padding-bottom 21px
+                    padding 97px 0 21px
                     text-align left
 
                 &__link
@@ -356,6 +381,16 @@ import {mapMutations, mapState} from 'vuex'
             &__title
                 max-width 510px
 
+            .desktop-century-panel
+                max-width 790px
+
+                &__empty
+                    flex-basis 375px
+
+                &__content
+                    max-width 390px
+                    margin-left 20px
+
             &__slides-panel
                 margin 100px 30px 120px
                 font-size 16px
@@ -427,6 +462,7 @@ import {mapMutations, mapState} from 'vuex'
 
                 .slider
                     padding 0
+                    margin-top 0
 
                 .buttons-desktop
                     display none
@@ -437,6 +473,9 @@ import {mapMutations, mapState} from 'vuex'
                     top 243px
                     left 0
                     right 0
+
+                .desktop-century-panel
+                    display none
 
                 .slide-item
                     display block
