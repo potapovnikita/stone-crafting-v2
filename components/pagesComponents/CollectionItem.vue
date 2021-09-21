@@ -125,6 +125,7 @@
 
         &__content
             padding 0 12px
+            max-width 45%
 
         &__text
             max-width unset
@@ -141,6 +142,10 @@
         &__text
             margin-bottom 16px
             font-size 14px
+
+    @media only screen and (max-width 500px)
+        &__content
+            max-width unset
 
 .torero-model
     position relative
@@ -187,7 +192,7 @@
             min-height 400px
 
     @media only screen and (max-width 840px)
-        margin-top 22px
+        margin-top 50px
         padding-bottom 0
 
         &__bg
@@ -199,7 +204,7 @@
             background-position 47px 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content center
             max-width unset
 
         &__wrapper-media
@@ -208,6 +213,8 @@
             margin-bottom 23px
 
     @media only screen and (max-width 500px)
+        margin-top 22px
+
         &__bg
             top 80px
             left unset
@@ -216,6 +223,9 @@
             height 390px
             background-position center
             background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .jokerNew-model
     position relative
@@ -274,8 +284,8 @@
             background-size contain
 
         &__wrapper-content
-            flex-direction column !important
             max-width unset
+            justify-content space-around
 
         &__wrapper-media
             max-width 204px
@@ -290,6 +300,9 @@
             width 100%
             background-size cover
             background-position center
+
+        &__wrapper-content
+            flex-direction column !important
 
 .makedon-model
     position relative
@@ -340,29 +353,33 @@
         margin-top 16px
 
         &__bg
-            top 47px
-            width 643px
-            height 349px
-            background url('~assets/img/collections/makedon/1-mb.png') no-repeat
+            top -70px
+            width 140%
+            height 580px
             background-repeat no-repeat
-            background-position 144px 0
+            background-position 100% 50%
+            background-size 80%
 
         &__wrapper-content
-            flex-direction column !important
             max-width unset
+            justify-content center
 
         &__wrapper-media
             max-width 302px
             min-height 440px
-            margin-bottom 28px
+            margin-bottom 28px            
 
     @media only screen and (max-width 500px)
         &__bg
             left unset
             right unset
             width 100%
+            background url('~assets/img/collections/makedon/1-mb.png') no-repeat
             background-position center
             background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .genghiskhan-model
     position relative
@@ -410,16 +427,14 @@
         margin-top 13px
 
         &__bg
-            top 53px
-            left -70%
-            right -70%
-            width 760px
-            height 428px
-            background url('~assets/img/collections/genghiskhan/1-mb.png') no-repeat
-            background-position 200px 0
+            top 20px
+            width 100%
+            height 440px
+            background-size cover
+            background-position bottom
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content center
             max-width unset
 
         &__wrapper-media
@@ -429,9 +444,14 @@
 
     @media only screen and (max-width 500px)
         &__bg
-            width 100%
+            top -20px
+            height 500px
+            background url('~assets/img/collections/genghiskhan/1-mb.png') no-repeat
             background-size cover
             background-position bottom
+
+        &__wrapper-content
+            flex-direction column !important
 
 .tamerlan-model
     position relative
@@ -483,17 +503,17 @@
         z-index 1
 
         &__bg
-            top 46px
-            left -70%
-            right -70%
-            width 732px
-            height 393px
-            background url('~assets/img/collections/tamerlan/1-mb.png') no-repeat
-            background-position 177px 0
+            top -30px
+            left unset
+            right unset
+            width 100%
+            height 440px
+            background-position center
+            background-size cover
 
         &__wrapper-content
-            flex-direction column !important
             max-width unset
+            justify-content center
 
         &__wrapper-media
             max-width 281px
@@ -501,12 +521,12 @@
             margin-bottom 44px
 
     @media only screen and (max-width 500px)
+
         &__bg
-            left unset
-            right unset
-            width 100%
-            background-position center
-            background-size cover
+            height 393px
+
+        &__wrapper-content
+            flex-direction column !important
 
 .suvorov-model
     position relative
@@ -559,13 +579,18 @@
             background-position 0 0
 
         &__wrapper-content
-            flex-direction column !important
             max-width unset
+            justify-content space-around
 
         &__wrapper-media
             max-width 235px
             min-height 438px
             margin-bottom 21px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .peter-model
     position relative
@@ -629,13 +654,18 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 300px
             min-height 453px
             margin-bottom 19px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .catherine-model
     position relative
@@ -691,13 +721,18 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 194px
             min-height 446px
             margin-bottom 35px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .schemamonk-model
     position relative
@@ -752,13 +787,18 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 249px
             min-height 458px
             margin-bottom 54px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .scarlet-model
     position relative
@@ -807,16 +847,16 @@
         z-index 2
 
         &__bg
-            top -42px
-            left -80%
-            right -80%
-            width 755px
-            height 506px
-            background url('~assets/img/collections/scarlet/1-mb.png') no-repeat
-            background-position 200px 0px
+            top -20px
+            left unset
+            right unset
+            width 1180px
+            height 480px
+            background-position 10% 50%
+            background-size 64%
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -829,8 +869,12 @@
             left unset
             right unset
             width 100%
+            background url('~assets/img/collections/scarlet/1-mb.png') no-repeat
             background-size cover
             background-position center
+
+        &__wrapper-content
+            flex-direction column !important    
 
 .babayaga-model
     position relative
@@ -875,17 +919,17 @@
         z-index 1
 
         &__bg
-            top -108px
-            left -70%
-            right -70%
-            width 470px
-            height 513px
+            left unset
+            right unset
+            top -105px
+            width 85%
+            height 480px
             background url('~assets/img/collections/babayaga/1.png') no-repeat
-            background-position -20px 0
-            background-size cover
+            background-position 90% 50%
+            background-size 425px
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -895,10 +939,13 @@
 
     @media only screen and (max-width 500px)
         &__bg
-            left unset
-            right unset
             width 100%
+            height 513px
             background-position center
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .groznyy-model
     position relative
@@ -955,7 +1002,7 @@
         padding-bottom 0
 
         &__bg
-            top -80px
+            top -40px
             left -60%
             right -60%
             width 716px
@@ -964,13 +1011,21 @@
             background-position -20px 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 278px
             min-height 415px
             margin-bottom 35px
+
+    @media only screen and (max-width 500px)
+
+        &__bg
+            top -108px
+
+        &__wrapper-content
+            flex-direction column !important
 
 .watery-model
     position relative
@@ -1038,13 +1093,18 @@
             background-position -70px 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 290px
             min-height 422px
             margin-bottom 23px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .dvorovoy-model
     position relative
@@ -1095,17 +1155,16 @@
         padding-bottom 0
 
         &__bg
-            top -11px
-            left -70%
-            right -70%
-            width 506px
-            height 378px
-            background url('~assets/img/collections/dvorovoy/1-mb.png') no-repeat
-            background-position 62px 0
-            background-size contain
+            left unset
+            right unset
+            top -90px
+            width 100%
+            height 520px
+            background-position center
+            background-size 650px
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1115,11 +1174,15 @@
 
     @media only screen and (max-width 500px)
         &__bg
-            left unset
-            right:unset
+            top -56px
+            width 100%
+            height 460px
+            background url('~assets/img/collections/dvorovoy/1-mb.png') no-repeat
             background-position center
             background-size cover
-            width 100%
+
+        &__wrapper-content
+            flex-direction column !important
 
 .goldfish-model
     position relative
@@ -1176,13 +1239,18 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 270px
             min-height 433px
             margin-bottom 80px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .kikimora-model
     position relative
@@ -1233,6 +1301,26 @@
         z-index 1
 
         &__bg
+            top 0
+            left unset
+            right unset
+            width 100%
+            background-position 35% 50%
+            background-size 620px
+
+        &__wrapper-content
+            justify-content space-around
+            max-width unset
+
+        &__wrapper-media
+            max-width 276px
+            min-height 459px
+            margin-top 56px
+            margin-bottom 11px
+
+    @media only screen and (max-width 500px)
+        
+        &__bg
             top -67px
             left -70%
             right -70%
@@ -1243,13 +1331,6 @@
 
         &__wrapper-content
             flex-direction column !important
-            max-width unset
-
-        &__wrapper-media
-            max-width 276px
-            min-height 459px
-            margin-top 56px
-            margin-bottom 11px
 
 .koschei-model
     position relative
@@ -1313,7 +1394,7 @@
             background-size contain
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1321,6 +1402,11 @@
             min-height 394px
             margin-top 0
             margin-bottom 22px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .pussBoots-model
     position relative
@@ -1371,7 +1457,7 @@
             background-size contain
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1386,6 +1472,9 @@
             width 100%
             background-position 70% center
             background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .ovinnik-model
     position relative
@@ -1445,13 +1534,18 @@
             background-size contain
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 295px
             min-height 488px
             margin-bottom 23px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .bannik-model
     position relative
@@ -1502,7 +1596,7 @@
             background-position 0px 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1510,6 +1604,11 @@
             min-height 478px
             margin-top 0
             margin-bottom 15px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .viking-model
     position relative
@@ -1580,9 +1679,10 @@
             width 1192px
             height 671px
             background-position -42px 0
+            background-size 1040px
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1590,8 +1690,15 @@
             min-height 513px
             margin-bottom 35px
 
-         .model__content
+        .model__content
             margin-top 0
+
+    @media only screen and (max-width 500px)
+        &__bg
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .lesovichek-model
     position relative
@@ -1651,7 +1758,7 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1659,6 +1766,11 @@
             min-height 469px
             margin-top 0
             margin-bottom 16px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .rusalka-model
     position relative
@@ -1727,13 +1839,18 @@
             background-position -15px 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 308px
             min-height 489px
             margin-bottom 34px
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
 .snowqueen-model
     position relative
@@ -1798,11 +1915,11 @@
             right -70%
             width 707px
             height 531px
-            background-position -80px 0
+            background-position center
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1810,6 +1927,13 @@
             min-height 442px
             margin-top 0
             margin-bottom 62px
+
+    @media only screen and (max-width 500px)
+        &__bg
+            background-position -80px 0
+
+        &__wrapper-content
+            flex-direction column !important
 
 .lebed-model
     position relative
@@ -1855,15 +1979,13 @@
 
         &__bg
             top 0
-            left -70%
-            right -70%
-            width 781px
+            width 100%
             height 402px
-            background-position 0px 0
+            background-position 80% 50%
             background-size contain
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1878,6 +2000,10 @@
             right unset
             width 100%
             background-size cover
+            background-position 0 0
+
+        &__wrapper-content
+            flex-direction column !important
 
 .popovich-model
     position relative
@@ -1934,15 +2060,16 @@
         margin-top 53px
 
         &__bg
-            left -10%
-            right -10%
-            width 423px
-            height 265px
-            background-position 0 0
-            background-size cover
+            left unset
+            right unset
+            top -80px
+            width 100%
+            height 470px
+            background-position center
+            background-size 90%
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -1959,7 +2086,14 @@
         &__bg
             left unset
             right unset
+            top 0
             width 100%
+            height 265px
+            background-position 0 0
+            background-size cover
+
+        &__wrapper-content
+            flex-direction column !important
 
 .muromets-model
     position relative
@@ -2025,21 +2159,21 @@
             max-width 825px
 
     @media only screen and (max-width 840px)
-        margin-top 81px
+        margin-top 140px
         padding-bottom 0
         z-index 1
 
         &__bg
-            top 0
-            left -70%
-            right -70%
-            width 497px
-            height 311px
-            background url('~assets/img/collections/muromets/1-mb.png') no-repeat
-            background-position 58px 0
+            left unset
+            right unset
+            top -50px
+            width 100%
+            height 380px
+            background-position center
+            background-size 80%
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -2048,15 +2182,29 @@
             margin-bottom 52px
 
         .model__content
-            max-width unset
+            max-width 45%
+    
+    @media only screen and (max-width 750px)
+        .model__content
+            max-width 35%
 
     @media only screen and (max-width 500px)
+        margin-top 81px
+
         &__bg
             left unset
             right unset
+            top 0
             width 100%
+            background url('~assets/img/collections/muromets/1-mb.png') no-repeat
             background-size cover
             background-position center
+
+        &__wrapper-content
+            flex-direction column !important
+
+        .model__content
+            max-width unset
 
 .svyatogor-model
     position relative
@@ -2136,13 +2284,21 @@
             background-position 0 0
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
             max-width 348px
             min-height 328px
             margin-bottom 48px
+
+        .model__content
+            max-width 45%
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
 
         .model__content
             max-width unset
@@ -2217,7 +2373,7 @@
             max-width 825px
 
     @media only screen and (max-width 840px)
-        margin-top 13px
+        margin-top 50px
 
         &__bg
             top 45px
@@ -2229,7 +2385,7 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -2238,10 +2394,19 @@
             margin-bottom 93px
 
         .model__content
-            max-width unset
+            max-width 45%
             margin-top 0
 
         .model__title
+            max-width unset
+
+    @media only screen and (max-width 500px)
+        margin-top 13px
+
+        &__wrapper-content
+            flex-direction column !important
+
+        .model__content
             max-width unset
 
 .tsarevich-model
@@ -2328,7 +2493,7 @@
             background-size cover
 
         &__wrapper-content
-            flex-direction column !important
+            justify-content space-around
             max-width unset
 
         &__wrapper-media
@@ -2338,10 +2503,18 @@
             margin-bottom 69px
 
         .model__content
-            max-width unset
+            max-width 45%
             margin-top 0
 
         .model__title
+            max-width unset
+
+    @media only screen and (max-width 500px)
+
+        &__wrapper-content
+            flex-direction column !important
+
+        .model__content
             max-width unset
 
 </style>
