@@ -97,7 +97,7 @@
                                 :key="`item_${index}`"
                             ) {{ lang === 'ru' ? item.text : item.textEng }}
 
-                        ButtonArrow(arrowRight :onClick="() => $nuxt.$router.push({path:`${project.href}`})")
+                        ButtonArrow(arrowRight :onClick="() => {lang === 'ru' ? window.open(getImgExternal(project.link), '_blank').focus() : window.open(getImgExternal(project.link), '_blank').focus()}" target="_blank")
 
         Footer
 

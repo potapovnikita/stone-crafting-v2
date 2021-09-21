@@ -46,6 +46,7 @@
                     img.photo(:src="getImg(item.img)" alt="partner")
                     p.text(v-html="lang === 'ru' ? item.name : item.nameEng")
                     a.link(:href="item.href.link" target="_blank") {{item.href.name}}
+                    p.about(v-html="lang === 'ru' ? item.text : item.textEng")
 
             h2(v-html="lang === 'ru' ? contacts.adresses[0].addressNameRu : contacts.adresses[0].addressNameEng")
             h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[0].addressRu : contacts.adresses[0].addressEng")
@@ -265,6 +266,10 @@ export default {
             .text
                 margin-bottom 2px
 
+            .about
+                font-size 15px
+                max-width: 900px
+
             .link
                 font-family $TenorSans-Regular
                 font-weight normal
@@ -272,7 +277,7 @@ export default {
                 line-height 27px
                 text-align center
                 letter-spacing 0.03em
-                color whiteMain
+                color #fce086
 
     .addr-name
         margin-top 15px

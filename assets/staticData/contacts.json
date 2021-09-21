@@ -63,11 +63,22 @@
         {
             "name": "Ювелирный дом CHAMOVSKIKH",
             "nameEng": "CHAMOVSKIKH House",
+            "text": "Партнер и эксклюзивный дистрибьютор Камнерезного Дома \"ANTONOV\" на федеральном уровне.\nПредставители CHAMOVSKIKH помогут оформить заказ по регионам России.",
+            "textEng": "Partner and exclusive distributor of the ANTONOV Stone-Crafting House at the federal level.\nRepresentatives of CHAMOVSKIKH will help you place an order in the regions of Russia.",
             "href": {
                 "name": "www.chamovskikh.com",
                 "link":"http://www.chamovskikh.com"
             },
-            "img": "img/contacts/partner.png"
+            "img": "img/contacts/chamovskikh.png"
+        },
+        {
+            "name": "Charme Stone",
+            "nameEng": "Charme Stone",
+            "href": {
+                "name": "charmestone.ru",
+                "link":"https://charmestone.ru/"
+            },
+            "img": "img/contacts/charmestoneWhite.png"
         }
     ]
 }

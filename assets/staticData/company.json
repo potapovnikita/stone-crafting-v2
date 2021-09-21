@@ -346,73 +346,70 @@
     ],
     "projects": [
       {
-        "name": "Социальные",
-        "nameEng": "Name on eng",
-        "href": "/",
+        "name": "Социально-политические и образовательные проекты",
+        "nameEng": "Social, political and educational projects",
+        "link": "/img/about/project.pdf",
+        "linkEng": "/img/about/project.pdf",
         "items": [
           {
-            "text": "Создание школы камнерезного и ювелирного творчества для детей",
-            "textEng": "text on eng"
+            "text": "Связь времен Урала и Санкт-Петербурга. От Петра I и Екатерины II в 21 век",
+            "textEng": "From Peter I and Catherine II to the 21st century"
+          },
+          {
+            "text": "Сохранение и развитие традиций художественной камнеобработки",
+            "textEng": "Preservation and development of the traditions of stone carving art"
+          },
+          {
+            "text": "Развитие науки, образования, туристической и профессиональной деятельности",
+            "textEng": "Development of science, education, tourism and professional activities"
           }
         ]
       },
+        {
+            "name": "Проекты наследия будущего",
+            "nameEng": "Future heritage projects",
+            "link": "/order#piece",
+            "linkEng": "/order#piece",
+            "items": [
+                {
+                    "text": "Яшмовый Дворец",
+                    "textEng": "Jasper Palace"
+                },
+                {
+                    "text": "Храм 21 века",
+                    "textEng": "The temple of the 21st century"
+                },
+                {
+                    "text": "Искусство в интерьере",
+                    "textEng": "Art in the interior"
+                }
+            ]
+        },
       {
-        "name": "Социально-политические",
-        "nameEng": "Name on eng",
-        "href": "/",
+        "name": "Развитие бренда Екатеринбурга как «Столица Каменная»",
+        "nameEng": "",
+        "link": "https://iraantonova96.wixsite.com/stone-crafting",
         "items": [
-          {
-            "text": "Совместный вклад в развитие бренда г. Екатеринбурга как «Столицы каменной»",
-            "textEng": "text on eng"
-          }
-        ]
-      },
-      {
-        "name": "Проекты наследия будущего",
-        "nameEng": "Name on eng",
-        "href": "/",
-        "items": [
-          {
-            "text": "Яшмовый Дворец",
-            "textEng": "text on eng"
-          },
-          {
-            "text": "Храм 21 века",
-            "textEng": "text on eng"
-          },
-          {
-            "text": "Интерьер как искусство",
-            "textEng": "text on eng"
-          }
+
         ]
       },
       {
         "name": "Для коллекционеров и меценатов",
-        "nameEng": "Name on eng",
-        "href": "/",
+        "nameEng": "For collectors and patrons of art",
+        "link": "/",
+        "linkEng": "/",
         "items": [
           {
             "text": "Вклад в развитие камнерезного и ювелирного искусства",
-            "textEng": "text on eng"
+            "textEng": "Contribution to the development of stone-carving and jewelry art"
           },
           {
             "text": "Популяризация и управление вашей собственной коллекции работ от «Камнерезного Дома Антонова»",
-            "textEng": "text on eng"
-          }
-        ]
-      },
-      {
-        "name": "Инвестиционные проекты",
-        "nameEng": "Name on eng",
-        "href": "/",
-        "items": [
-          {
-            "text": "Инвестиционное искусство",
-            "textEng": "text on eng"
+            "textEng": "Popularization and management of the collection by Antonov Stone-Crafting House"
           },
           {
-            "text": "Предложение для партнеров",
-            "textEng": "text on eng"
+            "text": "Инвестирование в искусство",
+            "textEng": "Investing in art"
           }
         ]
       }

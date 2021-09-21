@@ -23,7 +23,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
   textarea
-    padding 25px 0
+    padding 25px 5px
     font-family $IntroRegular
     font-size 20px
     line-height 26px
@@ -34,7 +34,7 @@ export default {
     border-right none
     border-left none
 
-    background transparent 
+    background transparent
     color #fff
     opacity 0.4
     cursor pointer

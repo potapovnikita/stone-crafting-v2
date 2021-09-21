@@ -13,7 +13,10 @@
                 Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
 
             .input
-                Textarea(:placeholder="lang === 'ru' ? 'Комментарий' : 'Comment'" v-model="comment")
+                Input(type="text" :class="{error: !company && errorCompany}" v-model="company" :placeholder="lang === 'ru' ? 'Компания (веб-сайт)' : 'Company (website)'")
+
+            .input
+                Textarea(type="text" :class="{error: !comment && errorComment}" v-model="comment" :placeholder="lang === 'ru' ? 'Что интересует?' : 'What are you interested in?'")
 
             Button(:classNames="['feedback-button']" :onClick="submitForm" large :disabled="preload") {{ lang === 'ru' ? 'Отправить' : 'Submit' }}
 
@@ -21,9 +24,9 @@
 
             .agreement-wrapper
                 Checkbox(v-model="isAgreement")
-                    span.agreement-label {{lang === 'ru' ? 'Я согласен с условиями обработки' : 'text on eng'}}
+                    span.agreement-label {{lang === 'ru' ? 'Я согласен с условиями обработки' : 'I agree to the terms of'}}
                     span.agreement-label {{'\u2002'}}
-                a.agreement-label.agreement-label--link(href="/") {{lang === 'ru' ? 'персональных данных' : 'text on eng'}}
+                a.agreement-label.agreement-label--link(href="/privacy") {{lang === 'ru' ? 'персональных данных' : 'personal data protection'}}
             .lds-dual-ring(v-if="preload")
             .message(v-if="emailStatus") {{ emailStatus }}
             .message.err(v-if="emailStatusErr") {{ emailStatusErr }}
@@ -53,10 +56,13 @@
                 phone: '',
                 email: '',
                 comment: '',
+                company: '',
                 isAgreement: false,
                 errorName: false,
                 errorPhone: false,
                 errorEmail: false,
+                errorCompany: false,
+                errorComment: false,
                 emailStatus: '',
                 emailStatusEng: '',
                 emailStatusErr: '',
@@ -84,6 +90,8 @@
                 this.errorName = false
                 this.errorPhone = false
                 this.errorEmail = false
+                this.errorCompany = false
+                this.errorComment = false
 
                 const data = {
                     service_id: SERVICE_ID,
@@ -93,6 +101,7 @@
                         'name': this.name,
                         'phone': this.phone,
                         'email': this.email,
+                        'company': this.company,
                         'comment': this.comment,
                         'type': this.type
                     }
@@ -107,6 +116,14 @@
                     this.errorName = true
                 }
 
+                if (!this.company) {
+                    this.errorName = true
+                }
+
+                if (!this.comment) {
+                    this.errorComment = true
+                }
+
                 if (this.phone.length < 16) {
                     this.errorPhone = true
                 }
@@ -115,13 +132,13 @@
                     this.errorText = this.lang === 'ru' ? 'Требуется соглашение' : 'Fill in required fields'
                 }
 
-                if (this.errorName || this.errorPhone) {
+                if (this.errorName || this.errorPhone || this.errorCompany || this.errorComment) {
                     this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
                 }
 
                 if (this.isAgreement &&
                      this.phone.length >= 16 &&
-                     this.name &&
+                     this.name && this.company && this.comment &&
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
 
                     this.preload = true
@@ -132,6 +149,8 @@
                             this.emailStatusEng = 'Application sent, we will contact you shortly'
                             this.name = ''
                             this.phone = ''
+                            this.company = ''
+                            this.comment = ''
                             this.preload = false
                             this.statusSuccess = true
                         }, (error) => {
