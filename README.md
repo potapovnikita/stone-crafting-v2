@@ -18,8 +18,15 @@ $ npm run build
 $ npm start
 
 # generate static project
+
+Деплой на прод (reg ru)
 $ npm run generate
+$ npm run deploy
+
+ветки:
+new-site - новая версия сайта
+old-site - старая версия сайта
+
+в мастере старая ветка сайта
+
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
