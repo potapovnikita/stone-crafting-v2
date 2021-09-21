@@ -257,11 +257,11 @@ export default {
 
             .photo
                 width 205px
-                height 205px
+                //height 205px
                 padding 8px
                 margin-bottom 10px
-                border 1px solid rgba(255, 255, 255, 0.07)
-                border-radius 50%
+                //border 1px solid rgba(255, 255, 255, 0.07)
+                //border-radius 50%
 
             .text
                 margin-bottom 2px

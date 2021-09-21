@@ -97,7 +97,11 @@
                                 :key="`item_${index}`"
                             ) {{ lang === 'ru' ? item.text : item.textEng }}
 
-                        ButtonArrow(arrowRight :onClick="() => {lang === 'ru' ? window.open(getImgExternal(project.link), '_blank').focus() : window.open(getImgExternal(project.link), '_blank').focus()}" target="_blank")
+                        ButtonArrow(v-if="project.link" arrowRight :onClick="() => $nuxt.$router.push({path:`${project.link}`})")
+                        ButtonArrow(v-if="project.href && lang === 'ru'" arrowRight :href="getImgExternal(project.href)")
+                        ButtonArrow(v-if="project.href && lang === 'eng'" arrowRight :href="getImgExternal(project.hrefEng)")
+                        ButtonArrow(v-if="project.toForm" arrowRight :onClick="() => onOpen('project.toForm')")
+
 
         Footer
 
@@ -105,7 +109,7 @@
 
 <script>
     import { ChevronRightIcon, ChevronLeftIcon  } from 'vue-feather-icons'
-    import { mapState } from 'vuex'
+    import {mapMutations, mapState} from 'vuex'
 
     import Company from '~/assets/staticData/company.json'
     import Button from "@/components/ui/Button"
@@ -147,6 +151,9 @@
             ImagesSwitcher,
         },
         methods: {
+            ...mapMutations({
+                onOpen: 'orderPopup/onOpen'
+            }),
             getBgImg(url) {
                 const imageUrl = require('~/assets/' + `${url}`)
                 return url ? `url(${imageUrl})` : ''

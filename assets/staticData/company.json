@@ -348,8 +348,8 @@
       {
         "name": "Социально-политические и образовательные проекты",
         "nameEng": "Social, political and educational projects",
-        "link": "/img/about/project.pdf",
-        "linkEng": "/img/about/project.pdf",
+        "href": "/catalogs/project_rus.pdf",
+        "hrefEng": "/catalogs/project_eng.pdf",
         "items": [
           {
             "text": "Связь времен Урала и Санкт-Петербурга. От Петра I и Екатерины II в 21 век",
@@ -388,7 +388,7 @@
       {
         "name": "Развитие бренда Екатеринбурга как «Столица Каменная»",
         "nameEng": "",
-        "link": "https://iraantonova96.wixsite.com/stone-crafting",
+        "href": "https://iraantonova96.wixsite.com/stone-crafting",
         "items": [
 
         ]
@@ -396,8 +396,7 @@
       {
         "name": "Для коллекционеров и меценатов",
         "nameEng": "For collectors and patrons of art",
-        "link": "/",
-        "linkEng": "/",
+        "toForm": "mecenats",
         "items": [
           {
             "text": "Вклад в развитие камнерезного и ювелирного искусства",

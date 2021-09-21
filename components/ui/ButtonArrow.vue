@@ -1,13 +1,26 @@
 <template lang='pug'>
     .btn__arrow__wrapper
         button(
-            :class="['btn__arrow', {'btn__arrow--right': arrowRight}]" 
+            v-if="onClick"
+            :class="['btn__arrow', {'btn__arrow--right': arrowRight}]"
             @click="onClick && onClick()"
             )
                 div
                     .desktop-hide
                         Arrow
-                    
+
+                    .mobile-hide
+                        ArrowMb
+        a(
+            v-if="href"
+            :class="['btn__arrow', {'btn__arrow--right': arrowRight}]"
+            :href="href"
+            target="_blank"
+            )
+                div
+                    .desktop-hide
+                        Arrow
+
                     .mobile-hide
                         ArrowMb
 
@@ -25,6 +38,7 @@ export default {
     props: {
         onClick: Function,
         arrowRight: Boolean,
+        href: String,
     },
 }
 </script>
@@ -38,6 +52,12 @@ export default {
     height 60px
     border 1px solid #2F2920
     border-radius 100%
+
+    a
+        display flex
+        align-items center
+        justify-content center
+
 
 .btn__arrow
     width 42px

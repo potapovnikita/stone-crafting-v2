@@ -103,7 +103,7 @@
                         'email': this.email,
                         'company': this.company,
                         'comment': this.comment,
-                        'type': this.type
+                        'type': this.type === 'mecenats' ? 'Для коллекционеров и меценатов' : this.type
                     }
                 };
 
