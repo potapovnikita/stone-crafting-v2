@@ -8,12 +8,17 @@
                     :placeholder="lang === 'ru' ? 'Пароль' : 'Password'"
                     autocomplete="off"
                 )
-                button(@click="checkPass()") Войти
+                button(@click="checkPass()") {{ lang === 'ru' ? 'Войти' : 'Login' }}
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
         .shop_wrapper(v-if="isAuth && isGoodsLoading || authenticating")
             .good-loader
                 LoaderIcon
+
+        .text_under_password(v-if="!isAuth && !authenticating")
+            div.text-about-categories {{lang === 'ru' ? 'Откройте доступ ко всем предложениям Камнерезного Дома по следующим категориям:' : 'Open access to all the offers of the Stone-Crafting House in the following categories:'}}
+            img.categories(:src="lang === 'ru' ? getImgExternal('img/store/categories.png') : getImgExternal('img/store/categoriesEng.png')" alt="partner")
+
         .shop_wrapper(v-if="isAuth && !isGoodsLoading")
             .shop_filter
                 h3.reverse {{ lang === 'ru' ? 'Категории' : 'Categories' }}
@@ -129,6 +134,7 @@
     import Select from "@/components/Select";
     import Button from "@/components/Button";
     import {themes, cities, stockStatuses, DEFAULT_PASS} from "@/plugins/constants"
+    import { getImgExternal } from '~/plugins/getUrl'
 
     export default {
         components: {
@@ -257,6 +263,9 @@
                 if (id >= item.files.length) id = 0
                 if (id < 0) id = item.files.length - 1
                 item.activeImgId = id
+            },
+            getImgExternal(url) {
+                return getImgExternal(url)
             },
             getBgImg(file) {
                 return `url('${file.url}')`
@@ -440,6 +449,19 @@
 
     h4
         color darkRed
+
+    .text_under_password
+        .text-about-categories
+            color darkRed
+            font-family Lazurski-Regular,Arial,Helvetica,sans-serif
+            font-size 20px
+            width 100%
+            padding 50px 30px 20px
+            text-align center
+
+        .categories
+            max-width: 270px
+
 
     .shop_wrapper
         display flex
@@ -688,7 +710,7 @@
                         background-color darkRed
 
     @media only screen and (max-width 767px)
-        .common-container 
+        .common-container
             padding 80px 20px 30px
 
         .shop_wrapper
