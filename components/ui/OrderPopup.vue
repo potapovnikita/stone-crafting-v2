@@ -5,7 +5,7 @@
                     CloseLogo
             .popup_container(:class="{'popup-close': !isOpened}" v-click-outside="onClickOutside")
                 .popup_inner-container
-                    Feedback(:type="type")
+                    Feedback
 
 </template>
 
@@ -45,7 +45,6 @@
             ]),
             ...mapState('orderPopup', [
                 'isOpened',
-                'type',
             ]),
         },
         watch: {

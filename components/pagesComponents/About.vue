@@ -88,6 +88,7 @@
                 li(
                     v-for="(project, index) in projects"
                     :key="`project_${index}`"
+                    v-if="lang === 'ru' && project.name ||  lang === 'eng' && project.nameEng"
                 )
                     .projectsAbout__project
                         p.projectsAbout__project-title {{ lang === 'ru' ? project.name : project.nameEng }}
@@ -100,7 +101,7 @@
                         ButtonArrow(v-if="project.link" arrowRight :onClick="() => $nuxt.$router.push({path:`${project.link}`})")
                         ButtonArrow(v-if="project.href && lang === 'ru'" arrowRight :href="getImgExternal(project.href)")
                         ButtonArrow(v-if="project.href && lang === 'eng'" arrowRight :href="getImgExternal(project.hrefEng)")
-                        ButtonArrow(v-if="project.toForm" arrowRight :onClick="() => onOpen('project.toForm')")
+                        ButtonArrow(v-if="project.toForm" arrowRight :onClick="() => onOpen(project.toForm)")
 
 
         Footer

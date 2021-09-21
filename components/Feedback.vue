@@ -12,7 +12,7 @@
             .input
                 Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
 
-            .input
+            .input(v-if="type === 'partners'")
                 Input(type="text" :class="{error: !company && errorCompany}" v-model="company" :placeholder="lang === 'ru' ? 'Компания (веб-сайт)' : 'Company (website)'")
 
             .input
@@ -38,7 +38,7 @@
 <script>
     import * as emailjs from 'emailjs-com/dist/email'
     import Contacts from '~/assets/staticData/contacts.json'
-    import { mapState } from 'vuex'
+    import {mapMutations, mapState} from 'vuex'
     import Input from '@/components/ui/Input'
     import Button from '@/components/ui/Button'
     import Checkbox from '@/components/ui/Checkbox'
@@ -69,11 +69,9 @@
                 emailStatusErrEng: '',
                 phoneNumber: Contacts.phoneMain,
                 preload: false,
-                statusSuccess: false,
                 errorText: '',
             }
         },
-        props: ['type'],
         components: {
             Input,
             Button,
@@ -81,6 +79,9 @@
             Textarea
         },
         methods: {
+            ...mapMutations({
+                setSuccessStatus: 'orderPopup/setSuccessStatus'
+            }),
             submitForm() {
                 this.emailStatus = ''
                 this.emailStatusErr = ''
@@ -101,11 +102,12 @@
                         'name': this.name,
                         'phone': this.phone,
                         'email': this.email,
-                        'company': this.company,
                         'comment': this.comment,
                         'type': this.type === 'mecenats' ? 'Для коллекционеров и меценатов' : this.type
                     }
                 };
+
+                if (this.type === 'partners') data.template_params.company = this.company
 
                 if (this.email && !/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/.test(this.email)) {
                     this.errorEmail = true
@@ -116,7 +118,7 @@
                     this.errorName = true
                 }
 
-                if (!this.company) {
+                if (this.type === 'partners' && !this.company) {
                     this.errorName = true
                 }
 
@@ -132,13 +134,15 @@
                     this.errorText = this.lang === 'ru' ? 'Требуется соглашение' : 'Fill in required fields'
                 }
 
-                if (this.errorName || this.errorPhone || this.errorCompany || this.errorComment) {
+                if (this.errorName || this.errorPhone || (this.type === 'partners' && this.errorCompany) || this.errorComment) {
                     this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
                 }
 
                 if (this.isAgreement &&
                      this.phone.length >= 16 &&
-                     this.name && this.company && this.comment &&
+                     this.name &&
+                    (this.type === 'partners' && this.company || true) &&
+                    this.comment &&
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
 
                     this.preload = true
@@ -152,12 +156,12 @@
                             this.company = ''
                             this.comment = ''
                             this.preload = false
-                            this.statusSuccess = true
+                            this.setSuccessStatus(true);
                         }, (error) => {
                             this.emailStatusErr = `Что-то пошло не так, попробуйте позже или свяжитесь с нами по телефону ${this.phoneNumber}`
                             this.emailStatusErrEng = `Oops, try again later or contact us by phone ${this.phoneNumber}`
                             this.preload = false
-                            this.statusSuccess = false
+                            this.setSuccessStatus(false);
                         });
                 }
             }
@@ -166,16 +170,11 @@
             ...mapState('localization', [
                 'lang',
             ]),
+            ...mapState('orderPopup', [
+                'statusSuccess',
+                'type',
+            ]),
         },
-        async created() {
-
-        },
-        mounted() {
-            this.statusSuccess = false;
-        },
-        destroyed() {
-            this.statusSuccess = false
-        }
     }
 
 </script>
