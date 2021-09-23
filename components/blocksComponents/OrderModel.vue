@@ -124,7 +124,7 @@ export default {
         max-width 664px
 
     &__media-container
-        display block
+        width 664px
         height 718px
 
     &__photo
@@ -232,6 +232,7 @@ export default {
             padding 13px 27px 50px 27px
 
         &__media-container
+            width auto
             height 661px
 
         &__slider-buttons-desktop
