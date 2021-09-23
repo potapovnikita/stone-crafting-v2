@@ -17,7 +17,7 @@
                         Awards
 
                 .about-container__description-content
-                    about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
+                    .about-container__description-title(v-html="lang === 'ru' ? company.aboutTitleRu : company.aboutTitleEng")
                     .about-container__description-double-line
                     p.about-container__description-text(v-html="lang === 'ru' ? company.aboutRu : company.aboutEng")
 

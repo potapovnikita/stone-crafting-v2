@@ -511,7 +511,7 @@ export default {
             width 420px
 
 
-@media only screen and (max-width 767px)
+    @media only screen and (max-width 767px)
         &__slides-panel
             .slider
                 display block
