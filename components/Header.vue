@@ -4,7 +4,7 @@
         #header.menu_container
             .logo_row
                 nuxt-link(to="/")
-                    img.logo(src="~/assets/img/logo_antonov_white.png" alt="Logo")
+                    img.logo(src="~/assets/img/logo_antonov_white2.png" alt="Logo")
 
                 .local
                     span(@click="changeLocal('ru')" :class="{'active': lang === 'ru'}") RU
@@ -119,6 +119,7 @@
 
         .logo
             font-size 0
+            max-height: 61px
 
         .local
             top 40px
@@ -322,6 +323,9 @@
             .wrapper_items
                 & > a + a
                     margin-top 10px
+            .menu_item
+                .second-name
+                    font-size 13px
 
     @media only screen and (max-width 767px) and (max-height 500px)
         label input:checked + .hamburger_menu

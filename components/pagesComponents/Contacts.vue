@@ -63,7 +63,16 @@
 
             h2(v-html="lang === 'ru' ? contacts.adresses[1].addressNameRu : contacts.adresses[1].addressNameEng")
             h3.addr-name(v-html="lang === 'ru' ? contacts.adresses[1].addressRu : contacts.adresses[1].addressEng")
-
+            .videoVirtual
+                iframe(
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/BtApR4FS66o?rel=0"
+                    frameborder="0"
+                    allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    :hl="lang === 'ru' ? 'ru' : 'en'"
+                )
             .buttons-panel
                 Button(
                     :classNames="['buttons-panel__btn']"

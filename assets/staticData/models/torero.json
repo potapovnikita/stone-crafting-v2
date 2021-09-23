@@ -318,7 +318,7 @@
                 "btn" : {
                     "textRu": "Узнать о возможности покупки",
                     "textEng": "Title on Rng",
-                    "href": ""
+                    "toForm": "default"
                 }
             }
         ]
