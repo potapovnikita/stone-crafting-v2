@@ -30,23 +30,23 @@
                                 a(:href="lang === 'ru' ? getImgExternal(stage.link) : getImgExternal(stage.linkEng)" target="_blank") {{ lang === 'ru' ? stage.text : stage.textEng}}
                               span(v-else) {{ lang === 'ru' ? stage.text : stage.textEng}}
 
-                    .worksSteps__spending(v-if="!orderItem.isHiddenTimeLine")
-                        div
-                            .worksSteps__spending-content
-                                p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания' : 'Work creation time'")
-                                .worksSteps__spending-progressBar-descktop
-                                    .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.creationTime : stage.creationTimeEng")
-                            .worksSteps__spending-progressBar-mobile
-                                .worksSteps__progress(:style="{'left':`${stage.timeLine.start}%`, 'width': `${stage.timeLine.end-stage.timeLine.start}%`}")
-                        div
-                            .worksSteps__spending-content
-                                p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Ценовая политика' : 'Price policy'")
-                                .worksSteps__spending-progressBar-descktop
-                                    .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
-                                p.worksSteps__spendingText(v-html="lang === 'ru' ? stage.price : stage.priceEng")
-                            .worksSteps__spending-progressBar-mobile
-                                .worksSteps__progress(:style="{'left':`${stage.priceLine.start}%`, 'width': `${stage.priceLine.end-stage.priceLine.start}%`}")
+        .worksSteps__spending(v-if="!orderItem.isHiddenTimeLine")
+            div
+                .worksSteps__spending-content
+                    p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Время создания' : 'Work creation time'")
+                    .worksSteps__spending-progressBar-descktop
+                        .worksSteps__progress(:style="{'left':`${stages[currentSlide].timeLine.start}%`, 'width': `${stages[currentSlide].timeLine.end-stages[currentSlide].timeLine.start}%`}")
+                    p.worksSteps__spendingText(v-html="lang === 'ru' ? stages[currentSlide].creationTime : stages[currentSlide].creationTimeEng")
+                .worksSteps__spending-progressBar-mobile
+                    .worksSteps__progress(:style="{'left':`${stages[currentSlide].timeLine.start}%`, 'width': `${stages[currentSlide].timeLine.end-stages[currentSlide].timeLine.start}%`}")
+            div
+                .worksSteps__spending-content
+                    p.worksSteps__spendingTitle(v-html="lang === 'ru' ? 'Ценовая политика' : 'Price policy'")
+                    .worksSteps__spending-progressBar-descktop
+                        .worksSteps__progress(:style="{'left':`${stages[currentSlide].priceLine.start}%`, 'width': `${stages[currentSlide].priceLine.end-stages[currentSlide].priceLine.start}%`}")
+                    p.worksSteps__spendingText(v-html="lang === 'ru' ? stages[currentSlide].price : stages[currentSlide].priceEng")
+                .worksSteps__spending-progressBar-mobile
+                    .worksSteps__progress(:style="{'left':`${stages[currentSlide].priceLine.start}%`, 'width': `${stages[currentSlide].priceLine.end-stages[currentSlide].priceLine.start}%`}")
 
 </template>
 <script>

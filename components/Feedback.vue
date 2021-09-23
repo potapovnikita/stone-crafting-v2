@@ -109,7 +109,11 @@
                         'phone': this.phone,
                         'email': this.email,
                         'comment': this.comment,
-                        'type': this.type === 'mecenats' ? 'Для коллекционеров и меценатов' : this.type
+                        'type': this.type === 'mecenats'
+                            ? 'Для коллекционеров и меценатов'
+                            : this.type === 'partners'
+                                ? 'Запрос базы'
+                                : this.type,
                     }
                 };
 
