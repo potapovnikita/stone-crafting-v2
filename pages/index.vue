@@ -9,14 +9,12 @@
 import MainPage from '~/components/pagesComponents/Main.vue'
 import PageContainer from '~/components/PageContainer.vue'
 import Header from '~/components/Header.vue'
-import OrderPopup from '@/components/ui/OrderPopup'
 
 export default {
     components: {
         MainPage,
         PageContainer,
         Header,
-        OrderPopup,
     },
     head() {
         return {

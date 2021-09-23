@@ -1,5 +1,6 @@
 <template lang="pug">
     .common-container.reverse
+        OrderPopup
         .shop_wrapper(v-if="!isAuth && !authenticating")
             .auth-container
                 h2.reverse {{ lang === 'ru' ? 'Введите пароль для доступа к предложениям' : 'Enter password for show offers' }}
@@ -8,7 +9,7 @@
                     :placeholder="lang === 'ru' ? 'Пароль' : 'Password'"
                     autocomplete="off"
                 )
-                button(@click="checkPass()") {{ lang === 'ru' ? 'Войти' : 'Login' }}
+                button.button-auth(@click="checkPass()") {{ lang === 'ru' ? 'Войти' : 'Login' }}
                 .error(v-if="errorPass") {{ lang === 'ru' ? 'Пароль не верный' : 'Password is wrong' }}
 
         .shop_wrapper(v-if="isAuth && isGoodsLoading || authenticating")
@@ -18,6 +19,10 @@
         .text_under_password(v-if="!isAuth && !authenticating")
             div.text-about-categories {{lang === 'ru' ? 'Откройте доступ ко всем предложениям Камнерезного Дома по следующим категориям:' : 'Open access to all the offers of the Stone-Crafting House in the following categories:'}}
             img.categories(:src="lang === 'ru' ? getImgExternal('img/store/categories.png') : getImgExternal('img/store/categoriesEng.png')" alt="partner")
+
+            div.text-about-categories {{lang === 'ru' ? '*просим обратить внимание, что предложение относится к среднеценовой и высокоценовой категории. Ввиду защиты данных ведется селективный метод предоставления информации' : '*please note that this offer belongs to the mid-price and high-price categories. Due to the data protection the selective method of providing information is used'}}
+            button.button-auth(@click="onOpen('partners')") {{ lang === 'ru' ? 'Запросить вход' : 'Request' }}
+
 
         .shop_wrapper(v-if="isAuth && !isGoodsLoading")
             .shop_filter
@@ -121,7 +126,7 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex'
+import {mapMutations, mapState} from 'vuex'
     import { saveAs } from 'file-saver';
     import Cookies from 'universal-cookie';
     import zenscroll from "zenscroll";
@@ -135,6 +140,8 @@
     import Button from "@/components/Button";
     import {themes, cities, stockStatuses, DEFAULT_PASS} from "@/plugins/constants"
     import { getImgExternal } from '~/plugins/getUrl'
+    import OrderPopup from '@/components/ui/OrderPopup'
+
 
     export default {
         components: {
@@ -144,6 +151,7 @@
             ChevronsDownIcon,
             ChevronsUpIcon,
             LoaderIcon,
+            OrderPopup,
         },
         props: {
             isPartners: {
@@ -185,6 +193,9 @@
             }
         },
         methods: {
+            ...mapMutations({
+                onOpen: 'orderPopup/onOpen'
+            }),
             resetFilter() {
                 this.$set(this.filterState, 'themes', []);
                 this.$set(this.filterState, 'cities', []);
@@ -447,6 +458,20 @@
     .common-container
         padding 30px 60px
 
+        button.button-auth
+            width 280px
+            max-width 280px
+            padding 10px 20px 11px
+            cursor pointer
+            outline none
+            border 1px solid darkRed
+            background-color darkRed
+            color white
+            transition background-color .3s ease, color .3s ease
+            &:hover
+                background white
+                color darkRed
+
     h4
         color darkRed
 
@@ -504,19 +529,6 @@
                 &::placeholder
                     color darkRed
 
-            button
-                width 280px
-                max-width 280px
-                padding 10px 20px 11px
-                cursor pointer
-                outline none
-                border 1px solid darkRed
-                background-color darkRed
-                color white
-                transition background-color .3s ease, color .3s ease
-                &:hover
-                    background white
-                    color darkRed
             .error
                 font-size 15px
                 color red

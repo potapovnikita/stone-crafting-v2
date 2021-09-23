@@ -1,7 +1,7 @@
 <template lang="pug">
     .feedback_container#form
         h2.title.title-feedback
-            | {{ statusSuccess ? lang === 'ru' ? 'Спасибо! Мы свяжемся с Вами в ближайшее время' : 'Thank you! We will contact you soon' : lang === 'ru' ? 'Сделать заказ' : 'Submit your request'}}
+            | {{ statusSuccess ? lang === 'ru' ? successText : successTextEng : lang === 'ru' ? 'Сделать заказ' : 'Submit your request'}}
         form(v-if="!statusSuccess" v-on:submit.prevent="submitForm()")
             .input
                 Input(type="text" name="phone" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
@@ -70,6 +70,12 @@
                 phoneNumber: Contacts.phoneMain,
                 preload: false,
                 errorText: '',
+                successText: this.type === 'partners'
+                    ?'Спасибо! В ближайшее время мы рассмотрим форму и пришлем Вам на почту ссылку для входа'
+                    : 'Спасибо! Мы свяжемся с Вами в ближайшее время',
+                successTextEng: this.type === 'partners'
+                    ? 'Thanks! We will review the form and send you an email with a link to log in'
+                    : 'Thank you! We will contact you soon',
             }
         },
         components: {

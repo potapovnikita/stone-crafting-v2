@@ -14,25 +14,23 @@
 </template>
 
 <script>
-  const Input = {
-    name: 'Input',
-    components: { },
-    props: {
-      name: String,
-      type: String,
-      placeholder: String,
-      value: String,
-      error: String,
-      width: String,
-    },
-    methods: {
+    export default {
+        name: 'Input',
+        components: { },
+        props: {
+          name: String,
+          type: String,
+          placeholder: String,
+          value: String,
+          error: String,
+          width: String,
+        },
+        methods: {
 
-    },
-    created() {
-    }
+        },
+        created() {
+        }
   }
-
-  export default Input
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -49,7 +47,7 @@
     border-right none
     border-left none
 
-    background transparent 
+    background transparent
     color #fff
     opacity 0.4
     cursor pointer
@@ -61,6 +59,7 @@
 
     &.error
       border 1px solid red
+
   .errorText
     color red
     font-size 14px

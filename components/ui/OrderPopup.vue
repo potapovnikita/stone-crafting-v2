@@ -5,7 +5,7 @@
                     CloseLogo
             .popup_container(:class="{'popup-close': !isOpened}" v-click-outside="onClickOutside")
                 .popup_inner-container
-                    Feedback
+                    Feedback(v-if="isOpened")
 
 </template>
 
@@ -94,13 +94,13 @@
             text-align center
             width 806px
             opacity 1
-            transition all .5s ease-in-out
+            //transition all .5s ease-in-out
             border 1px solid rgba(255, 255, 255, 0.31)
             box-sizing border-box
 
             &.popup-close
                 opacity 0
-                transform translateY(55%) scale(.9)
+                //transform translateY(55%) scale(.9)
                 visibility hidden
             .popup_inner-container
                 position relative
