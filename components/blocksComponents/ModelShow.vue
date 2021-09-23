@@ -15,7 +15,8 @@
                             p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
                     .model-show-container__btn-mb
-                        Button(v-if="item.btn" :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                        Button(v-if="item.btn && item.btn.toForm" large :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                        Button(v-if="item.btn && item.btn.href" large :onClick="() => $nuxt.$router.push({path:`${item.btn.href}`})") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
         .model-show-container__info
             h2.model-show-container__title {{lang === 'ru' ? showData.titleRu : showData.titleEng}}
@@ -35,10 +36,11 @@
                                     p.model-show-container__opt {{lang === 'ru' ? opt.textRu : opt.textEng}}
 
                 .model-show-container__btn-descktop
-                    Button(v-if="item.btn" large :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
-
+                    Button(v-if="item.btn && item.btn.toForm" large :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                    Button(v-if="item.btn && item.btn.href" large :onClick="() => $nuxt.$router.push({path:`${item.btn.href}`})") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
                 .model-show-container__btn-mb
-                    Button(v-if="item.btn" :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                    Button(v-if="item.btn && item.btn.toForm" large :onClick="onOpen") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
+                    Button(v-if="item.btn && item.btn.href" large :onClick="() => $nuxt.$router.push({path:`${item.btn.href}`})") {{lang === 'ru' ? item.btn.textRu : item.btn.textEng}}
 
         .model-show-container__pic.mobile-hide(:style="{backgroundImage: getBgImg(showData.background)}")
 
