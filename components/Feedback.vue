@@ -12,7 +12,7 @@
             .input
                 Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
 
-            .input(v-if="type === 'partners'")
+            .input
                 Input(type="text" :class="{error: !company && errorCompany}" v-model="company" :placeholder="lang === 'ru' ? 'Компания (веб-сайт)' : 'Company (website)'")
 
             .input
@@ -109,15 +109,14 @@
                         'phone': this.phone,
                         'email': this.email,
                         'comment': this.comment,
+                        'company': this.company,
                         'type': this.type === 'mecenats'
                             ? 'Для коллекционеров и меценатов'
                             : this.type === 'partners'
                                 ? 'Запрос базы'
-                                : this.type,
+                                : 'Заказ',
                     }
                 };
-
-                if (this.type === 'partners') data.template_params.company = this.company
 
                 if (this.email && !/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/.test(this.email)) {
                     this.errorEmail = true
@@ -128,9 +127,9 @@
                     this.errorName = true
                 }
 
-                if (this.type === 'partners' && !this.company) {
-                    this.errorName = true
-                }
+                // if (this.type === 'partners' && !this.company) {
+                //     this.errorName = true
+                // }
 
                 if (!this.comment) {
                     this.errorComment = true
@@ -144,15 +143,14 @@
                     this.errorText = this.lang === 'ru' ? 'Требуется соглашение' : 'Fill in required fields'
                 }
 
-                if (this.errorName || this.errorPhone || (this.type === 'partners' && this.errorCompany) || this.errorComment) {
+                if (this.errorName || this.errorPhone || this.errorComment) {
                     this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
                 }
 
                 if (this.isAgreement &&
                      this.phone.length >= 16 &&
                      this.name &&
-                    (this.type === 'partners' && this.company || true) &&
-                    this.comment &&
+                     this.comment &&
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {
 
                     this.preload = true
