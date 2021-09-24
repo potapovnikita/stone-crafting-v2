@@ -512,7 +512,7 @@ export default {
 
             .partner
                 .photo
-                    width 193px
+                    width auto
                     height 193px
                     margin-bottom 10px
 

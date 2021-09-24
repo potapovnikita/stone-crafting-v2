@@ -1,8 +1,8 @@
 <template lang="pug">
     .common-container.collections-container
         .collections-container__bg-bottom
-        h1.collections-container__title {{ lang === 'ru' ? 'Сокровища музеев' : 'Collections' }}
-        p.collections-container__sub-title(v-html="lang === 'ru' ? 'коллекция дома' : 'title on eng'")
+        h1.collections-container__title {{ lang === 'ru' ? 'Сокровища музеев' : 'Museum treasures' }}
+        p.collections-container__sub-title(v-html="lang === 'ru' ? 'коллекция дома' : 'collection'")
         CollectionItem(v-for="(item, index) in museumNew"
             :key="item.id"
             :id="item.id"
