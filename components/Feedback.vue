@@ -1,7 +1,7 @@
 <template lang="pug">
     .feedback_container#form
         h2.title.title-feedback
-            | {{ statusSuccess ? lang === 'ru' ? successText : successTextEng : lang === 'ru' ? 'Сделать заказ' : 'Submit your request'}}
+            | {{statusSuccess ? lang === 'ru' ? successText : successTextEng : lang === 'ru' ? 'Сделать запрос' : 'Make a request'}}
         form(v-if="!statusSuccess" v-on:submit.prevent="submitForm()")
             .input
                 Input(type="text" name="phone" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")

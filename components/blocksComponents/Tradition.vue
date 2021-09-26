@@ -56,7 +56,7 @@
             Button(
                 v-if="buttons.length && buttons[0]"
                 :classNames="['tradition-container__btn']"
-                :onClick="onOpen"
+                :onClick="() => $nuxt.$router.push({path:'/order#stoneMosaic'})"
                 disabledPadding
                 large
                 )

@@ -183,19 +183,19 @@
         "background": "img/articles/bezformata.png"
       },
       {
-        "link": "https://cloud.mail.ru/public/M2KX/iQmrryuDL",
+        "link": "/catalogs/TurkmenistanRu.pdf",
         "name": "Искусство, меняющее ход истории страны. Туркменистан",
         "nameEng": "",
         "background": "img/articles/art.png"
       },
       {
-        "link": "https://cloud.mail.ru/public/4uP9/MvwEwLeMG",
+        "link": "/catalogs/ScurlovRu.pdf",
         "name": "Алексей Антонов – продолжатель дела Фаберже и Денисова – Уральского",
         "nameEng": "",
         "background": "img/articles/article.png"
       },
       {
-        "link": "https://cloud.mail.ru/public/hmKC/DFg4PGfZd",
+        "link": "/catalogs/TatianaRU.pdf",
         "name": "Татьяна Фаберже о коллекции фигурок 1812 года Алексея Антонова",
         "nameEng": "",
         "background": "img/articles/article2.png"
@@ -233,17 +233,17 @@
           "background": "img/articles/116844.png"
       },
       {
-          "link": "https://cloud.mail.ru/public/gxsQ/pw1LMjk8k",
+          "link": "/catalogs/TurkmenistanEn.pdf",
           "name": "The art that changes the course of the country. Turkmenistan.",
           "background": "img/articles/TURKMENISTAN.png"
       },
       {
-          "link": "https://cloud.mail.ru/public/Hdsb/QfCF8AuoD",
+          "link": "/catalogs/ScurlovEn.pdf",
           "name": "Aleksey Antonov is the successor of the faberge and Denisov – Uralsky case.",
           "background": "img/articles/faberge.png"
       },
       {
-          "link": "https://cloud.mail.ru/public/YFgt/NDaS8mRaw",
+          "link": "/catalogs/TatianaEn.pdf",
           "name": "Tatiana Faberge about the collection of figurines by Aleksey Antonov.",
           "background": "img/articles/TATIANA.png"
       },
@@ -365,34 +365,6 @@
           }
         ]
       },
-        {
-            "name": "Проекты наследия будущего",
-            "nameEng": "Future heritage projects",
-            "link": "/order#piece",
-            "linkEng": "/order#piece",
-            "items": [
-                {
-                    "text": "Яшмовый Дворец",
-                    "textEng": "Jasper Palace"
-                },
-                {
-                    "text": "Храм 21 века",
-                    "textEng": "The temple of the 21st century"
-                },
-                {
-                    "text": "Искусство в интерьере",
-                    "textEng": "Art in the interior"
-                }
-            ]
-        },
-      {
-        "name": "Развитие бренда Екатеринбурга как «Столица Каменная»",
-        "nameEng": "",
-        "href": "https://iraantonova96.wixsite.com/stone-crafting",
-        "items": [
-
-        ]
-      },
       {
         "name": "Для коллекционеров и меценатов",
         "nameEng": "For collectors and patrons of art",
@@ -410,6 +382,34 @@
             "text": "Инвестирование в искусство",
             "textEng": "Investing in art"
           }
+        ]
+      },
+      {
+        "name": "Проекты наследия будущего",
+        "nameEng": "Future heritage projects",
+        "link": "/order#piece",
+        "linkEng": "/order#piece",
+        "items": [
+            {
+                "text": "Яшмовый Дворец",
+                "textEng": "Jasper Palace"
+            },
+            {
+                "text": "Храм 21 века",
+                "textEng": "The temple of the 21st century"
+            },
+            {
+                "text": "Искусство в интерьере",
+                "textEng": "Art in the interior"
+            }
+        ]
+      },
+      {
+        "name": "Развитие бренда Екатеринбурга как «Столица Каменная»",
+        "nameEng": "",
+        "href": "https://iraantonova96.wixsite.com/stone-crafting",
+        "items": [
+
         ]
       }
     ]

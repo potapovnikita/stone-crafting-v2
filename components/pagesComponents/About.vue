@@ -12,7 +12,7 @@
             .about-container__description
                 .about-container__wrapper-man
                     .about-container__description-pic
-                        img.about-container__description-img(src="~/assets/img/about/aleksei2.png" alt="Antonov")
+                        img.about-container__description-img(:src="getImgExternal('img/about/aleksei2.png')" alt="Antonov")
                     .about-container__awards-desktop
                         Awards
 

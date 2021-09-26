@@ -326,6 +326,7 @@
             .menu_item
                 .second-name
                     font-size 13px
+                    margin-top -15px
 
     @media only screen and (max-width 767px) and (max-height 500px)
         label input:checked + .hamburger_menu

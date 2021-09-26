@@ -259,19 +259,19 @@
     "showBlock": {
         "iconPathMobile": "img/toreroShow/placeIcon.png",
         "iconPathMobileClass": "icon-mb",
-        "titleRu": "Увидеть тореадора",
-        "titleEng": "Title on eng",
+        "titleRu": "Увидеть коллекцию",
+        "titleEng": "See the collection",
         "background": "img/toreroShow/bg.png",
         "infoList": [
             {
                 "iconPath": "img/toreroShow/placeIcon.png",
                 "iconClass": "icon-place",
                 "titleRu": "В нашей частной коллекции в Международном центре искусств «Главный проспект»",
-                "titleEng": "Title on eng",
+                "titleEng": "In our private collection at the Main Avenue International Art Center ",
                 "options": [
                     {
                         "textRu": "Выездные выставки афишируются в разделе новости и нашем Инстаграме",
-                        "textEng": "Text on Eng",
+                        "textEng": "Exhibitions are advertised in the news section and our Instagram",
                         "isTextGrey": true,
                         "links": [
                             {
@@ -283,8 +283,8 @@
                     }
                 ],
                 "btn" : {
-                    "textRu": "Посещения музея",
-                    "textEng": "Title on Rng",
+                    "textRu": "Виртуальный музей",
+                    "textEng": "Virtual museum",
                     "href": "/virtual-museum"
                 }
             },
@@ -292,7 +292,7 @@
                 "iconPath": "img/toreroShow/exhibitIcon.png",
                 "iconClass": "icon-exhibit",
                 "titleRu": "Выставочная история тореадора:",
-                "titleEng": "Title on eng",
+                "titleEng": "Exhibition history of the Torero:",
                 "options": [
                     {
                         "textRu": "Презентация Государственный Эрмитаж",
@@ -306,7 +306,7 @@
                     },
                     {
                         "textRu": "Частная галерея (Москва)",
-                        "textEng": "Private Gallery (Moscow",
+                        "textEng": "Private Gallery (Moscow)",
                         "isTextGrey": false
                     },
                     {
@@ -317,7 +317,7 @@
                 ],
                 "btn" : {
                     "textRu": "Узнать о возможности покупки",
-                    "textEng": "Title on Rng",
+                    "textEng": "Learn about purchase options",
                     "toForm": "default"
                 }
             }

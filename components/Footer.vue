@@ -3,7 +3,7 @@
         .footer_block
             .column
                 a.item.contacts(:href="'tel:' + contacts.phoneMain" :class="{reverse: reverse}") {{contacts.phoneMain}}
-                .item.contacts {{contacts.email}}
+                .item.contacts.email {{contacts.email}}
 
             .column(v-for="address in contacts.footerAdresses")
                 .item.contacts.title {{ lang === 'ru' ? address.addressNameRu : address.addressNameEng }}
@@ -96,6 +96,9 @@
 
                         &.title
                             margin-bottom 7px
+
+                        &.email
+                            font-size 16px
 
                     &.street
                         font-size 16px
