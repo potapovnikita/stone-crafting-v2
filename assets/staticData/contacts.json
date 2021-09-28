@@ -26,14 +26,14 @@
         {
             "addressNameRu": "Салон ANTONOV",
             "addressNameEng": "ANTONOV Boutique",
-            "addressRu": "Международный центр искусств \"Главный Проспект.\" Екатеринбург",
-            "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
+            "addressRu": "Международный центр искусств \"Главный Проспект\" Екатеринбург",
+            "addressEng": "International Center for the Arts \"Glavny Prospekt\""
         },
         {
             "addressNameRu": "Mузей <br>Камнерезного Дома",
-            "addressNameEng": "The Museum of the Stone crafting House",
-            "addressRu": "Международный центр искусств \"Главный Проспект.\" Екатеринбург",
-            "addressEng": "International Center for the Arts \"Glavny Prospekt.\""
+            "addressNameEng": "The Museum of the <br>Stone crafting House",
+            "addressRu": "Международный центр искусств \"Главный Проспект\" Екатеринбург",
+            "addressEng": "International Center for the Arts \"Glavny Prospekt\""
         }
     ],
     "inst": "https://www.instagram.com/stone.crafting.house/",
