@@ -79,7 +79,7 @@
 
 </template>
 <script>
-import {mapMutations, mapState} from 'vuex'
+import {mapState} from 'vuex'
     import { getImgLocal } from '~/plugins/getUrl'
     import Tradition from '~/assets/staticData/tradition.json'
     import Button from '@/components/ui/Button'
@@ -109,9 +109,6 @@ import {mapMutations, mapState} from 'vuex'
             }
         },
         methods: {
-            ...mapMutations({
-                onOpen: 'orderPopup/onOpen'
-            }),
             getImgLocal(url) {
                 return getImgLocal(url)
             },
