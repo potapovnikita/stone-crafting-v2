@@ -270,6 +270,8 @@ export default {
 
             &__item-name
                 font-size 18px
+                @media only screen and (max-width 340px)
+                    font-size 14px
 
         @media only screen and (max-width 767px)
             padding-top 76px
@@ -367,5 +369,7 @@ export default {
                 .text
                     font-size 16px
                     white-space normal
+
+
 
 </style>

@@ -6,7 +6,7 @@
                 .item.contacts.email {{contacts.email}}
 
             .column(v-for="address in contacts.footerAdresses")
-                .item.contacts.title {{ lang === 'ru' ? address.addressNameRu : address.addressNameEng }}
+                .item.contacts.title(v-html="lang === 'ru' ? address.addressNameRu : address.addressNameEng")
                 .item.street(v-html="lang === 'ru' ? address.addressRu : address.addressEng")
 
         .footer_line

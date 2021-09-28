@@ -14,7 +14,7 @@
                 allowfullscreen
                 :hl="lang === 'ru' ? 'ru' : 'en'"
             )
-        .unitNewsItem__info(:class="{'unitNewsItem__info--wide': isShortText && wideBlock }")
+        .unitNewsItem__info(v-if="title || text || fullText" :class="{'unitNewsItem__info--wide': isShortText && wideBlock }")
             h2.unitNewsItem__title(v-if="title" v-html="lang === 'ru' ? title : titleEng")
             .unitNewsItem__line(v-if="!wideBlock")
             p.unitNewsItem__text(v-if="isShortText" v-html="lang === 'ru' ? text : textEng")

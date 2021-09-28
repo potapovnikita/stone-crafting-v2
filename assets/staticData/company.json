@@ -44,7 +44,6 @@
     "link4": "/img/about/exhibitionActivities.png",
     "linkEng4": "/img/about/exhibitionActivitiesEng.png",
     "aboutSlides4": [
-      "img/about/0.png",
       "img/about/1.png",
       "img/about/2.png",
       "img/about/3.png",
@@ -54,7 +53,8 @@
       "img/about/7.png",
       "img/about/8.png",
       "img/about/9.png",
-      "img/about/10.png"
+      "img/about/10.png",
+      "img/about/0.png"
     ],
 
     "aboutTitleRu5": "Валентин Скурлов",

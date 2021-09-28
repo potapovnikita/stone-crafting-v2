@@ -195,12 +195,14 @@ export default {
             height 100%
 
             video
-                height: 100%;
+                height: 100%
+                width: 100%
                 display block
                 position absolute
                 left 50%
                 top 0
                 transform translate(-50%, 0)
+                object-fit: cover
 
     .title-block
         position relative

@@ -143,7 +143,7 @@ export default {
         left 0
         right 0
         width 100%
-        height 1168px
+        height 100%
         background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 111.47%), url('~assets/img/contacts/bg-top.png') no-repeat top center
         background-size cover
 
@@ -389,8 +389,8 @@ export default {
     @media only screen and (max-width 1280px)
         padding-top 96px
 
-        &__bg-top
-            height 793px
+        //&__bg-top
+        //    height 793px
 
         &__bg-bottom
             height 580px
