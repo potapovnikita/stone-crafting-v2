@@ -147,7 +147,8 @@ export default {
 </script>
 
 <style lang="stylus">
-
+.common-container
+    padding 0
 .news-container
     position relative
     background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
@@ -155,7 +156,7 @@ export default {
     padding-top 117px
 
     @media only screen and (max-width 767px)
-        padding 80px 20px 30px
+        padding-top 80px
 
     &__bg-top
         position absolute
