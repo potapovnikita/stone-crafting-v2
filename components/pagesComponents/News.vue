@@ -244,7 +244,6 @@ export default {
                         z-index 1
 
             .description
-                overflow hidden
                 width 50%
                 position relative
                 top 100px
