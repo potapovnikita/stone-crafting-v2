@@ -123,7 +123,6 @@ export default {
                     showArticle.observe(article);
                 })
             });
-
         },
     },
     mounted() {

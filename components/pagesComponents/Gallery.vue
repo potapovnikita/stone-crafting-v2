@@ -54,6 +54,10 @@
 
         ModelShow(:showData="currentProduct.showBlock")
 
+        .netItemBtn
+            span Далее
+            ButtonArrow(arrowRight :onClick="() => goToNextItem()")
+
         Footer
 
 </template>
@@ -95,6 +99,9 @@ import Svyatogor from '~/assets/staticData/models/svyatogor.json'
 import Dobrynya from '~/assets/staticData/models/dobrynya.json'
 import Tsarevich from '~/assets/staticData/models/tsarevich.json'
 import Viking from '~/assets/staticData/models/viking.json'
+import ButtonArrow from "@/components/ui/ButtonArrow"
+import MuseumNew from "assets/staticData/museumNew.json";
+
 export default {
     name: 'Gallery',
     components: {
@@ -103,10 +110,12 @@ export default {
         UnitNews,
         ModelShow,
         Footer,
+        ButtonArrow,
     },
     data() {
         return {
             forCorridaSwitcher: 'torero',
+            museumNew: MuseumNew,
             models: {
                 torero: Torero,
                 jokerNew: JokerNew,
@@ -151,6 +160,11 @@ export default {
         },
     },
     methods: {
+        goToNextItem() {
+            const idx = MuseumNew.findIndex(i => i.id === this.$route.path.split('/').pop());
+            const nextId = MuseumNew.length === idx + 1 ? MuseumNew[0].id : MuseumNew[idx + 1].id;
+            this.$nuxt.$router.push({path:`/gallery/${nextId}`});
+        },
         getImg(url) {
             return getImgExternal(url)
         },
@@ -180,6 +194,15 @@ export default {
 <style lang="stylus" scoped>
 .gallery-container
     position relative
+
+    .netItemBtn
+        display flex
+        align-items center
+        justify-content center
+        margin 30px
+
+        span
+            margin-right 10px
 
     .bg-bottom
         display none

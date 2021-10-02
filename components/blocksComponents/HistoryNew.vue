@@ -27,7 +27,7 @@
                                                         :key="imgPath"
                                                         :class="{'active': index === slotProps.activeImg}"
                                                         @click="(event) => slotProps.switchTo(index, event)")
-                                    img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year")
+                                    img.histoyAbout__photo(v-if="item.img && !item.video" :src="getImg(item.img)" :alt="item.year" :class="item.pagination.class")
                                     video.histoyAbout__video(v-if="item.video && !item.img" preload="auto" controls autoplay muted playsinline)
                                         source(:src="getImg(item.video)" type="video/mp4" style="zIndex: '-1'")
 
@@ -553,6 +553,9 @@ export default {
         &__video
             width 350px
             height auto
+
+        .dot-2007_2
+            min-height: 188px;
 
         &__text-photo
             width 100%
