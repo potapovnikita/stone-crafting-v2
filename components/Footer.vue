@@ -12,7 +12,7 @@
         .footer_line
         .footer_block
             .column
-                .item.copyright © Stone-crafting House by Alexey Antonov
+                .item.copyright © Stone-crafting House by&nbsp;Alexey&nbsp;Antonov
 
             .column
                 .item.policy
@@ -157,6 +157,17 @@
                                 position absolute
                                 right 0
 
+    @media only screen and (max-width 1030px)
+        .footer_container
+            .footer_block
+                .column
+                    .item
+                        &.copyright
+                            white-space inherit
+                        &.contacts
+                            &.email
+                                font-size 12px
+
     @media only screen and (max-width 767px)
         .footer_container
             padding 0px 10px
@@ -176,6 +187,8 @@
                         &.contacts
                             font-size 16px
                             line-height 24px
+                            &.email
+                                font-size 16px
 
                             &.title
                                 margin-bottom 14px

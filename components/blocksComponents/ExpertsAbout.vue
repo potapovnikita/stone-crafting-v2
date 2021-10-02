@@ -9,7 +9,7 @@
 
             h2.title {{ lang === 'ru' ? 'Эксперты о нас' : 'Experts about us' }}
             client-only
-                carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="expertsCarousel")
+                carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="expertsCarousel" @pageChange="handlePageChange")
                     slide
                         img.photo(src="~/assets/img/about/experts/skurlov.png" alt="skurlov")
                         h3.name(v-html="lang === 'ru' ? company.aboutTitleRu5 : company.aboutTitleEng5")
@@ -32,7 +32,7 @@
                             .box
                                 .dot(:class="{'active': index === currentSlide}" @click="() => navigateTo(index)")
                     ButtonArrow(:onClick="nextSlide" arrowRight)
-    
+
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -62,7 +62,10 @@ export default {
         navigateTo(index) {
             this.currentSlide = index
             this.$refs.expertsCarousel.goToPage(index)
-        }
+        },
+        handlePageChange(num) {
+          this.currentSlide = num
+        },
     },
     computed: {
         ...mapState('localization', [
@@ -83,7 +86,7 @@ export default {
                 return
             }
         })
-    }    
+    }
 }
 </script>
 <style lang="stylus" scoped>

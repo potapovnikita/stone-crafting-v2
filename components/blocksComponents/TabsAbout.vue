@@ -126,7 +126,7 @@ export default {
         },
     },
     mounted() {
-        this.allArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
+        this.currentArticles = this.lang === 'ru' ? this.articles : this.articlesEng;
 
         this.$nextTick(()=>{
             const descriptionsAbout = document.querySelectorAll('.descriptionAbout');

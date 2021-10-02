@@ -2,7 +2,7 @@
     client-only
         .articleSliderMb
             carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="articlesAbout")
-                slide(v-for="(article, index) in currentArticles" :key="`arc_${index}`")
+                slide(v-for="(article, index) in currentArticles" :key="`arc_${index}`" @pageChange="handlePageChange")
                     .articleSliderMb__article
                         .articleSliderMb__wrapper-pic
                             .articleSliderMb__pic(:style="{backgroundImage: getBgImg(article.background)}")
@@ -61,6 +61,9 @@ export default {
         },
         getImgExternal(url) {
             return getImgExternal(url)
+        },
+        handlePageChange(num) {
+            this.currentSlide = num
         },
         initPage() {
             this.currentArticles = this.lang === 'ru' ? this.articles : this.articlesEng;

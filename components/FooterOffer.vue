@@ -115,7 +115,7 @@
                     margin-bottom 10px
 
                     &.policy
-                        margin-top 10px
+
 
                         &:hover
                             text-decoration underline
@@ -160,7 +160,6 @@
                     padding-right 10px
 
         .copyright
-            margin-top 20px
             text-align center
             font-family $IntroRegular
             font-size $FontSizeMenu
