@@ -1,8 +1,8 @@
 <template lang="pug">
     client-only
         .articleSliderMb
-            carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="articlesAbout")
-                slide(v-for="(article, index) in currentArticles" :key="`arc_${index}`" @pageChange="handlePageChange")
+            carousel(:paginationEnabled="false" :perPage="1" :loop="true" ref="articlesAbout" @pageChange="handlePageChange")
+                slide(v-for="(article, index) in currentArticles" :key="`arc_${index}`")
                     .articleSliderMb__article
                         .articleSliderMb__wrapper-pic
                             .articleSliderMb__pic(:style="{backgroundImage: getBgImg(article.background)}")

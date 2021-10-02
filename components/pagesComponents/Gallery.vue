@@ -52,9 +52,13 @@
 
             UnitNews(:mediaList="currentProduct.media")
 
+            .nextItemBtn.nextItemBtnSecond(v-if="!currentProduct.showBlock")
+                span Далее
+                ButtonArrow(arrowRight :onClick="() => goToNextItem()")
+
         ModelShow(:showData="currentProduct.showBlock")
 
-        .netItemBtn
+        .nextItemBtn(v-if="currentProduct.showBlock")
             span Далее
             ButtonArrow(arrowRight :onClick="() => goToNextItem()")
 
@@ -195,11 +199,14 @@ export default {
 .gallery-container
     position relative
 
-    .netItemBtn
+    .nextItemBtn
         display flex
         align-items center
         justify-content center
         margin 30px
+
+        &.nextItemBtnSecond
+            margin-bottom 0px
 
         span
             margin-right 10px
