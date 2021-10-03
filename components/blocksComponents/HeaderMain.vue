@@ -153,7 +153,7 @@ export default {
         &__double-line
             display none
 
-    @media only screen and (max-width 767px) and (max-height 500px)
+    @media only screen and (max-width 767px) and (max-height 515px)
         padding-top 30px
 
         &__circle
@@ -201,5 +201,9 @@ export default {
 
         &__year-wrapper
             padding-top 20px
+
+            .text_sverdlovsk
+                padding-bottom 100px
+                margin 0
 
 </style>
