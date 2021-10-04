@@ -479,6 +479,7 @@ export default {
         &__container
             max-width unset
             flex-basis 965px
+            padding 0 20px
 
         &__content
             max-width 468px
@@ -510,6 +511,8 @@ export default {
         &__carouselPhoto
             width 420px
 
+        &__container
+            padding 0 5px
 
     @media only screen and (max-width 767px)
         &__slides-panel
@@ -532,6 +535,7 @@ export default {
 
         &__container
             flex-direction column-reverse
+            padding 0
 
         &__content
             max-width 350px
