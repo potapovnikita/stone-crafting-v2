@@ -1,6 +1,6 @@
 <template lang="pug">
     page-container(reverse="true")
-        Header(placeholder="true", reverse="true")
+        HeaderOffer(placeholder="true", reverse="true")
         Buy(:isPartners="true")
         SplitLine(reverse="true")
         Footer(reverse="true")
@@ -9,7 +9,7 @@
 <script>
     import Buy from '~/components/pagesComponents/Buy.vue'
     import PageContainer from '~/components/PageContainer.vue'
-    import Header from '~/components/Header.vue'
+    import HeaderOffer from '~/components/HeaderOffer.vue'
     import Footer from '~/components/Footer.vue'
     import SplitLine from '~/components/SplitLine.vue'
 
@@ -17,7 +17,7 @@
         components: {
             PageContainer,
             Buy,
-            Header,
+            HeaderOffer,
             Footer,
             SplitLine,
         },

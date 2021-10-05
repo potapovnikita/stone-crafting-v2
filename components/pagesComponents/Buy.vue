@@ -337,12 +337,17 @@ import {mapMutations, mapState} from 'vuex'
                     })
                 })
 
-                // await axios.get('https://api.exchangeratesapi.io/latest?access_key=76110f4ec760f72cde07b1e9cc46c643&base=RUB').then(({ data }) => {
-                //     if (data.rates.USD) this.currency = data.rates.USD;
+                // иногда не работает
+                // await axios.get('https://free.currconv.com/api/v7/convert?q=RUB_USD&compact=ultra&apiKey=3680959f524addb8b5be').then(({ data }) => {
+                //     if (data.RUB_USD) this.currency = data.RUB_USD;
                 // })
 
-                await axios.get('https://free.currconv.com/api/v7/convert?q=RUB_USD&compact=ultra&apiKey=3680959f524addb8b5be').then(({ data }) => {
-                    if (data.RUB_USD) this.currency = data.RUB_USD;
+
+                //
+                await axios.get('https://v6.exchangerate-api.com/v6/f4d66bfc3bf52ca39ae057f2/latest/USD').then(({ data }) => {
+                    console.log('data', data)
+                    //72.7152
+                    if (data.conversion_rates.RUB) this.currency = 1/data.conversion_rates.RUB;
                 })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
