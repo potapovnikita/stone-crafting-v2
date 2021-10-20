@@ -147,8 +147,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.common-container
-    padding 0
 .news-container
     position relative
     background linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%)
