@@ -1,68 +1,69 @@
 <template lang="pug">
-    .common-container.gallery-container
-        .bg-bottom
-        .video-container(v-if="currentProduct.video")
-            .video-container__wrapper-video
-                video#video(playsinline loop="true" autoplay="true" muted="muted")
-                    source(:src="getImg(currentProduct.video)" type="video/mp4")
+    client-only
+        .common-container.gallery-container
+            .bg-bottom
+            .video-container(v-if="currentProduct.video")
+                .video-container__wrapper-video
+                    video#video(playsinline loop="true" autoplay="true" muted="muted")
+                        source(:src="getImg(currentProduct.video)" type="video/mp4")
 
-            .title-block
-                .title-block__circle
-                h1.title-block__title(v-if="currentProduct.customName" v-html="lang === 'ru' ? currentProduct.customName : currentProduct.customNameEng")
-                h1.title-block__title(v-else v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
-                .title-block__line
-                p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
+                .title-block
+                    .title-block__circle
+                    h1.title-block__title(v-if="currentProduct.customName" v-html="lang === 'ru' ? currentProduct.customName : currentProduct.customNameEng")
+                    h1.title-block__title(v-else v-html="lang === 'ru' ? currentProduct.name : currentProduct.nameEng")
+                    .title-block__line
+                    p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 
-        .header-container(v-if="!currentProduct.video" :style="{backgroundImage: `url(${getImgExternal(currentProduct.headerBackground)})`}")
-            .title-block
-                .title-block__circle
-                h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                .title-block__line
-                p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
+            .header-container(v-if="!currentProduct.video" :style="{backgroundImage: `url(${getImgExternal(currentProduct.headerBackground)})`}")
+                .title-block
+                    .title-block__circle
+                    h1.title-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
+                    .title-block__line
+                    p.title-block__sub-title(v-if="currentProduct.creation") {{ lang === 'ru' ? currentProduct.creation.title : currentProduct.creation.titleEng }}
 
-        .galleryAbout-block
-            .galleryAbout-block__media
-                img.galleryAbout-block__photo(v-if="currentProduct.ImgUderVideo && !currentProduct.VideoUderVideo" :src="getImg(currentProduct.ImgUderVideo)")
-                video.galleryAbout-block__photo(v-if="currentProduct.VideoUderVideo && !currentProduct.ImgUderVideo" playsinline autoplay loop="true" muted="muted")
-                    source(:src="getImgExternal(currentProduct.VideoUderVideo)" type="video/mp4")
-            .galleryAbout-block__info
-                .galleryAbout-block__content
-                    h2.galleryAbout-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
-                    .galleryAbout-block__double-line
-                    p.galleryAbout-block__text(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
-        .bullfightingSwitcher(v-if="currentProduct.id === 'torero'")
-            .corridaButtons-container
-                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'torero'}" @click="setCorridaSwitcher('torero')")
-                    | {{lang === 'ru' ? 'Тореадор' : 'Bullfighter'}}
-                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'flamenco'}" @click="setCorridaSwitcher('flamenco')")
-                    | {{lang === 'ru' ? 'Фламенко' : 'Flamenco'}}
-                .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'bull'}" @click="setCorridaSwitcher('bull')")
-                    | {{lang === 'ru' ? 'Лазурный Бык' : 'Azure Bull'}}
+            .galleryAbout-block
+                .galleryAbout-block__media
+                    img.galleryAbout-block__photo(v-if="currentProduct.ImgUderVideo && !currentProduct.VideoUderVideo" :src="getImg(currentProduct.ImgUderVideo)")
+                    video.galleryAbout-block__photo(v-if="currentProduct.VideoUderVideo && !currentProduct.ImgUderVideo" playsinline autoplay loop="true" muted="muted")
+                        source(:src="getImgExternal(currentProduct.VideoUderVideo)" type="video/mp4")
+                .galleryAbout-block__info
+                    .galleryAbout-block__content
+                        h2.galleryAbout-block__title {{ lang === 'ru' ? currentProduct.name : currentProduct.nameEng }}
+                        .galleryAbout-block__double-line
+                        p.galleryAbout-block__text(v-html="lang === 'ru' ? currentProduct.description : currentProduct.descriptionEng")
+            .bullfightingSwitcher(v-if="currentProduct.id === 'torero'")
+                .corridaButtons-container
+                    .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'torero'}" @click="setCorridaSwitcher('torero')")
+                        | {{lang === 'ru' ? 'Тореадор' : 'Bullfighter'}}
+                    .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'flamenco'}" @click="setCorridaSwitcher('flamenco')")
+                        | {{lang === 'ru' ? 'Фламенко' : 'Flamenco'}}
+                    .corridaButtons-container_btn(:class="{'active': forCorridaSwitcher === 'bull'}" @click="setCorridaSwitcher('bull')")
+                        | {{lang === 'ru' ? 'Лазурный Бык' : 'Azure Bull'}}
 
-            GalleryPhotosSlider(:imgSrcList="getImgSrcListForCorrida(currentProduct)")
+                GalleryPhotosSlider(:imgSrcList="getImgSrcListForCorrida(currentProduct)")
 
-        GalleryPhotosSlider(v-if="currentProduct.imagesPreview && currentProduct.id !== 'torero'" :imgSrcList="currentProduct.imagesPreview")
+            GalleryPhotosSlider(v-if="currentProduct.imagesPreview && currentProduct.id !== 'torero'" :imgSrcList="currentProduct.imagesPreview")
 
-        ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
+            ModelMap(v-if="currentProduct.modelMap" :modelMap="currentProduct.modelMap")
 
-        .gallerySmi-block(v-if="currentProduct.media")
-            h2.gallerySmi-block__title {{ lang === 'ru' ? currentProduct.titleNews : currentProduct.titleNewsEng }}
+            .gallerySmi-block(v-if="currentProduct.media")
+                h2.gallerySmi-block__title {{ lang === 'ru' ? currentProduct.titleNews : currentProduct.titleNewsEng }}
 
-            .gallerySmi-block__double-line
+                .gallerySmi-block__double-line
 
-            UnitNews(:mediaList="currentProduct.media")
+                UnitNews(:mediaList="currentProduct.media")
 
-            .nextItemBtn.nextItemBtnSecond(v-if="!currentProduct.showBlock")
+                .nextItemBtn.nextItemBtnSecond(v-if="!currentProduct.showBlock")
+                    span Далее
+                    ButtonArrow(arrowRight :onClick="() => goToNextItem()")
+
+            ModelShow(:showData="currentProduct.showBlock")
+
+            .nextItemBtn(v-if="currentProduct.showBlock")
                 span Далее
                 ButtonArrow(arrowRight :onClick="() => goToNextItem()")
 
-        ModelShow(:showData="currentProduct.showBlock")
-
-        .nextItemBtn(v-if="currentProduct.showBlock")
-            span Далее
-            ButtonArrow(arrowRight :onClick="() => goToNextItem()")
-
-        Footer
+            Footer
 
 </template>
 <script>
