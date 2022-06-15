@@ -90,11 +90,11 @@
                             div(v-if="isPartners")
                                 .price(
                                     v-if="good.pricetoView && good.pricetoView.from"
-                                    v-html="lang === 'ru' ? '<b>Рекомендованная цена: </b>' + parsePrice(good.pricetoView.string, currency).string + ' у.е.' : '<b>Price: </b>' + good.pricetoView.string + ' у.е.'"
+                                    v-html="lang === 'ru' ? '<b>Рекомендованная цена: </b>' +good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
                                 )
                                 .price(
                                     v-if="good.pricetoViewClient && good.pricetoViewClient.from"
-                                    v-html="lang === 'ru' ? '<b>Минимальная цена: </b>' + parsePrice(good.pricetoViewClient.string, currency).string + ' у.е.' : '<b>Price: </b>' + good.pricetoViewClient.string + ' у.е.'"
+                                    v-html="lang === 'ru' ? '<b>Минимальная цена: </b>' + good.pricetoViewClient.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoViewClient.string, currency).string + ' $'"
                                 )
                                 .price(
                                     v-if="!(good.pricetoViewClient && good.pricetoViewClient.from) && !(good.pricetoView && good.pricetoView.from)"
@@ -103,7 +103,7 @@
                             div(v-else)
                                 .price(
                                     v-if="good.pricetoView && good.pricetoView.from"
-                                    v-html="lang === 'ru' ? '<b>Цена: </b>' + parsePrice(good.pricetoView.string, currency).string + ' у.е.' : '<b>Price: </b>' + good.pricetoView.string + ' у.е.'"
+                                    v-html="lang === 'ru' ? '<b>Цена: </b>' + good.pricetoView.string + ' ₽' : '<b>Price: </b>' + parsePrice(good.pricetoView.string, currency).string + ' $'"
                                 )
                                 .price(v-else v-html="lang === 'ru' ? '<b>Цена:</b> по запросу' : '<b>Price:</b> on request'")
                             .stock(v-if="good.inStock" v-html="lang === 'ru' ? '<b>Наличие: </b>' + good.inStock.name : '<b>Existence: </b>' + good.inStock.nameEng")
@@ -229,8 +229,8 @@ import {mapMutations, mapState} from 'vuex'
                 const currency = cur || 1;
                 const separatedPrice = val.split('-')
                 const price = {
-                    from: Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed(),
-                    to: separatedPrice[1] ? Number(separatedPrice[1].replace(/[^+\d.]/g, '') * currency).toFixed() : null,
+                    from: Number(Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed()).toLocaleString('ru-RU'),
+                    to: separatedPrice[1] ? Number(Number(separatedPrice[1].replace(/[^+\d.]/g, '') * currency).toFixed()).toLocaleString('ru-RU') : null,
                 }
 
                 return {
@@ -345,12 +345,12 @@ import {mapMutations, mapState} from 'vuex'
 
 
                 // это рабочее, но пока убрали для условных единиц
-                // await axios.get('https://v6.exchangerate-api.com/v6/f4d66bfc3bf52ca39ae057f2/latest/USD').then(({ data }) => {
-                //     console.log('data', data)
-                //     //72.7152
-                //     // if (data.conversion_rates.RUB) this.currency = 1/data.conversion_rates.RUB; // когда конвертили из рублей в доллары
-                //     if (data.conversion_rates.RUB) this.currency = data.conversion_rates.RUB; // теперь наоборот из доллара в рубли
-                // })
+                await axios.get('https://v6.exchangerate-api.com/v6/f4d66bfc3bf52ca39ae057f2/latest/USD').then(({ data }) => {
+                    console.log('data', data)
+                    //72.7152
+                    if (data.conversion_rates.RUB) this.currency = 1/data.conversion_rates.RUB; // когда конвертили из рублей в доллары
+                    // if (data.conversion_rates.RUB) this.currency = data.conversion_rates.RUB; // теперь наоборот из доллара в рубли
+                })
 
                 const hashItem = this.categoriesArray.find(item => item.query === window.location.href.split('#')[1])
                 this.setActive(hashItem || 'All')
