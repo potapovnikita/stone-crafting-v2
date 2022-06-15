@@ -230,7 +230,9 @@ import {mapMutations, mapState} from 'vuex'
                 const separatedPrice = val.split('-')
                 const price = {
                     from: Number(Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed()).toLocaleString('ru-RU'),
+                    fromNum: Number(separatedPrice[0].replace(/[^+\d.]/g, '') * currency).toFixed(),
                     to: separatedPrice[1] ? Number(Number(separatedPrice[1].replace(/[^+\d.]/g, '') * currency).toFixed()).toLocaleString('ru-RU') : null,
+                    toNum: separatedPrice[1] ? Number(separatedPrice[1].replace(/[^+\d.]/g, '') * currency).toFixed() : null,
                 }
 
                 return {
@@ -420,10 +422,10 @@ import {mapMutations, mapState} from 'vuex'
                 })
 
                 if (price === 'bottomToTop') filtered.sort((a, b) =>
-                    Number(a.pricetoView && a.pricetoView.from || 100000000) - Number(b.pricetoView && b.pricetoView.from || 100000000)
+                    Number(a.pricetoView && a.pricetoView.fromNum || 100000000) - Number(b.pricetoView && b.pricetoView.fromNum || 100000000)
                 )
                 if (price === 'topToBottom') filtered.sort((a, b) =>
-                    Number(b.pricetoView && b.pricetoView.from  || 0) - Number(a.pricetoView && a.pricetoView.from || 0)
+                    Number(b.pricetoView && b.pricetoView.fromNum  || 0) - Number(a.pricetoView && a.pricetoView.fromNum || 0)
                 )
                 if (search.length > 2) return this.searchByAll(filtered, search)
 
