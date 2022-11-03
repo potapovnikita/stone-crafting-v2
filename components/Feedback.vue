@@ -4,16 +4,16 @@
             | {{statusSuccess ? lang === 'ru' ? successText : successTextEng : lang === 'ru' ? 'Сделать запрос' : 'Make a request'}}
         form(v-if="!statusSuccess" v-on:submit.prevent="submitForm()")
             .input
-                Input(type="text" name="phone" :class="{error: phone.length < 16 && errorPhone}" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
+                Input(type="text" name="phone" :error="!phoneValidate(phone) && errorPhone" v-model="phone" v-mask="'+7(###)-###-####'" placeholder="+7(999)-999-9999")
 
             .input
-                Input(type="text" :class="{error: !name && errorName}" v-model="name" :placeholder="lang === 'ru' ? 'Имя' : 'Name'")
+                Input(type="text" :error="!name && errorName" v-model="name" :placeholder="lang === 'ru' ? 'Имя' : 'Name'")
 
             .input
-                Input(type="text" :class="{error: !email && errorEmail}" v-model="email" placeholder="Email")
+                Input(type="text" :error="!email && errorEmail" v-model="email" placeholder="Email")
 
             .input
-                Input(type="text" :class="{error: !company && errorCompany}" v-model="company" :placeholder="lang === 'ru' ? 'Компания (веб-сайт)' : 'Company (website)'")
+                Input(type="text" :error="!company && errorCompany" v-model="company" :placeholder="lang === 'ru' ? 'Компания (веб-сайт)' : 'Company (website)'")
 
             .input
                 Textarea(type="text" :class="{error: !comment && errorComment}" v-model="comment" :placeholder="lang === 'ru' ? 'Что интересует?' : 'What are you interested in?'")
@@ -88,6 +88,10 @@
             ...mapMutations({
                 setSuccessStatus: 'orderPopup/setSuccessStatus'
             }),
+            phoneValidate(phone) {
+                const phoneNum = phone.replace(/[^0-9]/g,"");
+                return phoneNum.length === 11;
+            },
             submitForm() {
                 this.emailStatus = ''
                 this.emailStatusErr = ''
@@ -125,6 +129,7 @@
 
                 if (!this.name) {
                     this.errorName = true
+                    this.errorText = this.lang === 'ru' ? 'Заполните имя' : 'Fill name'
                 }
 
                 // if (this.type === 'partners' && !this.company) {
@@ -133,22 +138,24 @@
 
                 if (!this.comment) {
                     this.errorComment = true
+                    this.errorText = this.lang === 'ru' ? 'Заполните комментарий' : 'Fill comment'
                 }
 
-                if (this.phone.length < 16) {
+                if (!this.phoneValidate(this.phone)) {
                     this.errorPhone = true
+                    this.errorText = this.lang === 'ru' ? 'Заполните телефон' : 'Fill phone number'
                 }
 
                 if (!this.isAgreement) {
                     this.errorText = this.lang === 'ru' ? 'Требуется соглашение' : 'Fill in required fields'
                 }
 
-                if (this.errorName || this.errorPhone || this.errorComment) {
-                    this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
-                }
+                // if (this.errorName || this.errorPhone || this.errorComment) {
+                //     this.errorText = this.lang === 'ru' ? 'Заполните обязательные поля' : 'Fill in required fields'
+                // }
 
                 if (this.isAgreement &&
-                     this.phone.length >= 16 &&
+                    this.phoneValidate(this.phone) &&
                      this.name &&
                      this.comment &&
                      (this.email.length === 0 || this.email.length > 0 && !this.errorEmail)) {

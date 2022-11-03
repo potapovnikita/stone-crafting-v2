@@ -9,7 +9,7 @@
       :class="{'error': error}"
       :style="{'width': width || '100%'}"
     )
-    .errorText(v-if="error") {{error}}
+    .errorText(v-if="error && typeof error === 'string'") {{error}}
 
 </template>
 
@@ -22,7 +22,7 @@
           type: String,
           placeholder: String,
           value: String,
-          error: String,
+          error: String | Boolean,
           width: String,
         },
         methods: {
