@@ -157,6 +157,10 @@ import {mapMutations, mapState} from 'vuex'
             isPartners: {
                 type: Boolean,
                 default: false,
+            },
+            isSalon: {
+                type: Boolean,
+                default: false,
             }
         },
         data() {
@@ -294,14 +298,15 @@ import {mapMutations, mapState} from 'vuex'
                 }
             },
             async initApp() {
-                const visibilityType = this.isPartners ? 'partners' : 'clients';
+                const visibilityType = this.isPartners ? 'partners' : this.isSalon ? 'salon' : 'clients';
                 this.isGoodsLoading = true;
                 await fb.categoriesCollection.get().then(data => {
                     data.forEach(doc => {
                         let category = doc.data()
                         category.id = doc.id
 
-                        // хардкод скрываемой категории в клиентах
+                        console.log('category', category)
+                        // хардкод скрываемой категории в клиентах (Информация о нас)
                         if (!(category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
                             this.categoriesArray.push(category)
                         }
@@ -312,7 +317,7 @@ import {mapMutations, mapState} from 'vuex'
                 await fb.goodsCollection.get().then(data => {
                     data.forEach(doc => {
                         let good = doc.data()
-                        // хардкод скрываемой категории в клиентах
+                        // хардкод скрываемой категории в клиентах (Информация о нас)
                         if (!(good.category.id === 'UVfWH4o2FKhD0SVdeqzf' && visibilityType === 'clients')) {
 
                             if (good.visibility && good.visibility.find(v => v.code === visibilityType)) {
