@@ -22,7 +22,7 @@
                                 .virtual-museum_container__dot(:class="{ 'active': schemeItem.floor === activeFloor }")
                                 p.virtual-museum_container__floor-name {{lang === 'ru' ? 'этаж' : 'floor'}}
                                 .virtual-museum_container__line(v-if="index !== scheme.length - 1")
-                            
+
                             ul.virtual-museum_container__items
                                 li(
                                     v-for="(place, index) in schemeItem.places"
@@ -30,7 +30,7 @@
                                     @click="() => selectVirtual(place)"
                                 )
                                     p.virtual-museum_container__lead-text.virtual-museum_container__lead-text--link(v-html="lang === 'ru' ? place.name : place.nameEng")
-            
+
             ul.virtual-museum_container__items
                 li(
                     v-for="(virtual, index) in virtuals"
@@ -39,9 +39,10 @@
                 )
                     div
                         iframe.virtualFrame(
-                            :src="virtual.src + '&callback=getHeight(0)'"
+                            :src="virtual.src"
                             width="100%"
                             :height="getHeight(0)"
+                            referrerpolicy="no-referrer-when-downgrade"
                             frameborder="0"
                             style="border:0;"
                             allowfullscreen=""
