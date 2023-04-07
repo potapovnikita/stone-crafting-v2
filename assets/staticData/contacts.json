@@ -70,15 +70,6 @@
                 "link":"http://www.chamovskikh.com"
             },
             "img": "img/contacts/chamovskikh.png"
-        },
-        {
-            "name": "Charme Stone",
-            "nameEng": "Charme Stone",
-            "href": {
-                "name": "www.charmestone.ru",
-                "link":"https://charmestone.ru/page/iskusstvo-v-interere/"
-            },
-            "img": "img/contacts/charmestoneWhite.png"
         }
     ]
 }
