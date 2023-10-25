@@ -1,4 +1,4 @@
-export const DEFAULT_PASS = '1305091973';
+export const DEFAULT_PASS = '0509197313';
 
 export const stockStatuses = [
     {
