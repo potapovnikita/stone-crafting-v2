@@ -18,10 +18,10 @@
     ],
     "footerAdresses": [
         {
-            "addressNameRu": "Частная галерея",
-            "addressNameEng": "Private gallery",
-            "addressRu": "г. Москва",
-            "addressEng": "Moscow city"
+            "addressNameRu": "Галерея Турандот",
+            "addressNameEng": "Gallery Turandot",
+            "addressRu": "г.Москва, Тверской бульвар, 26",
+            "addressEng": "Moscow city, Tverskoy boulevard, 26"
         },
         {
             "addressNameRu": "Салон ANTONOV",
